@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="e4682c65-0f92-480c-aa68-a962070a5c3e" type="Components" typeId="c3b488e8-81fc-4b2d-8ef2-b2b032410784">
+  <name>components</name>
+  <display>components</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42e08360-c103-4672-ba93-657567d539ec</parentFolderId>
+  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="033c8d5d-193a-4874-aebe-b7a65d14cabf" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+      <name>NewComponent</name>
+      <display>NewComponent</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>e4682c65-0f92-480c-aa68-a962070a5c3e</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="31887744-aeb5-49d6-8e75-da5bea549d3c" type="Component Parameter" typeId="4b88d38b-52b3-47be-8ce1-f571bafc56d4">
+          <name>NewComponentParameter</name>
+          <display>NewComponentParameter: date</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="5b1327d5-4b7e-406e-9b9e-33bef6284260">
+            <typeId>1fbaa056-b666-4f25-b8fd-76fe3165acc8</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>033c8d5d-193a-4874-aebe-b7a65d14cabf</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="3bb830f6-6045-4f8f-8d82-978d28a2fe21" type="Component Event" typeId="7a3cd0df-caf4-4c0a-a83e-8933eb8aad4a">
+          <name>NewComponentEvent</name>
+          <display>NewComponentEvent: void</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="02ce3f54-d47f-43c0-8bb6-c5ccd5562e1b">
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>033c8d5d-193a-4874-aebe-b7a65d14cabf</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="8abc8146-e3e0-4fa0-b481-50aaa7c411fd" type="Model Definition" typeId="3b3aae7a-a51a-4352-a000-2b2bffb05dbf">
+      <name>NewModelDefinition</name>
+      <display>NewModelDefinition</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>e4682c65-0f92-480c-aa68-a962070a5c3e</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

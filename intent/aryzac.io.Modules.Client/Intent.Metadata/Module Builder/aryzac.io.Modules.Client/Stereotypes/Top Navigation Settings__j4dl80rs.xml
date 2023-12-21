@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="e31690e9-e123-4c7f-aad5-576bbde51d08" version="3.1.0">
+  <name>Top Navigation Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="504052da-efcd-4f9d-8177-ba6a2c7bfa79">Layout Navigation</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>manually</applyMode>
+  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFBJREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/jMwMMDYxJoD1oNuAEgQBEDiuNgwC7AaQKztIHWjBoyGAfXTATmZaSEDA0MCqRkII6kDAGqaHxHlt7sIAAAAAElFTkSuQmCC" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return true;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>0d9099ea-0eaa-484a-9ad8-44346e25aa30</parentFolderId>
+  <order>0</order>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <properties />
+</stereotypeDefinition>

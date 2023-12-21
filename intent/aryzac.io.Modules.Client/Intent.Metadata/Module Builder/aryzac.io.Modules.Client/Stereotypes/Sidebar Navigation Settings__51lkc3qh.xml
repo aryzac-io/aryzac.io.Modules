@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="d2871749-82c8-467d-8a70-2d0bea7cd3e2" version="3.1.0">
+  <name>Sidebar Navigation Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="504052da-efcd-4f9d-8177-ba6a2c7bfa79">Layout Navigation</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>manually</applyMode>
+  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAD1JREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/uPQDJPHJg3SwzhqwGgYDLN0QE5mWsjAwJCAL7MQlTkB1iwcEZ9OawYAAAAASUVORK5CYII=" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return true;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>0d9099ea-0eaa-484a-9ad8-44346e25aa30</parentFolderId>
+  <order>0</order>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <properties>
+    <property id="f2c2dee4-8375-4b4c-ae6b-ddeeb3a939f9">
+      <name>Collapsible</name>
+      <type>string</type>
+      <controlType>checkbox</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <defaultValue>true</defaultValue>
+      <valueOptions />
+      <lookupTypes />
+    </property>
+  </properties>
+</stereotypeDefinition>

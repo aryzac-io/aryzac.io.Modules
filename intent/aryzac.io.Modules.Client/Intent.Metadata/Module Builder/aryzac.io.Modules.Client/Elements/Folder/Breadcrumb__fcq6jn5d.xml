@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="674891c1-56f6-480f-a8fb-f50b674ba691" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>Breadcrumb</name>
+  <display>Breadcrumb</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>686af451-278d-4ad4-9e3c-ddc40a186ed0</parentFolderId>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="66fd9e66-42c7-4ef9-a778-b68e009272b9" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Common.CSharp</definitionPackageName>
+      <definitionPackageId>730e1275-0c32-44f7-991a-9619d07ca68d</definitionPackageId>
+      <properties>
+        <property name="96df2fa6-7361-4e43-9acf-dbcea23b650a" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements />
+</class>

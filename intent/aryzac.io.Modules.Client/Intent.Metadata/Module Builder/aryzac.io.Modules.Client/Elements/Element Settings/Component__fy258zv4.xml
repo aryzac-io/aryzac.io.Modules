@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c5ceaac9-7171-41be-af89-f39553c893dd" type="Element Settings" typeId="727577aa-3e07-4b41-be7d-7359bb1e48c8">
+  <name>Component</name>
+  <display>Component</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c3b488e8-81fc-4b2d-8ef2-b2b032410784</parentFolderId>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="d8f6f331-d4f0-4c75-aa91-f2e715cd9591" name="Type Reference Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+      <properties>
+        <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Disabled" isActive="true" />
+        <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="false" />
+        <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="false" />
+        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" isActive="false" />
+        <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="false" />
+        <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="false" />
+        <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="true" isActive="false" />
+        <property name="d04ec558-6f6a-462b-b16a-9da1d7b4e9db" display="Allow Collection" value="true" isActive="false" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="f406222b-31a8-435e-80f6-6a08f9108649" name="Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+      <properties>
+        <property name="5a9277a9-b808-4ade-bb57-840b51b0da3a" display="Save Mode" value="Default" isActive="true" />
+        <property name="736b1337-6f35-4e38-85a8-69ff5d69fb7d" display="Icon" value="{&quot;source&quot;:&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP1JREFUOE+1k9ERAUEQRJ8MZIAMZEAIRIAIEIETgRMBIlAyIAMZIAMhqFYzW1Nbt/ixP1c129fT0z3b4vMZ2vW5BGsVLrrADujZ/Q2YAfccnxO0gTmwBGqgsh/0XQAbYAs8nSgSTA1wMnACGVjkIh1Zk4PqTuDs69C1NLbUrFylE6gow/rA0S6bFGiEMXAFZGwVCdRREqUmKlJdDeSN5nfMu54TuGlKYQ90bI4HII88hWRuicDnVzcdKYrnZ4IY438JJHFi7se1bVKgtJSG9qDOF0kzxxgjgRbJY1RDmZwWyecTKMYYG8QYG1c5muQxDqx4yWJM2NJrdMDX5/wCqc8/EcFEmKgAAAAASUVORK5CYII=&quot;,&quot;type&quot;:0,&quot;absolutePathRelativeTo&quot;:null}" isActive="true" />
+        <property name="32086823-bd72-4be0-a765-2d9530f4ce06" display="Expanded Icon" isActive="true" />
+        <property name="b966a8e9-f298-4741-8397-fe49f29c248b" display="Icon Function" isActive="true" />
+        <property name="0632053a-6b40-47a0-857f-6840e322344c" display="Display Text Function" value="" isActive="true" />
+        <property name="1e5a5798-220b-4a92-993d-c4ebd4123e53" display="Validate Function" value="" isActive="true" />
+        <property name="c48d9593-c1f4-4610-9cb3-54de9c2f0c06" display="Allow Rename" value="true" isActive="true" />
+        <property name="4b17e907-bd58-4f70-b376-383c6046ad8a" display="Allow Abstract" value="false" isActive="true" />
+        <property name="ad2bbaa1-becc-477b-83d2-97179678e4bb" display="Allow Static" value="false" isActive="true" />
+        <property name="0eb8bcd6-4120-47c5-ac74-9a9e4a7d4536" display="Allow Set Value" value="false" isActive="true" />
+        <property name="8ad604ab-7edf-4a6c-86a5-e27f0f95dfac" display="Allow Generic Types" value="false" isActive="true" />
+        <property name="ad5ce0fc-72ab-4aa3-92e9-238954c2aedb" display="Allow Sorting" value="true" isActive="true" />
+        <property name="3a68e3cb-8014-4c43-9965-f6fc35589d37" display="Sort Children" value="By type then name" isActive="true" />
+        <property name="46180320-9a7e-4fe3-8351-f7524612a52c" display="Allow Find in View" value="false" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="c400b68b-125f-4c2e-a179-76f1c7addcf8" type="Context Menu" typeId="d45e383d-90ba-4b64-aca7-34ca100cea21">
+      <name>[context menu]</name>
+      <display>[context menu]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>c5ceaac9-7171-41be-af89-f39553c893dd</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="9b4bf587-bda7-4917-962d-04073890a17a" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Parameter</name>
+          <display>Add Parameter: Component Parameter</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="0de0477f-0041-475d-b570-21d86289d226">
+            <typeId>4b88d38b-52b3-47be-8ce1-f571bafc56d4</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c400b68b-125f-4c2e-a179-76f1c7addcf8</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="true" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="08b1382d-4ae2-443f-87c5-9669c9395faa" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Emit Event</name>
+          <display>Emit Event: Component Event</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="16c468b0-e4f2-428d-8cde-0888412761f3">
+            <typeId>7a3cd0df-caf4-4c0a-a83e-8933eb8aad4a</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c400b68b-125f-4c2e-a179-76f1c7addcf8</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="true" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="95375c7f-870e-4080-85af-5604f65f59c1" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add View</name>
+          <display>Add View: Component View</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="dc860c68-2796-4d5d-a511-ae174c295f37">
+            <typeId>2b961538-d4dd-40a0-af84-22f25106f10f</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c400b68b-125f-4c2e-a179-76f1c7addcf8</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="true" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="d95d32f3-cfbe-410a-bc30-26bea4cc2551" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Model</name>
+          <display>Add Model: Component Model</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="5dcbedf0-6c4c-4ffe-9b95-989598a32aa2">
+            <typeId>f51a8831-0f7a-48a3-b3c5-604818cea9a4</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c400b68b-125f-4c2e-a179-76f1c7addcf8</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="true" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="41b14c99-0e46-4bd5-a023-6350be772813" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Model Definition</name>
+          <display>Add Model Definition: Model Definition</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="a881a34c-11b0-4db9-8456-187251e47092">
+            <typeId>3b3aae7a-a51a-4352-a000-2b2bffb05dbf</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c400b68b-125f-4c2e-a179-76f1c7addcf8</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="true" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="14af6845-8091-400d-843e-4fb24eb00f0c" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Actions</name>
+          <display>Add Actions: Component Actions</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="70556559-67a3-46f3-9032-b77861835f02">
+            <typeId>a126b934-3b67-41cf-8fcc-8bc6f5473d9a</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c400b68b-125f-4c2e-a179-76f1c7addcf8</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="[actions]" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="false" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="99fbd418-a3d3-4e05-a60b-071898c51c25" type="Designer" typeId="7f5fcc9f-c721-4a31-bfe2-7909f4289420">
+  <name>Client</name>
+  <display>Client</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>b0d6a838-86ab-407f-b284-27630d9ec6df</parentFolderId>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="6761be76-7c09-4ad4-8a65-82c6d17992db" name="Designer Config">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+      <properties>
+        <property name="84ac204b-f187-45b7-b3c3-efb26db2d9d8" display="Icon" value="{&quot;source&quot;:&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxjaXJjbGUgY3g9IjIwIiBjeT0iOCIgcj0iMSIgZmlsbD0iIzg4ODg4OCIvPjxjaXJjbGUgY3g9IjIzIiBjeT0iOCIgcj0iMSIgZmlsbD0iIzg4ODg4OCIvPjxjaXJjbGUgY3g9IjI2IiBjeT0iOCIgcj0iMSIgZmlsbD0iIzg4ODg4OCIvPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik0yOCA0SDRhMi4wMDIgMi4wMDIgMCAwIDAtMiAydjIwYTIuMDAyIDIuMDAyIDAgMCAwIDIgMmgyNGEyLjAwMiAyLjAwMiAwIDAgMCAyLTJWNmEyLjAwMiAyLjAwMiAwIDAgMC0yLTJtMCAydjRINFY2Wk00IDEyaDZ2MTRINFptOCAxNFYxMmgxNnYxNFoiLz48L3N2Zz4=&quot;,&quot;type&quot;:0,&quot;absolutePathRelativeTo&quot;:null}" isActive="true" />
+        <property name="179da558-7e6e-43b0-ab61-5d76a2b879d0" display="Display Order" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="d22b1ac1-4ab7-465e-9caa-698c077b2587" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
+      <name>Client Settings Reference</name>
+      <display>Client Settings Reference: Client Settings</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="48385c9e-be3d-406c-88eb-bdbb3a0d325b">
+        <typeId>121396e8-27e3-41d1-af47-ab3ef869cf58</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>aryzac.io.Modules.Client</typePackageName>
+        <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>99fbd418-a3d3-4e05-a60b-071898c51c25</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

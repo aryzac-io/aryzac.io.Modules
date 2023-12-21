@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c476bee8-54a1-415a-973f-1c6e2afc6bc6" type="Layouts" typeId="5e4732ab-326f-4d6d-9cbf-25da0d8b2526">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42e08360-c103-4672-ba93-657567d539ec</parentFolderId>
+  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="9c7267a1-d1d3-4e87-8a0d-632552def1b6" type="Layout" typeId="eb6cb3df-6d5a-469b-8919-ab659187874f">
+      <name>default</name>
+      <display>default</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>c476bee8-54a1-415a-973f-1c6e2afc6bc6</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="8548b08b-1bad-41ee-a430-40aa82b4e7de" type="Layout Navigation" typeId="504052da-efcd-4f9d-8177-ba6a2c7bfa79">
+          <name>Footer</name>
+          <display>Footer</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>9c7267a1-d1d3-4e87-8a0d-632552def1b6</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="a4934d2c-7817-413d-af69-57b87289e2fd" name="Footer Navigation Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+              <properties />
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="9e597e00-4ae3-4347-a5fd-e16e9fb6dafe" type="Layout Navigation" typeId="504052da-efcd-4f9d-8177-ba6a2c7bfa79">
+          <name>Sidebar Navigation</name>
+          <display>Sidebar Navigation</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>9c7267a1-d1d3-4e87-8a0d-632552def1b6</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d2871749-82c8-467d-8a70-2d0bea7cd3e2" name="Sidebar Navigation Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+              <properties>
+                <property name="f2c2dee4-8375-4b4c-ae6b-ddeeb3a939f9" display="Collapsible" value="true" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="afbf2bdf-2f0f-49bc-ab98-62dfb59a093a" type="Layout Navigation" typeId="504052da-efcd-4f9d-8177-ba6a2c7bfa79">
+          <name>Top Navigation</name>
+          <display>Top Navigation</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>9c7267a1-d1d3-4e87-8a0d-632552def1b6</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="e31690e9-e123-4c7f-aad5-576bbde51d08" name="Top Navigation Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+              <properties />
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="b36ab82a-d152-4e5e-a897-ed849f247ef5" type="Layout Slot" typeId="d5e91bdc-bc8d-4dd7-9fa7-5d537a478866">
+          <name>Main</name>
+          <display>Main</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>9c7267a1-d1d3-4e87-8a0d-632552def1b6</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

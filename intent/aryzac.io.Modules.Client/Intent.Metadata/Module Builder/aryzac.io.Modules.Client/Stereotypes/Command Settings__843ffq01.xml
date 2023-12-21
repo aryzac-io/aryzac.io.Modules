@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="effdab75-866e-487c-b6c2-f9b0b26d1b91" version="3.1.0">
+  <name>Command Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="4a186cc2-552b-4438-89ff-02642035a61a">Command</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>on-create</applyMode>
+  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIVJREFUOE/Nk9sRQDAQRU9K0IlSlBAl6EAHSkAHOqAEHTFrkhmGZIWf3K/9yJ7N3Yfhp4zLt0CfyBqA2gM2wMdvOUdOnoAJaIFV8RK0UAICqRRItAdvIGoTZbQdUASsqD+YgQaQeT8p2gMtWYBBwOKq+sry8KzL7uSzSF+OaQRs6gHdprED+MYqEW6CGKAAAAAASUVORK5CYII=" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>true</allowMultipleApplies>
+  <parentFolderId>cd80345d-d655-4b79-bbc8-36abf290cdc0</parentFolderId>
+  <order>0</order>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <properties>
+    <property id="3e1e4166-91a0-4775-b64d-f0775299f5a1">
+      <name>Interaction</name>
+      <type>string</type>
+      <controlType>select</controlType>
+      <optionsSource>options</optionsSource>
+      <placeholder />
+      <defaultValue>On Click</defaultValue>
+      <valueOptions>
+        <option>On Click</option>
+        <option>On Hover</option>
+        <option>On Key Press</option>
+      </valueOptions>
+      <lookupTypes />
+    </property>
+    <property id="35bd6edd-9274-4c75-9c2a-989c60691ce4">
+      <name>Action</name>
+      <type>string</type>
+      <controlType>select</controlType>
+      <optionsSource>lookup-element</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes>
+        <type>911c35b4-4ba3-404c-a0c6-e5258e53333a</type>
+      </lookupTypes>
+    </property>
+  </properties>
+</stereotypeDefinition>

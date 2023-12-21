@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="8c1e344a-a2b3-4249-a7a6-713823784eb2" type="Element Settings" typeId="727577aa-3e07-4b41-be7d-7359bb1e48c8">
+  <name>Service Proxies</name>
+  <display>Service Proxies</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>121396e8-27e3-41d1-af47-ab3ef869cf58</parentFolderId>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="d8f6f331-d4f0-4c75-aa91-f2e715cd9591" name="Type Reference Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+      <properties>
+        <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Disabled" isActive="true" />
+        <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="false" />
+        <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="false" />
+        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" isActive="false" />
+        <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="false" />
+        <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="false" />
+        <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="true" isActive="false" />
+        <property name="d04ec558-6f6a-462b-b16a-9da1d7b4e9db" display="Allow Collection" value="true" isActive="false" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="f406222b-31a8-435e-80f6-6a08f9108649" name="Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+      <properties>
+        <property name="5a9277a9-b808-4ade-bb57-840b51b0da3a" display="Save Mode" value="Default" isActive="true" />
+        <property name="736b1337-6f35-4e38-85a8-69ff5d69fb7d" display="Icon" value="{&quot;source&quot;:&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABNBJREFUeF7tnE1sG0UUx/9vZzdEtGpMckhtVU3KhwRVbIMQh+bCRqhICJACEr214oAQAiFoxQkOJBzgUKEWCVEJLlThAhUivSCEgNgHOFFIYz6EEOCgqqXAIaURsuKPh3ZrO8HE9tozu/aYmduu5/3fzG/f7r59O16CaVIESMraGMMAlAwCA9AAlCQgaW4i0ACUJCBpbiLQAJQkIGluItAAlCQgaW4i0ACUJCBpHjgC+dPbJorCud8Cpxl8C4gsSd+b5kxfOO7K88r0IhQKBHBjKfUsEZ8Ic1xEeN2+O/d0mD7C0G4LcCMzdZpAR8Jwvo3mCcfNHYvIlxI3LQFuLKUeI+K3lHgKKsL0qjOz8lzQ7r3u1xJgMZP8E8BY9IOkV3S5JjYFWMxOTYPp8+jh1Tzyy477zQu98x/Mc1OApaXkLBM+CCYTWq8XHTf3UmjqCoSbA8xOHWKmdxX40Enie2Z8RaB3nJmVj4IM3ABsQomAN8XVoaP04Lm/W4E0AFuH2WeOm7vHAAxyLjbpw8DjQ26uaSpnIrA93B8cN3drs24GYHuAsItDMTp47sp2XZsDzCQfYeC9APqD34Vx0JnJfdIZwP9nGrNtMBBwyHZzZ7QHSMPjoNFpwN4ZadTTSPoMxVLf+k4ZeYjCWaJ9a96mVtdAcdcCPIh90E6TiD+qFUDaeRPEHaf6gJ0fhmskEjfoBXAkDZE63icAARJx/+zV5hSmRoCFy6j8/nEdKO1Kg2Kp+javrYD/Oo/G/aqOgPYAPUDl3Gbd1Zo4DGvv4Tqfyq8LqKwuoHG/AVglYAB2GAqNp7ABKAkQpXXw+k+bKsO7/5XicOEyUPgNaNjfodum3bW/BqoC0a2OfgCHx+El0n3SVknEJ7VKY7zBiv1zoLHpPmDIR0kkTmoH0B+w9yh33e5IIdKu5Ly190jGd2oXlmvPwVoCjJRc1dnAVGN6Aa8aZYNRzjIAJQlY4/eCEg/Bq8z0rBEtosyvkRP3r4naFBNg74B9oNcLJWoXRT5LVmJWK4D/qcb0LASvOdYvkTb1QLmQMcUEOX4wAA1ASQKS5iYCFQOUlJM2N3dhSYTaAfQLIV4ibe+QnLoCc9IwkfaT17FpeI9zEBEv7bh+z3dwRv+4lkEjD6t8kmjPslZPIgripmsJU87qGl31sW1QVmdJcujafKAi0C9lRXwjoZHUnDVZLekDq0TxfO1otFqheh8DH3Z92EIwFMnjoFg6BOWOJedJxOda3kS8/weXhF0n3bELxQbey6Q+eq2ZJxHf1xKg92Mxm/wSjDsVs+hKTrt6oDfLUnbqYWZ6v6sZKzbSbnlbbf6lbOoUMz+hmEfHctoVE7bOcCObeoaY/TfxvWpaA/Sg+R+dsO0HLIb30YmblX50IsBRsUYPxKz985u34PUf10rLT52vmVo3PjlpJWYnatuVi4urlZ/fyDfuD+AqUJe2xYRAKhF24uIlFxaWtrj0MoS369sMFwR3y3YGhAwa9ysa8yAAVISiOxn9APKF21ERX3c3XeVWV0jEY23zQOVuJQW5fMk7bevXOUk5GfP2f7SRUQ/LlvmXGMrDsyD4ixt70qzyYq0WqF0E9gRYG6dtv1zUj4PupzEZgJJHwwA0ACUJSJqbCDQAJQlImpsIlAT4Dz1FPG9Ih59dAAAAAElFTkSuQmCC&quot;,&quot;type&quot;:0,&quot;absolutePathRelativeTo&quot;:null}" isActive="true" />
+        <property name="32086823-bd72-4be0-a765-2d9530f4ce06" display="Expanded Icon" value="{&quot;source&quot;:&quot;data:image/png;base64,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&quot;,&quot;type&quot;:0,&quot;absolutePathRelativeTo&quot;:null}" isActive="true" />
+        <property name="b966a8e9-f298-4741-8397-fe49f29c248b" display="Icon Function" isActive="true" />
+        <property name="0632053a-6b40-47a0-857f-6840e322344c" display="Display Text Function" value="" isActive="true" />
+        <property name="1e5a5798-220b-4a92-993d-c4ebd4123e53" display="Validate Function" value="" isActive="true" />
+        <property name="c48d9593-c1f4-4610-9cb3-54de9c2f0c06" display="Allow Rename" value="true" isActive="true" />
+        <property name="4b17e907-bd58-4f70-b376-383c6046ad8a" display="Allow Abstract" value="false" isActive="true" />
+        <property name="ad2bbaa1-becc-477b-83d2-97179678e4bb" display="Allow Static" value="false" isActive="true" />
+        <property name="0eb8bcd6-4120-47c5-ac74-9a9e4a7d4536" display="Allow Set Value" value="false" isActive="true" />
+        <property name="8ad604ab-7edf-4a6c-86a5-e27f0f95dfac" display="Allow Generic Types" value="false" isActive="true" />
+        <property name="ad5ce0fc-72ab-4aa3-92e9-238954c2aedb" display="Allow Sorting" value="true" isActive="true" />
+        <property name="3a68e3cb-8014-4c43-9965-f6fc35589d37" display="Sort Children" value="By type then name" isActive="true" />
+        <property name="46180320-9a7e-4fe3-8351-f7524612a52c" display="Allow Find in View" value="false" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="d03716df-420c-43c7-8ff8-49022523f071" type="Context Menu" typeId="d45e383d-90ba-4b64-aca7-34ca100cea21">
+      <name>[context menu]</name>
+      <display>[context menu]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>8c1e344a-a2b3-4249-a7a6-713823784eb2</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

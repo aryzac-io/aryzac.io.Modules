@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="2ba4ec08-5767-467d-a0cb-910b7e75ec0d" version="3.1.0">
+  <name>Navigation Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="e9c6d81b-1204-468b-889e-9490f37c223f">Navigation</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>on-create</applyMode>
+  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>cd80345d-d655-4b79-bbc8-36abf290cdc0</parentFolderId>
+  <order>0</order>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <properties>
+    <property id="33ecf844-8e3c-4005-bd18-50088bd98374">
+      <name>Page</name>
+      <type>string</type>
+      <controlType>select</controlType>
+      <optionsSource>lookup-element</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes>
+        <type>865a4fa5-833d-4c88-994a-fbcf5e746a32</type>
+      </lookupTypes>
+    </property>
+  </properties>
+</stereotypeDefinition>
