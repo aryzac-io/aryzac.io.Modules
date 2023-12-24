@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="9602d07e-cc9d-41ae-9e70-554f55492f45" type="Form Definition" typeId="df0da0e1-b468-4868-8135-22caf8767eeb">
+  <name>Client Form</name>
+  <display>Client Form: Client Model</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <typeReference id="432e439e-8141-41fb-9ea2-6780612b6da8">
+    <typeId>08c035c0-61b3-4e43-b74b-96f2ec819154</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Client</typePackageName>
+    <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>56db4f46-1937-43ca-a68e-eee5ab0046af</parentFolderId>
+  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="32be8f12-8227-439d-a090-ee77ab573453" type="Section" typeId="d15b8bed-441b-4ef7-9541-f7df1c31fb48">
+      <name>Personal Details</name>
+      <display>Personal Details</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9602d07e-cc9d-41ae-9e70-554f55492f45</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="4d57ad34-c45a-4ef1-b6f8-8d7fd1a48bb1" name="Section Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="8d0b08f1-43f7-4f96-ae08-1a725587c76e" display="Title" value="Personal Details" isActive="true" />
+            <property name="9dbd24a4-7fa2-49b8-a22e-1f3bf9f20f9c" display="Description" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="869aab82-52e3-474c-9394-e5b29cd1efef" type="Textbox" typeId="8c3da623-54c2-435a-badc-45aa8f09ad5c">
+          <name>First name</name>
+          <display>First name: First name</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="d04b6d0b-cfb5-4ab3-be91-4c6a9fdb2636">
+            <typeId>366a97a2-8e6c-4d6e-8f37-f6e71031d758</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>32be8f12-8227-439d-a090-ee77ab573453</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="cc8769ca-a592-40dc-aa5d-480756b017d1" type="Textbox" typeId="8c3da623-54c2-435a-badc-45aa8f09ad5c">
+          <name>Last name</name>
+          <display>Last name: Last name</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="e24d2d97-ced2-49d0-a336-34ee5febf38f">
+            <typeId>d36ba037-bb3b-4227-be2a-6b11a68beff1</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>32be8f12-8227-439d-a090-ee77ab573453</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="d2698838-77cd-408c-a84d-4f068f02e87e" type="Textbox" typeId="8c3da623-54c2-435a-badc-45aa8f09ad5c">
+          <name>Email Address</name>
+          <display>Email Address: Email Address</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="b525718b-8188-4d3d-a5bf-8cd8a3279c9a">
+            <typeId>f87e2530-e4bd-4dc9-98bc-441908c1419a</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>32be8f12-8227-439d-a090-ee77ab573453</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="328eb217-7ef7-4edc-856b-602ad21e390b" type="Toolbar" typeId="06451f7f-bdd4-4d2d-b944-1ee594a5bfcf">
+      <name>NewToolbar</name>
+      <display>NewToolbar</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9602d07e-cc9d-41ae-9e70-554f55492f45</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

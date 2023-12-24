@@ -4,10 +4,10 @@
   <display>Navigation</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
-  <order>3</order>
+  <order>1</order>
   <genericTypes />
   <isMapped>false</isMapped>
-  <parentFolderId>ab20e59e-d3df-43d1-91eb-4c6b9ba16365</parentFolderId>
+  <parentFolderId>4a186cc2-552b-4438-89ff-02642035a61a</parentFolderId>
   <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
   <packageName>aryzac.io.Modules.Client</packageName>
   <stereotypes>

@@ -37,24 +37,24 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
-        public ReadOnlyViewModel ReadOnly => _element.ChildElements
-            .GetElementsOfType(ReadOnlyViewModel.SpecializationTypeId)
-            .Select(x => new ReadOnlyViewModel(x))
-            .SingleOrDefault();
-
-        public FormViewModel Form => _element.ChildElements
-            .GetElementsOfType(FormViewModel.SpecializationTypeId)
-            .Select(x => new FormViewModel(x))
-            .SingleOrDefault();
-
-        public ListViewModel List => _element.ChildElements
-            .GetElementsOfType(ListViewModel.SpecializationTypeId)
-            .Select(x => new ListViewModel(x))
-            .SingleOrDefault();
-
         public IList<FormDefinitionModel> FormDefinitions => _element.ChildElements
             .GetElementsOfType(FormDefinitionModel.SpecializationTypeId)
             .Select(x => new FormDefinitionModel(x))
+            .ToList();
+
+        public IList<ContainerModel> Containers => _element.ChildElements
+            .GetElementsOfType(ContainerModel.SpecializationTypeId)
+            .Select(x => new ContainerModel(x))
+            .ToList();
+
+        public IList<CardModel> Cards => _element.ChildElements
+            .GetElementsOfType(CardModel.SpecializationTypeId)
+            .Select(x => new CardModel(x))
+            .ToList();
+
+        public IList<DialogModel> Dialogs => _element.ChildElements
+            .GetElementsOfType(DialogModel.SpecializationTypeId)
+            .Select(x => new DialogModel(x))
             .ToList();
 
         public override string ToString()

@@ -22,6 +22,30 @@
   </stereotypes>
   <metadata />
   <childElements>
+    <childElement id="45519dc9-9c97-4a1f-95bc-a3f5fb7f905e" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
+      <name>Client Control Settings Reference</name>
+      <display>Client Control Settings Reference: Client Control Settings</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9d9c37f0-f3e5-441b-88fc-02285f7c860d">
+        <typeId>453ef50f-146f-4ded-89d9-bfe9e58f93c1</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>aryzac.io.Modules.Client</typePackageName>
+        <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>99fbd418-a3d3-4e05-a60b-071898c51c25</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
     <childElement id="d22b1ac1-4ab7-465e-9caa-698c077b2587" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
       <name>Client Settings Reference</name>
       <display>Client Settings Reference: Client Settings</display>
@@ -29,6 +53,78 @@
       <genericTypes />
       <typeReference id="48385c9e-be3d-406c-88eb-bdbb3a0d325b">
         <typeId>121396e8-27e3-41d1-af47-ab3ef869cf58</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>aryzac.io.Modules.Client</typePackageName>
+        <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>99fbd418-a3d3-4e05-a60b-071898c51c25</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="b2cf9d40-2445-4dcf-ba00-66dfdef6931a" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
+      <name>Layout Settings Reference</name>
+      <display>Layout Settings Reference: Layout Settings</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="44728523-78f6-4f10-b162-798915d05e58">
+        <typeId>25d53d97-63f1-48b0-9725-a503e58da08f</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>aryzac.io.Modules.Client</typePackageName>
+        <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>99fbd418-a3d3-4e05-a60b-071898c51c25</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="24158a32-8a0d-4f09-a1bc-5195a941480d" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
+      <name>Style Settings Reference</name>
+      <display>Style Settings Reference: Style Settings</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="fb8f07c8-f5a7-4ccc-bce1-5568fa46b506">
+        <typeId>c73a5458-07ad-4e6a-874a-7abaa3429caa</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>aryzac.io.Modules.Client</typePackageName>
+        <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>99fbd418-a3d3-4e05-a60b-071898c51c25</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="ec184e74-4c52-4d57-add6-c1aa0b2dc0d6" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
+      <name>Typography Settings Reference</name>
+      <display>Typography Settings Reference: Typography Settings</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="8771666b-b7ff-42cd-a61d-02625a4ce205">
+        <typeId>a2bffbbd-b781-4075-8846-a56c82bba5ba</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>

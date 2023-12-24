@@ -20,6 +20,24 @@
   <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
   <packageName>aryzac.io.Modules.Client</packageName>
   <properties>
+    <property id="b532db25-5c27-4eec-9782-e4f30f59e120">
+      <name>Icon</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="015063a4-93b4-4553-8f20-7e8d60d7d923">
+      <name>Label</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
     <property id="3e1e4166-91a0-4775-b64d-f0775299f5a1">
       <name>Interaction</name>
       <type>string</type>
@@ -33,17 +51,6 @@
         <option>On Key Press</option>
       </valueOptions>
       <lookupTypes />
-    </property>
-    <property id="35bd6edd-9274-4c75-9c2a-989c60691ce4">
-      <name>Action</name>
-      <type>string</type>
-      <controlType>select</controlType>
-      <optionsSource>lookup-element</optionsSource>
-      <placeholder />
-      <valueOptions />
-      <lookupTypes>
-        <type>911c35b4-4ba3-404c-a0c6-e5258e53333a</type>
-      </lookupTypes>
     </property>
   </properties>
 </stereotypeDefinition>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="ac783f8f-e461-4e12-ac5f-695a8cd15d98" type="Layouts" typeId="5e4732ab-326f-4d6d-9cbf-25da0d8b2526">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42e08360-c103-4672-ba93-657567d539ec</parentFolderId>
+  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="35c5049b-ad28-47ff-9bbc-8b3c85700c22" type="Layout" typeId="eb6cb3df-6d5a-469b-8919-ab659187874f">
+      <name>default</name>
+      <display>default</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>ac783f8f-e461-4e12-ac5f-695a8cd15d98</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="c8a5a8d4-8d56-4ff2-bcc5-559cc13c0a79" type="Top Menu" typeId="ac2c0fa1-486e-47a9-a589-e81b9a16b942">
+          <name>[top menu]</name>
+          <display>[top menu]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>35c5049b-ad28-47ff-9bbc-8b3c85700c22</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="cf5af086-6877-46dc-ac1b-9dd2ee6ed994" type="Logo" typeId="18d9d647-40f7-414e-89db-c767626f04a0">
+              <name>NewLogo</name>
+              <display>NewLogo</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>c8a5a8d4-8d56-4ff2-bcc5-559cc13c0a79</parentFolderId>
+              <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="06d85497-9c0f-424a-89f1-10770ee36b7d" type="Navigation Section" typeId="e8d903c1-27f9-45af-ba41-0119b4bb3d99">
+              <name>NewNavigationSection</name>
+              <display>NewNavigationSection</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>c8a5a8d4-8d56-4ff2-bcc5-559cc13c0a79</parentFolderId>
+              <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="3b37fd06-4d87-4e16-b122-28cd48db329c" type="Navigation Item" typeId="c7c23554-dd95-433b-b8df-74254cb3b0ed">
+                  <name>Home</name>
+                  <display>Home</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>manually</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>06d85497-9c0f-424a-89f1-10770ee36b7d</parentFolderId>
+                  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="0756c25b-f632-4e50-b8fb-fe955d41576c" type="Navigation Item" typeId="c7c23554-dd95-433b-b8df-74254cb3b0ed">
+                      <name>NewNavigationItem</name>
+                      <display>NewNavigationItem</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>3b37fd06-4d87-4e16-b122-28cd48db329c</parentFolderId>
+                      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="08c817be-0fca-48a1-b900-3340318858be" type="Sidebar" typeId="7ad90260-1187-4e15-b6ba-313a2c215ff0">
+          <name>[sidebar]</name>
+          <display>[sidebar]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>35c5049b-ad28-47ff-9bbc-8b3c85700c22</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="4abea29c-14ad-447d-8977-ed4880c04c01" type="Navigation Section" typeId="e8d903c1-27f9-45af-ba41-0119b4bb3d99">
+              <name>NewNavigationSection</name>
+              <display>NewNavigationSection</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>08c817be-0fca-48a1-b900-3340318858be</parentFolderId>
+              <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="67c46aa3-8bce-461b-9447-9a7012992d06" type="Footer" typeId="bda9700d-2ff6-46f3-a6a6-fdccb055b95e">
+          <name>[footer]</name>
+          <display>[footer]</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>35c5049b-ad28-47ff-9bbc-8b3c85700c22</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="709142ad-d6db-4afa-83ca-10b059719c0c" type="Layout Slot" typeId="d5e91bdc-bc8d-4dd7-9fa7-5d537a478866">
+          <name>main</name>
+          <display>main</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>35c5049b-ad28-47ff-9bbc-8b3c85700c22</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

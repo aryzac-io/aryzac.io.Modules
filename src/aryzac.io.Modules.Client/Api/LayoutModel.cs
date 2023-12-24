@@ -37,10 +37,20 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
-        public IList<LayoutNavigationModel> LayoutNavigations => _element.ChildElements
-            .GetElementsOfType(LayoutNavigationModel.SpecializationTypeId)
-            .Select(x => new LayoutNavigationModel(x))
-            .ToList();
+        public TopMenuModel TopMenu => _element.ChildElements
+            .GetElementsOfType(TopMenuModel.SpecializationTypeId)
+            .Select(x => new TopMenuModel(x))
+            .SingleOrDefault();
+
+        public SidebarModel Sidebar => _element.ChildElements
+            .GetElementsOfType(SidebarModel.SpecializationTypeId)
+            .Select(x => new SidebarModel(x))
+            .SingleOrDefault();
+
+        public FooterModel Footer => _element.ChildElements
+            .GetElementsOfType(FooterModel.SpecializationTypeId)
+            .Select(x => new FooterModel(x))
+            .SingleOrDefault();
 
         public IList<LayoutSlotModel> LayoutSlots => _element.ChildElements
             .GetElementsOfType(LayoutSlotModel.SpecializationTypeId)

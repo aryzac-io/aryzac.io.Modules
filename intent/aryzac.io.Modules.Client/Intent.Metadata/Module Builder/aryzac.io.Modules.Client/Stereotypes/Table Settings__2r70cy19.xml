@@ -3,7 +3,7 @@
   <name>Table Settings</name>
   <targetMode>of-type</targetMode>
   <targetTypes>
-    <type id="36c5662a-1fc9-43c4-8d5f-8202ee07fb1b">Table</type>
+    <type id="36c5662a-1fc9-43c4-8d5f-8202ee07fb1b">Table Layout</type>
   </targetTypes>
   <targetReferenceTypes />
   <applyMode>on-create</applyMode>

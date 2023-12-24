@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a9dca4aa-24df-4028-9609-c48ceaec04d1" type="Controls" typeId="d9e346a6-70c1-4d47-b332-2316f9057dab">
+  <name>controls</name>
+  <display>controls</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42e08360-c103-4672-ba93-657567d539ec</parentFolderId>
+  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="1e000733-ab97-4798-b992-e96c789fdf94" type="Container" typeId="b0b5d813-91c5-4891-a32e-cf7cea184759">
+      <name>NewContainer</name>
+      <display>NewContainer</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>a9dca4aa-24df-4028-9609-c48ceaec04d1</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

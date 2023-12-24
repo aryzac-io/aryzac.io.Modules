@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="db3178d9-38de-4438-baca-ec6493d2ca9d" type="Form Definition" typeId="df0da0e1-b468-4868-8135-22caf8767eeb">
+  <name>Client Form</name>
+  <display>Client Form: Client Model</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <typeReference id="c7604439-d507-4c23-b413-9f2b8033ce33">
+    <typeId>87c01200-e055-4ea9-aaa1-562a365900b5</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Client</typePackageName>
+    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>971b766d-37f1-4e30-9a67-9f91adae52b4</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="81f42f16-d703-4740-a1d7-28f4a964d7f0" type="Section" typeId="d15b8bed-441b-4ef7-9541-f7df1c31fb48">
+      <name>Personal Information</name>
+      <display>Personal Information</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>db3178d9-38de-4438-baca-ec6493d2ca9d</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="4d57ad34-c45a-4ef1-b6f8-8d7fd1a48bb1" name="Section Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="8d0b08f1-43f7-4f96-ae08-1a725587c76e" display="Title" value="Personal Information" isActive="true" />
+            <property name="9dbd24a4-7fa2-49b8-a22e-1f3bf9f20f9c" display="Description" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="5acc0bbd-4b83-419b-beb5-2675392089a4" name="Flex">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties />
+        </stereotype>
+        <stereotype stereotypeDefinitionId="2968bbe0-5a5a-4f28-8fc4-94107462d4c7" name="Flex Columns">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="eb10a8c5-2442-4999-85c1-2bba31e00606" type="Textbox" typeId="8c3da623-54c2-435a-badc-45aa8f09ad5c">
+          <name>First Name</name>
+          <display>First Name: FirstName</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="9e462e3a-d620-41da-9a49-12bfe3567ce7">
+            <typeId>f2eeaf81-2905-4beb-8db6-4fc67ce1e766</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>81f42f16-d703-4740-a1d7-28f4a964d7f0</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="873898f8-07b2-45dc-b9c8-fcd2bf1054ba" name="Flex Initial">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+              <properties />
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="35df63a8-54b6-478f-a1a8-2c6367ba10fb" type="Textbox" typeId="8c3da623-54c2-435a-badc-45aa8f09ad5c">
+          <name>Last Name</name>
+          <display>Last Name: LastName</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="5a29d145-9125-4fd7-82b6-2bba225b16d7">
+            <typeId>c271aee3-c5b5-4c83-b97c-9c75a0dc6fc2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>81f42f16-d703-4740-a1d7-28f4a964d7f0</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="873898f8-07b2-45dc-b9c8-fcd2bf1054ba" name="Flex Initial">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+              <properties />
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="7a7296ff-8101-45a7-82aa-e1de4dc2e476" type="Section" typeId="d15b8bed-441b-4ef7-9541-f7df1c31fb48">
+      <name>Contact Information</name>
+      <display>Contact Information</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>db3178d9-38de-4438-baca-ec6493d2ca9d</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="4d57ad34-c45a-4ef1-b6f8-8d7fd1a48bb1" name="Section Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="8d0b08f1-43f7-4f96-ae08-1a725587c76e" display="Title" value="Contact Information" isActive="true" />
+            <property name="9dbd24a4-7fa2-49b8-a22e-1f3bf9f20f9c" display="Description" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="03627e33-9359-40d4-adb3-8ef5cc0cba85" type="Textbox" typeId="8c3da623-54c2-435a-badc-45aa8f09ad5c">
+          <name>Email Address</name>
+          <display>Email Address: EmailAddress</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="499cd9cf-759e-4bf7-b748-7e3e86fbc766">
+            <typeId>3106462e-3f50-4c42-b80a-411fd250805c</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>7a7296ff-8101-45a7-82aa-e1de4dc2e476</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="96e467db-4b3f-4956-b473-cc0a6b1f21f2" type="Section" typeId="d15b8bed-441b-4ef7-9541-f7df1c31fb48">
+      <name>Location Information</name>
+      <display>Location Information</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>db3178d9-38de-4438-baca-ec6493d2ca9d</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="4d57ad34-c45a-4ef1-b6f8-8d7fd1a48bb1" name="Section Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="8d0b08f1-43f7-4f96-ae08-1a725587c76e" display="Title" value="Location Information" isActive="true" />
+            <property name="9dbd24a4-7fa2-49b8-a22e-1f3bf9f20f9c" display="Description" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="a2a730f6-1eca-427e-b1cd-f92a22622bb4" type="Select" typeId="603fe95f-56ab-4ea6-8a44-2a18b8208425">
+          <name>Language</name>
+          <display>Language: Language</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="0fe6ac36-47c2-4848-858d-fe36d1d5d5db">
+            <typeId>305cbede-08c1-4821-9fa2-f390f881dd5b</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>96e467db-4b3f-4956-b473-cc0a6b1f21f2</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

@@ -37,9 +37,14 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
-        public IList<ActionModel> Actions => _element.ChildElements
-            .GetElementsOfType(ActionModel.SpecializationTypeId)
-            .Select(x => new ActionModel(x))
+        public IList<CommandModel> Commands => _element.ChildElements
+            .GetElementsOfType(CommandModel.SpecializationTypeId)
+            .Select(x => new CommandModel(x))
+            .ToList();
+
+        public IList<CommandReferenceModel> CommandReferences => _element.ChildElements
+            .GetElementsOfType(CommandReferenceModel.SpecializationTypeId)
+            .Select(x => new CommandReferenceModel(x))
             .ToList();
 
         public override string ToString()

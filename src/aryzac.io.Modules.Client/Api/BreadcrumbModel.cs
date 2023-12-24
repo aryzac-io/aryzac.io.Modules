@@ -40,6 +40,11 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
+        public IList<StyleModel> Styles => _element.ChildElements
+            .GetElementsOfType(StyleModel.SpecializationTypeId)
+            .Select(x => new StyleModel(x))
+            .ToList();
+
         public override string ToString()
         {
             return _element.ToString();

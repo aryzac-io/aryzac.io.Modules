@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="47fc52b3-db43-4cf7-8a00-33a317d2f14e" type="Form Definition" typeId="df0da0e1-b468-4868-8135-22caf8767eeb">
+  <name>NewFormDefinition</name>
+  <display>NewFormDefinition: Client Model</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="1e3f781a-b1e0-4577-bcec-62ad5f10bc31">
+    <typeId>08c035c0-61b3-4e43-b74b-96f2ec819154</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Client</typePackageName>
+    <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>67159d7d-aa7e-4b4f-b4f6-be869ec36d2b</parentFolderId>
+  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

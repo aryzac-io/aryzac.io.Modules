@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="043d2a09-0b2e-499e-9204-341550526a3c" type="Breakpoints" typeId="d001da3a-4e21-4a7b-930c-defe16bf8091">
+  <name>[breakpoints]</name>
+  <display>[breakpoints]</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>70bdb99a-3a15-4667-8aea-4b8e94affa32</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="48eecb10-9d07-4fed-ba7f-b149256fa6a3" type="Breakpoint" typeId="054ff75d-9014-4505-ba45-5fee23653139">
+      <name>xs</name>
+      <display>xs</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>043d2a09-0b2e-499e-9204-341550526a3c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="fbadb458-077a-4de3-8e6f-9569110bfc86" type="Breakpoint" typeId="054ff75d-9014-4505-ba45-5fee23653139">
+      <name>sm</name>
+      <display>sm</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>043d2a09-0b2e-499e-9204-341550526a3c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="54b076e4-366d-4839-a535-f21dcea14a5f" type="Breakpoint" typeId="054ff75d-9014-4505-ba45-5fee23653139">
+      <name>md</name>
+      <display>md</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>043d2a09-0b2e-499e-9204-341550526a3c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="c7c27230-1217-4602-a5b8-95030abe03ed" type="Border" typeId="f8613b56-6d16-469a-9d1f-76d6761b8909">
+          <name>border</name>
+          <display>border</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>54b076e4-366d-4839-a535-f21dcea14a5f</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="ea1094bc-e9da-4f4d-834f-10d839990184" name="Border Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+              <properties>
+                <property name="dec094d2-2ffa-45b5-a966-9d9c269c8b4e" display="All" isActive="true" />
+                <property name="797c4a97-3dba-428c-8842-be9590aedcf7" display="Top" isActive="true" />
+                <property name="ce96edf8-f5ea-444c-a082-f4d430e8ccc8" display="Left" isActive="true" />
+                <property name="e0387071-8acf-423b-9268-faf8dbed07c7" display="Right" isActive="true" />
+                <property name="38dae72e-3b87-4791-a68c-54490f27e98e" display="Bottom" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements>
+            <childElement id="3332ed26-138f-4cfc-bf2a-dad8b24cbb74" type="Border Radius" typeId="d76f1820-09dc-4539-9aa6-c40b5b868616">
+              <name>rounded</name>
+              <display>rounded</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>c7c27230-1217-4602-a5b8-95030abe03ed</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes>
+                <stereotype stereotypeDefinitionId="b07b04bf-7de8-40f5-925d-8b05d1f5df62" name="Border Radius Settings">
+                  <addedByDefault>true</addedByDefault>
+                  <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                  <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                  <properties>
+                    <property name="e01529a6-87c4-42c0-8c50-fe6c081bea45" display="Size" value="md" isActive="true" />
+                    <property name="27fe7795-c459-4c62-87b3-b30e33663663" display="Property" value="All" isActive="true" />
+                  </properties>
+                </stereotype>
+              </stereotypes>
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="f2320d3d-7601-4fd1-ab44-86e4b85e0fa4" type="Breakpoint" typeId="054ff75d-9014-4505-ba45-5fee23653139">
+      <name>lg</name>
+      <display>lg</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>043d2a09-0b2e-499e-9204-341550526a3c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="7ca62480-bd77-4501-a910-38c10f3ec4b2" type="Breakpoint" typeId="054ff75d-9014-4505-ba45-5fee23653139">
+      <name>xl</name>
+      <display>xl</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>043d2a09-0b2e-499e-9204-341550526a3c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings version="3.1.1">
+  <id>25d53d97-63f1-48b0-9725-a503e58da08f</id>
+  <name>Layout Settings</name>
+  <designerReferences />
+  <packageSettings />
+  <packageExtensions />
+  <elementSettings>
+    <elementSetting type="Breakpoints" typeId="d001da3a-4e21-4a7b-930c-defe16bf8091">
+      <icon type="FontAwesome" source="file-o" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>manually</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder>
+        <type order="0">Breakpoint</type>
+      </typeOrder>
+      <creationOptions>
+        <option type="element">
+          <text>Add Breakpoint</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Breakpoint</specializationType>
+          <specializationTypeId>054ff75d-9014-4505-ba45-5fee23653139</specializationTypeId>
+          <defaultName>NewBreakpoint</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+      </creationOptions>
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <macros>
+        <macro trigger="on-created">
+          <script>/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+function addElement(type, definition, parent, stereotypes) {
+    if (parent.getChildren(type).every((x) =&gt; x.getName() !== definition.name)) {
+        const _element = createElement(type, definition.name, parent.id);
+        if (definition.type) {
+            _element.typeReference.setType(definition.type.id);
+            _element.typeReference.setIsNullable(definition.nullable);
+        }
+        if (stereotypes) {
+            for (let s = 0; s &lt; stereotypes.length; s++) {
+                const stereotype = stereotypes[s].stereotype;
+                if (!_element.hasStereotype(stereotype.id)) {
+                    _element.addStereotype(stereotype.id);
+                }
+                if (stereotype.properties) {
+                    stereotype.properties.forEach((property) =&gt; {
+                        _element
+                            .getStereotype(stereotype.id)
+                            .getProperty(property.name)
+                            .setValue(property.value);
+                    });
+                }
+            }
+        }
+        return _element;
+    }
+    else {
+        let _element = null;
+        parent.getChildren(type).forEach((e) =&gt; {
+            if (e.getName() === definition.name) {
+                _element = e;
+            }
+        });
+        return _element;
+    }
+}
+/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+const aryzacTypes = {
+    routeParameter: { name: "Route Parameter", id: "b1e06380-f8fe-42f8-bea1-820bbe5fee92" },
+    inheritedNavigation: { name: "Inherited Navigation", id: "9974d562-885d-46d7-817e-0f663fe07e88" },
+    layout: { name: "Layout", id: "eb6cb3df-6d5a-469b-8919-ab659187874f" },
+    layoutNavigation: { name: 'Layout Navigation', id: '504052da-efcd-4f9d-8177-ba6a2c7bfa79' },
+    layoutSlot: { name: 'Layout Slot', id: 'd5e91bdc-bc8d-4dd7-9fa7-5d537a478866' },
+    pages: { name: 'Pages', id: '4e3cc9bd-3900-4cd7-918b-ba7d11972da4' },
+    breakpoints: { name: 'Breakpoints', id: 'd001da3a-4e21-4a7b-930c-defe16bf8091' },
+    breakpoint: { name: 'Breakpoint', id: '054ff75d-9014-4505-ba45-5fee23653139' }
+};
+/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+const aryzacStereotypes = {
+    footerNavigationSettings: { name: "Footer Navigation Settings", id: "a4934d2c-7817-413d-af69-57b87289e2fd" },
+    sidebarNavigationSettings: { name: "Sidebar Navigation Settings", id: "d2871749-82c8-467d-8a70-2d0bea7cd3e2" },
+    topNavigationSettings: { name: "Top Navigation Settings", id: "e31690e9-e123-4c7f-aad5-576bbde51d08" }
+};
+/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
+/// &lt;reference path="../../common/addElement.ts" /&gt;
+/// &lt;reference path="../../common/aryzac-types.ts" /&gt;
+/// &lt;reference path="../../common/aryzac-stereotypes.ts" /&gt;
+addElement(aryzacTypes.breakpoint.name, {
+    name: "xs"
+}, element);
+addElement(aryzacTypes.breakpoint.name, {
+    name: "sm"
+}, element);
+addElement(aryzacTypes.breakpoint.name, {
+    name: "md"
+}, element);
+addElement(aryzacTypes.breakpoint.name, {
+    name: "lg"
+}, element);
+addElement(aryzacTypes.breakpoint.name, {
+    name: "xl"
+}, element);
+</script>
+        </macro>
+      </macros>
+      <childElementSettings>
+        <childElementSetting type="Breakpoint" typeId="054ff75d-9014-4505-ba45-5fee23653139">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder>
+            <type order="0">Border</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Border</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Border</specializationType>
+              <specializationTypeId>f8613b56-6d16-469a-9d1f-76d6761b8909</specializationTypeId>
+              <defaultName>border</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+      </childElementSettings>
+    </elementSetting>
+  </elementSettings>
+  <elementExtensions />
+  <associationSettings />
+  <associationExtensions />
+  <mappingSettings />
+  <mappableElementPackages />
+  <mappableElementPackageExtensions />
+</settings>

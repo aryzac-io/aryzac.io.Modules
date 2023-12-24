@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="70bdb99a-3a15-4667-8aea-4b8e94affa32" type="Style" typeId="2c9f3240-b036-4850-ac3f-51d94e8f0c28">
+  <name>default style</name>
+  <display>default style</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>ca2c39a8-c0bc-4fba-8d31-4323733de149</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="f24a1c76-4b97-4069-8330-7bf5fd5189c5" type="Border" typeId="f8613b56-6d16-469a-9d1f-76d6761b8909">
+      <name>border</name>
+      <display>border</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>70bdb99a-3a15-4667-8aea-4b8e94affa32</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="ea1094bc-e9da-4f4d-834f-10d839990184" name="Border Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="dec094d2-2ffa-45b5-a966-9d9c269c8b4e" display="All" value="2" isActive="true" />
+            <property name="797c4a97-3dba-428c-8842-be9590aedcf7" display="Top" isActive="true" />
+            <property name="ce96edf8-f5ea-444c-a082-f4d430e8ccc8" display="Left" isActive="true" />
+            <property name="e0387071-8acf-423b-9268-faf8dbed07c7" display="Right" isActive="true" />
+            <property name="38dae72e-3b87-4791-a68c-54490f27e98e" display="Bottom" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="17d819e4-163c-4ded-a549-e20442965c2a" type="Color" typeId="7b958105-c8de-47b3-900e-dc74b609d5a1">
+          <name>red-100</name>
+          <display>red-100: Primary</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="3f141fb3-d595-44af-9932-cb8fff6b51e6">
+            <typeId>336f797b-eb43-4c57-be6b-352868a748bc</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>f24a1c76-4b97-4069-8330-7bf5fd5189c5</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="d28a1bc6-62ff-4ce6-ad7b-ad65704eee55" type="Border Radius" typeId="d76f1820-09dc-4539-9aa6-c40b5b868616">
+          <name>rounded</name>
+          <display>rounded</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>f24a1c76-4b97-4069-8330-7bf5fd5189c5</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="b07b04bf-7de8-40f5-925d-8b05d1f5df62" name="Border Radius Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+              <properties>
+                <property name="e01529a6-87c4-42c0-8c50-fe6c081bea45" display="Size" value="sm" isActive="true" />
+                <property name="27fe7795-c459-4c62-87b3-b30e33663663" display="Property" value="All" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="797a3a55-328f-4a55-b8a1-15d5d7620df7" type="Padding" typeId="399c57d2-fa0f-4ab6-898f-a78ad0bd4602">
+      <name>padding</name>
+      <display>padding</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>70bdb99a-3a15-4667-8aea-4b8e94affa32</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="350a2135-9d3e-4f72-90ef-982f3dcc871a" name="Padding Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="65093442-ed4c-41fa-aa6b-74af00c703e7" display="All" value="2" isActive="true" />
+            <property name="969c7a30-d382-4ab1-95f8-1811dae14027" display="Top" isActive="true" />
+            <property name="31d4b5ec-2d70-40cb-90da-5bbd6a43cd4c" display="Left" isActive="true" />
+            <property name="43f7cdd8-5f30-4fd7-8953-6d683e25d78b" display="Right" isActive="true" />
+            <property name="c4ff75d1-0bb4-4a96-9f18-5d9c84753aba" display="Bottom" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="34b7d2b3-1099-47ef-a30b-24e3e5ff3d39" type="Shadow" typeId="a9758e3e-6a68-4b04-be98-06ced343ff37">
+      <name>shadow</name>
+      <display>shadow</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>70bdb99a-3a15-4667-8aea-4b8e94affa32</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="7899a4cb-427f-4b47-b043-9aa9b134d846" name="Shadow Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="a8fb16de-60da-4b3a-804e-e02a4ec659c9" display="Size" value="sm" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="a3611160-79c0-48e2-a6dc-6e02c25c486d" type="Color" typeId="7b958105-c8de-47b3-900e-dc74b609d5a1">
+          <name>pink-300</name>
+          <display>pink-300: Accent</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="443d4844-d9e1-4458-96b5-737eb96a7f12">
+            <typeId>b846ac4f-d640-480d-a8d8-ff8679cd2b30</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>34b7d2b3-1099-47ef-a30b-24e3e5ff3d39</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

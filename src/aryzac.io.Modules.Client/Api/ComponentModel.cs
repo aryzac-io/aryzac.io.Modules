@@ -47,10 +47,10 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new ComponentEventModel(x))
             .ToList();
 
-        public IList<ComponentViewModel> Views => _element.ChildElements
+        public ComponentViewModel View => _element.ChildElements
             .GetElementsOfType(ComponentViewModel.SpecializationTypeId)
             .Select(x => new ComponentViewModel(x))
-            .ToList();
+            .SingleOrDefault();
 
         public IList<ComponentModelModel> Models => _element.ChildElements
             .GetElementsOfType(ComponentModelModel.SpecializationTypeId)

@@ -26,10 +26,18 @@
         </option>
         <option type="element">
           <text>Add Components</text>
-          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABHlJREFUeF7t3E9oFGcUAPD3zVqSlC3dtAiitA0ktSKUmGyyoZXgLMVDaQu2UA89FAQpPSjaEjzoQfCgB5U0VCi0HlR60VI8VXpom11ChE3cRQ+lCAldTFMExWwwZlOSzZNvk013d3Zmvuyb2WRm3pxyeO99M7953/zPCuCFJCBI2ZwMDEhsAgZkQKIAMZ07kAGJAsR07kAGJAoQ07kDGZAoQEznDmRAogAxXbkDf890vRFa0j4AEJ2A+KYQqBHHXktHELf1WPqkU/UaWUcJcHi8+7hAMejmignES/v6MkfdHMON2raAiVT0Kgj43I3BDTURB/W+zNcNGcuhQSwBh1PRw0LADw6NpVQGAS7GY+kBpeBNEGQJmBiLPgaAVzdgPc955ZhoCpgc630XYXl0A/BWhkRxVu+7c2rDxlcc2BRwOBU9IATcVKzjVthpPZY+41ZxJ+padGD3QQRx3YlBPFMD4S8UkAHAH+OxzK8q682Apkri+6cafvVRT3reCpIBrdvsDz2Wfo8BVeaiaQx+occyppdy3IH2uPf1WHqXWRgD2gPCogaR/T3p2VqhpoCJVPRTEHBDob7vQ1Bo++O947+tCzA5FsDLGLNWQDio96V/YsB65woD2suFtBbYse1jmH54EwrL+coEBrQGlHgdbUegpXkH5BemYSJ7qRKRAc0By/FKUQZErwHu2f2N/ZyziZibn4SJ7LeWUbXwaiIyoNHRCs+AWMh76yzsdgeq4JUjZqeuHXqn69YVz1zGuAm4HrwSWKHwLKstN3W1tsZz1Yib8lbOLcB68MrA7uLiUrwaMTCARLySowExEIAO4dVE9D2gw3gGRF8D/v3g8todBvnC0ligOJ19DRjSmou3Zy4uSV8DPsml4PXtn7nkh7MIId3XgPJW7pVIzAXEFbzW8N67vgeU7ecs4v94snYgAJ1DrMQLFCAd0YgXOMB6EREK8wAv7JXHvEDfC5c2fj3HRPl4/9+Hv5x4e+fQec88jeloo3/pm1/4p/h+w2xRQZR48vF+Pj/treeBLl24GcpaIa7hLUwDeO2JdKMAzY6JFXgyiAGtd0l5JxrwGFCtnyWifC9cPObJaVu+eK0D5Tta6iIRqk8iEsjq4YJ89GV4qQ4AzU1b/9wSevlRaZ0i4f546e/A3InIDZZn9/CL7dR9A5Fw/5obA9bByYB1oJWnMCAD2gvU+rSjocfAxHjP+4B4y35VnY9w671wQwFX/z846zyPfUVfAMrNTI5F7yBA1H6TnY3wEWD3JwjiZ2d57Kv5BrDYhePR7xDhS/vNdi7CV4CrU/kYAtC/elQ09h2g3G55UtlSEB8iyh+dgA4nf3Si2rVz99A+RWvTsIX/pnL3Jy/cKw94q32gs7nptQi1ttKFNHUQSn5ubgQp+au5yUi4Xy+vk5sbSQAAeecwIHHvMCADKgnwFFZiMg8KLuDM05GKg39dkELLVb8In5kb3QO4TD4Lt77UL09GxcX2l4vqWvkAJTEgcWczIAMSBYjp3IEMSBQgpnMHEgGfA7TK1lvN4UJYAAAAAElFTkSuQmCC" />
+          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABtBJREFUeF7tnG9sFEUUwN/cbYu2Vltqy7X8L6AUSK/Ggga+VFATA1eoRgIfMBiqMTGEYoxeywdPo7TEGNrExIQ/CUQSQGMqrTHGGIIxJUqRcAVBP4DFKi2tIP8O9Xq3Y97ilrtjZ3a2e9f29ma+3Ied92bm1/fmvXk7WwKy2SJAbElLYZAAbRqBBCgB2iRgU1xaoARok4BNcWmBEqBNAjbFpQVKgDYJ2BSXFigB2iRgU1zcAt89Md2V5V4OQL2UkjlAwWVz7GFxAnBUbfA2JkvfaOoRAujaFqwHCttTOjFKP1QbKjemdIwUKDcF6GoO7gWAF1IwtoFKul31V742OmMlZxQuQHdTsI4S2JmcoQS1EPhAfdP7umDvMe/GBehqDv4JAIWjPksKTemyJ7IBNp9a7AK1c9Th3Rlwq+r3bhnD8YWGZgJ0b+teRSltE9KSsk70LdVf+U7K1CdBMRtg88nVFMjBJIyRTirOAqUnXED2RRq8X4lMXAJkUSJ0h/p3ZDMEqm7xQEqAHDoU4DD1e5dJgCK+yOhDgLwc9VcwUzlpgeZwf1H93rlMT2c9cGdmEDHEocJQPvirrhk9ZFtgU/fzlNBPzP9Azu+hUvIUNFR8Yw2gtMBhXoSS1dGGik8zFuCCSTmQk+2GY703RuQuGQtwwaRcWOstAvzFNnAzDPuDg3D4/FVLIDMOYPF92VBX5YHHpuYZgjp9KaSBxF+RljEAc7Pc4CufCGu9xSJc4IfeG7DreL9mmdxkORP2QF95oeauCNFq2x8cgI6zVyA0FDUUdbQF4v62aXEpoNuyGu55aGW+uYWQm20MGOGhW3ecvXyXGkcCLCu4BzYs9AwHCCN4py/dgt1dfXD+r3+0x2iddYs8sLQsnwkbQbcevRi3PzoKoAZhoQeWzuJACIWhtTMeQiyx2/BLANMbVsMAs7urX4PvCIB6gKiZV8jc50LhKBzoHoR2Azc0AqW5/5JSKM7luP+5q9B26sqLPa8+tCdtE2l0OQwQvH3uQPcAtJ9hBwJeYKkpL4Q1FUXM/TFKachN4P1IWGmtnUnikshxXY1BV9u4ZDLgL6vh6WKnQCpiFpnRwmvmTYQ1FewUiAD0UAKbfaXK57q+cQsQra1lRRnTXTFAYPohmgybAdSf47gvVXlgESMJ1/oRqNUhjluA6FYbqjyG68a0pLXzD1EmI+rHGx8I7PWVKutvs2S0sa4H4p7Hcye0PEw3zE4RVumJRHmg8K1vilKd1gB1MIfPXYVdXf3MU4QoQJEoP6zLSQBxUXiKaD9zmXsc44EUifJx8ukKEI9ZeOZlNavlqsRyl5FejPLlxTkX8ia4p6e9Ba78+CctFzSLkmblKrNyF4KKjfJ7nnv4TEGOMs8RAPVFoPXULSyBmQUTmBaZWK4SKXcNhP4vup67ky87EqBODc/E2imFcxzDfDE0pHLLXXgM7Pj5suFpxtEAEaR+iuCVq3hBBPPKXcfYkdzxAHU4IuWqWJCJ5S4W5IwBqAMwK1fhPscrdyWCzDiAsYHmvadnxPHAqg1Wnq20jAWIkA6tmx/HasvXPZYLEBJgDEIJ0IrvSQuML27iScRqky4cQ0wCtGA+RvVACTBNAe5bPbcnb4L7Tj6UruUsq+Uqu2kMs9wlBrD7GQr0SwtGk9SueLOqsXqaoU6zclWs0EiCCJa71lYUcV7e07d9k7MCOA77Uy/8Plhx9ySVigVleK5tfGIa9/YAlvP3dw9y34tYAShS7gIgwUjYVa2/Hzb72PA4ADxqYd1J74rlKrzrx7oUhAPybleJAsSyPt6bYd3uohSuEUJbImGlJfblOv9z120nn6WUfJZ0KhYVipSr8L0IlqQSb5+aARS53YWvMSPEHagtIXd5pPkH103Bj4DAKxbXnJLu2t7kLbJ0u4oFEHXhtTj9+q/RhPuuhy9MzlNWLZ+SfZK1IFOAKOhqDm4CgJaUUBmBUrNyFarU3xvvrJ0TN8LWI7/B41Pv597uGgyF6fe911t3LPNsNpueEEBNiRZUlBXaP50AmJ3MfzphNknW8ydn5z+47pFJswruVdiXZywo/zeihn+8eLOt6bu+enhjfr+IqDhAEW1j1OeLi9F6VaUBQuCBEU+B0tbIkBJIvH1lps8RAHGRbb/SfCUrEgBCcLsRbgTg0JDLXW8UIESUOAagvti2PjojS422UICVfAAkCKpa75uadUQElK0gYmeAsZLt6B2qBperBffshDlcoBQCNVMUwxunVufrOAtMBND+e2Q9IRCgFPKNEmGrwBL7Ox6gXUBm8hKgGSGT5xKgBGiTgE1xaYESoE0CNsWlBUqANgnYFP8PJKanfsluS4IAAAAASUVORK5CYII=" />
           <specializationType>Components</specializationType>
           <specializationTypeId>c3b488e8-81fc-4b2d-8ef2-b2b032410784</specializationTypeId>
           <defaultName>components</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Commands</text>
+          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA8VJREFUeF7t3E9IFFEcB/Dvb2ZXhV3RCrpomlAQWEhUh6JDER3CVixod09REdElsuiUhzT6cwoTgsAuBUW7hlQE0SGqQ3WKECKim9S1g+WaobP7YkXFVWf37bw3+sb9efV9f7+Zj7/xze4OS+AfJQFSSnMYDKg4BAzIgIoCinGeQAZUFFCM8wQyoKKAYpwnkAEVBRTjPIEMqCigGJefwKGJZmvKaSegDUSbAViKvefiBHx0EtHLuuotZx0pQCuV6SJCn68HJuhONhk552sPH4qXBLTTmQcAjvvQe1FJAvqcRPTicvTS1aMooJ0aPw0S93Q1k6lDwC0nEb0ks9aENcUB05lfANYt94EScDMo/xNdAUOP/+wRlvVhufFm+xHEDSdR271S/WX7ugLa6fFOQDyVLeTHOiHoSi4ZuepHbV01iwCOxQFK62oUhDoC+EbAZyI8dOLRVzLHzIBuSkIMZCPRC4jR32KQDFh8zN5kE9EDDChzLbquoTPZRMT1Vo4nsASuAL7nEtEtbssYUGI6szRZj/ja30stdQdMjR0D0aBE/VW/hICDTiL6ujzAdOXdxrhOghDxbLL2CQN6vVYY0KvcTI4BGVBRQDHOE8iAigKKcZ5ABlQUUIzzBDKgooBiPOgT2Fqn7TN8T5JfR7PBfCmXbLKRbAp7Omn9IdETawj3Lqxr7NtZHQ0hnGoJ6XdQqih6Yw3hnvkljAV8tLsaEbvkgxNKHF7CsYZQwUEZCbi+hjCws9rL+fmesURue3tj1fBsIyMBt9ZZuLatyncMTw1yYn9sQ/gdA3rSA8CAXuVmcpUEmPrhFGglmzTs6pUE2Pn+XwHgs701iuNXYZcwAyrOCwMyoDcBXfeBPIHe/OdSDMiA3gR0XcLeupdIVdJ9IAP6IqBYlCeQAaUFeBeWplp64coCpsYPgcRLxXPwFNe1C68oIIYmmm0nO+JJQDGkC7D7y2TBkVzX8S637CaS72ylM58I2KHoUXZcF2DZjWUC5QDaqbGjIBqSqatzzaoBzKPY6bG7AJ3VCVSq1qoCnL6UBzPnSeB2qRPX9XuTAaU/1lyEkf/SCcc5PP2lE6BNOr90YmGvXWus+u7WqjZdfxCddaQ/WNfZtNxaL35O7YNFb8vN+b5eiP5YY7hrfh/znp0AYCIgAc+nJu0TR1poNPiAQvSDUHAifk2fEDRiIzc8/3GOQAMKgZMdjaH7foGVWzdQl7BpeHnswACaiBcYQFPxAgFoMp7xgKbjGQ0oiDaatNu67c5GbiLl3kqs5HoGVNRnQEXA/1bq3WB9yFYtAAAAAElFTkSuQmCC" />
+          <specializationType>Commands</specializationType>
+          <specializationTypeId>70e00433-885a-4280-917e-893dd8cd880b</specializationTypeId>
+          <defaultName>commands</defaultName>
           <allowMultiple>false</allowMultiple>
         </option>
         <option type="element">
@@ -41,12 +49,20 @@
           <allowMultiple>false</allowMultiple>
         </option>
         <option type="element">
-          <text>New Folder</text>
-          <icon type="UrlImagePath" source="./img/icons/uml/Folder_02_256x.png" />
-          <specializationType>Folder</specializationType>
-          <specializationTypeId>4d95d53a-8855-4f35-aa82-e312643f5c5f</specializationTypeId>
-          <defaultName>NewFolder</defaultName>
-          <allowMultiple>true</allowMultiple>
+          <text>Add Styles</text>
+          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABV5JREFUeF7tnF1oHFUUx8+ZzWxCNnRjQitiTbpJq2KxqVUfLApmkw2KBYNiHrJFtyJ+gZiIL+qD4IN9kioIgiI0mA1oESuKiiRbfVAfFIktKlYk1ietJTbgbkybnSN3ZcMyzp25s/fO7t3mzmvO+Z87vz33nHNnNotgLikCKOVtnMEAlEwCA9AAlCQg6W4y0ACUJCDpbjLQAJQkIOluMtAAlCQg6W4y0ACUJCDpLpyB6fxqP6Fzl0UwRIC7ABxLMvaGOyJ+uTCZeFaVXiN1hACmZ0tTgHQk4oW9Wsgmnog4hnL5QIAj+eIMAdyvPLKnIB0pZLueakwsNVF8Aabnig8BwRtqQgmqIL1UmOx6WtC66Wb+APPFcwDQ2+hVIsLhVqmJXIDpt0r7waIvGg2vGo8AXjyRTTzXrPiicbkAR+aK40TwnqhQFHZI8PzCwcQLUWir0uQCHJ4rTSDR26oCtYQOwY+E+K2FzuzCZNcnIms2ADmUEOD1zr87pz94BEt+IA1A3zTDQiHbOWIAiuxFng3Bw4WDCe4oZzIwEC79VMh2XcszMwADAQJY9lr3/ETPipcpfw7Ml+4DoHcE9C95EwTKLGS75kMB3JRjDDcVcKKQ7TxmANa9VwzAutH952gAbm6AfUkL+rYEPrqUhMR370visf4t1vduCwI60xJjTGZHG9x0hbI3CMpAI8ErLQEwu9tuagZyDylIh1oC4DO3xJVljUohQrpBe4CXJxAe3GOrvG9lWpkBG7UHeP02Cw4Mtim7aYVCn2cG7Nu1B6hzAxkdtKe0B6hzAxlLxY9qD1DhlgsldXWPBfdewy8drIGMpeKLBiAH623bY3DrVTEudNZAKoc8nsVmfxoTUDoqDcQA9NnU0zfb0NHmnV/sBMIaiPYA2QzYzt9FoWpaGONkBxud+IEJ6RBrINoD1PkEwhqI1gB1P4FUM1rbJhI0RoTZkoptNxqI1hkYNEYohiIsR0AzYwPxnPYZqOsJBIimM4Pxl7UH6DdGCKdLFIYIw5mU/ZnWAJPtAI/v0/MZYPUEojVANsBuSzTnHUimP8aNjQDfjQ7Ye2sTW9suHMXuE9H0Kx3uBqJ1Fxa5WdU2gaXD1UAMQNcnEDh7uhqIAegCGDR7uhuIlgDZEW60n3+Qnz9Thj+KpHr3VvT8Zk+vBqIlwKAsOPzVhUjgMdGwDURLgOwxOqtFXtfZIsGbJy9GArCeBqIlwMf22dDd7j1dnTpbhg9/KUcCsJ4G4gswPVu8ExA+imS1HFE2QLNt5Hex+vf17w78vOzAP+tytZBl3a4eC/ZsjQGrvX6XVwPxB5hf7Qdwfm0kQPYtrOx1Yi/RGTwG8eQ5gt9WHOFlhoFWFS079MMdO+O7vYIE/bPhNwBwo/DqJA2DGghP/vwawak/HWBbfGXt/1b1QKtV8TqBVP/uC3A4X7oHgd6V5CLs7tdAREVOLztw+i+WlWXh7Rmo7XECEQLIjNL54msA8GhgEAUGfg1EgXz9Eh4nEGGAzHAkX3qSgDYeIta/En9P9kUiVtCb+W1U1wrfJ6Tj1TdwoWtgrQP70Qkk5wBZMASEO1X+6IR7Yb0d2LH/ytj21GVWb8LGjqg+MC/d5VVaxJhzdGt7+8xwCs8HxW7OQ7egVdX8fX5pfdwhZxwBHwjhFta0kmk22MdFoNWKaw+wutgTS9S97lzMIWKOAIbCEvKwrxtaSwKsXfSnSxf2AsEUAo4DQDIETCXQWh6gC2YOqQLybg5I5dAuKYDVm/l4aXVHm9OWA6QcAC7WW9NCZHPFtGVqYNgba5S9AShJ2gA0ACUJSLqbDDQAJQlIupsMNAAlCUi6/wubwh48g5eLvgAAAABJRU5ErkJggg==" />
+          <specializationType>Styles</specializationType>
+          <specializationTypeId>8dc29833-ec92-42a2-9c4d-9fff45a5aa19</specializationTypeId>
+          <defaultName>styles</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Controls</text>
+          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABHlJREFUeF7t3E9oFGcUAPD3zVqSlC3dtAiitA0ktSKUmGyyoZXgLMVDaQu2UA89FAQpPSjaEjzoQfCgB5U0VCi0HlR60VI8VXpom11ChE3cRQ+lCAldTFMExWwwZlOSzZNvk013d3Zmvuyb2WRm3pxyeO99M7953/zPCuCFJCBI2ZwMDEhsAgZkQKIAMZ07kAGJAsR07kAGJAoQ07kDGZAoQEznDmRAogAxXbkDf890vRFa0j4AEJ2A+KYQqBHHXktHELf1WPqkU/UaWUcJcHi8+7hAMejmignES/v6MkfdHMON2raAiVT0Kgj43I3BDTURB/W+zNcNGcuhQSwBh1PRw0LADw6NpVQGAS7GY+kBpeBNEGQJmBiLPgaAVzdgPc955ZhoCpgc630XYXl0A/BWhkRxVu+7c2rDxlcc2BRwOBU9IATcVKzjVthpPZY+41ZxJ+padGD3QQRx3YlBPFMD4S8UkAHAH+OxzK8q682Apkri+6cafvVRT3reCpIBrdvsDz2Wfo8BVeaiaQx+occyppdy3IH2uPf1WHqXWRgD2gPCogaR/T3p2VqhpoCJVPRTEHBDob7vQ1Bo++O947+tCzA5FsDLGLNWQDio96V/YsB65woD2suFtBbYse1jmH54EwrL+coEBrQGlHgdbUegpXkH5BemYSJ7qRKRAc0By/FKUQZErwHu2f2N/ZyziZibn4SJ7LeWUbXwaiIyoNHRCs+AWMh76yzsdgeq4JUjZqeuHXqn69YVz1zGuAm4HrwSWKHwLKstN3W1tsZz1Yib8lbOLcB68MrA7uLiUrwaMTCARLySowExEIAO4dVE9D2gw3gGRF8D/v3g8todBvnC0ligOJ19DRjSmou3Zy4uSV8DPsml4PXtn7nkh7MIId3XgPJW7pVIzAXEFbzW8N67vgeU7ecs4v94snYgAJ1DrMQLFCAd0YgXOMB6EREK8wAv7JXHvEDfC5c2fj3HRPl4/9+Hv5x4e+fQec88jeloo3/pm1/4p/h+w2xRQZR48vF+Pj/treeBLl24GcpaIa7hLUwDeO2JdKMAzY6JFXgyiAGtd0l5JxrwGFCtnyWifC9cPObJaVu+eK0D5Tta6iIRqk8iEsjq4YJ89GV4qQ4AzU1b/9wSevlRaZ0i4f546e/A3InIDZZn9/CL7dR9A5Fw/5obA9bByYB1oJWnMCAD2gvU+rSjocfAxHjP+4B4y35VnY9w671wQwFX/z846zyPfUVfAMrNTI5F7yBA1H6TnY3wEWD3JwjiZ2d57Kv5BrDYhePR7xDhS/vNdi7CV4CrU/kYAtC/elQ09h2g3G55UtlSEB8iyh+dgA4nf3Si2rVz99A+RWvTsIX/pnL3Jy/cKw94q32gs7nptQi1ttKFNHUQSn5ubgQp+au5yUi4Xy+vk5sbSQAAeecwIHHvMCADKgnwFFZiMg8KLuDM05GKg39dkELLVb8In5kb3QO4TD4Lt77UL09GxcX2l4vqWvkAJTEgcWczIAMSBYjp3IEMSBQgpnMHEgGfA7TK1lvN4UJYAAAAAElFTkSuQmCC" />
+          <specializationType>Controls</specializationType>
+          <specializationTypeId>d9e346a6-70c1-4d47-b332-2316f9057dab</specializationTypeId>
+          <defaultName>controls</defaultName>
+          <allowMultiple>false</allowMultiple>
         </option>
         <option type="element">
           <text>New Enum</text>
@@ -64,21 +80,65 @@
           <defaultName>NewTypeDefinition</defaultName>
           <allowMultiple>true</allowMultiple>
         </option>
+        <option type="element">
+          <text>New Folder</text>
+          <icon type="UrlImagePath" source="./img/icons/uml/Folder_02_256x.png" />
+          <specializationType>Folder</specializationType>
+          <specializationTypeId>4d95d53a-8855-4f35-aa82-e312643f5c5f</specializationTypeId>
+          <defaultName>NewFolder</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
       </creationOptions>
       <scriptOptions />
       <typeOrder>
         <type order="0">Layouts</type>
         <type order="1">Pages</type>
         <type order="2">Components</type>
-        <type order="3">Service Proxies</type>
-        <type order="4">Folder</type>
-        <type order="5">Enum</type>
-        <type order="6">Type-Definition</type>
+        <type order="3">Commands</type>
+        <type order="4">Service Proxies</type>
+        <type order="5">Styles</type>
+        <type order="6">Controls</type>
+        <type order="7">Enum</type>
+        <type order="8">Type-Definition</type>
+        <type order="9">Folder</type>
       </typeOrder>
     </packageSetting>
   </packageSettings>
   <packageExtensions />
   <elementSettings>
+    <elementSetting type="Commands" typeId="70e00433-885a-4280-917e-893dd8cd880b">
+      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA8VJREFUeF7t3E9IFFEcB/Dvb2ZXhV3RCrpomlAQWEhUh6JDER3CVixod09REdElsuiUhzT6cwoTgsAuBUW7hlQE0SGqQ3WKECKim9S1g+WaobP7YkXFVWf37bw3+sb9efV9f7+Zj7/xze4OS+AfJQFSSnMYDKg4BAzIgIoCinGeQAZUFFCM8wQyoKKAYpwnkAEVBRTjPIEMqCigGJefwKGJZmvKaSegDUSbAViKvefiBHx0EtHLuuotZx0pQCuV6SJCn68HJuhONhk552sPH4qXBLTTmQcAjvvQe1FJAvqcRPTicvTS1aMooJ0aPw0S93Q1k6lDwC0nEb0ks9aENcUB05lfANYt94EScDMo/xNdAUOP/+wRlvVhufFm+xHEDSdR271S/WX7ugLa6fFOQDyVLeTHOiHoSi4ZuepHbV01iwCOxQFK62oUhDoC+EbAZyI8dOLRVzLHzIBuSkIMZCPRC4jR32KQDFh8zN5kE9EDDChzLbquoTPZRMT1Vo4nsASuAL7nEtEtbssYUGI6szRZj/ja30stdQdMjR0D0aBE/VW/hICDTiL6ujzAdOXdxrhOghDxbLL2CQN6vVYY0KvcTI4BGVBRQDHOE8iAigKKcZ5ABlQUUIzzBDKgooBiPOgT2Fqn7TN8T5JfR7PBfCmXbLKRbAp7Omn9IdETawj3Lqxr7NtZHQ0hnGoJ6XdQqih6Yw3hnvkljAV8tLsaEbvkgxNKHF7CsYZQwUEZCbi+hjCws9rL+fmesURue3tj1fBsIyMBt9ZZuLatyncMTw1yYn9sQ/gdA3rSA8CAXuVmcpUEmPrhFGglmzTs6pUE2Pn+XwHgs701iuNXYZcwAyrOCwMyoDcBXfeBPIHe/OdSDMiA3gR0XcLeupdIVdJ9IAP6IqBYlCeQAaUFeBeWplp64coCpsYPgcRLxXPwFNe1C68oIIYmmm0nO+JJQDGkC7D7y2TBkVzX8S637CaS72ylM58I2KHoUXZcF2DZjWUC5QDaqbGjIBqSqatzzaoBzKPY6bG7AJ3VCVSq1qoCnL6UBzPnSeB2qRPX9XuTAaU/1lyEkf/SCcc5PP2lE6BNOr90YmGvXWus+u7WqjZdfxCddaQ/WNfZtNxaL35O7YNFb8vN+b5eiP5YY7hrfh/znp0AYCIgAc+nJu0TR1poNPiAQvSDUHAifk2fEDRiIzc8/3GOQAMKgZMdjaH7foGVWzdQl7BpeHnswACaiBcYQFPxAgFoMp7xgKbjGQ0oiDaatNu67c5GbiLl3kqs5HoGVNRnQEXA/1bq3WB9yFYtAAAAAElFTkSuQmCC" />
+      <expandedIcon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABRVJREFUeF7tnF1oHGUUht8zs0ladtdGhN4kjbZWUFIJhXrhT8EqIhhTKzbZLZb6Q/EXaSkiai6Eoi1eaC34R3qjaMnONlKroCCCIrUXLZSi6I1aQrysmDQ7a2N2Z46skrpJNttv9juzmd399vqc933n2fPNzM58LMF8tAiQVrdphgGoOQQGoAGoSUCz3UygAahJQLPdTKABqElAs91MoAGoSUCz3UygAahJQLNdfQI/uXStVSj2E9AHohsAWJrel9sJOFVMJV6W0qunjhJAK+PuJcKhUIMxve2l48+F6hGC+BUB2o77IYBdIXgvkiTgUDGV2FcPLymPqgDtTH43iI9ImanoEPBGMZV4XqU2CjXVATruHwCuqXdQAg42yjlxSYCx0enb2LK+rze8OT8CHyimksPL5a/quyRA28lvA/i4qlAYdcz0ip+O7w9DW0pzaYCZ3CCIslJGEdW5BMIPYDrt+dab2LFyPGjOVgdYzmuGifb4Q/GRIBCrLOHcEEBOELFmqGXiZ/yh5Huqx2IALiZV8IrFG/Fw53kViAZgRUr0rpeKP6sHsDUuIhUZMfCzn0r0hgawZEDABRWDBq1xvVTifpXstS1h5iEvnTymYtDsNQag5jdsABqAmgQ0280EGoCaBDTba/stTDzoDSXHKnlbjvsSAfdq5op0u8W0r5COny2FFF/CtuNOAFgTaQJ64Yre3/FO7KK8PMCjU+vsWOw3vXxR76aTXiq+eS6l6ARamfyTRPx+1BHo5Fv4kFcUoO3kjwG8XSdg1HvJ928v7rjqlPwEMpOdzf8JoFMaQu8qsXf4NUX76aI/15f3Vsc7sYWK4gDbRvObfIvP1JRwiaZ0j410T5ukZM1amYkCMhPFz7xU8oFyEbElbGXdF4lxsOaECxq3dsXw+NqYlJyIzplJ78v9GzruCwWgnXW/BuNukaQAjt7agbh9xY0TUnbKOgNdsXmhZCbwC+6wc/mLADqUk1QpXL2CMLJJREoizjwNi/2N/d3t50TPgbGsew8zvpJKu2GVhVdvbpeSk9XxecvAmrZvZQE67usMvCCVtOUAWhn3LBE2GoBlBGynynvh8kf6xyc77dm2SSl4JR2pCcxMXL5d+zdeukfgqi69hKuCrpGqFMBtJ2fmJfj0jhU1JiprCwHgEYB26yf7X6HFAMo/vmodgJmp622K/So5fZLnwMgvYcvJPUUg5Y04qqBbZgJtJz8G8EOqYFTrWgNgKjEW1uOrlgBowRr3iU+rTlWQOimAQTyVa6VuY5hoPQEHlI0DFDYHwGrb24gHwfQ0gLsCcFEubX6AjJ0gfKxMJGBhCwDkERA9EZCLcrkUwOW9D8zmtoOp8h5A5vMgWqdMJGBhUwCMjU5vZsv6LuCxi5Q3BUCcuJC0Z1ZOixAJKCIFcPjH2XnOr0k85Va9jSk5207uF4DWBzx+7XIpgNpBKgkEA+juBPBRKEGqiDYNwNIxxjLuW0zYU0+ITQXwv6XsPgLgHQDxeoCMMkDl15qLQGX/6rLA/cToA/gmyT+dWOh1y9VW53Bve189vqygHsov1oMKS9Z//nvhTlj0jaSmiBbz4YHutr3lWtHbOwEgigAJOFGYtR99cC1NNT5A5sMgzDsQkQmrIMJM4zb8c+XbORoaIDMe29od+yAsYEF1G2oJRw1eCXbDAIwivIYBGFV4DQEwyvAiDzDq8CINkImui9LVdqmrcyQvIkFvJZaz3gDUpG8AagL8B70doW8eF1uRAAAAAElFTkSuQmCC" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder>
+        <type order="0">Command</type>
+      </typeOrder>
+      <creationOptions>
+        <option type="element">
+          <text>Add Command</text>
+          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIVJREFUOE/Nk9sRQDAQRU9K0IlSlBAl6EAHSkAHOqAEHTFrkhmGZIWf3K/9yJ7N3Yfhp4zLt0CfyBqA2gM2wMdvOUdOnoAJaIFV8RK0UAICqRRItAdvIGoTZbQdUASsqD+YgQaQeT8p2gMtWYBBwOKq+sry8KzL7uSzSF+OaQRs6gHdprED+MYqEW6CGKAAAAAASUVORK5CYII=" />
+          <specializationType>Command</specializationType>
+          <specializationTypeId>4a186cc2-552b-4438-89ff-02642035a61a</specializationTypeId>
+          <defaultName>NewCommand</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+      </creationOptions>
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings />
+    </elementSetting>
     <elementSetting type="Common Types" typeId="ab20e59e-d3df-43d1-91eb-4c6b9ba16365">
       <icon type="FontAwesome" source="file-o" />
       <saveAsOwnFile>true</saveAsOwnFile>
@@ -113,79 +173,87 @@
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
-          <typeOrder />
-          <creationOptions />
+          <typeOrder>
+            <type order="0">Navigation</type>
+            <type order="1">Operation</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Navigation</text>
+              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
+              <specializationType>Navigation</specializationType>
+              <specializationTypeId>e9c6d81b-1204-468b-889e-9490f37c223f</specializationTypeId>
+              <defaultName>[navigation]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Operation</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
+              <specializationType>Operation</specializationType>
+              <specializationTypeId>fd5dcb2b-3db4-4cc9-a551-0354d3cb3c01</specializationTypeId>
+              <defaultName>[operation]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
-          <childElementSettings />
-        </childElementSetting>
-        <childElementSetting type="Action" typeId="90af522a-f9b0-4cb4-a6b2-048910b98f6d">
-          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOBJREFUOE+9k+0NAVEQRc92QAdUgA7ogAoogQ7oQAd0QAd0QAk6QAXkbGaTXV9vRWL+vLzJzp1z581m/BhZqf4IdL7QuwDNssANKN9TWvn3fxFoARugG0gnoA1ooVGHYA1YNA+BLWCu4flKQG9F9IAd4KnIEFgGjQSVob0aol21MImOh7hbu5DqE8EAEFfvdi+HOUn6n2Ygrp09H4sVNn98t0h21Pc+lusa6NpxJtK5eLUWp3gFu1o8i1fIqVKb51OdgRGweiyuIzAFxoFf6VwMJUXgEPWtXy08RUog9UNxB1bPMxGCt2XbAAAAAElFTkSuQmCC" />
-          <saveAsOwnFile>false</saveAsOwnFile>
-          <allowRename>true</allowRename>
-          <allowAbstract>false</allowAbstract>
-          <allowStatic>false</allowStatic>
-          <allowGenericTypes>false</allowGenericTypes>
-          <allowMapping>false</allowMapping>
-          <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
-          <allowFindInView>false</allowFindInView>
-          <allowTypeReference>true</allowTypeReference>
-          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
-          <allowSetValue>false</allowSetValue>
-          <typeReferenceSetting>
-            <isRequired>true</isRequired>
-            <targetTypes>
-              <type>Command</type>
-              <type>Navigation</type>
-            </targetTypes>
-            <allowIsNavigable>true</allowIsNavigable>
-            <allowIsNullable>true</allowIsNullable>
-            <allowIsCollection>true</allowIsCollection>
-            <isNavigableDefault>true</isNavigableDefault>
-            <isNullableDefault>false</isNullableDefault>
-            <isCollectionDefault>false</isCollectionDefault>
-          </typeReferenceSetting>
-          <typeOrder />
-          <creationOptions />
-          <scriptOptions />
-          <mappingOptions />
-          <mappingSettings />
-          <childElementSettings />
-        </childElementSetting>
-        <childElementSetting type="Navigation" typeId="e9c6d81b-1204-468b-889e-9490f37c223f">
-          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
-          <saveAsOwnFile>false</saveAsOwnFile>
-          <allowRename>true</allowRename>
-          <allowAbstract>false</allowAbstract>
-          <allowStatic>false</allowStatic>
-          <allowGenericTypes>false</allowGenericTypes>
-          <allowMapping>false</allowMapping>
-          <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
-          <allowFindInView>false</allowFindInView>
-          <allowTypeReference>true</allowTypeReference>
-          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
-          <allowSetValue>false</allowSetValue>
-          <typeReferenceSetting>
-            <isRequired>true</isRequired>
-            <targetTypes>
-              <type>Page</type>
-            </targetTypes>
-            <allowIsNavigable>true</allowIsNavigable>
-            <allowIsNullable>true</allowIsNullable>
-            <allowIsCollection>true</allowIsCollection>
-            <isNavigableDefault>true</isNavigableDefault>
-            <isNullableDefault>false</isNullableDefault>
-            <isCollectionDefault>false</isCollectionDefault>
-          </typeReferenceSetting>
-          <typeOrder />
-          <creationOptions />
-          <scriptOptions />
-          <mappingOptions />
-          <mappingSettings />
-          <childElementSettings />
+          <childElementSettings>
+            <childElementSetting type="Navigation" typeId="e9c6d81b-1204-468b-889e-9490f37c223f">
+              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>true</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeReferenceSetting>
+                <isRequired>true</isRequired>
+                <targetTypes>
+                  <type>Page</type>
+                </targetTypes>
+                <allowIsNavigable>true</allowIsNavigable>
+                <allowIsNullable>true</allowIsNullable>
+                <allowIsCollection>true</allowIsCollection>
+                <isNavigableDefault>true</isNavigableDefault>
+                <isNullableDefault>false</isNullableDefault>
+                <isCollectionDefault>false</isCollectionDefault>
+              </typeReferenceSetting>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Operation" typeId="fd5dcb2b-3db4-4cc9-a551-0354d3cb3c01">
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+          </childElementSettings>
         </childElementSetting>
         <childElementSetting type="Component Reference" typeId="f798993a-4652-4aef-94f7-cda1f8469e59">
           <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP1JREFUOE+1k9ERAUEQRJ8MZIAMZEAIRIAIEIETgRMBIlAyIAMZIAMhqFYzW1Nbt/ixP1c129fT0z3b4vMZ2vW5BGsVLrrADujZ/Q2YAfccnxO0gTmwBGqgsh/0XQAbYAs8nSgSTA1wMnACGVjkIh1Zk4PqTuDs69C1NLbUrFylE6gow/rA0S6bFGiEMXAFZGwVCdRREqUmKlJdDeSN5nfMu54TuGlKYQ90bI4HII88hWRuicDnVzcdKYrnZ4IY438JJHFi7se1bVKgtJSG9qDOF0kzxxgjgRbJY1RDmZwWyecTKMYYG8QYG1c5muQxDqx4yWJM2NJrdMDX5/wCqc8/EcFEmKgAAAAASUVORK5CYII=" />
@@ -220,11 +288,44 @@
           <mappingSettings />
           <childElementSettings />
         </childElementSetting>
+        <childElementSetting type="Command Reference" typeId="6884ef62-13c6-40ec-bc6a-aa15b5001bf2">
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEuNSAzTDMgMS41aDE4TDIyLjUgM3YxOEwyMSAyMi41SDNMMS41IDIxek0zIDN2MThoMThWM3oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGQ9Ik03LjA2IDcuNUw2IDguNTZsNC4yNDMgNC4yNDNMNiAxNy4wNDZsMS4wNiAxLjA2TDEyIDEzLjE2OHYtLjcyOHptNC45NCA5aDZWMThoLTZ6Ii8+PC9nPjwvc3ZnPg==" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>true</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeReferenceSetting>
+            <isRequired>true</isRequired>
+            <targetTypes>
+              <type>Command</type>
+            </targetTypes>
+            <allowIsNavigable>true</allowIsNavigable>
+            <allowIsNullable>true</allowIsNullable>
+            <allowIsCollection>true</allowIsCollection>
+            <isNavigableDefault>true</isNavigableDefault>
+            <isNullableDefault>false</isNullableDefault>
+            <isCollectionDefault>false</isCollectionDefault>
+          </typeReferenceSetting>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
       </childElementSettings>
     </elementSetting>
     <elementSetting type="Components" typeId="c3b488e8-81fc-4b2d-8ef2-b2b032410784">
-      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABHlJREFUeF7t3E9oFGcUAPD3zVqSlC3dtAiitA0ktSKUmGyyoZXgLMVDaQu2UA89FAQpPSjaEjzoQfCgB5U0VCi0HlR60VI8VXpom11ChE3cRQ+lCAldTFMExWwwZlOSzZNvk013d3Zmvuyb2WRm3pxyeO99M7953/zPCuCFJCBI2ZwMDEhsAgZkQKIAMZ07kAGJAsR07kAGJAoQ07kDGZAoQEznDmRAogAxXbkDf890vRFa0j4AEJ2A+KYQqBHHXktHELf1WPqkU/UaWUcJcHi8+7hAMejmignES/v6MkfdHMON2raAiVT0Kgj43I3BDTURB/W+zNcNGcuhQSwBh1PRw0LADw6NpVQGAS7GY+kBpeBNEGQJmBiLPgaAVzdgPc955ZhoCpgc630XYXl0A/BWhkRxVu+7c2rDxlcc2BRwOBU9IATcVKzjVthpPZY+41ZxJ+padGD3QQRx3YlBPFMD4S8UkAHAH+OxzK8q682Apkri+6cafvVRT3reCpIBrdvsDz2Wfo8BVeaiaQx+occyppdy3IH2uPf1WHqXWRgD2gPCogaR/T3p2VqhpoCJVPRTEHBDob7vQ1Bo++O947+tCzA5FsDLGLNWQDio96V/YsB65woD2suFtBbYse1jmH54EwrL+coEBrQGlHgdbUegpXkH5BemYSJ7qRKRAc0By/FKUQZErwHu2f2N/ZyziZibn4SJ7LeWUbXwaiIyoNHRCs+AWMh76yzsdgeq4JUjZqeuHXqn69YVz1zGuAm4HrwSWKHwLKstN3W1tsZz1Yib8lbOLcB68MrA7uLiUrwaMTCARLySowExEIAO4dVE9D2gw3gGRF8D/v3g8todBvnC0ligOJ19DRjSmou3Zy4uSV8DPsml4PXtn7nkh7MIId3XgPJW7pVIzAXEFbzW8N67vgeU7ecs4v94snYgAJ1DrMQLFCAd0YgXOMB6EREK8wAv7JXHvEDfC5c2fj3HRPl4/9+Hv5x4e+fQec88jeloo3/pm1/4p/h+w2xRQZR48vF+Pj/treeBLl24GcpaIa7hLUwDeO2JdKMAzY6JFXgyiAGtd0l5JxrwGFCtnyWifC9cPObJaVu+eK0D5Tta6iIRqk8iEsjq4YJ89GV4qQ4AzU1b/9wSevlRaZ0i4f546e/A3InIDZZn9/CL7dR9A5Fw/5obA9bByYB1oJWnMCAD2gvU+rSjocfAxHjP+4B4y35VnY9w671wQwFX/z846zyPfUVfAMrNTI5F7yBA1H6TnY3wEWD3JwjiZ2d57Kv5BrDYhePR7xDhS/vNdi7CV4CrU/kYAtC/elQ09h2g3G55UtlSEB8iyh+dgA4nf3Si2rVz99A+RWvTsIX/pnL3Jy/cKw94q32gs7nptQi1ttKFNHUQSn5ubgQp+au5yUi4Xy+vk5sbSQAAeecwIHHvMCADKgnwFFZiMg8KLuDM05GKg39dkELLVb8In5kb3QO4TD4Lt77UL09GxcX2l4vqWvkAJTEgcWczIAMSBYjp3IEMSBQgpnMHEgGfA7TK1lvN4UJYAAAAAElFTkSuQmCC" />
-      <expandedIcon type="UrlImagePath" source="data:image/png;base64,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" />
+      <icon type="UrlImagePath" source="data:image/png;base64,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" />
+      <expandedIcon type="UrlImagePath" source="data:image/png;base64,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" />
       <saveAsOwnFile>true</saveAsOwnFile>
       <allowRename>true</allowRename>
       <allowAbstract>false</allowAbstract>
@@ -325,8 +426,8 @@
               <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGpJREFUOE+1klEOgDAIQ99uOk+mnlQzEwwuQ1CUT7K+dC2F5JSkHgFUYH4IW4BJABucsCjn0PSAtoxM05kALxdx+4+DiH15E3KgM9JwMwPLgW7pNoM0oK/xsy+MnF1CfHPKK1C9o3FrTQN2kWUkEXqsKc4AAAAASUVORK5CYII=" />
               <specializationType>Component View</specializationType>
               <specializationTypeId>2b961538-d4dd-40a0-af84-22f25106f10f</specializationTypeId>
-              <defaultName>NewComponentView</defaultName>
-              <allowMultiple>true</allowMultiple>
+              <defaultName>[view]</defaultName>
+              <allowMultiple>false</allowMultiple>
             </option>
             <option type="element">
               <text>Add Model</text>
@@ -442,36 +543,12 @@
               <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
               <allowSetValue>false</allowSetValue>
               <typeOrder>
-                <type order="0">Read Only View</type>
-                <type order="1">Form View</type>
-                <type order="2">List View</type>
-                <type order="3">Form Definition</type>
+                <type order="0">Form Definition</type>
+                <type order="1">Container</type>
+                <type order="2">Card</type>
+                <type order="3">Dialog</type>
               </typeOrder>
               <creationOptions>
-                <option type="element">
-                  <text>Read Only</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJBJREFUOE/Fk8ENgDAMA90N2AhGggmAzcpkIEsEWSFCrfIgH1BbXx0TCpJVknoYYAIwdsIOANUAJ4A9ABDMqsHeDGBQQNTOdgvtqRxeWjyAi1be0Sp71IUA77TbAQXmgiFpBhoy3YUOtFcGpwB7p0u76JVBuoV/Q4y+9dcgLTpIPKghtUw1Q35GuUUQnkn/jRdfCSkRSytkjgAAAABJRU5ErkJggg==" />
-                  <specializationType>Read Only View</specializationType>
-                  <specializationTypeId>73d5e9ca-61b4-4bf8-b2e4-f20babfaf649</specializationTypeId>
-                  <defaultName>[read-only]</defaultName>
-                  <allowMultiple>false</allowMultiple>
-                </option>
-                <option type="element">
-                  <text>Form</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJ1JREFUOE+tk9ENgzAMRB8bMAobdAXYoCPABG036CiwQUdhE9BVsRQRR6oL/nIU+8l3iRtORpP6P8AtyJqBwQAbYPmvnG/P5YAeeAAtMAEasxbuBCtwT4An0KVu5WqweKVzIcEAKnwfAPkkBiwAkqBLxQjodUISasWeN64HnlZBPW+qgKPWHJB7E/oHnjchgOfNtYB/lmkB+ugCFVJ2kJcyEbEWxRMAAAAASUVORK5CYII=" />
-                  <specializationType>Form View</specializationType>
-                  <specializationTypeId>541d8a23-a462-4ceb-b6b0-2a4184d13e0f</specializationTypeId>
-                  <defaultName>[form]</defaultName>
-                  <allowMultiple>false</allowMultiple>
-                </option>
-                <option type="element">
-                  <text>List</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFNJREFUOE9jZKAQMFKonwFmwAEGBgZ7JMM2MDAwBBJjOMyA/wwMcMNA+tD5OM0ixgCQYbgAIzEG4PUJrjDYyMDAEEBKGBCjFqua0WhkGI1GYMoAABKqFhEfpg7TAAAAAElFTkSuQmCC" />
-                  <specializationType>List View</specializationType>
-                  <specializationTypeId>5ff157b4-b0d7-488f-89a7-3bebce466adb</specializationTypeId>
-                  <defaultName>[list]</defaultName>
-                  <allowMultiple>false</allowMultiple>
-                </option>
                 <option type="element">
                   <text>Add Form Definition</text>
                   <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGpJREFUOE+1klEOgDAIQ99uOk+mnlQzEwwuQ1CUT7K+dC2F5JSkHgFUYH4IW4BJABucsCjn0PSAtoxM05kALxdx+4+DiH15E3KgM9JwMwPLgW7pNoM0oK/xsy+MnF1CfHPKK1C9o3FrTQN2kWUkEXqsKc4AAAAASUVORK5CYII=" />
@@ -480,225 +557,35 @@
                   <defaultName>NewFormDefinition</defaultName>
                   <allowMultiple>true</allowMultiple>
                 </option>
+                <option type="element">
+                  <text>Add Container</text>
+                  <icon type="FontAwesome" source="file-o" />
+                  <specializationType>Container</specializationType>
+                  <specializationTypeId>b0b5d813-91c5-4891-a32e-cf7cea184759</specializationTypeId>
+                  <defaultName>NewContainer</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
+                <option type="element">
+                  <text>Add Card</text>
+                  <icon type="FontAwesome" source="file-o" />
+                  <specializationType>Card</specializationType>
+                  <specializationTypeId>86e91725-f6c0-41ef-baea-353bdce84252</specializationTypeId>
+                  <defaultName>NewCard</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
+                <option type="element">
+                  <text>Add Dialog</text>
+                  <icon type="FontAwesome" source="file-o" />
+                  <specializationType>Dialog</specializationType>
+                  <specializationTypeId>4dfb2d6b-9396-4e1c-a681-c5336de624be</specializationTypeId>
+                  <defaultName>NewDialog</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
               </creationOptions>
               <scriptOptions />
               <mappingOptions />
               <mappingSettings />
-              <childElementSettings>
-                <childElementSetting type="Read Only View" typeId="73d5e9ca-61b4-4bf8-b2e4-f20babfaf649">
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJBJREFUOE/Fk8ENgDAMA90N2AhGggmAzcpkIEsEWSFCrfIgH1BbXx0TCpJVknoYYAIwdsIOANUAJ4A9ABDMqsHeDGBQQNTOdgvtqRxeWjyAi1be0Sp71IUA77TbAQXmgiFpBhoy3YUOtFcGpwB7p0u76JVBuoV/Q4y+9dcgLTpIPKghtUw1Q35GuUUQnkn/jRdfCSkRSytkjgAAAABJRU5ErkJggg==" />
-                  <saveAsOwnFile>false</saveAsOwnFile>
-                  <allowRename>true</allowRename>
-                  <allowAbstract>false</allowAbstract>
-                  <allowStatic>false</allowStatic>
-                  <allowGenericTypes>false</allowGenericTypes>
-                  <allowMapping>false</allowMapping>
-                  <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
-                  <allowFindInView>false</allowFindInView>
-                  <allowTypeReference>true</allowTypeReference>
-                  <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
-                  <allowSetValue>false</allowSetValue>
-                  <typeReferenceSetting>
-                    <isRequired>true</isRequired>
-                    <targetTypes>
-                      <type>Form Definition</type>
-                    </targetTypes>
-                    <allowIsNavigable>true</allowIsNavigable>
-                    <allowIsNullable>true</allowIsNullable>
-                    <allowIsCollection>true</allowIsCollection>
-                    <isNavigableDefault>true</isNavigableDefault>
-                    <isNullableDefault>false</isNullableDefault>
-                    <isCollectionDefault>false</isCollectionDefault>
-                  </typeReferenceSetting>
-                  <typeOrder />
-                  <creationOptions />
-                  <scriptOptions />
-                  <mappingOptions />
-                  <mappingSettings />
-                  <childElementSettings />
-                </childElementSetting>
-                <childElementSetting type="Form View" typeId="541d8a23-a462-4ceb-b6b0-2a4184d13e0f">
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJ1JREFUOE+tk9ENgzAMRB8bMAobdAXYoCPABG036CiwQUdhE9BVsRQRR6oL/nIU+8l3iRtORpP6P8AtyJqBwQAbYPmvnG/P5YAeeAAtMAEasxbuBCtwT4An0KVu5WqweKVzIcEAKnwfAPkkBiwAkqBLxQjodUISasWeN64HnlZBPW+qgKPWHJB7E/oHnjchgOfNtYB/lmkB+ugCFVJ2kJcyEbEWxRMAAAAASUVORK5CYII=" />
-                  <saveAsOwnFile>false</saveAsOwnFile>
-                  <allowRename>true</allowRename>
-                  <allowAbstract>false</allowAbstract>
-                  <allowStatic>false</allowStatic>
-                  <allowGenericTypes>false</allowGenericTypes>
-                  <allowMapping>false</allowMapping>
-                  <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
-                  <allowFindInView>false</allowFindInView>
-                  <allowTypeReference>true</allowTypeReference>
-                  <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
-                  <allowSetValue>false</allowSetValue>
-                  <typeReferenceSetting>
-                    <isRequired>true</isRequired>
-                    <targetTypes>
-                      <type>Form Definition</type>
-                    </targetTypes>
-                    <allowIsNavigable>true</allowIsNavigable>
-                    <allowIsNullable>true</allowIsNullable>
-                    <allowIsCollection>true</allowIsCollection>
-                    <isNavigableDefault>true</isNavigableDefault>
-                    <isNullableDefault>false</isNullableDefault>
-                    <isCollectionDefault>false</isCollectionDefault>
-                  </typeReferenceSetting>
-                  <typeOrder />
-                  <creationOptions />
-                  <scriptOptions />
-                  <mappingOptions />
-                  <mappingSettings />
-                  <childElementSettings />
-                </childElementSetting>
-                <childElementSetting type="List View" typeId="5ff157b4-b0d7-488f-89a7-3bebce466adb">
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFNJREFUOE9jZKAQMFKonwFmwAEGBgZ7JMM2MDAwBBJjOMyA/wwMcMNA+tD5OM0ixgCQYbgAIzEG4PUJrjDYyMDAEEBKGBCjFqua0WhkGI1GYMoAABKqFhEfpg7TAAAAAElFTkSuQmCC" />
-                  <saveAsOwnFile>false</saveAsOwnFile>
-                  <allowRename>true</allowRename>
-                  <allowAbstract>false</allowAbstract>
-                  <allowStatic>false</allowStatic>
-                  <allowGenericTypes>false</allowGenericTypes>
-                  <allowMapping>false</allowMapping>
-                  <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
-                  <allowFindInView>false</allowFindInView>
-                  <allowTypeReference>false</allowTypeReference>
-                  <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
-                  <allowSetValue>false</allowSetValue>
-                  <typeOrder>
-                    <type order="0">Table</type>
-                    <type order="1">List</type>
-                    <type order="2">Grid</type>
-                  </typeOrder>
-                  <creationOptions>
-                    <option type="element">
-                      <text>Add Table</text>
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIdJREFUOE/Fk8sNgCAQRB8d2JF2op2IHWAn2oF2ZAlmE9GVEIVwYC5cZoeZ/RgKYa76BugBeVMxA4cXsEAHbInVwl0ApwWkVoRS4HlWC7SZDnb58C+CWBWE0Xzcl0Aswm01yBWNUF9gTGm/4kxhE+tHKHYQW6SvPVj1KssRDZnH5PQxZQ7goZ8UeSgRK1K7TwAAAABJRU5ErkJggg==" />
-                      <specializationType>Table</specializationType>
-                      <specializationTypeId>36c5662a-1fc9-43c4-8d5f-8202ee07fb1b</specializationTypeId>
-                      <defaultName>[table view]</defaultName>
-                      <allowMultiple>false</allowMultiple>
-                    </option>
-                    <option type="element">
-                      <text>Add List</text>
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFNJREFUOE9jZKAQMFKonwFmwAEGBgZ7JMM2MDAwBBJjOMyA/wwMcMNA+tD5OM0ixgCQYbgAIzEG4PUJrjDYyMDAEEBKGBCjFqua0WhkGI1GYMoAABKqFhEfpg7TAAAAAElFTkSuQmCC" />
-                      <specializationType>List</specializationType>
-                      <specializationTypeId>bfb15c7f-0686-4ebe-a874-1cbce5ee55b2</specializationTypeId>
-                      <defaultName>[list view]</defaultName>
-                      <allowMultiple>false</allowMultiple>
-                    </option>
-                    <option type="element">
-                      <text>Add Grid</text>
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAElJREFUOE9jZKAQMFKonwHZgAMMDAz2SAaC+I5QPk45ZAP+MzCgGIjMxyk3uAxA9+dBBgYGBxxhAJejaiyQFaOj0Yia8oZoNAIAHocoEbZIFZYAAAAASUVORK5CYII=" />
-                      <specializationType>Grid</specializationType>
-                      <specializationTypeId>11a0e3ca-d9d2-4e0f-a0d5-48766140fa10</specializationTypeId>
-                      <defaultName>[grid view]</defaultName>
-                      <allowMultiple>false</allowMultiple>
-                    </option>
-                  </creationOptions>
-                  <scriptOptions />
-                  <mappingOptions />
-                  <mappingSettings />
-                  <childElementSettings>
-                    <childElementSetting type="Table" typeId="36c5662a-1fc9-43c4-8d5f-8202ee07fb1b">
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIdJREFUOE/Fk8sNgCAQRB8d2JF2op2IHWAn2oF2ZAlmE9GVEIVwYC5cZoeZ/RgKYa76BugBeVMxA4cXsEAHbInVwl0ApwWkVoRS4HlWC7SZDnb58C+CWBWE0Xzcl0Aswm01yBWNUF9gTGm/4kxhE+tHKHYQW6SvPVj1KssRDZnH5PQxZQ7goZ8UeSgRK1K7TwAAAABJRU5ErkJggg==" />
-                      <saveAsOwnFile>false</saveAsOwnFile>
-                      <allowRename>true</allowRename>
-                      <allowAbstract>false</allowAbstract>
-                      <allowStatic>false</allowStatic>
-                      <allowGenericTypes>false</allowGenericTypes>
-                      <allowMapping>false</allowMapping>
-                      <allowSorting>true</allowSorting>
-                      <sortChildren>by-type-then-by-name</sortChildren>
-                      <allowFindInView>false</allowFindInView>
-                      <allowTypeReference>false</allowTypeReference>
-                      <allowConvertToType p12:nil="true" xmlns:p12="http://www.w3.org/2001/XMLSchema-instance" />
-                      <allowSetValue>false</allowSetValue>
-                      <typeOrder>
-                        <type order="0">Table Column</type>
-                      </typeOrder>
-                      <creationOptions>
-                        <option type="element">
-                          <text>Add Column</text>
-                          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAE1JREFUOE9jZKAQMFKonwHdgP8MDHCxAwwMDPZQC0BsRygbWQ1eA5AV4mKPGoAU4rDYJCbgRmOBgYHoMEBOygcZGBgciEnKJOctinMjAF+DMBHGg+acAAAAAElFTkSuQmCC" />
-                          <specializationType>Table Column</specializationType>
-                          <specializationTypeId>8d090abe-842a-4d68-a2ff-f4fcc3986996</specializationTypeId>
-                          <defaultName>NewTableColumn</defaultName>
-                          <allowMultiple>true</allowMultiple>
-                        </option>
-                      </creationOptions>
-                      <scriptOptions />
-                      <mappingOptions />
-                      <mappingSettings />
-                      <childElementSettings>
-                        <childElementSetting type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
-                          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAE1JREFUOE9jZKAQMFKonwHdgP8MDHCxAwwMDPZQC0BsRygbWQ1eA5AV4mKPGoAU4rDYJCbgRmOBgYHoMEBOygcZGBgciEnKJOctinMjAF+DMBHGg+acAAAAAElFTkSuQmCC" />
-                          <saveAsOwnFile>false</saveAsOwnFile>
-                          <allowRename>true</allowRename>
-                          <allowAbstract>false</allowAbstract>
-                          <allowStatic>false</allowStatic>
-                          <allowGenericTypes>false</allowGenericTypes>
-                          <allowMapping>false</allowMapping>
-                          <allowSorting>true</allowSorting>
-                          <sortChildren>by-type-then-by-name</sortChildren>
-                          <allowFindInView>false</allowFindInView>
-                          <allowTypeReference>false</allowTypeReference>
-                          <allowConvertToType p14:nil="true" xmlns:p14="http://www.w3.org/2001/XMLSchema-instance" />
-                          <allowSetValue>false</allowSetValue>
-                          <typeOrder />
-                          <creationOptions />
-                          <scriptOptions />
-                          <mappingOptions />
-                          <mappingSettings />
-                          <childElementSettings />
-                        </childElementSetting>
-                      </childElementSettings>
-                    </childElementSetting>
-                    <childElementSetting type="List" typeId="bfb15c7f-0686-4ebe-a874-1cbce5ee55b2">
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFNJREFUOE9jZKAQMFKonwFmwAEGBgZ7JMM2MDAwBBJjOMyA/wwMcMNA+tD5OM0ixgCQYbgAIzEG4PUJrjDYyMDAEEBKGBCjFqua0WhkGI1GYMoAABKqFhEfpg7TAAAAAElFTkSuQmCC" />
-                      <saveAsOwnFile>false</saveAsOwnFile>
-                      <allowRename>true</allowRename>
-                      <allowAbstract>false</allowAbstract>
-                      <allowStatic>false</allowStatic>
-                      <allowGenericTypes>false</allowGenericTypes>
-                      <allowMapping>false</allowMapping>
-                      <allowSorting>true</allowSorting>
-                      <sortChildren>by-type-then-by-name</sortChildren>
-                      <allowFindInView>false</allowFindInView>
-                      <allowTypeReference>false</allowTypeReference>
-                      <allowConvertToType p12:nil="true" xmlns:p12="http://www.w3.org/2001/XMLSchema-instance" />
-                      <allowSetValue>false</allowSetValue>
-                      <typeOrder />
-                      <creationOptions />
-                      <scriptOptions />
-                      <mappingOptions />
-                      <mappingSettings />
-                      <childElementSettings />
-                    </childElementSetting>
-                    <childElementSetting type="Grid" typeId="11a0e3ca-d9d2-4e0f-a0d5-48766140fa10">
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAElJREFUOE9jZKAQMFKonwHZgAMMDAz2SAaC+I5QPk45ZAP+MzCgGIjMxyk3uAxA9+dBBgYGBxxhAJejaiyQFaOj0Yia8oZoNAIAHocoEbZIFZYAAAAASUVORK5CYII=" />
-                      <saveAsOwnFile>false</saveAsOwnFile>
-                      <allowRename>true</allowRename>
-                      <allowAbstract>false</allowAbstract>
-                      <allowStatic>false</allowStatic>
-                      <allowGenericTypes>false</allowGenericTypes>
-                      <allowMapping>false</allowMapping>
-                      <allowSorting>true</allowSorting>
-                      <sortChildren>by-type-then-by-name</sortChildren>
-                      <allowFindInView>false</allowFindInView>
-                      <allowTypeReference>false</allowTypeReference>
-                      <allowConvertToType p12:nil="true" xmlns:p12="http://www.w3.org/2001/XMLSchema-instance" />
-                      <allowSetValue>false</allowSetValue>
-                      <typeOrder />
-                      <creationOptions />
-                      <scriptOptions />
-                      <mappingOptions />
-                      <mappingSettings />
-                      <childElementSettings />
-                    </childElementSetting>
-                  </childElementSettings>
-                </childElementSetting>
-              </childElementSettings>
+              <childElementSettings />
             </childElementSetting>
             <childElementSetting type="Component Model" typeId="f51a8831-0f7a-48a3-b3c5-604818cea9a4">
               <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAKVJREFUOE/t0+ENQUEQBODvdaAFFVACJagAHShBCTqgBB2gAnSgBDqQlSe5vNzdS/jhj/15tzuZ2Z1pfFlNZn6AESadvyOuuKfvKUAMbjHFBTGQVgCOccDyDZQCrDHHsEfVDTtEvy7AAsHkXGHwqAEE6KalmttBSFu1DLMMYnmzHgn7dkd/CYUz/vYKYaBwWNy/ZqQTwnCvTJTCFJ4vGakYpo+C/QS96jcRRC2oGgAAAABJRU5ErkJggg==" />
@@ -721,7 +608,6 @@
                   <type>Type-Definition</type>
                   <type>Enum</type>
                   <type>Model Definition</type>
-                  <type>Form Definition</type>
                 </targetTypes>
                 <allowIsNavigable>true</allowIsNavigable>
                 <allowIsNullable>true</allowIsNullable>
@@ -748,15 +634,24 @@
               <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
               <allowSetValue>false</allowSetValue>
               <typeOrder>
-                <type order="0">Action</type>
+                <type order="0">Command Reference</type>
+                <type order="1">Command</type>
               </typeOrder>
               <creationOptions>
                 <option type="element">
-                  <text>Add Action</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOBJREFUOE+9k+0NAVEQRc92QAdUgA7ogAoogQ7oQAd0QAd0QAk6QAXkbGaTXV9vRWL+vLzJzp1z581m/BhZqf4IdL7QuwDNssANKN9TWvn3fxFoARugG0gnoA1ooVGHYA1YNA+BLWCu4flKQG9F9IAd4KnIEFgGjQSVob0aol21MImOh7hbu5DqE8EAEFfvdi+HOUn6n2Ygrp09H4sVNn98t0h21Pc+lusa6NpxJtK5eLUWp3gFu1o8i1fIqVKb51OdgRGweiyuIzAFxoFf6VwMJUXgEPWtXy08RUog9UNxB1bPMxGCt2XbAAAAAElFTkSuQmCC" />
-                  <specializationType>Action</specializationType>
-                  <specializationTypeId>90af522a-f9b0-4cb4-a6b2-048910b98f6d</specializationTypeId>
-                  <defaultName>NewAction</defaultName>
+                  <text>Add Command Reference</text>
+                  <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEuNSAzTDMgMS41aDE4TDIyLjUgM3YxOEwyMSAyMi41SDNMMS41IDIxek0zIDN2MThoMThWM3oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGQ9Ik03LjA2IDcuNUw2IDguNTZsNC4yNDMgNC4yNDNMNiAxNy4wNDZsMS4wNiAxLjA2TDEyIDEzLjE2OHYtLjcyOHptNC45NCA5aDZWMThoLTZ6Ii8+PC9nPjwvc3ZnPg==" />
+                  <specializationType>Command Reference</specializationType>
+                  <specializationTypeId>6884ef62-13c6-40ec-bc6a-aa15b5001bf2</specializationTypeId>
+                  <defaultName>NewCommandReference</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
+                <option type="element">
+                  <text>Add Command</text>
+                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIVJREFUOE/Nk9sRQDAQRU9K0IlSlBAl6EAHSkAHOqAEHTFrkhmGZIWf3K/9yJ7N3Yfhp4zLt0CfyBqA2gM2wMdvOUdOnoAJaIFV8RK0UAICqRRItAdvIGoTZbQdUASsqD+YgQaQeT8p2gMtWYBBwOKq+sry8KzL7uSzSF+OaQRs6gHdprED+MYqEW6CGKAAAAAASUVORK5CYII=" />
+                  <specializationType>Command</specializationType>
+                  <specializationTypeId>4a186cc2-552b-4438-89ff-02642035a61a</specializationTypeId>
+                  <defaultName>NewCommand</defaultName>
                   <allowMultiple>true</allowMultiple>
                 </option>
               </creationOptions>
@@ -827,216 +722,6 @@
           <mappingSettings />
           <childElementSettings />
         </childElementSetting>
-        <childElementSetting type="Form Definition" typeId="df0da0e1-b468-4868-8135-22caf8767eeb">
-          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGpJREFUOE+1klEOgDAIQ99uOk+mnlQzEwwuQ1CUT7K+dC2F5JSkHgFUYH4IW4BJABucsCjn0PSAtoxM05kALxdx+4+DiH15E3KgM9JwMwPLgW7pNoM0oK/xsy+MnF1CfHPKK1C9o3FrTQN2kWUkEXqsKc4AAAAASUVORK5CYII=" />
-          <saveAsOwnFile>false</saveAsOwnFile>
-          <allowRename>true</allowRename>
-          <allowAbstract>false</allowAbstract>
-          <allowStatic>false</allowStatic>
-          <allowGenericTypes>false</allowGenericTypes>
-          <allowMapping>true</allowMapping>
-          <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
-          <allowFindInView>false</allowFindInView>
-          <allowTypeReference>false</allowTypeReference>
-          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
-          <allowSetValue>false</allowSetValue>
-          <typeOrder>
-            <type order="0">Form Definition Field</type>
-            <type order="1">Component Section</type>
-          </typeOrder>
-          <creationOptions>
-            <option type="element">
-              <text>Add Field</text>
-              <icon type="UrlImagePath" source="./img/icons/uml/Attribute_256x.png" />
-              <specializationType>Form Definition Field</specializationType>
-              <specializationTypeId>4ece4d5c-c89b-43ee-8aec-b474410623c6</specializationTypeId>
-              <defaultName>NewFormDefinitionField</defaultName>
-              <allowMultiple>true</allowMultiple>
-            </option>
-            <option type="element">
-              <text>Add Component Section</text>
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGRJREFUOE9jZMAE/xkYGBixiIOEMOSwKaTYgAMMDAz2OFxwkIGBwQFZDpdTcejHFEY3AJ/tMN0gNY4wDroB+PwP04OiZtQAzBRHcSASE40oiYnqCQkU1/hcgZKIQIppkplIyo0A1xgcEXZkprEAAAAASUVORK5CYII=" />
-              <specializationType>Component Section</specializationType>
-              <specializationTypeId>d15b8bed-441b-4ef7-9541-f7df1c31fb48</specializationTypeId>
-              <defaultName>NewComponentSection</defaultName>
-              <allowMultiple>true</allowMultiple>
-            </option>
-          </creationOptions>
-          <scriptOptions />
-          <mappingOptions />
-          <mappingSettings>
-            <mappingSetting id="e14e2455-2bdd-4e46-ac60-123ef724f953">
-              <name>Map From DTO</name>
-              <defaultModeler>81104ae6-2bc5-4bae-b05a-f987b0372d81</defaultModeler>
-              <optionsSource>elements-of-type</optionsSource>
-              <autoSyncTypeReferences>true</autoSyncTypeReferences>
-              <targetTypeOptions>
-                <option specializationType="fee0edca-4aa0-4f77-a524-6bbd84e78734" displayText="DTO" />
-              </targetTypeOptions>
-              <mapFrom>root</mapFrom>
-              <mappings>
-                <mapping id="529ab2dc-9495-4f3d-b53a-69f2eeb7d4a7">
-                  <criteria specializationType="DTO">
-                    <hasTypeReference p11:nil="true" xmlns:p11="http://www.w3.org/2001/XMLSchema-instance" />
-                    <isCollection p11:nil="true" xmlns:p11="http://www.w3.org/2001/XMLSchema-instance" />
-                    <hasChildren p11:nil="true" xmlns:p11="http://www.w3.org/2001/XMLSchema-instance" />
-                  </criteria>
-                  <mapTo specializationType="Form Definition" childMappingMode="map-to-child" />
-                  <behaviour autoSelectChildren="true" />
-                  <childMappings>
-                    <mapping id="f95e79bf-f361-4436-8473-57368768fea2">
-                      <criteria specializationType="DTO-Field">
-                        <hasTypeReference p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                        <isCollection p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                        <hasChildren p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                      </criteria>
-                      <mapTo specializationType="Form Definition Field" childMappingMode="map-to-child" />
-                      <behaviour autoSelectChildren="false" />
-                      <childMappings />
-                    </mapping>
-                  </childMappings>
-                </mapping>
-              </mappings>
-            </mappingSetting>
-            <mappingSetting id="939cf7e0-d31d-40b0-855f-fbb3bb8bc054">
-              <name>Map From Model</name>
-              <defaultModeler>99fbd418-a3d3-4e05-a60b-071898c51c25</defaultModeler>
-              <optionsSource>elements-of-type</optionsSource>
-              <autoSyncTypeReferences>true</autoSyncTypeReferences>
-              <targetTypeOptions>
-                <option specializationType="3b3aae7a-a51a-4352-a000-2b2bffb05dbf" displayText="Model Definition" />
-              </targetTypeOptions>
-              <mapFrom>root</mapFrom>
-              <mappings>
-                <mapping id="454a7507-a0d8-4f3b-b4bd-ffc1d21d2b6a">
-                  <criteria specializationType="Model Definition">
-                    <hasTypeReference p11:nil="true" xmlns:p11="http://www.w3.org/2001/XMLSchema-instance" />
-                    <isCollection p11:nil="true" xmlns:p11="http://www.w3.org/2001/XMLSchema-instance" />
-                    <hasChildren p11:nil="true" xmlns:p11="http://www.w3.org/2001/XMLSchema-instance" />
-                  </criteria>
-                  <mapTo specializationType="Form Definition" childMappingMode="map-to-child" />
-                  <behaviour autoSelectChildren="false" />
-                  <childMappings>
-                    <mapping id="b29ebfd5-2bd8-4c3b-9083-8a74bd61e60d">
-                      <criteria specializationType="Model Definition Field">
-                        <hasTypeReference p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                        <isCollection p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                        <hasChildren p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                      </criteria>
-                      <mapTo specializationType="Form Definition Field" childMappingMode="map-to-child" />
-                      <behaviour autoSelectChildren="false" />
-                      <childMappings />
-                    </mapping>
-                  </childMappings>
-                </mapping>
-              </mappings>
-            </mappingSetting>
-          </mappingSettings>
-          <childElementSettings>
-            <childElementSetting type="Form Definition Field" typeId="4ece4d5c-c89b-43ee-8aec-b474410623c6">
-              <icon type="UrlImagePath" source="./img/icons/uml/Attribute_256x.png" />
-              <saveAsOwnFile>false</saveAsOwnFile>
-              <allowRename>true</allowRename>
-              <allowAbstract>false</allowAbstract>
-              <allowStatic>false</allowStatic>
-              <allowGenericTypes>false</allowGenericTypes>
-              <allowMapping>true</allowMapping>
-              <allowSorting>true</allowSorting>
-              <sortChildren>by-type-then-by-name</sortChildren>
-              <allowFindInView>false</allowFindInView>
-              <allowTypeReference>true</allowTypeReference>
-              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
-              <allowSetValue>false</allowSetValue>
-              <typeReferenceSetting>
-                <isRequired>true</isRequired>
-                <targetTypes>
-                  <type>Form Definition</type>
-                  <type>Type-Definition</type>
-                  <type>Enum</type>
-                </targetTypes>
-                <allowIsNavigable>true</allowIsNavigable>
-                <allowIsNullable>true</allowIsNullable>
-                <allowIsCollection>true</allowIsCollection>
-                <isNavigableDefault>true</isNavigableDefault>
-                <isNullableDefault>false</isNullableDefault>
-                <isCollectionDefault>false</isCollectionDefault>
-              </typeReferenceSetting>
-              <typeOrder />
-              <creationOptions />
-              <scriptOptions />
-              <mappingOptions />
-              <mappingSettings>
-                <mappingSetting id="71349500-1578-4d10-a04e-7c07ac77f1d2">
-                  <name>Map From Model</name>
-                  <defaultModeler>99fbd418-a3d3-4e05-a60b-071898c51c25</defaultModeler>
-                  <optionsSource>elements-of-type</optionsSource>
-                  <autoSyncTypeReferences>true</autoSyncTypeReferences>
-                  <targetTypeOptions>
-                    <option specializationType="3b3aae7a-a51a-4352-a000-2b2bffb05dbf" displayText="Model Definition" />
-                  </targetTypeOptions>
-                  <mapFrom>root</mapFrom>
-                  <mappings>
-                    <mapping id="b7a223af-49b5-4270-9624-524be89e8541">
-                      <criteria specializationType="Model Definition">
-                        <hasTypeReference p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                        <isCollection p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                        <hasChildren p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                      </criteria>
-                      <mapTo specializationType="Form Definition" childMappingMode="traverse" />
-                      <behaviour autoSelectChildren="true" />
-                      <childMappings>
-                        <mapping id="f87950ba-cc98-4836-bdb7-12f7594c8836">
-                          <criteria specializationType="Model Definition Field">
-                            <hasTypeReference p15:nil="true" xmlns:p15="http://www.w3.org/2001/XMLSchema-instance" />
-                            <isCollection p15:nil="true" xmlns:p15="http://www.w3.org/2001/XMLSchema-instance" />
-                            <hasChildren p15:nil="true" xmlns:p15="http://www.w3.org/2001/XMLSchema-instance" />
-                          </criteria>
-                          <mapTo specializationType="Form Definition Field" childMappingMode="map-to-child" />
-                          <behaviour autoSelectChildren="false" />
-                          <childMappings />
-                        </mapping>
-                      </childMappings>
-                    </mapping>
-                  </mappings>
-                </mappingSetting>
-              </mappingSettings>
-              <childElementSettings />
-            </childElementSetting>
-          </childElementSettings>
-        </childElementSetting>
-        <childElementSetting type="Component Section" typeId="d15b8bed-441b-4ef7-9541-f7df1c31fb48">
-          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGRJREFUOE9jZMAE/xkYGBixiIOEMOSwKaTYgAMMDAz2OFxwkIGBwQFZDpdTcejHFEY3AJ/tMN0gNY4wDroB+PwP04OiZtQAzBRHcSASE40oiYnqCQkU1/hcgZKIQIppkplIyo0A1xgcEXZkprEAAAAASUVORK5CYII=" />
-          <saveAsOwnFile>false</saveAsOwnFile>
-          <allowRename>true</allowRename>
-          <allowAbstract>false</allowAbstract>
-          <allowStatic>false</allowStatic>
-          <allowGenericTypes>false</allowGenericTypes>
-          <allowMapping>false</allowMapping>
-          <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
-          <allowFindInView>false</allowFindInView>
-          <allowTypeReference>false</allowTypeReference>
-          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
-          <allowSetValue>false</allowSetValue>
-          <typeOrder>
-            <type order="0">Form Definition Field</type>
-          </typeOrder>
-          <creationOptions>
-            <option type="element">
-              <text>Add Field</text>
-              <icon type="UrlImagePath" source="./img/icons/uml/Attribute_256x.png" />
-              <specializationType>Form Definition Field</specializationType>
-              <specializationTypeId>4ece4d5c-c89b-43ee-8aec-b474410623c6</specializationTypeId>
-              <defaultName>NewFormDefinitionField</defaultName>
-              <allowMultiple>true</allowMultiple>
-            </option>
-          </creationOptions>
-          <scriptOptions />
-          <mappingOptions />
-          <mappingSettings />
-          <childElementSettings />
-        </childElementSetting>
         <childElementSetting type="Model Definition" typeId="3b3aae7a-a51a-4352-a000-2b2bffb05dbf">
           <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAKVJREFUOE/t0+ENQUEQBODvdaAFFVACJagAHShBCTqgBB2gAnSgBDqQlSe5vNzdS/jhj/15tzuZ2Z1pfFlNZn6AESadvyOuuKfvKUAMbjHFBTGQVgCOccDyDZQCrDHHsEfVDTtEvy7AAsHkXGHwqAEE6KalmttBSFu1DLMMYnmzHgn7dkd/CYUz/vYKYaBwWNy/ZqQTwnCvTJTCFJ4vGakYpo+C/QS96jcRRC2oGgAAAABJRU5ErkJggg==" />
           <saveAsOwnFile>false</saveAsOwnFile>
@@ -1046,7 +731,7 @@
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>true</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>by-type-then-manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1141,6 +826,57 @@
           </childElementSettings>
         </childElementSetting>
       </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Controls" typeId="d9e346a6-70c1-4d47-b332-2316f9057dab">
+      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABHlJREFUeF7t3E9oFGcUAPD3zVqSlC3dtAiitA0ktSKUmGyyoZXgLMVDaQu2UA89FAQpPSjaEjzoQfCgB5U0VCi0HlR60VI8VXpom11ChE3cRQ+lCAldTFMExWwwZlOSzZNvk013d3Zmvuyb2WRm3pxyeO99M7953/zPCuCFJCBI2ZwMDEhsAgZkQKIAMZ07kAGJAsR07kAGJAoQ07kDGZAoQEznDmRAogAxXbkDf890vRFa0j4AEJ2A+KYQqBHHXktHELf1WPqkU/UaWUcJcHi8+7hAMejmignES/v6MkfdHMON2raAiVT0Kgj43I3BDTURB/W+zNcNGcuhQSwBh1PRw0LADw6NpVQGAS7GY+kBpeBNEGQJmBiLPgaAVzdgPc955ZhoCpgc630XYXl0A/BWhkRxVu+7c2rDxlcc2BRwOBU9IATcVKzjVthpPZY+41ZxJ+padGD3QQRx3YlBPFMD4S8UkAHAH+OxzK8q682Apkri+6cafvVRT3reCpIBrdvsDz2Wfo8BVeaiaQx+occyppdy3IH2uPf1WHqXWRgD2gPCogaR/T3p2VqhpoCJVPRTEHBDob7vQ1Bo++O947+tCzA5FsDLGLNWQDio96V/YsB65woD2suFtBbYse1jmH54EwrL+coEBrQGlHgdbUegpXkH5BemYSJ7qRKRAc0By/FKUQZErwHu2f2N/ZyziZibn4SJ7LeWUbXwaiIyoNHRCs+AWMh76yzsdgeq4JUjZqeuHXqn69YVz1zGuAm4HrwSWKHwLKstN3W1tsZz1Yib8lbOLcB68MrA7uLiUrwaMTCARLySowExEIAO4dVE9D2gw3gGRF8D/v3g8todBvnC0ligOJ19DRjSmou3Zy4uSV8DPsml4PXtn7nkh7MIId3XgPJW7pVIzAXEFbzW8N67vgeU7ecs4v94snYgAJ1DrMQLFCAd0YgXOMB6EREK8wAv7JXHvEDfC5c2fj3HRPl4/9+Hv5x4e+fQec88jeloo3/pm1/4p/h+w2xRQZR48vF+Pj/treeBLl24GcpaIa7hLUwDeO2JdKMAzY6JFXgyiAGtd0l5JxrwGFCtnyWifC9cPObJaVu+eK0D5Tta6iIRqk8iEsjq4YJ89GV4qQ4AzU1b/9wSevlRaZ0i4f546e/A3InIDZZn9/CL7dR9A5Fw/5obA9bByYB1oJWnMCAD2gvU+rSjocfAxHjP+4B4y35VnY9w671wQwFX/z846zyPfUVfAMrNTI5F7yBA1H6TnY3wEWD3JwjiZ2d57Kv5BrDYhePR7xDhS/vNdi7CV4CrU/kYAtC/elQ09h2g3G55UtlSEB8iyh+dgA4nf3Si2rVz99A+RWvTsIX/pnL3Jy/cKw94q32gs7nptQi1ttKFNHUQSn5ubgQp+au5yUi4Xy+vk5sbSQAAeecwIHHvMCADKgnwFFZiMg8KLuDM05GKg39dkELLVb8In5kb3QO4TD4Lt77UL09GxcX2l4vqWvkAJTEgcWczIAMSBYjp3IEMSBQgpnMHEgGfA7TK1lvN4UJYAAAAAElFTkSuQmCC" />
+      <expandedIcon type="UrlImagePath" source="data:image/png;base64,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" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder>
+        <type order="0">Container</type>
+        <type order="1">Card</type>
+        <type order="2">Dialog</type>
+      </typeOrder>
+      <creationOptions>
+        <option type="element">
+          <text>Add Container</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Container</specializationType>
+          <specializationTypeId>b0b5d813-91c5-4891-a32e-cf7cea184759</specializationTypeId>
+          <defaultName>NewContainer</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Card</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Card</specializationType>
+          <specializationTypeId>86e91725-f6c0-41ef-baea-353bdce84252</specializationTypeId>
+          <defaultName>NewCard</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Dialog</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Dialog</specializationType>
+          <specializationTypeId>4dfb2d6b-9396-4e1c-a681-c5336de624be</specializationTypeId>
+          <defaultName>NewDialog</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+      </creationOptions>
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings />
     </elementSetting>
     <elementSetting type="Layouts" typeId="5e4732ab-326f-4d6d-9cbf-25da0d8b2526">
       <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA55JREFUeF7tnEtoE1EUhs+ZSa3SB7YuKslIK1rQInRRBHFjrbiwNVAES1duTFI3YhVXVqiIj5XUhSAk2QhuVMRCobgQtQtF8IEFH7gTbEaLYnUjaidzJG0tWDuZOzmTNJ2erP//nHu/+e/cm7sYBPmxCCDLLWYQgMwQCEAByCTAtEsCBSCTANMuCRSATAJMuyRQADIJMO2SQAHIJMC0qycwbTZqNnUhUiuQ1gxoa8ze83YkeGwljFN+1StlHSWAWsrsR6Chog6M4Eo2ETla1B5FKO4KUE+Z1wDoUBF6/1cSiYashHGiFL386pEXoJ7OxIAg5VczlToIeMmKh0+qaMtBkx9gKvMFANaVeqBIdHG5vBMdAYaSmZ2E8KjU8P72Q6ALVtwYWKr+qn0dAeppsxuI7qgWKoaOEAbtWORsMWr7VdMZYHKiBxBv+NVoOdQhgLcI8AIRr1ux8F2VMQtAR0qUzNracegL/8gHUgDmj9n9bDyyRwCqrEUnDWEimwg7HuUkgS5wCeCdHY9scZIJQIV0Zu2fa6Fv0/fFpHmOMRMHgfCmQv3AS5Bgr5WI3PMGcAUeYxyTgNSTjRm3BGCha0UAFkpuzicABSCTANMuCRSATAJMuyRQADIJMO2SwBUGcLizwdOMTz+Zgldff8O2+lVwbkedJ2/BYoKxqBFqL8vLBAFY8GOdNQpAAQigL+FtjCRQEigJdM2A7MKuiPILBKAAnCcgB+kFYZBdmLk6BKAAlGOMawaCuAtvrA1BbGut69y9CsJV+pu6Su3zvz56GTUq+gN1G+MVjLJ+uV2oFrqJKAPxKlwpAHNL+HBLjSc8uTNk7tdhrIEOY/Wi3nB16HX9wiVs03jglnAhN9Ldo5Mz0Hqbq6C3uVodfhA3EQE49/wLfQcKQAGo/grJpwxIAj/uA7RH/UHirUogAELabNSJ3nubuj/qYAAEAC2VeYYAbf5gUa8SGIB6yjwAQLfVp+6PMjAAczj0lHkVgI74g0atSqAA5qasJc1jiHRZbfp8VeAAziDJfXSCaD8itIKNm/386MRC5MOd63d5eQznn0+NP5389W17Q+Xagba6Vi/e7tFPYzl9vKWmsaupqknZ6/ZXTrlQEYQjGYs8lbVpd3RDxcORD9PtoOEDL95oJDRzpTeSmT4DgIPKXgE4iyqQAJVTUAZC18+elMEYy3oIApD5eASgAGQSYNolgQKQSYBplwQKQCYBpl0SKACZBJj2P8oZZG+/dQQQAAAAAElFTkSuQmCC" />
@@ -1318,21 +1054,39 @@ addElement(
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
           <typeOrder>
-            <type order="0">Layout Navigation</type>
-            <type order="1">Layout Slot</type>
+            <type order="0">Top Menu</type>
+            <type order="1">Sidebar</type>
+            <type order="2">Footer</type>
+            <type order="3">Layout Slot</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
-              <text>New Layout Navigation</text>
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFBJREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/jMwMMDYxJoD1oNuAEgQBEDiuNgwC7AaQKztIHWjBoyGAfXTATmZaSEDA0MCqRkII6kDAGqaHxHlt7sIAAAAAElFTkSuQmCC" />
-              <specializationType>Layout Navigation</specializationType>
-              <specializationTypeId>504052da-efcd-4f9d-8177-ba6a2c7bfa79</specializationTypeId>
-              <defaultName>NewLayoutNavigation</defaultName>
-              <allowMultiple>true</allowMultiple>
+              <text>Add Top Menu</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0ibTEgMmwxLTFoMTJsMSAxdjEybC0xIDFIMmwtMS0xem0xIDB2MTJoMTJWMnptMSAxaDJ2MUgzem0zIDBoMnYxSDZ6bTUgMEg5djFoMnoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
+              <specializationType>Top Menu</specializationType>
+              <specializationTypeId>ac2c0fa1-486e-47a9-a589-e81b9a16b942</specializationTypeId>
+              <defaultName>[top menu]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Sidebar</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMUwxIDJ2MTJsMSAxaDEybDEtMVYybC0xLTF6bTEyIDEzSDdWMmg3eiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" />
+              <specializationType>Sidebar</specializationType>
+              <specializationTypeId>7ad90260-1187-4e15-b6ba-313a2c215ff0</specializationTypeId>
+              <defaultName>[sidebar]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Footer</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMUwxIDJ2MTJsMSAxaDEybDEtMVYybC0xLTF6bTAgOVYyaDEydjh6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" />
+              <specializationType>Footer</specializationType>
+              <specializationTypeId>bda9700d-2ff6-46f3-a6a6-fdccb055b95e</specializationTypeId>
+              <defaultName>[footer]</defaultName>
+              <allowMultiple>false</allowMultiple>
             </option>
             <option type="element">
               <text>New Layout Slot</text>
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFlJREFUOE9jZKAQMFKonwHZgAQGBob5aAYuYGBgSISKocuD5ZAN+M/AgGIgSB+yGLo8mD+0DEAPg4UMDAwJpHgBa4TR1YCREI3YkjI4qnAkZYxoJCtfUZwbAejkLBED37YpAAAAAElFTkSuQmCC" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik01IDVoNHY2SDV6bTEwIDhoNHY2aC00ek01IDE3aDR2Mkg1ek0xNSA1aDR2MmgtNHoiIG9wYWNpdHk9Ii4zIi8+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTMgMTNoOFYzSDN6bTItOGg0djZINXptOCAxNmg4VjExaC04em0yLThoNHY2aC00ek0xMyAzdjZoOFYzem02IDRoLTRWNWg0ek0zIDIxaDh2LTZIM3ptMi00aDR2Mkg1eiIvPjwvc3ZnPg==" />
               <specializationType>Layout Slot</specializationType>
               <specializationTypeId>d5e91bdc-bc8d-4dd7-9fa7-5d537a478866</specializationTypeId>
               <defaultName>NewLayoutSlot</defaultName>
@@ -1426,171 +1180,8 @@ addElement(aryzacTypes.layoutSlot.name, {
             </macro>
           </macros>
           <childElementSettings>
-            <childElementSetting type="Layout Navigation" typeId="504052da-efcd-4f9d-8177-ba6a2c7bfa79">
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFBJREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/jMwMMDYxJoD1oNuAEgQBEDiuNgwC7AaQKztIHWjBoyGAfXTATmZaSEDA0MCqRkII6kDAGqaHxHlt7sIAAAAAElFTkSuQmCC" />
-              <saveAsOwnFile>false</saveAsOwnFile>
-              <allowRename>true</allowRename>
-              <allowAbstract>false</allowAbstract>
-              <allowStatic>false</allowStatic>
-              <allowGenericTypes>false</allowGenericTypes>
-              <allowMapping>false</allowMapping>
-              <allowSorting>true</allowSorting>
-              <sortChildren>by-type-then-by-name</sortChildren>
-              <allowFindInView>false</allowFindInView>
-              <allowTypeReference>false</allowTypeReference>
-              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
-              <allowSetValue>false</allowSetValue>
-              <typeOrder>
-                <type order="0">Navigation Logo</type>
-                <type order="1">Navigation Section</type>
-                <type order="2">Navigation Item</type>
-                <type order="3">Component Reference</type>
-              </typeOrder>
-              <creationOptions>
-                <option type="element">
-                  <text>Add Logo</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPFJREFUOE+lku0RAUEMhp+rABWgAzpQgg7QgRLogAooQQk6oAQdoALmMVlzd273j8xkdu9m834kqfgzqj/ryQFMgDNwB3bAPkdUUrABZsAoQAT6iRKAKk7AEjgAY8B/c0DwT3QBvKJwFRZ8Y4GprWNkEWALLIBnsCZCwRukbQV94Ba+baAqZKwDDIBHzoJ+9Wjq37MegiUbnRYsMn2oGpmSfwsEXMd0OgH0WJeYJlC30uhDuwf6d/aeKrjEEsnqPqTReu9U4LL0Ws1TRWLVmrYEzI7xCgxDxTRYVWLztKeKb+Q2UVYzPRa0sUAlBa3JlT/fCUI2Eb2M340AAAAASUVORK5CYII=" />
-                  <specializationType>Navigation Logo</specializationType>
-                  <specializationTypeId>8ab9c524-22bc-4a03-be5c-16a3ba052fa7</specializationTypeId>
-                  <defaultName>NewNavigationLogo</defaultName>
-                  <allowMultiple>true</allowMultiple>
-                </option>
-                <option type="element">
-                  <text>Add Section</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAF1JREFUOE9jZKAQMFKon4EmBhxgYGCwx+EykJwjshzIBf+hAjBJEB+Xy2BycEuQFcIkiTEArmbUANTQJjsQYdF4kIGBwQEarWRFIyx94EtIMEvgaYkmSZmk/EWxCwBRiiYPYs68JQAAAABJRU5ErkJggg==" />
-                  <specializationType>Navigation Section</specializationType>
-                  <specializationTypeId>d9b61c89-152b-435e-abb0-91df88b51518</specializationTypeId>
-                  <defaultName>NewNavigationSection</defaultName>
-                  <allowMultiple>true</allowMultiple>
-                </option>
-                <option type="element">
-                  <text>Add Item</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
-                  <specializationType>Navigation Item</specializationType>
-                  <specializationTypeId>a80d67aa-e2ee-43b4-ba71-9d068ebfb3af</specializationTypeId>
-                  <defaultName>NewNavigationItem</defaultName>
-                  <allowMultiple>true</allowMultiple>
-                </option>
-                <option type="element">
-                  <text>Add Component</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP1JREFUOE+1k9ERAUEQRJ8MZIAMZEAIRIAIEIETgRMBIlAyIAMZIAMhqFYzW1Nbt/ixP1c129fT0z3b4vMZ2vW5BGsVLrrADujZ/Q2YAfccnxO0gTmwBGqgsh/0XQAbYAs8nSgSTA1wMnACGVjkIh1Zk4PqTuDs69C1NLbUrFylE6gow/rA0S6bFGiEMXAFZGwVCdRREqUmKlJdDeSN5nfMu54TuGlKYQ90bI4HII88hWRuicDnVzcdKYrnZ4IY438JJHFi7se1bVKgtJSG9qDOF0kzxxgjgRbJY1RDmZwWyecTKMYYG8QYG1c5muQxDqx4yWJM2NJrdMDX5/wCqc8/EcFEmKgAAAAASUVORK5CYII=" />
-                  <specializationType>Component Reference</specializationType>
-                  <specializationTypeId>f798993a-4652-4aef-94f7-cda1f8469e59</specializationTypeId>
-                  <defaultName>NewComponentReference</defaultName>
-                  <allowMultiple>true</allowMultiple>
-                </option>
-              </creationOptions>
-              <scriptOptions />
-              <mappingOptions />
-              <mappingSettings />
-              <childElementSettings>
-                <childElementSetting type="Navigation Item" typeId="a80d67aa-e2ee-43b4-ba71-9d068ebfb3af">
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
-                  <saveAsOwnFile>false</saveAsOwnFile>
-                  <allowRename>true</allowRename>
-                  <allowAbstract>false</allowAbstract>
-                  <allowStatic>false</allowStatic>
-                  <allowGenericTypes>false</allowGenericTypes>
-                  <allowMapping>false</allowMapping>
-                  <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
-                  <allowFindInView>false</allowFindInView>
-                  <allowTypeReference>false</allowTypeReference>
-                  <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
-                  <allowSetValue>false</allowSetValue>
-                  <typeOrder>
-                    <type order="0">Navigation Item</type>
-                  </typeOrder>
-                  <creationOptions>
-                    <option type="element">
-                      <text>Add Item</text>
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
-                      <specializationType>Navigation Item</specializationType>
-                      <specializationTypeId>a80d67aa-e2ee-43b4-ba71-9d068ebfb3af</specializationTypeId>
-                      <defaultName>NewNavigationItem</defaultName>
-                      <allowMultiple>true</allowMultiple>
-                    </option>
-                  </creationOptions>
-                  <scriptOptions />
-                  <mappingOptions />
-                  <mappingSettings />
-                  <childElementSettings />
-                </childElementSetting>
-                <childElementSetting type="Navigation Section" typeId="d9b61c89-152b-435e-abb0-91df88b51518">
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAF1JREFUOE9jZKAQMFKon4EmBhxgYGCwx+EykJwjshzIBf+hAjBJEB+Xy2BycEuQFcIkiTEArmbUANTQJjsQYdF4kIGBwQEarWRFIyx94EtIMEvgaYkmSZmk/EWxCwBRiiYPYs68JQAAAABJRU5ErkJggg==" />
-                  <saveAsOwnFile>false</saveAsOwnFile>
-                  <allowRename>true</allowRename>
-                  <allowAbstract>false</allowAbstract>
-                  <allowStatic>false</allowStatic>
-                  <allowGenericTypes>false</allowGenericTypes>
-                  <allowMapping>false</allowMapping>
-                  <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
-                  <allowFindInView>false</allowFindInView>
-                  <allowTypeReference>false</allowTypeReference>
-                  <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
-                  <allowSetValue>false</allowSetValue>
-                  <typeOrder>
-                    <type order="0">Navigation Logo</type>
-                    <type order="1">Navigation Item</type>
-                    <type order="2">Component Reference</type>
-                  </typeOrder>
-                  <creationOptions>
-                    <option type="element">
-                      <text>Add Logo</text>
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPFJREFUOE+lku0RAUEMhp+rABWgAzpQgg7QgRLogAooQQk6oAQdoALmMVlzd273j8xkdu9m834kqfgzqj/ryQFMgDNwB3bAPkdUUrABZsAoQAT6iRKAKk7AEjgAY8B/c0DwT3QBvKJwFRZ8Y4GprWNkEWALLIBnsCZCwRukbQV94Ba+baAqZKwDDIBHzoJ+9Wjq37MegiUbnRYsMn2oGpmSfwsEXMd0OgH0WJeYJlC30uhDuwf6d/aeKrjEEsnqPqTReu9U4LL0Ws1TRWLVmrYEzI7xCgxDxTRYVWLztKeKb+Q2UVYzPRa0sUAlBa3JlT/fCUI2Eb2M340AAAAASUVORK5CYII=" />
-                      <specializationType>Navigation Logo</specializationType>
-                      <specializationTypeId>8ab9c524-22bc-4a03-be5c-16a3ba052fa7</specializationTypeId>
-                      <defaultName>NewNavigationLogo</defaultName>
-                      <allowMultiple>true</allowMultiple>
-                    </option>
-                    <option type="element">
-                      <text>Add Item</text>
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
-                      <specializationType>Navigation Item</specializationType>
-                      <specializationTypeId>a80d67aa-e2ee-43b4-ba71-9d068ebfb3af</specializationTypeId>
-                      <defaultName>NewNavigationItem</defaultName>
-                      <allowMultiple>true</allowMultiple>
-                    </option>
-                    <option type="element">
-                      <text>Add Component</text>
-                      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP1JREFUOE+1k9ERAUEQRJ8MZIAMZEAIRIAIEIETgRMBIlAyIAMZIAMhqFYzW1Nbt/ixP1c129fT0z3b4vMZ2vW5BGsVLrrADujZ/Q2YAfccnxO0gTmwBGqgsh/0XQAbYAs8nSgSTA1wMnACGVjkIh1Zk4PqTuDs69C1NLbUrFylE6gow/rA0S6bFGiEMXAFZGwVCdRREqUmKlJdDeSN5nfMu54TuGlKYQ90bI4HII88hWRuicDnVzcdKYrnZ4IY438JJHFi7se1bVKgtJSG9qDOF0kzxxgjgRbJY1RDmZwWyecTKMYYG8QYG1c5muQxDqx4yWJM2NJrdMDX5/wCqc8/EcFEmKgAAAAASUVORK5CYII=" />
-                      <specializationType>Component Reference</specializationType>
-                      <specializationTypeId>f798993a-4652-4aef-94f7-cda1f8469e59</specializationTypeId>
-                      <defaultName>NewComponentReference</defaultName>
-                      <allowMultiple>true</allowMultiple>
-                    </option>
-                  </creationOptions>
-                  <scriptOptions />
-                  <mappingOptions />
-                  <mappingSettings />
-                  <childElementSettings />
-                </childElementSetting>
-                <childElementSetting type="Navigation Logo" typeId="8ab9c524-22bc-4a03-be5c-16a3ba052fa7">
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPFJREFUOE+lku0RAUEMhp+rABWgAzpQgg7QgRLogAooQQk6oAQdoALmMVlzd273j8xkdu9m834kqfgzqj/ryQFMgDNwB3bAPkdUUrABZsAoQAT6iRKAKk7AEjgAY8B/c0DwT3QBvKJwFRZ8Y4GprWNkEWALLIBnsCZCwRukbQV94Ba+baAqZKwDDIBHzoJ+9Wjq37MegiUbnRYsMn2oGpmSfwsEXMd0OgH0WJeYJlC30uhDuwf6d/aeKrjEEsnqPqTReu9U4LL0Ws1TRWLVmrYEzI7xCgxDxTRYVWLztKeKb+Q2UVYzPRa0sUAlBa3JlT/fCUI2Eb2M340AAAAASUVORK5CYII=" />
-                  <saveAsOwnFile>false</saveAsOwnFile>
-                  <allowRename>true</allowRename>
-                  <allowAbstract>false</allowAbstract>
-                  <allowStatic>false</allowStatic>
-                  <allowGenericTypes>false</allowGenericTypes>
-                  <allowMapping>false</allowMapping>
-                  <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
-                  <allowFindInView>false</allowFindInView>
-                  <allowTypeReference>false</allowTypeReference>
-                  <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
-                  <allowSetValue>false</allowSetValue>
-                  <typeOrder />
-                  <creationOptions />
-                  <scriptOptions />
-                  <mappingOptions />
-                  <mappingSettings />
-                  <childElementSettings />
-                </childElementSetting>
-              </childElementSettings>
-            </childElementSetting>
             <childElementSetting type="Layout Slot" typeId="d5e91bdc-bc8d-4dd7-9fa7-5d537a478866">
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFlJREFUOE9jZKAQMFKonwHZgAQGBob5aAYuYGBgSISKocuD5ZAN+M/AgGIgSB+yGLo8mD+0DEAPg4UMDAwJpHgBa4TR1YCREI3YkjI4qnAkZYxoJCtfUZwbAejkLBED37YpAAAAAElFTkSuQmCC" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik01IDVoNHY2SDV6bTEwIDhoNHY2aC00ek01IDE3aDR2Mkg1ek0xNSA1aDR2MmgtNHoiIG9wYWNpdHk9Ii4zIi8+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTMgMTNoOFYzSDN6bTItOGg0djZINXptOCAxNmg4VjExaC04em0yLThoNHY2aC00ek0xMyAzdjZoOFYzem02IDRoLTRWNWg0ek0zIDIxaDh2LTZIM3ptMi00aDR2Mkg1eiIvPjwvc3ZnPg==" />
               <saveAsOwnFile>false</saveAsOwnFile>
               <allowRename>true</allowRename>
               <allowAbstract>false</allowAbstract>
@@ -1670,7 +1261,7 @@ addElement(aryzacTypes.layoutSlot.name, {
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
           <typeReferenceSetting>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
             <targetTypes>
               <type>Layout</type>
             </targetTypes>
@@ -1683,9 +1274,8 @@ addElement(aryzacTypes.layoutSlot.name, {
           </typeReferenceSetting>
           <typeOrder>
             <type order="0">Breadcrumbs</type>
-            <type order="1">Page Navigation</type>
-            <type order="2">Page Actions</type>
-            <type order="3">Page Slot</type>
+            <type order="1">Page Actions</type>
+            <type order="2">Page Slot</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -1695,14 +1285,6 @@ addElement(aryzacTypes.layoutSlot.name, {
               <specializationTypeId>d33b7909-0ff3-49ea-a9c0-8bc50f29e34d</specializationTypeId>
               <defaultName>[breadcrumbs]</defaultName>
               <allowMultiple>false</allowMultiple>
-            </option>
-            <option type="element">
-              <text>Add Page Navigation</text>
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFBJREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/jMwMMDYxJoD1oNuAEgQBEDiuNgwC7AaQKztIHWjBoyGAfXTATmZaSEDA0MCqRkII6kDAGqaHxHlt7sIAAAAAElFTkSuQmCC" />
-              <specializationType>Page Navigation</specializationType>
-              <specializationTypeId>deee1801-cf3b-4ace-9169-c35129b771ba</specializationTypeId>
-              <defaultName>NewPageNavigation</defaultName>
-              <allowMultiple>true</allowMultiple>
             </option>
             <option type="element">
               <text>Add Actions</text>
@@ -1725,196 +1307,6 @@ addElement(aryzacTypes.layoutSlot.name, {
           <mappingOptions />
           <mappingSettings />
           <childElementSettings>
-            <childElementSetting type="Breadcrumbs" typeId="d33b7909-0ff3-49ea-a9c0-8bc50f29e34d">
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJpJREFUOE/NktENQEAQRJ8OdCAqoAQ6oQM60QkdUIIORAdKkEnuZCNxhB/7c9nczrvdnYv4GNFHPf8BdEB2GmcDakBnDPRAC8y2zo8wAfnpUvkClE6gmsTlB8QCVFcYugASBSEhgFi3kCeAEVhNd8pTl893IwTFatEC5ILdsNq/fNnvygNkowQ2ZF9lbByA5srG1z/6P1/59Qg713AoEZ+ZbBYAAAAASUVORK5CYII=" />
-              <saveAsOwnFile>false</saveAsOwnFile>
-              <allowRename>true</allowRename>
-              <allowAbstract>false</allowAbstract>
-              <allowStatic>false</allowStatic>
-              <allowGenericTypes>false</allowGenericTypes>
-              <allowMapping>false</allowMapping>
-              <allowSorting>true</allowSorting>
-              <sortChildren>by-type-then-by-name</sortChildren>
-              <allowFindInView>false</allowFindInView>
-              <allowTypeReference>false</allowTypeReference>
-              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
-              <allowSetValue>false</allowSetValue>
-              <typeOrder>
-                <type order="0">Breadcrumb</type>
-              </typeOrder>
-              <creationOptions>
-                <option type="element">
-                  <text>Add Breadcrumb</text>
-                  <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik0yOS4yNSA2Ljc2YTYgNiAwIDAgMC04LjUgMGwxLjQyIDEuNDJhNCA0IDAgMSAxIDUuNjcgNS42N2wtOCA4YTQgNCAwIDEgMS01LjY3LTUuNjZsMS40MS0xLjQybC0xLjQxLTEuNDJsLTEuNDIgMS40MmE2IDYgMCAwIDAgMCA4LjVBNiA2IDAgMCAwIDE3IDI1YTYgNiAwIDAgMCA0LjI3LTEuNzZsOC04YTYgNiAwIDAgMC0uMDItOC40OCIvPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00LjE5IDI0LjgyYTQgNCAwIDAgMSAwLTUuNjdsOC04YTQgNCAwIDAgMSA1LjY3IDBBMy45NCAzLjk0IDAgMCAxIDE5IDE0YTQgNCAwIDAgMS0xLjE3IDIuODVMMTUuNzEgMTlsMS40MiAxLjQybDIuMTItMi4xMmE2IDYgMCAwIDAtOC41MS04LjUxbC04IDhhNiA2IDAgMCAwIDAgOC41MUE2IDYgMCAwIDAgNyAyOGE2LjA3IDYuMDcgMCAwIDAgNC4yOC0xLjc2bC0xLjQyLTEuNDJhNCA0IDAgMCAxLTUuNjcgMCIvPjwvc3ZnPg==" />
-                  <specializationType>Breadcrumb</specializationType>
-                  <specializationTypeId>3a7efd36-fc3e-481c-9c59-98c57568a863</specializationTypeId>
-                  <defaultName>NewBreadcrumb</defaultName>
-                  <allowMultiple>true</allowMultiple>
-                </option>
-              </creationOptions>
-              <scriptOptions />
-              <mappingOptions />
-              <mappingSettings />
-              <childElementSettings>
-                <childElementSetting type="Breadcrumb" typeId="3a7efd36-fc3e-481c-9c59-98c57568a863">
-                  <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik0yOS4yNSA2Ljc2YTYgNiAwIDAgMC04LjUgMGwxLjQyIDEuNDJhNCA0IDAgMSAxIDUuNjcgNS42N2wtOCA4YTQgNCAwIDEgMS01LjY3LTUuNjZsMS40MS0xLjQybC0xLjQxLTEuNDJsLTEuNDIgMS40MmE2IDYgMCAwIDAgMCA4LjVBNiA2IDAgMCAwIDE3IDI1YTYgNiAwIDAgMCA0LjI3LTEuNzZsOC04YTYgNiAwIDAgMC0uMDItOC40OCIvPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik00LjE5IDI0LjgyYTQgNCAwIDAgMSAwLTUuNjdsOC04YTQgNCAwIDAgMSA1LjY3IDBBMy45NCAzLjk0IDAgMCAxIDE5IDE0YTQgNCAwIDAgMS0xLjE3IDIuODVMMTUuNzEgMTlsMS40MiAxLjQybDIuMTItMi4xMmE2IDYgMCAwIDAtOC41MS04LjUxbC04IDhhNiA2IDAgMCAwIDAgOC41MUE2IDYgMCAwIDAgNyAyOGE2LjA3IDYuMDcgMCAwIDAgNC4yOC0xLjc2bC0xLjQyLTEuNDJhNCA0IDAgMCAxLTUuNjcgMCIvPjwvc3ZnPg==" />
-                  <saveAsOwnFile>false</saveAsOwnFile>
-                  <allowRename>true</allowRename>
-                  <allowAbstract>false</allowAbstract>
-                  <allowStatic>false</allowStatic>
-                  <allowGenericTypes>false</allowGenericTypes>
-                  <allowMapping>false</allowMapping>
-                  <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
-                  <allowFindInView>false</allowFindInView>
-                  <allowTypeReference>true</allowTypeReference>
-                  <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
-                  <allowSetValue>false</allowSetValue>
-                  <typeReferenceSetting>
-                    <isRequired>true</isRequired>
-                    <targetTypes>
-                      <type>Page</type>
-                    </targetTypes>
-                    <allowIsNavigable>true</allowIsNavigable>
-                    <allowIsNullable>true</allowIsNullable>
-                    <allowIsCollection>true</allowIsCollection>
-                    <isNavigableDefault>true</isNavigableDefault>
-                    <isNullableDefault>false</isNullableDefault>
-                    <isCollectionDefault>false</isCollectionDefault>
-                  </typeReferenceSetting>
-                  <typeOrder />
-                  <creationOptions />
-                  <scriptOptions />
-                  <mappingOptions />
-                  <mappingSettings />
-                  <macros>
-                    <macro trigger="on-type-changed">
-                      <script>var LogLevel;
-(function (LogLevel) {
-    LogLevel[LogLevel["Error"] = 0] = "Error";
-    LogLevel[LogLevel["Warn"] = 1] = "Warn";
-    LogLevel[LogLevel["Info"] = 2] = "Info";
-    LogLevel[LogLevel["Debug"] = 3] = "Debug";
-    LogLevel[LogLevel["Trace"] = 4] = "Trace";
-})(LogLevel || (LogLevel = {}));
-const logLevel = LogLevel.Trace;
-const logger = {
-    error: (message) =&gt; {
-        if (logLevel &gt;= LogLevel.Error) {
-            console.error(`${new Date()} ERROR: ${message}`);
-        }
-    },
-    warn: (message) =&gt; {
-        if (logLevel &gt;= LogLevel.Warn) {
-            console.warn(`${new Date()} WARN: ${message}`);
-        }
-    },
-    info: (message) =&gt; {
-        if (logLevel &gt;= LogLevel.Info) {
-            console.log(`${new Date()} INFO: ${message}`);
-        }
-    },
-    debug: (message) =&gt; {
-        if (logLevel &gt;= LogLevel.Debug) {
-            console.log(`${new Date()} DEBUG: ${message}`);
-        }
-    },
-    trace: (message) =&gt; {
-        if (logLevel &gt;= LogLevel.Trace) {
-            console.log(`${new Date()} TRACE: ${message}`);
-        }
-    }
-};
-/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-function addElement(type, definition, parent, stereotypes) {
-    if (parent.getChildren(type).every((x) =&gt; x.getName() !== definition.name)) {
-        const _element = createElement(type, definition.name, parent.id);
-        if (definition.type) {
-            _element.typeReference.setType(definition.type.id);
-            _element.typeReference.setIsNullable(definition.nullable);
-        }
-        if (stereotypes) {
-            for (let s = 0; s &lt; stereotypes.length; s++) {
-                const stereotype = stereotypes[s].stereotype;
-                if (!_element.hasStereotype(stereotype.id)) {
-                    _element.addStereotype(stereotype.id);
-                }
-                if (stereotype.properties) {
-                    stereotype.properties.forEach((property) =&gt; {
-                        _element
-                            .getStereotype(stereotype.id)
-                            .getProperty(property.name)
-                            .setValue(property.value);
-                    });
-                }
-            }
-        }
-        return _element;
-    }
-    else {
-        let _element = null;
-        parent.getChildren(type).forEach((e) =&gt; {
-            if (e.getName() === definition.name) {
-                _element = e;
-            }
-        });
-        return _element;
-    }
-}
-/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-const aryzacTypes = {
-    routeParameter: { name: "Route Parameter", id: "b1e06380-f8fe-42f8-bea1-820bbe5fee92" },
-    inheritedNavigation: { name: "Inherited Navigation", id: "9974d562-885d-46d7-817e-0f663fe07e88" },
-    layout: { name: "Layout", id: "eb6cb3df-6d5a-469b-8919-ab659187874f" },
-    layoutNavigation: { name: 'Layout Navigation', id: '504052da-efcd-4f9d-8177-ba6a2c7bfa79' },
-    layoutSlot: { name: 'Layout Slot', id: 'd5e91bdc-bc8d-4dd7-9fa7-5d537a478866' },
-    pages: { name: 'Pages', id: '4e3cc9bd-3900-4cd7-918b-ba7d11972da4' }
-};
-/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-const aryzacStereotypes = {
-    footerNavigationSettings: { name: "Footer Navigation Settings", id: "a4934d2c-7817-413d-af69-57b87289e2fd" },
-    sidebarNavigationSettings: { name: "Sidebar Navigation Settings", id: "d2871749-82c8-467d-8a70-2d0bea7cd3e2" },
-    topNavigationSettings: { name: "Top Navigation Settings", id: "e31690e9-e123-4c7f-aad5-576bbde51d08" }
-};
-/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-/// &lt;reference path="../../common/logger.ts" /&gt;
-/// &lt;reference path="../_common/addElement.ts" /&gt;
-/// &lt;reference path="../_common/aryzac-types.ts" /&gt;
-/// &lt;reference path="../_common/aryzac-stereotypes.ts" /&gt;
-logger.info("Finding Breadcrumb Page");
-const routeParameters = [];
-let currentNode = element.typeReference.getType();
-while (currentNode) {
-    logger.debug(`Current Page ${currentNode.id} - ${currentNode.getName()}`);
-    logger.trace(`Current Page ${JSON.stringify(currentNode)}`);
-    const currentNodeChildren = currentNode.getChildren();
-    logger.trace(`Current Page Children ${JSON.stringify(currentNodeChildren)}`);
-    const currentNodeRouteParameter = currentNodeChildren.filter(m =&gt; m.specialization === aryzacTypes.routeParameter.name);
-    if (currentNodeRouteParameter.length &gt; 0) {
-        logger.info(`Has Route Parameter ${JSON.stringify(currentNodeRouteParameter[0])}`);
-        routeParameters.push(currentNodeRouteParameter[0]);
-    }
-    currentNode = currentNode.getParent();
-    logger.trace(`Current Page Parent ${JSON.stringify(currentNode)}`);
-    if (currentNode.specializationId === aryzacTypes.pages.id) {
-        logger.info(`Reached Pages folder`);
-        break;
-    }
-}
-for (let i = 0; i &lt; routeParameters.length; i++) {
-    addElement(aryzacTypes.routeParameter.name, {
-        name: routeParameters[i].getName(),
-        type: routeParameters[i].typeReference.getType(),
-        nullable: routeParameters[i].typeReference.getIsNullable()
-    }, element);
-}
-</script>
-                    </macro>
-                  </macros>
-                  <childElementSettings />
-                </childElementSetting>
-              </childElementSettings>
-            </childElementSetting>
             <childElementSetting type="Page Section" typeId="62760eab-c280-4ad9-ba55-cc5b256635e6">
               <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGRJREFUOE9jZMAE/xkYGBixiIOEMOSwKaTYgAMMDAz2OFxwkIGBwQFZDpdTcejHFEY3AJ/tMN0gNY4wDroB+PwP04OiZtQAzBRHcSASE40oiYnqCQkU1/hcgZKIQIppkplIyo0A1xgcEXZkprEAAAAASUVORK5CYII=" />
               <saveAsOwnFile>false</saveAsOwnFile>
@@ -2000,152 +1392,6 @@ for (let i = 0; i &lt; routeParameters.length; i++) {
               <mappingSettings />
               <childElementSettings />
             </childElementSetting>
-            <childElementSetting type="Page Navigation" typeId="deee1801-cf3b-4ace-9169-c35129b771ba">
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFBJREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/jMwMMDYxJoD1oNuAEgQBEDiuNgwC7AaQKztIHWjBoyGAfXTATmZaSEDA0MCqRkII6kDAGqaHxHlt7sIAAAAAElFTkSuQmCC" />
-              <saveAsOwnFile>false</saveAsOwnFile>
-              <allowRename>true</allowRename>
-              <allowAbstract>false</allowAbstract>
-              <allowStatic>false</allowStatic>
-              <allowGenericTypes>false</allowGenericTypes>
-              <allowMapping>false</allowMapping>
-              <allowSorting>true</allowSorting>
-              <sortChildren>manually</sortChildren>
-              <allowFindInView>false</allowFindInView>
-              <allowTypeReference>true</allowTypeReference>
-              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
-              <allowSetValue>false</allowSetValue>
-              <typeReferenceSetting>
-                <isRequired>true</isRequired>
-                <targetTypes>
-                  <type>Layout Navigation</type>
-                </targetTypes>
-                <allowIsNavigable>true</allowIsNavigable>
-                <allowIsNullable>false</allowIsNullable>
-                <allowIsCollection>false</allowIsCollection>
-                <isNavigableDefault>true</isNavigableDefault>
-                <isNullableDefault>false</isNullableDefault>
-                <isCollectionDefault>false</isCollectionDefault>
-              </typeReferenceSetting>
-              <typeOrder>
-                <type order="0">Inherited Navigation</type>
-                <type order="1">Navigation Section</type>
-                <type order="2">Navigation Item</type>
-              </typeOrder>
-              <creationOptions>
-                <option type="element">
-                  <text>Inherited Navigation</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFBJREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/jMwMMDYxJoD1oNuAEgQBEDiuNgwC7AaQKztIHWjBoyGAfXTATmZaSEDA0MCqRkII6kDAGqaHxHlt7sIAAAAAElFTkSuQmCC" />
-                  <specializationType>Inherited Navigation</specializationType>
-                  <specializationTypeId>9974d562-885d-46d7-817e-0f663fe07e88</specializationTypeId>
-                  <defaultName>[inherited]</defaultName>
-                  <allowMultiple>false</allowMultiple>
-                </option>
-                <option type="element">
-                  <text>Add Section</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAF1JREFUOE9jZKAQMFKon4EmBhxgYGCwx+EykJwjshzIBf+hAjBJEB+Xy2BycEuQFcIkiTEArmbUANTQJjsQYdF4kIGBwQEarWRFIyx94EtIMEvgaYkmSZmk/EWxCwBRiiYPYs68JQAAAABJRU5ErkJggg==" />
-                  <specializationType>Navigation Section</specializationType>
-                  <specializationTypeId>d9b61c89-152b-435e-abb0-91df88b51518</specializationTypeId>
-                  <defaultName>NewNavigationSection</defaultName>
-                  <allowMultiple>true</allowMultiple>
-                </option>
-                <option type="element">
-                  <text>Add Item</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
-                  <specializationType>Navigation Item</specializationType>
-                  <specializationTypeId>a80d67aa-e2ee-43b4-ba71-9d068ebfb3af</specializationTypeId>
-                  <defaultName>NewNavigationItem</defaultName>
-                  <allowMultiple>true</allowMultiple>
-                </option>
-              </creationOptions>
-              <scriptOptions />
-              <mappingOptions />
-              <mappingSettings />
-              <macros>
-                <macro trigger="on-created">
-                  <script>/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-function addElement(type, definition, parent, stereotypes) {
-    if (parent.getChildren(type).every((x) =&gt; x.getName() !== definition.name)) {
-        const _element = createElement(type, definition.name, parent.id);
-        if (definition.type) {
-            _element.typeReference.setType(definition.type.id);
-            _element.typeReference.setIsNullable(definition.nullable);
-        }
-        if (stereotypes) {
-            for (let s = 0; s &lt; stereotypes.length; s++) {
-                const stereotype = stereotypes[s].stereotype;
-                if (!_element.hasStereotype(stereotype.id)) {
-                    _element.addStereotype(stereotype.id);
-                }
-                if (stereotype.properties) {
-                    stereotype.properties.forEach((property) =&gt; {
-                        _element
-                            .getStereotype(stereotype.id)
-                            .getProperty(property.name)
-                            .setValue(property.value);
-                    });
-                }
-            }
-        }
-        return _element;
-    }
-    else {
-        let _element = null;
-        parent.getChildren(type).forEach((e) =&gt; {
-            if (e.getName() === definition.name) {
-                _element = e;
-            }
-        });
-        return _element;
-    }
-}
-/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-const aryzacTypes = {
-    routeParameter: { name: "Route Parameter", id: "b1e06380-f8fe-42f8-bea1-820bbe5fee92" },
-    inheritedNavigation: { name: "Inherited Navigation", id: "9974d562-885d-46d7-817e-0f663fe07e88" },
-    layout: { name: "Layout", id: "eb6cb3df-6d5a-469b-8919-ab659187874f" },
-    layoutNavigation: { name: 'Layout Navigation', id: '504052da-efcd-4f9d-8177-ba6a2c7bfa79' },
-    layoutSlot: { name: 'Layout Slot', id: 'd5e91bdc-bc8d-4dd7-9fa7-5d537a478866' },
-    pages: { name: 'Pages', id: '4e3cc9bd-3900-4cd7-918b-ba7d11972da4' }
-};
-/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-const aryzacStereotypes = {
-    footerNavigationSettings: { name: "Footer Navigation Settings", id: "a4934d2c-7817-413d-af69-57b87289e2fd" },
-    sidebarNavigationSettings: { name: "Sidebar Navigation Settings", id: "d2871749-82c8-467d-8a70-2d0bea7cd3e2" },
-    topNavigationSettings: { name: "Top Navigation Settings", id: "e31690e9-e123-4c7f-aad5-576bbde51d08" }
-};
-/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-/// &lt;reference path="../_common/addElement.ts" /&gt;
-/// &lt;reference path="../_common/aryzac-types.ts" /&gt;
-/// &lt;reference path="../_common/aryzac-stereotypes.ts" /&gt;
-addElement(aryzacTypes.inheritedNavigation.name, {
-    name: "[inherited]"
-}, element);
-</script>
-                </macro>
-              </macros>
-              <childElementSettings />
-            </childElementSetting>
-            <childElementSetting type="Inherited Navigation" typeId="9974d562-885d-46d7-817e-0f663fe07e88">
-              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFBJREFUOE9jZKAQMEL1JzAwMMwn0awFDAwMiTAD/jMwMMDYxJoD1oNuAEgQBEDiuNgwC7AaQKztIHWjBoyGAfXTATmZaSEDA0MCqRkII6kDAGqaHxHlt7sIAAAAAElFTkSuQmCC" />
-              <saveAsOwnFile>false</saveAsOwnFile>
-              <allowRename>true</allowRename>
-              <allowAbstract>false</allowAbstract>
-              <allowStatic>false</allowStatic>
-              <allowGenericTypes>false</allowGenericTypes>
-              <allowMapping>false</allowMapping>
-              <allowSorting>true</allowSorting>
-              <sortChildren>by-type-then-by-name</sortChildren>
-              <allowFindInView>false</allowFindInView>
-              <allowTypeReference>false</allowTypeReference>
-              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
-              <allowSetValue>false</allowSetValue>
-              <typeOrder />
-              <creationOptions />
-              <scriptOptions />
-              <mappingOptions />
-              <mappingSettings />
-              <childElementSettings />
-            </childElementSetting>
             <childElementSetting type="Page Actions" typeId="78ed066b-85bc-42a6-b29f-9a126f1e4267">
               <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOBJREFUOE+9k+0NAVEQRc92QAdUgA7ogAoogQ7oQAd0QAd0QAk6QAXkbGaTXV9vRWL+vLzJzp1z581m/BhZqf4IdL7QuwDNssANKN9TWvn3fxFoARugG0gnoA1ooVGHYA1YNA+BLWCu4flKQG9F9IAd4KnIEFgGjQSVob0aol21MImOh7hbu5DqE8EAEFfvdi+HOUn6n2Ygrp09H4sVNn98t0h21Pc+lusa6NpxJtK5eLUWp3gFu1o8i1fIqVKb51OdgRGweiyuIzAFxoFf6VwMJUXgEPWtXy08RUog9UNxB1bPMxGCt2XbAAAAAElFTkSuQmCC" />
               <saveAsOwnFile>false</saveAsOwnFile>
@@ -2161,15 +1407,24 @@ addElement(aryzacTypes.inheritedNavigation.name, {
               <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
               <allowSetValue>false</allowSetValue>
               <typeOrder>
-                <type order="0">Action</type>
+                <type order="0">Command</type>
+                <type order="1">Command Reference</type>
               </typeOrder>
               <creationOptions>
                 <option type="element">
-                  <text>Add Action</text>
-                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOBJREFUOE+9k+0NAVEQRc92QAdUgA7ogAoogQ7oQAd0QAd0QAk6QAXkbGaTXV9vRWL+vLzJzp1z581m/BhZqf4IdL7QuwDNssANKN9TWvn3fxFoARugG0gnoA1ooVGHYA1YNA+BLWCu4flKQG9F9IAd4KnIEFgGjQSVob0aol21MImOh7hbu5DqE8EAEFfvdi+HOUn6n2Ygrp09H4sVNn98t0h21Pc+lusa6NpxJtK5eLUWp3gFu1o8i1fIqVKb51OdgRGweiyuIzAFxoFf6VwMJUXgEPWtXy08RUog9UNxB1bPMxGCt2XbAAAAAElFTkSuQmCC" />
-                  <specializationType>Action</specializationType>
-                  <specializationTypeId>90af522a-f9b0-4cb4-a6b2-048910b98f6d</specializationTypeId>
-                  <defaultName>NewAction</defaultName>
+                  <text>Add Command</text>
+                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIVJREFUOE/Nk9sRQDAQRU9K0IlSlBAl6EAHSkAHOqAEHTFrkhmGZIWf3K/9yJ7N3Yfhp4zLt0CfyBqA2gM2wMdvOUdOnoAJaIFV8RK0UAICqRRItAdvIGoTZbQdUASsqD+YgQaQeT8p2gMtWYBBwOKq+sry8KzL7uSzSF+OaQRs6gHdprED+MYqEW6CGKAAAAAASUVORK5CYII=" />
+                  <specializationType>Command</specializationType>
+                  <specializationTypeId>4a186cc2-552b-4438-89ff-02642035a61a</specializationTypeId>
+                  <defaultName>NewCommand</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
+                <option type="element">
+                  <text>Add Command Reference</text>
+                  <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEuNSAzTDMgMS41aDE4TDIyLjUgM3YxOEwyMSAyMi41SDNMMS41IDIxek0zIDN2MThoMThWM3oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGQ9Ik03LjA2IDcuNUw2IDguNTZsNC4yNDMgNC4yNDNMNiAxNy4wNDZsMS4wNiAxLjA2TDEyIDEzLjE2OHYtLjcyOHptNC45NCA5aDZWMThoLTZ6Ii8+PC9nPjwvc3ZnPg==" />
+                  <specializationType>Command Reference</specializationType>
+                  <specializationTypeId>6884ef62-13c6-40ec-bc6a-aa15b5001bf2</specializationTypeId>
+                  <defaultName>NewCommandReference</defaultName>
                   <allowMultiple>true</allowMultiple>
                 </option>
               </creationOptions>
@@ -2478,6 +1733,39 @@ if (element.getName().startsWith(":")) {
           <childElementSettings />
         </childElementSetting>
       </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Styles" typeId="8dc29833-ec92-42a2-9c4d-9fff45a5aa19">
+      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABV5JREFUeF7tnF1oHFUUx8+ZzWxCNnRjQitiTbpJq2KxqVUfLApmkw2KBYNiHrJFtyJ+gZiIL+qD4IN9kioIgiI0mA1oESuKiiRbfVAfFIktKlYk1ietJTbgbkybnSN3ZcMyzp25s/fO7t3mzmvO+Z87vz33nHNnNotgLikCKOVtnMEAlEwCA9AAlCQg6W4y0ACUJCDpbjLQAJQkIOluMtAAlCQg6W4y0ACUJCDpLpyB6fxqP6Fzl0UwRIC7ABxLMvaGOyJ+uTCZeFaVXiN1hACmZ0tTgHQk4oW9Wsgmnog4hnL5QIAj+eIMAdyvPLKnIB0pZLueakwsNVF8Aabnig8BwRtqQgmqIL1UmOx6WtC66Wb+APPFcwDQ2+hVIsLhVqmJXIDpt0r7waIvGg2vGo8AXjyRTTzXrPiicbkAR+aK40TwnqhQFHZI8PzCwcQLUWir0uQCHJ4rTSDR26oCtYQOwY+E+K2FzuzCZNcnIms2ADmUEOD1zr87pz94BEt+IA1A3zTDQiHbOWIAiuxFng3Bw4WDCe4oZzIwEC79VMh2XcszMwADAQJY9lr3/ETPipcpfw7Ml+4DoHcE9C95EwTKLGS75kMB3JRjDDcVcKKQ7TxmANa9VwzAutH952gAbm6AfUkL+rYEPrqUhMR370visf4t1vduCwI60xJjTGZHG9x0hbI3CMpAI8ErLQEwu9tuagZyDylIh1oC4DO3xJVljUohQrpBe4CXJxAe3GOrvG9lWpkBG7UHeP02Cw4Mtim7aYVCn2cG7Nu1B6hzAxkdtKe0B6hzAxlLxY9qD1DhlgsldXWPBfdewy8drIGMpeKLBiAH623bY3DrVTEudNZAKoc8nsVmfxoTUDoqDcQA9NnU0zfb0NHmnV/sBMIaiPYA2QzYzt9FoWpaGONkBxud+IEJ6RBrINoD1PkEwhqI1gB1P4FUM1rbJhI0RoTZkoptNxqI1hkYNEYohiIsR0AzYwPxnPYZqOsJBIimM4Pxl7UH6DdGCKdLFIYIw5mU/ZnWAJPtAI/v0/MZYPUEojVANsBuSzTnHUimP8aNjQDfjQ7Ye2sTW9suHMXuE9H0Kx3uBqJ1Fxa5WdU2gaXD1UAMQNcnEDh7uhqIAegCGDR7uhuIlgDZEW60n3+Qnz9Thj+KpHr3VvT8Zk+vBqIlwKAsOPzVhUjgMdGwDURLgOwxOqtFXtfZIsGbJy9GArCeBqIlwMf22dDd7j1dnTpbhg9/KUcCsJ4G4gswPVu8ExA+imS1HFE2QLNt5Hex+vf17w78vOzAP+tytZBl3a4eC/ZsjQGrvX6XVwPxB5hf7Qdwfm0kQPYtrOx1Yi/RGTwG8eQ5gt9WHOFlhoFWFS079MMdO+O7vYIE/bPhNwBwo/DqJA2DGghP/vwawak/HWBbfGXt/1b1QKtV8TqBVP/uC3A4X7oHgd6V5CLs7tdAREVOLztw+i+WlWXh7Rmo7XECEQLIjNL54msA8GhgEAUGfg1EgXz9Eh4nEGGAzHAkX3qSgDYeIta/En9P9kUiVtCb+W1U1wrfJ6Tj1TdwoWtgrQP70Qkk5wBZMASEO1X+6IR7Yb0d2LH/ytj21GVWb8LGjqg+MC/d5VVaxJhzdGt7+8xwCs8HxW7OQ7egVdX8fX5pfdwhZxwBHwjhFta0kmk22MdFoNWKaw+wutgTS9S97lzMIWKOAIbCEvKwrxtaSwKsXfSnSxf2AsEUAo4DQDIETCXQWh6gC2YOqQLybg5I5dAuKYDVm/l4aXVHm9OWA6QcAC7WW9NCZHPFtGVqYNgba5S9AShJ2gA0ACUJSLqbDDQAJQlIupsMNAAlCUi6/wubwh48g5eLvgAAAABJRU5ErkJggg==" />
+      <expandedIcon type="UrlImagePath" source="data:image/png;base64,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" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder>
+        <type order="0">Style</type>
+      </typeOrder>
+      <creationOptions>
+        <option type="element">
+          <text>Add Style</text>
+          <icon type="UrlImagePath" source="data:image/png;base64,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" />
+          <specializationType>Style</specializationType>
+          <specializationTypeId>2c9f3240-b036-4850-ac3f-51d94e8f0c28</specializationTypeId>
+          <defaultName>NewStyle</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+      </creationOptions>
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings />
     </elementSetting>
   </elementSettings>
   <elementExtensions />

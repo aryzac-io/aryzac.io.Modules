@@ -1,8 +1,7 @@
 /// <reference path="../../../typings/elementmacro.context.api.d.ts" />
-/// <reference path="../../_common/addElement.ts" />
-/// <reference path="../../_common/intent-types.ts" />
-/// <reference path="../../_common/aryzac-types.ts" />
-/// <reference path="../../_common/aryzac-stereotypes.ts" />
+/// <reference path="../../../common/addElement.ts" />
+/// <reference path="../../../common/aryzac-types.ts" />
+/// <reference path="../../../common/aryzac-stereotypes.ts" />
 
 if (element.getName().startsWith(":")) {
     addElement(

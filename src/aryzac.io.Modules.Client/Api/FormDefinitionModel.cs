@@ -11,7 +11,7 @@ using Intent.RoslynWeaver.Attributes;
 namespace Aryzac.Io.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
-    public class FormDefinitionModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
+    public class FormDefinitionModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
     {
         public const string SpecializationType = "Form Definition";
         public const string SpecializationTypeId = "df0da0e1-b468-4868-8135-22caf8767eeb";
@@ -35,20 +35,73 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
 
-        public bool IsMapped => _element.IsMapped;
-
-        public IElementMapping Mapping => _element.MappedElement;
+        public ITypeReference TypeReference => _element.TypeReference;
 
         public IElement InternalElement => _element;
 
-        public IList<FormDefinitionFieldModel> Fields => _element.ChildElements
-            .GetElementsOfType(FormDefinitionFieldModel.SpecializationTypeId)
-            .Select(x => new FormDefinitionFieldModel(x))
+        public IList<SectionModel> Sections => _element.ChildElements
+            .GetElementsOfType(SectionModel.SpecializationTypeId)
+            .Select(x => new SectionModel(x))
             .ToList();
 
-        public IList<ComponentSectionModel> ComponentSections => _element.ChildElements
-            .GetElementsOfType(ComponentSectionModel.SpecializationTypeId)
-            .Select(x => new ComponentSectionModel(x))
+        public IList<CheckboxModel> Checkboxes => _element.ChildElements
+            .GetElementsOfType(CheckboxModel.SpecializationTypeId)
+            .Select(x => new CheckboxModel(x))
+            .ToList();
+
+        public IList<DatePickerModel> DatePickers => _element.ChildElements
+            .GetElementsOfType(DatePickerModel.SpecializationTypeId)
+            .Select(x => new DatePickerModel(x))
+            .ToList();
+
+        public IList<RadioButtonModel> RadioButtons => _element.ChildElements
+            .GetElementsOfType(RadioButtonModel.SpecializationTypeId)
+            .Select(x => new RadioButtonModel(x))
+            .ToList();
+
+        public IList<SwitchModel> Switches => _element.ChildElements
+            .GetElementsOfType(SwitchModel.SpecializationTypeId)
+            .Select(x => new SwitchModel(x))
+            .ToList();
+
+        public IList<TextAreaModel> TextAreas => _element.ChildElements
+            .GetElementsOfType(TextAreaModel.SpecializationTypeId)
+            .Select(x => new TextAreaModel(x))
+            .ToList();
+
+        public IList<TextboxModel> Textboxes => _element.ChildElements
+            .GetElementsOfType(TextboxModel.SpecializationTypeId)
+            .Select(x => new TextboxModel(x))
+            .ToList();
+
+        public IList<TimePickerModel> TimePickers => _element.ChildElements
+            .GetElementsOfType(TimePickerModel.SpecializationTypeId)
+            .Select(x => new TimePickerModel(x))
+            .ToList();
+
+        public IList<SelectModel> Selects => _element.ChildElements
+            .GetElementsOfType(SelectModel.SpecializationTypeId)
+            .Select(x => new SelectModel(x))
+            .ToList();
+
+        public IList<FileModel> Files => _element.ChildElements
+            .GetElementsOfType(FileModel.SpecializationTypeId)
+            .Select(x => new FileModel(x))
+            .ToList();
+
+        public IList<SliderModel> Sliders => _element.ChildElements
+            .GetElementsOfType(SliderModel.SpecializationTypeId)
+            .Select(x => new SliderModel(x))
+            .ToList();
+
+        public IList<LabelModel> Labels => _element.ChildElements
+            .GetElementsOfType(LabelModel.SpecializationTypeId)
+            .Select(x => new LabelModel(x))
+            .ToList();
+
+        public IList<ContainerModel> Containers => _element.ChildElements
+            .GetElementsOfType(ContainerModel.SpecializationTypeId)
+            .Select(x => new ContainerModel(x))
             .ToList();
 
         public override string ToString()
@@ -87,26 +140,6 @@ namespace Aryzac.Io.Modules.Client.Api
         public static FormDefinitionModel AsFormDefinitionModel(this ICanBeReferencedType type)
         {
             return type.IsFormDefinitionModel() ? new FormDefinitionModel((IElement)type) : null;
-        }
-
-        public static bool HasMapFromDTOMapping(this FormDefinitionModel type)
-        {
-            return type.Mapping?.MappingSettingsId == "e14e2455-2bdd-4e46-ac60-123ef724f953";
-        }
-
-        public static IElementMapping GetMapFromDTOMapping(this FormDefinitionModel type)
-        {
-            return type.HasMapFromDTOMapping() ? type.Mapping : null;
-        }
-
-        public static bool HasMapFromModelMapping(this FormDefinitionModel type)
-        {
-            return type.Mapping?.MappingSettingsId == "939cf7e0-d31d-40b0-855f-fbb3bb8bc054";
-        }
-
-        public static IElementMapping GetMapFromModelMapping(this FormDefinitionModel type)
-        {
-            return type.HasMapFromModelMapping() ? type.Mapping : null;
         }
     }
 }

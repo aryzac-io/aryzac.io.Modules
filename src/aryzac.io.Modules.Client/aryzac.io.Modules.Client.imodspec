@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <id>aryzac.io.Modules.Client</id>
-  <version>1.0.0-pre.4</version>
+  <version>1.0.0-pre.5</version>
   <supportedClientVersions>[4.1.0-beta.21,5.0.0)</supportedClientVersions>
   <summary>A custom module for aryzac.io.Modules.</summary>
   <description>A custom module for aryzac.io.Modules.</description>
@@ -31,5 +31,9 @@
     <install src="modelers/Client.designer.config" externalReference="99fbd418-a3d3-4e05-a60b-071898c51c25" />
     <install src="modelers/Client Settings.designer.settings" externalReference="121396e8-27e3-41d1-af47-ab3ef869cf58" target="Client" />
     <install target="Module Builder;Client" src="../../intent/aryzac.io.Modules.Client/Intent.Metadata/Module Builder/aryzac.io.Modules.Client/aryzac.io.Modules.Client.pkg.config" externalReference="f036ca14-09d9-4b02-bc4f-eb1f50ff035e" />
+    <install src="modelers/Client Control Settings.designer.settings" externalReference="453ef50f-146f-4ded-89d9-bfe9e58f93c1" />
+    <install src="modelers/Layout Settings.designer.settings" externalReference="25d53d97-63f1-48b0-9725-a503e58da08f" />
+    <install src="modelers/Style Settings.designer.settings" externalReference="c73a5458-07ad-4e6a-874a-7abaa3429caa" />
+    <install src="modelers/Typography Settings.designer.settings" externalReference="a2bffbbd-b781-4075-8846-a56c82bba5ba" />
   </metadata>
 </package>

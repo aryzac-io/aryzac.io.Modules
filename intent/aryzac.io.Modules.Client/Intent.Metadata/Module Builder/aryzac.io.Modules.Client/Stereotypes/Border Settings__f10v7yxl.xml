@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="ea1094bc-e9da-4f4d-834f-10d839990184" version="3.1.0">
+  <name>Border Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="f8613b56-6d16-469a-9d1f-76d6761b8909">Border</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>on-create</applyMode>
+  <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>da6ff793-3b89-4a7a-8f56-82561501dfc1</parentFolderId>
+  <order>0</order>
+  <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+  <packageName>aryzac.io.Modules.Client</packageName>
+  <properties>
+    <property id="dec094d2-2ffa-45b5-a966-9d9c269c8b4e">
+      <name>All</name>
+      <type>string</type>
+      <controlType>number</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="797c4a97-3dba-428c-8842-be9590aedcf7">
+      <name>Top</name>
+      <type>string</type>
+      <controlType>number</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="ce96edf8-f5ea-444c-a082-f4d430e8ccc8">
+      <name>Left</name>
+      <type>string</type>
+      <controlType>number</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="e0387071-8acf-423b-9268-faf8dbed07c7">
+      <name>Right</name>
+      <type>string</type>
+      <controlType>number</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="38dae72e-3b87-4791-a68c-54490f27e98e">
+      <name>Bottom</name>
+      <type>string</type>
+      <controlType>number</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+  </properties>
+</stereotypeDefinition>

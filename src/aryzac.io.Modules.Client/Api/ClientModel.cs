@@ -49,6 +49,11 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new ComponentsModel(x))
             .SingleOrDefault();
 
+        public CommandsModel Commands => UnderlyingPackage.ChildElements
+            .GetElementsOfType(CommandsModel.SpecializationTypeId)
+            .Select(x => new CommandsModel(x))
+            .SingleOrDefault();
+
         public ServiceProxiesModel ServiceProxies => UnderlyingPackage.ChildElements
             .GetElementsOfType(ServiceProxiesModel.SpecializationTypeId)
             .Select(x => new ServiceProxiesModel(x))
@@ -68,6 +73,16 @@ namespace Aryzac.Io.Modules.Client.Api
             .GetElementsOfType(TypeDefinitionModel.SpecializationTypeId)
             .Select(x => new TypeDefinitionModel(x))
             .ToList();
+
+        public StylesModel Styles => UnderlyingPackage.ChildElements
+            .GetElementsOfType(StylesModel.SpecializationTypeId)
+            .Select(x => new StylesModel(x))
+            .SingleOrDefault();
+
+        public ControlsModel Controls => UnderlyingPackage.ChildElements
+            .GetElementsOfType(ControlsModel.SpecializationTypeId)
+            .Select(x => new ControlsModel(x))
+            .SingleOrDefault();
 
     }
 }

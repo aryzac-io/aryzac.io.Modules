@@ -54,6 +54,7 @@
       <name>[context menu]</name>
       <display>[context menu]</display>
       <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>4a186cc2-552b-4438-89ff-02642035a61a</parentFolderId>
@@ -61,7 +62,88 @@
       <packageName>aryzac.io.Modules.Client</packageName>
       <stereotypes />
       <metadata />
-      <childElements />
+      <childElements>
+        <childElement id="4d6450cf-2936-4602-b0b8-ed2a6d324596" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Navigation</name>
+          <display>Add Navigation: Navigation</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="b1c5a34e-7ad6-40dd-96b1-fe6f67cd676c">
+            <typeId>e9c6d81b-1204-468b-889e-9490f37c223f</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>2381479f-7018-497f-b9c7-cc7d5ba6a556</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="[navigation]" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="false" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="b46293bd-df86-4c14-9c61-8914db3f1760" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Operation</name>
+          <display>Add Operation: Operation</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="d9d54661-1153-4a19-95e9-ae0296f97a59">
+            <typeId>fd5dcb2b-3db4-4cc9-a551-0354d3cb3c01</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>aryzac.io.Modules.Client</typePackageName>
+            <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>2381479f-7018-497f-b9c7-cc7d5ba6a556</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="[operation]" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="false" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
     </childElement>
   </childElements>
 </class>

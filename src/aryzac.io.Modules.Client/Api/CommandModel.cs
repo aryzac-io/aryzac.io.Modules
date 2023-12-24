@@ -37,6 +37,16 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
+        public NavigationModel Navigation => _element.ChildElements
+            .GetElementsOfType(NavigationModel.SpecializationTypeId)
+            .Select(x => new NavigationModel(x))
+            .SingleOrDefault();
+
+        public OperationModel Operation => _element.ChildElements
+            .GetElementsOfType(OperationModel.SpecializationTypeId)
+            .Select(x => new OperationModel(x))
+            .SingleOrDefault();
+
         public override string ToString()
         {
             return _element.ToString();

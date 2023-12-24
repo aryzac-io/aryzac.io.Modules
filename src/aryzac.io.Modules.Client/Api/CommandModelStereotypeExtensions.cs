@@ -57,14 +57,19 @@ namespace Aryzac.Io.Modules.Client.Api
 
             public string Name => _stereotype.Name;
 
+            public string Icon()
+            {
+                return _stereotype.GetProperty<string>("Icon");
+            }
+
+            public string Label()
+            {
+                return _stereotype.GetProperty<string>("Label");
+            }
+
             public InteractionOptions Interaction()
             {
                 return new InteractionOptions(_stereotype.GetProperty<string>("Interaction"));
-            }
-
-            public IElement Action()
-            {
-                return _stereotype.GetProperty<IElement>("Action");
             }
 
             public class InteractionOptions

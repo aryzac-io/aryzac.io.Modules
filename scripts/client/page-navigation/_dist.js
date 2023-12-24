@@ -50,9 +50,9 @@ const aryzacStereotypes = {
     topNavigationSettings: { name: "Top Navigation Settings", id: "e31690e9-e123-4c7f-aad5-576bbde51d08" }
 };
 /// <reference path="../../typings/elementmacro.context.api.d.ts" />
-/// <reference path="../_common/addElement.ts" />
-/// <reference path="../_common/aryzac-types.ts" />
-/// <reference path="../_common/aryzac-stereotypes.ts" />
+/// <reference path="../common/addElement.ts" />
+/// <reference path="../common/aryzac-types.ts" />
+/// <reference path="../common/aryzac-stereotypes.ts" />
 addElement(aryzacTypes.inheritedNavigation.name, {
     name: "[inherited]"
 }, element);

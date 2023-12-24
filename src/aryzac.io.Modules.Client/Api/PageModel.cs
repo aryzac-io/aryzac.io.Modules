@@ -44,11 +44,6 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new BreadcrumbsModel(x))
             .SingleOrDefault();
 
-        public IList<PageNavigationModel> PageNavigations => _element.ChildElements
-            .GetElementsOfType(PageNavigationModel.SpecializationTypeId)
-            .Select(x => new PageNavigationModel(x))
-            .ToList();
-
         public PageActionsModel Actions => _element.ChildElements
             .GetElementsOfType(PageActionsModel.SpecializationTypeId)
             .Select(x => new PageActionsModel(x))

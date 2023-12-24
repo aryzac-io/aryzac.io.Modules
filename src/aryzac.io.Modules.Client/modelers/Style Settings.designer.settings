@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings version="3.1.1">
+  <id>c73a5458-07ad-4e6a-874a-7abaa3429caa</id>
+  <name>Style Settings</name>
+  <designerReferences />
+  <packageSettings />
+  <packageExtensions />
+  <elementSettings>
+    <elementSetting type="Base Style" typeId="6ff8ab79-32c0-4d0f-9665-9c687e6643b7">
+      <icon type="FontAwesome" source="file-o" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder />
+      <creationOptions />
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings>
+        <childElementSetting type="Border" typeId="f8613b56-6d16-469a-9d1f-76d6761b8909">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder>
+            <type order="0">Color</type>
+            <type order="1">Border Radius</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Color</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Color</specializationType>
+              <specializationTypeId>7b958105-c8de-47b3-900e-dc74b609d5a1</specializationTypeId>
+              <defaultName>color</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Border Radius</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Border Radius</specializationType>
+              <specializationTypeId>d76f1820-09dc-4539-9aa6-c40b5b868616</specializationTypeId>
+              <defaultName>rounded</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings>
+            <childElementSetting type="Border Radius" typeId="d76f1820-09dc-4539-9aa6-c40b5b868616">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+          </childElementSettings>
+        </childElementSetting>
+        <childElementSetting type="Padding" typeId="399c57d2-fa0f-4ab6-898f-a78ad0bd4602">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Shadow" typeId="a9758e3e-6a68-4b04-be98-06ced343ff37">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder>
+            <type order="0">Color</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Color</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Color</specializationType>
+              <specializationTypeId>7b958105-c8de-47b3-900e-dc74b609d5a1</specializationTypeId>
+              <defaultName>color</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Margin" typeId="a2b00364-33f1-4a4d-ab3d-7045c0a830c2">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Width" typeId="76e4d755-0cf6-45d5-b896-0346d64be92a">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Height" typeId="6c855712-b4c2-4504-afc3-41bdfbc7ef62">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings>
+            <childElementSetting type="Height-Full" typeId="fc40c4ea-7563-4e03-be16-6c1f21e721e0">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-Screen" typeId="857f44f2-17ea-46bf-bc3a-9aaae1885618">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-Svw" typeId="1f93f232-a0cf-483a-9a92-dfd37f0304d0">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-Lvw" typeId="478c7c9c-ad3e-4984-bcf9-b45708da85b1">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-Dvw" typeId="cea96cfd-64d9-484b-8e26-78f72988934f">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-Min" typeId="638de135-291d-4a1b-b2d9-0680ae557675">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-Max" typeId="c6f40c9b-ffc0-4963-82df-683eba3547aa">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-Fit" typeId="f8ba90b8-1cbf-4e90-a666-58c662a7cb22">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Height-[n]" typeId="654378b1-b575-44be-a75d-b2a1e74d8ffc">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Min-Height" typeId="fa674df9-34a2-48b0-a175-54682b1150a6">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Max-Height" typeId="a343ac30-b0f5-45c9-9996-0335074c0e8e">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+          </childElementSettings>
+        </childElementSetting>
+        <childElementSetting type="Background-Color" typeId="b1640482-4701-4618-a87d-bd30ab785cad">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>true</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeReferenceSetting>
+            <isRequired>true</isRequired>
+            <targetTypes>
+              <type>Theme Color</type>
+            </targetTypes>
+            <allowIsNavigable>true</allowIsNavigable>
+            <allowIsNullable>true</allowIsNullable>
+            <allowIsCollection>true</allowIsCollection>
+            <isNavigableDefault>true</isNavigableDefault>
+            <isNullableDefault>false</isNullableDefault>
+            <isCollectionDefault>false</isCollectionDefault>
+          </typeReferenceSetting>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Color" typeId="7b958105-c8de-47b3-900e-dc74b609d5a1">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>true</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeReferenceSetting>
+            <isRequired>true</isRequired>
+            <targetTypes>
+              <type>Theme Color</type>
+            </targetTypes>
+            <allowIsNavigable>true</allowIsNavigable>
+            <allowIsNullable>true</allowIsNullable>
+            <allowIsCollection>true</allowIsCollection>
+            <isNavigableDefault>true</isNavigableDefault>
+            <isNullableDefault>false</isNullableDefault>
+            <isCollectionDefault>false</isCollectionDefault>
+          </typeReferenceSetting>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+      </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Colors" typeId="4f7bc378-9244-49dc-a1c8-ea99fe1c0abf">
+      <icon type="FontAwesome" source="file-o" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder />
+      <creationOptions />
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <macros>
+        <macro trigger="on-created">
+          <script>/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+function addElement(type, definition, parent, stereotypes) {
+    if (parent.getChildren(type).every((x) =&gt; x.getName() !== definition.name)) {
+        const _element = createElement(type, definition.name, parent.id);
+        if (definition.type) {
+            _element.typeReference.setType(definition.type.id);
+            _element.typeReference.setIsNullable(definition.nullable);
+        }
+        if (stereotypes) {
+            for (let s = 0; s &lt; stereotypes.length; s++) {
+                const stereotype = stereotypes[s].stereotype;
+                if (!_element.hasStereotype(stereotype.id)) {
+                    _element.addStereotype(stereotype.id);
+                }
+                if (stereotype.properties) {
+                    stereotype.properties.forEach((property) =&gt; {
+                        _element
+                            .getStereotype(stereotype.id)
+                            .getProperty(property.name)
+                            .setValue(property.value);
+                    });
+                }
+            }
+        }
+        return _element;
+    }
+    else {
+        let _element = null;
+        parent.getChildren(type).forEach((e) =&gt; {
+            if (e.getName() === definition.name) {
+                _element = e;
+            }
+        });
+        return _element;
+    }
+}
+/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+const aryzacTypes = {
+    routeParameter: { name: "Route Parameter", id: "b1e06380-f8fe-42f8-bea1-820bbe5fee92" },
+    inheritedNavigation: { name: "Inherited Navigation", id: "9974d562-885d-46d7-817e-0f663fe07e88" },
+    layout: { name: "Layout", id: "eb6cb3df-6d5a-469b-8919-ab659187874f" },
+    layoutNavigation: { name: 'Layout Navigation', id: '504052da-efcd-4f9d-8177-ba6a2c7bfa79' },
+    layoutSlot: { name: 'Layout Slot', id: 'd5e91bdc-bc8d-4dd7-9fa7-5d537a478866' },
+    pages: { name: 'Pages', id: '4e3cc9bd-3900-4cd7-918b-ba7d11972da4' },
+    breakpoints: { name: 'Breakpoints', id: 'd001da3a-4e21-4a7b-930c-defe16bf8091' },
+    breakpoint: { name: 'Breakpoint', id: '054ff75d-9014-4505-ba45-5fee23653139' },
+    themeColor: { name: 'Theme Color', id: '4f68aa50-d3c0-40af-842c-f1302c7cf805' }
+};
+/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+const aryzacStereotypes = {
+    footerNavigationSettings: { name: "Footer Navigation Settings", id: "a4934d2c-7817-413d-af69-57b87289e2fd" },
+    sidebarNavigationSettings: { name: "Sidebar Navigation Settings", id: "d2871749-82c8-467d-8a70-2d0bea7cd3e2" },
+    topNavigationSettings: { name: "Top Navigation Settings", id: "e31690e9-e123-4c7f-aad5-576bbde51d08" }
+};
+/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
+/// &lt;reference path="../../common/addElement.ts" /&gt;
+/// &lt;reference path="../../common/aryzac-types.ts" /&gt;
+/// &lt;reference path="../../common/aryzac-stereotypes.ts" /&gt;
+addElement(aryzacTypes.themeColor.name, {
+    name: "Primary"
+}, element);
+addElement(aryzacTypes.themeColor.name, {
+    name: "Secondary"
+}, element);
+addElement(aryzacTypes.themeColor.name, {
+    name: "Accent"
+}, element);
+addElement(aryzacTypes.themeColor.name, {
+    name: "Info"
+}, element);
+addElement(aryzacTypes.themeColor.name, {
+    name: "Success"
+}, element);
+addElement(aryzacTypes.themeColor.name, {
+    name: "Error"
+}, element);
+addElement(aryzacTypes.themeColor.name, {
+    name: "Warning"
+}, element);
+</script>
+        </macro>
+      </macros>
+      <childElementSettings>
+        <childElementSetting type="Theme Color" typeId="4f68aa50-d3c0-40af-842c-f1302c7cf805">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+      </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Modifiers" typeId="6ee3a0db-8470-40b5-89ae-e2cdfb848f54">
+      <icon type="FontAwesome" source="file-o" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder />
+      <creationOptions />
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings>
+        <childElementSetting type="Hover" typeId="190c1466-4ad9-456c-808c-304eebcd0395">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Dark" typeId="25432221-eae2-4795-904f-6dca5ada6615">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+      </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Style" typeId="2c9f3240-b036-4850-ac3f-51d94e8f0c28">
+      <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABvFJREFUeF7tnFtsFGUUx/9ntpV0pgoh3qLxGjWowRevSNDdacVbIFFKtZ0FFGP0waBAjIkhETVG4yXeHgy+FOjOlnSriYHES9hZokbwEo1GQVE0XqKJ8QbsTCW0c8w0YAq6zJn5dstsOvO6/3POf349M2fm229LSA8lAqQUnQYjBajYBCnAFKAiAcXwtANTgIoEFMPTDkwBKhJQDE878GgDzNneMgI/r+gjyeG+UdWP3XgXef9nUrkDcwV3LRGWJJmAorftjmVcWCuHMkDTdj8FcJGiyQSHU79j6YsbAvDiNdw6td37G4CWYAJK1gh0X9nSa96ilDowO+Beovn4UMlhwoM10uZs7m17tyEdaBbcO0F4OeEMVOwdcYAEiZU60LTdlwDcreIw4bFHHCDqAAvuNhAuTzgEBXtHHiBqAFezZp47NkBaFRwmOjRsgCgBzBX3XkisfZ5oAormwgaIEsCOYjXPTP2KHpMcHjpAlAB2rhs+HdrI2UkmcLi30QxdSkxPCj2HDhAlgEITiZKZdvUBgJ4QmWIqOHl9UZhW6TEmLHnSPu+w3SEGFoh8MS138vpzYdpJBTBnuz8QcFoYlOBzyQCZVJfwnMG9J7Tu136VwAs0RlU3ai1hjc8xaTow1+/OJw2viQAydjh54wKJdtIANG33UQCrJFAgHCCxL2HT9sqAnxGZSYyIzgdwosQOg+6tWPoLEm3kDuwsVGf6RJ9JkjerhnztqvKitnck/iMD7ChUlzDRWknyZtVIB0isSzhnV58n0LJmhRPum750LD243EVH5A40bTdYnZ0tyt6EIgbZFUvPS63HAegC0KUFmk3HoBUVS39W6jsSwGxxzwyNMzukyZtRF2WARL4HmsVqD5iKzQhG6nm4Vde3dtOwVB+pA81i9WkwrZQmb0LdN45lnBvFdzSAtucAnItSoMm0JccyuqN4jgjQ/QvA1CgFmknLzA9W8u2PR/EsBjh3PRsjGe/+KMkTol0O4DiJFyK+vtzb/oZEe1AjBhglaVK089aw7rZ7e6VbT1pG/ZPeWnyseMkr8hROChipj1zBm03ENbdljM9DwC9lyzhFmntSdGDEvYubHMuYlwIcR6DDdtcxUHNr2mGwVjuW8XAKcBwB03aDL/5rbo485BJmzCvnjU0pwAMEJmKAiIfI3PXDZ/k0cobkr8Ot/HP51uN2SrSN1GQL3hUa8VZhjZ8dyzhVqD1EJnqMMe3qAEC3igoQVjm9xmMibQNFpu3dA/CLwhKxBoi4A027uhMg0Tsig6+rWO1vCo03TGbabh+A24QFYg0QEcAD95JgDVB0aK37pm3unr5bJG6gyLTd4HubmZISFHOAiAB29u/N+ppWkRgB8L1jGWcKtQ2TRd38HucN5KD50HtgR6G6komelpwtAa+ULaNLom2kJjfgXU4+b5PUiPsGIgaYs70CgS2JGYB3gugpv0XfsKWbqrKY+qk6B/+Y6o9MWQjGUgCzhJk3OpYxX6j9jyy0A027+hVA50UsENwzS4DW51htb0eMjSS/dnD39P0jLTcTo4sBM8aW49gDJPQeGHWA1DjzXQDWjmi07u0e/cdIdGqIs8U9x2t+pgtEXQBnAcTeJaEyQEIB5orDVxP7W+px0gB8AGUQ9035zXj19WW0L0re7GD1ZG2/1gX4XQDNkS5RhdVQGSACgN4KYn4mzESMz4OV7Q0A9TmW/kGt+GsG3FNGR6kbxMFgulL1dy2H11EdIKEATduzAe6NAShKyHaA+1pGeX2wmBnsvfZbRrvB1AXCZfWGdpix2G8goils2t4OgGdEoaGo/UK6eqJYZyycGA+V88YjKrlqTuE6DRAVbw2PVR0ggkt4+CpmfykRgnuQ0fAzmpgCPwH8CrNWqlht74GIVcqGPgcGybOD3J7Z793CwQMqjd3Mm+pg4EcCDxFppXKvLl3iEp2jCOD4TNn+v8+hjH8n+bwYhJNFVY6O6AcGDwWdtiWvi17r4tiMDPBgkYWDnPl9xLvhwGvTjTHeAOL4DYv5HqASaxiq9Ojvh4nr8XlsgId0ZXHP8RlfC3au3j6RUzTwwMB3GtMQwKVy3pjwX8/XBeB4mKbtXcbMweAJVrAbtQ3kWyYaYuLSlh7jo3p0UtwcdQd40MisQW7TR9wFzNrSA++rqrV2gakE5pKzyPg47gnXO071pER+THv4DIJ/B2Ps/8ucLgoaE/HXRDREhNLmHuMTedzEKScE4L+nw0wdA27n2OMQ6CYAU/57qrwz6DRmLlUWtQf/kybRx8QCHIci2/fntEzrMRZTAJONYHoScanc295Uv0E5agAT3VYRzKUAI8D6P2kKMAWoSEAxPO3AFKAiAcXwtANTgIoEFMPTDkwBKhJQDP8HVLU3b4DH0nkAAAAASUVORK5CYII=" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder>
+        <type order="0">Breakpoints</type>
+        <type order="1">Colors</type>
+        <type order="2">Border</type>
+        <type order="3">Padding</type>
+        <type order="4">Margin</type>
+        <type order="5">Shadow</type>
+        <type order="6">Width</type>
+        <type order="7">Height</type>
+        <type order="8">Color</type>
+        <type order="9">Background-Color</type>
+      </typeOrder>
+      <creationOptions>
+        <option type="element">
+          <text>Add Breakpoints</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Breakpoints</specializationType>
+          <specializationTypeId>d001da3a-4e21-4a7b-930c-defe16bf8091</specializationTypeId>
+          <defaultName>[breakpoints]</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Colors</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Colors</specializationType>
+          <specializationTypeId>4f7bc378-9244-49dc-a1c8-ea99fe1c0abf</specializationTypeId>
+          <defaultName>[colors]</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Border</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Border</specializationType>
+          <specializationTypeId>f8613b56-6d16-469a-9d1f-76d6761b8909</specializationTypeId>
+          <defaultName>border</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Padding</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Padding</specializationType>
+          <specializationTypeId>399c57d2-fa0f-4ab6-898f-a78ad0bd4602</specializationTypeId>
+          <defaultName>padding</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Margin</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Margin</specializationType>
+          <specializationTypeId>a2b00364-33f1-4a4d-ab3d-7045c0a830c2</specializationTypeId>
+          <defaultName>margin</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Shadow</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Shadow</specializationType>
+          <specializationTypeId>a9758e3e-6a68-4b04-be98-06ced343ff37</specializationTypeId>
+          <defaultName>shadow</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Width</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Width</specializationType>
+          <specializationTypeId>76e4d755-0cf6-45d5-b896-0346d64be92a</specializationTypeId>
+          <defaultName>width</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Height</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Height</specializationType>
+          <specializationTypeId>6c855712-b4c2-4504-afc3-41bdfbc7ef62</specializationTypeId>
+          <defaultName>height</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Color</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Color</specializationType>
+          <specializationTypeId>7b958105-c8de-47b3-900e-dc74b609d5a1</specializationTypeId>
+          <defaultName>color</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Background Color</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Background-Color</specializationType>
+          <specializationTypeId>b1640482-4701-4618-a87d-bd30ab785cad</specializationTypeId>
+          <defaultName>background-color</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+      </creationOptions>
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings />
+    </elementSetting>
+  </elementSettings>
+  <elementExtensions />
+  <associationSettings />
+  <associationExtensions />
+  <mappingSettings />
+  <mappableElementPackages />
+  <mappableElementPackageExtensions />
+</settings>

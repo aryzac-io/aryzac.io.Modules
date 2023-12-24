@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="82bf8b2e-58c4-4955-ab44-6a521aee41f3" type="Style" typeId="2c9f3240-b036-4850-ac3f-51d94e8f0c28">
+  <name>override style</name>
+  <display>override style</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>a3d9e83e-ebb6-4a2f-a6dc-6e86686e5a3f</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

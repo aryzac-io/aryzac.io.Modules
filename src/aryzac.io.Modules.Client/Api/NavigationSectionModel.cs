@@ -14,7 +14,7 @@ namespace Aryzac.Io.Modules.Client.Api
     public class NavigationSectionModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Navigation Section";
-        public const string SpecializationTypeId = "d9b61c89-152b-435e-abb0-91df88b51518";
+        public const string SpecializationTypeId = "e8d903c1-27f9-45af-ba41-0119b4bb3d99";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
@@ -37,9 +37,9 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
-        public IList<NavigationLogoModel> Logos => _element.ChildElements
-            .GetElementsOfType(NavigationLogoModel.SpecializationTypeId)
-            .Select(x => new NavigationLogoModel(x))
+        public IList<LogoModel> Logos => _element.ChildElements
+            .GetElementsOfType(LogoModel.SpecializationTypeId)
+            .Select(x => new LogoModel(x))
             .ToList();
 
         public IList<NavigationItemModel> Items => _element.ChildElements
@@ -47,7 +47,12 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new NavigationItemModel(x))
             .ToList();
 
-        public IList<ComponentReferenceModel> Components => _element.ChildElements
+        public IList<ComponentModel> Components => _element.ChildElements
+            .GetElementsOfType(ComponentModel.SpecializationTypeId)
+            .Select(x => new ComponentModel(x))
+            .ToList();
+
+        public IList<ComponentReferenceModel> ComponentReferences => _element.ChildElements
             .GetElementsOfType(ComponentReferenceModel.SpecializationTypeId)
             .Select(x => new ComponentReferenceModel(x))
             .ToList();

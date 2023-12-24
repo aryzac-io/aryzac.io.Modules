@@ -3,7 +3,7 @@
   <name>Section Settings</name>
   <targetMode>of-type</targetMode>
   <targetTypes>
-    <type id="d15b8bed-441b-4ef7-9541-f7df1c31fb48">Component Section</type>
+    <type id="d15b8bed-441b-4ef7-9541-f7df1c31fb48">Section</type>
   </targetTypes>
   <targetReferenceTypes />
   <applyMode>on-create</applyMode>

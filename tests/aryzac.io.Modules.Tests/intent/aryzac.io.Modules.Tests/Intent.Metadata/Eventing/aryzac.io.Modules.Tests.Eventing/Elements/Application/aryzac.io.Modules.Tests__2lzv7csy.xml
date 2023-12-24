@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="99ddcd25-3ebe-438a-9d28-dbd8ee4d63fe" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>aryzac.io.Modules.Tests</name>
+  <display>aryzac.io.Modules.Tests</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>1e91d0bb-1214-4179-8ed2-ca85fe9ce705</parentFolderId>
+  <diagram>
+    <targetPackageId>972983b1-20ea-44e5-aaa7-b0c9b94385cb</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

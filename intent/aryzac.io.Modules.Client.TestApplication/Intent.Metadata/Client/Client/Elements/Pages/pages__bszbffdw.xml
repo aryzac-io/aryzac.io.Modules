@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d0a1599c-23aa-4375-8971-95b6f723133f" type="Pages" typeId="4e3cc9bd-3900-4cd7-918b-ba7d11972da4">
+  <name>pages</name>
+  <display>pages</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42e08360-c103-4672-ba93-657567d539ec</parentFolderId>
+  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="f6eaedb5-8e11-4da9-90cf-c767f8bfacc2" type="Page Folder" typeId="89f85c07-e5b7-474f-9ab2-6b0411333377">
+      <name>clients</name>
+      <display>clients</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>d0a1599c-23aa-4375-8971-95b6f723133f</parentFolderId>
+      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="1d0b7b57-eac3-473d-82a2-c5042a9872a2" type="Page Folder" typeId="89f85c07-e5b7-474f-9ab2-6b0411333377">
+          <name>:id</name>
+          <display>:id</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>f6eaedb5-8e11-4da9-90cf-c767f8bfacc2</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="8e629c56-9670-4c35-8d13-0a8ff4910a11" type="Route Parameter" typeId="b1e06380-f8fe-42f8-bea1-820bbe5fee92">
+              <name>[id]</name>
+              <display>[id]: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="60aaba21-be03-4c69-91de-973364d5141d">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>1d0b7b57-eac3-473d-82a2-c5042a9872a2</parentFolderId>
+              <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="d056ac6e-1d73-4b17-8730-bcafb8f6c233" type="Page" typeId="865a4fa5-833d-4c88-994a-fbcf5e746a32">
+              <name>index</name>
+              <display>index: default</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <typeReference id="2653ea16-00f4-4623-b607-c29d19d54500">
+                <typeId>35c5049b-ad28-47ff-9bbc-8b3c85700c22</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Client</typePackageName>
+                <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>1d0b7b57-eac3-473d-82a2-c5042a9872a2</parentFolderId>
+              <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="9244acdd-8299-4c52-bb6d-7c0f3e396a56" type="Breadcrumbs" typeId="d33b7909-0ff3-49ea-a9c0-8bc50f29e34d">
+                  <name>[breadcrumbs]</name>
+                  <display>[breadcrumbs]</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>d056ac6e-1d73-4b17-8730-bcafb8f6c233</parentFolderId>
+                  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="da1721fb-3d59-4310-b326-e41143ffe04f" type="Breadcrumb" typeId="3a7efd36-fc3e-481c-9c59-98c57568a863">
+                      <name>NewBreadcrumb</name>
+                      <display>NewBreadcrumb: index</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <typeReference id="ff7e8c48-cfbb-45f7-8140-8b89920a1042">
+                        <typeId>98fc08af-6536-4c43-8f41-20dd27889596</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Client</typePackageName>
+                        <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>9244acdd-8299-4c52-bb6d-7c0f3e396a56</parentFolderId>
+                      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="3ecc5750-1065-4344-be32-292179fc8edc" type="Breadcrumb" typeId="3a7efd36-fc3e-481c-9c59-98c57568a863">
+                      <name>NewBreadcrumb</name>
+                      <display>NewBreadcrumb: index</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <typeReference id="da80d110-cc9a-4aff-afda-c801c93359b4">
+                        <typeId>d056ac6e-1d73-4b17-8730-bcafb8f6c233</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Client</typePackageName>
+                        <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>9244acdd-8299-4c52-bb6d-7c0f3e396a56</parentFolderId>
+                      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements>
+                        <childElement id="edff1162-56be-4aa6-9020-103ba76c624c" type="Route Parameter" typeId="b1e06380-f8fe-42f8-bea1-820bbe5fee92">
+                          <name>[id]</name>
+                          <display>[id]: string</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="e2de61e6-08f6-478b-b60b-abbaf1b4248a">
+                            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Intent.Common.Types</typePackageName>
+                            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>3ecc5750-1065-4344-be32-292179fc8edc</parentFolderId>
+                          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes />
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
+                <childElement id="64e2f187-43eb-4295-a937-88dc5a696441" type="Page Actions" typeId="78ed066b-85bc-42a6-b29f-9a126f1e4267">
+                  <name>[actions]</name>
+                  <display>[actions]</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>d056ac6e-1d73-4b17-8730-bcafb8f6c233</parentFolderId>
+                  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="ce189c21-6c3e-4bfa-89d5-0c1d01f00db9" type="Page Slot" typeId="a6a80698-343a-4a2e-b00a-5d7b5ca4a9c4">
+                  <name>NewPageSlot</name>
+                  <display>NewPageSlot: main</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <typeReference id="d74b4a98-220a-42ee-8c37-42dfa7a5c5c1">
+                    <typeId>709142ad-d6db-4afa-83ca-10b059719c0c</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>d056ac6e-1d73-4b17-8730-bcafb8f6c233</parentFolderId>
+                  <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="0abdf3f9-9515-4fd2-9161-80566abd1ef4" type="Component Reference" typeId="f798993a-4652-4aef-94f7-cda1f8469e59">
+                      <name>NewComponentReference</name>
+                      <display>NewComponentReference: Create Client</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <typeReference id="025526c2-0843-480f-b426-3745245c9ba9">
+                        <typeId>921fa81c-3898-4e43-8e06-c965f5c56dfb</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Client</typePackageName>
+                        <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>ce189c21-6c3e-4bfa-89d5-0c1d01f00db9</parentFolderId>
+                      <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="98fc08af-6536-4c43-8f41-20dd27889596" type="Page" typeId="865a4fa5-833d-4c88-994a-fbcf5e746a32">
+          <name>index</name>
+          <display>index: default</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="57aa3523-e9b0-45fd-bfac-180dda604b9f">
+            <typeId>35c5049b-ad28-47ff-9bbc-8b3c85700c22</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>42e08360-c103-4672-ba93-657567d539ec</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>f6eaedb5-8e11-4da9-90cf-c767f8bfacc2</parentFolderId>
+          <packageId>42e08360-c103-4672-ba93-657567d539ec</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>
