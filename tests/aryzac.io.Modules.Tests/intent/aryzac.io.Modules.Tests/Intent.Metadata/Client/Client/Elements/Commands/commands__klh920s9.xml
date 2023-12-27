@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="376e9bfe-a360-4130-9531-37758675003c" type="Commands" typeId="70e00433-885a-4280-917e-893dd8cd880b">
+  <name>commands</name>
+  <display>commands</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c38aa1fa-e618-4e19-9187-45cd22a9517f</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="429e9943-0dd5-45f7-a3bf-7afccf7e97c0" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+      <name>Navigate Home</name>
+      <display>Navigate Home</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>376e9bfe-a360-4130-9531-37758675003c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+            <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+            <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="9712ff57-1038-477e-b419-23cbc7434e59" type="Navigation" typeId="e9c6d81b-1204-468b-889e-9490f37c223f">
+          <name>[navigation]</name>
+          <display>[navigation]: Home</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="30399bb7-e729-4b70-8280-840e15b3d672">
+            <typeId>fb7ae219-03ed-4e2c-be84-8fd88c6c51f0</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>429e9943-0dd5-45f7-a3bf-7afccf7e97c0</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="90fcc3ab-8314-4a33-9236-fd1e8753fcc1" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+      <name>Navigate To Calendar</name>
+      <display>Navigate To Calendar</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>376e9bfe-a360-4130-9531-37758675003c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+            <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+            <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="580c2c82-cafe-45da-840c-4a0997dbb671" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+      <name>Navigate To Clients</name>
+      <display>Navigate To Clients</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>376e9bfe-a360-4130-9531-37758675003c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+            <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+            <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="402bae70-23a3-4b9b-be90-afc3e8ca3ae5" type="Navigation" typeId="e9c6d81b-1204-468b-889e-9490f37c223f">
+          <name>[navigation]</name>
+          <display>[navigation]: Clients</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="8c499fc2-06e8-411d-80e0-5b56219ab588">
+            <typeId>9080b7fb-7326-41cf-b36c-c61e231be386</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>580c2c82-cafe-45da-840c-4a0997dbb671</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="5fc8b7ed-e7ed-4073-8aa4-20a06598aeaf" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+      <name>Navigate To Dashboard</name>
+      <display>Navigate To Dashboard</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>376e9bfe-a360-4130-9531-37758675003c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+            <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+            <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f629d11b-aa6f-4801-a82b-0f6b6b98f321" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+      <name>Navigate To Projects</name>
+      <display>Navigate To Projects</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>376e9bfe-a360-4130-9531-37758675003c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+            <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+            <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="42e1c1d6-0b03-4af0-a93d-40b74326e27d" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+      <name>Navigate To Team</name>
+      <display>Navigate To Team</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>376e9bfe-a360-4130-9531-37758675003c</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+            <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+            <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

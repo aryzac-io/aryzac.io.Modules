@@ -34,7 +34,7 @@ const logger = {
         }
     }
 };
-/// <reference path="../../typings/elementmacro.context.api.d.ts" />
+/// <reference path="../typings/elementmacro.context.api.d.ts" />
 function addElement(type, definition, parent, stereotypes) {
     if (parent.getChildren(type).every((x) => x.getName() !== definition.name)) {
         const _element = createElement(type, definition.name, parent.id);
@@ -70,16 +70,19 @@ function addElement(type, definition, parent, stereotypes) {
         return _element;
     }
 }
-/// <reference path="../../typings/elementmacro.context.api.d.ts" />
+/// <reference path="../typings/elementmacro.context.api.d.ts" />
 const aryzacTypes = {
     routeParameter: { name: "Route Parameter", id: "b1e06380-f8fe-42f8-bea1-820bbe5fee92" },
     inheritedNavigation: { name: "Inherited Navigation", id: "9974d562-885d-46d7-817e-0f663fe07e88" },
     layout: { name: "Layout", id: "eb6cb3df-6d5a-469b-8919-ab659187874f" },
     layoutNavigation: { name: 'Layout Navigation', id: '504052da-efcd-4f9d-8177-ba6a2c7bfa79' },
     layoutSlot: { name: 'Layout Slot', id: 'd5e91bdc-bc8d-4dd7-9fa7-5d537a478866' },
-    pages: { name: 'Pages', id: '4e3cc9bd-3900-4cd7-918b-ba7d11972da4' }
+    pages: { name: 'Pages', id: '4e3cc9bd-3900-4cd7-918b-ba7d11972da4' },
+    breakpoints: { name: 'Breakpoints', id: 'd001da3a-4e21-4a7b-930c-defe16bf8091' },
+    breakpoint: { name: 'Breakpoint', id: '054ff75d-9014-4505-ba45-5fee23653139' },
+    themeColor: { name: 'Theme Color', id: '4f68aa50-d3c0-40af-842c-f1302c7cf805' }
 };
-/// <reference path="../../typings/elementmacro.context.api.d.ts" />
+/// <reference path="../typings/elementmacro.context.api.d.ts" />
 const aryzacStereotypes = {
     footerNavigationSettings: { name: "Footer Navigation Settings", id: "a4934d2c-7817-413d-af69-57b87289e2fd" },
     sidebarNavigationSettings: { name: "Sidebar Navigation Settings", id: "d2871749-82c8-467d-8a70-2d0bea7cd3e2" },
@@ -87,9 +90,9 @@ const aryzacStereotypes = {
 };
 /// <reference path="../../typings/elementmacro.context.api.d.ts" />
 /// <reference path="../../common/logger.ts" />
-/// <reference path="../common/addElement.ts" />
-/// <reference path="../common/aryzac-types.ts" />
-/// <reference path="../common/aryzac-stereotypes.ts" />
+/// <reference path="../../common/addElement.ts" />
+/// <reference path="../../common/aryzac-types.ts" />
+/// <reference path="../../common/aryzac-stereotypes.ts" />
 logger.info("Finding Breadcrumb Page");
 const routeParameters = [];
 let currentNode = element.typeReference.getType();
@@ -118,8 +121,52 @@ for (let i = 0; i < routeParameters.length; i++) {
     }, element);
 }
 /// <reference path="../../typings/elementmacro.context.api.d.ts" />
-const intentStereotypes = {};
+/// <reference path="../../common/addElement.ts" />
+/// <reference path="../../common/aryzac-types.ts" />
+/// <reference path="../../common/aryzac-stereotypes.ts" />
+addElement(aryzacTypes.layoutSlot.name, {
+    name: "Main"
+}, element);
 /// <reference path="../../typings/elementmacro.context.api.d.ts" />
+/// <reference path="../../common/addElement.ts" />
+/// <reference path="../../common/aryzac-types.ts" />
+/// <reference path="../../common/aryzac-stereotypes.ts" />
+addElement(aryzacTypes.layout.name, {
+    name: "default"
+}, element);
+/// <reference path="../../typings/elementmacro.context.api.d.ts" />
+/// <reference path="../../common/logger.ts" />
+/// <reference path="../../common/addElement.ts" />
+/// <reference path="../../common/aryzac-types.ts" />
+/// <reference path="../../common/aryzac-stereotypes.ts" />
+logger.info("Finding Component Page");
+const routeParameters = [];
+let currentNode = element;
+while (currentNode) {
+    logger.debug(`Current Page ${currentNode.id} - ${currentNode.getName()}`);
+    logger.trace(`Current Page ${JSON.stringify(currentNode)}`);
+    const currentNodeChildren = currentNode.getChildren();
+    logger.trace(`Current Page Children ${JSON.stringify(currentNodeChildren)}`);
+    const currentNodeRouteParameter = currentNodeChildren.filter(m => m.specialization === aryzacTypes.routeParameter.name);
+    if (currentNodeRouteParameter.length > 0) {
+        logger.info(`Has Route Parameter ${JSON.stringify(currentNodeRouteParameter[0])}`);
+        routeParameters.push(currentNodeRouteParameter[0]);
+    }
+    currentNode = currentNode.getParent();
+    logger.trace(`Current Page Parent ${JSON.stringify(currentNode)}`);
+    if (currentNode.specializationId === aryzacTypes.pages.id) {
+        logger.info(`Reached Pages folder`);
+        break;
+    }
+}
+for (let i = 0; i < routeParameters.length; i++) {
+    addElement(aryzacTypes.routeParameter.name, {
+        name: routeParameters[i].getName(),
+        type: routeParameters[i].typeReference.getType(),
+        nullable: routeParameters[i].typeReference.getIsNullable()
+    }, element);
+}
+/// <reference path="../typings/elementmacro.context.api.d.ts" />
 const intentTypes = {
     binary: { name: "binary", id: "013af2c5-3c32-4752-8f59-db5691050aef" },
     bool: { name: "bool", id: "e6f92b09-b2c5-4536-8270-a4d9e5bbd930" },
@@ -141,57 +188,11 @@ const intentTypes = {
     short: { name: "short", id: "2ABF0FD3-CD56-4349-8838-D120ED268245" },
     string: { name: "string", id: "d384db9c-a279-45e1-801e-e4e8099625f2" },
 };
-/// <reference path="../../typings/elementmacro.context.api.d.ts" />
-function removeElement(type, name, parent) {
-    var children = parent.getChildren(type);
-    if (children) {
-        children.forEach((element) => {
-            if (element.getName() === name) {
-                element.delete();
-            }
-        });
-    }
-}
-/// <reference path="../../typings/elementmacro.context.api.d.ts" />
-/// <reference path="../common/addElement.ts" />
-/// <reference path="../common/aryzac-types.ts" />
-/// <reference path="../common/aryzac-stereotypes.ts" />
-addElement(aryzacTypes.layoutNavigation.name, {
-    name: "Top Navigation"
-}, element, [
-    {
-        stereotype: aryzacStereotypes.topNavigationSettings
-    }
-]);
-addElement(aryzacTypes.layoutNavigation.name, {
-    name: "Sidebar Navigation"
-}, element, [
-    {
-        stereotype: aryzacStereotypes.sidebarNavigationSettings
-    }
-]);
-addElement(aryzacTypes.layoutNavigation.name, {
-    name: "Footer"
-}, element, [
-    {
-        stereotype: aryzacStereotypes.footerNavigationSettings
-    }
-]);
-addElement(aryzacTypes.layoutSlot.name, {
-    name: "Main"
-}, element);
-/// <reference path="../../typings/elementmacro.context.api.d.ts" />
-/// <reference path="../common/addElement.ts" />
-/// <reference path="../common/aryzac-types.ts" />
-/// <reference path="../common/aryzac-stereotypes.ts" />
-addElement(aryzacTypes.layout.name, {
-    name: "default"
-}, element);
 /// <reference path="../../../typings/elementmacro.context.api.d.ts" />
-/// <reference path="../../common/addElement.ts" />
-/// <reference path="../../common/intent-types.ts" />
-/// <reference path="../../common/aryzac-types.ts" />
-/// <reference path="../../common/aryzac-stereotypes.ts" />
+/// <reference path="../../../common/addElement.ts" />
+/// <reference path="../../../common/intent-types.ts" />
+/// <reference path="../../../common/aryzac-types.ts" />
+/// <reference path="../../../common/aryzac-stereotypes.ts" />
 if (element.getName().startsWith(":")) {
     addElement(aryzacTypes.routeParameter.name, {
         name: `[${element.getName().split(":")[1]}]`,
@@ -200,10 +201,10 @@ if (element.getName().startsWith(":")) {
     }, element);
 }
 /// <reference path="../../../typings/elementmacro.context.api.d.ts" />
-/// <reference path="../../common/addElement.ts" />
-/// <reference path="../../common/intent-types.ts" />
-/// <reference path="../../common/aryzac-types.ts" />
-/// <reference path="../../common/aryzac-stereotypes.ts" />
+/// <reference path="../../../common/addElement.ts" />
+/// <reference path="../../../common/intent-types.ts" />
+/// <reference path="../../../common/aryzac-types.ts" />
+/// <reference path="../../../common/aryzac-stereotypes.ts" />
 if (element.getName().startsWith(":")) {
     addElement(aryzacTypes.routeParameter.name, {
         name: `[${element.getName().split(":")[1]}]`,
@@ -212,9 +213,9 @@ if (element.getName().startsWith(":")) {
     }, element);
 }
 /// <reference path="../../typings/elementmacro.context.api.d.ts" />
-/// <reference path="../common/addElement.ts" />
-/// <reference path="../common/aryzac-types.ts" />
-/// <reference path="../common/aryzac-stereotypes.ts" />
+/// <reference path="../../common/addElement.ts" />
+/// <reference path="../../common/aryzac-types.ts" />
+/// <reference path="../../common/aryzac-stereotypes.ts" />
 addElement(aryzacTypes.inheritedNavigation.name, {
     name: "[inherited]"
 }, element);

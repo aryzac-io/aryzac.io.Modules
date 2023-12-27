@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="9ab42d5a-0c7d-4a84-80bd-7911f87e7c5d" type="Form Definition" typeId="df0da0e1-b468-4868-8135-22caf8767eeb">
+  <name>New Invoice Form</name>
+  <display>New Invoice Form: Invoice Model</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <typeReference id="1267e51e-a5cb-4629-99c6-7e53ba6f4226">
+    <typeId>22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Client</typePackageName>
+    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>994b432e-5f48-4cf9-9223-d26b47e8e187</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="b62b505e-be26-4a7f-812f-66990b2efc23" type="Section" typeId="d15b8bed-441b-4ef7-9541-f7df1c31fb48">
+      <name>Invoice Information</name>
+      <display>Invoice Information</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9ab42d5a-0c7d-4a84-80bd-7911f87e7c5d</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="4d57ad34-c45a-4ef1-b6f8-8d7fd1a48bb1" name="Section Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="8d0b08f1-43f7-4f96-ae08-1a725587c76e" display="Title" isActive="true" />
+            <property name="9dbd24a4-7fa2-49b8-a22e-1f3bf9f20f9c" display="Description" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="3f766421-abdb-477c-bbcc-af7411a7da15" type="Textbox" typeId="8c3da623-54c2-435a-badc-45aa8f09ad5c">
+          <name>Number</name>
+          <display>Number: Number</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="d8f60904-01d9-48e0-914a-7c5cd20370f2">
+            <typeId>e2d554cb-16b2-4089-a97b-8864813b9bf9</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>b62b505e-be26-4a7f-812f-66990b2efc23</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="0f5a2e31-8774-4351-985b-d95effb844af" type="Date Picker" typeId="e3b50fa0-c2a4-46bc-a9d9-2ad5bcf5f56b">
+          <name>Date</name>
+          <display>Date: Date</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="62cbd244-0661-4187-a1c3-5ce8460a9078">
+            <typeId>b2c9031e-506a-444c-9645-3d26b395af19</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>b62b505e-be26-4a7f-812f-66990b2efc23</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="a355492a-e9e1-4367-8e01-ac28c5511520" type="Section" typeId="d15b8bed-441b-4ef7-9541-f7df1c31fb48">
+      <name>Line Items</name>
+      <display>Line Items</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9ab42d5a-0c7d-4a84-80bd-7911f87e7c5d</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="4d57ad34-c45a-4ef1-b6f8-8d7fd1a48bb1" name="Section Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+          <properties>
+            <property name="8d0b08f1-43f7-4f96-ae08-1a725587c76e" display="Title" isActive="true" />
+            <property name="9dbd24a4-7fa2-49b8-a22e-1f3bf9f20f9c" display="Description" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="6ced7c82-056e-4188-a4eb-dbcadf795c9f" type="Component Reference" typeId="f798993a-4652-4aef-94f7-cda1f8469e59">
+          <name>View Invoice Lines</name>
+          <display>View Invoice Lines: View Invoice Lines</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="aa57ad09-8743-48d8-ad33-a6f4d562cc5a">
+            <typeId>f2ee9c1b-d9fc-49f5-a49a-2d5887f4cf29</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>a355492a-e9e1-4367-8e01-ac28c5511520</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

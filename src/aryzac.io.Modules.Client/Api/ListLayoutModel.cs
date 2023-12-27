@@ -37,6 +37,11 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
+        public LayoutTemplateModel Template => _element.ChildElements
+            .GetElementsOfType(LayoutTemplateModel.SpecializationTypeId)
+            .Select(x => new LayoutTemplateModel(x))
+            .SingleOrDefault();
+
         public override string ToString()
         {
             return _element.ToString();

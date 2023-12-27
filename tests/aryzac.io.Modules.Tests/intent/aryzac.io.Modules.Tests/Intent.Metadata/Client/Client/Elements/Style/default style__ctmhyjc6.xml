@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="05821fab-8a72-4112-af95-0406591d6f0e" type="Style" typeId="2c9f3240-b036-4850-ac3f-51d94e8f0c28">
+  <name>default style</name>
+  <display>default style</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>469b5242-b49b-4062-a995-11baece1d42e</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

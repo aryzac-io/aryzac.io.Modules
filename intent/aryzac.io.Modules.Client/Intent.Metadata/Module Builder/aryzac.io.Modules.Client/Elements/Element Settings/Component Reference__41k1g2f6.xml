@@ -63,5 +63,53 @@
       <metadata />
       <childElements />
     </childElement>
+    <childElement id="fc069e13-8044-4071-afd8-8a2cbaf5bb9b" type="Element Event Settings" typeId="3c628ab0-2407-4fb0-8507-ddde986cff2e">
+      <name>NewElementEventSettings</name>
+      <display>[events]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f798993a-4652-4aef-94f7-cda1f8469e59</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="21a376a0-b795-40d4-827e-c65021272fd6" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
+          <name>On Type Changed</name>
+          <display>On Type Changed: Script</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="4af5a180-7f09-4390-8fbc-fef02dfc7c9f">
+            <typeId>043eee26-1591-42ac-9f2c-fc911b070eb1</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.ModuleBuilder</typePackageName>
+            <typePackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>fc069e13-8044-4071-afd8-8a2cbaf5bb9b</parentFolderId>
+          <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+          <packageName>aryzac.io.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="56bc0465-c1fe-4bca-9493-2a3ce88a4047" name="Script Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="var LogLevel;&#xD;&#xA;(function (LogLevel) {&#xD;&#xA;    LogLevel[LogLevel[&quot;Error&quot;] = 0] = &quot;Error&quot;;&#xD;&#xA;    LogLevel[LogLevel[&quot;Warn&quot;] = 1] = &quot;Warn&quot;;&#xD;&#xA;    LogLevel[LogLevel[&quot;Info&quot;] = 2] = &quot;Info&quot;;&#xD;&#xA;    LogLevel[LogLevel[&quot;Debug&quot;] = 3] = &quot;Debug&quot;;&#xD;&#xA;    LogLevel[LogLevel[&quot;Trace&quot;] = 4] = &quot;Trace&quot;;&#xD;&#xA;})(LogLevel || (LogLevel = {}));&#xD;&#xA;const logLevel = LogLevel.Trace;&#xD;&#xA;const logger = {&#xD;&#xA;    error: (message) =&gt; {&#xD;&#xA;        if (logLevel &gt;= LogLevel.Error) {&#xD;&#xA;            console.error(`${new Date()} ERROR: ${message}`);&#xD;&#xA;        }&#xD;&#xA;    },&#xD;&#xA;    warn: (message) =&gt; {&#xD;&#xA;        if (logLevel &gt;= LogLevel.Warn) {&#xD;&#xA;            console.warn(`${new Date()} WARN: ${message}`);&#xD;&#xA;        }&#xD;&#xA;    },&#xD;&#xA;    info: (message) =&gt; {&#xD;&#xA;        if (logLevel &gt;= LogLevel.Info) {&#xD;&#xA;            console.log(`${new Date()} INFO: ${message}`);&#xD;&#xA;        }&#xD;&#xA;    },&#xD;&#xA;    debug: (message) =&gt; {&#xD;&#xA;        if (logLevel &gt;= LogLevel.Debug) {&#xD;&#xA;            console.log(`${new Date()} DEBUG: ${message}`);&#xD;&#xA;        }&#xD;&#xA;    },&#xD;&#xA;    trace: (message) =&gt; {&#xD;&#xA;        if (logLevel &gt;= LogLevel.Trace) {&#xD;&#xA;            console.log(`${new Date()} TRACE: ${message}`);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;};&#xD;&#xA;/// &lt;reference path=&quot;../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;function addElement(type, definition, parent, stereotypes) {&#xD;&#xA;    if (parent.getChildren(type).every((x) =&gt; x.getName() !== definition.name)) {&#xD;&#xA;        const _element = createElement(type, definition.name, parent.id);&#xD;&#xA;        if (definition.type) {&#xD;&#xA;            _element.typeReference.setType(definition.type.id);&#xD;&#xA;            _element.typeReference.setIsNullable(definition.nullable);&#xD;&#xA;        }&#xD;&#xA;        if (stereotypes) {&#xD;&#xA;            for (let s = 0; s &lt; stereotypes.length; s++) {&#xD;&#xA;                const stereotype = stereotypes[s].stereotype;&#xD;&#xA;                if (!_element.hasStereotype(stereotype.id)) {&#xD;&#xA;                    _element.addStereotype(stereotype.id);&#xD;&#xA;                }&#xD;&#xA;                if (stereotype.properties) {&#xD;&#xA;                    stereotype.properties.forEach((property) =&gt; {&#xD;&#xA;                        _element&#xD;&#xA;                            .getStereotype(stereotype.id)&#xD;&#xA;                            .getProperty(property.name)&#xD;&#xA;                            .setValue(property.value);&#xD;&#xA;                    });&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;        return _element;&#xD;&#xA;    }&#xD;&#xA;    else {&#xD;&#xA;        let _element = null;&#xD;&#xA;        parent.getChildren(type).forEach((e) =&gt; {&#xD;&#xA;            if (e.getName() === definition.name) {&#xD;&#xA;                _element = e;&#xD;&#xA;            }&#xD;&#xA;        });&#xD;&#xA;        return _element;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;/// &lt;reference path=&quot;../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;const aryzacTypes = {&#xD;&#xA;    routeParameter: { name: &quot;Route Parameter&quot;, id: &quot;b1e06380-f8fe-42f8-bea1-820bbe5fee92&quot; },&#xD;&#xA;    inheritedNavigation: { name: &quot;Inherited Navigation&quot;, id: &quot;9974d562-885d-46d7-817e-0f663fe07e88&quot; },&#xD;&#xA;    layout: { name: &quot;Layout&quot;, id: &quot;eb6cb3df-6d5a-469b-8919-ab659187874f&quot; },&#xD;&#xA;    layoutNavigation: { name: 'Layout Navigation', id: '504052da-efcd-4f9d-8177-ba6a2c7bfa79' },&#xD;&#xA;    layoutSlot: { name: 'Layout Slot', id: 'd5e91bdc-bc8d-4dd7-9fa7-5d537a478866' },&#xD;&#xA;    pages: { name: 'Pages', id: '4e3cc9bd-3900-4cd7-918b-ba7d11972da4' },&#xD;&#xA;    breakpoints: { name: 'Breakpoints', id: 'd001da3a-4e21-4a7b-930c-defe16bf8091' },&#xD;&#xA;    breakpoint: { name: 'Breakpoint', id: '054ff75d-9014-4505-ba45-5fee23653139' },&#xD;&#xA;    themeColor: { name: 'Theme Color', id: '4f68aa50-d3c0-40af-842c-f1302c7cf805' }&#xD;&#xA;};&#xD;&#xA;/// &lt;reference path=&quot;../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;const aryzacStereotypes = {&#xD;&#xA;    footerNavigationSettings: { name: &quot;Footer Navigation Settings&quot;, id: &quot;a4934d2c-7817-413d-af69-57b87289e2fd&quot; },&#xD;&#xA;    sidebarNavigationSettings: { name: &quot;Sidebar Navigation Settings&quot;, id: &quot;d2871749-82c8-467d-8a70-2d0bea7cd3e2&quot; },&#xD;&#xA;    topNavigationSettings: { name: &quot;Top Navigation Settings&quot;, id: &quot;e31690e9-e123-4c7f-aad5-576bbde51d08&quot; }&#xD;&#xA;};&#xD;&#xA;/// &lt;reference path=&quot;../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;/// &lt;reference path=&quot;../../common/logger.ts&quot; /&gt;&#xD;&#xA;/// &lt;reference path=&quot;../../common/addElement.ts&quot; /&gt;&#xD;&#xA;/// &lt;reference path=&quot;../../common/aryzac-types.ts&quot; /&gt;&#xD;&#xA;/// &lt;reference path=&quot;../../common/aryzac-stereotypes.ts&quot; /&gt;&#xD;&#xA;logger.info(&quot;Finding Component Page&quot;);&#xD;&#xA;const routeParameters = [];&#xD;&#xA;let currentNode = element;&#xD;&#xA;while (currentNode) {&#xD;&#xA;    logger.debug(`Current Page ${currentNode.id} - ${currentNode.getName()}`);&#xD;&#xA;    logger.trace(`Current Page ${JSON.stringify(currentNode)}`);&#xD;&#xA;    const currentNodeChildren = currentNode.getChildren();&#xD;&#xA;    logger.trace(`Current Page Children ${JSON.stringify(currentNodeChildren)}`);&#xD;&#xA;    const currentNodeRouteParameter = currentNodeChildren.filter(m =&gt; m.specialization === aryzacTypes.routeParameter.name);&#xD;&#xA;    if (currentNodeRouteParameter.length &gt; 0) {&#xD;&#xA;        logger.info(`Has Route Parameter ${JSON.stringify(currentNodeRouteParameter[0])}`);&#xD;&#xA;        routeParameters.push(currentNodeRouteParameter[0]);&#xD;&#xA;    }&#xD;&#xA;    currentNode = currentNode.getParent();&#xD;&#xA;    logger.trace(`Current Page Parent ${JSON.stringify(currentNode)}`);&#xD;&#xA;    if (currentNode.specializationId === aryzacTypes.pages.id) {&#xD;&#xA;        logger.info(`Reached Pages folder`);&#xD;&#xA;        break;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;for (let i = 0; i &lt; routeParameters.length; i++) {&#xD;&#xA;    addElement(aryzacTypes.routeParameter.name, {&#xD;&#xA;        name: routeParameters[i].getName(),&#xD;&#xA;        type: routeParameters[i].typeReference.getType(),&#xD;&#xA;        nullable: routeParameters[i].typeReference.getIsNullable()&#xD;&#xA;    }, element);&#xD;&#xA;}&#xD;&#xA;" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
   </childElements>
 </class>

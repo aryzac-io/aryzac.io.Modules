@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2e95a6fe-1173-4ff1-838a-688d748763b1" type="Layouts" typeId="5e4732ab-326f-4d6d-9cbf-25da0d8b2526">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c38aa1fa-e618-4e19-9187-45cd22a9517f</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="f9cf95dd-0b30-47a8-8558-145d940bcd22" type="Layout" typeId="eb6cb3df-6d5a-469b-8919-ab659187874f">
+      <name>default</name>
+      <display>default</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2e95a6fe-1173-4ff1-838a-688d748763b1</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="fb9c2f62-cbdc-4c89-9d4d-799ace189339" type="Top Menu" typeId="ac2c0fa1-486e-47a9-a589-e81b9a16b942">
+          <name>[top menu]</name>
+          <display>[top menu]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>f9cf95dd-0b30-47a8-8558-145d940bcd22</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="f1a0006a-7114-418d-92d7-800627baeeb0" type="Navigation Section" typeId="e8d903c1-27f9-45af-ba41-0119b4bb3d99">
+              <name>Navigation Section</name>
+              <display>Navigation Section</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>fb9c2f62-cbdc-4c89-9d4d-799ace189339</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="c171e596-a608-478d-a06d-eb71eee3afc4" type="Logo" typeId="18d9d647-40f7-414e-89db-c767626f04a0">
+                  <name>Logo</name>
+                  <display>Logo: Navigate Home</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="47ed26e9-1900-4d61-98a2-96868c87b504">
+                    <typeId>429e9943-0dd5-45f7-a3bf-7afccf7e97c0</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f1a0006a-7114-418d-92d7-800627baeeb0</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="c463d7cb-9e8b-4663-883a-0eba88f4eb20" type="Navigation Item" typeId="c7c23554-dd95-433b-b8df-74254cb3b0ed">
+                  <name>Dashboard</name>
+                  <display>Dashboard: Navigate To Dashboard</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="3eca6ecd-a07b-4e2d-b91c-8c4d081c5e66">
+                    <typeId>5fc8b7ed-e7ed-4073-8aa4-20a06598aeaf</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f1a0006a-7114-418d-92d7-800627baeeb0</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="865e0f27-4101-4a92-9528-88671a25f875" type="Navigation Item" typeId="c7c23554-dd95-433b-b8df-74254cb3b0ed">
+                  <name>Team</name>
+                  <display>Team: Navigate To Team</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="2d9bb976-73cb-44b7-bf5a-d6cee5897368">
+                    <typeId>42e1c1d6-0b03-4af0-a93d-40b74326e27d</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f1a0006a-7114-418d-92d7-800627baeeb0</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="946d710a-7352-4b8f-a040-7e028bed5f7a" type="Navigation Item" typeId="c7c23554-dd95-433b-b8df-74254cb3b0ed">
+                  <name>Projects</name>
+                  <display>Projects: Navigate To Projects</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="c003138d-d97c-42a5-a715-92b170246e41">
+                    <typeId>f629d11b-aa6f-4801-a82b-0f6b6b98f321</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f1a0006a-7114-418d-92d7-800627baeeb0</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="4915fa2d-51f5-4a26-9c94-3c1a704b7a7e" type="Navigation Item" typeId="c7c23554-dd95-433b-b8df-74254cb3b0ed">
+                  <name>Calendar</name>
+                  <display>Calendar: Navigate To Calendar</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="85283e3f-5d8d-4ac6-8a64-f0926bce336e">
+                    <typeId>90fcc3ab-8314-4a33-9236-fd1e8753fcc1</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f1a0006a-7114-418d-92d7-800627baeeb0</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="274e632f-0c27-409e-8b38-1006b96bdd3e" type="Navigation Section" typeId="e8d903c1-27f9-45af-ba41-0119b4bb3d99">
+              <name>Search Section</name>
+              <display>Search Section</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>fb9c2f62-cbdc-4c89-9d4d-799ace189339</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="606e3a86-d670-4bac-b25e-dc8e0ccb05aa" type="Component Reference" typeId="f798993a-4652-4aef-94f7-cda1f8469e59">
+                  <name>Search</name>
+                  <display>Search: Search</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="39295ec2-070d-400d-9288-d2807b8d1671">
+                    <typeId>84733b50-4a68-4e59-aad2-393f340b1413</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>274e632f-0c27-409e-8b38-1006b96bdd3e</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="5f20705c-c8f5-4da0-97b0-3710fb294bf3" type="Navigation Section" typeId="e8d903c1-27f9-45af-ba41-0119b4bb3d99">
+              <name>User Section</name>
+              <display>User Section</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>fb9c2f62-cbdc-4c89-9d4d-799ace189339</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="f92c460d-a436-4b55-8c6a-a9d5708f465a" type="Component Reference" typeId="f798993a-4652-4aef-94f7-cda1f8469e59">
+                  <name>Notifications</name>
+                  <display>Notifications: Notifications</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="47a102f3-4d96-4895-a2f0-68a1c63ea6af">
+                    <typeId>fbafdeae-14f7-420c-8e37-415951411ff6</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>5f20705c-c8f5-4da0-97b0-3710fb294bf3</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="9fe7eb38-fcae-4829-a7fb-2f8b0055d8ca" type="Component Reference" typeId="f798993a-4652-4aef-94f7-cda1f8469e59">
+                  <name>User Menu</name>
+                  <display>User Menu: User Menu</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="bbc13e3d-d459-4063-9c08-82dc958150eb">
+                    <typeId>996adc1a-60ed-4437-a8bf-05417502fad9</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Client</typePackageName>
+                    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>5f20705c-c8f5-4da0-97b0-3710fb294bf3</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="77b81aa9-fb5b-442b-a431-623e95f6a29a" type="Sidebar" typeId="7ad90260-1187-4e15-b6ba-313a2c215ff0">
+          <name>[sidebar]</name>
+          <display>[sidebar]</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>f9cf95dd-0b30-47a8-8558-145d940bcd22</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="63660002-a200-4064-aa2d-e0ba265bd271" type="Footer" typeId="bda9700d-2ff6-46f3-a6a6-fdccb055b95e">
+          <name>[footer]</name>
+          <display>[footer]</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>f9cf95dd-0b30-47a8-8558-145d940bcd22</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="64223447-a1b3-4df1-be3c-fd93adeedbe7" type="Layout Slot" typeId="d5e91bdc-bc8d-4dd7-9fa7-5d537a478866">
+          <name>main</name>
+          <display>main</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>f9cf95dd-0b30-47a8-8558-145d940bcd22</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

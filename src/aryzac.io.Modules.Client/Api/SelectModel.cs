@@ -44,6 +44,16 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new StyleModel(x))
             .ToList();
 
+        public DataSourceModel DataSource => _element.ChildElements
+            .GetElementsOfType(DataSourceModel.SpecializationTypeId)
+            .Select(x => new DataSourceModel(x))
+            .SingleOrDefault();
+
+        public LayoutTemplateModel Template => _element.ChildElements
+            .GetElementsOfType(LayoutTemplateModel.SpecializationTypeId)
+            .Select(x => new LayoutTemplateModel(x))
+            .SingleOrDefault();
+
         public override string ToString()
         {
             return _element.ToString();

@@ -54,9 +54,9 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new ContainerBodyModel(x))
             .SingleOrDefault();
 
-        public ContainerActionsModel Actions => _element.ChildElements
-            .GetElementsOfType(ContainerActionsModel.SpecializationTypeId)
-            .Select(x => new ContainerActionsModel(x))
+        public ContainerFooterModel Footer => _element.ChildElements
+            .GetElementsOfType(ContainerFooterModel.SpecializationTypeId)
+            .Select(x => new ContainerFooterModel(x))
             .SingleOrDefault();
 
         public override string ToString()

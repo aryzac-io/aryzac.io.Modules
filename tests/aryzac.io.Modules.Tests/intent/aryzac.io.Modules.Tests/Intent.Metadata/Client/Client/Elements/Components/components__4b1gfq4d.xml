@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="04ed903e-f94a-43e0-9bf7-825192a1a9e6" type="Components" typeId="c3b488e8-81fc-4b2d-8ef2-b2b032410784">
+  <name>components</name>
+  <display>components</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c38aa1fa-e618-4e19-9187-45cd22a9517f</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="fbafdeae-14f7-420c-8e37-415951411ff6" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+      <name>Notifications</name>
+      <display>Notifications</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>04ed903e-f94a-43e0-9bf7-825192a1a9e6</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="84733b50-4a68-4e59-aad2-393f340b1413" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+      <name>Search</name>
+      <display>Search</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>04ed903e-f94a-43e0-9bf7-825192a1a9e6</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="996adc1a-60ed-4437-a8bf-05417502fad9" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+      <name>User Menu</name>
+      <display>User Menu</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>04ed903e-f94a-43e0-9bf7-825192a1a9e6</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="412e4e42-5a4a-4e58-9935-e87074341ec7" type="Component Folder" typeId="7cb76668-7d0d-4902-99a1-85b97c22dbba">
+      <name>Clients</name>
+      <display>Clients</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>04ed903e-f94a-43e0-9bf7-825192a1a9e6</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="e69ebfc7-fd12-4d85-9c9b-f8bb6620322b" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+          <name>Clients</name>
+          <display>Clients</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>412e4e42-5a4a-4e58-9935-e87074341ec7</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="928268e0-4f00-4fdf-9538-f6108b9e0b9e" type="Component View" typeId="2b961538-d4dd-40a0-af84-22f25106f10f">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>e69ebfc7-fd12-4d85-9c9b-f8bb6620322b</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="c8ca1358-1dfc-43ad-b17d-4baf596b4330" type="List View" typeId="89acf8ca-2949-4433-8c9e-b811b51e32bc">
+                  <name>[list]</name>
+                  <display>[list]</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>928268e0-4f00-4fdf-9538-f6108b9e0b9e</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="6d0a1bf6-7722-455f-8a51-ad89cf10c7f4" type="Table Layout" typeId="36c5662a-1fc9-43c4-8d5f-8202ee07fb1b">
+                      <name>Clients Table</name>
+                      <display>Clients Table</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>manually</sort-children>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>c8ca1358-1dfc-43ad-b17d-4baf596b4330</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="616fc727-e623-42d4-ab6c-e87b6bcba21a" name="Table Settings">
+                          <addedByDefault>true</addedByDefault>
+                          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                          <properties />
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements>
+                        <childElement id="e3c2d057-4386-4791-9b5b-b97252bb6b8c" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>Last Name</name>
+                          <display>Last Name: LastName</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="f03e7724-0902-43af-b8eb-4a67bb6f001b">
+                            <typeId>7b0b8856-8055-4aa6-b21c-4c90dc9c5b1e</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Client</typePackageName>
+                            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>6d0a1bf6-7722-455f-8a51-ad89cf10c7f4</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="5dfde1cd-8c02-4754-83b0-f44c5dae7bb7" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>First Name</name>
+                          <display>First Name: FirstName</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="3e57be36-0379-4106-b94c-112ad848e5a2">
+                            <typeId>e45a5e68-a0ab-4863-85c1-547f81e0744b</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Client</typePackageName>
+                            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>6d0a1bf6-7722-455f-8a51-ad89cf10c7f4</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="4c6af759-e9b4-4bf4-af9c-962f84ca5950" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>EmailAddress</name>
+                          <display>EmailAddress: EmailAddress</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="fe5a5f30-e947-459a-9a92-7477b5f3c68d">
+                            <typeId>e5e5aa50-181b-47e2-b9eb-f9f7503535a3</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Client</typePackageName>
+                            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>6d0a1bf6-7722-455f-8a51-ad89cf10c7f4</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="b6a32d30-4deb-4700-950d-ca002009aded" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>Mobile Number</name>
+                          <display>Mobile Number: MobileNumber</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="b97d607f-62ed-4ee5-adfc-bc0b10e524ea">
+                            <typeId>30fece0a-e2b3-4de1-9d6b-e5e10c636c4d</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Client</typePackageName>
+                            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>6d0a1bf6-7722-455f-8a51-ad89cf10c7f4</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="56632416-a70e-4f2d-93f5-5661b48b749e" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>Actions</name>
+                          <display>Actions: void</display>
+                          <isAbstract>false</isAbstract>
+                          <sort-children>manually</sort-children>
+                          <genericTypes />
+                          <typeReference id="4ca4e11c-517e-40f1-8204-a3aafb042893">
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>6d0a1bf6-7722-455f-8a51-ad89cf10c7f4</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="fd418dfe-fb5e-42f2-a7da-bdc8bc6a3e8c" type="Component Model" typeId="f51a8831-0f7a-48a3-b3c5-604818cea9a4">
+              <name>Client Model</name>
+              <display>Client Model: Client Model</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="620bc81d-3539-46b1-a0fc-e8ec69c68f7c">
+                <typeId>6aef4f34-b60e-4637-ab56-441016d9d4bf</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Client</typePackageName>
+                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>e69ebfc7-fd12-4d85-9c9b-f8bb6620322b</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="2cb944d0-ad65-4575-9c7b-1d7364fe035d" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+          <name>View Client</name>
+          <display>View Client</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>412e4e42-5a4a-4e58-9935-e87074341ec7</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="383aebf7-9a17-4fab-a78f-95653b3c620b" type="Component Parameter" typeId="4b88d38b-52b3-47be-8ce1-f571bafc56d4">
+              <name>Client Id</name>
+              <display>Client Id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="0a54d34f-81f7-48a2-950a-ce67ab97d175">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>2cb944d0-ad65-4575-9c7b-1d7364fe035d</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="cf8c83d0-0b69-478b-b94b-8b8e6059d765" type="Component View" typeId="2b961538-d4dd-40a0-af84-22f25106f10f">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>2cb944d0-ad65-4575-9c7b-1d7364fe035d</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="21d63782-5bd1-4130-93b4-3a569acadc3d" type="Component Model" typeId="f51a8831-0f7a-48a3-b3c5-604818cea9a4">
+              <name>Client</name>
+              <display>Client: Client Model</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="abbd3f28-330e-48ac-967d-3bed95ef03c3">
+                <typeId>6aef4f34-b60e-4637-ab56-441016d9d4bf</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Client</typePackageName>
+                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>2cb944d0-ad65-4575-9c7b-1d7364fe035d</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="6aef4f34-b60e-4637-ab56-441016d9d4bf" type="Model Definition" typeId="3b3aae7a-a51a-4352-a000-2b2bffb05dbf">
+          <name>Client Model</name>
+          <display>Client Model</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>412e4e42-5a4a-4e58-9935-e87074341ec7</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="a2c932d6-3e51-4b05-a93d-8d4fca334065" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Id</name>
+              <display>Id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="5223db31-322b-409f-8b6b-efa287d99574">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6aef4f34-b60e-4637-ab56-441016d9d4bf</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="e45a5e68-a0ab-4863-85c1-547f81e0744b" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>FirstName</name>
+              <display>FirstName: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="9eff245d-c2af-4a1a-a0f0-b796c8f7d63e">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6aef4f34-b60e-4637-ab56-441016d9d4bf</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="7b0b8856-8055-4aa6-b21c-4c90dc9c5b1e" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>LastName</name>
+              <display>LastName: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="fcaf4761-483e-4d60-9058-261adf5d673f">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6aef4f34-b60e-4637-ab56-441016d9d4bf</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="94a6921d-320d-4dd8-b979-aae5d0ae7012" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>PreferredName</name>
+              <display>PreferredName: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="2d8129bf-8e3f-42cc-b871-3007848d19b4">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6aef4f34-b60e-4637-ab56-441016d9d4bf</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="e5e5aa50-181b-47e2-b9eb-f9f7503535a3" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>EmailAddress</name>
+              <display>EmailAddress: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="7fa0e56b-0ea2-4f78-89fd-941e384b520b">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6aef4f34-b60e-4637-ab56-441016d9d4bf</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="30fece0a-e2b3-4de1-9d6b-e5e10c636c4d" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>MobileNumber</name>
+              <display>MobileNumber: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="97492baf-dd21-45d0-93cf-f5b44e883049">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6aef4f34-b60e-4637-ab56-441016d9d4bf</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="df83291c-4d61-479d-a5a9-852657e31871" type="Component Folder" typeId="7cb76668-7d0d-4902-99a1-85b97c22dbba">
+      <name>Invoices</name>
+      <display>Invoices</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>04ed903e-f94a-43e0-9bf7-825192a1a9e6</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="3994cc1f-90f9-4c47-909e-032e2fefb206" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+          <name>Create Invoice</name>
+          <display>Create Invoice</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>df83291c-4d61-479d-a5a9-852657e31871</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="3c0a1897-217a-4368-ae01-bdb0d32fa510" type="Component Parameter" typeId="4b88d38b-52b3-47be-8ce1-f571bafc56d4">
+              <name>Client id</name>
+              <display>Client id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="9ed0762b-4e95-4ca3-8eaa-b8cc9ddde206">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>3994cc1f-90f9-4c47-909e-032e2fefb206</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="994b432e-5f48-4cf9-9223-d26b47e8e187" type="Component View" typeId="2b961538-d4dd-40a0-af84-22f25106f10f">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>3994cc1f-90f9-4c47-909e-032e2fefb206</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="2217fc2d-64d8-452d-a80a-98084fac42d6" type="Component Actions" typeId="a126b934-3b67-41cf-8fcc-8bc6f5473d9a">
+              <name>[actions]</name>
+              <display>[actions]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>3994cc1f-90f9-4c47-909e-032e2fefb206</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="a5e617e3-c1f4-4c92-8ba4-32186aa1b23b" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+                  <name>Save Invoice</name>
+                  <display>Save Invoice</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>2217fc2d-64d8-452d-a80a-98084fac42d6</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                      <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                      <properties>
+                        <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+                        <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+                        <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements>
+                    <childElement id="210bc93d-8ed2-4c71-9d6c-335180a27992" type="Operation" typeId="fd5dcb2b-3db4-4cc9-a551-0354d3cb3c01">
+                      <name>[operation]</name>
+                      <display>[operation]</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>a5e617e3-c1f4-4c92-8ba4-32186aa1b23b</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="862028c4-151d-4005-963f-5b600fa876e9" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+          <name>Invoices</name>
+          <display>Invoices</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>df83291c-4d61-479d-a5a9-852657e31871</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="20cea4c4-9245-4587-9980-1966c857ccac" type="Component Parameter" typeId="4b88d38b-52b3-47be-8ce1-f571bafc56d4">
+              <name>Client Id</name>
+              <display>Client Id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="72fa7532-fc8f-418f-9a39-637e111a5c0a">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>862028c4-151d-4005-963f-5b600fa876e9</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="8e0fe4c7-1744-4296-8691-ca181e88efb5" type="Component View" typeId="2b961538-d4dd-40a0-af84-22f25106f10f">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>862028c4-151d-4005-963f-5b600fa876e9</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="6a47fabf-6f68-423a-b279-dc44e532b032" type="List View" typeId="89acf8ca-2949-4433-8c9e-b811b51e32bc">
+                  <name>[list]</name>
+                  <display>[list]</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8e0fe4c7-1744-4296-8691-ca181e88efb5</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="7c092841-b849-4cd3-a926-a5509e1793d7" type="Grid Layout" typeId="11a0e3ca-d9d2-4e0f-a0d5-48766140fa10">
+                      <name>Invoice Grid</name>
+                      <display>Invoice Grid</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>6a47fabf-6f68-423a-b279-dc44e532b032</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="345e3094-1bfb-4adb-8a37-b2a9e8ef81db" type="Table Layout" typeId="36c5662a-1fc9-43c4-8d5f-8202ee07fb1b">
+                      <name>Invoices Table</name>
+                      <display>Invoices Table</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>manually</sort-children>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>6a47fabf-6f68-423a-b279-dc44e532b032</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="616fc727-e623-42d4-ab6c-e87b6bcba21a" name="Table Settings">
+                          <addedByDefault>true</addedByDefault>
+                          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                          <properties />
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements>
+                        <childElement id="0bcbc07d-1da3-4982-a922-591a7e84397c" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>Number</name>
+                          <display>Number: Number</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="7944e404-5240-4c14-b0f3-9caf4f55255e">
+                            <typeId>e2d554cb-16b2-4089-a97b-8864813b9bf9</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Client</typePackageName>
+                            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>345e3094-1bfb-4adb-8a37-b2a9e8ef81db</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="b14279ff-c5a3-4228-a0bd-618c7142d2fa" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>Date</name>
+                          <display>Date: Date</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="3fb3316a-b8c0-40a3-b0ce-66b920d44068">
+                            <typeId>b2c9031e-506a-444c-9645-3d26b395af19</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Client</typePackageName>
+                            <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>345e3094-1bfb-4adb-8a37-b2a9e8ef81db</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="f398accf-32a8-4a38-9ae2-6bf470fedb9d" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>Actions</name>
+                          <display>Actions: void</display>
+                          <isAbstract>false</isAbstract>
+                          <sort-children>manually</sort-children>
+                          <genericTypes />
+                          <typeReference id="b384df91-c5e0-452a-ad5e-a7268200128a">
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>345e3094-1bfb-4adb-8a37-b2a9e8ef81db</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="f3b15258-1966-4656-910f-1465f154e755" type="Component Model" typeId="f51a8831-0f7a-48a3-b3c5-604818cea9a4">
+              <name>Invoice Model</name>
+              <display>Invoice Model: Invoice Model[*]</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="5d686356-d3d9-4f52-926a-12098ea2bd7a">
+                <typeId>22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>true</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Client</typePackageName>
+                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>862028c4-151d-4005-963f-5b600fa876e9</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="3321b666-9566-4c47-98da-2fada4cabb40" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+          <name>View Invoice</name>
+          <display>View Invoice</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>df83291c-4d61-479d-a5a9-852657e31871</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="34783233-28f7-41ec-ba9d-19ca6b5c5c15" type="Component Parameter" typeId="4b88d38b-52b3-47be-8ce1-f571bafc56d4">
+              <name>Invoice Id</name>
+              <display>Invoice Id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="c2c11b23-ef84-4f68-bd8f-61704bed5d1a">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>3321b666-9566-4c47-98da-2fada4cabb40</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="e4bf822b-b865-475a-9530-a1cc5a617ad2" type="Component View" typeId="2b961538-d4dd-40a0-af84-22f25106f10f">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>3321b666-9566-4c47-98da-2fada4cabb40</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="b39e2abc-0c82-471f-a871-572e9966dad2" type="Component Actions" typeId="a126b934-3b67-41cf-8fcc-8bc6f5473d9a">
+              <name>[actions]</name>
+              <display>[actions]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>3321b666-9566-4c47-98da-2fada4cabb40</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="dff7abd8-784a-471f-92ea-fb6bb83ab576" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+                  <name>Print Invoice</name>
+                  <display>Print Invoice</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>b39e2abc-0c82-471f-a871-572e9966dad2</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                      <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                      <properties>
+                        <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+                        <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+                        <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements>
+                    <childElement id="137fc39d-e273-48d7-a1e4-7e55dfc2f445" type="Operation" typeId="fd5dcb2b-3db4-4cc9-a551-0354d3cb3c01">
+                      <name>[operation]</name>
+                      <display>[operation]</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>dff7abd8-784a-471f-92ea-fb6bb83ab576</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="2b37c784-2ac9-4441-87a1-1ec7460908dd" type="Component Folder" typeId="7cb76668-7d0d-4902-99a1-85b97c22dbba">
+          <name>Lines</name>
+          <display>Lines</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>df83291c-4d61-479d-a5a9-852657e31871</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="f2ee9c1b-d9fc-49f5-a49a-2d5887f4cf29" type="Component" typeId="c5ceaac9-7171-41be-af89-f39553c893dd">
+              <name>View Invoice Lines</name>
+              <display>View Invoice Lines</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>2b37c784-2ac9-4441-87a1-1ec7460908dd</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="38a305d9-642d-4cd3-9fab-88e82a5bcb52" type="Component Parameter" typeId="4b88d38b-52b3-47be-8ce1-f571bafc56d4">
+                  <name>Invoice Id</name>
+                  <display>Invoice Id: guid</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="b6e85ffb-1055-44c5-8645-ab9a0d7c8468">
+                    <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f2ee9c1b-d9fc-49f5-a49a-2d5887f4cf29</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="d0517482-ed1a-4659-a8c7-14109501361d" type="Component View" typeId="2b961538-d4dd-40a0-af84-22f25106f10f">
+                  <name>[view]</name>
+                  <display>[view]</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f2ee9c1b-d9fc-49f5-a49a-2d5887f4cf29</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="2d3b4b4a-b89d-4937-aaf4-6dce7eb690ea" type="List View" typeId="89acf8ca-2949-4433-8c9e-b811b51e32bc">
+                      <name>[list]</name>
+                      <display>[list]</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>d0517482-ed1a-4659-a8c7-14109501361d</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements>
+                        <childElement id="30e43069-d1c0-473b-8712-f7f67c493c75" type="Table Layout" typeId="36c5662a-1fc9-43c4-8d5f-8202ee07fb1b">
+                          <name>Invoice Lines Table</name>
+                          <display>Invoice Lines Table</display>
+                          <isAbstract>false</isAbstract>
+                          <sort-children>manually</sort-children>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>2d3b4b4a-b89d-4937-aaf4-6dce7eb690ea</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="616fc727-e623-42d4-ab6c-e87b6bcba21a" name="Table Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties />
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements>
+                            <childElement id="e782f1d8-fcb0-4209-a3e3-319d080113d9" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                              <name>SKU</name>
+                              <display>SKU: SKU</display>
+                              <isAbstract>false</isAbstract>
+                              <genericTypes />
+                              <typeReference id="abb524da-29bc-4f49-897a-a2bd065917df">
+                                <typeId>b8665cb1-51cd-42e4-ae71-0b7dd2d97bc3</typeId>
+                                <isNavigable>true</isNavigable>
+                                <isNullable>false</isNullable>
+                                <isCollection>false</isCollection>
+                                <isRequired>true</isRequired>
+                                <typePackageName>Client</typePackageName>
+                                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                                <stereotypes />
+                                <genericTypeParameters />
+                              </typeReference>
+                              <isMapped>false</isMapped>
+                              <parentFolderId>30e43069-d1c0-473b-8712-f7f67c493c75</parentFolderId>
+                              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                              <packageName>Client</packageName>
+                              <stereotypes>
+                                <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                                  <addedByDefault>true</addedByDefault>
+                                  <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                                  <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                                  <properties>
+                                    <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                    <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                                  </properties>
+                                </stereotype>
+                              </stereotypes>
+                              <metadata />
+                              <childElements />
+                            </childElement>
+                            <childElement id="6b93de10-fe98-4537-8dad-18653cc1d0dc" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                              <name>Description</name>
+                              <display>Description: Description</display>
+                              <isAbstract>false</isAbstract>
+                              <genericTypes />
+                              <typeReference id="cc11d33f-7a88-484e-ade1-b4604edfc9ca">
+                                <typeId>80385117-2942-45a0-8f9f-c2df63ec62d2</typeId>
+                                <isNavigable>true</isNavigable>
+                                <isNullable>false</isNullable>
+                                <isCollection>false</isCollection>
+                                <isRequired>true</isRequired>
+                                <typePackageName>Client</typePackageName>
+                                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                                <stereotypes />
+                                <genericTypeParameters />
+                              </typeReference>
+                              <isMapped>false</isMapped>
+                              <parentFolderId>30e43069-d1c0-473b-8712-f7f67c493c75</parentFolderId>
+                              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                              <packageName>Client</packageName>
+                              <stereotypes>
+                                <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                                  <addedByDefault>true</addedByDefault>
+                                  <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                                  <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                                  <properties>
+                                    <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                    <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                                  </properties>
+                                </stereotype>
+                              </stereotypes>
+                              <metadata />
+                              <childElements />
+                            </childElement>
+                            <childElement id="5c444793-cca4-48e2-9773-a19e0cfdfbad" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                              <name>Quantity</name>
+                              <display>Quantity: Quantity</display>
+                              <isAbstract>false</isAbstract>
+                              <genericTypes />
+                              <typeReference id="1ac53fe8-f15b-4951-aaab-18a65a4a9e5a">
+                                <typeId>6d85a9e0-52b3-4cd5-968b-9a3fb2aac7a4</typeId>
+                                <isNavigable>true</isNavigable>
+                                <isNullable>false</isNullable>
+                                <isCollection>false</isCollection>
+                                <isRequired>true</isRequired>
+                                <typePackageName>Client</typePackageName>
+                                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                                <stereotypes />
+                                <genericTypeParameters />
+                              </typeReference>
+                              <isMapped>false</isMapped>
+                              <parentFolderId>30e43069-d1c0-473b-8712-f7f67c493c75</parentFolderId>
+                              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                              <packageName>Client</packageName>
+                              <stereotypes>
+                                <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                                  <addedByDefault>true</addedByDefault>
+                                  <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                                  <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                                  <properties>
+                                    <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                    <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                                  </properties>
+                                </stereotype>
+                              </stereotypes>
+                              <metadata />
+                              <childElements />
+                            </childElement>
+                            <childElement id="e924919f-d44c-45f9-a662-bcf5ca53e65a" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                              <name>Price</name>
+                              <display>Price: Price</display>
+                              <isAbstract>false</isAbstract>
+                              <genericTypes />
+                              <typeReference id="8d4f6970-5a23-43c6-b82f-a8ae61cf4136">
+                                <typeId>cab26067-eb37-4c75-855b-2c7f4af7cc31</typeId>
+                                <isNavigable>true</isNavigable>
+                                <isNullable>false</isNullable>
+                                <isCollection>false</isCollection>
+                                <isRequired>true</isRequired>
+                                <typePackageName>Client</typePackageName>
+                                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                                <stereotypes />
+                                <genericTypeParameters />
+                              </typeReference>
+                              <isMapped>false</isMapped>
+                              <parentFolderId>30e43069-d1c0-473b-8712-f7f67c493c75</parentFolderId>
+                              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                              <packageName>Client</packageName>
+                              <stereotypes>
+                                <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                                  <addedByDefault>true</addedByDefault>
+                                  <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                                  <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                                  <properties>
+                                    <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                    <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                                  </properties>
+                                </stereotype>
+                              </stereotypes>
+                              <metadata />
+                              <childElements />
+                            </childElement>
+                          </childElements>
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
+                <childElement id="742085a8-754e-4269-9138-9cf164a7d8b6" type="Component Actions" typeId="a126b934-3b67-41cf-8fcc-8bc6f5473d9a">
+                  <name>[actions]</name>
+                  <display>[actions]</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>f2ee9c1b-d9fc-49f5-a49a-2d5887f4cf29</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="64199b50-7292-4855-af7d-a7c56ce13ce7" type="Command" typeId="4a186cc2-552b-4438-89ff-02642035a61a">
+                      <name>Add Line Item</name>
+                      <display>Add Line Item</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>742085a8-754e-4269-9138-9cf164a7d8b6</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="effdab75-866e-487c-b6c2-f9b0b26d1b91" name="Command Settings">
+                          <addedByDefault>true</addedByDefault>
+                          <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                          <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                          <properties>
+                            <property name="b532db25-5c27-4eec-9782-e4f30f59e120" display="Icon" isActive="true" />
+                            <property name="015063a4-93b4-4553-8f20-7e8d60d7d923" display="Label" isActive="true" />
+                            <property name="3e1e4166-91a0-4775-b64d-f0775299f5a1" display="Interaction" value="On Click" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements>
+                        <childElement id="f4af7bef-e119-40d9-ad01-fd40f3d12896" type="Operation" typeId="fd5dcb2b-3db4-4cc9-a551-0354d3cb3c01">
+                          <name>[operation]</name>
+                          <display>[operation]</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>64199b50-7292-4855-af7d-a7c56ce13ce7</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes />
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="b3474a4c-1767-4161-8f02-bbe6be65fe77" type="Model Definition" typeId="3b3aae7a-a51a-4352-a000-2b2bffb05dbf">
+              <name>Invoice Line Model</name>
+              <display>Invoice Line Model</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>2b37c784-2ac9-4441-87a1-1ec7460908dd</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="11e8cb8f-a043-4d69-a152-741b284ceae8" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+                  <name>Invoice Id</name>
+                  <display>Invoice Id: guid</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="ada80efd-6d15-457e-bd21-4ed4c6e36ed8">
+                    <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>b3474a4c-1767-4161-8f02-bbe6be65fe77</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="4322e72f-817d-49ef-909b-bd248f4384f4" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+                  <name>Product Id</name>
+                  <display>Product Id: guid</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="8f2ae6a7-9ed5-4cf7-864b-76e2d5c841ef">
+                    <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>b3474a4c-1767-4161-8f02-bbe6be65fe77</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="80385117-2942-45a0-8f9f-c2df63ec62d2" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+                  <name>Description</name>
+                  <display>Description: string</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="f2f81198-3325-4654-b883-90acab830fda">
+                    <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>b3474a4c-1767-4161-8f02-bbe6be65fe77</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="6d85a9e0-52b3-4cd5-968b-9a3fb2aac7a4" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+                  <name>Quantity</name>
+                  <display>Quantity: decimal</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="22d4ea17-8f08-4db2-8fc1-0ef464828171">
+                    <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>b3474a4c-1767-4161-8f02-bbe6be65fe77</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="cab26067-eb37-4c75-855b-2c7f4af7cc31" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+                  <name>Price</name>
+                  <display>Price: decimal</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="950dc953-19fb-4cca-a92a-20ea28518e4b">
+                    <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>b3474a4c-1767-4161-8f02-bbe6be65fe77</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1" type="Model Definition" typeId="3b3aae7a-a51a-4352-a000-2b2bffb05dbf">
+          <name>Invoice Model</name>
+          <display>Invoice Model</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>df83291c-4d61-479d-a5a9-852657e31871</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="cbabac25-4e43-4f2f-a8ad-9f8a0192d7d1" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Client Id</name>
+              <display>Client Id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="51234cf4-f7e3-4d1f-8247-91004daf758b">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="e2d554cb-16b2-4089-a97b-8864813b9bf9" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Number</name>
+              <display>Number: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="e943e14d-5b80-44ad-a7c4-a75b1c5c8822">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="b2c9031e-506a-444c-9645-3d26b395af19" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Date</name>
+              <display>Date: datetimeoffset</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="d6a5a487-2fcb-44e5-9567-e46fd52aeb0c">
+                <typeId>f1ba4df3-a5bc-427e-a591-4f6029f89bd7</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="b597860a-ab0c-4a63-8525-af8ada6d1b1a" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Lines</name>
+              <display>Lines: Invoice Line Model[*]</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="377836e0-98b1-42c3-b830-62a2bc3ede03">
+                <typeId>b3474a4c-1767-4161-8f02-bbe6be65fe77</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>true</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Client</typePackageName>
+                <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="cfd2e176-d3c2-4136-b09b-7b3ca08ee1f7" type="Component Folder" typeId="7cb76668-7d0d-4902-99a1-85b97c22dbba">
+      <name>Products</name>
+      <display>Products</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>04ed903e-f94a-43e0-9bf7-825192a1a9e6</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="cb681220-e242-4e95-865f-391994453849" type="Model Definition" typeId="3b3aae7a-a51a-4352-a000-2b2bffb05dbf">
+          <name>Product Model</name>
+          <display>Product Model</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>cfd2e176-d3c2-4136-b09b-7b3ca08ee1f7</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="32cd8dff-fc71-45e2-aa22-8fc486e22fd3" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Product Id</name>
+              <display>Product Id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="088174e0-c73b-4cd9-89c0-ccb7d0f1bd58">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>cb681220-e242-4e95-865f-391994453849</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="b8665cb1-51cd-42e4-ae71-0b7dd2d97bc3" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>SKU</name>
+              <display>SKU: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="bfa4468e-e6c7-4907-afec-912851321423">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>cb681220-e242-4e95-865f-391994453849</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="d37c3cea-b35d-483a-93bd-3bbd2456e9b5" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Name</name>
+              <display>Name: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="677ea852-e1ca-48c9-9eb8-75ba7759f77d">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>cb681220-e242-4e95-865f-391994453849</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="dfd3393d-c598-4559-aba2-3a775e6471e6" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>ImageUrl</name>
+              <display>ImageUrl: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="5dd20975-8ff1-48b9-aa2f-287e8053bd6f">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>cb681220-e242-4e95-865f-391994453849</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

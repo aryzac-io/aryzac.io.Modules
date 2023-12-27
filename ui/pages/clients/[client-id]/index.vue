@@ -1,0 +1,3 @@
+<template>
+  <clients-view />
+</template>

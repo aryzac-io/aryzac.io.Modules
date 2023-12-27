@@ -9,6 +9,5 @@
   <lastUsedApplicationTemplate id="Intent.ApplicationTemplate.ModuleBuilder" version="3.3.48" />
   <applications>
     <application id="1f724b76-41f0-4cc7-8c54-37e8a72954eb" name="aryzac.io.Modules.Client" relativePath="aryzac.io.Modules.Client/aryzac.io.Modules.Client.application.config" />
-    <application id="09663e93-7886-44de-a60e-5ff5e436b77c" name="aryzac.io.Modules.Client.TestApplication" relativePath="aryzac.io.Modules.Client.TestApplication/aryzac.io.Modules.Client.TestApplication.application.config" />
   </applications>
 </solution>

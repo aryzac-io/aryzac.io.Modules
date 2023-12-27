@@ -35,5 +35,6 @@
     <install src="modelers/Layout Settings.designer.settings" externalReference="25d53d97-63f1-48b0-9725-a503e58da08f" />
     <install src="modelers/Style Settings.designer.settings" externalReference="c73a5458-07ad-4e6a-874a-7abaa3429caa" />
     <install src="modelers/Typography Settings.designer.settings" externalReference="a2bffbbd-b781-4075-8846-a56c82bba5ba" />
+    <install src="modelers/Flex Settings.designer.settings" externalReference="1fac4bcf-024b-4a3b-9793-49949c89ddda" />
   </metadata>
 </package>

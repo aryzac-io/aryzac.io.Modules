@@ -276,14 +276,6 @@
     </FileLog>
     <FileLog>
       <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
-      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#a50cb4ce-c5ad-4598-a41b-14cb30bf10c6</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/ContainerActionsModel.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ContainerActionsModel.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#ecd6adbc-616f-41aa-963a-13d8d576b5fc</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/ContainerBodyModel.cs</ApplicationRelativeFilePath>
@@ -296,6 +288,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/ContainerBodyModelStereotypeExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ContainerBodyModelStereotypeExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#a50cb4ce-c5ad-4598-a41b-14cb30bf10c6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/ContainerFooterModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ContainerFooterModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -340,6 +340,30 @@
     </FileLog>
     <FileLog>
       <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#1514b700-cfa8-43ae-a1df-d63ecc60d3ad</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/CssPropertyModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>CssPropertyModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModelExtensions#1514b700-cfa8-43ae-a1df-d63ecc60d3ad</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/CssPropertyModelStereotypeExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>CssPropertyModelStereotypeExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#e02b68fc-516c-4e3e-a664-abbccb1686c3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/CssStyleModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>CssStyleModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#25432221-eae2-4795-904f-6dca5ada6615</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/DarkModel.cs</ApplicationRelativeFilePath>
@@ -352,6 +376,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/DataControlsModel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DataControlsModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#4164c533-2012-47f2-ad5c-213963663e73</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/DataSourceModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>DataSourceModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -412,6 +444,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#96cac115-9be2-4162-96d2-f01797567277</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FieldModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FieldModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#c1c508d5-5a4a-4030-973e-457b83ffdaf5</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FileModel.cs</ApplicationRelativeFilePath>
@@ -424,6 +464,102 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FileModelStereotypeExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>FileModelStereotypeExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#34da886f-1d83-499d-8a2c-37cceef7aa61</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/Flex1Model.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Flex1Model.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#258ad76c-69d6-4218-9890-b4c8cd762c83</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexAutoModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexAutoModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#39b441d1-be7a-4452-a5a5-b1664b9460f8</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexColumnModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexColumnModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#6c1c1266-893b-463c-8f75-16f361a0a803</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexGrowModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexGrowModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#d26b7d7f-d6e3-407d-9ba1-1beafd7b6c65</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexInitialModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexInitialModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#b2f308b0-b572-4721-a21d-f09a0e9d2aeb</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#923508fd-b152-4073-ad52-cd8c24a702d9</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexNoneModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexNoneModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#66f6db13-383e-4005-9215-13a3f67ec7f2</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexNoWrapModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexNoWrapModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#c4f4378b-b8d2-48f9-9f74-50c3adee9f64</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexReverseModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexReverseModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#8f77c350-7442-41f3-8e96-4c8741e6a217</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexRowModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexRowModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#32bbdfe5-1461-48a3-b60a-da3b1ce03d1a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexShrinkModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexShrinkModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#6b34757b-87da-4439-ab7d-2f22d6f2c171</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/FlexWrapModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>FlexWrapModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -668,6 +804,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#f1efbfe1-4dbe-4026-b440-742fdfcb3e07</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/ImageModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ImageModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#01e8ae25-bbad-4ea5-939a-b2a2450d6d89</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/InfiniteScrollerModel.cs</ApplicationRelativeFilePath>
@@ -724,6 +868,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#22f69e94-c4eb-45b3-b4d0-d9af393ee172</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/LayoutTemplateModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>LayoutTemplateModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#aee39c0d-1754-403a-abe5-5708a0b0e6a4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/LineThroughModel.cs</ApplicationRelativeFilePath>
@@ -744,6 +896,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/ListLayoutModel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ListLayoutModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6f53da1d-330d-40fe-9d85-18c139eee93e</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#89acf8ca-2949-4433-8c9e-b811b51e32bc</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/Api/ListViewModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ListViewModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -1600,6 +1760,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/modelers/Client.designer.config</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Client.designer.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>fc05795f-852a-437b-9972-614928cbc9a8</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.DesignerSettings#1fac4bcf-024b-4a3b-9793-49949c89ddda</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.Client/modelers/Flex Settings.designer.settings</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Flex Settings.designer.settings</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

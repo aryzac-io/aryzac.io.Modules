@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="24ffd827-a384-4a21-a90f-cab6c4c5b202" type="Form Definition" typeId="df0da0e1-b468-4868-8135-22caf8767eeb">
+  <name>Invoice Form Card</name>
+  <display>Invoice Form Card: Invoice Model</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <typeReference id="1d6d4e36-3a6e-4c15-ac0f-a4320986dab6">
+    <typeId>22a70ec6-c1e8-4d34-a0ba-9fd54a1820a1</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Client</typePackageName>
+    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>df83291c-4d61-479d-a5a9-852657e31871</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="1fbac495-4293-43c8-8116-77b25c179e29" type="Label" typeId="33c12ab7-b9f4-4a5f-8c70-0ce785c138da">
+      <name>Invoice Number</name>
+      <display>Invoice Number: Number</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="ac80bc0c-a21d-4699-b549-0dba1de6daf4">
+        <typeId>e2d554cb-16b2-4089-a97b-8864813b9bf9</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Client</typePackageName>
+        <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>24ffd827-a384-4a21-a90f-cab6c4c5b202</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="534c636e-ab94-436a-9398-b3bf446a8a60" type="Label" typeId="33c12ab7-b9f4-4a5f-8c70-0ce785c138da">
+      <name>Date</name>
+      <display>Date: Date</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="428cbfd3-441a-4b52-bd6a-22ed62624b26">
+        <typeId>b2c9031e-506a-444c-9645-3d26b395af19</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Client</typePackageName>
+        <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>24ffd827-a384-4a21-a90f-cab6c4c5b202</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

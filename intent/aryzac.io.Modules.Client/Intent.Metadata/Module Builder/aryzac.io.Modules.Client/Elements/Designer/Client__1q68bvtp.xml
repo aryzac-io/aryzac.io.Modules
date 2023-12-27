@@ -70,6 +70,30 @@
       <metadata />
       <childElements />
     </childElement>
+    <childElement id="2e7352b0-7c2d-4bea-8ed4-bd82aafdc769" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
+      <name>Flex Settings Reference</name>
+      <display>Flex Settings Reference: Flex Settings</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="04c1088f-1bc6-45a9-91d6-13cad97d490d">
+        <typeId>1fac4bcf-024b-4a3b-9793-49949c89ddda</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>aryzac.io.Modules.Client</typePackageName>
+        <typePackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>99fbd418-a3d3-4e05-a60b-071898c51c25</parentFolderId>
+      <packageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</packageId>
+      <packageName>aryzac.io.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
     <childElement id="b2cf9d40-2445-4dcf-ba00-66dfdef6931a" type="Designer Reference" typeId="ace8c966-1a7f-487e-b21b-dd601e57f13f">
       <name>Layout Settings Reference</name>
       <display>Layout Settings Reference: Layout Settings</display>

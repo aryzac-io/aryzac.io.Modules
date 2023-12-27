@@ -11,7 +11,7 @@ using Intent.RoslynWeaver.Attributes;
 namespace Aryzac.Io.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
-    public class TableColumnModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
+    public class TableColumnModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
     {
         public const string SpecializationType = "Table Column";
         public const string SpecializationTypeId = "8d090abe-842a-4d68-a2ff-f4fcc3986996";
@@ -35,7 +35,14 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
 
+        public ITypeReference TypeReference => _element.TypeReference;
+
         public IElement InternalElement => _element;
+
+        public LayoutTemplateModel Template => _element.ChildElements
+            .GetElementsOfType(LayoutTemplateModel.SpecializationTypeId)
+            .Select(x => new LayoutTemplateModel(x))
+            .SingleOrDefault();
 
         public override string ToString()
         {

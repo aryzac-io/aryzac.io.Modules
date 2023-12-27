@@ -57,6 +57,11 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new DialogModel(x))
             .ToList();
 
+        public IList<ListViewModel> Lists => _element.ChildElements
+            .GetElementsOfType(ListViewModel.SpecializationTypeId)
+            .Select(x => new ListViewModel(x))
+            .ToList();
+
         public override string ToString()
         {
             return _element.ToString();

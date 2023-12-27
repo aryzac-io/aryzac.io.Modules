@@ -107,6 +107,11 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new LabelModel(x))
             .ToList();
 
+        public IList<ImageModel> Images => _element.ChildElements
+            .GetElementsOfType(ImageModel.SpecializationTypeId)
+            .Select(x => new ImageModel(x))
+            .ToList();
+
         public override string ToString()
         {
             return _element.ToString();

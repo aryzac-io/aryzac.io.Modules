@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="5699ebd0-7909-4ece-a187-953100e07296" type="Form Definition Reference" typeId="00d4fbee-a571-4752-8eda-3208cc3dd503">
+  <name>Invoice Form</name>
+  <display>Invoice Form: Invoice Form Card</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <typeReference id="4d004b03-b97a-40de-8dbe-3c141f71adb3">
+    <typeId>24ffd827-a384-4a21-a90f-cab6c4c5b202</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Client</typePackageName>
+    <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>9f48ae84-1c96-4696-bcae-f9af4e6b4ceb</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

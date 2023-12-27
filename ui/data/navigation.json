@@ -1,0 +1,58 @@
+[
+  {
+    "section": "main",
+    "component": "navigation",
+    "items": [
+      {
+        "id": 1,
+        "name": "Home",
+        "to": "/",
+        "icon": "heroicons:home"
+      },
+      {
+        "id": 2,
+        "name": "Clients",
+        "to": "/clients",
+        "icon": "heroicons:users"
+      }
+    ]
+  },
+  {
+    "section": "client",
+    "title": "Client Actions",
+    "component": "navigation",
+    "items": [
+      {
+        "id": 6,
+        "name": "View",
+        "to": "/clients",
+        "icon": "heroicons:eye"
+      },
+      {
+        "id": 5,
+        "name": "Create Invoice",
+        "to": "/",
+        "icon": "heroicons:table-cells"
+      }
+    ]
+  },
+  {
+    "section": "invoices",
+    "title": "Recent Invoices",
+    "component": "navigation",
+    "items": [
+      {
+        "id": 3,
+        "name": "INV-23019",
+        "to": "/",
+        "icon": "heroicons:table-cells"
+      },
+      {
+        "id": 4,
+        "name": "INV-23233",
+        "to": "/clients",
+        "icon": "heroicons:table-cells"
+      }
+    ]
+  }
+]

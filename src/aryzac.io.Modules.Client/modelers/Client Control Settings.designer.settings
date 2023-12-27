@@ -101,7 +101,7 @@
             <type order="0">Style</type>
             <type order="1">Container Header</type>
             <type order="2">Container Body</type>
-            <type order="3">Container Actions</type>
+            <type order="3">Container Footer</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -129,11 +129,11 @@
               <allowMultiple>false</allowMultiple>
             </option>
             <option type="element">
-              <text>Add Actions</text>
+              <text>Add Footer</text>
               <icon type="FontAwesome" source="file-o" />
-              <specializationType>Container Actions</specializationType>
+              <specializationType>Container Footer</specializationType>
               <specializationTypeId>a50cb4ce-c5ad-4598-a41b-14cb30bf10c6</specializationTypeId>
-              <defaultName>[actions]</defaultName>
+              <defaultName>[footer]</defaultName>
               <allowMultiple>false</allowMultiple>
             </option>
           </creationOptions>
@@ -172,7 +172,7 @@
             <type order="0">Style</type>
             <type order="1">Container Header</type>
             <type order="2">Container Body</type>
-            <type order="3">Container Actions</type>
+            <type order="3">Container Footer</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -200,11 +200,11 @@
               <allowMultiple>false</allowMultiple>
             </option>
             <option type="element">
-              <text>Add Actions</text>
+              <text>Add Footer</text>
               <icon type="FontAwesome" source="file-o" />
-              <specializationType>Container Actions</specializationType>
+              <specializationType>Container Footer</specializationType>
               <specializationTypeId>a50cb4ce-c5ad-4598-a41b-14cb30bf10c6</specializationTypeId>
-              <defaultName>[actions]</defaultName>
+              <defaultName>[footer]</defaultName>
               <allowMultiple>false</allowMultiple>
             </option>
           </creationOptions>
@@ -243,7 +243,7 @@
             <type order="0">Style</type>
             <type order="1">Container Header</type>
             <type order="2">Container Body</type>
-            <type order="3">Container Actions</type>
+            <type order="3">Container Footer</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -271,11 +271,11 @@
               <allowMultiple>false</allowMultiple>
             </option>
             <option type="element">
-              <text>Add Actions</text>
+              <text>Add Footer</text>
               <icon type="FontAwesome" source="file-o" />
-              <specializationType>Container Actions</specializationType>
+              <specializationType>Container Footer</specializationType>
               <specializationTypeId>a50cb4ce-c5ad-4598-a41b-14cb30bf10c6</specializationTypeId>
-              <defaultName>[actions]</defaultName>
+              <defaultName>[footer]</defaultName>
               <allowMultiple>false</allowMultiple>
             </option>
           </creationOptions>
@@ -365,6 +365,7 @@
                 <type order="11">File</type>
                 <type order="12">Slider</type>
                 <type order="13">Label</type>
+                <type order="14">Image</type>
               </typeOrder>
               <creationOptions>
                 <option type="element">
@@ -477,6 +478,14 @@
                   <specializationType>Label</specializationType>
                   <specializationTypeId>33c12ab7-b9f4-4a5f-8c70-0ce785c138da</specializationTypeId>
                   <defaultName>NewLabel</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
+                <option type="element">
+                  <text>Add Image</text>
+                  <icon type="FontAwesome" source="file-o" />
+                  <specializationType>Image</specializationType>
+                  <specializationTypeId>f1efbfe1-4dbe-4026-b440-742fdfcb3e07</specializationTypeId>
+                  <defaultName>NewImage</defaultName>
                   <allowMultiple>true</allowMultiple>
                 </option>
               </creationOptions>
@@ -568,6 +577,7 @@
                 <type order="11">File</type>
                 <type order="12">Slider</type>
                 <type order="13">Label</type>
+                <type order="14">Image</type>
               </typeOrder>
               <creationOptions>
                 <option type="element">
@@ -682,6 +692,14 @@
                   <defaultName>NewLabel</defaultName>
                   <allowMultiple>true</allowMultiple>
                 </option>
+                <option type="element">
+                  <text>Add Image</text>
+                  <icon type="FontAwesome" source="file-o" />
+                  <specializationType>Image</specializationType>
+                  <specializationTypeId>f1efbfe1-4dbe-4026-b440-742fdfcb3e07</specializationTypeId>
+                  <defaultName>NewImage</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
               </creationOptions>
               <scriptOptions />
               <mappingOptions />
@@ -766,6 +784,8 @@
             <type order="8">File</type>
             <type order="9">Slider</type>
             <type order="10">Label</type>
+            <type order="11">Component Reference</type>
+            <type order="12">Image</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -856,6 +876,22 @@
               <defaultName>NewLabel</defaultName>
               <allowMultiple>true</allowMultiple>
             </option>
+            <option type="element">
+              <text>Add Component</text>
+              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP1JREFUOE+1k9ERAUEQRJ8MZIAMZEAIRIAIEIETgRMBIlAyIAMZIAMhqFYzW1Nbt/ixP1c129fT0z3b4vMZ2vW5BGsVLrrADujZ/Q2YAfccnxO0gTmwBGqgsh/0XQAbYAs8nSgSTA1wMnACGVjkIh1Zk4PqTuDs69C1NLbUrFylE6gow/rA0S6bFGiEMXAFZGwVCdRREqUmKlJdDeSN5nfMu54TuGlKYQ90bI4HII88hWRuicDnVzcdKYrnZ4IY438JJHFi7se1bVKgtJSG9qDOF0kzxxgjgRbJY1RDmZwWyecTKMYYG8QYG1c5muQxDqx4yWJM2NJrdMDX5/wCqc8/EcFEmKgAAAAASUVORK5CYII=" />
+              <specializationType>Component Reference</specializationType>
+              <specializationTypeId>f798993a-4652-4aef-94f7-cda1f8469e59</specializationTypeId>
+              <defaultName>NewComponentReference</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Image</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Image</specializationType>
+              <specializationTypeId>f1efbfe1-4dbe-4026-b440-742fdfcb3e07</specializationTypeId>
+              <defaultName>NewImage</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
           </creationOptions>
           <scriptOptions />
           <mappingOptions />
@@ -892,7 +928,7 @@
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>false</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
@@ -913,6 +949,8 @@
             <type order="12">File</type>
             <type order="13">Slider</type>
             <type order="14">Label</type>
+            <type order="15">Container</type>
+            <type order="16">Image</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -1035,13 +1073,29 @@
               <defaultName>NewLabel</defaultName>
               <allowMultiple>true</allowMultiple>
             </option>
+            <option type="element">
+              <text>Add Container</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Container</specializationType>
+              <specializationTypeId>b0b5d813-91c5-4891-a32e-cf7cea184759</specializationTypeId>
+              <defaultName>NewContainer</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Image</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Image</specializationType>
+              <specializationTypeId>f1efbfe1-4dbe-4026-b440-742fdfcb3e07</specializationTypeId>
+              <defaultName>NewImage</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
           </creationOptions>
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
           <childElementSettings />
         </childElementSetting>
-        <childElementSetting type="Container Actions" typeId="a50cb4ce-c5ad-4598-a41b-14cb30bf10c6">
+        <childElementSetting type="Container Footer" typeId="a50cb4ce-c5ad-4598-a41b-14cb30bf10c6">
           <icon type="FontAwesome" source="file-o" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
@@ -1098,8 +1152,19 @@
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
-          <typeOrder />
-          <creationOptions />
+          <typeOrder>
+            <type order="0">Layout Template</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Template</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Layout Template</specializationType>
+              <specializationTypeId>22f69e94-c4eb-45b3-b4d0-d9af393ee172</specializationTypeId>
+              <defaultName>[template]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
@@ -1119,8 +1184,19 @@
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
-          <typeOrder />
-          <creationOptions />
+          <typeOrder>
+            <type order="0">Layout Template</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Template</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Layout Template</specializationType>
+              <specializationTypeId>22f69e94-c4eb-45b3-b4d0-d9af393ee172</specializationTypeId>
+              <defaultName>[template]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
@@ -1135,7 +1211,7 @@
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>false</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1166,13 +1242,37 @@
               <allowGenericTypes>false</allowGenericTypes>
               <allowMapping>false</allowMapping>
               <allowSorting>true</allowSorting>
-              <sortChildren>by-type-then-by-name</sortChildren>
+              <sortChildren>manually</sortChildren>
               <allowFindInView>false</allowFindInView>
-              <allowTypeReference>false</allowTypeReference>
+              <allowTypeReference>true</allowTypeReference>
               <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
               <allowSetValue>false</allowSetValue>
-              <typeOrder />
-              <creationOptions />
+              <typeReferenceSetting>
+                <isRequired>false</isRequired>
+                <targetTypes>
+                  <type>DTO-Field</type>
+                  <type>Model Definition Field</type>
+                </targetTypes>
+                <allowIsNavigable>true</allowIsNavigable>
+                <allowIsNullable>true</allowIsNullable>
+                <allowIsCollection>true</allowIsCollection>
+                <isNavigableDefault>true</isNavigableDefault>
+                <isNullableDefault>false</isNullableDefault>
+                <isCollectionDefault>false</isCollectionDefault>
+              </typeReferenceSetting>
+              <typeOrder>
+                <type order="0">Layout Template</type>
+              </typeOrder>
+              <creationOptions>
+                <option type="element">
+                  <text>Add Template</text>
+                  <icon type="FontAwesome" source="file-o" />
+                  <specializationType>Layout Template</specializationType>
+                  <specializationTypeId>22f69e94-c4eb-45b3-b4d0-d9af393ee172</specializationTypeId>
+                  <defaultName>[template]</defaultName>
+                  <allowMultiple>false</allowMultiple>
+                </option>
+              </creationOptions>
               <scriptOptions />
               <mappingOptions />
               <mappingSettings />
@@ -1222,7 +1322,78 @@
           <mappingSettings />
           <childElementSettings />
         </childElementSetting>
+        <childElementSetting type="List View" typeId="89acf8ca-2949-4433-8c9e-b811b51e32bc">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder>
+            <type order="0">Grid Layout</type>
+            <type order="1">List Layout</type>
+            <type order="2">Table Layout</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Grid</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik01IDVoNHY0SDV6bTAgMTBoNHY0SDV6bTEwIDBoNHY0aC00em0wLTEwaDR2NGgtNHoiIG9wYWNpdHk9Ii4zIi8+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTMgMjFoOHYtOEgzem0yLTZoNHY0SDV6bS0yLTRoOFYzSDN6bTItNmg0djRINXptOCAxNmg4di04aC04em0yLTZoNHY0aC00ek0xMyAzdjhoOFYzem02IDZoLTRWNWg0eiIvPjwvc3ZnPg==" />
+              <specializationType>Grid Layout</specializationType>
+              <specializationTypeId>11a0e3ca-d9d2-4e0f-a0d5-48766140fa10</specializationTypeId>
+              <defaultName>NewGridLayout</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add List</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik01IDE5aDE0VjVINXptNi0xMmg2djJoLTZ6bTAgNGg2djJoLTZ6bTAgNGg2djJoLTZ6TTcgN2gydjJIN3ptMCA0aDJ2Mkg3em0wIDRoMnYySDd6IiBvcGFjaXR5PSIuMyIvPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0xMSA3aDZ2MmgtNnptMCA0aDZ2MmgtNnptMCA0aDZ2MmgtNnpNNyA3aDJ2Mkg3em0wIDRoMnYySDd6bTAgNGgydjJIN3pNMjAuMSAzSDMuOWMtLjUgMC0uOS40LS45Ljl2MTYuMmMwIC40LjQuOS45LjloMTYuMmMuNCAwIC45LS41LjktLjlWMy45YzAtLjUtLjUtLjktLjktLjlNMTkgMTlINVY1aDE0eiIvPjwvc3ZnPg==" />
+              <specializationType>List Layout</specializationType>
+              <specializationTypeId>bfb15c7f-0686-4ebe-a874-1cbce5ee55b2</specializationTypeId>
+              <defaultName>NewListLayout</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Table</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik01IDVoMTV2M0g1em0xMiA1aDN2OWgtM3ptLTcgMGg1djloLTV6bS01IDBoM3Y5SDV6IiBvcGFjaXR5PSIuMyIvPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yMCAzSDVjLTEuMSAwLTIgLjktMiAydjE0YzAgMS4xLjkgMiAyIDJoMTVjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMk04IDE5SDV2LTloM3ptNyAwaC01di05aDV6bTUgMGgtM3YtOWgzem0wLTExSDVWNWgxNXoiLz48L3N2Zz4=" />
+              <specializationType>Table Layout</specializationType>
+              <specializationTypeId>36c5662a-1fc9-43c4-8d5f-8202ee07fb1b</specializationTypeId>
+              <defaultName>NewTableLayout</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+          </creationOptions>
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
       </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Data Source" typeId="4164c533-2012-47f2-ad5c-213963663e73">
+      <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0xNiAzQzEwLjcwMiAzIDUgNC4yNTIgNSA3djE4YzAgMi43NDggNS43MDIgNCAxMSA0czExLTEuMjUyIDExLTRWN2MwLTIuNzQ4LTUuNzAyLTQtMTEtNG0wIDJjNS43OTggMCA4Ljc5NSAxLjQzNCA4Ljk5NyAyYy0uMjAyLjU2Ni0zLjIgMi04Ljk5NyAyYy01Ljg0MSAwLTguODQtMS40NTYtOS0xLjk4MnYtLjAwNUM3LjE2IDYuNDU2IDEwLjE1OSA1IDE2IDVNNyA5LjQyOEM5LjEyOCAxMC40OTUgMTIuNjQzIDExIDE2IDExczYuODcyLS41MDUgOS0xLjU3MnYzLjU2Yy0uMTYuNTU2LTMuMTU5IDIuMDEyLTkgMi4wMTJjLTUuODUgMC04Ljg1LTEuNDYtOS0yem0wIDZDOS4xMjggMTYuNDk1IDEyLjY0MyAxNyAxNiAxN3M2Ljg3Mi0uNTA1IDktMS41NzJ2My41NmMtLjE2LjU1Ni0zLjE1OSAyLjAxMi05IDIuMDEyYy01Ljg1IDAtOC44NS0xLjQ2LTktMnpNMTYgMjdjLTUuODUgMC04Ljg1LTEuNDYtOS0ydi0zLjU3MkM5LjEyOCAyMi40OTUgMTIuNjQzIDIzIDE2IDIzczYuODcyLS41MDUgOS0xLjU3MnYzLjU2Yy0uMTYuNTU2LTMuMTU5IDIuMDEyLTkgMi4wMTIiLz48L3N2Zz4=" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder />
+      <creationOptions />
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings />
     </elementSetting>
     <elementSetting type="Form Definition" typeId="df0da0e1-b468-4868-8135-22caf8767eeb">
       <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGpJREFUOE+1klEOgDAIQ99uOk+mnlQzEwwuQ1CUT7K+dC2F5JSkHgFUYH4IW4BJABucsCjn0PSAtoxM05kALxdx+4+DiH15E3KgM9JwMwPLgW7pNoM0oK/xsy+MnF1CfHPKK1C9o3FrTQN2kWUkEXqsKc4AAAAASUVORK5CYII=" />
@@ -1264,6 +1435,7 @@
         <type order="10">Slider</type>
         <type order="11">Label</type>
         <type order="12">Container</type>
+        <type order="13">Image</type>
       </typeOrder>
       <creationOptions>
         <option type="element">
@@ -1368,6 +1540,14 @@
           <specializationType>Container</specializationType>
           <specializationTypeId>b0b5d813-91c5-4891-a32e-cf7cea184759</specializationTypeId>
           <defaultName>NewContainer</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Image</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Image</specializationType>
+          <specializationTypeId>f1efbfe1-4dbe-4026-b440-742fdfcb3e07</specializationTypeId>
+          <defaultName>NewImage</defaultName>
           <allowMultiple>true</allowMultiple>
         </option>
       </creationOptions>
@@ -1765,6 +1945,8 @@
           </typeReferenceSetting>
           <typeOrder>
             <type order="0">Style</type>
+            <type order="1">Data Source</type>
+            <type order="2">Layout Template</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -1775,11 +1957,64 @@
               <defaultName>NewStyle</defaultName>
               <allowMultiple>true</allowMultiple>
             </option>
+            <option type="element">
+              <text>Add Data Source</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0xNiAzQzEwLjcwMiAzIDUgNC4yNTIgNSA3djE4YzAgMi43NDggNS43MDIgNCAxMSA0czExLTEuMjUyIDExLTRWN2MwLTIuNzQ4LTUuNzAyLTQtMTEtNG0wIDJjNS43OTggMCA4Ljc5NSAxLjQzNCA4Ljk5NyAyYy0uMjAyLjU2Ni0zLjIgMi04Ljk5NyAyYy01Ljg0MSAwLTguODQtMS40NTYtOS0xLjk4MnYtLjAwNUM3LjE2IDYuNDU2IDEwLjE1OSA1IDE2IDVNNyA5LjQyOEM5LjEyOCAxMC40OTUgMTIuNjQzIDExIDE2IDExczYuODcyLS41MDUgOS0xLjU3MnYzLjU2Yy0uMTYuNTU2LTMuMTU5IDIuMDEyLTkgMi4wMTJjLTUuODUgMC04Ljg1LTEuNDYtOS0yem0wIDZDOS4xMjggMTYuNDk1IDEyLjY0MyAxNyAxNiAxN3M2Ljg3Mi0uNTA1IDktMS41NzJ2My41NmMtLjE2LjU1Ni0zLjE1OSAyLjAxMi05IDIuMDEyYy01Ljg1IDAtOC44NS0xLjQ2LTktMnpNMTYgMjdjLTUuODUgMC04Ljg1LTEuNDYtOS0ydi0zLjU3MkM5LjEyOCAyMi40OTUgMTIuNjQzIDIzIDE2IDIzczYuODcyLS41MDUgOS0xLjU3MnYzLjU2Yy0uMTYuNTU2LTMuMTU5IDIuMDEyLTkgMi4wMTIiLz48L3N2Zz4=" />
+              <specializationType>Data Source</specializationType>
+              <specializationTypeId>4164c533-2012-47f2-ad5c-213963663e73</specializationTypeId>
+              <defaultName>[data source]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Template</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Layout Template</specializationType>
+              <specializationTypeId>22f69e94-c4eb-45b3-b4d0-d9af393ee172</specializationTypeId>
+              <defaultName>[template]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
           </creationOptions>
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
-          <childElementSettings />
+          <childElementSettings>
+            <childElementSetting type="Field" typeId="96cac115-9be2-4162-96d2-f01797567277">
+              <icon type="UrlImagePath" source="./img/icons/uml/Attribute_256x.png" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>true</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeReferenceSetting>
+                <isRequired>true</isRequired>
+                <targetTypes>
+                  <type>DTO-Field</type>
+                  <type>Type-Definition</type>
+                  <type>Enum</type>
+                  <type>Model Definition Field</type>
+                </targetTypes>
+                <allowIsNavigable>true</allowIsNavigable>
+                <allowIsNullable>true</allowIsNullable>
+                <allowIsCollection>true</allowIsCollection>
+                <isNavigableDefault>true</isNavigableDefault>
+                <isNullableDefault>false</isNullableDefault>
+                <isCollectionDefault>false</isCollectionDefault>
+              </typeReferenceSetting>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+          </childElementSettings>
         </childElementSetting>
         <childElementSetting type="File" typeId="c1c508d5-5a4a-4030-973e-457b83ffdaf5">
           <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0xMyA0SDZ2MTZoMTJWOWgtNXptMyAxMWgtM3Y0aC0ydi00SDhsNC4wMS00eiIgb3BhY2l0eT0iLjMiLz48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTQgMkg2Yy0xLjEgMC0xLjk5LjktMS45OSAyTDQgMjBjMCAxLjEuODkgMiAxLjk5IDJIMThjMS4xIDAgMi0uOSAyLTJWOHptNCAxOEg2VjRoN3Y1aDV6Ii8+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTggMTVoM3Y0aDJ2LTRoM2wtMy45OS00eiIvPjwvc3ZnPg==" />
@@ -1913,7 +2148,78 @@
           <mappingSettings />
           <childElementSettings />
         </childElementSetting>
+        <childElementSetting type="Image" typeId="f1efbfe1-4dbe-4026-b440-742fdfcb3e07">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
       </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Layout Template" typeId="22f69e94-c4eb-45b3-b4d0-d9af393ee172">
+      <icon type="FontAwesome" source="file-o" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder>
+        <type order="0">Form Definition</type>
+        <type order="1">Container</type>
+        <type order="2">Card</type>
+      </typeOrder>
+      <creationOptions>
+        <option type="element">
+          <text>Add Form Definition</text>
+          <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGpJREFUOE+1klEOgDAIQ99uOk+mnlQzEwwuQ1CUT7K+dC2F5JSkHgFUYH4IW4BJABucsCjn0PSAtoxM05kALxdx+4+DiH15E3KgM9JwMwPLgW7pNoM0oK/xsy+MnF1CfHPKK1C9o3FrTQN2kWUkEXqsKc4AAAAASUVORK5CYII=" />
+          <specializationType>Form Definition</specializationType>
+          <specializationTypeId>df0da0e1-b468-4868-8135-22caf8767eeb</specializationTypeId>
+          <defaultName>NewFormDefinition</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Container</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Container</specializationType>
+          <specializationTypeId>b0b5d813-91c5-4891-a32e-cf7cea184759</specializationTypeId>
+          <defaultName>NewContainer</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+        <option type="element">
+          <text>Add Card</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Card</specializationType>
+          <specializationTypeId>86e91725-f6c0-41ef-baea-353bdce84252</specializationTypeId>
+          <defaultName>NewCard</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+      </creationOptions>
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <childElementSettings />
     </elementSetting>
     <elementSetting type="Navigation Controls" typeId="ceb09bb0-9fb1-4763-b381-eaac818059b2">
       <icon type="FontAwesome" source="file-o" />
@@ -2121,7 +2427,7 @@
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>false</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />

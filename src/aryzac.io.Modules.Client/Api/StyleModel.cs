@@ -87,6 +87,21 @@ namespace Aryzac.Io.Modules.Client.Api
             .Select(x => new BackgroundColorModel(x))
             .SingleOrDefault();
 
+        public IList<CssStyleModel> CssStyles => _element.ChildElements
+            .GetElementsOfType(CssStyleModel.SpecializationTypeId)
+            .Select(x => new CssStyleModel(x))
+            .ToList();
+
+        public IList<FlexModel> Flexes => _element.ChildElements
+            .GetElementsOfType(FlexModel.SpecializationTypeId)
+            .Select(x => new FlexModel(x))
+            .ToList();
+
+        public IList<ImageModel> Images => _element.ChildElements
+            .GetElementsOfType(ImageModel.SpecializationTypeId)
+            .Select(x => new ImageModel(x))
+            .ToList();
+
         public override string ToString()
         {
             return _element.ToString();

@@ -81,6 +81,20 @@ namespace Aryzac.Io.Modules.Client.Api
                 .ToList();
         }
 
+        public static IList<DataSourceModel> GetDataSourceModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(DataSourceModel.SpecializationTypeId)
+                .Select(x => new DataSourceModel(x))
+                .ToList();
+        }
+
+        public static IList<FlexModel> GetFlexModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(FlexModel.SpecializationTypeId)
+                .Select(x => new FlexModel(x))
+                .ToList();
+        }
+
         public static IList<FontModel> GetFontModels(this IDesigner designer)
         {
             return designer.GetElementsOfType(FontModel.SpecializationTypeId)
@@ -106,6 +120,13 @@ namespace Aryzac.Io.Modules.Client.Api
         {
             return designer.GetElementsOfType(FormInputsModel.SpecializationTypeId)
                 .Select(x => new FormInputsModel(x))
+                .ToList();
+        }
+
+        public static IList<LayoutTemplateModel> GetLayoutTemplateModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(LayoutTemplateModel.SpecializationTypeId)
+                .Select(x => new LayoutTemplateModel(x))
                 .ToList();
         }
 
