@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="b965778e-05dc-4fa3-8798-7649e53addec" type="Flex" typeId="b2f308b0-b572-4721-a21d-f09a0e9d2aeb">
+  <name>flex</name>
+  <display>flex</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>f52593cc-4771-41f7-aaa5-9234a80870a5</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="70a47d72-fed8-4e4b-acbb-ef9b7aac056b" type="Flex Column" typeId="39b441d1-be7a-4452-a5a5-b1664b9460f8">
+      <name>flex-column</name>
+      <display>flex-column</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>b965778e-05dc-4fa3-8798-7649e53addec</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

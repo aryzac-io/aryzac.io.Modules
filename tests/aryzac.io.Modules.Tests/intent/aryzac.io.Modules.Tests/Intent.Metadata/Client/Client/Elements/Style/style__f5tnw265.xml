@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="b0b4d1be-ee4e-4711-9034-b98f99164112" type="Style" typeId="2c9f3240-b036-4850-ac3f-51d94e8f0c28">
+  <name>style</name>
+  <display>style</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>234f9d1f-920c-44e8-957d-c19e4b1d9389</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

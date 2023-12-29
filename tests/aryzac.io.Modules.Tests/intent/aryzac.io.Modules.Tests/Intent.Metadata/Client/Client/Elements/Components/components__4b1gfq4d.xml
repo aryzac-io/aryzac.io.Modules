@@ -123,6 +123,38 @@
                       </stereotypes>
                       <metadata />
                       <childElements>
+                        <childElement id="ef3b538a-6dbb-4379-87e2-830175c8ff7e" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
+                          <name>Client Name</name>
+                          <display>Client Name: void</display>
+                          <isAbstract>false</isAbstract>
+                          <sort-children>manually</sort-children>
+                          <genericTypes />
+                          <typeReference id="581d89c7-29b8-463b-9f7d-1bc5c57d1ea3">
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>6d0a1bf6-7722-455f-8a51-ad89cf10c7f4</parentFolderId>
+                          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                          <packageName>Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="952e2c3e-8525-4d0f-8475-edfd48602770" name="Table Column Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>aryzac.io.Modules.Client</definitionPackageName>
+                              <definitionPackageId>f036ca14-09d9-4b02-bc4f-eb1f50ff035e</definitionPackageId>
+                              <properties>
+                                <property name="2dec1c7a-b9cd-456b-9ddc-267a9dde8f02" display="Title" isActive="true" />
+                                <property name="5c16bcdd-0c8c-4e65-a972-a45b38b70c9c" display="Sortable" value="false" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements />
+                        </childElement>
                         <childElement id="e3c2d057-4386-4791-9b5b-b97252bb6b8c" type="Table Column" typeId="8d090abe-842a-4d68-a2ff-f4fcc3986996">
                           <name>Last Name</name>
                           <display>Last Name: LastName</display>
@@ -539,6 +571,30 @@
               <isAbstract>false</isAbstract>
               <genericTypes />
               <typeReference id="97492baf-dd21-45d0-93cf-f5b44e883049">
+                <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6aef4f34-b60e-4637-ab56-441016d9d4bf</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="c8e4a2c5-ebf0-4b0e-bfe9-2e1997a60413" type="Model Definition Field" typeId="522bbdc5-7c70-441b-a85d-9c39b4a0b01c">
+              <name>Full Name</name>
+              <display>Full Name: string</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="696d5567-02cf-41e8-b763-b292512564d3">
                 <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
                 <isNavigable>true</isNavigable>
                 <isNullable>false</isNullable>
