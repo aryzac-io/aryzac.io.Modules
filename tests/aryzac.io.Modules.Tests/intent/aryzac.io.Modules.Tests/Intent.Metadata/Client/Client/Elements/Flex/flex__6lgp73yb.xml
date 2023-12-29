@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="fef96f5f-e480-4c27-a3b3-2b9d0acc4619" type="Flex" typeId="b2f308b0-b572-4721-a21d-f09a0e9d2aeb">
+  <name>flex</name>
+  <display>flex</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>b460c516-df8c-440c-99ea-f1a2b6600279</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="ceedfd0d-8fca-4cd2-b716-ff68388b169c" type="Flex-1" typeId="34da886f-1d83-499d-8a2c-37cceef7aa61">
+      <name>flex-1</name>
+      <display>flex-1</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>fef96f5f-e480-4c27-a3b3-2b9d0acc4619</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f4e859f9-3209-4acf-a8c7-0685cb188ddc" type="Flex Grow" typeId="6c1c1266-893b-463c-8f75-16f361a0a803">
+      <name>flex-grow</name>
+      <display>flex-grow</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>fef96f5f-e480-4c27-a3b3-2b9d0acc4619</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

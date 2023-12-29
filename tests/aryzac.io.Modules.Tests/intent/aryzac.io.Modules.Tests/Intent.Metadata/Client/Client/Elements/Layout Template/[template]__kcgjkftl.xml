@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2f1954fb-90eb-44bb-9719-3262abd977f5" type="Layout Template" typeId="22f69e94-c4eb-45b3-b4d0-d9af393ee172">
+  <name>[template]</name>
+  <display>[template]</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>ef3b538a-6dbb-4379-87e2-830175c8ff7e</parentFolderId>
+  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="4c62b74a-0d55-4dc6-a310-ea856eddaf7d" type="Container" typeId="b0b5d813-91c5-4891-a32e-cf7cea184759">
+      <name>container</name>
+      <display>container: void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <typeReference id="d0bd5ec5-7c5c-4e62-aa13-abc3cbdf0f72">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2f1954fb-90eb-44bb-9719-3262abd977f5</parentFolderId>
+      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="401d2188-0cda-448e-861b-c05d7496f414" type="Container Body" typeId="ecd6adbc-616f-41aa-963a-13d8d576b5fc">
+          <name>[body]</name>
+          <display>[body]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>4c62b74a-0d55-4dc6-a310-ea856eddaf7d</parentFolderId>
+          <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="493c1bb2-6698-4275-a465-f0299f882f98" type="Image" typeId="f1efbfe1-4dbe-4026-b440-742fdfcb3e07">
+              <name>profile picture</name>
+              <display>profile picture</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>401d2188-0cda-448e-861b-c05d7496f414</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="234f9d1f-920c-44e8-957d-c19e4b1d9389" type="Container" typeId="b0b5d813-91c5-4891-a32e-cf7cea184759">
+              <name>container</name>
+              <display>container: void</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <typeReference id="8576ed72-e043-48be-945c-dcf5cd140dce">
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>401d2188-0cda-448e-861b-c05d7496f414</parentFolderId>
+              <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="ea73616d-4386-4233-a50c-6ac596dfbae6" type="Container Body" typeId="ecd6adbc-616f-41aa-963a-13d8d576b5fc">
+                  <name>[body]</name>
+                  <display>[body]</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>manually</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>234f9d1f-920c-44e8-957d-c19e4b1d9389</parentFolderId>
+                  <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements>
+                    <childElement id="271d47ee-2371-4d53-8a95-ec3d793ddbc3" type="Label" typeId="33c12ab7-b9f4-4a5f-8c70-0ce785c138da">
+                      <name>Name</name>
+                      <display>Name: Full Name</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <typeReference id="690b2257-10d1-472a-909c-a9080007cc7c">
+                        <typeId>c8e4a2c5-ebf0-4b0e-bfe9-2e1997a60413</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Client</typePackageName>
+                        <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>ea73616d-4386-4233-a50c-6ac596dfbae6</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="f6f23d46-a394-496b-bd56-05db31231a69" type="Label" typeId="33c12ab7-b9f4-4a5f-8c70-0ce785c138da">
+                      <name>Email</name>
+                      <display>Email: EmailAddress</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <typeReference id="79e29ae1-e39c-432d-9cf4-699646b2aece">
+                        <typeId>e5e5aa50-181b-47e2-b9eb-f9f7503535a3</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Client</typePackageName>
+                        <typePackageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>ea73616d-4386-4233-a50c-6ac596dfbae6</parentFolderId>
+                      <packageId>c38aa1fa-e618-4e19-9187-45cd22a9517f</packageId>
+                      <packageName>Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>
