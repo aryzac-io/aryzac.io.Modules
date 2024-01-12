@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using Intent.Metadata.Models;
 using Intent.Modules.Common;
+using Intent.Modules.Common.Types.Api;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
     public class PagesModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Pages";
-        public const string SpecializationTypeId = "4e3cc9bd-3900-4cd7-918b-ba7d11972da4";
+        public const string SpecializationTypeId = "72608324-5d5a-4627-aecf-0b0d0f0f7f68";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]

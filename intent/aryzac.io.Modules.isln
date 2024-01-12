@@ -8,6 +8,6 @@
   <modulesCacheRelativePath>.intent/modules</modulesCacheRelativePath>
   <lastUsedApplicationTemplate id="Intent.ApplicationTemplate.ModuleBuilder" version="3.3.48" />
   <applications>
-    <application id="1f724b76-41f0-4cc7-8c54-37e8a72954eb" name="aryzac.io.Modules.Client" relativePath="aryzac.io.Modules.Client/aryzac.io.Modules.Client.application.config" />
+    <application id="b8a1d402-c8bd-40e9-a353-1d8943821e5b" name="Aryzac.IO.Modules.Client" relativePath="Aryzac.IO.Modules.Client/Aryzac.IO.Modules.Client.application.config" />
   </applications>
 </solution>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="d4e49575-65a5-472a-8c4b-a4fb12c162bc" version="3.1.0">
+  <name>Navigation Item Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">Navigation Item</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>on-create</applyMode>
+  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>e79eae33-72a3-4b49-bbb2-abf6033e5981</parentFolderId>
+  <order>0</order>
+  <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+  <packageName>Aryzac.IO.Modules.Client</packageName>
+  <properties>
+    <property id="752239d3-8266-4a71-99f1-73fefedb8b8d">
+      <name>Icon</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="39d6af8a-ea7a-4b1b-972e-ab731617cff1">
+      <name>Navigate To</name>
+      <type>string</type>
+      <controlType>select</controlType>
+      <optionsSource>lookup-element</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes>
+        <type>89cf68f6-6f29-412a-bae2-31faed8280d9</type>
+      </lookupTypes>
+      <isRequiredFunction>return true;</isRequiredFunction>
+    </property>
+  </properties>
+</stereotypeDefinition>

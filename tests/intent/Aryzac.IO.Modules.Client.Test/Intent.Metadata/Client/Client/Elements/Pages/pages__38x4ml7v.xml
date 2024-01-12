@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3bb3902f-543a-4059-a5f2-9461e2e48b83" type="Pages" typeId="72608324-5d5a-4627-aecf-0b0d0f0f7f68">
+  <name>pages</name>
+  <display>pages</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</parentFolderId>
+  <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="4f8dd51a-f5f1-404f-bd0a-79876d26333f" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+      <name>index</name>
+      <display>index: default</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f36dac7b-6ac1-4fb5-a4ff-8d0543b15633">
+        <typeId>8a9ff151-04c7-43d6-9ccd-bff900a97ce0</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Client</typePackageName>
+        <typePackageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3bb3902f-543a-4059-a5f2-9461e2e48b83</parentFolderId>
+      <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c494a52f-fee9-4581-aac1-fa3c58bbf954" type="Page Folder" typeId="21b29545-9bd7-4cbd-85bb-3b548765031e">
+      <name>clients</name>
+      <display>clients</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>3bb3902f-543a-4059-a5f2-9461e2e48b83</parentFolderId>
+      <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="cb360758-cdbf-4d55-9904-1af2f84eeca8" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+          <name>index</name>
+          <display>index: default</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="101e8a93-1066-4d7d-8a5f-0cf43dec1072">
+            <typeId>8a9ff151-04c7-43d6-9ccd-bff900a97ce0</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Client</typePackageName>
+            <typePackageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c494a52f-fee9-4581-aac1-fa3c58bbf954</parentFolderId>
+          <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

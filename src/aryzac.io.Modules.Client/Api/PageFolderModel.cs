@@ -8,13 +8,13 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
     public class PageFolderModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Page Folder";
-        public const string SpecializationTypeId = "89f85c07-e5b7-474f-9ab2-6b0411333377";
+        public const string SpecializationTypeId = "21b29545-9bd7-4cbd-85bb-3b548765031e";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
@@ -37,14 +37,14 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
-        public IList<PageFolderModel> Folders => _element.ChildElements
-            .GetElementsOfType(PageFolderModel.SpecializationTypeId)
-            .Select(x => new PageFolderModel(x))
-            .ToList();
-
         public IList<PageModel> Pages => _element.ChildElements
             .GetElementsOfType(PageModel.SpecializationTypeId)
             .Select(x => new PageModel(x))
+            .ToList();
+
+        public IList<PageFolderModel> Folders => _element.ChildElements
+            .GetElementsOfType(PageFolderModel.SpecializationTypeId)
+            .Select(x => new PageFolderModel(x))
             .ToList();
 
         public override string ToString()

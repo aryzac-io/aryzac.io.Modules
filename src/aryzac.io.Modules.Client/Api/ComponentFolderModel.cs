@@ -8,13 +8,13 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
     public class ComponentFolderModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Component Folder";
-        public const string SpecializationTypeId = "7cb76668-7d0d-4902-99a1-85b97c22dbba";
+        public const string SpecializationTypeId = "ca698be1-3d9a-4a36-8415-a452954d9d00";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
@@ -45,16 +45,6 @@ namespace Aryzac.Io.Modules.Client.Api
         public IList<ComponentFolderModel> Folders => _element.ChildElements
             .GetElementsOfType(ComponentFolderModel.SpecializationTypeId)
             .Select(x => new ComponentFolderModel(x))
-            .ToList();
-
-        public IList<FormDefinitionModel> FormDefinitions => _element.ChildElements
-            .GetElementsOfType(FormDefinitionModel.SpecializationTypeId)
-            .Select(x => new FormDefinitionModel(x))
-            .ToList();
-
-        public IList<ModelDefinitionModel> ModelDefinitions => _element.ChildElements
-            .GetElementsOfType(ModelDefinitionModel.SpecializationTypeId)
-            .Select(x => new ModelDefinitionModel(x))
             .ToList();
 
         public override string ToString()

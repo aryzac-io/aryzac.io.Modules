@@ -1,3 +1,0 @@
-<template>
-  <clients-table />
-</template>

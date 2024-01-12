@@ -8,13 +8,13 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
-    public class NavigationItemModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
+    public class NavigationItemModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Navigation Item";
-        public const string SpecializationTypeId = "c7c23554-dd95-433b-b8df-74254cb3b0ed";
+        public const string SpecializationTypeId = "27ebf07c-5f47-49cb-8ccf-b5dc2cffa951";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
@@ -35,19 +35,7 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
 
-        public ITypeReference TypeReference => _element.TypeReference;
-
         public IElement InternalElement => _element;
-
-        public IList<StyleModel> Styles => _element.ChildElements
-            .GetElementsOfType(StyleModel.SpecializationTypeId)
-            .Select(x => new StyleModel(x))
-            .ToList();
-
-        public IList<NavigationItemModel> Items => _element.ChildElements
-            .GetElementsOfType(NavigationItemModel.SpecializationTypeId)
-            .Select(x => new NavigationItemModel(x))
-            .ToList();
 
         public override string ToString()
         {

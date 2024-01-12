@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using Intent.Metadata.Models;
 using Intent.Modules.Common;
+using Intent.Modules.Common.TypeResolution;
+using Intent.Modules.Common.Types.Api;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
     public class PageModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
     {
         public const string SpecializationType = "Page";
-        public const string SpecializationTypeId = "865a4fa5-833d-4c88-994a-fbcf5e746a32";
+        public const string SpecializationTypeId = "89cf68f6-6f29-412a-bae2-31faed8280d9";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
@@ -38,21 +40,6 @@ namespace Aryzac.Io.Modules.Client.Api
         public ITypeReference TypeReference => _element.TypeReference;
 
         public IElement InternalElement => _element;
-
-        public BreadcrumbsModel Breadcrumbs => _element.ChildElements
-            .GetElementsOfType(BreadcrumbsModel.SpecializationTypeId)
-            .Select(x => new BreadcrumbsModel(x))
-            .SingleOrDefault();
-
-        public PageActionsModel Actions => _element.ChildElements
-            .GetElementsOfType(PageActionsModel.SpecializationTypeId)
-            .Select(x => new PageActionsModel(x))
-            .SingleOrDefault();
-
-        public IList<PageSlotModel> Slots => _element.ChildElements
-            .GetElementsOfType(PageSlotModel.SpecializationTypeId)
-            .Select(x => new PageSlotModel(x))
-            .ToList();
 
         public override string ToString()
         {
@@ -78,7 +65,7 @@ namespace Aryzac.Io.Modules.Client.Api
         }
     }
 
-    [IntentManaged(Mode.Fully)]
+    [IntentManaged(Mode.Merge)]
     public static class PageModelExtensions
     {
 
@@ -90,6 +77,29 @@ namespace Aryzac.Io.Modules.Client.Api
         public static PageModel AsPageModel(this ICanBeReferencedType type)
         {
             return type.IsPageModel() ? new PageModel((IElement)type) : null;
+        }
+
+        public static string GetPath(this PageModel page)
+        {
+            var path = "/";
+            var currentNode = page.InternalElement;
+
+            while (currentNode != null)
+            {
+                if (currentNode.SpecializationTypeId == PagesModel.SpecializationTypeId)
+                {
+                    break;
+                }
+
+                if (currentNode.Name.ToLower() != "index")
+                {
+                    path += $"/{currentNode.Name}";
+                }
+
+                currentNode = currentNode.ParentElement;
+            }
+
+            return path.Replace("//", "/");
         }
     }
 }

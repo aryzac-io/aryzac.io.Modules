@@ -8,13 +8,13 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
     public class LayoutsModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Layouts";
-        public const string SpecializationTypeId = "5e4732ab-326f-4d6d-9cbf-25da0d8b2526";
+        public const string SpecializationTypeId = "60f6d7d6-ad05-41d4-830e-e2c3ffe452e4";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]

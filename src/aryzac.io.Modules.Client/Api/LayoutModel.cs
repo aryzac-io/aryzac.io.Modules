@@ -8,13 +8,13 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
     public class LayoutModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Layout";
-        public const string SpecializationTypeId = "eb6cb3df-6d5a-469b-8919-ab659187874f";
+        public const string SpecializationTypeId = "256217fb-92b3-4b8f-9f50-7d33db1d4a7e";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
@@ -37,25 +37,20 @@ namespace Aryzac.Io.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
-        public TopMenuModel TopMenu => _element.ChildElements
-            .GetElementsOfType(TopMenuModel.SpecializationTypeId)
-            .Select(x => new TopMenuModel(x))
+        public TopNavigationModel TopNavigation => _element.ChildElements
+            .GetElementsOfType(TopNavigationModel.SpecializationTypeId)
+            .Select(x => new TopNavigationModel(x))
             .SingleOrDefault();
 
-        public SidebarModel Sidebar => _element.ChildElements
-            .GetElementsOfType(SidebarModel.SpecializationTypeId)
-            .Select(x => new SidebarModel(x))
+        public SidebarNavigationModel SidebarNavigation => _element.ChildElements
+            .GetElementsOfType(SidebarNavigationModel.SpecializationTypeId)
+            .Select(x => new SidebarNavigationModel(x))
             .SingleOrDefault();
 
-        public FooterModel Footer => _element.ChildElements
-            .GetElementsOfType(FooterModel.SpecializationTypeId)
-            .Select(x => new FooterModel(x))
+        public BreadcrumbNavigationModel BreadcrumbNavigation => _element.ChildElements
+            .GetElementsOfType(BreadcrumbNavigationModel.SpecializationTypeId)
+            .Select(x => new BreadcrumbNavigationModel(x))
             .SingleOrDefault();
-
-        public IList<LayoutSlotModel> LayoutSlots => _element.ChildElements
-            .GetElementsOfType(LayoutSlotModel.SpecializationTypeId)
-            .Select(x => new LayoutSlotModel(x))
-            .ToList();
 
         public override string ToString()
         {

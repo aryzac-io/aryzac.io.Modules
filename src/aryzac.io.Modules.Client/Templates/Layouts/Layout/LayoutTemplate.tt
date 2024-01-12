@@ -1,0 +1,250 @@
+<#@ template language="C#" inherits="IntentTemplateBase<Aryzac.IO.Modules.Client.Api.LayoutModel>" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+
+<i18n lang="yaml">
+en:
+<#
+  if (Model.TopNavigation != null)
+  {
+  #>
+  appbar:
+    navigation:
+      <#
+    foreach (var child in Model.TopNavigation.InternalElement.ChildElements)
+    {
+      if (child.IsTopNavigationSectionModel())
+      {
+        foreach (var section in Model.TopNavigation.Sections)
+        {
+          foreach (var item in section.Items)
+          {
+            item.TryGetNavigationItemSettings(out var navigationSettings);
+            #><#= item.Name.ToPascalCase().ToCamelCase() #>: <#= item.Name #>
+<# if (navigationSettings.Icon() != null) 
+{ #>      <#= item.Name.ToPascalCase().ToCamelCase() #>Icon: <#= navigationSettings.Icon() #>
+<# } #>
+      <#
+          }
+        }
+      }
+    }
+  }
+#>
+
+<#
+  if (Model.SidebarNavigation != null)
+  {
+  #>
+  sidebar:
+    navigation:
+      <#
+    foreach (var section in Model.SidebarNavigation.Sections)
+    {
+      foreach (var item in section.Items)
+      {
+            item.TryGetNavigationItemSettings(out var navigationSettings);
+        #><#= item.Name.ToPascalCase().ToCamelCase() #>: <#= item.Name #>
+<# if (navigationSettings.Icon() != null) 
+{ #>      <#= item.Name.ToPascalCase().ToCamelCase() #>Icon: <#= navigationSettings.Icon() #>
+<# } #>
+      <#
+      }
+    }
+  }
+#>
+
+<#
+  if (Model.BreadcrumbNavigation != null)
+  {
+  #>
+  breadcrumb:
+    navigation:
+      <#
+    foreach (var item in Model.BreadcrumbNavigation.Items)
+    {
+      item.TryGetNavigationItemSettings(out var navigationSettings);
+      #><#= item.Name.ToPascalCase().ToCamelCase() #>: <#= item.Name #>
+<# if (navigationSettings.Icon() != null) 
+{ #>      <#= item.Name.ToPascalCase().ToCamelCase() #>Icon: <#= navigationSettings.Icon() #>
+<# } #>
+    <#
+    }
+  }
+#>
+
+</i18n>
+
+<script setup lang="ts">
+const { t } = useI18n();
+
+// Setup SEO Metadata
+useSeoMeta({
+  ogImage: "[og:image]",
+  twitterTitle: "[twitter:title]",
+  twitterDescription: "[twitter:description]",
+  twitterImage: "[twitter:image]",
+  twitterCard: "summary",
+});
+
+// Setup Head
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+  link: [
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/favicon.ico",
+    },
+  ],
+});
+
+const { clearSections } = useNavigationStore();
+const { setupSection, setupSectionItem } = useNavigationSetup();
+
+clearSections(true);
+
+<#
+if (Model.TopNavigation != null)
+{
+#>// Setup Appbar
+<#
+  foreach (var child in Model.TopNavigation.InternalElement.ChildElements)
+  {
+    if (child.IsTopNavigationSectionModel())
+    {
+      foreach (var section in Model.TopNavigation.Sections)
+      {
+        foreach (var item in section.Items)
+        {
+            item.TryGetNavigationItemSettings(out var navigationSettings);
+            var page = navigationSettings.NavigateTo().AsPageModel();
+
+          #>setupSectionItem(
+  "appbar",
+  t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>"),
+  <# if (navigationSettings.Icon() != null) 
+  { #>t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>Icon")<# 
+  } 
+  else 
+  { #>null<#
+  } #>,
+  "<#= page.GetPath() #>"
+);
+<#
+        }
+      }
+    }
+    else if (child.IsNavigationLogoModel())
+    {
+      #>setupSection("appbar", "<#=child.Name.ToPascalCase().ToCamelCase()#>");<#
+    }
+  }
+}
+#>
+
+<#
+if (Model.SidebarNavigation != null)
+{
+#>// Setup Sidebar
+<#
+  foreach (var section in Model.SidebarNavigation.Sections)
+  {
+    foreach (var item in section.Items)
+    {
+        item.TryGetNavigationItemSettings(out var navigationSettings);
+        var page = navigationSettings.NavigateTo().AsPageModel();
+
+      #>setupSectionItem(
+  "sidebar",
+  t("sidebar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>"),
+  <# if (navigationSettings.Icon() != null) 
+  { #>t("sidebar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>Icon")<# 
+  } 
+  else 
+  { #>null<#
+  } #>,
+  "<#= page.GetPath() #>"
+);
+<#
+    }
+  }
+}
+#>
+
+<#
+if (Model.BreadcrumbNavigation != null)
+{
+#>// Setup Breadcrumb
+<#
+  foreach (var item in Model.BreadcrumbNavigation.Items)
+  {
+      item.TryGetNavigationItemSettings(out var navigationSettings);
+      var page = navigationSettings.NavigateTo().AsPageModel();
+
+      #>setupSectionItem(
+  "breadcrumb", 
+  t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>"), 
+  <# if (navigationSettings.Icon() != null) 
+  { #>t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>Icon")<# 
+  } 
+  else 
+  { #>null<#
+  } #>, 
+  "<#= page.GetPath() #>"
+);
+<#
+  }
+}
+#>
+</script>
+
+<template>
+  <div>
+  <#
+if (Model.SidebarNavigation != null)
+{
+#>
+  <layout-sidebar />
+<#}#>
+
+    <div class="<#
+if (Model.SidebarNavigation != null)
+{
+#>lg:pl-72 <#}#>min-h-screen">
+
+      <#
+if (Model.TopNavigation != null)
+{
+#><layout-appbar /><#}#>
+
+      <#
+if (Model.TopNavigation != null)
+{
+#><layout-breadcrumbs /><#}#>
+
+      <main class="px-4 sm:px-6 lg:px-8 py-10">
+        <!-- Your content -->
+        <slot />
+      </main>
+    </div>
+  </div>
+</template>
+
+<style>
+html {
+  @apply h-full bg-gray-100;
+}
+
+body {
+  @apply h-full;
+}
+</style>
+

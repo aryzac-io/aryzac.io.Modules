@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="60f6d7d6-ad05-41d4-830e-e2c3ffe452e4" type="Element Settings" typeId="727577aa-3e07-4b41-be7d-7359bb1e48c8">
+  <name>Layouts</name>
+  <display>Layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>7ab48245-c552-490e-9cba-4fc88178398a</parentFolderId>
+  <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+  <packageName>Aryzac.IO.Modules.Client</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="d8f6f331-d4f0-4c75-aa91-f2e715cd9591" name="Type Reference Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+      <properties>
+        <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Disabled" isActive="true" />
+        <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="false" />
+        <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="false" />
+        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" value="null" isActive="false" />
+        <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="false" />
+        <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="false" />
+        <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="true" isActive="false" />
+        <property name="d04ec558-6f6a-462b-b16a-9da1d7b4e9db" display="Allow Collection" value="true" isActive="false" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="f406222b-31a8-435e-80f6-6a08f9108649" name="Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+      <properties>
+        <property name="5a9277a9-b808-4ade-bb57-840b51b0da3a" display="Save Mode" value="Default" isActive="true" />
+        <property name="736b1337-6f35-4e38-85a8-69ff5d69fb7d" display="Icon" value="{&quot;source&quot;:&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA55JREFUeF7tnEtoE1EUhs+ZSa3SB7YuKslIK1rQInRRBHFjrbiwNVAES1duTFI3YhVXVqiIj5XUhSAk2QhuVMRCobgQtQtF8IEFH7gTbEaLYnUjaidzJG0tWDuZOzmTNJ2erP//nHu/+e/cm7sYBPmxCCDLLWYQgMwQCEAByCTAtEsCBSCTANMuCRSATAJMuyRQADIJMO2SQAHIJMC0qycwbTZqNnUhUiuQ1gxoa8ze83YkeGwljFN+1StlHSWAWsrsR6Chog6M4Eo2ETla1B5FKO4KUE+Z1wDoUBF6/1cSiYashHGiFL386pEXoJ7OxIAg5VczlToIeMmKh0+qaMtBkx9gKvMFANaVeqBIdHG5vBMdAYaSmZ2E8KjU8P72Q6ALVtwYWKr+qn0dAeppsxuI7qgWKoaOEAbtWORsMWr7VdMZYHKiBxBv+NVoOdQhgLcI8AIRr1ux8F2VMQtAR0qUzNracegL/8gHUgDmj9n9bDyyRwCqrEUnDWEimwg7HuUkgS5wCeCdHY9scZIJQIV0Zu2fa6Fv0/fFpHmOMRMHgfCmQv3AS5Bgr5WI3PMGcAUeYxyTgNSTjRm3BGCha0UAFkpuzicABSCTANMuCRSATAJMuyRQADIJMO2SwBUGcLizwdOMTz+Zgldff8O2+lVwbkedJ2/BYoKxqBFqL8vLBAFY8GOdNQpAAQigL+FtjCRQEigJdM2A7MKuiPILBKAAnCcgB+kFYZBdmLk6BKAAlGOMawaCuAtvrA1BbGut69y9CsJV+pu6Su3zvz56GTUq+gN1G+MVjLJ+uV2oFrqJKAPxKlwpAHNL+HBLjSc8uTNk7tdhrIEOY/Wi3nB16HX9wiVs03jglnAhN9Ldo5Mz0Hqbq6C3uVodfhA3EQE49/wLfQcKQAGo/grJpwxIAj/uA7RH/UHirUogAELabNSJ3nubuj/qYAAEAC2VeYYAbf5gUa8SGIB6yjwAQLfVp+6PMjAAczj0lHkVgI74g0atSqAA5qasJc1jiHRZbfp8VeAAziDJfXSCaD8itIKNm/386MRC5MOd63d5eQznn0+NP5389W17Q+Xagba6Vi/e7tFPYzl9vKWmsaupqknZ6/ZXTrlQEYQjGYs8lbVpd3RDxcORD9PtoOEDL95oJDRzpTeSmT4DgIPKXgE4iyqQAJVTUAZC18+elMEYy3oIApD5eASgAGQSYNolgQKQSYBplwQKQCYBpl0SKACZBJj2P8oZZG+/dQQQAAAAAElFTkSuQmCC&quot;,&quot;type&quot;:0,&quot;absolutePathRelativeTo&quot;:null}" isActive="true" />
+        <property name="32086823-bd72-4be0-a765-2d9530f4ce06" display="Expanded Icon" value="{&quot;source&quot;:&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABPdJREFUeF7t3G+IFGUcB/Dvb545z/O849Tg9HYk/HOUFUhUEIJkRgjWwUF34ovDoNtbswhFIiwDI0rpRRlRWTtrEfWi8iDhQCKM/tA/lCRDemPZpTsDh+JVKJW3M79YTyPvdveeZ57Zc5199vXv33z2N3u3D8MSzEtLgLSyTTIMoOYSGEADqCmgmW420ABqCmimmw00gJoCmulmAw2gpoBmutlAA6gpoJkuv4E5/3or5PuIeDnY6gSFlmbv/9KJ8U0h4zwVV73prCMFaLn+FgLvrupgjFeDTOqxqvaoQvEpAYXrvwPwhir0nlSSmHcXMs7W6egVV4+KgCLnpcFw42omU4dALxYGOh6Xia2FmMqArncGwLzpHpSYd10rn4llAe2st4IJX0833uV+BN5ZGHC2X63+sn3LAoqc3w3mj2QLVSOOCTvCdOrZatSOq2YFwHwvmD6Mq1FN1mH8BQs/gnEoKFgvYdOCYdU56xvwSq2/GbQ5HOjIqiCWB8zm14HoA5ViSYhl8CPhgLNH9loM4CQpHgtEw414qP2EDKIBLKVEeD1Ipx7VA8zVwR+RMkLM+CnMpG6uGmCxARGflmlwTcawdS7IdNwvM3u0W5h4XZB29sk0SHqMAdR8hw2gAdQU0Ew3G2gANQU00yN+F+beYMAZLNXbyvlPEodrNOeq6XQrpK1jG1NHikPGfgsL1zsJYGFNC+gNVwgaRRs2zD8fP+BbI4tFUPhFb74az2Z8FWRSKy9PGesGWrn8RmJ6o8YJtMabeMgbK6Bw/X0A92hNCGD/2nalEk9/N4pjZy/glrkz8Nydc5RyIwczvuhy7FXxATKTyPlnAbRFHupSYl0CNuz1bw9DPqyLV8yvS0DL9bcReJcBvCQgKh3plziNEa53EMA9BjAK4CvHG0XTrD8ANBrACIC2693LwCdx4NXlZ6Cd9V5gwhMG8H8CKp+BlusdIeBWAxgF8O1f20RhxmhceHV3C1fc1IiqdfV/oHC94vOD6YhWJdPqDTD246v6AXzz5BJhiZ/j3L66+gy0svmHiUj6QRxZ6KgbuKjVRnpZq2wbqbi5M63hBbPEb5OD+Ycup2GL1mmMyOUHwfSA1CQKQVEBFVpIh5LFKwr9zrflEqID9qcG4zq+mjhcDQGeD9IdLSDi2AGtUAyHFB6SfisVAqMCFm/h/ptaFDoBxcPY4mu104TVzswrcpsbrDOLWu1jJQuGfFTrFmZYS4l5p9K0ksFRAaOcSHcfGLk41frOZqzvnC05IYApT6QrPt7GvQBtKr5x8h3lI5MPyNQH4vfkSdQikw8IzgKUUWORj04GoJvvAajMM4B8AqDF8iRqkYkAtF1/JYO/VLv0eKITAYi9p1tEeOHPeEjUqiQDEIBwveMAlqpdvn50ggD9PoDf1SdRq5AYwOJl29n8y0y0WY1ALzpRgEUKkcs/CKbXADTr0chlXw3Avhuaz/UsmS3/VWSqbyKTLnXPqZRli/EfnQhpWZw/OjGx1/618++Sox6Pev770aOHR/75/Y72xrbtt81ZrpLbfWDkY2Z8+v6a6+Y12WKbdK4yoHRl/cAhr1D29KNk9ZDv7lrY8PnQqbFVsOgzlQm6UvbFE6khb+wZgHZI5xrAcapEAkpvQQ0ETvmzJzUwY02PYAA13x4DaAA1BTTTzQYaQE0BzXSzgQZQU0Az3WygAdQU0Ez/Fxm2Gn5QlgF/AAAAAElFTkSuQmCC&quot;,&quot;type&quot;:0,&quot;absolutePathRelativeTo&quot;:null}" isActive="true" />
+        <property name="b966a8e9-f298-4741-8397-fe49f29c248b" display="Icon Function" isActive="true" />
+        <property name="0632053a-6b40-47a0-857f-6840e322344c" display="Display Text Function" value="" isActive="true" />
+        <property name="1e5a5798-220b-4a92-993d-c4ebd4123e53" display="Validate Function" value="" isActive="true" />
+        <property name="c48d9593-c1f4-4610-9cb3-54de9c2f0c06" display="Allow Rename" value="true" isActive="true" />
+        <property name="4b17e907-bd58-4f70-b376-383c6046ad8a" display="Allow Abstract" value="false" isActive="true" />
+        <property name="ad2bbaa1-becc-477b-83d2-97179678e4bb" display="Allow Static" value="false" isActive="true" />
+        <property name="0eb8bcd6-4120-47c5-ac74-9a9e4a7d4536" display="Allow Set Value" value="false" isActive="true" />
+        <property name="8ad604ab-7edf-4a6c-86a5-e27f0f95dfac" display="Allow Generic Types" value="false" isActive="true" />
+        <property name="ad5ce0fc-72ab-4aa3-92e9-238954c2aedb" display="Allow Sorting" value="true" isActive="true" />
+        <property name="3a68e3cb-8014-4c43-9965-f6fc35589d37" display="Sort Children" value="By type then name" isActive="true" />
+        <property name="46180320-9a7e-4fe3-8351-f7524612a52c" display="Allow Find in View" value="false" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="6222914b-2a86-4680-bbaf-cdb44765748b" type="Context Menu" typeId="d45e383d-90ba-4b64-aca7-34ca100cea21">
+      <name>[context menu]</name>
+      <display>[context menu]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>60f6d7d6-ad05-41d4-830e-e2c3ffe452e4</parentFolderId>
+      <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+      <packageName>Aryzac.IO.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="e93af3b6-2cc2-410d-adc1-adb70a0807b3" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>New Layout</name>
+          <display>New Layout: Layout</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="ff934a2e-9d69-4991-b34c-631130e065b2">
+            <typeId>256217fb-92b3-4b8f-9f50-7d33db1d4a7e</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client</typePackageName>
+            <typePackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>6222914b-2a86-4680-bbaf-cdb44765748b</parentFolderId>
+          <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+          <packageName>Aryzac.IO.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="f4250b35-559d-4c0b-91ee-c3d7aa239814" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
+                <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="" isActive="true" />
+                <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
+                <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="true" isActive="true" />
+                <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
+                <property name="77a9993c-40ba-47a9-a2a4-0974548a3f27" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

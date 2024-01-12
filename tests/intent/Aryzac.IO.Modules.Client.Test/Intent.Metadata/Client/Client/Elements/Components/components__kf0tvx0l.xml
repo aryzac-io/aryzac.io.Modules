@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="86440efc-e0c3-4dd2-9921-9f51ef671c03" type="Components" typeId="07b847f0-5ea2-4685-bfe0-c06a6b585fdf">
+  <name>components</name>
+  <display>components</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</parentFolderId>
+  <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="cb46468a-25a1-40a7-85b7-d127fa4ce216" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+      <name>NewComponent</name>
+      <display>NewComponent</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>86440efc-e0c3-4dd2-9921-9f51ef671c03</parentFolderId>
+      <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

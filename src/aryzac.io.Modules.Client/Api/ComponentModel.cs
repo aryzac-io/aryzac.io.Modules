@@ -8,13 +8,13 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.Api.ApiElementModel", Version = "1.0")]
 
-namespace Aryzac.Io.Modules.Client.Api
+namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
     public class ComponentModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Component";
-        public const string SpecializationTypeId = "c5ceaac9-7171-41be-af89-f39553c893dd";
+        public const string SpecializationTypeId = "854137dd-0e21-4076-adb9-404c4b1a782e";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
@@ -36,36 +36,6 @@ namespace Aryzac.Io.Modules.Client.Api
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
 
         public IElement InternalElement => _element;
-
-        public IList<ComponentParameterModel> Parameters => _element.ChildElements
-            .GetElementsOfType(ComponentParameterModel.SpecializationTypeId)
-            .Select(x => new ComponentParameterModel(x))
-            .ToList();
-
-        public IList<ComponentEventModel> EmitEvents => _element.ChildElements
-            .GetElementsOfType(ComponentEventModel.SpecializationTypeId)
-            .Select(x => new ComponentEventModel(x))
-            .ToList();
-
-        public ComponentViewModel View => _element.ChildElements
-            .GetElementsOfType(ComponentViewModel.SpecializationTypeId)
-            .Select(x => new ComponentViewModel(x))
-            .SingleOrDefault();
-
-        public IList<ComponentModelModel> Models => _element.ChildElements
-            .GetElementsOfType(ComponentModelModel.SpecializationTypeId)
-            .Select(x => new ComponentModelModel(x))
-            .ToList();
-
-        public IList<ModelDefinitionModel> ModelDefinitions => _element.ChildElements
-            .GetElementsOfType(ModelDefinitionModel.SpecializationTypeId)
-            .Select(x => new ModelDefinitionModel(x))
-            .ToList();
-
-        public ComponentActionsModel Actions => _element.ChildElements
-            .GetElementsOfType(ComponentActionsModel.SpecializationTypeId)
-            .Select(x => new ComponentActionsModel(x))
-            .SingleOrDefault();
 
         public override string ToString()
         {
@@ -91,7 +61,7 @@ namespace Aryzac.Io.Modules.Client.Api
         }
     }
 
-    [IntentManaged(Mode.Fully)]
+    [IntentManaged(Mode.Merge)]
     public static class ComponentModelExtensions
     {
 
@@ -103,6 +73,49 @@ namespace Aryzac.Io.Modules.Client.Api
         public static ComponentModel AsComponentModel(this ICanBeReferencedType type)
         {
             return type.IsComponentModel() ? new ComponentModel((IElement)type) : null;
+        }
+
+        public static string GetPath(this ComponentModel component)
+        {
+            var path = "/";
+            var currentNode = component.InternalElement.ParentElement;
+
+            while (currentNode != null)
+            {
+                if (currentNode.SpecializationTypeId == ComponentsModel.SpecializationTypeId)
+                {
+                    break;
+                }
+
+                path += $"/{currentNode.Name}";
+
+                currentNode = currentNode.ParentElement;
+            }
+
+            return path.Replace("//", "/");
+        }
+
+        public static string GetComponentName(this ComponentModel component)
+        {
+            var path = "";
+            var currentNode = component.InternalElement;
+
+            while (currentNode != null)
+            {
+                if (currentNode.SpecializationTypeId == ComponentsModel.SpecializationTypeId)
+                {
+                    break;
+                }
+
+                if (currentNode.Name.ToLower() != "index")
+                {
+                    path += $"-{currentNode.Name}";
+                }
+
+                currentNode = currentNode.ParentElement;
+            }
+
+            return path;
         }
     }
 }

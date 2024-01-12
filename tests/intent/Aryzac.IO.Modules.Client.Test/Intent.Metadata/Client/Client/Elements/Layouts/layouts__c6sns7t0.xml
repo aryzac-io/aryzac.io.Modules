@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="6b8d3c05-2767-446d-81ba-dd7b817db1a9" type="Layouts" typeId="60f6d7d6-ad05-41d4-830e-e2c3ffe452e4">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</parentFolderId>
+  <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="8a9ff151-04c7-43d6-9ccd-bff900a97ce0" type="Layout" typeId="256217fb-92b3-4b8f-9f50-7d33db1d4a7e">
+      <name>default</name>
+      <display>default</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>6b8d3c05-2767-446d-81ba-dd7b817db1a9</parentFolderId>
+      <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+      <packageName>Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="fc4c31b3-88cb-48be-9426-b3f4ba5031e7" type="Top Navigation" typeId="4be6a3ee-337d-428c-9a2d-e8d306055ad5">
+          <name>[top navigation]</name>
+          <display>[top navigation]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>8a9ff151-04c7-43d6-9ccd-bff900a97ce0</parentFolderId>
+          <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="cd4c4025-02a8-4d27-841f-607dd6fe81be" type="Top Navigation Section" typeId="a7cf63d9-d23a-4a16-8088-f72e713c8c61">
+              <name>NewTopNavigationSection</name>
+              <display>[Links]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>fc4c31b3-88cb-48be-9426-b3f4ba5031e7</parentFolderId>
+              <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+              <packageName>Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="e1a60521-a067-4fd6-ae59-87e4d039fed5" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
+                  <name>Home</name>
+                  <display>Home</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>cd4c4025-02a8-4d27-841f-607dd6fe81be</parentFolderId>
+                  <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="d4e49575-65a5-472a-8c4b-a4fb12c162bc" name="Navigation Item Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" isActive="true" />
+                        <property name="39d6af8a-ea7a-4b1b-972e-ab731617cff1" display="Navigate To" value="4f8dd51a-f5f1-404f-bd0a-79876d26333f" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="c96d5f3d-6aa6-4e54-ad7a-299892c71bef" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
+                  <name>Clients</name>
+                  <display>Clients</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>cd4c4025-02a8-4d27-841f-607dd6fe81be</parentFolderId>
+                  <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+                  <packageName>Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="d4e49575-65a5-472a-8c4b-a4fb12c162bc" name="Navigation Item Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" value="" isActive="true" />
+                        <property name="39d6af8a-ea7a-4b1b-972e-ab731617cff1" display="Navigate To" value="cb360758-cdbf-4d55-9904-1af2f84eeca8" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="5305f823-8a9d-40b1-9762-587cbcf41ac3" type="Breadcrumb Navigation" typeId="f3bc6295-b016-4611-94f0-ddea1f0aa2a8">
+          <name>[breadcrumb]</name>
+          <display>[breadcrumb]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>8a9ff151-04c7-43d6-9ccd-bff900a97ce0</parentFolderId>
+          <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="de2424b5-42dc-49a3-8323-f48ca979e9d0" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
+              <name>Home</name>
+              <display>Home</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>5305f823-8a9d-40b1-9762-587cbcf41ac3</parentFolderId>
+              <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+              <packageName>Client</packageName>
+              <stereotypes>
+                <stereotype stereotypeDefinitionId="d4e49575-65a5-472a-8c4b-a4fb12c162bc" name="Navigation Item Settings">
+                  <addedByDefault>true</addedByDefault>
+                  <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                  <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                  <properties>
+                    <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" value="heroicons:home-20-solid" isActive="true" />
+                    <property name="39d6af8a-ea7a-4b1b-972e-ab731617cff1" display="Navigate To" value="4f8dd51a-f5f1-404f-bd0a-79876d26333f" isActive="true" />
+                  </properties>
+                </stereotype>
+              </stereotypes>
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>
