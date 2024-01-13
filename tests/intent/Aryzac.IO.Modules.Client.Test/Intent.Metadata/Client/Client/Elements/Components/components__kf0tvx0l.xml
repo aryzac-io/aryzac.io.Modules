@@ -16,6 +16,7 @@
       <name>NewComponent</name>
       <display>NewComponent</display>
       <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>86440efc-e0c3-4dd2-9921-9f51ef671c03</parentFolderId>
@@ -23,7 +24,32 @@
       <packageName>Client</packageName>
       <stereotypes />
       <metadata />
-      <childElements />
+      <childElements>
+        <childElement id="851605ad-db17-4894-98b1-8327e9b667ba" type="Component Parameter" typeId="44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab">
+          <name>NewComponentParameter</name>
+          <display>NewComponentParameter: datetime</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="56a28cde-a698-438b-97bf-e6cd66a5e5c0">
+            <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>cb46468a-25a1-40a7-85b7-d127fa4ce216</parentFolderId>
+          <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+          <packageName>Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
     </childElement>
   </childElements>
 </class>

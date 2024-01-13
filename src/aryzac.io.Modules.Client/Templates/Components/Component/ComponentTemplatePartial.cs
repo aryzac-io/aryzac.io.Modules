@@ -6,6 +6,7 @@ using Intent.Engine;
 using Intent.Metadata.Models;
 using Intent.Modules.Common;
 using Intent.Modules.Common.Templates;
+using Intent.Modules.Common.TypeScript.TypeResolvers;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
 
@@ -23,6 +24,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Components.Component
         [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
         public ComponentTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
+            Types = new TypeScriptTypeResolver();
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

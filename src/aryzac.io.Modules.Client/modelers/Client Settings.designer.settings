@@ -98,12 +98,58 @@
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
-          <typeOrder />
-          <creationOptions />
+          <typeOrder>
+            <type order="0">Component Parameter</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Parameter</text>
+              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAALVJREFUOE+tk2ENAjEMRt85OAeHBBwc5wAc4ARwchLAARKQgAMkQL5kJU3ZWGDXP0237vXr1nU0Wtd4nkUBV2AETsCxoEzrB+AM7JTjFTxDrP1NAKmI7J1bA9yAPTAnrzgL6IGHU2BSYydW8EOBpN1TFTukympBe/KKzaRoACYj5gBKssPyij1gJbABYguSGM2/TvUS1+7iVFmxtyqg9HwGyQJ+GaQLsI2DVBi+78uL/oW/FLwAVgUpEQh5wgUAAAAASUVORK5CYII=" />
+              <specializationType>Component Parameter</specializationType>
+              <specializationTypeId>44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab</specializationTypeId>
+              <defaultName>NewComponentParameter</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+          </creationOptions>
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
-          <childElementSettings />
+          <childElementSettings>
+            <childElementSetting type="Component Parameter" typeId="44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab">
+              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAALVJREFUOE+tk2ENAjEMRt85OAeHBBwc5wAc4ARwchLAARKQgAMkQL5kJU3ZWGDXP0237vXr1nU0Wtd4nkUBV2AETsCxoEzrB+AM7JTjFTxDrP1NAKmI7J1bA9yAPTAnrzgL6IGHU2BSYydW8EOBpN1TFTukympBe/KKzaRoACYj5gBKssPyij1gJbABYguSGM2/TvUS1+7iVFmxtyqg9HwGyQJ+GaQLsI2DVBi+78uL/oW/FLwAVgUpEQh5wgUAAAAASUVORK5CYII=" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>true</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeReferenceSetting>
+                <isRequired>true</isRequired>
+                <targetTypes>
+                  <type>Type-Definition</type>
+                  <type>Enum</type>
+                </targetTypes>
+                <allowIsNavigable>true</allowIsNavigable>
+                <allowIsNullable>true</allowIsNullable>
+                <allowIsCollection>true</allowIsCollection>
+                <isNavigableDefault>true</isNavigableDefault>
+                <isNullableDefault>false</isNullableDefault>
+                <isCollectionDefault>false</isCollectionDefault>
+              </typeReferenceSetting>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+          </childElementSettings>
         </childElementSetting>
         <childElementSetting type="Component Folder" typeId="ca698be1-3d9a-4a36-8415-a452954d9d00">
           <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAHJJREFUOE/tk8ENgDAIRV8nsE6iI+jkOoKj6AQaTGq0ETjgUa7A+3xoE8FIwX4KYAG6CrYCIyA5NQpghwtWintgBhqlWwRaC+C5O0W9CSYgWw7ugLpuAwZjB+4EYQs/wNsAPK7w9pQ9hJw5f/aZPDU1fwBsRBwR9a7JXgAAAABJRU5ErkJggg==" />

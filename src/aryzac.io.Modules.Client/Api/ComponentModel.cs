@@ -37,6 +37,11 @@ namespace Aryzac.IO.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
+        public IList<ComponentParameterModel> Parameters => _element.ChildElements
+            .GetElementsOfType(ComponentParameterModel.SpecializationTypeId)
+            .Select(x => new ComponentParameterModel(x))
+            .ToList();
+
         public override string ToString()
         {
             return _element.ToString();

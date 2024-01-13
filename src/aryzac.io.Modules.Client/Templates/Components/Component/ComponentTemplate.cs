@@ -31,9 +31,61 @@ namespace Aryzac.IO.Modules.Client.Templates.Components.Component
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<script setup lang=\"ts\">\r\n</script>\r\n\r\n<template>\r\n\t");
+            this.Write("\r\n<script setup lang=\"ts\">\r\n");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
+            #line 11 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
+ 
+  if (Model.Parameters != null)
+  {
+    
+            
+            #line default
+            #line hidden
+            this.Write("const props = defineProps<{\r\n");
+            
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
+
+    foreach (var parameter in Model.Parameters)
+	{
+	
+            
+            #line default
+            #line hidden
+            this.Write("  ");
+            
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(parameter.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write(": ");
+            
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(this.GetTypeName(parameter.TypeReference)));
+            
+            #line default
+            #line hidden
+            this.Write(",\r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
+
+	}
+	
+            
+            #line default
+            #line hidden
+            this.Write("}>();\r\n\t");
+            
+            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
+
+  }
+
+            
+            #line default
+            #line hidden
+            this.Write("\r\n</script>\r\n\r\n<template>\r\n\t");
+            
+            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
             
             #line default

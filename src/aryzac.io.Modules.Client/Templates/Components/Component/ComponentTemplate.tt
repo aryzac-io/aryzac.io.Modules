@@ -8,6 +8,21 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <script setup lang="ts">
+<# 
+  if (Model.Parameters != null)
+  {
+    #>const props = defineProps<{
+<#
+    foreach (var parameter in Model.Parameters)
+	{
+	#>  <#= parameter.Name.ToPascalCase().ToCamelCase() #>: <#= this.GetTypeName(parameter.TypeReference) #>,
+<#
+	}
+	#>}>();
+	<#
+  }
+#>
+
 </script>
 
 <template>
