@@ -42,6 +42,21 @@ namespace Aryzac.IO.Modules.Client.Api
             .Select(x => new ComponentParameterModel(x))
             .ToList();
 
+        public ComponentQueryModel Query => _element.ChildElements
+            .GetElementsOfType(ComponentQueryModel.SpecializationTypeId)
+            .Select(x => new ComponentQueryModel(x))
+            .SingleOrDefault();
+
+        public ComponentCommandModel Command => _element.ChildElements
+            .GetElementsOfType(ComponentCommandModel.SpecializationTypeId)
+            .Select(x => new ComponentCommandModel(x))
+            .SingleOrDefault();
+
+        public ComponentViewModel View => _element.ChildElements
+            .GetElementsOfType(ComponentViewModel.SpecializationTypeId)
+            .Select(x => new ComponentViewModel(x))
+            .SingleOrDefault();
+
         public override string ToString()
         {
             return _element.ToString();

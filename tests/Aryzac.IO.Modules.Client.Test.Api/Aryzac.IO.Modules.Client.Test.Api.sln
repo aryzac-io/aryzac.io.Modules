@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{F33C6381-9F9C-42AE-8F7A-F46FBF5CCE01}"
+EndProject
+Project("{FFD54A85-9362-48AC-B646-C93AB9AC63D2}") = "Aryzac.IO.Modules.Client.Test.Api.Api", "Aryzac.IO.Modules.Client.Test.Api.Api\Aryzac.IO.Modules.Client.Test.Api.Api.csproj", "{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{CFD7A7AE-70C2-43DA-A558-11BAE61B133A}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "Aryzac.IO.Modules.Client.Test.Api.Application", "Aryzac.IO.Modules.Client.Test.Api.Application\Aryzac.IO.Modules.Client.Test.Api.Application.csproj", "{5CF2817A-5971-4D3E-B4B0-2465D2CE617B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{7BB50FF5-71F3-43A1-8B27-0D231EECDC90}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "Aryzac.IO.Modules.Client.Test.Api.Domain", "Aryzac.IO.Modules.Client.Test.Api.Domain\Aryzac.IO.Modules.Client.Test.Api.Domain.csproj", "{40254189-A804-4D72-8D9A-E300A86C1A46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{1CC85487-40F2-44CB-B945-08D49D054B1F}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "Aryzac.IO.Modules.Client.Test.Api.Infrastructure", "Aryzac.IO.Modules.Client.Test.Api.Infrastructure\Aryzac.IO.Modules.Client.Test.Api.Infrastructure.csproj", "{8B3BC54D-1560-4D24-B9A6-178F01E1C653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF2817A-5971-4D3E-B4B0-2465D2CE617B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF2817A-5971-4D3E-B4B0-2465D2CE617B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF2817A-5971-4D3E-B4B0-2465D2CE617B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF2817A-5971-4D3E-B4B0-2465D2CE617B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40254189-A804-4D72-8D9A-E300A86C1A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40254189-A804-4D72-8D9A-E300A86C1A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40254189-A804-4D72-8D9A-E300A86C1A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40254189-A804-4D72-8D9A-E300A86C1A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3BC54D-1560-4D24-B9A6-178F01E1C653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3BC54D-1560-4D24-B9A6-178F01E1C653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3BC54D-1560-4D24-B9A6-178F01E1C653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3BC54D-1560-4D24-B9A6-178F01E1C653}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541} = {F33C6381-9F9C-42AE-8F7A-F46FBF5CCE01}
+		{5CF2817A-5971-4D3E-B4B0-2465D2CE617B} = {CFD7A7AE-70C2-43DA-A558-11BAE61B133A}
+		{40254189-A804-4D72-8D9A-E300A86C1A46} = {7BB50FF5-71F3-43A1-8B27-0D231EECDC90}
+		{8B3BC54D-1560-4D24-B9A6-178F01E1C653} = {1CC85487-40F2-44CB-B945-08D49D054B1F}
+	EndGlobalSection
+EndGlobal

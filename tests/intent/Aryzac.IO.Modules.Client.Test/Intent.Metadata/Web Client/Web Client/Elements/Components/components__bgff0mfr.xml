@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a58e6d97-2a9f-4755-be75-3d7dde2c96d5" type="Components" typeId="07b847f0-5ea2-4685-bfe0-c06a6b585fdf">
+  <name>components</name>
+  <display>components</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>657e26c5-b761-451b-b0ee-755bc4b419e5</parentFolderId>
+  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="4d412db7-a553-4191-885b-c4711b896b7f" type="Component Folder" typeId="ca698be1-3d9a-4a36-8415-a452954d9d00">
+      <name>Clients</name>
+      <display>Clients</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>a58e6d97-2a9f-4755-be75-3d7dde2c96d5</parentFolderId>
+      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="f8b4e1f8-39b0-43d9-a23c-a1ec10c2d00f" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <name>ClientList</name>
+          <display>ClientList</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>4d412db7-a553-4191-885b-c4711b896b7f</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="2774023e-d714-4b70-9f62-1de2b6e9c37e" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+              <name>[query]</name>
+              <display>[query]</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>true</isMapped>
+              <mappedClass>
+                <applicationId>62c371b4-af5f-42bf-9b88-6751357b25cf</applicationId>
+                <metadataId>f492faed-0665-4513-9853-5a230721786f</metadataId>
+                <mappingSettingsId>6d2115a7-eb3d-437c-9b6b-22525284fe44</mappingSettingsId>
+                <autoSyncTypeReference>true</autoSyncTypeReference>
+                <mappedPath>
+                  <target id="68fe934f-0c89-4db4-b8f0-321c3684963a" name="ClientsService" type="element" specialization="Service Proxy" />
+                  <target id="3c5e1979-be58-43cf-b867-d58cc0b1bddd" name="GetClients" type="element" specialization="Operation" />
+                </mappedPath>
+              </mappedClass>
+              <parentFolderId>f8b4e1f8-39b0-43d9-a23c-a1ec10c2d00f</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="d0fb826e-8d2e-451f-8eb1-99e8e0d7ea5e" type="Component View" typeId="8115da3e-0465-4d16-8a37-f85eec26a127">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>f8b4e1f8-39b0-43d9-a23c-a1ec10c2d00f</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="7b100f8b-1ae7-43c3-9c0d-541e96e5a9cc" type="Heading" typeId="2bf5bef0-a091-4ff8-a5d6-fe931a86616f">
+                  <name>NewHeading</name>
+                  <display>NewHeading</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>d0fb826e-8d2e-451f-8eb1-99e8e0d7ea5e</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="3fc958c7-8c35-42f6-8f40-388ad0494fbb" name="Heading Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="43d75151-3135-4330-9ef2-0eeb24beed97" display="Title" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements>
+                    <childElement id="295d2fb3-baf2-4cf5-8b9a-651845b94ae9" type="Heading Attribute" typeId="e33dad05-f11e-4dde-86e7-984be7aac580">
+                      <name>NewHeadingAttribute</name>
+                      <display>NewHeadingAttribute</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>7b100f8b-1ae7-43c3-9c0d-541e96e5a9cc</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8" name="Attribute Settings">
+                          <addedByDefault>true</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="cc7b18ad-6a01-4396-8785-8ac3dfdf2d1e" display="Icon" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
+                <childElement id="bc3dafc0-41b3-485b-847f-66bb0c4a4dc2" type="Section" typeId="359ec87c-144f-4be1-b3d1-fe182093bb3e">
+                  <name>tableSection</name>
+                  <display>tableSection</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>manually</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>d0fb826e-8d2e-451f-8eb1-99e8e0d7ea5e</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="5b660009-8997-4ec3-9b41-0fcded5e97b5" name="Section Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="46a86af5-3286-4987-848b-5295712e67f8" display="Title" isActive="true" />
+                        <property name="b9d53634-bca6-4224-9c9b-dbfe9d4e9f39" display="Description" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements>
+                    <childElement id="59172ad5-77f5-477b-a94b-7e8cb365c039" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
+                      <name>NewTable</name>
+                      <display>NewTable</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>bc3dafc0-41b3-485b-847f-66bb0c4a4dc2</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements>
+                        <childElement id="26424668-3744-47fa-84fc-907218513153" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                          <name>FirstName</name>
+                          <display>FirstName</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>59172ad5-77f5-477b-a94b-7e8cb365c039</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes />
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="eea8d5c7-e8a7-4c3b-b76d-359b95a46923" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                          <name>LastName</name>
+                          <display>LastName</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>59172ad5-77f5-477b-a94b-7e8cb365c039</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes />
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="7fcdbb53-71ba-41b3-9601-c73ba457c210" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                          <name>OtherNames</name>
+                          <display>OtherNames</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>59172ad5-77f5-477b-a94b-7e8cb365c039</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes />
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

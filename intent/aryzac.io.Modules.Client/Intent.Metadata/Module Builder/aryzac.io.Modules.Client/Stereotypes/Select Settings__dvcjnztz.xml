@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="d159f0b9-8d24-40b6-900f-6af71a512072" version="3.1.0">
+  <name>Select Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">Select</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>on-create</applyMode>
+  <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>1d752276-2801-4dc1-963f-ac4f7b87f2cd</parentFolderId>
+  <order>0</order>
+  <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+  <packageName>Aryzac.IO.Modules.Client</packageName>
+  <properties>
+    <property id="4b76a1f6-ce65-4630-9a4a-e7798f107020">
+      <name>Label</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+  </properties>
+</stereotypeDefinition>

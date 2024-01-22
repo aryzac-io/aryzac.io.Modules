@@ -72,5 +72,4 @@ const getKey = (item, index) => {
       </tr>
     </tbody>
   </table>
-  <ui-view-pagination />
 </template>

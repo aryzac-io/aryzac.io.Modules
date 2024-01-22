@@ -12,9 +12,9 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="b2bb4aec-9a55-4619-be73-e337ef2ab6e4" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.package</name>
-      <display>Aryzac.IO.Modules.Client.package</display>
+    <childElement id="8eec2398-fe61-4b53-8342-9163efe558cc" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.NuxtConfig</name>
+      <display>Aryzac.IO.Modules.Client.Files.NuxtConfig</display>
       <externalReference>Aryzac.IO.Modules.Client</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -28,9 +28,25 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="9af02b75-e42f-424b-82ea-65dd166ee991" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Templates.StaticContentTemplateRegistrations.StaticContentTemplateRegistration</name>
-      <display>Aryzac.IO.Modules.Client.Templates.StaticContentTemplateRegistrations.StaticContentTemplateRegistration</display>
+    <childElement id="f66d6d3c-613c-4be0-8f2e-8488833cebcd" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.package</name>
+      <display>Aryzac.IO.Modules.Client.Files.package</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>81904bef-ea61-4c38-b292-7c19f7fe0b5d</parentFolderId>
+      <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="b10544ed-c288-45c0-982e-edd28dbff967" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration</name>
+      <display>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration</display>
       <externalReference>Aryzac.IO.Modules.Client</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

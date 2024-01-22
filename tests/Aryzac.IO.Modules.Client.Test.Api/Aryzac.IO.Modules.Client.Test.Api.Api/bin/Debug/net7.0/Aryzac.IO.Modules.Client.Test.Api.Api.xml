@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Aryzac.IO.Modules.Client.Test.Api.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.ChangeNameClient(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeNameClient.ChangeNameClientCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.CreateClient(System.String,Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient.CreateClientCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="201">Successfully created.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.DeleteClient(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Successfully deleted.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.GetClientById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified ClientDto.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">No ClientDto could be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.GetClients(System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified List&lt;ClientDto&gt;.</response>
+        </member>
+        <member name="T:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ResponseTypes.JsonResponse`1">
+            <summary>
+            Implicit wrapping of types that serialize to non-complex values.
+            </summary>
+            <typeparam name="T">Types such as string, Guid, int, long, etc.</typeparam>
+        </member>
+    </members>
+</doc>

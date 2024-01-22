@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="b7a5a752-c00e-4e0b-ab1f-7df186bced20" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>structs</name>
+  <display>structs</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>81904bef-ea61-4c38-b292-7c19f7fe0b5d</parentFolderId>
+  <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="c8880206-5091-4970-acd2-70c845f49ce3" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Structs.DTOs.JsonResponse</name>
+      <display>Aryzac.IO.Modules.Client.Files.Structs.DTOs.JsonResponse</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>b7a5a752-c00e-4e0b-ab1f-7df186bced20</parentFolderId>
+      <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

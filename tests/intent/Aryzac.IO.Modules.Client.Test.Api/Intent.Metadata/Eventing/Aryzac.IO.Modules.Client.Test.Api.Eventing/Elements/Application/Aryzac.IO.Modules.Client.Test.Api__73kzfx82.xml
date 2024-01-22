@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="eb7af466-13e9-4ab1-898a-e9115a37c4aa" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>Aryzac.IO.Modules.Client.Test.Api</name>
+  <display>Aryzac.IO.Modules.Client.Test.Api</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>f603b7d6-ed1a-47da-8cbc-12dc06498201</parentFolderId>
+  <diagram>
+    <targetPackageId>596bc3bc-28f3-4a02-92c0-fab661a4e6de</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

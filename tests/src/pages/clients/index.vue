@@ -2,5 +2,5 @@
 </script>
 
 <template>
-	index
+  <clients-client-list />
 </template>

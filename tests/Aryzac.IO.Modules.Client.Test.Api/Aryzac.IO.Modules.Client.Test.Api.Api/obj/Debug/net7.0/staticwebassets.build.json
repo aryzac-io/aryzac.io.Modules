@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jBYhr7aWn6dicKM1jJrqC1ADsClWC1bLQYZn3nUKiMg=",
+  "Source": "Aryzac.IO.Modules.Client.Test.Api.Api",
+  "BasePath": "_content/Aryzac.IO.Modules.Client.Test.Api.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

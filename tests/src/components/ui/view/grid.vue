@@ -59,5 +59,4 @@ const gridClasses = computed(() => {
       <slot v-bind="{ item, index }"></slot>
     </li>
   </ul>
-  <ui-view-pagination class="mt-6" />
 </template>

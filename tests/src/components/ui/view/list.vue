@@ -44,5 +44,4 @@ const handleItemClicked = (item, index) => {
       <slot v-bind="{ item, index }"></slot>
     </li>
   </ul>
-  <ui-view-pagination />
 </template>

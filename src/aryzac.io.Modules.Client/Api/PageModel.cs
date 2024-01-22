@@ -41,6 +41,11 @@ namespace Aryzac.IO.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
+        public IList<PageComponentModel> PageComponents => _element.ChildElements
+            .GetElementsOfType(PageComponentModel.SpecializationTypeId)
+            .Select(x => new PageComponentModel(x))
+            .ToList();
+
         public override string ToString()
         {
             return _element.ToString();

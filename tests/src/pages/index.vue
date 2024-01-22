@@ -2,5 +2,4 @@
 </script>
 
 <template>
-	index
 </template>

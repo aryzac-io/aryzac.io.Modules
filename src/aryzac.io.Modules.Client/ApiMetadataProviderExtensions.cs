@@ -18,6 +18,13 @@ namespace Aryzac.IO.Modules.Client.Api
                 .ToList();
         }
 
+        public static IList<ControlsModel> GetControlsModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(ControlsModel.SpecializationTypeId)
+                .Select(x => new ControlsModel(x))
+                .ToList();
+        }
+
         public static IList<ComponentModel> GetComponentModels(this IDesigner designer)
         {
             return designer.GetElementsOfType(ComponentModel.SpecializationTypeId)
@@ -43,6 +50,13 @@ namespace Aryzac.IO.Modules.Client.Api
         {
             return designer.GetElementsOfType(PagesModel.SpecializationTypeId)
                 .Select(x => new PagesModel(x))
+                .ToList();
+        }
+
+        public static IList<ServiceProxiesModel> GetServiceProxiesModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(ServiceProxiesModel.SpecializationTypeId)
+                .Select(x => new ServiceProxiesModel(x))
                 .ToList();
         }
 

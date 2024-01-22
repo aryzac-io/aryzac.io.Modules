@@ -1,0 +1,24 @@
+<#@ template language="C#" inherits="IntentTemplateBase<Aryzac.IO.Modules.Client.Api.PageModel>" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+
+<script setup lang="ts">
+</script>
+
+<template>
+<# if (Model.PageComponents != null)
+{ 
+	foreach (var pageComponent in Model.PageComponents)
+	{
+#>
+  <<#= GetPageComponentName(pageComponent) #> />
+<#
+	}
+} 
+#>
+</template>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="32938141-219b-442a-b352-6b74c8867c22" type="Api Version" typeId="0ec760ae-98d8-4e8e-953c-d00691ff7e28">
+  <name>Api Version</name>
+  <display>Api Version</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</parentFolderId>
+  <packageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</packageId>
+  <packageName>Aryzac.IO.Modules.Client.Test.Api.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="64aa1bd7-2a70-4b29-8fa4-ec74dc0460d8" type="Version" typeId="95f4362b-8193-41cb-bd65-c17d6be3f96b">
+      <name>V1.0</name>
+      <display>V1.0</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>32938141-219b-442a-b352-6b74c8867c22</parentFolderId>
+      <packageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</packageId>
+      <packageName>Aryzac.IO.Modules.Client.Test.Api.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="1cefa0f4-0fce-4a35-9f8d-389ecfd66b56" name="Version Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="7248493f-2e26-4f51-99b0-ed0e2ae6b511" display="Is Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

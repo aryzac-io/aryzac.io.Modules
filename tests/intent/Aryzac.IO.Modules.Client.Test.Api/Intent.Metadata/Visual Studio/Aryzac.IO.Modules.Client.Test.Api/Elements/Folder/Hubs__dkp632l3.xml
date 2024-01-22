@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="1832e2b5-ffdb-406c-9f17-0eb0adbccd08" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Hubs</name>
+  <display>Hubs</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>d79eebb3-a22e-404b-84d5-ae2a723f495f</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="0d6189ac-8d6f-42a7-926f-d2ce7a95d6e2" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.SignalR.HubServiceInterface</name>
+      <display>Intent.AspNetCore.SignalR.HubServiceInterface</display>
+      <externalReference>Intent.AspNetCore.SignalR</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>1832e2b5-ffdb-406c-9f17-0eb0adbccd08</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

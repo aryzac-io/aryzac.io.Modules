@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  runtimeConfig: {
+    public: {
+      clientsServiceApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_CLIENTS_SERVICE_API_BASE_URI
+      apiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_API_BASE_URI
+    }
+  },
+
   modules: [
     // https://nuxt.com/modules/i18n
     "@nuxtjs/i18n",
@@ -38,12 +45,11 @@ export default defineNuxtConfig({
 
   site: {
     url: "http://localhost:3000",
-    name: "Default Site",
+    name: "aryzac-io-modules-client-test",
     description: "Welcome",
   },
 
   ogImage: {
-    debug: true,
   },
 
   tailwindcss: {

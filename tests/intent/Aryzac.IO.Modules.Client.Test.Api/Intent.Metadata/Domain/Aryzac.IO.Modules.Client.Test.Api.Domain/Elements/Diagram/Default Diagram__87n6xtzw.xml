@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3a2b5377-a751-4a08-8563-05c9d21fd2ce" type="Diagram" typeId="4d66fecd-e9b8-436f-aa50-c59040ad0879">
+  <name>Default Diagram</name>
+  <display>Default Diagram</display>
+  <externalReference>1b7fb00b-5ce4-45b8-876c-8f0f1874fdbb</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>527f6356-633b-45e5-89bf-846df3148cf5</parentFolderId>
+  <packageId>527f6356-633b-45e5-89bf-846df3148cf5</packageId>
+  <packageName>Aryzac.IO.Modules.Client.Test.Api.Domain</packageName>
+  <diagram>
+    <targetPackageId>527f6356-633b-45e5-89bf-846df3148cf5</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

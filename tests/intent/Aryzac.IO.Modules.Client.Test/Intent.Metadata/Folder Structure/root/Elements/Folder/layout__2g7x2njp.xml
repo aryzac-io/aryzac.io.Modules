@@ -12,9 +12,9 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="b78ef97d-20e3-422e-b8e1-2d28d8c74198" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Components.Layout.Components</name>
-      <display>Aryzac.IO.Modules.Client.Components.Layout.Components</display>
+    <childElement id="25208d27-b4e2-49ca-8ac7-b0f5b7dbadab" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Components.Layout.Components</name>
+      <display>Aryzac.IO.Modules.Client.Files.Components.Layout.Components</display>
       <externalReference>Aryzac.IO.Modules.Client</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

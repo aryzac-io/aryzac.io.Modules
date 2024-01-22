@@ -1,0 +1,13 @@
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\bin\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.deps.json
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\bin\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.dll
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\bin\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.pdb
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.csproj.AssemblyReference.cache
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.AssemblyInfoInputs.cache
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.AssemblyInfo.cs
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.csproj.CoreCompileInputs.cache
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.sourcelink.json
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.dll
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\refint\Aryzac.IO.Modules.Client.Test.Api.Domain.dll
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\Aryzac.IO.Modules.Client.Test.Api.Domain.pdb
+D:\src\aryzac-io\aryzac.io.Modules\tests\Aryzac.IO.Modules.Client.Test.Api\Aryzac.IO.Modules.Client.Test.Api.Domain\obj\Debug\net7.0\ref\Aryzac.IO.Modules.Client.Test.Api.Domain.dll

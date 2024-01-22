@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="7c3e71c5-7d9d-47eb-b0fc-8473359257bb" version="3.1.0">
+  <name>Text Area Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="9fb5d59b-af35-4484-b7f2-410a30365bbf">Text Area</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>on-create</applyMode>
+  <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>1d752276-2801-4dc1-963f-ac4f7b87f2cd</parentFolderId>
+  <order>0</order>
+  <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+  <packageName>Aryzac.IO.Modules.Client</packageName>
+  <properties>
+    <property id="edd4ec3b-c2e7-401d-ae0b-600c85a42a04">
+      <name>Label</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+  </properties>
+</stereotypeDefinition>

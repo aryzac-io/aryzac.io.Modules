@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "W92C4ZnHR/RibkGv1TDzzHU8qxvKdIMmHOSoetdZiyVDcpmM4WEyvl+iBz69UeBUxRKrZDTVUuQ3jvr1tAjIKg==",
+  "success": true,
+  "projectFilePath": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Domain\\Aryzac.IO.Modules.Client.Test.Api.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\StephanJohnson\\.nuget\\packages\\intent.roslynweaver.attributes\\2.1.3\\intent.roslynweaver.attributes.2.1.3.nupkg.sha512",
+    "C:\\Users\\StephanJohnson\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\StephanJohnson\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\StephanJohnson\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

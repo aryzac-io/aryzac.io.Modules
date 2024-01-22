@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="60e4488c-4b34-4878-a4e9-f8c736779a8e" type="Service Proxies" typeId="762f076f-4d28-4d64-8aa0-92d41d1c0ac3">
+  <name>services</name>
+  <display>services</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</parentFolderId>
+  <packageId>adedb5d8-8210-4103-9e15-96a9bb5fdb49</packageId>
+  <packageName>Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

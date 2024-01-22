@@ -5,9 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="content\.vscode\extensions.json" />
+    <Content Include="content\.vscode\launch.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Intent.Modules.Common" Version="3.5.0" />
     <PackageReference Include="Intent.Modules.Common.Types" Version="3.3.9" />
-	<PackageReference Include="Intent.Modules.Common.TypeScript" Version="3.4.3" />
+    <PackageReference Include="Intent.Modules.Common.TypeScript" Version="3.4.3" />
+    <PackageReference Include="Intent.Modules.Metadata.WebApi" Version="4.1.1" />
+    <PackageReference Include="Intent.Modules.Modelers.Services" Version="3.4.6" />
+    <PackageReference Include="Intent.Modules.Modelers.Types.ServiceProxies" Version="5.0.0" />
+    <PackageReference Include="Intent.Modules.Modelers.WebClient" Version="4.0.0" />
     <PackageReference Include="Intent.Packager" Version="3.4.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,6 +30,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ComponentsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Component\ComponentTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentTemplate.tt</DependentUpon>
     </Compile>
     <Compile Update="Templates\Layouts\Layout\LayoutTemplate.cs">
       <DesignTime>True</DesignTime>
@@ -36,6 +50,46 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ComponentTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Layout\Components\ComponentsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Layouts\Layout\LayoutTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LayoutTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Pages\Page\PageTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PageTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Structs\DTOs\DTO\DTOTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DTOTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Structs\DTOs\JsonResponse\JsonResponseTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JsonResponseTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\UseService\UseServiceTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseServiceTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\UseServiceProxy\UseServiceProxyTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseServiceProxyTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\NuxtConfig\NuxtConfigTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NuxtConfigTemplate.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -55,6 +109,42 @@
     <None Update="Templates\Components\Component\ComponentTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>ComponentTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Component\ComponentTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Layout\Components\ComponentsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Layouts\Layout\LayoutTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>LayoutTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Pages\Page\PageTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>PageTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Structs\DTOs\DTO\DTOTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>DTOTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Structs\DTOs\JsonResponse\JsonResponseTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>JsonResponseTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\UseService\UseServiceTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseServiceTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\UseServiceProxy\UseServiceProxyTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseServiceProxyTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\NuxtConfig\NuxtConfigTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>NuxtConfigTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

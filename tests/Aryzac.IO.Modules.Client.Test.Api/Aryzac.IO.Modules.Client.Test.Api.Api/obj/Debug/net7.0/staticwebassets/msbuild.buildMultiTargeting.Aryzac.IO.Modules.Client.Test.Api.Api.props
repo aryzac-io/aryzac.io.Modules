@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Aryzac.IO.Modules.Client.Test.Api.Api.props" />
+</Project>

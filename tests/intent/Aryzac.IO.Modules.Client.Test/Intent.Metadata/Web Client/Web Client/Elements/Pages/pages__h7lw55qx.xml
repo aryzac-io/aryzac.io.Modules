@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="12af96dc-2adb-432a-a5ce-2b457326d02d" type="Pages" typeId="72608324-5d5a-4627-aecf-0b0d0f0f7f68">
+  <name>pages</name>
+  <display>pages</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>657e26c5-b761-451b-b0ee-755bc4b419e5</parentFolderId>
+  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="1343048f-f75a-40af-bd84-8a957ed4651a" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+      <name>index</name>
+      <display>index: default</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="47207d86-a581-4843-9a4d-956db444fdb8">
+        <typeId>f16095c8-5ac2-47a9-923e-fe7a9cc54083</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Web Client</typePackageName>
+        <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>12af96dc-2adb-432a-a5ce-2b457326d02d</parentFolderId>
+      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="907a2eb5-0054-404a-b347-bbbfbdbf85c0" type="Page Folder" typeId="21b29545-9bd7-4cbd-85bb-3b548765031e">
+      <name>clients</name>
+      <display>clients</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>12af96dc-2adb-432a-a5ce-2b457326d02d</parentFolderId>
+      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="a0006ff6-338b-4e43-8c78-e1fb09f08eab" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+          <name>index</name>
+          <display>index: default</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <typeReference id="e2cebe9d-192a-4edc-8f03-36e212431b8c">
+            <typeId>f16095c8-5ac2-47a9-923e-fe7a9cc54083</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Web Client</typePackageName>
+            <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>907a2eb5-0054-404a-b347-bbbfbdbf85c0</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="139ee89e-e9bf-4d80-981d-ebf48e933458" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+              <name>NewPageComponent</name>
+              <display>NewPageComponent: ClientList</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="52a4a4b5-e47c-4121-b430-dc7ef397f497">
+                <typeId>f8b4e1f8-39b0-43d9-a23c-a1ec10c2d00f</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Web Client</typePackageName>
+                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>a0006ff6-338b-4e43-8c78-e1fb09f08eab</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>
