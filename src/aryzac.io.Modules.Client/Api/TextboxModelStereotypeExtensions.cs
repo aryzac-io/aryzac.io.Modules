@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static TextboxSettings GetTextboxSettings(this TextboxModel model)
         {
-            var stereotype = model.GetStereotype("Textbox Settings");
+            var stereotype = model.GetStereotype("76a05306-e432-445c-a3ef-1bc5b4869a7d");
             return stereotype != null ? new TextboxSettings(stereotype) : null;
         }
 
 
         public static bool HasTextboxSettings(this TextboxModel model)
         {
-            return model.HasStereotype("Textbox Settings");
+            return model.HasStereotype("76a05306-e432-445c-a3ef-1bc5b4869a7d");
         }
 
         public static bool TryGetTextboxSettings(this TextboxModel model, out TextboxSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new TextboxSettings(model.GetStereotype("Textbox Settings"));
+            stereotype = new TextboxSettings(model.GetStereotype("76a05306-e432-445c-a3ef-1bc5b4869a7d"));
             return true;
         }
 

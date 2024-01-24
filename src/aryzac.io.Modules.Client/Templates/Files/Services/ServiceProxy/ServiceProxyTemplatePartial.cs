@@ -56,7 +56,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Services.ServiceProxy
             var returnType = GetReturnType(endpoint);
 
             var returnTypeSignature = $"Promise<AsyncData<{returnType} | null, any>>";
-            var useFetchSignature = $"useFetch<{returnType}>";
+            var useFetchSignature = $"useLazyFetch<{returnType}>";
 
             if (returnType == "void")
             {
@@ -96,7 +96,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Services.ServiceProxy
                 method.AddStatement($"         'Content-Type': 'application/json', ");
                 foreach (var header in endpoint.Inputs.Where(x => x.Source == HttpInputSource.FromHeader))
                 {
-                    method.AddStatement($"         '{header.Name}': {header.Name.ToCamelCase()} ?? \"{header.Value}\",");
+                    method.AddStatement($"         '{header.Name}': {header.Name.ToCamelCase()} ?? {header.Value},");
                 }
                 method.AddStatement($"      }},");
 

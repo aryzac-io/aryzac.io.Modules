@@ -86,7 +86,6 @@ if (Model.View != null)
 #>
     <#= control.Name.ToCamelCase() #>:
       label: <#= labelSettings.Label() ?? control.Name #>
-      body: <#= labelSettings.Body() ?? "''" #>
 <#
         }
 #>
@@ -187,59 +186,109 @@ const { t } = useI18n();
 #>
 
 <#
-  if (Model.Query != null)
-  { 
-#>
-const <#= Model.Query.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy = use<#= Model.Query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase() #>Proxy();
-<#
-  }
-#>
-<#
-  if (Model.Query != null && Model.Command != null)
-  {
-    if (Model.Query.Mapping.Element.AsOperationModel().ParentService.Name.ToLower() != Model.Command.Mapping.Element.AsOperationModel().ParentService.Name.ToLower())
-    {
-#>
-const <#= Model.Command.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy = use<#= Model.Command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase() #>Proxy();
-<#
-    }
-  }
-  else if (Model.Query == null && Model.Command != null)
+  foreach (var commandOrQuery in CommandsAndQueries)
   {
 #>
-const <#= Model.Command.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy = use<#= Model.Command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase() #>Proxy();
-<#
+const <#= commandOrQuery.Name.ToCamelCase() #>Proxy = use<#= commandOrQuery.Name.ToPascalCase() #>Proxy();
+<#   
   }
 #>
 
 <#
-  if (Model.Query != null)
+  if (Queries.Any())
   {
-    #>// Query
-<#
-	#>
-const { data: <#= Model.Query.Mapping.Element.Name.ToCamelCase() #>Data, pending: <#= Model.Query.Mapping.Element.Name.ToCamelCase() #>Pending, error: <#= Model.Query.Mapping.Element.Name.ToCamelCase() #>Error } = await <#= Model.Query.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= Model.Query.Mapping.Element.Name.ToCamelCase() #>(<#
+#>
+// Queries<#   
+  }
+#>
 
-	var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)Model.Query.Mapping.Element.AsOperationModel().Mapping.Element);
+<#
+  foreach (var query in Queries)
+  {
+#>const { 
+  data: <#= query.InternalElement.ParentElement.Name.ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Data, 
+  pending: <#= query.InternalElement.ParentElement.Name.ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Pending, 
+  error: <#= query.InternalElement.ParentElement.Name.ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Error 
+} = await <#= query.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= query.Mapping.Element.Name.ToCamelCase() #>(<#
+
+	var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)query.Mapping.Element.AsOperationModel().Mapping.Element);
 		if (endpoint != null)
 	{
 	  foreach (var parameter in endpoint.Inputs)
 	  {
-	    #>props.<#= parameter.Name.ToPascalCase().ToCamelCase() #>, <#
+	    #>props.<#= parameter.Name.ToPascalCase().ToCamelCase() #><#
+        if (endpoint.Inputs.Last() != parameter)
+		{
+		#>, <#
+		}
 	  }
 	}
 	#>);
+<#   
+  }
+#>
+
+<#
+  if (Model.Model != null)
+  {
+#>
+// Model
+interface ModelInterface {
+<#  
+    foreach (var property in Model.Model.Properties)
+    {
+#>
+  <#= property.Name.ToCamelCase() #><#= property.TypeReference.IsNullable ? "?" : "" #>: <#= GetTypeName(property.TypeReference) #>;
+<#
+    }
+#>
+}
+
+const model: ModelInterface = reactive({
+<#  
+    foreach (var property in Model.Model.Properties)
+    {
+#>
+  <#= property.Name.ToCamelCase() #>: "",
+<#
+    }
+#>
+});
+
+<#   
+    if (Model.Query != null)
+    {
+#>
+watchEffect(async () => {
+  if (<#= Model.Query.InternalElement.ParentElement.Name.ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value) {
+<#  
+      foreach (var property in Model.Model.Properties)
+      {
+#>
+    model.<#= property.Name.ToCamelCase() #> = <#= Model.Query.InternalElement.ParentElement.Name.ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value.<#= GetMappedPropertyName(property) #>;
+<#
+      }
+    }
+#>
+  }
+})
 <#
   }
 #>
 
 <#
-  if (Model.Command != null)
+  if (Commands.Any())
   {
-	var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)Model.Command.Mapping.Element.AsOperationModel().Mapping.Element);
-    #>// Command
+#>
+// Commands<#   
+  }
+#>
+
 <#
-#>const save = async (<#if (endpoint != null)
+  foreach (var command in Commands)
+  {
+	var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
+#>const save<#= command.Mapping.Element.Name.ToPascalCase() #> = async (<#if (endpoint != null)
 	{
 	  foreach (var parameter in endpoint.Inputs)
 	  {
@@ -250,7 +299,7 @@ const { data: <#= Model.Query.Mapping.Element.Name.ToCamelCase() #>Data, pending
 		}
 	  }
 	}#>) => {
-	const <#= Model.Command.Mapping.Element.Name.ToCamelCase() #> = await <#= Model.Command.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= Model.Command.Mapping.Element.Name.ToCamelCase() #>(<#
+	const <#= command.Mapping.Element.Name.ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToCamelCase() #>(<#
 
 	if (endpoint != null)
 	{
@@ -265,14 +314,19 @@ const { data: <#= Model.Query.Mapping.Element.Name.ToCamelCase() #>Data, pending
 	}
 	#>);
 };
-<#
+<#   
   }
 #>
+
 <# 
 if (Model.View != null)
 {
   foreach (var component in Model.View.InternalElement.ChildElements)
   {    
+#>
+// <#= component.Name #>
+
+<#   
     if (component.IsHeadingModel()) // Heading
     {
 #>
@@ -310,18 +364,18 @@ const <#= Model.View.Heading.Name.ToCamelCase() #>Actions = computed(() => [
       foreach (var control in section.InternalElement.ChildElements)
 	  {
 #>
+// <#= control.Name #>
 <#
 		if (control.IsTableModel()) 
 		{
           var table = control.AsTableModel();
-#>
-const <#= table.Name.ToCamelCase() #>Headers = [
+#>const <#= table.Name.ToCamelCase() #>Headers = [
 <# 
 foreach (var column in table.Columns)
 {
 #>
   {
-	key: '<#= column.Name.ToCamelCase() #>',
+	key: '<#= GetMappedColumnFieldName(column) #>',
 	label: t("<#= component.Name.ToCamelCase() #>.<#= table.Name.ToCamelCase() #>.<#= column.Name.ToCamelCase() #>"),
   },
 <#
@@ -414,7 +468,7 @@ if (Model.View != null)
 		if (control.IsLabelModel()) 
 		{
 #>
-     <ui-input-label :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" :body="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.body')" />
+     <ui-input-label :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -437,9 +491,10 @@ if (Model.View != null)
 <#
 		if (control.IsTableModel()) 
 		{
+          var table = control.AsTableModel();
 #>
   <ui-view-table
-    :items="<#= Model.Query.Mapping.Element.Name.ToCamelCase() #>Data"
+    :items="<#= table.Name.ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
     :headers="<#= control.Name.ToCamelCase() #>Headers"
     key="id"
   />
@@ -454,9 +509,10 @@ if (Model.View != null)
 	}
 	else if (component.IsTableModel()) // Table
     {
+          var table = component.AsTableModel();
 #>
   <ui-view-table
-    :items="<#= Model.Query.Mapping.Element.Name.ToCamelCase() #>Data"
+    :items="<#= table.Name.ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
     :headers="<#= Model.View.Table.Name.ToCamelCase() #>Headers"
     key="id"
   />

@@ -29,14 +29,5 @@
       <valueOptions />
       <lookupTypes />
     </property>
-    <property id="5bbe9aec-58ed-4a7d-8cf5-dff65105378d">
-      <name>Body</name>
-      <type>string</type>
-      <controlType>textarea</controlType>
-      <optionsSource>n/a</optionsSource>
-      <placeholder />
-      <valueOptions />
-      <lookupTypes />
-    </property>
   </properties>
 </stereotypeDefinition>

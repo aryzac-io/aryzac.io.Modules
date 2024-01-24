@@ -28,10 +28,26 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#4de35702-3fbc-44e5-bacd-2864ac8491d3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/components/Clients/ClientHeader.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/ClientHeader.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#f8b4e1f8-39b0-43d9-a23c-a1ec10c2d00f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/components/Clients/ClientList.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/ClientList.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#945418c8-e1ab-4aee-8e7d-33c11cdedbd6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/components/Clients/NewComponent.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/NewComponent.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

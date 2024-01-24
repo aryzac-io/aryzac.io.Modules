@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static CheckboxSettings GetCheckboxSettings(this CheckboxModel model)
         {
-            var stereotype = model.GetStereotype("Checkbox Settings");
+            var stereotype = model.GetStereotype("1fafd144-4893-4a55-835a-487ad4b41bfe");
             return stereotype != null ? new CheckboxSettings(stereotype) : null;
         }
 
 
         public static bool HasCheckboxSettings(this CheckboxModel model)
         {
-            return model.HasStereotype("Checkbox Settings");
+            return model.HasStereotype("1fafd144-4893-4a55-835a-487ad4b41bfe");
         }
 
         public static bool TryGetCheckboxSettings(this CheckboxModel model, out CheckboxSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new CheckboxSettings(model.GetStereotype("Checkbox Settings"));
+            stereotype = new CheckboxSettings(model.GetStereotype("1fafd144-4893-4a55-835a-487ad4b41bfe"));
             return true;
         }
 

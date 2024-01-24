@@ -11,14 +11,16 @@
 </script>
 
 <template>
+  <div>
 <# if (Model.PageComponents != null)
 { 
 	foreach (var pageComponent in Model.PageComponents)
 	{
 #>
-  <<#= GetPageComponentName(pageComponent) #> />
+    <<#= GetPageComponentName(pageComponent) #> />
 <#
 	}
 } 
 #>
+  </div>
 </template>

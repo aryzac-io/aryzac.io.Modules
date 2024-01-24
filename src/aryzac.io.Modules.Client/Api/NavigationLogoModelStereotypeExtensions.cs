@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static NavigationLogoSettings GetNavigationLogoSettings(this NavigationLogoModel model)
         {
-            var stereotype = model.GetStereotype("Navigation Logo Settings");
+            var stereotype = model.GetStereotype("f8cf9899-683f-45c8-8694-73314faf5098");
             return stereotype != null ? new NavigationLogoSettings(stereotype) : null;
         }
 
 
         public static bool HasNavigationLogoSettings(this NavigationLogoModel model)
         {
-            return model.HasStereotype("Navigation Logo Settings");
+            return model.HasStereotype("f8cf9899-683f-45c8-8694-73314faf5098");
         }
 
         public static bool TryGetNavigationLogoSettings(this NavigationLogoModel model, out NavigationLogoSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new NavigationLogoSettings(model.GetStereotype("Navigation Logo Settings"));
+            stereotype = new NavigationLogoSettings(model.GetStereotype("f8cf9899-683f-45c8-8694-73314faf5098"));
             return true;
         }
 

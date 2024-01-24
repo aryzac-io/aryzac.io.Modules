@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static TextAreaSettings GetTextAreaSettings(this TextAreaModel model)
         {
-            var stereotype = model.GetStereotype("Text Area Settings");
+            var stereotype = model.GetStereotype("7c3e71c5-7d9d-47eb-b0fc-8473359257bb");
             return stereotype != null ? new TextAreaSettings(stereotype) : null;
         }
 
 
         public static bool HasTextAreaSettings(this TextAreaModel model)
         {
-            return model.HasStereotype("Text Area Settings");
+            return model.HasStereotype("7c3e71c5-7d9d-47eb-b0fc-8473359257bb");
         }
 
         public static bool TryGetTextAreaSettings(this TextAreaModel model, out TextAreaSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new TextAreaSettings(model.GetStereotype("Text Area Settings"));
+            stereotype = new TextAreaSettings(model.GetStereotype("7c3e71c5-7d9d-47eb-b0fc-8473359257bb"));
             return true;
         }
 

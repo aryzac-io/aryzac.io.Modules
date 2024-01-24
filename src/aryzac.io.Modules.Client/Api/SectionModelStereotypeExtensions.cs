@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static SectionSettings GetSectionSettings(this SectionModel model)
         {
-            var stereotype = model.GetStereotype("Section Settings");
+            var stereotype = model.GetStereotype("5b660009-8997-4ec3-9b41-0fcded5e97b5");
             return stereotype != null ? new SectionSettings(stereotype) : null;
         }
 
 
         public static bool HasSectionSettings(this SectionModel model)
         {
-            return model.HasStereotype("Section Settings");
+            return model.HasStereotype("5b660009-8997-4ec3-9b41-0fcded5e97b5");
         }
 
         public static bool TryGetSectionSettings(this SectionModel model, out SectionSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new SectionSettings(model.GetStereotype("Section Settings"));
+            stereotype = new SectionSettings(model.GetStereotype("5b660009-8997-4ec3-9b41-0fcded5e97b5"));
             return true;
         }
 

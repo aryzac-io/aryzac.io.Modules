@@ -73,6 +73,30 @@
           <stereotypes />
           <metadata />
           <childElements>
+            <childElement id="06b664cf-76bf-466e-8352-9c227d29cb02" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+              <name>NewPageComponent</name>
+              <display>NewPageComponent: ClientHeader</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="f710d8d6-32f2-4814-a1c1-07af8f713cb1">
+                <typeId>4de35702-3fbc-44e5-bacd-2864ac8491d3</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Web Client</typePackageName>
+                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>a0006ff6-338b-4e43-8c78-e1fb09f08eab</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
             <childElement id="139ee89e-e9bf-4d80-981d-ebf48e933458" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
               <name>NewPageComponent</name>
               <display>NewPageComponent: ClientList</display>

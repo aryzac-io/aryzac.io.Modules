@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static AttributeSettings GetAttributeSettings(this HeadingAttributeModel model)
         {
-            var stereotype = model.GetStereotype("Attribute Settings");
+            var stereotype = model.GetStereotype("aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8");
             return stereotype != null ? new AttributeSettings(stereotype) : null;
         }
 
 
         public static bool HasAttributeSettings(this HeadingAttributeModel model)
         {
-            return model.HasStereotype("Attribute Settings");
+            return model.HasStereotype("aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8");
         }
 
         public static bool TryGetAttributeSettings(this HeadingAttributeModel model, out AttributeSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new AttributeSettings(model.GetStereotype("Attribute Settings"));
+            stereotype = new AttributeSettings(model.GetStereotype("aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8"));
             return true;
         }
 

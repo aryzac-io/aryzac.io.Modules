@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static SelectSettings GetSelectSettings(this SelectModel model)
         {
-            var stereotype = model.GetStereotype("Select Settings");
+            var stereotype = model.GetStereotype("d159f0b9-8d24-40b6-900f-6af71a512072");
             return stereotype != null ? new SelectSettings(stereotype) : null;
         }
 
 
         public static bool HasSelectSettings(this SelectModel model)
         {
-            return model.HasStereotype("Select Settings");
+            return model.HasStereotype("d159f0b9-8d24-40b6-900f-6af71a512072");
         }
 
         public static bool TryGetSelectSettings(this SelectModel model, out SelectSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new SelectSettings(model.GetStereotype("Select Settings"));
+            stereotype = new SelectSettings(model.GetStereotype("d159f0b9-8d24-40b6-900f-6af71a512072"));
             return true;
         }
 

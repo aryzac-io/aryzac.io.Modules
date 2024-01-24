@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static RadioButtonSettings GetRadioButtonSettings(this RadioButtonModel model)
         {
-            var stereotype = model.GetStereotype("Radio Button Settings");
+            var stereotype = model.GetStereotype("e5b364b7-563a-4bef-9968-d5ec50947a67");
             return stereotype != null ? new RadioButtonSettings(stereotype) : null;
         }
 
 
         public static bool HasRadioButtonSettings(this RadioButtonModel model)
         {
-            return model.HasStereotype("Radio Button Settings");
+            return model.HasStereotype("e5b364b7-563a-4bef-9968-d5ec50947a67");
         }
 
         public static bool TryGetRadioButtonSettings(this RadioButtonModel model, out RadioButtonSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new RadioButtonSettings(model.GetStereotype("Radio Button Settings"));
+            stereotype = new RadioButtonSettings(model.GetStereotype("e5b364b7-563a-4bef-9968-d5ec50947a67"));
             return true;
         }
 

@@ -37,6 +37,11 @@ namespace Aryzac.IO.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
+        public ComponentQueryModel Query => _element.ChildElements
+            .GetElementsOfType(ComponentQueryModel.SpecializationTypeId)
+            .Select(x => new ComponentQueryModel(x))
+            .SingleOrDefault();
+
         public IList<ColumnModel> Columns => _element.ChildElements
             .GetElementsOfType(ColumnModel.SpecializationTypeId)
             .Select(x => new ColumnModel(x))

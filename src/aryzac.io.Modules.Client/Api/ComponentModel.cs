@@ -52,6 +52,11 @@ namespace Aryzac.IO.Modules.Client.Api
             .Select(x => new ComponentCommandModel(x))
             .SingleOrDefault();
 
+        public ComponentModelModel Model => _element.ChildElements
+            .GetElementsOfType(ComponentModelModel.SpecializationTypeId)
+            .Select(x => new ComponentModelModel(x))
+            .SingleOrDefault();
+
         public ComponentViewModel View => _element.ChildElements
             .GetElementsOfType(ComponentViewModel.SpecializationTypeId)
             .Select(x => new ComponentViewModel(x))

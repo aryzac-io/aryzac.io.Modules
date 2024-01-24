@@ -31,9 +31,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<script setup lang=\"ts\">\r\n</script>\r\n\r\n<template>\r\n");
+            this.Write("\r\n<script setup lang=\"ts\">\r\n</script>\r\n\r\n<template>\r\n  <div>\r\n");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
  if (Model.PageComponents != null)
 { 
 	foreach (var pageComponent in Model.PageComponents)
@@ -42,16 +42,16 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
             
             #line default
             #line hidden
-            this.Write("  <");
+            this.Write("    <");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetPageComponentName(pageComponent)));
             
             #line default
             #line hidden
             this.Write(" />\r\n");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
 
 	}
 } 
@@ -59,7 +59,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
             
             #line default
             #line hidden
-            this.Write("</template>");
+            this.Write("  </div>\r\n</template>");
             return this.GenerationEnvironment.ToString();
         }
     }

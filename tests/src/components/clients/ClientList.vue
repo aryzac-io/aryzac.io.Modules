@@ -1,81 +1,79 @@
 <i18n lang="yaml">
 en:
-  newHeading:
-    title: NewHeading
-    attributes:
-      newHeadingAttributeLabel: NewHeadingAttribute
-  tableSection:
-    title: tableSection
-    description: ""
+  newSection:
+    title: NewSection
+    description: ''
     newTable:
-      firstName: FirstName
       lastName: LastName
+      name: Name
       otherNames: OtherNames
+    
 </i18n>
 
 <script setup lang="ts">
-import type { ClientDto } from "~/structs/dto/clients/client.dto";
+import type { ClientDto } from '~/structs/dto/clients/client.dto';
 
 const { t } = useI18n();
 
-const props = defineProps<{}>();
-
+const props = defineProps<{
+}>();
+	
 const clientsServiceProxy = useClientsServiceProxy();
 
-// Query
-const {
-  data: getClientsData,
-  pending: getClientsPending,
-  error: getClientsError,
+// Queries
+const { 
+  data: clientListGetClientsData, 
+  pending: clientListGetClientsPending, 
+  error: clientListGetClientsError 
+} = await clientsServiceProxy.getClients();
+const { 
+  data: newTableGetClientsData, 
+  pending: newTableGetClientsPending, 
+  error: newTableGetClientsError 
 } = await clientsServiceProxy.getClients();
 
-const newHeadingAttributes = computed(() => [
-  {
-    icon: "",
-    label: t("newHeading.attributes.newHeadingAttributeLabel"),
-  },
-]);
+// Model
+interface ModelInterface {
+}
 
-const newHeadingActions = computed(() => [
-  {
-    label: "Create Invoice",
-    icon: "heroicons:plus",
-    function: async () => {
-      await navigateTo(`/clients/${props.clientId}/invoices/create`);
-    },
-  },
-]);
+const model: ModelInterface = reactive({
+});
 
+watchEffect(async () => {
+  if (clientListGetClientsData.value) {
+  }
+})
+
+
+
+// NewSection
+
+// NewTable
 const newTableHeaders = [
   {
-    key: "firstName",
-    label: t("tableSection.newTable.firstName"),
+	key: 'lastName',
+	label: t("newSection.newTable.lastName"),
   },
   {
-    key: "lastName",
-    label: t("tableSection.newTable.lastName"),
+	key: 'firstName',
+	label: t("newSection.newTable.name"),
   },
   {
-    key: "otherNames",
-    label: t("tableSection.newTable.otherNames"),
+	key: 'otherNames',
+	label: t("newSection.newTable.otherNames"),
   },
 ];
 </script>
 
 <template>
-  <ui-heading-page
-    :title="t('newHeading.title')"
-    :attributes="newHeadingAttributes"
-    :actions="newHeadingActions"
-  />
   <ui-editor-section
-    :title="t('tableSection.title')"
-    :description="t('tableSection.description')"
+    :title="t('newSection.title')"
+    :description="t('newSection.description')"
   >
-    <ui-view-table
-      :items="getClientsData"
-      :headers="newTableHeaders"
-      key="id"
-    />
+  <ui-view-table
+    :items="newTableGetClientsData"
+    :headers="newTableHeaders"
+    key="id"
+  />
   </ui-editor-section>
 </template>

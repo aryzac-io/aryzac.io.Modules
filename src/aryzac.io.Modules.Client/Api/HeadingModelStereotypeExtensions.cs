@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static HeadingSettings GetHeadingSettings(this HeadingModel model)
         {
-            var stereotype = model.GetStereotype("Heading Settings");
+            var stereotype = model.GetStereotype("3fc958c7-8c35-42f6-8f40-388ad0494fbb");
             return stereotype != null ? new HeadingSettings(stereotype) : null;
         }
 
 
         public static bool HasHeadingSettings(this HeadingModel model)
         {
-            return model.HasStereotype("Heading Settings");
+            return model.HasStereotype("3fc958c7-8c35-42f6-8f40-388ad0494fbb");
         }
 
         public static bool TryGetHeadingSettings(this HeadingModel model, out HeadingSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new HeadingSettings(model.GetStereotype("Heading Settings"));
+            stereotype = new HeadingSettings(model.GetStereotype("3fc958c7-8c35-42f6-8f40-388ad0494fbb"));
             return true;
         }
 

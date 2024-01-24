@@ -12,14 +12,14 @@ using Intent.RoslynWeaver.Attributes;
 namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
-    public class ComponentQueryModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
+    public class ComponentModelModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
-        public const string SpecializationType = "Component Query";
-        public const string SpecializationTypeId = "bfacaee7-4850-4353-bb99-6b52b81fc804";
+        public const string SpecializationType = "Component Model";
+        public const string SpecializationTypeId = "5dd49ba4-69de-4298-b4b6-8bc717f03316";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
-        public ComponentQueryModel(IElement element, string requiredType = SpecializationType)
+        public ComponentModelModel(IElement element, string requiredType = SpecializationType)
         {
             if (!requiredType.Equals(element.SpecializationType, StringComparison.InvariantCultureIgnoreCase))
             {
@@ -36,22 +36,19 @@ namespace Aryzac.IO.Modules.Client.Api
 
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
 
-        public ITypeReference TypeReference => _element.TypeReference;
-
-
-        public bool IsMapped => _element.IsMapped;
-
-        public IElementMapping Mapping => _element.MappedElement;
-
-
         public IElement InternalElement => _element;
+
+        public IList<ComponentModelFieldModel> Properties => _element.ChildElements
+            .GetElementsOfType(ComponentModelFieldModel.SpecializationTypeId)
+            .Select(x => new ComponentModelFieldModel(x))
+            .ToList();
 
         public override string ToString()
         {
             return _element.ToString();
         }
 
-        public bool Equals(ComponentQueryModel other)
+        public bool Equals(ComponentModelModel other)
         {
             return Equals(_element, other?._element);
         }
@@ -61,7 +58,7 @@ namespace Aryzac.IO.Modules.Client.Api
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((ComponentQueryModel)obj);
+            return Equals((ComponentModelModel)obj);
         }
 
         public override int GetHashCode()
@@ -71,27 +68,17 @@ namespace Aryzac.IO.Modules.Client.Api
     }
 
     [IntentManaged(Mode.Fully)]
-    public static class ComponentQueryModelExtensions
+    public static class ComponentModelModelExtensions
     {
 
-        public static bool IsComponentQueryModel(this ICanBeReferencedType type)
+        public static bool IsComponentModelModel(this ICanBeReferencedType type)
         {
-            return type != null && type is IElement element && element.SpecializationTypeId == ComponentQueryModel.SpecializationTypeId;
+            return type != null && type is IElement element && element.SpecializationTypeId == ComponentModelModel.SpecializationTypeId;
         }
 
-        public static ComponentQueryModel AsComponentQueryModel(this ICanBeReferencedType type)
+        public static ComponentModelModel AsComponentModelModel(this ICanBeReferencedType type)
         {
-            return type.IsComponentQueryModel() ? new ComponentQueryModel((IElement)type) : null;
-        }
-
-        public static bool HasQueryMappingMapping(this ComponentQueryModel type)
-        {
-            return type.Mapping?.MappingSettingsId == "6d2115a7-eb3d-437c-9b6b-22525284fe44";
-        }
-
-        public static IElementMapping GetQueryMappingMapping(this ComponentQueryModel type)
-        {
-            return type.HasQueryMappingMapping() ? type.Mapping : null;
+            return type.IsComponentModelModel() ? new ComponentModelModel((IElement)type) : null;
         }
     }
 }

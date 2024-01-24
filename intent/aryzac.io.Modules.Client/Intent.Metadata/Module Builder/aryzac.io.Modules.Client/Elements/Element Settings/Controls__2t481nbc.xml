@@ -53,6 +53,7 @@
       <name>[context menu]</name>
       <display>[context menu]</display>
       <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>adccab28-fba1-4462-b161-a112aa29327d</parentFolderId>
@@ -60,7 +61,46 @@
       <packageName>Aryzac.IO.Modules.Client</packageName>
       <stereotypes />
       <metadata />
-      <childElements />
+      <childElements>
+        <childElement id="0839715c-d9a2-40dd-8ff4-c99232355a56" type="Mapping Option" typeId="00a1eb98-1fc4-4421-9d1c-8733f6bc2111">
+          <name>NewMappingOption</name>
+          <display>NewMappingOption: Map Query To Component</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="be42cd9d-3cae-4335-b23a-07b4ad053a98">
+            <typeId>f2df4b46-97c8-4115-8e45-7f8b9be5cf1c</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client</typePackageName>
+            <typePackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>335ceae0-ee7a-47b5-9075-19f410702aed</parentFolderId>
+          <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+          <packageName>Aryzac.IO.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="6c209f86-87f6-4fc3-802e-e6e553dfbeca" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="69d929bc-dcd7-4c2d-aabc-6f05ab6d83b3" display="Shortcut" isActive="true" />
+                <property name="36d5eeba-2483-450e-b51b-b156836f6d3a" display="Shortcut (macOS)" isActive="true" />
+                <property name="08fac0bc-4cf9-45ec-8362-e452a185efee" display="Type Order" isActive="true" />
+                <property name="5e97216b-6c99-4fa2-971d-575a27f212cc" display="Icon" isActive="true" />
+                <property name="63039244-aaad-49eb-84bf-0396a6dd0fe9" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
     </childElement>
   </childElements>
 </class>

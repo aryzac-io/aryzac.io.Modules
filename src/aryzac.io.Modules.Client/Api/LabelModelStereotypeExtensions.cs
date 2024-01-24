@@ -14,14 +14,14 @@ namespace Aryzac.IO.Modules.Client.Api
     {
         public static LabelSettings GetLabelSettings(this LabelModel model)
         {
-            var stereotype = model.GetStereotype("Label Settings");
+            var stereotype = model.GetStereotype("ea62dc6f-ed7c-46c5-bcd9-c717d616f590");
             return stereotype != null ? new LabelSettings(stereotype) : null;
         }
 
 
         public static bool HasLabelSettings(this LabelModel model)
         {
-            return model.HasStereotype("Label Settings");
+            return model.HasStereotype("ea62dc6f-ed7c-46c5-bcd9-c717d616f590");
         }
 
         public static bool TryGetLabelSettings(this LabelModel model, out LabelSettings stereotype)
@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Api
                 return false;
             }
 
-            stereotype = new LabelSettings(model.GetStereotype("Label Settings"));
+            stereotype = new LabelSettings(model.GetStereotype("ea62dc6f-ed7c-46c5-bcd9-c717d616f590"));
             return true;
         }
 
@@ -50,11 +50,6 @@ namespace Aryzac.IO.Modules.Client.Api
             public string Label()
             {
                 return _stereotype.GetProperty<string>("Label");
-            }
-
-            public string Body()
-            {
-                return _stereotype.GetProperty<string>("Body");
             }
 
         }

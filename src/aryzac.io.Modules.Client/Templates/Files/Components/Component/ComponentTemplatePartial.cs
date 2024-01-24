@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 using Aryzac.IO.Modules.Client.Api;
 using Intent.Engine;
 using Intent.Metadata.Models;
@@ -27,17 +28,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public ComponentTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
             Types = new TypeScriptTypeResolver();
-
-            foreach (var component in Model.View.InternalElement.ChildElements)
-            {
-                if (component.IsHeadingModel()) // Heading
-                {
-                    foreach (var attribute in Model.View.Heading.Attributes)
-                    {
-                        attribute.TryGetAttributeSettings(out var attributeSettings);
-                    }
-                }
-            }
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
@@ -49,5 +39,68 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             );
         }
 
+        public List<ComponentQueryModel> Queries => Model.InternalElement.ChildElements
+            .GetElementsOfType(ComponentQueryModel.SpecializationTypeId, true)
+            .Select(x => new ComponentQueryModel(x))
+            .ToList();
+
+        public List<ComponentCommandModel> Commands => Model.InternalElement.ChildElements
+            .GetElementsOfType(ComponentCommandModel.SpecializationTypeId, true)
+            .Select(x => new ComponentCommandModel(x))
+            .ToList();
+
+        public List<ServiceProxyModel> CommandsAndQueries
+        {
+            get
+            {
+                var commands = Model.InternalElement.ChildElements
+                    .GetElementsOfType(ComponentCommandModel.SpecializationTypeId, true)
+                    .Select(x => new ComponentCommandModel(x));
+
+                var queries = Model.InternalElement.ChildElements
+                    .GetElementsOfType(ComponentQueryModel.SpecializationTypeId, true)
+                    .Select(x => new ComponentQueryModel(x));
+
+                var response = new List<ServiceProxyModel>();
+                if (commands is not null)
+                    response.AddRange(commands.Select(m => m.Mapping.Element.AsOperationModel().ParentService));
+                if (queries is not null)
+                    response.AddRange(queries.Select(m => m.Mapping.Element.AsOperationModel().ParentService));
+
+                return response.Distinct().ToList();
+            }
+        }
+
+        public string GetMappedColumnFieldName(ColumnModel column)
+        {
+            foreach (var mapping in column.InternalElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.MappingType == "Map From DTO-Field" && mappedEnd.TargetElement.Id == column.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return column.Name.ToCamelCase();
+        }
+
+        public string GetMappedPropertyName(ComponentModelFieldModel field)
+        {
+            foreach (var mapping in field.InternalElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == field.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
+        }
     }
 }
