@@ -444,7 +444,9 @@ if (Model.View != null)
 		if (control.IsTextboxModel()) 
 		{
 #>
-     <ui-input-textbox :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+     <ui-input-textbox 
+       v-model="model.<#= GetMappedModelName(control) #>" 
+       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -452,7 +454,8 @@ if (Model.View != null)
 		if (control.IsTextAreaModel()) 
 		{
 #>
-     <ui-input-text-area :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+     <ui-input-text-area 
+       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -460,7 +463,9 @@ if (Model.View != null)
 		if (control.IsCheckboxModel()) 
 		{
 #>
-     <ui-input-checkbox :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" :description="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.description')" />
+     <ui-input-checkbox 
+       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" 
+       :description="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.description')" />
 <#
         }
 #>
@@ -468,7 +473,8 @@ if (Model.View != null)
 		if (control.IsLabelModel()) 
 		{
 #>
-     <ui-input-label :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+     <ui-input-label 
+       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -476,7 +482,8 @@ if (Model.View != null)
 		if (control.IsRadioButtonModel()) 
 		{
 #>
-     <ui-input-radio-button :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+     <ui-input-radio-button 
+       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -484,7 +491,8 @@ if (Model.View != null)
 		if (control.IsSelectModel()) 
 		{
 #>
-     <ui-input-select :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+     <ui-input-select 
+       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
 #>

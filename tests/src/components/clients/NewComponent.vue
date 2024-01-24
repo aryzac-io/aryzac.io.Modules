@@ -5,33 +5,33 @@ en:
   newSection:
     title: NewSection
     description: ''
-    newTextbox:
-      label: NewTextbox
+    firstName:
+      label: firstName
   newSection:
     title: NewSection
     description: ''
-    newTextbox:
-      label: NewTextbox
-    newCheckbox:
-      label: NewCheckbox
-      description: ''
+    lastName:
+      label: lastName
+    otherNames:
+      label: otherNames
     
 </i18n>
 
 <script setup lang="ts">
-import type { ClientDto } from "~/structs/dto/clients/client.dto";
+import type { ClientDto } from '~/structs/dto/clients/client.dto';
 
 const { t } = useI18n();
 
-const props = defineProps<{}>();
-
+const props = defineProps<{
+}>();
+	
 const clientsServiceProxy = useClientsServiceProxy();
 
 // Queries
-const {
-  data: newComponentGetClientByIdData,
-  pending: newComponentGetClientByIdPending,
-  error: newComponentGetClientByIdError,
+const { 
+  data: newComponentGetClientByIdData, 
+  pending: newComponentGetClientByIdPending, 
+  error: newComponentGetClientByIdError 
 } = await clientsServiceProxy.getClientById(props.id);
 
 // Model
@@ -53,11 +53,15 @@ watchEffect(async () => {
     model.name = newComponentGetClientByIdData.value.firstName;
     model.otherNames = newComponentGetClientByIdData.value.otherNames;
   }
-});
+})
+
+
 
 // NewHeading
 
-const newHeadingAttributes = computed(() => []);
+const newHeadingAttributes = computed(() => [
+]
+);
 
 const newHeadingActions = computed(() => [
   {
@@ -71,11 +75,11 @@ const newHeadingActions = computed(() => [
 
 // NewSection
 
-// NewTextbox
+// firstName
 // NewSection
 
-// NewTextbox
-// NewCheckbox
+// lastName
+// otherNames
 </script>
 
 <template>
@@ -88,16 +92,19 @@ const newHeadingActions = computed(() => [
     :title="t('newSection.title')"
     :description="t('newSection.description')"
   >
-    <ui-input-textbox :label="t('newSection.newTextbox.label')" />
+     <ui-input-textbox 
+       v-model="model.firstName" 
+       :label="t('newSection.firstName.label')" />
   </ui-editor-section>
   <ui-editor-section
     :title="t('newSection.title')"
     :description="t('newSection.description')"
   >
-    <ui-input-textbox :label="t('newSection.newTextbox.label')" />
-    <ui-input-checkbox
-      :label="t('newSection.newCheckbox.label')"
-      :description="t('newSection.newCheckbox.description')"
-    />
+     <ui-input-textbox 
+       v-model="model.lastName" 
+       :label="t('newSection.lastName.label')" />
+     <ui-input-textbox 
+       v-model="model.otherNames" 
+       :label="t('newSection.otherNames.label')" />
   </ui-editor-section>
 </template>

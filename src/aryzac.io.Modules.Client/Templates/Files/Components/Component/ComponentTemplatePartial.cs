@@ -77,7 +77,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             {
                 foreach (var mappedEnd in mapping.MappedEnds)
                 {
-                    if (mappedEnd.MappingType == "Map From DTO-Field" && mappedEnd.TargetElement.Id == column.Id)
+                    if (mappedEnd.TargetElement.Id == column.Id)
                     {
                         return mappedEnd.SourceElement.Name.ToCamelCase();
                     }
@@ -101,6 +101,22 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             }
 
             return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedModelName(IElement element)
+        {
+            foreach (var mapping in element.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == element.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return element.Name.ToCamelCase();
         }
     }
 }

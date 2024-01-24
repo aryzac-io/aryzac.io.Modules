@@ -372,7 +372,11 @@
                 </option>
               </creationOptions>
               <scriptOptions />
-              <mappingOptions />
+              <mappingOptions>
+                <option mappingType="Map Model To View" mappingTypeId="19b067db-84b8-4609-b772-243a0ced7f01">
+                  <text>Map Model To View</text>
+                </option>
+              </mappingOptions>
               <mappingSettings />
               <childElementSettings />
             </childElementSetting>
@@ -420,7 +424,7 @@
                   <allowGenericTypes>false</allowGenericTypes>
                   <allowMapping>false</allowMapping>
                   <allowSorting>true</allowSorting>
-                  <sortChildren>by-type-then-by-name</sortChildren>
+                  <sortChildren>manually</sortChildren>
                   <allowFindInView>false</allowFindInView>
                   <allowTypeReference>true</allowTypeReference>
                   <allowConvertToType p10:nil="true" xmlns:p10="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1374,6 +1378,143 @@
   <associationSettings />
   <associationExtensions />
   <mappingSettings>
+    <mappingSetting type="Map Model To View" typeId="19b067db-84b8-4609-b772-243a0ced7f01">
+      <title>Map Model To View</title>
+      <sourceRootElementFunction>return element.getParent().id</sourceRootElementFunction>
+      <sourceMappings>
+        <mapping id="0b7e550b-e402-4986-8b97-65ceb1c55823" name="Model Field" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="caa6c983-5f69-4ea7-ae59-4fdb5a6efb77" name="Component" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="bf736b7b-56f8-42f4-bc8f-588392b63cfe" name="Model" type="Component Model" typeId="5dd49ba4-69de-4298-b4b6-8bc717f03316">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return false;</isMappableFunction>
+              <isTraversable>true</isTraversable>
+              <traversableTypes>
+                <mappingId>0b7e550b-e402-4986-8b97-65ceb1c55823</mappingId>
+              </traversableTypes>
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </sourceMappings>
+      <targetMappings>
+        <mapping id="2d042d28-3146-437b-b93e-b7eac46b8cf9" name="View" type="Component View" typeId="8115da3e-0465-4d16-8a37-f85eec26a127">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>true</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="374b708c-c098-48e9-9e15-9b04dffb0558" name="Section" type="Section" typeId="359ec87c-144f-4be1-b3d1-fe182093bb3e">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return false;</isMappableFunction>
+              <isTraversable>true</isTraversable>
+              <traversableTypes>
+                <mappingId>ce6043ba-5bdc-4bab-ae1b-8364a6c22c0b</mappingId>
+                <mappingId>7402b14b-702d-4586-9332-498c4e19172f</mappingId>
+                <mappingId>b60b5a19-8c76-46bf-a6ae-0ed6de018f61</mappingId>
+                <mappingId>e518c964-e7c6-4e11-a5b8-c535fd0647b8</mappingId>
+                <mappingId>c68fa9c0-a06d-4697-b2b0-6bb86ee49aab</mappingId>
+                <mappingId>d690d89f-1c8e-4acb-82c4-6d8f48b31a7a</mappingId>
+              </traversableTypes>
+              <canBeModified>true</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+        <mapping id="ce6043ba-5bdc-4bab-ae1b-8364a6c22c0b" name="Textbox" type="Textbox" typeId="db535835-3d01-421d-9f29-206732782bfe">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>true</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="7402b14b-702d-4586-9332-498c4e19172f" name="Checkbox" type="Checkbox" typeId="417dc03e-580b-450d-9d70-8a2a457d2a48">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>true</isTraversable>
+          <traversableTypes>
+            <mappingId>2d042d28-3146-437b-b93e-b7eac46b8cf9</mappingId>
+          </traversableTypes>
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="b60b5a19-8c76-46bf-a6ae-0ed6de018f61" name="Label" type="Label" typeId="9ca4af5b-3e0c-45dd-80d5-13144986df9c">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="e518c964-e7c6-4e11-a5b8-c535fd0647b8" name="Radio Button" type="Radio Button" typeId="ce51a148-b367-488b-8659-3e357e55419b">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="c68fa9c0-a06d-4697-b2b0-6bb86ee49aab" name="Text Area" type="Text Area" typeId="9fb5d59b-af35-4484-b7f2-410a30365bbf">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="d690d89f-1c8e-4acb-82c4-6d8f48b31a7a" name="Select" type="Select" typeId="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+      </targetMappings>
+      <mappingTypes>
+        <mappingType type="Map from Model Field" typeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+          <represents>data</represents>
+          <sources>
+            <source id="0b7e550b-e402-4986-8b97-65ceb1c55823" name="Model Field" />
+          </sources>
+          <targets>
+            <target id="ce6043ba-5bdc-4bab-ae1b-8364a6c22c0b" name="Textbox" />
+            <target id="7402b14b-702d-4586-9332-498c4e19172f" name="Checkbox" />
+            <target id="b60b5a19-8c76-46bf-a6ae-0ed6de018f61" name="Label" />
+            <target id="e518c964-e7c6-4e11-a5b8-c535fd0647b8" name="Radio Button" />
+            <target id="c68fa9c0-a06d-4697-b2b0-6bb86ee49aab" name="Text Area" />
+            <target id="d690d89f-1c8e-4acb-82c4-6d8f48b31a7a" name="Select" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+      </mappingTypes>
+    </mappingSetting>
     <mappingSetting type="Map Query To Component" typeId="f2df4b46-97c8-4115-8e45-7f8b9be5cf1c">
       <title>Map Query To Component</title>
       <sourceMappings>
