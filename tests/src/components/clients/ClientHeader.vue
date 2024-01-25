@@ -14,6 +14,7 @@ en:
 
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
+import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
 
 const { t } = useI18n();
 
@@ -53,7 +54,10 @@ watchEffect(async () => {
   }
 })
 
-
+// Commands
+const saveChangeNameClient = async (id: string, command: ChangeNameClientCommand) => {
+	const changeNameClient = await clientsServiceProxy.changeNameClient(id, command);
+};
 
 // NewSection
 

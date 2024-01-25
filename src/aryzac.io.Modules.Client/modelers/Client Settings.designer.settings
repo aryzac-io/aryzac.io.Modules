@@ -135,7 +135,7 @@
               <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDE0IDEuNTZMOC4zMTIgMWgzLjI5NGwuODE4IDEuNTc1TDEwLjIzNiA2aDEuNzgxbC43MiAxLjY5NUw1LjYxOCAxNWwtMS42MDItMS4xNjNMNi4xMTkgMTBINC44OThMNCA4LjU2ek03Ljc4IDlMNC45IDE0LjMwNUwxMi4wMTggN0g4LjMxMmwzLjI5NC01SDguMzEyTDQuODk4IDl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" />
               <specializationType>Component Command</specializationType>
               <specializationTypeId>52a388d5-ebcb-44d6-bbb7-8608597a06a8</specializationTypeId>
-              <defaultName>[commannd]</defaultName>
+              <defaultName>[command]</defaultName>
               <allowMultiple>false</allowMultiple>
             </option>
             <option type="element">
@@ -269,6 +269,70 @@
                   </mappings>
                 </mappingSetting>
               </mappingSettings>
+              <macros>
+                <macro trigger="on-mapped">
+                  <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+function GetParameters(targetService) {
+    let httpSettings = targetService.getStereotype("Http Settings");
+    var isForCqrs = targetService.specialization == "Query" || targetService.specialization == "Command";
+    var verbAllowsBody = ["PUT", "PATCH", "POST"].some(x =&gt; x == httpSettings.getProperty("Verb").getValue());
+    var requiresBody = false;
+    let result = [];
+    targetService.getChildren("Parameter").concat(targetService.getChildren("DTO-Field")).forEach(childElement =&gt; {
+        var parameterSettings = childElement.getStereotype("d01df110-1208-4af8-a913-92a49d219552"); // "Paremeter Settings"
+        var routeContainsParameter = httpSettings.getProperty("Route").getValue().toString().toLowerCase().indexOf(`{${childElement.getName().toLowerCase()}}`) != -1;
+        if (isForCqrs &amp;&amp; !parameterSettings &amp;&amp; !routeContainsParameter &amp;&amp; verbAllowsBody) {
+            requiresBody = true;
+            return;
+        }
+        result.push({
+            id: childElement.id,
+            name: toCamelCase(childElement.getName()),
+            typeId: childElement.typeReference.getTypeId(),
+            isNullable: childElement.typeReference.getIsNullable(),
+            isCollection: childElement.typeReference.getIsCollection(),
+        });
+    });
+    if (isForCqrs &amp;&amp; requiresBody) {
+        result.push({
+            id: targetService.id,
+            name: targetService.specialization.toLowerCase(),
+            typeId: targetService.id,
+            isNullable: false,
+            isCollection: false,
+        });
+    }
+    return result;
+}
+function execute(command) {
+    let targetOperation = command.getMapping().getElement();
+    let targetService = targetOperation.getMapping().getElement();
+    let params = GetParameters(targetService);
+    params.forEach((param, index) =&gt; {
+        let existing = command.getChildren("Parameter").find(x =&gt; x.getMetadata("endpoint-input-id") == param.id);
+        if (!existing) {
+            existing = createElement("Parameter", param.name, command.id);
+        }
+        existing.setName(param.name);
+        existing.setOrder(index);
+        existing.typeReference.setType(param.typeId);
+        existing.typeReference.setIsCollection(param.isCollection);
+        existing.typeReference.setIsNullable(param.isNullable);
+        existing.setMetadata("endpoint-input-id", param.id);
+    });
+    command.getChildren("Parameter")
+        .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata("endpoint-input-id")))
+}
+/**
+ * Used by Intent.Modules\Modules\Intent.Modelers.Types.ServiceProxies
+ *
+ * Source code here:
+ * https://github.com/IntentArchitect/Intent.Modules/blob/development/DesignerMacros/src/service-proxies/manage-parameters/service-proxies-manage-parameters.ts
+ */
+execute(element);
+</script>
+                </macro>
+              </macros>
               <childElementSettings />
             </childElementSetting>
             <childElementSetting type="Component Command" typeId="52a388d5-ebcb-44d6-bbb7-8608597a06a8">
@@ -298,32 +362,108 @@
                   <targetTypeOptions>
                     <option specializationType="762f076f-4d28-4d64-8aa0-92d41d1c0ac3" displayText="Service Proxies" />
                   </targetTypeOptions>
-                  <mapFrom>children</mapFrom>
+                  <mapFrom>root</mapFrom>
                   <mappings>
-                    <mapping id="fe0623f2-a8f1-48c3-939b-b1b8103bd8d0">
-                      <criteria specializationType="Service Proxy">
+                    <mapping id="c3aa8b13-41cb-432e-874a-a93d87a3355b">
+                      <criteria specializationType="Service Proxies">
                         <hasTypeReference p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
                         <isCollection p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
-                        <hasChildren>true</hasChildren>
+                        <hasChildren p13:nil="true" xmlns:p13="http://www.w3.org/2001/XMLSchema-instance" />
                       </criteria>
                       <mapTo childMappingMode="traverse" />
                       <behaviour autoSelectChildren="false" />
                       <childMappings>
-                        <mapping id="1aae824a-b28b-44aa-b96e-35a1cf274c90">
-                          <criteria specializationType="Operation">
+                        <mapping id="bd048b60-a948-4250-8bc0-42edeab682b9">
+                          <criteria specializationType="Service Proxy">
                             <hasTypeReference p15:nil="true" xmlns:p15="http://www.w3.org/2001/XMLSchema-instance" />
                             <isCollection p15:nil="true" xmlns:p15="http://www.w3.org/2001/XMLSchema-instance" />
                             <hasChildren p15:nil="true" xmlns:p15="http://www.w3.org/2001/XMLSchema-instance" />
                           </criteria>
-                          <mapTo specializationType="Component Command" childMappingMode="map-to-child" />
+                          <mapTo childMappingMode="traverse" />
                           <behaviour autoSelectChildren="false" />
-                          <childMappings />
+                          <childMappings>
+                            <mapping id="0c98551e-aa9e-4716-89a3-648488b78b63">
+                              <criteria specializationType="Operation">
+                                <hasTypeReference p17:nil="true" xmlns:p17="http://www.w3.org/2001/XMLSchema-instance" />
+                                <isCollection p17:nil="true" xmlns:p17="http://www.w3.org/2001/XMLSchema-instance" />
+                                <hasChildren p17:nil="true" xmlns:p17="http://www.w3.org/2001/XMLSchema-instance" />
+                              </criteria>
+                              <mapTo specializationType="Component Command" childMappingMode="map-to-child" />
+                              <behaviour autoSelectChildren="false" />
+                              <childMappings />
+                            </mapping>
+                          </childMappings>
                         </mapping>
                       </childMappings>
                     </mapping>
                   </mappings>
                 </mappingSetting>
               </mappingSettings>
+              <macros>
+                <macro trigger="on-mapped">
+                  <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+function GetParameters(targetService) {
+    let httpSettings = targetService.getStereotype("Http Settings");
+    var isForCqrs = targetService.specialization == "Query" || targetService.specialization == "Command";
+    var verbAllowsBody = ["PUT", "PATCH", "POST"].some(x =&gt; x == httpSettings.getProperty("Verb").getValue());
+    var requiresBody = false;
+    let result = [];
+    targetService.getChildren("Parameter").concat(targetService.getChildren("DTO-Field")).forEach(childElement =&gt; {
+        var parameterSettings = childElement.getStereotype("d01df110-1208-4af8-a913-92a49d219552"); // "Paremeter Settings"
+        var routeContainsParameter = httpSettings.getProperty("Route").getValue().toString().toLowerCase().indexOf(`{${childElement.getName().toLowerCase()}}`) != -1;
+        if (isForCqrs &amp;&amp; !parameterSettings &amp;&amp; !routeContainsParameter &amp;&amp; verbAllowsBody) {
+            requiresBody = true;
+            return;
+        }
+        result.push({
+            id: childElement.id,
+            name: toCamelCase(childElement.getName()),
+            typeId: childElement.typeReference.getTypeId(),
+            isNullable: childElement.typeReference.getIsNullable(),
+            isCollection: childElement.typeReference.getIsCollection(),
+        });
+    });
+    if (isForCqrs &amp;&amp; requiresBody) {
+        result.push({
+            id: targetService.id,
+            name: targetService.specialization.toLowerCase(),
+            typeId: targetService.id,
+            isNullable: false,
+            isCollection: false,
+        });
+    }
+    return result;
+}
+function execute(command) {
+    let targetOperation = command.getMapping().getElement();
+    console.log(targetOperation.getName());
+    let targetService = targetOperation.getMapping().getElement();
+    let params = GetParameters(targetService);
+    params.forEach((param, index) =&gt; {
+        let existing = command.getChildren("Parameter").find(x =&gt; x.getMetadata("endpoint-input-id") == param.id);
+        if (!existing) {
+            existing = createElement("Parameter", param.name, command.id);
+        }
+        existing.setName(param.name);
+        existing.setOrder(index);
+        existing.typeReference.setType(param.typeId);
+        existing.typeReference.setIsCollection(param.isCollection);
+        existing.typeReference.setIsNullable(param.isNullable);
+        existing.setMetadata("endpoint-input-id", param.id);
+    });
+    command.getChildren("Parameter")
+        .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata("endpoint-input-id")))
+}
+/**
+ * Used by Intent.Modules\Modules\Intent.Modelers.Types.ServiceProxies
+ *
+ * Source code here:
+ * https://github.com/IntentArchitect/Intent.Modules/blob/development/DesignerMacros/src/service-proxies/manage-parameters/service-proxies-manage-parameters.ts
+ */
+execute(element);
+</script>
+                </macro>
+              </macros>
               <childElementSettings />
             </childElementSetting>
             <childElementSetting type="Component View" typeId="8115da3e-0465-4d16-8a37-f85eec26a127">

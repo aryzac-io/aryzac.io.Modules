@@ -455,6 +455,7 @@ if (Model.View != null)
 		{
 #>
      <ui-input-text-area 
+       v-model="model.<#= GetMappedModelName(control) #>" 
        :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
@@ -464,6 +465,7 @@ if (Model.View != null)
 		{
 #>
      <ui-input-checkbox 
+       v-model="model.<#= GetMappedModelName(control) #>" 
        :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" 
        :description="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.description')" />
 <#
@@ -474,6 +476,7 @@ if (Model.View != null)
 		{
 #>
      <ui-input-label 
+       v-model="model.<#= GetMappedModelName(control) #>" 
        :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
@@ -483,6 +486,7 @@ if (Model.View != null)
 		{
 #>
      <ui-input-radio-button 
+       v-model="model.<#= GetMappedModelName(control) #>" 
        :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }
@@ -492,6 +496,7 @@ if (Model.View != null)
 		{
 #>
      <ui-input-select 
+       v-model="model.<#= GetMappedModelName(control) #>" 
        :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }

@@ -19,7 +19,7 @@
         <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Disabled" isActive="true" />
         <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="false" />
         <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="false" />
-        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" isActive="false" />
+        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" value="[]" isActive="false" />
         <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="false" />
         <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="false" />
         <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="true" isActive="false" />
@@ -84,7 +84,7 @@
             <property name="39d623e0-b8c5-4d23-8d78-75a7e2fa0c9d" display="Option Source" value="Elements of Type" isActive="true" />
             <property name="5bed7f14-ebd8-4055-be29-3a2f8407eb5d" display="Lookup Element Function" isActive="false" />
             <property name="8e840576-890b-4f3a-8733-058c3a1d545f" display="Lookup Types" value="[&quot;762f076f-4d28-4d64-8aa0-92d41d1c0ac3&quot;]" isActive="true" />
-            <property name="53ea4519-611c-47ee-8be7-bffb616a52fd" display="Map From" value="Child Elements" isActive="true" />
+            <property name="53ea4519-611c-47ee-8be7-bffb616a52fd" display="Map From" value="Root Element" isActive="true" />
             <property name="02e7f455-ba13-4e99-ac6c-a46490980134" display="Auto-sync Type References" value="true" isActive="true" />
             <property name="d881ebc8-282a-4d04-91af-4aba9f040804" display="Symbol" isActive="true" />
             <property name="5ced3423-774f-427e-b93e-67b5a16bdf7d" display="Style" isActive="true" />
@@ -94,9 +94,9 @@
       </stereotypes>
       <metadata />
       <childElements>
-        <childElement id="fe0623f2-a8f1-48c3-939b-b1b8103bd8d0" type="Element Mapping" typeId="4a16943b-702c-4fb0-bfcc-2afd98b8814c">
+        <childElement id="c3aa8b13-41cb-432e-874a-a93d87a3355b" type="Element Mapping" typeId="4a16943b-702c-4fb0-bfcc-2afd98b8814c">
           <name>NewElementMapping</name>
-          <display>[mapping]: Service Proxy -&gt; [None] (Traverse)</display>
+          <display>[mapping]: Service Proxies -&gt; [None] (Traverse)</display>
           <isAbstract>false</isAbstract>
           <sort-children>by-type-then-by-name</sort-children>
           <genericTypes />
@@ -128,9 +128,9 @@
               <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
               <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
               <properties>
-                <property name="e71ee41d-362b-4fe3-8791-53f139726674" display="From Type" value="07d8d1a9-6b9f-4676-b7d3-8db06299e35c" isActive="true" />
+                <property name="e71ee41d-362b-4fe3-8791-53f139726674" display="From Type" value="762f076f-4d28-4d64-8aa0-92d41d1c0ac3" isActive="true" />
                 <property name="a272509a-3819-4631-b27c-a4680055efa4" display="Has Type-Reference" value="Not Applicable" isActive="true" />
-                <property name="315a6b58-efa4-421c-8345-1cde99ba7262" display="Has Children" value="Yes" isActive="true" />
+                <property name="315a6b58-efa4-421c-8345-1cde99ba7262" display="Has Children" value="Not Applicable" isActive="true" />
                 <property name="60dbe07e-26ee-4ffd-98c2-0d4f4ee29912" display="Is Collection" value="Not Applicable" isActive="true" />
                 <property name="72dba0b6-607b-4bc4-a511-ff480691aae1" display="Filter Function" isActive="true" />
               </properties>
@@ -138,13 +138,14 @@
           </stereotypes>
           <metadata />
           <childElements>
-            <childElement id="1aae824a-b28b-44aa-b96e-35a1cf274c90" type="Element Mapping" typeId="4a16943b-702c-4fb0-bfcc-2afd98b8814c">
+            <childElement id="bd048b60-a948-4250-8bc0-42edeab682b9" type="Element Mapping" typeId="4a16943b-702c-4fb0-bfcc-2afd98b8814c">
               <name>NewElementMapping</name>
-              <display>[mapping]: Operation -&gt; Component Command (Map to Type)</display>
+              <display>[mapping]: Service Proxy -&gt; [None] (Traverse)</display>
               <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
               <genericTypes />
               <isMapped>false</isMapped>
-              <parentFolderId>fe0623f2-a8f1-48c3-939b-b1b8103bd8d0</parentFolderId>
+              <parentFolderId>c3aa8b13-41cb-432e-874a-a93d87a3355b</parentFolderId>
               <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
               <packageName>Aryzac.IO.Modules.Client</packageName>
               <stereotypes>
@@ -161,8 +162,8 @@
                   <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
                   <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
                   <properties>
-                    <property name="d87242ea-697e-4ab6-b9f9-f48e9af2d3af" display="Child Mapping Mode" value="Map to Type" isActive="true" />
-                    <property name="0b8166de-1c91-41d3-ae3f-155687be6220" display="To Type" value="52a388d5-ebcb-44d6-bbb7-8608597a06a8" isActive="true" />
+                    <property name="d87242ea-697e-4ab6-b9f9-f48e9af2d3af" display="Child Mapping Mode" value="Traverse" isActive="true" />
+                    <property name="0b8166de-1c91-41d3-ae3f-155687be6220" display="To Type" isActive="true" />
                     <property name="f87c0289-fb95-46aa-a06d-3599e312324a" display="Use Mapping Settings" isActive="true" />
                   </properties>
                 </stereotype>
@@ -171,7 +172,7 @@
                   <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
                   <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
                   <properties>
-                    <property name="e71ee41d-362b-4fe3-8791-53f139726674" display="From Type" value="aee6811e-b2f6-4562-a8eb-502029f63bc8" isActive="true" />
+                    <property name="e71ee41d-362b-4fe3-8791-53f139726674" display="From Type" value="07d8d1a9-6b9f-4676-b7d3-8db06299e35c" isActive="true" />
                     <property name="a272509a-3819-4631-b27c-a4680055efa4" display="Has Type-Reference" value="Not Applicable" isActive="true" />
                     <property name="315a6b58-efa4-421c-8345-1cde99ba7262" display="Has Children" value="Not Applicable" isActive="true" />
                     <property name="60dbe07e-26ee-4ffd-98c2-0d4f4ee29912" display="Is Collection" value="Not Applicable" isActive="true" />
@@ -180,9 +181,102 @@
                 </stereotype>
               </stereotypes>
               <metadata />
-              <childElements />
+              <childElements>
+                <childElement id="0c98551e-aa9e-4716-89a3-648488b78b63" type="Element Mapping" typeId="4a16943b-702c-4fb0-bfcc-2afd98b8814c">
+                  <name>NewElementMapping</name>
+                  <display>[mapping]: Operation -&gt; Component Command (Map to Type)</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>bd048b60-a948-4250-8bc0-42edeab682b9</parentFolderId>
+                  <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+                  <packageName>Aryzac.IO.Modules.Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="47ec6487-1f69-4691-9c8c-031e2da08c07" name="Behaviour Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+                      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+                      <properties>
+                        <property name="c4b2b450-dc7a-4cdc-a526-1ec3eb2f921a" display="Auto-select Children" value="false" isActive="true" />
+                      </properties>
+                    </stereotype>
+                    <stereotype stereotypeDefinitionId="740ed66f-c70d-45b0-80d5-6f663da53ed5" name="Output Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+                      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+                      <properties>
+                        <property name="d87242ea-697e-4ab6-b9f9-f48e9af2d3af" display="Child Mapping Mode" value="Map to Type" isActive="true" />
+                        <property name="0b8166de-1c91-41d3-ae3f-155687be6220" display="To Type" value="52a388d5-ebcb-44d6-bbb7-8608597a06a8" isActive="true" />
+                        <property name="f87c0289-fb95-46aa-a06d-3599e312324a" display="Use Mapping Settings" isActive="true" />
+                      </properties>
+                    </stereotype>
+                    <stereotype stereotypeDefinitionId="c677f491-8290-47ee-9e98-4c26bc76b592" name="Criteria Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+                      <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+                      <properties>
+                        <property name="e71ee41d-362b-4fe3-8791-53f139726674" display="From Type" value="aee6811e-b2f6-4562-a8eb-502029f63bc8" isActive="true" />
+                        <property name="a272509a-3819-4631-b27c-a4680055efa4" display="Has Type-Reference" value="Not Applicable" isActive="true" />
+                        <property name="315a6b58-efa4-421c-8345-1cde99ba7262" display="Has Children" value="Not Applicable" isActive="true" />
+                        <property name="60dbe07e-26ee-4ffd-98c2-0d4f4ee29912" display="Is Collection" value="Not Applicable" isActive="true" />
+                        <property name="72dba0b6-607b-4bc4-a511-ff480691aae1" display="Filter Function" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
             </childElement>
           </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="aa6c7374-2bc3-4bb9-a9db-0864c9fe29cd" type="Element Event Settings" typeId="3c628ab0-2407-4fb0-8507-ddde986cff2e">
+      <name>NewElementEventSettings</name>
+      <display>[events]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>52a388d5-ebcb-44d6-bbb7-8608597a06a8</parentFolderId>
+      <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+      <packageName>Aryzac.IO.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="526d5e3b-c5f2-4f91-af11-0985eb9061b1" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
+          <name>On Mapped</name>
+          <display>On Mapped: Script</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="edfde568-10e2-43d9-8344-9d98358de4d5">
+            <typeId>043eee26-1591-42ac-9f2c-fc911b070eb1</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.ModuleBuilder</typePackageName>
+            <typePackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>aa6c7374-2bc3-4bb9-a9db-0864c9fe29cd</parentFolderId>
+          <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+          <packageName>Aryzac.IO.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="56bc0465-c1fe-4bca-9493-2a3ce88a4047" name="Script Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;function GetParameters(targetService) {&#xD;&#xA;    let httpSettings = targetService.getStereotype(&quot;Http Settings&quot;);&#xD;&#xA;    var isForCqrs = targetService.specialization == &quot;Query&quot; || targetService.specialization == &quot;Command&quot;;&#xD;&#xA;    var verbAllowsBody = [&quot;PUT&quot;, &quot;PATCH&quot;, &quot;POST&quot;].some(x =&gt; x == httpSettings.getProperty(&quot;Verb&quot;).getValue());&#xD;&#xA;    var requiresBody = false;&#xD;&#xA;    let result = [];&#xD;&#xA;    targetService.getChildren(&quot;Parameter&quot;).concat(targetService.getChildren(&quot;DTO-Field&quot;)).forEach(childElement =&gt; {&#xD;&#xA;        var parameterSettings = childElement.getStereotype(&quot;d01df110-1208-4af8-a913-92a49d219552&quot;); // &quot;Paremeter Settings&quot;&#xD;&#xA;        var routeContainsParameter = httpSettings.getProperty(&quot;Route&quot;).getValue().toString().toLowerCase().indexOf(`{${childElement.getName().toLowerCase()}}`) != -1;&#xD;&#xA;        if (isForCqrs &amp;&amp; !parameterSettings &amp;&amp; !routeContainsParameter &amp;&amp; verbAllowsBody) {&#xD;&#xA;            requiresBody = true;&#xD;&#xA;            return;&#xD;&#xA;        }&#xD;&#xA;        result.push({&#xD;&#xA;            id: childElement.id,&#xD;&#xA;            name: toCamelCase(childElement.getName()),&#xD;&#xA;            typeId: childElement.typeReference.getTypeId(),&#xD;&#xA;            isNullable: childElement.typeReference.getIsNullable(),&#xD;&#xA;            isCollection: childElement.typeReference.getIsCollection(),&#xD;&#xA;        });&#xD;&#xA;    });&#xD;&#xA;    if (isForCqrs &amp;&amp; requiresBody) {&#xD;&#xA;        result.push({&#xD;&#xA;            id: targetService.id,&#xD;&#xA;            name: targetService.specialization.toLowerCase(),&#xD;&#xA;            typeId: targetService.id,&#xD;&#xA;            isNullable: false,&#xD;&#xA;            isCollection: false,&#xD;&#xA;        });&#xD;&#xA;    }&#xD;&#xA;    return result;&#xD;&#xA;}&#xD;&#xA;function execute(command) {&#xD;&#xA;    let targetOperation = command.getMapping().getElement();&#xD;&#xA;    console.log(targetOperation.getName());&#xD;&#xA;    let targetService = targetOperation.getMapping().getElement();&#xD;&#xA;    let params = GetParameters(targetService);&#xD;&#xA;    params.forEach((param, index) =&gt; {&#xD;&#xA;        let existing = command.getChildren(&quot;Parameter&quot;).find(x =&gt; x.getMetadata(&quot;endpoint-input-id&quot;) == param.id);&#xD;&#xA;        if (!existing) {&#xD;&#xA;            existing = createElement(&quot;Parameter&quot;, param.name, command.id);&#xD;&#xA;        }&#xD;&#xA;        existing.setName(param.name);&#xD;&#xA;        existing.setOrder(index);&#xD;&#xA;        existing.typeReference.setType(param.typeId);&#xD;&#xA;        existing.typeReference.setIsCollection(param.isCollection);&#xD;&#xA;        existing.typeReference.setIsNullable(param.isNullable);&#xD;&#xA;        existing.setMetadata(&quot;endpoint-input-id&quot;, param.id);&#xD;&#xA;    });&#xD;&#xA;    command.getChildren(&quot;Parameter&quot;)&#xD;&#xA;        .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata(&quot;endpoint-input-id&quot;)))&#xD;&#xA;}&#xD;&#xA;/**&#xD;&#xA; * Used by Intent.Modules\Modules\Intent.Modelers.Types.ServiceProxies&#xD;&#xA; *&#xD;&#xA; * Source code here:&#xD;&#xA; * https://github.com/IntentArchitect/Intent.Modules/blob/development/DesignerMacros/src/service-proxies/manage-parameters/service-proxies-manage-parameters.ts&#xD;&#xA; */&#xD;&#xA;execute(element);&#xD;&#xA;" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
         </childElement>
       </childElements>
     </childElement>
