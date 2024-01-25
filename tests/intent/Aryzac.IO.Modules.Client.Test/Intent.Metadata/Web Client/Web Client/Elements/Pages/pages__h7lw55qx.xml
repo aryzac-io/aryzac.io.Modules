@@ -73,13 +73,13 @@
           <stereotypes />
           <metadata />
           <childElements>
-            <childElement id="06b664cf-76bf-466e-8352-9c227d29cb02" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+            <childElement id="527021d1-7768-4f47-a0b8-49b96f628566" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
               <name>NewPageComponent</name>
-              <display>NewPageComponent: ClientHeader</display>
+              <display>NewPageComponent: NewComponent2</display>
               <isAbstract>false</isAbstract>
               <genericTypes />
-              <typeReference id="f710d8d6-32f2-4814-a1c1-07af8f713cb1">
-                <typeId>4de35702-3fbc-44e5-bacd-2864ac8491d3</typeId>
+              <typeReference id="0c41ad0f-2cca-410b-9224-6e33673fbb14">
+                <typeId>58e352ed-9f4b-47a2-953b-07be6c7841f4</typeId>
                 <isNavigable>true</isNavigable>
                 <isNullable>false</isNullable>
                 <isCollection>false</isCollection>
@@ -97,13 +97,28 @@
               <metadata />
               <childElements />
             </childElement>
-            <childElement id="139ee89e-e9bf-4d80-981d-ebf48e933458" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
-              <name>NewPageComponent</name>
-              <display>NewPageComponent: ClientList</display>
+          </childElements>
+        </childElement>
+        <childElement id="10085637-4e3b-447a-90b2-0e8763fa7337" type="Page Folder" typeId="21b29545-9bd7-4cbd-85bb-3b548765031e">
+          <name>[id]</name>
+          <display>[id]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>907a2eb5-0054-404a-b347-bbbfbdbf85c0</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="292f0b5f-e872-4d71-a67d-a85a0561a3d2" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+              <name>edit</name>
+              <display>edit: default</display>
               <isAbstract>false</isAbstract>
               <genericTypes />
-              <typeReference id="52a4a4b5-e47c-4121-b430-dc7ef397f497">
-                <typeId>f8b4e1f8-39b0-43d9-a23c-a1ec10c2d00f</typeId>
+              <typeReference id="66b3f2e8-45eb-4288-8dcf-240e0da312bb">
+                <typeId>f16095c8-5ac2-47a9-923e-fe7a9cc54083</typeId>
                 <isNavigable>true</isNavigable>
                 <isNullable>false</isNullable>
                 <isCollection>false</isCollection>
@@ -114,7 +129,7 @@
                 <genericTypeParameters />
               </typeReference>
               <isMapped>false</isMapped>
-              <parentFolderId>a0006ff6-338b-4e43-8c78-e1fb09f08eab</parentFolderId>
+              <parentFolderId>10085637-4e3b-447a-90b2-0e8763fa7337</parentFolderId>
               <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
               <packageName>Web Client</packageName>
               <stereotypes />

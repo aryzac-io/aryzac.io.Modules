@@ -12,7 +12,7 @@ using Intent.RoslynWeaver.Attributes;
 namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
-    public class ComponentQueryModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
+    public class ComponentQueryModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
     {
         public const string SpecializationType = "Component Query";
         public const string SpecializationTypeId = "bfacaee7-4850-4353-bb99-6b52b81fc804";
@@ -35,8 +35,6 @@ namespace Aryzac.IO.Modules.Client.Api
         public string Comment => _element.Comment;
 
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
-
-        public ITypeReference TypeReference => _element.TypeReference;
 
 
         public bool IsMapped => _element.IsMapped;

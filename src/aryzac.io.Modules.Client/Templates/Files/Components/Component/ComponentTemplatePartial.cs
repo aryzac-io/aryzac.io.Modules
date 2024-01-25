@@ -28,6 +28,16 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public ComponentTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
             Types = new TypeScriptTypeResolver();
+
+            foreach (var command in Commands)
+            {
+                var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
+
+                foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType == "Command"))
+                {
+                    //var o = ((IElement)parameter.TypeReference.Element).ChildElements
+                }
+            }
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
@@ -90,6 +100,22 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public string GetMappedPropertyName(ComponentModelFieldModel field)
         {
             foreach (var mapping in field.InternalElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == field.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedTextboxName(TextboxModel field)
+        {
+            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
             {
                 foreach (var mappedEnd in mapping.MappedEnds)
                 {

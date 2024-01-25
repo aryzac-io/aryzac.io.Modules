@@ -204,25 +204,17 @@
               <allowSorting>true</allowSorting>
               <sortChildren>by-type-then-by-name</sortChildren>
               <allowFindInView>false</allowFindInView>
-              <allowTypeReference>true</allowTypeReference>
+              <allowTypeReference>false</allowTypeReference>
               <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
               <allowSetValue>false</allowSetValue>
-              <typeReferenceSetting>
-                <isRequired>true</isRequired>
-                <targetTypes>
-                  <type>DTO</type>
-                </targetTypes>
-                <allowIsNavigable>true</allowIsNavigable>
-                <allowIsNullable>true</allowIsNullable>
-                <allowIsCollection>true</allowIsCollection>
-                <isNavigableDefault>true</isNavigableDefault>
-                <isNullableDefault>false</isNullableDefault>
-                <isCollectionDefault>false</isCollectionDefault>
-              </typeReferenceSetting>
               <typeOrder />
               <creationOptions />
               <scriptOptions />
-              <mappingOptions />
+              <mappingOptions>
+                <option mappingType="Map Parameter To Query" mappingTypeId="c9b9ae43-67be-4cf0-93db-76f5d3a484b0">
+                  <text>Map Parameter To Query</text>
+                </option>
+              </mappingOptions>
               <mappingSettings>
                 <mappingSetting id="6d2115a7-eb3d-437c-9b6b-22525284fe44">
                   <name>Query Mapping</name>
@@ -322,6 +314,16 @@ function execute(command) {
     });
     command.getChildren("Parameter")
         .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata("endpoint-input-id")))
+
+    if (targetOperation.typeReference) {
+        let responseType = createElement("Parameter", "response-type", command.id)
+        responseType.setName("response-type");
+        responseType.setOrder(params.length);
+        responseType.typeReference.setType(targetOperation.typeReference.getTypeId());
+        responseType.typeReference.setIsCollection(targetOperation.typeReference.getIsCollection());
+        responseType.typeReference.setIsNullable(targetOperation.typeReference.getIsNullable());
+        responseType.setMetadata("response-type", responseType.id);
+    }
 }
 /**
  * Used by Intent.Modules\Modules\Intent.Modelers.Types.ServiceProxies
@@ -355,6 +357,9 @@ execute(element);
               <mappingOptions>
                 <option mappingType="Map Model To Command" mappingTypeId="66747a3d-2bbc-4800-a8a6-949cf20bd446">
                   <text>Map Model To Command</text>
+                </option>
+                <option mappingType="Map Parameter To Command" mappingTypeId="0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b">
+                  <text>Map Parameter To Command</text>
                 </option>
               </mappingOptions>
               <mappingSettings>
@@ -467,20 +472,20 @@ function execute(command) {
         existing.typeReference.setIsNullable(param.isNullable);
         existing.setMetadata("endpoint-input-id", param.id);
 
-        let fields = GetFields(existing);
+        // let fields = GetFields(existing);
 
-        fields.forEach((field, fieldIndex) =&gt; {
-            let existingField = existing.getChildren("Parameter").find(x =&gt; x.getMetadata("dto-field-id") == field.id);
-            if (!existingField) {
-                existingField = createElement("Parameter", field.name, existing.id);
-            }
-            existingField.setName(field.name);
-            existingField.setOrder(fieldIndex);
-            existingField.typeReference.setType(field.typeId);
-            existingField.typeReference.setIsCollection(field.isCollection);
-            existingField.typeReference.setIsNullable(field.isNullable);
-            existingField.setMetadata("dto-field-id", param.id);
-        });
+        // fields.forEach((field, fieldIndex) =&gt; {
+        //     let existingField = existing.getChildren("Parameter").find(x =&gt; x.getMetadata("dto-field-id") == field.id);
+        //     if (!existingField) {
+        //         existingField = createElement("Parameter", field.name, existing.id);
+        //     }
+        //     existingField.setName(field.name);
+        //     existingField.setOrder(fieldIndex);
+        //     existingField.typeReference.setType(field.typeId);
+        //     existingField.typeReference.setIsCollection(field.isCollection);
+        //     existingField.typeReference.setIsNullable(field.isNullable);
+        //     existingField.setMetadata("dto-field-id", param.id);
+        // });
     });
     command.getChildren("Parameter")
         .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata("endpoint-input-id")))
@@ -1591,29 +1596,41 @@ execute(element);
           <traversableTypes>
             <mappingId>48a46e87-18cf-4d91-a5ad-e23fd80bf35b</mappingId>
           </traversableTypes>
-          <canBeModified>true</canBeModified>
+          <canBeModified>false</canBeModified>
           <represents>data</represents>
           <childSettings>
             <childSetting id="48a46e87-18cf-4d91-a5ad-e23fd80bf35b" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
               <allowMultipleMappings>true</allowMultipleMappings>
               <isMappableFunction>return false;</isMappableFunction>
-              <isTraversable>false</isTraversable>
-              <traversableTypes />
+              <isTraversable>true</isTraversable>
+              <traversableTypes>
+                <mappingId>4e6523ff-c269-4229-aa37-fc4c9b598a3c</mappingId>
+              </traversableTypes>
               <canBeModified>true</canBeModified>
               <represents>data</represents>
-              <childSettings>
-                <childSetting id="3975ccee-e67a-4401-9fcd-24d8d9c4cc49" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
-                  <allowMultipleMappings>true</allowMultipleMappings>
-                  <isMappableFunction>return true;</isMappableFunction>
-                  <isTraversable>false</isTraversable>
-                  <traversableTypes />
-                  <canBeModified>true</canBeModified>
-                  <represents>data</represents>
-                  <childSettings />
-                </childSetting>
-              </childSettings>
+              <childSettings />
             </childSetting>
           </childSettings>
+        </mapping>
+        <mapping id="4e6523ff-c269-4229-aa37-fc4c9b598a3c" name="Command" type="Command" typeId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>true</isTraversable>
+          <traversableTypes>
+            <mappingId>8cdcdce8-19cb-4e6e-b094-741f621a81b5</mappingId>
+          </traversableTypes>
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="8cdcdce8-19cb-4e6e-b094-741f621a81b5" name="DTO-Field" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
         </mapping>
       </targetMappings>
       <mappingTypes>
@@ -1623,7 +1640,7 @@ execute(element);
             <source id="3fece084-dd77-4eed-825d-8225c3564357" name="Component Model Field" />
           </sources>
           <targets>
-            <target id="3975ccee-e67a-4401-9fcd-24d8d9c4cc49" name="Parameter" />
+            <target id="8cdcdce8-19cb-4e6e-b094-741f621a81b5" name="DTO-Field" />
           </targets>
           <allowAutoMap>true</allowAutoMap>
         </mappingType>
@@ -1766,6 +1783,122 @@ execute(element);
         </mappingType>
       </mappingTypes>
     </mappingSetting>
+    <mappingSetting type="Map Parameter To Command" typeId="0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b">
+      <title>Map Parameter To Command</title>
+      <sourceRootElementFunction>return element.getParent().id</sourceRootElementFunction>
+      <sourceMappings>
+        <mapping id="6d482237-56a9-4f4d-b104-1787c4feccf4" name="Component" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="eff7f4ea-bd31-4a1a-bd29-e0746a590208" name="Component Parameter" type="Component Parameter" typeId="44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>true</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </sourceMappings>
+      <targetMappings>
+        <mapping id="d6e79040-3a87-4842-be95-3ed8cf18a504" name="Component Command" type="Component Command" typeId="52a388d5-ebcb-44d6-bbb7-8608597a06a8">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>true</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="1d4d9ab2-02af-446f-b1fc-9411cec73d2c" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>true</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </targetMappings>
+      <mappingTypes>
+        <mappingType type="NewMappingType" typeId="01f59a33-4dfb-4f7c-826e-fc0f0766acb5">
+          <represents>data</represents>
+          <sources>
+            <source id="eff7f4ea-bd31-4a1a-bd29-e0746a590208" name="Component Parameter" />
+          </sources>
+          <targets>
+            <target id="1d4d9ab2-02af-446f-b1fc-9411cec73d2c" name="Parameter" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+      </mappingTypes>
+    </mappingSetting>
+    <mappingSetting type="Map Parameter To Query" typeId="c9b9ae43-67be-4cf0-93db-76f5d3a484b0">
+      <title>Map Parameter To Query</title>
+      <sourceRootElementFunction>return element.getParent().id</sourceRootElementFunction>
+      <sourceMappings>
+        <mapping id="edac4f99-2290-4c75-bb0f-f224ec126c07" name="Component" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="907890c0-1661-4be1-9e48-53a8635acd88" name="Component Parameter" type="Component Parameter" typeId="44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>true</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </sourceMappings>
+      <targetMappings>
+        <mapping id="bda6cf9b-0864-4ee1-9b49-081c26008d1d" name="Component Query" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>true</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="ae5c5782-309f-4135-91e3-df48aea80d50" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>true</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </targetMappings>
+      <mappingTypes>
+        <mappingType type="NewMappingType" typeId="ab0cab60-2ddb-4797-a228-e3e2c6bee4a9">
+          <represents>data</represents>
+          <sources>
+            <source id="907890c0-1661-4be1-9e48-53a8635acd88" name="Component Parameter" />
+          </sources>
+          <targets>
+            <target id="ae5c5782-309f-4135-91e3-df48aea80d50" name="Parameter" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+      </mappingTypes>
+    </mappingSetting>
     <mappingSetting type="Map Query To Component" typeId="f2df4b46-97c8-4115-8e45-7f8b9be5cf1c">
       <title>Map Query To Component</title>
       <sourceMappings>
@@ -1887,14 +2020,26 @@ execute(element);
           <childSettings>
             <childSetting id="632ad88b-9c38-473c-b819-0adff2a14c29" name="Component Query" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
               <allowMultipleMappings>true</allowMultipleMappings>
-              <isMappableFunction>return true;</isMappableFunction>
+              <isMappableFunction>return false;</isMappableFunction>
               <isTraversable>true</isTraversable>
               <traversableTypes>
-                <mappingId>bcc08d4b-e729-403f-9c2e-963846130107</mappingId>
+                <mappingId>39815c8e-4b67-4c0a-9167-bcd1072cfc67</mappingId>
               </traversableTypes>
               <canBeModified>false</canBeModified>
               <represents>data</represents>
-              <childSettings />
+              <childSettings>
+                <childSetting id="39815c8e-4b67-4c0a-9167-bcd1072cfc67" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                  <allowMultipleMappings>true</allowMultipleMappings>
+                  <isMappableFunction>return false;</isMappableFunction>
+                  <isTraversable>true</isTraversable>
+                  <traversableTypes>
+                    <mappingId>bcc08d4b-e729-403f-9c2e-963846130107</mappingId>
+                  </traversableTypes>
+                  <canBeModified>true</canBeModified>
+                  <represents>data</represents>
+                  <childSettings />
+                </childSetting>
+              </childSettings>
             </childSetting>
           </childSettings>
         </mapping>

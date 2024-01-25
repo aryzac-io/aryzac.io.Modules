@@ -16,14 +16,14 @@
       <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
       <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
       <properties>
-        <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Required" isActive="true" />
-        <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="true" />
-        <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="true" />
-        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" value="[&quot;fee0edca-4aa0-4f77-a524-6bbd84e78734&quot;]" isActive="true" />
-        <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="true" />
-        <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="true" />
-        <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="true" isActive="true" />
-        <property name="d04ec558-6f6a-462b-b16a-9da1d7b4e9db" display="Allow Collection" value="true" isActive="true" />
+        <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Disabled" isActive="true" />
+        <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="false" />
+        <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="false" />
+        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" value="[&quot;fee0edca-4aa0-4f77-a524-6bbd84e78734&quot;]" isActive="false" />
+        <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="false" />
+        <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="false" />
+        <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="true" isActive="false" />
+        <property name="d04ec558-6f6a-462b-b16a-9da1d7b4e9db" display="Allow Collection" value="true" isActive="false" />
       </properties>
     </stereotype>
     <stereotype stereotypeDefinitionId="f406222b-31a8-435e-80f6-6a08f9108649" name="Settings">
@@ -54,6 +54,7 @@
       <name>[context menu]</name>
       <display>[context menu]</display>
       <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>bfacaee7-4850-4353-bb99-6b52b81fc804</parentFolderId>
@@ -61,7 +62,46 @@
       <packageName>Aryzac.IO.Modules.Client</packageName>
       <stereotypes />
       <metadata />
-      <childElements />
+      <childElements>
+        <childElement id="92996dd4-e395-4cb2-9def-f0327188e412" type="Mapping Option" typeId="00a1eb98-1fc4-4421-9d1c-8733f6bc2111">
+          <name>Map Parameter To Query</name>
+          <display>Map Parameter To Query: Map Parameter To Query</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="32576489-859f-48de-94a1-fcb55d970c38">
+            <typeId>c9b9ae43-67be-4cf0-93db-76f5d3a484b0</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client</typePackageName>
+            <typePackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>68d1cbec-3f6a-48e5-b550-3b6d8ef744d9</parentFolderId>
+          <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+          <packageName>Aryzac.IO.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="6c209f86-87f6-4fc3-802e-e6e553dfbeca" name="Option Settings">
+              <comment />
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="69d929bc-dcd7-4c2d-aabc-6f05ab6d83b3" display="Shortcut" isActive="true" />
+                <property name="36d5eeba-2483-450e-b51b-b156836f6d3a" display="Shortcut (macOS)" isActive="true" />
+                <property name="08fac0bc-4cf9-45ec-8362-e452a185efee" display="Type Order" isActive="true" />
+                <property name="5e97216b-6c99-4fa2-971d-575a27f212cc" display="Icon" isActive="true" />
+                <property name="63039244-aaad-49eb-84bf-0396a6dd0fe9" display="Is Option Visible Function" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
     </childElement>
     <childElement id="6d2115a7-eb3d-437c-9b6b-22525284fe44" type="Mapping Projection Settings" typeId="178c2f55-9ca1-484d-be43-a91bdd5554dc">
       <name>Query Mapping</name>
@@ -271,7 +311,7 @@
               <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
               <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
               <properties>
-                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;function GetParameters(targetService) {&#xD;&#xA;    let httpSettings = targetService.getStereotype(&quot;Http Settings&quot;);&#xD;&#xA;    var isForCqrs = targetService.specialization == &quot;Query&quot; || targetService.specialization == &quot;Command&quot;;&#xD;&#xA;    var verbAllowsBody = [&quot;PUT&quot;, &quot;PATCH&quot;, &quot;POST&quot;].some(x =&gt; x == httpSettings.getProperty(&quot;Verb&quot;).getValue());&#xD;&#xA;    var requiresBody = false;&#xD;&#xA;    let result = [];&#xD;&#xA;    targetService.getChildren(&quot;Parameter&quot;).concat(targetService.getChildren(&quot;DTO-Field&quot;)).forEach(childElement =&gt; {&#xD;&#xA;        var parameterSettings = childElement.getStereotype(&quot;d01df110-1208-4af8-a913-92a49d219552&quot;); // &quot;Paremeter Settings&quot;&#xD;&#xA;        var routeContainsParameter = httpSettings.getProperty(&quot;Route&quot;).getValue().toString().toLowerCase().indexOf(`{${childElement.getName().toLowerCase()}}`) != -1;&#xD;&#xA;        if (isForCqrs &amp;&amp; !parameterSettings &amp;&amp; !routeContainsParameter &amp;&amp; verbAllowsBody) {&#xD;&#xA;            requiresBody = true;&#xD;&#xA;            return;&#xD;&#xA;        }&#xD;&#xA;        result.push({&#xD;&#xA;            id: childElement.id,&#xD;&#xA;            name: toCamelCase(childElement.getName()),&#xD;&#xA;            typeId: childElement.typeReference.getTypeId(),&#xD;&#xA;            isNullable: childElement.typeReference.getIsNullable(),&#xD;&#xA;            isCollection: childElement.typeReference.getIsCollection(),&#xD;&#xA;        });&#xD;&#xA;    });&#xD;&#xA;    if (isForCqrs &amp;&amp; requiresBody) {&#xD;&#xA;        result.push({&#xD;&#xA;            id: targetService.id,&#xD;&#xA;            name: targetService.specialization.toLowerCase(),&#xD;&#xA;            typeId: targetService.id,&#xD;&#xA;            isNullable: false,&#xD;&#xA;            isCollection: false,&#xD;&#xA;        });&#xD;&#xA;    }&#xD;&#xA;    return result;&#xD;&#xA;}&#xD;&#xA;function execute(command) {&#xD;&#xA;    let targetOperation = command.getMapping().getElement();&#xD;&#xA;    let targetService = targetOperation.getMapping().getElement();&#xD;&#xA;    let params = GetParameters(targetService);&#xD;&#xA;    params.forEach((param, index) =&gt; {&#xD;&#xA;        let existing = command.getChildren(&quot;Parameter&quot;).find(x =&gt; x.getMetadata(&quot;endpoint-input-id&quot;) == param.id);&#xD;&#xA;        if (!existing) {&#xD;&#xA;            existing = createElement(&quot;Parameter&quot;, param.name, command.id);&#xD;&#xA;        }&#xD;&#xA;        existing.setName(param.name);&#xD;&#xA;        existing.setOrder(index);&#xD;&#xA;        existing.typeReference.setType(param.typeId);&#xD;&#xA;        existing.typeReference.setIsCollection(param.isCollection);&#xD;&#xA;        existing.typeReference.setIsNullable(param.isNullable);&#xD;&#xA;        existing.setMetadata(&quot;endpoint-input-id&quot;, param.id);&#xD;&#xA;    });&#xD;&#xA;    command.getChildren(&quot;Parameter&quot;)&#xD;&#xA;        .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata(&quot;endpoint-input-id&quot;)))&#xD;&#xA;}&#xD;&#xA;/**&#xD;&#xA; * Used by Intent.Modules\Modules\Intent.Modelers.Types.ServiceProxies&#xD;&#xA; *&#xD;&#xA; * Source code here:&#xD;&#xA; * https://github.com/IntentArchitect/Intent.Modules/blob/development/DesignerMacros/src/service-proxies/manage-parameters/service-proxies-manage-parameters.ts&#xD;&#xA; */&#xD;&#xA;execute(element);&#xD;&#xA;" isActive="true" />
+                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;function GetParameters(targetService) {&#xD;&#xA;    let httpSettings = targetService.getStereotype(&quot;Http Settings&quot;);&#xD;&#xA;    var isForCqrs = targetService.specialization == &quot;Query&quot; || targetService.specialization == &quot;Command&quot;;&#xD;&#xA;    var verbAllowsBody = [&quot;PUT&quot;, &quot;PATCH&quot;, &quot;POST&quot;].some(x =&gt; x == httpSettings.getProperty(&quot;Verb&quot;).getValue());&#xD;&#xA;    var requiresBody = false;&#xD;&#xA;    let result = [];&#xD;&#xA;    targetService.getChildren(&quot;Parameter&quot;).concat(targetService.getChildren(&quot;DTO-Field&quot;)).forEach(childElement =&gt; {&#xD;&#xA;        var parameterSettings = childElement.getStereotype(&quot;d01df110-1208-4af8-a913-92a49d219552&quot;); // &quot;Paremeter Settings&quot;&#xD;&#xA;        var routeContainsParameter = httpSettings.getProperty(&quot;Route&quot;).getValue().toString().toLowerCase().indexOf(`{${childElement.getName().toLowerCase()}}`) != -1;&#xD;&#xA;        if (isForCqrs &amp;&amp; !parameterSettings &amp;&amp; !routeContainsParameter &amp;&amp; verbAllowsBody) {&#xD;&#xA;            requiresBody = true;&#xD;&#xA;            return;&#xD;&#xA;        }&#xD;&#xA;        result.push({&#xD;&#xA;            id: childElement.id,&#xD;&#xA;            name: toCamelCase(childElement.getName()),&#xD;&#xA;            typeId: childElement.typeReference.getTypeId(),&#xD;&#xA;            isNullable: childElement.typeReference.getIsNullable(),&#xD;&#xA;            isCollection: childElement.typeReference.getIsCollection(),&#xD;&#xA;        });&#xD;&#xA;    });&#xD;&#xA;    if (isForCqrs &amp;&amp; requiresBody) {&#xD;&#xA;        result.push({&#xD;&#xA;            id: targetService.id,&#xD;&#xA;            name: targetService.specialization.toLowerCase(),&#xD;&#xA;            typeId: targetService.id,&#xD;&#xA;            isNullable: false,&#xD;&#xA;            isCollection: false,&#xD;&#xA;        });&#xD;&#xA;    }&#xD;&#xA;    return result;&#xD;&#xA;}&#xD;&#xA;function execute(command) {&#xD;&#xA;    let targetOperation = command.getMapping().getElement();&#xD;&#xA;    let targetService = targetOperation.getMapping().getElement();&#xD;&#xA;    let params = GetParameters(targetService);&#xD;&#xA;    params.forEach((param, index) =&gt; {&#xD;&#xA;        let existing = command.getChildren(&quot;Parameter&quot;).find(x =&gt; x.getMetadata(&quot;endpoint-input-id&quot;) == param.id);&#xD;&#xA;        if (!existing) {&#xD;&#xA;            existing = createElement(&quot;Parameter&quot;, param.name, command.id);&#xD;&#xA;        }&#xD;&#xA;        existing.setName(param.name);&#xD;&#xA;        existing.setOrder(index);&#xD;&#xA;        existing.typeReference.setType(param.typeId);&#xD;&#xA;        existing.typeReference.setIsCollection(param.isCollection);&#xD;&#xA;        existing.typeReference.setIsNullable(param.isNullable);&#xD;&#xA;        existing.setMetadata(&quot;endpoint-input-id&quot;, param.id);&#xD;&#xA;    });&#xD;&#xA;    command.getChildren(&quot;Parameter&quot;)&#xD;&#xA;        .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata(&quot;endpoint-input-id&quot;)))&#xD;&#xA;&#xD;&#xA;    if (targetOperation.typeReference) {&#xD;&#xA;        let responseType = createElement(&quot;Parameter&quot;, &quot;response-type&quot;, command.id)&#xD;&#xA;        responseType.setName(&quot;response-type&quot;);&#xD;&#xA;        responseType.setOrder(params.length);&#xD;&#xA;        responseType.typeReference.setType(targetOperation.typeReference.getTypeId());&#xD;&#xA;        responseType.typeReference.setIsCollection(targetOperation.typeReference.getIsCollection());&#xD;&#xA;        responseType.typeReference.setIsNullable(targetOperation.typeReference.getIsNullable());&#xD;&#xA;        responseType.setMetadata(&quot;response-type&quot;, responseType.id);&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;/**&#xD;&#xA; * Used by Intent.Modules\Modules\Intent.Modelers.Types.ServiceProxies&#xD;&#xA; *&#xD;&#xA; * Source code here:&#xD;&#xA; * https://github.com/IntentArchitect/Intent.Modules/blob/development/DesignerMacros/src/service-proxies/manage-parameters/service-proxies-manage-parameters.ts&#xD;&#xA; */&#xD;&#xA;execute(element);&#xD;&#xA;" isActive="true" />
               </properties>
             </stereotype>
           </stereotypes>

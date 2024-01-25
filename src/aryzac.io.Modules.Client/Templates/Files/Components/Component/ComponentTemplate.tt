@@ -288,17 +288,35 @@ watchEffect(async () => {
   foreach (var command in Commands)
   {
 	var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
-#>const save<#= command.Mapping.Element.Name.ToPascalCase() #> = async (<#if (endpoint != null)
-	{
-	  foreach (var parameter in endpoint.Inputs)
+#>const save<#= command.Mapping.Element.Name.ToPascalCase() #> = async () => {
+
+<#
+	  foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType == "Command"))
 	  {
-	    #><#= parameter.Name.ToPascalCase().ToCamelCase() #>: <#= GetTypeName(parameter.TypeReference) #><#
-		if (endpoint.Inputs.Last() != parameter)
-		{
-		#>, <#
-		}
+#>
+  const command: <#= GetTypeName(parameter.TypeReference) #> = {
+<#  
+    foreach (var property in ((IElement)parameter.TypeReference.Element).ChildElements)
+    {
+#>
+    <#= property.Name.ToCamelCase() #>: model.<#= GetMappedModelName(property) #>,
+<#
+    }
+#>
+  };
+<#
 	  }
-	}#>) => {
+#>
+
+<#
+	  foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType != "Command"))
+	  {
+#>
+  const <#= parameter.Name.ToCamelCase() #>: <#= GetTypeName(parameter.TypeReference) #> = props.id;
+<#
+	  }
+#>
+
 	const <#= command.Mapping.Element.Name.ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToCamelCase() #>(<#
 
 	if (endpoint != null)
@@ -324,7 +342,7 @@ if (Model.View != null)
   foreach (var component in Model.View.InternalElement.ChildElements)
   {    
 #>
-// <#= component.Name #>
+// <#= component.Name #> Options
 
 <#   
     if (component.IsHeadingModel()) // Heading
@@ -363,11 +381,11 @@ const <#= Model.View.Heading.Name.ToCamelCase() #>Actions = computed(() => [
 
       foreach (var control in section.InternalElement.ChildElements)
 	  {
-#>
-// <#= control.Name #>
-<#
 		if (control.IsTableModel()) 
 		{
+#>
+// <#= control.Name #> Options
+<#
           var table = control.AsTableModel();
 #>const <#= table.Name.ToCamelCase() #>Headers = [
 <# 
@@ -391,7 +409,7 @@ foreach (var column in table.Columns)
     {
 #>
 
-// Table Options
+//<#= component.Name #> Options
 const <#= Model.View.Table.Name.ToCamelCase() #>Headers = [
 <# 
 foreach (var column in Model.View.Table.Columns)
@@ -445,7 +463,7 @@ if (Model.View != null)
 		{
 #>
      <ui-input-textbox 
-       v-model="model.<#= GetMappedModelName(control) #>" 
+       v-model="model.<#= GetMappedTextboxName(control.AsTextboxModel()) #>" 
        :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
 <#
         }

@@ -28,26 +28,10 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#4de35702-3fbc-44e5-bacd-2864ac8491d3</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#58e352ed-9f4b-47a2-953b-07be6c7841f4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/ClientHeader.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/ClientHeader.vue</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#f8b4e1f8-39b0-43d9-a23c-a1ec10c2d00f</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/ClientList.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/ClientList.vue</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#945418c8-e1ab-4aee-8e7d-33c11cdedbd6</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/NewComponent.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/NewComponent.vue</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/components/Clients/NewComponent2.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/NewComponent2.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -408,6 +392,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/pages/clients/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/clients/index.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#292f0b5f-e872-4d71-a67d-a85a0561a3d2</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/edit/[id]/clients/edit.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/edit/[id]/clients/edit.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
