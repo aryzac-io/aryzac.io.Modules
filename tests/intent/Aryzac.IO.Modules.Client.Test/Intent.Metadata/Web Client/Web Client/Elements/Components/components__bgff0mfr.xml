@@ -123,6 +123,82 @@
               <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
               <packageName>Web Client</packageName>
               <stereotypes />
+              <mappings>
+                <mapping type="Map Model To Command" typeId="66747a3d-2bbc-4800-a8a6-949cf20bd446">
+                  <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="4de35702-3fbc-44e5-bacd-2864ac8491d3" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[ClientHeader]" />
+                  <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="86d4c868-32ed-46d7-ad38-813219011ccd" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[[command]]" />
+                  <mappedEnds>
+                    <mappedEnd>
+                      <expression>{[model].Id}</expression>
+                      <path>
+                        <target id="86d4c868-32ed-46d7-ad38-813219011ccd" name="[command]" type="element" specialization="Component Command" />
+                        <target id="10c2735d-ac78-49ce-a6fb-9439f6b1fe38" name="command" type="element" specialization="Parameter" />
+                        <target id="0a74455c-336e-45da-8191-b6c770a20d47" name="id" type="element" specialization="Parameter" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].Id" mappingType="NewMappingType" mappingTypeId="1db2e70f-3bb4-470a-9979-9e53755158e0">
+                          <path>
+                            <target id="4de35702-3fbc-44e5-bacd-2864ac8491d3" name="ClientHeader" type="element" specialization="Component" />
+                            <target id="61ce11f4-833d-4e18-9253-6a0d35375d85" name="[model]" type="element" specialization="Component Model" />
+                            <target id="d30886ea-5ac9-4749-b524-98780805c2f7" name="Id" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].FirstName}</expression>
+                      <path>
+                        <target id="86d4c868-32ed-46d7-ad38-813219011ccd" name="[command]" type="element" specialization="Component Command" />
+                        <target id="10c2735d-ac78-49ce-a6fb-9439f6b1fe38" name="command" type="element" specialization="Parameter" />
+                        <target id="a6ca245d-3659-4efa-b97a-70f1e7bdccb1" name="firstName" type="element" specialization="Parameter" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].FirstName" mappingType="NewMappingType" mappingTypeId="1db2e70f-3bb4-470a-9979-9e53755158e0">
+                          <path>
+                            <target id="4de35702-3fbc-44e5-bacd-2864ac8491d3" name="ClientHeader" type="element" specialization="Component" />
+                            <target id="61ce11f4-833d-4e18-9253-6a0d35375d85" name="[model]" type="element" specialization="Component Model" />
+                            <target id="4facc526-4a88-405c-901e-6eb618f0fd89" name="FirstName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].LastName}</expression>
+                      <path>
+                        <target id="86d4c868-32ed-46d7-ad38-813219011ccd" name="[command]" type="element" specialization="Component Command" />
+                        <target id="10c2735d-ac78-49ce-a6fb-9439f6b1fe38" name="command" type="element" specialization="Parameter" />
+                        <target id="1237dda8-59ee-4fb9-8d8b-9e9869b7c8ca" name="lastName" type="element" specialization="Parameter" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].LastName" mappingType="NewMappingType" mappingTypeId="1db2e70f-3bb4-470a-9979-9e53755158e0">
+                          <path>
+                            <target id="4de35702-3fbc-44e5-bacd-2864ac8491d3" name="ClientHeader" type="element" specialization="Component" />
+                            <target id="61ce11f4-833d-4e18-9253-6a0d35375d85" name="[model]" type="element" specialization="Component Model" />
+                            <target id="bd57cb7e-ba1e-4bca-87b5-4a29959704b5" name="LastName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].OtherNames}</expression>
+                      <path>
+                        <target id="86d4c868-32ed-46d7-ad38-813219011ccd" name="[command]" type="element" specialization="Component Command" />
+                        <target id="10c2735d-ac78-49ce-a6fb-9439f6b1fe38" name="command" type="element" specialization="Parameter" />
+                        <target id="2796f994-9175-4cdc-8cf6-3853aba90ff0" name="otherNames" type="element" specialization="Parameter" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].OtherNames" mappingType="NewMappingType" mappingTypeId="1db2e70f-3bb4-470a-9979-9e53755158e0">
+                          <path>
+                            <target id="4de35702-3fbc-44e5-bacd-2864ac8491d3" name="ClientHeader" type="element" specialization="Component" />
+                            <target id="61ce11f4-833d-4e18-9253-6a0d35375d85" name="[model]" type="element" specialization="Component Model" />
+                            <target id="345cd042-1a9c-403b-b403-7d526134623b" name="OtherNames" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                  </mappedEnds>
+                </mapping>
+              </mappings>
               <metadata />
               <childElements>
                 <childElement id="38394135-2c29-4c42-b153-bec728879309" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
@@ -155,6 +231,7 @@
                   <name>command</name>
                   <display>command: ChangeNameClientCommand</display>
                   <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
                   <genericTypes />
                   <typeReference id="003c3dcf-aba9-46c5-8bb2-2e997f0b665a">
                     <typeId>27e4934c-cf1b-4a4a-90b6-3145485b6252</typeId>
@@ -175,7 +252,112 @@
                   <metadata>
                     <entry key="endpoint-input-id" value="27e4934c-cf1b-4a4a-90b6-3145485b6252" />
                   </metadata>
-                  <childElements />
+                  <childElements>
+                    <childElement id="0a74455c-336e-45da-8191-b6c770a20d47" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                      <name>id</name>
+                      <display>id: guid</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <typeReference id="945e5e36-8a1b-4bdd-ad41-4f32b5bafcb5">
+                        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Intent.Common.Types</typePackageName>
+                        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>10c2735d-ac78-49ce-a6fb-9439f6b1fe38</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata>
+                        <entry key="dto-field-id" value="27e4934c-cf1b-4a4a-90b6-3145485b6252" />
+                      </metadata>
+                      <childElements />
+                    </childElement>
+                    <childElement id="a6ca245d-3659-4efa-b97a-70f1e7bdccb1" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                      <name>firstName</name>
+                      <display>firstName: string</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <typeReference id="3f93e18b-4fa2-4458-85f9-3ee3f75a9bd2">
+                        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Intent.Common.Types</typePackageName>
+                        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>10c2735d-ac78-49ce-a6fb-9439f6b1fe38</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata>
+                        <entry key="dto-field-id" value="27e4934c-cf1b-4a4a-90b6-3145485b6252" />
+                      </metadata>
+                      <childElements />
+                    </childElement>
+                    <childElement id="1237dda8-59ee-4fb9-8d8b-9e9869b7c8ca" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                      <name>lastName</name>
+                      <display>lastName: string</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <typeReference id="f93d0471-7a43-463a-b624-1b65b450f503">
+                        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Intent.Common.Types</typePackageName>
+                        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>10c2735d-ac78-49ce-a6fb-9439f6b1fe38</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata>
+                        <entry key="dto-field-id" value="27e4934c-cf1b-4a4a-90b6-3145485b6252" />
+                      </metadata>
+                      <childElements />
+                    </childElement>
+                    <childElement id="2796f994-9175-4cdc-8cf6-3853aba90ff0" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                      <name>otherNames</name>
+                      <display>otherNames: string?</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <typeReference id="61d5703f-f276-4114-a89f-ccb516839f42">
+                        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>true</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Intent.Common.Types</typePackageName>
+                        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>10c2735d-ac78-49ce-a6fb-9439f6b1fe38</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata>
+                        <entry key="dto-field-id" value="27e4934c-cf1b-4a4a-90b6-3145485b6252" />
+                      </metadata>
+                      <childElements />
+                    </childElement>
+                  </childElements>
                 </childElement>
               </childElements>
             </childElement>
