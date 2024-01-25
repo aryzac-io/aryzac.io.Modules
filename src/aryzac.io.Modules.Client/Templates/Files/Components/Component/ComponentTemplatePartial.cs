@@ -129,20 +129,121 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             return field.Name.ToCamelCase();
         }
 
-        public string GetMappedModelName(IElement element)
+        public string GetMappedTextAreaName(TextAreaModel field)
         {
-            foreach (var mapping in element.Mappings)
+            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
             {
                 foreach (var mappedEnd in mapping.MappedEnds)
                 {
-                    if (mappedEnd.TargetElement.Id == element.Id)
+                    if (mappedEnd.TargetElement.Id == field.Id)
                     {
                         return mappedEnd.SourceElement.Name.ToCamelCase();
                     }
                 }
             }
 
-            return element.Name.ToCamelCase();
+            return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedCheckboxName(CheckboxModel field)
+        {
+            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == field.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedLabelName(LabelModel field)
+        {
+            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == field.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedRadioButtonName(RadioButtonModel field)
+        {
+            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == field.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedSelectName(SelectModel field)
+        {
+            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == field.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedModelName(ComponentModelFieldModel field)
+        {
+            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
+            {
+                foreach (var mappedEnd in mapping.MappedEnds)
+                {
+                    if (mappedEnd.TargetElement.Id == field.Id)
+                    {
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
+        }
+
+        public string GetMappedName(IElement field)
+        {
+            var parent = field.ParentElement;
+
+            foreach (var association in parent.AssociatedElements)
+            {
+                foreach (var mapping in association.Mappings)
+                {
+                    foreach (var mappedEnd in mapping.MappedEnds)
+                    {
+                        if (mappedEnd.SourceElement.Id == field.Id)
+                        {
+                            return mappedEnd.TargetElement.Name.ToCamelCase();
+                        }
+                    }
+                }
+            }
+
+            return field.Name.ToCamelCase();
         }
     }
 }

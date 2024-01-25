@@ -801,14 +801,23 @@ execute(element);
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
           <typeOrder>
-            <type order="0">Textbox</type>
-            <type order="1">Text Area</type>
-            <type order="2">Checkbox</type>
-            <type order="3">Radio Button</type>
-            <type order="4">Label</type>
-            <type order="5">Table</type>
+            <type order="0">Component Command</type>
+            <type order="1">Textbox</type>
+            <type order="2">Text Area</type>
+            <type order="3">Checkbox</type>
+            <type order="4">Radio Button</type>
+            <type order="5">Label</type>
+            <type order="6">Table</type>
           </typeOrder>
           <creationOptions>
+            <option type="element">
+              <text>Add Command</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDE0IDEuNTZMOC4zMTIgMWgzLjI5NGwuODE4IDEuNTc1TDEwLjIzNiA2aDEuNzgxbC43MiAxLjY5NUw1LjYxOCAxNWwtMS42MDItMS4xNjNMNi4xMTkgMTBINC44OThMNCA4LjU2ek03Ljc4IDlMNC45IDE0LjMwNUwxMi4wMTggN0g4LjMxMmwzLjI5NC01SDguMzEyTDQuODk4IDl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" />
+              <specializationType>Component Command</specializationType>
+              <specializationTypeId>52a388d5-ebcb-44d6-bbb7-8608597a06a8</specializationTypeId>
+              <defaultName>[command]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
             <option type="element">
               <text>Add Textbox</text>
               <icon type="FontAwesome" source="file-o" />
@@ -1556,7 +1565,7 @@ execute(element);
   <mappingSettings>
     <mappingSetting type="Map Model To Command" typeId="66747a3d-2bbc-4800-a8a6-949cf20bd446">
       <title>Map Model To Command</title>
-      <sourceRootElementFunction>return element.getParent().id</sourceRootElementFunction>
+      <sourceRootElementFunction>return element.getParent("Component").id</sourceRootElementFunction>
       <sourceMappings>
         <mapping id="e8b391df-4614-4f2a-8cfc-f4cf16f1ca29" name="Component" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
           <allowMultipleMappings>true</allowMultipleMappings>
@@ -1785,7 +1794,7 @@ execute(element);
     </mappingSetting>
     <mappingSetting type="Map Parameter To Command" typeId="0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b">
       <title>Map Parameter To Command</title>
-      <sourceRootElementFunction>return element.getParent().id</sourceRootElementFunction>
+      <sourceRootElementFunction>return element.getParent("Component").id</sourceRootElementFunction>
       <sourceMappings>
         <mapping id="6d482237-56a9-4f4d-b104-1787c4feccf4" name="Component" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
           <allowMultipleMappings>true</allowMultipleMappings>

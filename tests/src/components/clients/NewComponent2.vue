@@ -14,7 +14,6 @@ en:
 
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
-import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
 
 const { t } = useI18n();
 
@@ -88,5 +87,16 @@ const saveChangeNameClient = async () => {
      <ui-input-textbox 
        v-model="model.otherNames" 
        :label="t('newSection.otherNamesTextbox.label')" />
+
+    <template #actions>
+      <button
+        type="button"
+        @click="saveChangeNameClient()"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        Save
+      </button>
+    </template>
+    
   </ui-editor-section>
 </template>
