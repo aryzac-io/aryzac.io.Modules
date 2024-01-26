@@ -1,6 +1,9 @@
 <i18n lang="yaml">
 en:
-  [table]:
+  table:
+    firstName: FirstName
+    lastName: LastName
+    otherNames: OtherNames
     
 </i18n>
 
@@ -16,27 +19,39 @@ const clientsServiceProxy = useClientsServiceProxy();
 
 // Queries
 const { 
-  data: [table]GetClientsData, 
-  pending: [table]GetClientsPending, 
-  error: [table]GetClientsError 
+  data: tableGetClientsData, 
+  pending: tableGetClientsPending, 
+  error: tableGetClientsError 
 } = await clientsServiceProxy.getClients();
 
 
 
 
-// [table] Options
+// table Options
 
 
-//[table] Options
-const [table]Headers = [
+//table Options
+const tableHeaders = [
+  {
+	key: 'firstName',
+	label: t("table.firstName"),
+  },
+  {
+	key: 'lastName',
+	label: t("table.lastName"),
+  },
+  {
+	key: 'otherNames',
+	label: t("table.otherNames"),
+  },
 ];
 
 </script>
 
 <template>
   <ui-view-table
-    :items="[table]GetClientsData"
-    :headers="[table]Headers"
+    :items="tableGetClientsData"
+    :headers="tableHeaders"
     key="id"
   />
 </template>

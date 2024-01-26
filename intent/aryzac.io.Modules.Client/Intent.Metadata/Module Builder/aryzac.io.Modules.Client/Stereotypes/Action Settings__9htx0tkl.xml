@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="ea0f9d89-8d52-4d58-b4d2-9095a9bf5606" version="3.1.0">
+  <name>Action Settings</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="420c5366-fd1b-4130-afab-45f4ece2cce2">Action</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>on-create</applyMode>
+  <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>1d752276-2801-4dc1-963f-ac4f7b87f2cd</parentFolderId>
+  <order>0</order>
+  <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+  <packageName>Aryzac.IO.Modules.Client</packageName>
+  <properties>
+    <property id="9a52b695-a687-420b-a301-a97bfb771858">
+      <name>Icon</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4">
+      <name>Label</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+  </properties>
+</stereotypeDefinition>

@@ -84,7 +84,7 @@ namespace Aryzac.IO.Modules.Client.Api
             return type.IsPageModel() ? new PageModel((IElement)type) : null;
         }
 
-        public static string GetPath(this PageModel page)
+        public static string GetRoutePath(this PageModel page)
         {
             var path = "/";
             var currentNode = page.InternalElement;
@@ -105,6 +105,37 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             return path.Replace("//", "/");
+        }
+
+        public static string GetPath(this PageModel page, bool useIndexInsteadOfName = false)
+        {
+            var pathSegments = new List<string>();
+            var currentNode = page.InternalElement;
+
+            while (currentNode != null)
+            {
+                if (currentNode.SpecializationTypeId == PagesModel.SpecializationTypeId)
+                {
+                    break;
+                }
+
+                if (currentNode.Name.ToLower() != "index")
+                {
+                    pathSegments.Add(currentNode.Name);
+                }
+
+                currentNode = currentNode.ParentElement;
+            }
+
+            pathSegments.Reverse(); // Reverse the order of the path segments
+
+            var isRootPage = pathSegments.Count == 1;
+            var fileName = useIndexInsteadOfName || !isRootPage ? "index" : $"{page.Name}";
+            pathSegments.Add(fileName); // Add the file name to the path
+
+            var path = "/" + string.Join("/", pathSegments); // Join the path segments with '/'
+
+            return path;
         }
     }
 }

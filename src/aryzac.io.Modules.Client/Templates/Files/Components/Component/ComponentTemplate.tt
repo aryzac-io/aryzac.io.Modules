@@ -125,6 +125,21 @@ if (Model.View != null)
         }
 #>
 <#
+		if (control.IsActionsModel()) 
+		{
+          var actions = control.AsActionsModel();
+#>    actions:
+<#
+		  foreach (var actionElement in actions.InternalElement.ChildElements)
+	      {
+            var action = actionElement.AsActionModel();
+            action.TryGetActionSettings(out var actionSettings);
+#>      <#= action.Name.ToCamelCase() #>: <#= actionSettings.Label() ?? action.Name #>
+<#
+          }
+        }
+#>
+<#
       }
 #>
 <# 
@@ -551,7 +566,7 @@ if (Model.View != null)
         @click="save<#= command.Mapping.Element.Name.ToPascalCase() #>()"
         class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
       >
-        <#= action.Name #>
+        {{ t('<#= component.Name.ToCamelCase() #>.actions.<#= action.Name.ToCamelCase() #>') }}
       </button>
     </template>
     

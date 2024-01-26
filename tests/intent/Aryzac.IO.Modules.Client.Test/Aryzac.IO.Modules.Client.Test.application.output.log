@@ -30,8 +30,8 @@
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#d55c95ef-2fcd-4750-889c-7644a73eed48</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/Clients/Change-Name.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/Clients/Change-Name.vue</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/components/Clients/Clients/ChangeName.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/Clients/ChangeName.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -398,8 +398,8 @@
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#292f0b5f-e872-4d71-a67d-a85a0561a3d2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/pages/change-name/[id]/clients/change-name.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/change-name/[id]/clients/change-name.vue</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/pages/clients/[id]/index.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/[id]/index.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

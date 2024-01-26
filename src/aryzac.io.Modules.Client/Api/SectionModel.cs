@@ -62,10 +62,10 @@ namespace Aryzac.IO.Modules.Client.Api
             .Select(x => new TableModel(x))
             .ToList();
 
-        public IList<ActionsModel> Actions => _element.ChildElements
+        public ActionsModel Actions => _element.ChildElements
             .GetElementsOfType(ActionsModel.SpecializationTypeId)
             .Select(x => new ActionsModel(x))
-            .ToList();
+            .SingleOrDefault();
 
         public IList<LabelModel> Labels => _element.ChildElements
             .GetElementsOfType(LabelModel.SpecializationTypeId)

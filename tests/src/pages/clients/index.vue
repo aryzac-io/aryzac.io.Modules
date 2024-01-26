@@ -3,5 +3,6 @@
 
 <template>
   <div>
+    <clients-clients-list />
   </div>
 </template>

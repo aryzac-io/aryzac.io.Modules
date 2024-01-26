@@ -1,6 +1,6 @@
 <i18n lang="yaml">
 en:
-  personal Information:
+  personalInformation:
     title: Personal Information
     description: This information will be displayed publicly so be careful what you share.
     firstName:
@@ -9,6 +9,8 @@ en:
       label: LastName
     otherNames:
       label: OtherNames
+    actions:
+      save: asdfasdf
     
 </i18n>
 
@@ -26,9 +28,9 @@ const clientsServiceProxy = useClientsServiceProxy();
 
 // Queries
 const { 
-  data: change-NameGetClientByIdData, 
-  pending: change-NameGetClientByIdPending, 
-  error: change-NameGetClientByIdError 
+  data: changeNameGetClientByIdData, 
+  pending: changeNameGetClientByIdPending, 
+  error: changeNameGetClientByIdError 
 } = await clientsServiceProxy.getClientById(props.id);
 
 // Model
@@ -47,11 +49,11 @@ const model: ModelInterface = reactive({
 });
 
 watchEffect(async () => {
-  if (change-NameGetClientByIdData.value) {
-    model.id = change-NameGetClientByIdData.value.id;
-    model.firstName = change-NameGetClientByIdData.value.firstName;
-    model.lastName = change-NameGetClientByIdData.value.lastName;
-    model.otherNames = change-NameGetClientByIdData.value.otherNames;
+  if (changeNameGetClientByIdData.value) {
+    model.id = changeNameGetClientByIdData.value.id;
+    model.firstName = changeNameGetClientByIdData.value.firstName;
+    model.lastName = changeNameGetClientByIdData.value.lastName;
+    model.otherNames = changeNameGetClientByIdData.value.otherNames;
   }
 });
 
@@ -70,24 +72,24 @@ const saveChangeNameClient = async () => {
 	const changeNameClient = await clientsServiceProxy.changeNameClient(id, command);
 };
 
-// Personal Information Options
+// PersonalInformation Options
 
 </script>
 
 <template>
   <ui-editor-section
-    :title="t('personal Information.title')"
-    :description="t('personal Information.description')"
+    :title="t('personalInformation.title')"
+    :description="t('personalInformation.description')"
   >
      <ui-input-textbox 
        v-model="model.firstName" 
-       :label="t('personal Information.firstName.label')" />
+       :label="t('personalInformation.firstName.label')" />
      <ui-input-textbox 
        v-model="model.lastName" 
-       :label="t('personal Information.lastName.label')" />
+       :label="t('personalInformation.lastName.label')" />
      <ui-input-textbox 
        v-model="model.otherNames" 
-       :label="t('personal Information.otherNames.label')" />
+       :label="t('personalInformation.otherNames.label')" />
 
     <template #actions>
       <button
@@ -95,7 +97,7 @@ const saveChangeNameClient = async () => {
         @click="saveChangeNameClient()"
         class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
       >
-        Save
+        {{ t('personalInformation.actions.save') }}
       </button>
     </template>
     

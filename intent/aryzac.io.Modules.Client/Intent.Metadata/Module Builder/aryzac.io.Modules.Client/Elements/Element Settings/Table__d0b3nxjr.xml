@@ -144,12 +144,12 @@
           <childElements />
         </childElement>
         <childElement id="fbb2e27f-00cc-4043-947d-f50c8928d4e0" type="Mapping Option" typeId="00a1eb98-1fc4-4421-9d1c-8733f6bc2111">
-          <name>Map Query To Component</name>
-          <display>Map Query To Component: Map Query To Component</display>
+          <name>Map Query To Table</name>
+          <display>Map Query To Table: Map Query To Table</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
           <typeReference id="f34b8315-1f8c-49b5-bb26-53de748ee5a4">
-            <typeId>f2df4b46-97c8-4115-8e45-7f8b9be5cf1c</typeId>
+            <typeId>5888463e-4c04-4e59-93ed-aea2342d3c40</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>

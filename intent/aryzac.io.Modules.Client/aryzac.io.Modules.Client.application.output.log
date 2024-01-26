@@ -12,6 +12,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModelExtensions#420c5366-fd1b-4130-afab-45f4ece2cce2</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/ActionModelStereotypeExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ActionModelStereotypeExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#ccc50dcf-42e3-4b91-8772-bb48739c17e8</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/ActionsModel.cs</ApplicationRelativeFilePath>
