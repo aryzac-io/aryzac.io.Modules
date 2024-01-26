@@ -277,8 +277,8 @@
                   <childElements />
                 </childElement>
                 <childElement id="91702d62-2075-44bf-a8c3-cfbc7be73068" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
-                  <name>FirstName</name>
-                  <display>FirstName: string</display>
+                  <name>first</name>
+                  <display>first: string</display>
                   <isAbstract>false</isAbstract>
                   <genericTypes />
                   <typeReference id="5e8231a1-b9eb-4ed6-8826-8244958c612b">

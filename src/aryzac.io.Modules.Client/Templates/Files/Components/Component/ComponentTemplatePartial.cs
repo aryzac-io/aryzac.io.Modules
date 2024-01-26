@@ -31,6 +31,8 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
 
             foreach (var command in Commands)
             {
+                var commandParameter = command.InternalElement.ChildElements.FirstOrDefault(m => m.SpecializationType == "Parameter" && m.Name == "Command");
+
                 var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
 
                 foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType == "Command"))
@@ -225,20 +227,15 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             return field.Name.ToCamelCase();
         }
 
-        public string GetMappedName(IElement field)
+        public string GetMappedName(IElement field, ComponentCommandModel command)
         {
-            var parent = field.ParentElement;
-
-            foreach (var association in parent.AssociatedElements)
+            foreach (var mapping in command.InternalElement.Mappings)
             {
-                foreach (var mapping in association.Mappings)
+                foreach (var mappedEnd in mapping.MappedEnds)
                 {
-                    foreach (var mappedEnd in mapping.MappedEnds)
+                    if (mappedEnd.TargetElement.Id == field.Id)
                     {
-                        if (mappedEnd.SourceElement.Id == field.Id)
-                        {
-                            return mappedEnd.TargetElement.Name.ToCamelCase();
-                        }
+                        return mappedEnd.SourceElement.Name.ToCamelCase();
                     }
                 }
             }

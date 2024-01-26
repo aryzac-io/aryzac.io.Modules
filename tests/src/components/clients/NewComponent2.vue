@@ -14,6 +14,7 @@ en:
 
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
+import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
 
 const { t } = useI18n();
 
@@ -33,14 +34,14 @@ const {
 // Model
 interface ModelInterface {
   id: string;
-  firstName: string;
+  first: string;
   lastName: string;
   otherNames?: string;
 }
 
 const model: ModelInterface = reactive({
   id: "",
-  firstName: "",
+  first: "",
   lastName: "",
   otherNames: "",
 });
@@ -48,7 +49,7 @@ const model: ModelInterface = reactive({
 watchEffect(async () => {
   if (newComponent2GetClientByIdData.value) {
     model.id = newComponent2GetClientByIdData.value.id;
-    model.firstName = newComponent2GetClientByIdData.value.firstName;
+    model.first = newComponent2GetClientByIdData.value.firstName;
     model.lastName = newComponent2GetClientByIdData.value.lastName;
     model.otherNames = newComponent2GetClientByIdData.value.otherNames;
   }
@@ -59,7 +60,7 @@ const saveChangeNameClient = async () => {
 
   const command: ChangeNameClientCommand = {
     id: model.id,
-    firstName: model.firstName,
+    firstName: model.first,
     lastName: model.lastName,
     otherNames: model.otherNames,
   };
@@ -79,7 +80,7 @@ const saveChangeNameClient = async () => {
     :description="t('newSection.description')"
   >
      <ui-input-textbox 
-       v-model="model.firstName" 
+       v-model="model.first" 
        :label="t('newSection.firstNameTextbox.label')" />
      <ui-input-textbox 
        v-model="model.lastName" 

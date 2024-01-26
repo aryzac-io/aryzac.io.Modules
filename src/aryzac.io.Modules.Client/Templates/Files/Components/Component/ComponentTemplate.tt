@@ -155,9 +155,9 @@ if (Model.View != null)
 #>
 
 <# 
-  if (Model.Command != null)
+  foreach (var command in Commands)
   {
-    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)Model.Command.Mapping.Element.AsOperationModel().Mapping.Element);
+    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
     if (endpoint.Inputs.FirstOrDefault(x => x.Source == HttpInputSource.FromBody) != null) 
     { 
         var bodyParam = endpoint.Inputs.First(x => x.Source == HttpInputSource.FromBody);
@@ -287,7 +287,9 @@ watchEffect(async () => {
 <#
   foreach (var command in Commands)
   {
-	var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
+    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
+    var commandParameter = command.InternalElement.ChildElements.FirstOrDefault(m => m.SpecializationType == "Parameter" && m.Name == "command");
+	
 #>const save<#= command.Mapping.Element.Name.ToPascalCase() #> = async () => {
 
 <#
@@ -296,10 +298,10 @@ watchEffect(async () => {
 #>
   const command: <#= GetTypeName(parameter.TypeReference) #> = {
 <#  
-    foreach (var property in ((IElement)parameter.TypeReference.Element).ChildElements)
+    foreach (var property in ((IElement)commandParameter.TypeReference.Element).ChildElements)
     {
 #>
-    <#= property.Name.ToCamelCase() #>: model.<#= GetMappedName(property) #>,
+    <#= property.Name.ToCamelCase() #>: model.<#= GetMappedName(property, command) #>,
 <#
     }
 #>
