@@ -1,14 +1,14 @@
 <i18n lang="yaml">
 en:
-  newSection:
+  personal Information:
     title: Personal Information
     description: This information will be displayed publicly so be careful what you share.
-    firstNameTextbox:
-      label: Firstname
-    lastNameTextbox:
-      label: Lastname
-    otherNamesTextbox:
-      label: Other Names
+    firstName:
+      label: FirstName
+    lastName:
+      label: LastName
+    otherNames:
+      label: OtherNames
     
 </i18n>
 
@@ -26,41 +26,41 @@ const clientsServiceProxy = useClientsServiceProxy();
 
 // Queries
 const { 
-  data: newComponent2GetClientByIdData, 
-  pending: newComponent2GetClientByIdPending, 
-  error: newComponent2GetClientByIdError 
+  data: change-NameGetClientByIdData, 
+  pending: change-NameGetClientByIdPending, 
+  error: change-NameGetClientByIdError 
 } = await clientsServiceProxy.getClientById(props.id);
 
 // Model
 interface ModelInterface {
   id: string;
-  first: string;
+  firstName: string;
   lastName: string;
   otherNames?: string;
 }
 
 const model: ModelInterface = reactive({
   id: "",
-  first: "",
+  firstName: "",
   lastName: "",
   otherNames: "",
 });
 
 watchEffect(async () => {
-  if (newComponent2GetClientByIdData.value) {
-    model.id = newComponent2GetClientByIdData.value.id;
-    model.first = newComponent2GetClientByIdData.value.firstName;
-    model.lastName = newComponent2GetClientByIdData.value.lastName;
-    model.otherNames = newComponent2GetClientByIdData.value.otherNames;
+  if (change-NameGetClientByIdData.value) {
+    model.id = change-NameGetClientByIdData.value.id;
+    model.firstName = change-NameGetClientByIdData.value.firstName;
+    model.lastName = change-NameGetClientByIdData.value.lastName;
+    model.otherNames = change-NameGetClientByIdData.value.otherNames;
   }
-})
+});
 
 // Commands
 const saveChangeNameClient = async () => {
 
   const command: ChangeNameClientCommand = {
     id: model.id,
-    firstName: model.first,
+    firstName: model.firstName,
     lastName: model.lastName,
     otherNames: model.otherNames,
   };
@@ -70,24 +70,24 @@ const saveChangeNameClient = async () => {
 	const changeNameClient = await clientsServiceProxy.changeNameClient(id, command);
 };
 
-// NewSection Options
+// Personal Information Options
 
 </script>
 
 <template>
   <ui-editor-section
-    :title="t('newSection.title')"
-    :description="t('newSection.description')"
+    :title="t('personal Information.title')"
+    :description="t('personal Information.description')"
   >
      <ui-input-textbox 
-       v-model="model.first" 
-       :label="t('newSection.firstNameTextbox.label')" />
+       v-model="model.firstName" 
+       :label="t('personal Information.firstName.label')" />
      <ui-input-textbox 
        v-model="model.lastName" 
-       :label="t('newSection.lastNameTextbox.label')" />
+       :label="t('personal Information.lastName.label')" />
      <ui-input-textbox 
        v-model="model.otherNames" 
-       :label="t('newSection.otherNamesTextbox.label')" />
+       :label="t('personal Information.otherNames.label')" />
 
     <template #actions>
       <button

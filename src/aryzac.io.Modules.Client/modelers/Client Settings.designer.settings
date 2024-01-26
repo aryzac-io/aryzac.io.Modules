@@ -801,23 +801,15 @@ execute(element);
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
           <typeOrder>
-            <type order="0">Component Command</type>
-            <type order="1">Textbox</type>
-            <type order="2">Text Area</type>
-            <type order="3">Checkbox</type>
-            <type order="4">Radio Button</type>
-            <type order="5">Label</type>
-            <type order="6">Table</type>
+            <type order="0">Textbox</type>
+            <type order="1">Text Area</type>
+            <type order="2">Checkbox</type>
+            <type order="3">Radio Button</type>
+            <type order="4">Label</type>
+            <type order="5">Table</type>
+            <type order="6">Actions</type>
           </typeOrder>
           <creationOptions>
-            <option type="element">
-              <text>Add Command</text>
-              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDE0IDEuNTZMOC4zMTIgMWgzLjI5NGwuODE4IDEuNTc1TDEwLjIzNiA2aDEuNzgxbC43MiAxLjY5NUw1LjYxOCAxNWwtMS42MDItMS4xNjNMNi4xMTkgMTBINC44OThMNCA4LjU2ek03Ljc4IDlMNC45IDE0LjMwNUwxMi4wMTggN0g4LjMxMmwzLjI5NC01SDguMzEyTDQuODk4IDl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" />
-              <specializationType>Component Command</specializationType>
-              <specializationTypeId>52a388d5-ebcb-44d6-bbb7-8608597a06a8</specializationTypeId>
-              <defaultName>[command]</defaultName>
-              <allowMultiple>false</allowMultiple>
-            </option>
             <option type="element">
               <text>Add Textbox</text>
               <icon type="FontAwesome" source="file-o" />
@@ -864,6 +856,14 @@ execute(element);
               <specializationType>Table</specializationType>
               <specializationTypeId>dd36c8ad-0f9e-4a38-8478-8dce769e0054</specializationTypeId>
               <defaultName>NewTable</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Actions</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Actions</specializationType>
+              <specializationTypeId>ccc50dcf-42e3-4b91-8772-bb48739c17e8</specializationTypeId>
+              <defaultName>NewActions</defaultName>
               <allowMultiple>true</allowMultiple>
             </option>
           </creationOptions>
@@ -1047,6 +1047,70 @@ execute(element);
           <allowSetValue>false</allowSetValue>
           <typeOrder />
           <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder>
+            <type order="0">Action</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Action</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Action</specializationType>
+              <specializationTypeId>420c5366-fd1b-4130-afab-45f4ece2cce2</specializationTypeId>
+              <defaultName>NewAction</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+          </creationOptions>
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
+        </childElementSetting>
+        <childElementSetting type="Action" typeId="420c5366-fd1b-4130-afab-45f4ece2cce2">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder>
+            <type order="0">Component Command</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Command</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDE0IDEuNTZMOC4zMTIgMWgzLjI5NGwuODE4IDEuNTc1TDEwLjIzNiA2aDEuNzgxbC43MiAxLjY5NUw1LjYxOCAxNWwtMS42MDItMS4xNjNMNi4xMTkgMTBINC44OThMNCA4LjU2ek03Ljc4IDlMNC45IDE0LjMwNUwxMi4wMTggN0g4LjMxMmwzLjI5NC01SDguMzEyTDQuODk4IDl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" />
+              <specializationType>Component Command</specializationType>
+              <specializationTypeId>52a388d5-ebcb-44d6-bbb7-8608597a06a8</specializationTypeId>
+              <defaultName>[command]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />

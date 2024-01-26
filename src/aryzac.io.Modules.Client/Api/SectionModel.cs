@@ -37,11 +37,6 @@ namespace Aryzac.IO.Modules.Client.Api
 
         public IElement InternalElement => _element;
 
-        public ComponentCommandModel Command => _element.ChildElements
-            .GetElementsOfType(ComponentCommandModel.SpecializationTypeId)
-            .Select(x => new ComponentCommandModel(x))
-            .SingleOrDefault();
-
         public IList<TextboxModel> Textboxes => _element.ChildElements
             .GetElementsOfType(TextboxModel.SpecializationTypeId)
             .Select(x => new TextboxModel(x))
@@ -65,6 +60,11 @@ namespace Aryzac.IO.Modules.Client.Api
         public IList<TableModel> Tables => _element.ChildElements
             .GetElementsOfType(TableModel.SpecializationTypeId)
             .Select(x => new TableModel(x))
+            .ToList();
+
+        public IList<ActionsModel> Actions => _element.ChildElements
+            .GetElementsOfType(ActionsModel.SpecializationTypeId)
+            .Select(x => new ActionsModel(x))
             .ToList();
 
         public IList<LabelModel> Labels => _element.ChildElements

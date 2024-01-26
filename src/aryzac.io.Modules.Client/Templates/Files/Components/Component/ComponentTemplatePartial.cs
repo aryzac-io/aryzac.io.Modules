@@ -28,18 +28,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public ComponentTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
             Types = new TypeScriptTypeResolver();
-
-            foreach (var command in Commands)
-            {
-                var commandParameter = command.InternalElement.ChildElements.FirstOrDefault(m => m.SpecializationType == "Parameter" && m.Name == "Command");
-
-                var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
-
-                foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType == "Command"))
-                {
-                    //var o = ((IElement)parameter.TypeReference.Element).ChildElements
-                }
-            }
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

@@ -53,7 +53,6 @@
           <name>index</name>
           <display>index: default</display>
           <isAbstract>false</isAbstract>
-          <sort-children>by-type-then-by-name</sort-children>
           <genericTypes />
           <typeReference id="e2cebe9d-192a-4edc-8f03-36e212431b8c">
             <typeId>f16095c8-5ac2-47a9-923e-fe7a9cc54083</typeId>
@@ -72,32 +71,7 @@
           <packageName>Web Client</packageName>
           <stereotypes />
           <metadata />
-          <childElements>
-            <childElement id="527021d1-7768-4f47-a0b8-49b96f628566" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
-              <name>NewPageComponent</name>
-              <display>NewPageComponent: NewComponent2</display>
-              <isAbstract>false</isAbstract>
-              <genericTypes />
-              <typeReference id="0c41ad0f-2cca-410b-9224-6e33673fbb14">
-                <typeId>58e352ed-9f4b-47a2-953b-07be6c7841f4</typeId>
-                <isNavigable>true</isNavigable>
-                <isNullable>false</isNullable>
-                <isCollection>false</isCollection>
-                <isRequired>true</isRequired>
-                <typePackageName>Web Client</typePackageName>
-                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
-                <stereotypes />
-                <genericTypeParameters />
-              </typeReference>
-              <isMapped>false</isMapped>
-              <parentFolderId>a0006ff6-338b-4e43-8c78-e1fb09f08eab</parentFolderId>
-              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
-              <packageName>Web Client</packageName>
-              <stereotypes />
-              <metadata />
-              <childElements />
-            </childElement>
-          </childElements>
+          <childElements />
         </childElement>
         <childElement id="10085637-4e3b-447a-90b2-0e8763fa7337" type="Page Folder" typeId="21b29545-9bd7-4cbd-85bb-3b548765031e">
           <name>[id]</name>
@@ -113,9 +87,10 @@
           <metadata />
           <childElements>
             <childElement id="292f0b5f-e872-4d71-a67d-a85a0561a3d2" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
-              <name>edit</name>
-              <display>edit: default</display>
+              <name>change-name</name>
+              <display>change-name: default</display>
               <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
               <genericTypes />
               <typeReference id="66b3f2e8-45eb-4288-8dcf-240e0da312bb">
                 <typeId>f16095c8-5ac2-47a9-923e-fe7a9cc54083</typeId>
@@ -134,7 +109,32 @@
               <packageName>Web Client</packageName>
               <stereotypes />
               <metadata />
-              <childElements />
+              <childElements>
+                <childElement id="ebbece88-2d75-490a-b833-fab7872641d9" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+                  <name>Change Name</name>
+                  <display>Change Name: Change-Name</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="32469039-e742-4386-ac22-b52819121471">
+                    <typeId>d55c95ef-2fcd-4750-889c-7644a73eed48</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Web Client</typePackageName>
+                    <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>292f0b5f-e872-4d71-a67d-a85a0561a3d2</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
             </childElement>
           </childElements>
         </childElement>

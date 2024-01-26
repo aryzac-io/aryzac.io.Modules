@@ -3,5 +3,6 @@
 
 <template>
   <div>
+    <clients-clients-change-name />
   </div>
 </template>
