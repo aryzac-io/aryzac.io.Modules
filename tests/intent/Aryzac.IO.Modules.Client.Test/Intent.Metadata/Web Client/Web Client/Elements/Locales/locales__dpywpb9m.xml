@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="f3a9e1b7-b515-47a7-9c3a-e8dbe4349542" type="Locales" typeId="bc3ed158-45dd-4685-8ac2-99c774a15f2d">
+  <name>locales</name>
+  <display>locales</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>657e26c5-b761-451b-b0ee-755bc4b419e5</parentFolderId>
+  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="bbd0ab1e-37e4-449c-b933-fd71baeecc07" type="Locale" typeId="84a53da1-7d07-4bbd-ae08-88cd59406f6f">
+      <name>en</name>
+      <display>en</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>f3a9e1b7-b515-47a7-9c3a-e8dbe4349542</parentFolderId>
+      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

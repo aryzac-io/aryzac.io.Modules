@@ -1,0 +1,5 @@
+en:
+  table:
+    firstName: FirstName
+    lastName: LastName
+    otherNames: OtherNames

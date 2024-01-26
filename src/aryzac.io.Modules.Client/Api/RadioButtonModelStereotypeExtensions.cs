@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new RadioButtonSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<RadioButtonSettings> GetRadioButtonSettingss(this RadioButtonModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("e5b364b7-563a-4bef-9968-d5ec50947a67")
+                .Select(stereotype => new RadioButtonSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasRadioButtonSettings(this RadioButtonModel model)
         {
@@ -46,6 +56,11 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             public string Name => _stereotype.Name;
+
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
 
             public string Label()
             {

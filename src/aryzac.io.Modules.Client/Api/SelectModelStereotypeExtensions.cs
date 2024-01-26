@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new SelectSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<SelectSettings> GetSelectSettingss(this SelectModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("d159f0b9-8d24-40b6-900f-6af71a512072")
+                .Select(stereotype => new SelectSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasSelectSettings(this SelectModel model)
         {
@@ -46,6 +56,11 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             public string Name => _stereotype.Name;
+
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
 
             public string Label()
             {

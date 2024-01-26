@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new TextboxSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<TextboxSettings> GetTextboxSettingss(this TextboxModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("76a05306-e432-445c-a3ef-1bc5b4869a7d")
+                .Select(stereotype => new TextboxSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasTextboxSettings(this TextboxModel model)
         {
@@ -46,6 +56,11 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             public string Name => _stereotype.Name;
+
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
 
             public string Label()
             {

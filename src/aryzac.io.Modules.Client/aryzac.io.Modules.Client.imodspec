@@ -12,6 +12,10 @@
       <role>Default</role>
       <location></location>
     </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Components.Component i18n" externalReference="1d2d62d6-9683-4ef7-8645-e71f05733cb1">
+      <role>Default</role>
+      <location></location>
+    </template>
     <template id="Aryzac.IO.Modules.Client.Files.Components.Layout.Components" externalReference="92d3ff7c-d424-49a3-bc47-f0207b674c13">
       <role>Default</role>
       <location></location>

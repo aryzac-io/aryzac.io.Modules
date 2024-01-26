@@ -1,18 +1,4 @@
-<i18n lang="yaml">
-en:
-  personalInformation:
-    title: Personal Information
-    description: This information will be displayed publicly so be careful what you share.
-    firstName:
-      label: FirstName
-    lastName:
-      label: LastName
-    otherNames:
-      label: OtherNames
-    actions:
-      save: asdfasdf
-    
-</i18n>
+<i18n lang="yaml" src="./ChangeName.i18n.yaml" />
 
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';

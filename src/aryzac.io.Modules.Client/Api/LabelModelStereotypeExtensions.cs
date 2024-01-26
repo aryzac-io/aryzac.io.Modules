@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new LabelSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<LabelSettings> GetLabelSettingss(this LabelModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("ea62dc6f-ed7c-46c5-bcd9-c717d616f590")
+                .Select(stereotype => new LabelSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasLabelSettings(this LabelModel model)
         {
@@ -46,6 +56,11 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             public string Name => _stereotype.Name;
+
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
 
             public string Label()
             {

@@ -451,6 +451,7 @@
                           <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                           <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                           <properties>
+                            <property name="200ceb8b-d4cc-4abe-8993-3e232d0cb4da" display="Locale" value="bbd0ab1e-37e4-449c-b933-fd71baeecc07" isActive="true" />
                             <property name="46a86af5-3286-4987-848b-5295712e67f8" display="Title" value="Personal Information" isActive="true" />
                             <property name="b9d53634-bca6-4224-9c9b-dbfe9d4e9f39" display="Description" value="This information will be displayed publicly so be careful what you share." isActive="true" />
                           </properties>
@@ -473,6 +474,7 @@
                               <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                               <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                               <properties>
+                                <property name="05ceff60-c1d8-44e5-b3ae-3913621b8b32" display="Locale" value="bbd0ab1e-37e4-449c-b933-fd71baeecc07" isActive="true" />
                                 <property name="9ab08b35-d04a-4d28-9fb1-1092e0371cfc" display="Label" isActive="true" />
                               </properties>
                             </stereotype>
@@ -495,6 +497,7 @@
                               <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                               <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                               <properties>
+                                <property name="05ceff60-c1d8-44e5-b3ae-3913621b8b32" display="Locale" value="bbd0ab1e-37e4-449c-b933-fd71baeecc07" isActive="true" />
                                 <property name="9ab08b35-d04a-4d28-9fb1-1092e0371cfc" display="Label" isActive="true" />
                               </properties>
                             </stereotype>
@@ -517,6 +520,7 @@
                               <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                               <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                               <properties>
+                                <property name="05ceff60-c1d8-44e5-b3ae-3913621b8b32" display="Locale" value="bbd0ab1e-37e4-449c-b933-fd71baeecc07" isActive="true" />
                                 <property name="9ab08b35-d04a-4d28-9fb1-1092e0371cfc" display="Label" isActive="true" />
                               </properties>
                             </stereotype>
@@ -553,6 +557,7 @@
                                   <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                                   <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                                   <properties>
+                                    <property name="b0451488-cf54-4083-81c6-a25270f27bd7" display="Locale" value="bbd0ab1e-37e4-449c-b933-fd71baeecc07" isActive="true" />
                                     <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" isActive="true" />
                                     <property name="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4" display="Label" value="asdfasdf" isActive="true" />
                                   </properties>

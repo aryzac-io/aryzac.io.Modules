@@ -1,0 +1,12 @@
+en:
+  personalInformation:
+    title: Personal Information
+    description: This information will be displayed publicly so be careful what you share.
+    firstName:
+      label: FirstName
+    lastName:
+      label: LastName
+    otherNames:
+      label: OtherNames
+    actions:
+      save: asdfasdf

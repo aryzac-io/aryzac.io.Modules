@@ -20,6 +20,12 @@ namespace Aryzac.IO.Modules.Client.Api
         }
 
         [IntentManaged(Mode.Fully)]
+        public LocalesModel Locales => UnderlyingPackage.ChildElements
+            .GetElementsOfType(LocalesModel.SpecializationTypeId)
+            .Select(x => new LocalesModel(x))
+            .SingleOrDefault();
+
+        [IntentManaged(Mode.Fully)]
         public LayoutsModel Layouts => UnderlyingPackage.ChildElements
             .GetElementsOfType(LayoutsModel.SpecializationTypeId)
             .Select(x => new LayoutsModel(x))

@@ -9,6 +9,14 @@
       <requiredPackages />
       <creationOptions>
         <option type="element">
+          <text>Add Locales</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Locales</specializationType>
+          <specializationTypeId>bc3ed158-45dd-4685-8ac2-99c774a15f2d</specializationTypeId>
+          <defaultName>locales</defaultName>
+          <allowMultiple>false</allowMultiple>
+        </option>
+        <option type="element">
           <text>Add Layouts</text>
           <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA55JREFUeF7tnEtoE1EUhs+ZSa3SB7YuKslIK1rQInRRBHFjrbiwNVAES1duTFI3YhVXVqiIj5XUhSAk2QhuVMRCobgQtQtF8IEFH7gTbEaLYnUjaidzJG0tWDuZOzmTNJ2erP//nHu/+e/cm7sYBPmxCCDLLWYQgMwQCEAByCTAtEsCBSCTANMuCRSATAJMuyRQADIJMO2SQAHIJMC0qycwbTZqNnUhUiuQ1gxoa8ze83YkeGwljFN+1StlHSWAWsrsR6Chog6M4Eo2ETla1B5FKO4KUE+Z1wDoUBF6/1cSiYashHGiFL386pEXoJ7OxIAg5VczlToIeMmKh0+qaMtBkx9gKvMFANaVeqBIdHG5vBMdAYaSmZ2E8KjU8P72Q6ALVtwYWKr+qn0dAeppsxuI7qgWKoaOEAbtWORsMWr7VdMZYHKiBxBv+NVoOdQhgLcI8AIRr1ux8F2VMQtAR0qUzNracegL/8gHUgDmj9n9bDyyRwCqrEUnDWEimwg7HuUkgS5wCeCdHY9scZIJQIV0Zu2fa6Fv0/fFpHmOMRMHgfCmQv3AS5Bgr5WI3PMGcAUeYxyTgNSTjRm3BGCha0UAFkpuzicABSCTANMuCRSATAJMuyRQADIJMO2SwBUGcLizwdOMTz+Zgldff8O2+lVwbkedJ2/BYoKxqBFqL8vLBAFY8GOdNQpAAQigL+FtjCRQEigJdM2A7MKuiPILBKAAnCcgB+kFYZBdmLk6BKAAlGOMawaCuAtvrA1BbGut69y9CsJV+pu6Su3zvz56GTUq+gN1G+MVjLJ+uV2oFrqJKAPxKlwpAHNL+HBLjSc8uTNk7tdhrIEOY/Wi3nB16HX9wiVs03jglnAhN9Ldo5Mz0Hqbq6C3uVodfhA3EQE49/wLfQcKQAGo/grJpwxIAj/uA7RH/UHirUogAELabNSJ3nubuj/qYAAEAC2VeYYAbf5gUa8SGIB6yjwAQLfVp+6PMjAAczj0lHkVgI74g0atSqAA5qasJc1jiHRZbfp8VeAAziDJfXSCaD8itIKNm/386MRC5MOd63d5eQznn0+NP5389W17Q+Xagba6Vi/e7tFPYzl9vKWmsaupqknZ6/ZXTrlQEYQjGYs8lbVpd3RDxcORD9PtoOEDL95oJDRzpTeSmT4DgIPKXgE4iyqQAJVTUAZC18+elMEYy3oIApD5eASgAGQSYNolgQKQSYBplwQKQCYBpl0SKACZBJj2P8oZZG+/dQQQAAAAAElFTkSuQmCC" />
           <specializationType>Layouts</specializationType>
@@ -43,6 +51,7 @@
       </creationOptions>
       <scriptOptions />
       <typeOrder>
+        <type>Locales</type>
         <type>Layouts</type>
         <type>Pages</type>
         <type>Components</type>
@@ -1423,6 +1432,65 @@ execute(element);
               <childElementSettings />
             </childElementSetting>
           </childElementSettings>
+        </childElementSetting>
+      </childElementSettings>
+    </elementSetting>
+    <elementSetting type="Locales" typeId="bc3ed158-45dd-4685-8ac2-99c774a15f2d">
+      <icon type="FontAwesome" source="file-o" />
+      <saveAsOwnFile>true</saveAsOwnFile>
+      <allowRename>true</allowRename>
+      <allowAbstract>false</allowAbstract>
+      <allowStatic>false</allowStatic>
+      <allowGenericTypes>false</allowGenericTypes>
+      <allowMapping>false</allowMapping>
+      <allowSorting>true</allowSorting>
+      <sortChildren>by-type-then-by-name</sortChildren>
+      <allowFindInView>false</allowFindInView>
+      <allowTypeReference>false</allowTypeReference>
+      <allowConvertToType p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
+      <allowSetValue>false</allowSetValue>
+      <typeOrder>
+        <type order="0">Locale</type>
+      </typeOrder>
+      <creationOptions>
+        <option type="element">
+          <text>Add Locale</text>
+          <icon type="FontAwesome" source="file-o" />
+          <specializationType>Locale</specializationType>
+          <specializationTypeId>84a53da1-7d07-4bbd-ae08-88cd59406f6f</specializationTypeId>
+          <defaultName>NewLocale</defaultName>
+          <allowMultiple>true</allowMultiple>
+        </option>
+      </creationOptions>
+      <scriptOptions />
+      <mappingOptions />
+      <mappingSettings />
+      <macros>
+        <macro trigger="on-created">
+          <script>createElement("Locale", "en", element.id)</script>
+        </macro>
+      </macros>
+      <childElementSettings>
+        <childElementSetting type="Locale" typeId="84a53da1-7d07-4bbd-ae08-88cd59406f6f">
+          <icon type="FontAwesome" source="file-o" />
+          <saveAsOwnFile>false</saveAsOwnFile>
+          <allowRename>true</allowRename>
+          <allowAbstract>false</allowAbstract>
+          <allowStatic>false</allowStatic>
+          <allowGenericTypes>false</allowGenericTypes>
+          <allowMapping>false</allowMapping>
+          <allowSorting>true</allowSorting>
+          <sortChildren>by-type-then-by-name</sortChildren>
+          <allowFindInView>false</allowFindInView>
+          <allowTypeReference>false</allowTypeReference>
+          <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
+          <allowSetValue>false</allowSetValue>
+          <typeOrder />
+          <creationOptions />
+          <scriptOptions />
+          <mappingOptions />
+          <mappingSettings />
+          <childElementSettings />
         </childElementSetting>
       </childElementSettings>
     </elementSetting>

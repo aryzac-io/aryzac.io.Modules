@@ -1,11 +1,4 @@
-<i18n lang="yaml">
-en:
-  table:
-    firstName: FirstName
-    lastName: LastName
-    otherNames: OtherNames
-    
-</i18n>
+<i18n lang="yaml" src="./List.i18n.yaml" />
 
 <script setup lang="ts">
 

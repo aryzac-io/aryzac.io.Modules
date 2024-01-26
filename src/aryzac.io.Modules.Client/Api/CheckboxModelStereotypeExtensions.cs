@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new CheckboxSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<CheckboxSettings> GetCheckboxSettingss(this CheckboxModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("1fafd144-4893-4a55-835a-487ad4b41bfe")
+                .Select(stereotype => new CheckboxSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasCheckboxSettings(this CheckboxModel model)
         {
@@ -46,6 +56,11 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             public string Name => _stereotype.Name;
+
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
 
             public string Label()
             {

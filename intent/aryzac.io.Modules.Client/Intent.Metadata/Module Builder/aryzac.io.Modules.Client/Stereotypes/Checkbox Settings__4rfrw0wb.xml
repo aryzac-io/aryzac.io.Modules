@@ -14,12 +14,24 @@
   <displayAsAnnotation>false</displayAsAnnotation>
   <displayAsText>true</displayAsText>
   <autoAdd>false</autoAdd>
-  <allowMultipleApplies>false</allowMultipleApplies>
+  <allowMultipleApplies>true</allowMultipleApplies>
   <parentFolderId>1d752276-2801-4dc1-963f-ac4f7b87f2cd</parentFolderId>
   <order>0</order>
   <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
   <packageName>Aryzac.IO.Modules.Client</packageName>
   <properties>
+    <property id="4ad285bd-6f3b-4440-8d40-2ecb273d0f78">
+      <name>Locale</name>
+      <type>string</type>
+      <controlType>select</controlType>
+      <optionsSource>lookup-element</optionsSource>
+      <placeholder />
+      <defaultValue>en</defaultValue>
+      <valueOptions />
+      <lookupTypes>
+        <type>84a53da1-7d07-4bbd-ae08-88cd59406f6f</type>
+      </lookupTypes>
+    </property>
     <property id="269a7ba3-237c-4a18-a5fd-e48815793757">
       <name>Label</name>
       <type>string</type>

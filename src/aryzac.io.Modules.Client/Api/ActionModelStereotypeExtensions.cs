@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new ActionSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<ActionSettings> GetActionSettingss(this ActionModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("ea0f9d89-8d52-4d58-b4d2-9095a9bf5606")
+                .Select(stereotype => new ActionSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasActionSettings(this ActionModel model)
         {
@@ -46,6 +56,11 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             public string Name => _stereotype.Name;
+
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
 
             public string Icon()
             {

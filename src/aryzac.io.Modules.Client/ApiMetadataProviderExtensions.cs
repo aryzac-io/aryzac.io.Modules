@@ -39,6 +39,13 @@ namespace Aryzac.IO.Modules.Client.Api
                 .ToList();
         }
 
+        public static IList<LocalesModel> GetLocalesModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(LocalesModel.SpecializationTypeId)
+                .Select(x => new LocalesModel(x))
+                .ToList();
+        }
+
         public static IList<LayoutModel> GetLayoutModels(this IDesigner designer)
         {
             return designer.GetElementsOfType(LayoutModel.SpecializationTypeId)

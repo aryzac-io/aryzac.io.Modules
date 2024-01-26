@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new TextAreaSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<TextAreaSettings> GetTextAreaSettingss(this TextAreaModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("7c3e71c5-7d9d-47eb-b0fc-8473359257bb")
+                .Select(stereotype => new TextAreaSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasTextAreaSettings(this TextAreaModel model)
         {
@@ -46,6 +56,11 @@ namespace Aryzac.IO.Modules.Client.Api
             }
 
             public string Name => _stereotype.Name;
+
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
 
             public string Label()
             {
