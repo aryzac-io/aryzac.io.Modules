@@ -39,7 +39,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
                 {
                     foreach (var mappedEnd in mapping.MappedEnds)
                     {
-                        
+
                     }
                 }
             }

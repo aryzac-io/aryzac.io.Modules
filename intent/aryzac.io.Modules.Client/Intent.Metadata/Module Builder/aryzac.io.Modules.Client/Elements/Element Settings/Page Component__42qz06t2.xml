@@ -54,20 +54,7 @@
       <name>[context menu]</name>
       <display>[context menu]</display>
       <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>2de8273b-c33f-4d34-8275-14c67467cf0e</parentFolderId>
-      <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
-      <packageName>Aryzac.IO.Modules.Client</packageName>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="9f127758-66a7-4082-9a97-9414d457a663" type="Element Event Settings" typeId="3c628ab0-2407-4fb0-8507-ddde986cff2e">
-      <name>NewElementEventSettings</name>
-      <display>[events]</display>
-      <isAbstract>false</isAbstract>
-      <sort-children>by-type-then-by-name</sort-children>
+      <sort-children>manually</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>2de8273b-c33f-4d34-8275-14c67467cf0e</parentFolderId>
@@ -76,66 +63,38 @@
       <stereotypes />
       <metadata />
       <childElements>
-        <childElement id="1a72f40f-2c5c-4880-9540-edb9e567921e" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
-          <name>On Created</name>
-          <display>On Created: Script</display>
+        <childElement id="b61570c6-55e6-4a64-bf6f-9c62db946391" type="Mapping Option" typeId="00a1eb98-1fc4-4421-9d1c-8733f6bc2111">
+          <name>Map Route To Parameter</name>
+          <display>Map Route To Parameter: Map Route Parameter To Component Parameter</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="7ed268ba-0b46-4cf7-94fb-30488f41ebe9">
-            <typeId>043eee26-1591-42ac-9f2c-fc911b070eb1</typeId>
+          <typeReference id="351c2b48-6e99-48ed-bb39-bb1f8e8f332d">
+            <typeId>c3f6673c-7f05-4648-bf32-0e6c479ae047</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>
             <isRequired>true</isRequired>
-            <typePackageName>Intent.ModuleBuilder</typePackageName>
-            <typePackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</typePackageId>
+            <typePackageName>Aryzac.IO.Modules.Client</typePackageName>
+            <typePackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</typePackageId>
             <stereotypes />
             <genericTypeParameters />
           </typeReference>
           <isMapped>false</isMapped>
-          <parentFolderId>9f127758-66a7-4082-9a97-9414d457a663</parentFolderId>
+          <parentFolderId>d211d5e1-7a29-4a23-a64c-9a53ff9a7683</parentFolderId>
           <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
           <packageName>Aryzac.IO.Modules.Client</packageName>
           <stereotypes>
-            <stereotype stereotypeDefinitionId="56bc0465-c1fe-4bca-9493-2a3ce88a4047" name="Script Settings">
+            <stereotype stereotypeDefinitionId="6c209f86-87f6-4fc3-802e-e6e553dfbeca" name="Option Settings">
+              <comment />
               <addedByDefault>true</addedByDefault>
               <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
               <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
               <properties>
-                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;if (element.typeReference) {&#xD;&#xA;    let parameters = element.typeReference.getType().getChildren(&quot;Component Parameter&quot;);&#xD;&#xA;    parameters.forEach(parameter =&gt; {&#xD;&#xA;        let componentParameter = createElement(&quot;Parameter&quot;, parameter.getName(), element.id);&#xD;&#xA;        componentParameter.typeReference.setType(parameter.typeReference.getType().id);&#xD;&#xA;        componentParameter.typeReference.setIsNullable(parameter.typeReference.getIsNullable());&#xD;&#xA;    });&#xD;&#xA;}&#xD;&#xA;" isActive="true" />
-              </properties>
-            </stereotype>
-          </stereotypes>
-          <metadata />
-          <childElements />
-        </childElement>
-        <childElement id="9f9ebfc9-3392-4457-aaaf-e49176e68581" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
-          <name>On Type Changed</name>
-          <display>On Type Changed: Script</display>
-          <isAbstract>false</isAbstract>
-          <genericTypes />
-          <typeReference id="649821c7-89b5-4334-96bb-cc2f90488ea4">
-            <typeId>043eee26-1591-42ac-9f2c-fc911b070eb1</typeId>
-            <isNavigable>true</isNavigable>
-            <isNullable>false</isNullable>
-            <isCollection>false</isCollection>
-            <isRequired>true</isRequired>
-            <typePackageName>Intent.ModuleBuilder</typePackageName>
-            <typePackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</typePackageId>
-            <stereotypes />
-            <genericTypeParameters />
-          </typeReference>
-          <isMapped>false</isMapped>
-          <parentFolderId>9f127758-66a7-4082-9a97-9414d457a663</parentFolderId>
-          <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
-          <packageName>Aryzac.IO.Modules.Client</packageName>
-          <stereotypes>
-            <stereotype stereotypeDefinitionId="56bc0465-c1fe-4bca-9493-2a3ce88a4047" name="Script Settings">
-              <addedByDefault>true</addedByDefault>
-              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
-              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
-              <properties>
-                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;var existingParameters = element.getChildren(&quot;Component Parameter&quot;);&#xD;&#xA;existingParameters.forEach(parameter =&gt; {&#xD;&#xA;    parameter.delete();&#xD;&#xA;});&#xD;&#xA;if (element.typeReference) {&#xD;&#xA;    let parameters = element.typeReference.getType().getChildren(&quot;Component Parameter&quot;);&#xD;&#xA;    parameters.forEach(parameter =&gt; {&#xD;&#xA;        let componentParameter = createElement(&quot;Parameter&quot;, parameter.getName(), element.id);&#xD;&#xA;        componentParameter.typeReference.setType(parameter.typeReference.getType().id);&#xD;&#xA;        componentParameter.typeReference.setIsNullable(parameter.typeReference.getIsNullable());&#xD;&#xA;    });&#xD;&#xA;}&#xD;&#xA;" isActive="true" />
+                <property name="69d929bc-dcd7-4c2d-aabc-6f05ab6d83b3" display="Shortcut" isActive="true" />
+                <property name="36d5eeba-2483-450e-b51b-b156836f6d3a" display="Shortcut (macOS)" isActive="true" />
+                <property name="08fac0bc-4cf9-45ec-8362-e452a185efee" display="Type Order" isActive="true" />
+                <property name="5e97216b-6c99-4fa2-971d-575a27f212cc" display="Icon" isActive="true" />
+                <property name="63039244-aaad-49eb-84bf-0396a6dd0fe9" display="Is Option Visible Function" isActive="true" />
               </properties>
             </stereotype>
           </stereotypes>

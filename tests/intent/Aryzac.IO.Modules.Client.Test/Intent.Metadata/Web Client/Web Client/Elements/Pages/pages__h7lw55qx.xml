@@ -312,6 +312,79 @@
                   <metadata />
                   <childElements />
                 </childElement>
+                <childElement id="ce287834-f368-4a62-b13b-5a82301a1f4b" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+                  <name>NewPageComponent</name>
+                  <display>NewPageComponent: EditClient</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <typeReference id="6db498c0-46dd-40e2-8764-2322becc490b">
+                    <typeId>7feef88b-f500-4dea-ab2c-596cd3d1b06b</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Web Client</typePackageName>
+                    <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>3ef34866-886c-445a-9af4-6ae0853af235</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <mappings>
+                    <mapping type="Map Route Parameter To Component Parameter" typeId="c3f6673c-7f05-4648-bf32-0e6c479ae047">
+                      <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3ef34866-886c-445a-9af4-6ae0853af235" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[index]" />
+                      <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="7feef88b-f500-4dea-ab2c-596cd3d1b06b" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[EditClient]" />
+                      <mappedEnds>
+                        <mappedEnd>
+                          <expression>{client-id}</expression>
+                          <path>
+                            <target id="7feef88b-f500-4dea-ab2c-596cd3d1b06b" name="EditClient" type="element" specialization="Component" />
+                            <target id="51941abd-4fb7-4d81-94ea-72c4a798ad13" name="client-id" type="element" specialization="Component Parameter" />
+                          </path>
+                          <sources>
+                            <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="f6ad8297-4497-437a-a7ae-bb6ba1bb8487">
+                              <path>
+                                <target id="3ef34866-886c-445a-9af4-6ae0853af235" name="index" type="element" specialization="Page" />
+                                <target id="8894d137-1d92-4daf-a16c-f8193024e2cb" name="client-id" type="element" specialization="Parameter" />
+                              </path>
+                            </source>
+                          </sources>
+                        </mappedEnd>
+                      </mappedEnds>
+                    </mapping>
+                  </mappings>
+                  <metadata />
+                  <childElements>
+                    <childElement id="c8da41ce-e008-4631-ab5b-7d8e116e8cbc" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                      <name>client-id</name>
+                      <display>client-id: guid</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <typeReference id="9064ffb6-b6b7-4244-bb79-8c43c031b1dd">
+                        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                        <isNavigable>true</isNavigable>
+                        <isNullable>false</isNullable>
+                        <isCollection>false</isCollection>
+                        <isRequired>true</isRequired>
+                        <typePackageName>Intent.Common.Types</typePackageName>
+                        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                        <stereotypes />
+                        <genericTypeParameters />
+                      </typeReference>
+                      <isMapped>false</isMapped>
+                      <parentFolderId>ce287834-f368-4a62-b13b-5a82301a1f4b</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
               </childElements>
             </childElement>
           </childElements>

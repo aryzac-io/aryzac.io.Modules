@@ -1648,7 +1648,11 @@ for (let i = 0; i &lt; reversedRouteParameters.length; i++) {
               <typeOrder />
               <creationOptions />
               <scriptOptions />
-              <mappingOptions />
+              <mappingOptions>
+                <option mappingType="Map Route Parameter To Component Parameter" mappingTypeId="c3f6673c-7f05-4648-bf32-0e6c479ae047">
+                  <text>Map Route To Parameter</text>
+                </option>
+              </mappingOptions>
               <mappingSettings />
               <macros>
                 <macro trigger="on-created">
@@ -2488,6 +2492,68 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
           </sources>
           <targets>
             <target id="80a7cce9-5b4b-4ead-ae4e-8fa820fe6e63" name="Column" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+      </mappingTypes>
+    </mappingSetting>
+    <mappingSetting type="Map Route Parameter To Component Parameter" typeId="c3f6673c-7f05-4648-bf32-0e6c479ae047">
+      <title>Map Route Parameter To Component Parameter</title>
+      <sourceRootElementFunction>return element.getParent().id;</sourceRootElementFunction>
+      <sourceMappings>
+        <mapping id="e61fa59a-73dc-4ead-a878-2bf6a40c5060" name="Page" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>true</isTraversable>
+          <traversableTypes>
+            <mappingId>13dfc66f-4342-4d35-a5f3-858025fdbd76</mappingId>
+          </traversableTypes>
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="13dfc66f-4342-4d35-a5f3-858025fdbd76" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </sourceMappings>
+      <targetMappings>
+        <mapping id="e25e89a4-1e22-4ad4-97ea-4b6b9528768e" name="Component" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>true</isTraversable>
+          <traversableTypes>
+            <mappingId>56dc3238-8c46-4a4a-a17b-e2f26a4985ae</mappingId>
+          </traversableTypes>
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="56dc3238-8c46-4a4a-a17b-e2f26a4985ae" name="Component Parameter" type="Component Parameter" typeId="44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>true</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </targetMappings>
+      <mappingTypes>
+        <mappingType type="NewMappingType" typeId="f6ad8297-4497-437a-a7ae-bb6ba1bb8487">
+          <represents>data</represents>
+          <sources>
+            <source id="13dfc66f-4342-4d35-a5f3-858025fdbd76" name="Parameter" />
+          </sources>
+          <targets>
+            <target id="56dc3238-8c46-4a4a-a17b-e2f26a4985ae" name="Component Parameter" />
           </targets>
           <allowAutoMap>true</allowAutoMap>
         </mappingType>
