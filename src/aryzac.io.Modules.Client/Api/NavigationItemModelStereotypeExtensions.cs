@@ -52,11 +52,6 @@ namespace Aryzac.IO.Modules.Client.Api
                 return _stereotype.GetProperty<string>("Icon");
             }
 
-            public IElement NavigateTo()
-            {
-                return _stereotype.GetProperty<IElement>("Navigate To");
-            }
-
         }
 
     }

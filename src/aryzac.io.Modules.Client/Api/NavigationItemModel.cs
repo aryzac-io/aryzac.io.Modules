@@ -11,7 +11,7 @@ using Intent.RoslynWeaver.Attributes;
 namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
-    public class NavigationItemModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
+    public class NavigationItemModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
     {
         public const string SpecializationType = "Navigation Item";
         public const string SpecializationTypeId = "27ebf07c-5f47-49cb-8ccf-b5dc2cffa951";
@@ -34,6 +34,8 @@ namespace Aryzac.IO.Modules.Client.Api
         public string Comment => _element.Comment;
 
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
+
+        public ITypeReference TypeReference => _element.TypeReference;
 
         public IElement InternalElement => _element;
 

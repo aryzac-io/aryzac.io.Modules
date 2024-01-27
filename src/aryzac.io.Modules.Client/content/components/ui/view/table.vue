@@ -13,6 +13,11 @@ const props = defineProps({
     type: [String, Function],
     default: "id",
   },
+  actions: {
+    type: Array,
+    default: () => [],
+    validator: (items) => items.every((item) => typeof item === "object"),
+  },
 });
 
 const getKey = (item, index) => {
@@ -44,7 +49,7 @@ const getKey = (item, index) => {
           {{ header.label }}
         </th>
         <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
-          <span class="sr-only">Edit</span>
+          <span class="sr-only">Actions</span>
         </th>
       </tr>
     </thead>
@@ -65,9 +70,17 @@ const getKey = (item, index) => {
         <td
           class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
         >
-          <a href="#" class="text-indigo-600 hover:text-indigo-900">
-            Edit<span class="sr-only">, {{ getKey(item, index) }}</span>
-          </a>
+          <div v-for="(action, actionId) in actions" :key="actionId">
+            <button
+              type="button"
+              class="text-indigo-600 hover:text-indigo-900"
+              @click="action.action(item)"
+            >
+              <span class="sr-only">{{ action.label }}</span>
+              <icon v-if="action.icon" :name="action.icon" />
+              <span v-else>{{ action.label }}</span>
+            </button>
+          </div>
         </td>
       </tr>
     </tbody>

@@ -29,17 +29,5 @@
       <valueOptions />
       <lookupTypes />
     </property>
-    <property id="39d6af8a-ea7a-4b1b-972e-ab731617cff1">
-      <name>Navigate To</name>
-      <type>string</type>
-      <controlType>select</controlType>
-      <optionsSource>lookup-element</optionsSource>
-      <placeholder />
-      <valueOptions />
-      <lookupTypes>
-        <type>89cf68f6-6f29-412a-bae2-31faed8280d9</type>
-      </lookupTypes>
-      <isRequiredFunction>return true;</isRequiredFunction>
-    </property>
   </properties>
 </stereotypeDefinition>

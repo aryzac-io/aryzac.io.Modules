@@ -319,7 +319,7 @@ if (Model.TopNavigation != null)
         foreach (var item in section.Items)
         {
             item.TryGetNavigationItemSettings(out var navigationSettings);
-            var page = navigationSettings.NavigateTo().AsPageModel();
+            var page = item.TypeReference.Element.AsPageModel();
 
           
             
@@ -422,7 +422,7 @@ if (Model.SidebarNavigation != null)
     foreach (var item in section.Items)
     {
         item.TryGetNavigationItemSettings(out var navigationSettings);
-        var page = navigationSettings.NavigateTo().AsPageModel();
+        var page = item.TypeReference.Element.AsPageModel();
 
       
             
@@ -503,7 +503,7 @@ if (Model.BreadcrumbNavigation != null)
   foreach (var item in Model.BreadcrumbNavigation.Items)
   {
       item.TryGetNavigationItemSettings(out var navigationSettings);
-      var page = navigationSettings.NavigateTo().AsPageModel();
+      var page = item.TypeReference.Element.AsPageModel();
 
       
             

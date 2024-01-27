@@ -12,10 +12,10 @@
 <i18n lang="yaml" src="./<#= Model.Name #>.i18n.yaml" />
 
 <script setup lang="ts">
-<#
-  if (Model.Query != null)
+<# 
+  foreach (var query in Queries)
   {
-    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)Model.Query.Mapping.Element.AsOperationModel().Mapping.Element);
+    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)query.Mapping.Element.AsOperationModel().Mapping.Element);
 	#>import type { <#= endpoint.ReturnType.Element.Name #> } from '~/structs/dto/<#= ((IElement)endpoint.ReturnType.Element).ParentElement.Name.ToPascalCase().ToCamelCase() #>/<#= ((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase() #>.dto';<#
   }
 #>
@@ -268,6 +268,21 @@ foreach (var column in table.Columns)
 <#
 }
 #>];
+
+const <#= table.Name.ToPascalCase().ToCamelCase() #>Actions = [
+<# 
+foreach (var action in table.Actions.Actions)
+{
+#>
+  {
+    label: t("<#= table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label"),
+    action: async (item) => {
+      await navigateTo(`/clients/${item.id}`);
+    },
+  },
+<#
+}
+#>];
 <#
         }
       }
@@ -289,6 +304,34 @@ foreach (var column in Model.View.Table.Columns)
 	label: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.<#= column.Name.ToPascalCase().ToCamelCase() #>"),
   },
 <#
+}
+#>];
+
+const <#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Actions = [
+<# 
+foreach (var action in Model.View.Table.Actions.Actions)
+{
+    if (action.Navigation != null)
+    {
+      var page = action.Navigation.TypeReference.Element.AsPageModel();
+      var pageUrl = page.GetRoutePath();
+
+      foreach (var mapping in action.Navigation.InternalElement.Mappings) // .Where(m => m.TypeId == "90548e07-a8af-41a1-b608-d07b35d98fa3"))
+      {
+        foreach (var mappingEnd in mapping.MappedEnds)
+        {
+          pageUrl = pageUrl.Replace($"[{mappingEnd.TargetElement.Name}]", $"${{item.{mappingEnd.SourceElement.Name.ToPascalCase().ToCamelCase()}}}");
+        }
+      }
+#>
+  {
+    label: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label"),
+    action: async (item: <#= ((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
+      await navigateTo(`<#= pageUrl #>`);
+    },
+  },
+<#
+    }
 }
 #>];
 
@@ -396,6 +439,7 @@ if (Model.View != null)
   <ui-view-table
     :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
     :headers="<#= control.Name.ToPascalCase().ToCamelCase() #>Headers"
+    :actions="<#= control.Name.ToPascalCase().ToCamelCase() #>Actions"
     key="id"
   />
 <#
@@ -441,6 +485,7 @@ if (Model.View != null)
   <ui-view-table
     :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
     :headers="<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Headers"
+    :actions="<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Actions"
     key="id"
   />
 <# 

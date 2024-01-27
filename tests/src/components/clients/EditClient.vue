@@ -56,7 +56,8 @@ const saveChangeNameClientCommand = async () => {
     otherNames: model.otherNames,
   };
 
-const id = props.clientId;
+  const id = props.clientId;
+          
 	const changeNameClientCommand = await clientsServiceProxy.changeNameClientCommand(id, command);
 };
 

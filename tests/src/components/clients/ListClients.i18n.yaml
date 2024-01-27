@@ -3,3 +3,6 @@ en:
     firstName: FirstName
     lastName: LastName
     otherNames: OtherNames
+    actions:
+      edit:
+        label: Edit

@@ -32,7 +32,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Layouts.Layout
                         foreach (var item in section.Items)
                         {
                             item.TryGetNavigationItemSettings(out var navigationSettings);
-                            var page = navigationSettings.NavigateTo().AsPageModel();
                         }
                     }
                 }

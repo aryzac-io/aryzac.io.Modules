@@ -86,7 +86,7 @@ namespace Aryzac.IO.Modules.Client.Api
 
         public static string GetRoutePath(this PageModel page)
         {
-            var path = "/";
+            var pathSegments = new List<string>();
             var currentNode = page.InternalElement;
 
             while (currentNode != null)
@@ -98,13 +98,17 @@ namespace Aryzac.IO.Modules.Client.Api
 
                 if (currentNode.Name.ToLower() != "index")
                 {
-                    path += $"/{currentNode.Name}";
+                    pathSegments.Add(currentNode.Name);
                 }
 
                 currentNode = currentNode.ParentElement;
             }
 
-            return path.Replace("//", "/");
+            pathSegments.Reverse(); // Reverse the order of the path segments
+
+            var path = "/" + string.Join("/", pathSegments); // Join the path segments with '/'
+
+            return path;
         }
 
         public static string GetPath(this PageModel page, bool useIndexInsteadOfName = false)

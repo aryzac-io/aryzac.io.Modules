@@ -1,7 +1,7 @@
 <i18n lang="yaml" src="./ListClients.i18n.yaml" />
 
 <script setup lang="ts">
-
+import type { ClientDto } from '~/structs/dto/clients/client.dto';
 
 const { t } = useI18n();
 
@@ -39,12 +39,22 @@ const tableHeaders = [
   },
 ];
 
+const tableActions = [
+  {
+    label: t("table.actions.edit.label"),
+    action: async (item: ClientDto) => {
+      await navigateTo(`/clients/${item.id}`);
+    },
+  },
+];
+
 </script>
 
 <template>
   <ui-view-table
     :items="tableGetClientsQueryData"
     :headers="tableHeaders"
+    :actions="tableActions"
     key="id"
   />
 </template>

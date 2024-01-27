@@ -32,17 +32,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public ComponentTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
             Types = new TypeScriptTypeResolver();
-
-            foreach (var query in Queries)
-            {
-                foreach (var mapping in query.InternalElement.Mappings)
-                {
-                    foreach (var mappedEnd in mapping.MappedEnds)
-                    {
-
-                    }
-                }
-            }
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

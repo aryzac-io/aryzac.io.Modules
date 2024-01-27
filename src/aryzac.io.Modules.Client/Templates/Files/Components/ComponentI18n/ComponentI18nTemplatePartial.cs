@@ -40,7 +40,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
                             });
                     }
                 });
-
         }
 
         public IList<LocalesModel> GetLocales()
@@ -101,6 +100,20 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
                 foreach (var column in table.Columns)
                 {
                     tableObj.WithValue(column.Name.ToCamelCase(), column.Name);
+                }
+
+                if (table.Actions is not null)
+                {
+                    tableObj.WithObject("actions", actions =>
+                    {
+                        foreach (var action in table.Actions.Actions)
+                        {
+                            actions.WithObject(action.Name.ToPascalCase().ToCamelCase(), actionObj =>
+                            {
+                                actionObj.WithValue("label", action.Name);
+                            });
+                        }
+                    });
                 }
             });
         }

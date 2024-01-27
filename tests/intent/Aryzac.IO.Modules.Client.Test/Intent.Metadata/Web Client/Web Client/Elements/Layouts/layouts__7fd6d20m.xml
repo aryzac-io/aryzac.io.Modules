@@ -53,9 +53,20 @@
               <childElements>
                 <childElement id="5275cc58-f212-4507-823a-12c95a24e38c" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
                   <name>Home</name>
-                  <display>Home</display>
+                  <display>Home: index</display>
                   <isAbstract>false</isAbstract>
                   <genericTypes />
+                  <typeReference id="09ea2e3f-8c13-4b85-a96f-5ef11cdad40c">
+                    <typeId>1343048f-f75a-40af-bd84-8a957ed4651a</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Web Client</typePackageName>
+                    <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
                   <isMapped>false</isMapped>
                   <parentFolderId>eeae4fb8-2c4f-43ae-a933-31409d7aeed9</parentFolderId>
                   <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
@@ -67,7 +78,6 @@
                       <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                       <properties>
                         <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" isActive="true" />
-                        <property name="39d6af8a-ea7a-4b1b-972e-ab731617cff1" display="Navigate To" value="1343048f-f75a-40af-bd84-8a957ed4651a" isActive="true" />
                       </properties>
                     </stereotype>
                   </stereotypes>
@@ -76,9 +86,20 @@
                 </childElement>
                 <childElement id="ac59aeab-84f8-45a8-876b-14ab682d8760" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
                   <name>Clients</name>
-                  <display>Clients</display>
+                  <display>Clients: index</display>
                   <isAbstract>false</isAbstract>
                   <genericTypes />
+                  <typeReference id="0395943f-8482-4dad-8dda-a4b3bf22a17c">
+                    <typeId>13c48c79-ef01-499b-b7a2-cc267d02dcde</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Web Client</typePackageName>
+                    <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
                   <isMapped>false</isMapped>
                   <parentFolderId>eeae4fb8-2c4f-43ae-a933-31409d7aeed9</parentFolderId>
                   <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
@@ -90,7 +111,6 @@
                       <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                       <properties>
                         <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" isActive="true" />
-                        <property name="39d6af8a-ea7a-4b1b-972e-ab731617cff1" display="Navigate To" value="13c48c79-ef01-499b-b7a2-cc267d02dcde" isActive="true" />
                       </properties>
                     </stereotype>
                   </stereotypes>
@@ -116,9 +136,20 @@
           <childElements>
             <childElement id="19528cb0-888a-453f-a8ea-4898d91eee05" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
               <name>Home</name>
-              <display>Home</display>
+              <display>Home: index</display>
               <isAbstract>false</isAbstract>
               <genericTypes />
+              <typeReference id="ae427aa5-f280-48b5-877a-d773bc8fbf08">
+                <typeId>1343048f-f75a-40af-bd84-8a957ed4651a</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Web Client</typePackageName>
+                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
               <isMapped>false</isMapped>
               <parentFolderId>9637c818-b6c4-453b-ad88-997a011a3097</parentFolderId>
               <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
@@ -130,7 +161,6 @@
                   <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                   <properties>
                     <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" value="heroicons:home-20-solid" isActive="true" />
-                    <property name="39d6af8a-ea7a-4b1b-972e-ab731617cff1" display="Navigate To" value="1343048f-f75a-40af-bd84-8a957ed4651a" isActive="true" />
                   </properties>
                 </stereotype>
               </stereotypes>
