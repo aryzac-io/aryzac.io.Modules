@@ -227,6 +227,84 @@
                       <stereotypes />
                       <metadata />
                       <childElements>
+                        <childElement id="fa230b6a-fea2-4d4b-8986-25ddd0853eb2" type="Action" typeId="420c5366-fd1b-4130-afab-45f4ece2cce2">
+                          <name>Delete</name>
+                          <display>Delete</display>
+                          <isAbstract>false</isAbstract>
+                          <sort-children>by-type-then-by-name</sort-children>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>296ea4cb-18e7-4d07-a093-c36db28c04fc</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="ea0f9d89-8d52-4d58-b4d2-9095a9bf5606" name="Action Settings">
+                              <addedByDefault>true</addedByDefault>
+                              <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                              <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                              <properties>
+                                <property name="b0451488-cf54-4083-81c6-a25270f27bd7" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
+                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" isActive="true" />
+                                <property name="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4" display="Label" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements>
+                            <childElement id="b9308a0b-fc72-4a31-904b-f26985ad91cb" type="Component Command" typeId="52a388d5-ebcb-44d6-bbb7-8608597a06a8">
+                              <name>[command]</name>
+                              <display>[command]</display>
+                              <isAbstract>false</isAbstract>
+                              <sort-children>by-type-then-by-name</sort-children>
+                              <genericTypes />
+                              <isMapped>true</isMapped>
+                              <mappedClass isRoot="true">
+                                <applicationId>62c371b4-af5f-42bf-9b88-6751357b25cf</applicationId>
+                                <metadataId>f492faed-0665-4513-9853-5a230721786f</metadataId>
+                                <mappingSettingsId>3eda3b99-cbdc-4218-95e8-fee082b6139e</mappingSettingsId>
+                                <autoSyncTypeReference>true</autoSyncTypeReference>
+                                <mappedPath>
+                                  <target id="353a3d57-512c-4752-a726-906c7d5f6acc" name="services" type="element" specialization="Service Proxies" />
+                                  <target id="bfa10f42-42f6-4d8e-a704-00b7e2266489" name="ClientsService" type="element" specialization="Service Proxy" />
+                                  <target id="f6c49440-10d9-4a1e-8473-9de247de07cb" name="DeleteClientCommand" type="element" specialization="Operation" />
+                                </mappedPath>
+                              </mappedClass>
+                              <parentFolderId>fa230b6a-fea2-4d4b-8986-25ddd0853eb2</parentFolderId>
+                              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                              <packageName>Web Client</packageName>
+                              <stereotypes />
+                              <metadata />
+                              <childElements>
+                                <childElement id="49a64cfb-c7c0-4261-8237-8788959ef7c6" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                                  <name>id</name>
+                                  <display>id: guid</display>
+                                  <isAbstract>false</isAbstract>
+                                  <genericTypes />
+                                  <typeReference id="dead3b8a-b561-46ed-9991-f7f34f390276">
+                                    <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                                    <isNavigable>true</isNavigable>
+                                    <isNullable>false</isNullable>
+                                    <isCollection>false</isCollection>
+                                    <isRequired>true</isRequired>
+                                    <typePackageName>Intent.Common.Types</typePackageName>
+                                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                                    <stereotypes />
+                                    <genericTypeParameters />
+                                  </typeReference>
+                                  <isMapped>false</isMapped>
+                                  <parentFolderId>b9308a0b-fc72-4a31-904b-f26985ad91cb</parentFolderId>
+                                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                                  <packageName>Web Client</packageName>
+                                  <stereotypes />
+                                  <metadata>
+                                    <entry key="endpoint-input-id" value="cea3b1d7-805e-42ad-9d21-ad8df51f5c1c" />
+                                  </metadata>
+                                  <childElements />
+                                </childElement>
+                              </childElements>
+                            </childElement>
+                          </childElements>
+                        </childElement>
                         <childElement id="9032bdd2-1411-456b-89d2-9072eabc5a5c" type="Action" typeId="420c5366-fd1b-4130-afab-45f4ece2cce2">
                           <name>Edit</name>
                           <display>Edit</display>

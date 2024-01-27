@@ -2695,6 +2695,26 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
           </targets>
           <allowAutoMap>true</allowAutoMap>
         </mappingType>
+        <mappingType type="NewMappingType" typeId="ae2cc625-3823-4e88-8e75-e9e2c89ac77d">
+          <represents>data</represents>
+          <sources>
+            <source id="88a4b8a9-863b-4c2f-81ab-a360b126d4ef" name="Component Model Field" />
+          </sources>
+          <targets>
+            <target id="60645f19-9672-4d7a-81d9-e3dc14bcc872" name="Parameter" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+        <mappingType type="NewMappingType" typeId="309b5d37-be4e-416d-91ae-74c85b7202d3">
+          <represents>data</represents>
+          <sources>
+            <source id="6516bc93-84c6-4e5b-ae93-0861ea0991a3" name="Component Parameter" />
+          </sources>
+          <targets>
+            <target id="60645f19-9672-4d7a-81d9-e3dc14bcc872" name="Parameter" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
       </mappingTypes>
     </mappingSetting>
   </mappingSettings>
