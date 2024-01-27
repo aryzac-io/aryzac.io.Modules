@@ -108,9 +108,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
                     {
                         foreach (var action in table.Actions.Actions)
                         {
+                            action.TryGetActionSettings(out var actionSettings);
                             actions.WithObject(action.Name.ToPascalCase().ToCamelCase(), actionObj =>
                             {
-                                actionObj.WithValue("label", action.Name);
+                                actionObj.WithValue("label", actionSettings.Label() ?? action.Name);
+                                if (actionSettings.Icon() is not null)
+                                    actionObj.WithValue("icon", actionSettings.Icon());
                             });
                         }
                     });
@@ -126,7 +129,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
             en.WithObject(component.Name.ToPascalCase().ToCamelCase(), sectionObj =>
             {
                 // Set title and description, use defaults if not available
-                sectionObj.WithValue("title", sectionSettings?.Title() ?? "''");
+                sectionObj.WithValue("title", sectionSettings?.Title() ?? component.Name ?? "''");
                 sectionObj.WithValue("description", sectionSettings?.Description() ?? "''");
 
                 foreach (var control in section.InternalElement.ChildElements)

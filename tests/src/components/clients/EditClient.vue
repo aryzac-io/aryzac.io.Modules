@@ -61,7 +61,6 @@ const saveChangeNameClientCommand = async () => {
 	const changeNameClientCommand = await clientsServiceProxy.changeNameClientCommand(id, command);
 };
 
-// Personal Information Options
 
 </script>
 

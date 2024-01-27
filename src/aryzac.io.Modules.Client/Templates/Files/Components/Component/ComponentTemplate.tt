@@ -211,12 +211,12 @@ if (Model.View != null)
   foreach (var component in Model.View.InternalElement.ChildElements)
   {    
 #>
-// <#= component.Name #> Options
 
 <#   
     if (component.IsHeadingModel()) // Heading
     {
 #>
+// <#= component.Name #> Options
 const <#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Attributes = computed(() => [
 <# 
       foreach (var attribute in Model.View.Heading.Attributes)
@@ -293,7 +293,7 @@ foreach (var action in table.Actions.Actions)
     {
 #>
 
-//<#= component.Name #> Options
+// <#= component.Name #> Options
 const <#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Headers = [
 <# 
 foreach (var column in Model.View.Table.Columns)
@@ -311,6 +311,7 @@ const <#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Actions = [
 <# 
 foreach (var action in Model.View.Table.Actions.Actions)
 {
+    action.TryGetActionSettings(out var actionSettings);
     if (action.Navigation != null)
     {
       var page = action.Navigation.TypeReference.Element.AsPageModel();
@@ -326,6 +327,14 @@ foreach (var action in Model.View.Table.Actions.Actions)
 #>
   {
     label: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label"),
+<#
+      if (actionSettings.Icon() is not null)
+      {
+#>
+    icon: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.icon"),
+<#
+      }
+#>
     action: async (item: <#= ((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
       await navigateTo(`<#= pageUrl #>`);
     },

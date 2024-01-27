@@ -6,3 +6,4 @@ en:
     actions:
       edit:
         label: Edit
+        icon: ic:twotone-edit

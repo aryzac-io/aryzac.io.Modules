@@ -20,10 +20,9 @@ const {
 
 
 
+
+
 // table Options
-
-
-//table Options
 const tableHeaders = [
   {
 	key: 'firstName',
@@ -42,6 +41,7 @@ const tableHeaders = [
 const tableActions = [
   {
     label: t("table.actions.edit.label"),
+    icon: t("table.actions.edit.icon"),
     action: async (item: ClientDto) => {
       await navigateTo(`/clients/${item.id}`);
     },

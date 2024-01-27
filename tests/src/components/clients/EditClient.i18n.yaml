@@ -1,6 +1,6 @@
 en:
   personalInformation:
-    title: ''
+    title: Personal Information
     description: ''
     firstNameTextBox:
       label: First name
