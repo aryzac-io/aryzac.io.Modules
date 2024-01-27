@@ -100,9 +100,45 @@ foreach (var pageParameter in PageParameters)
             
             #line default
             #line hidden
-            this.Write(" />\r\n");
+            this.Write(" \r\n\t");
             
             #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+
+      foreach (var mapping in pageComponent.InternalElement.Mappings)
+      {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+    
+            
+            #line default
+            #line hidden
+            this.Write("    :");
+            
+            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.TargetElement.Name.ToKebabCase()));
+            
+            #line default
+            #line hidden
+            this.Write("=\"");
+            
+            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write("\"");
+            
+            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+
+        }
+      }
+	
+            
+            #line default
+            #line hidden
+            this.Write("\t/>\r\n");
+            
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
 
 	}
 } 

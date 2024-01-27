@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
   <div>
-    <clients-list-clients />
+    <clients-list-clients 
+		/>
   </div>
 </template>

@@ -26,24 +26,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
         [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
         public PageTemplate(IOutputTarget outputTarget, PageModel model) : base(TemplateId, outputTarget, model)
         {
-            foreach (var pageComponent in model.PageComponents)
-            {
-                var i = (IElement)pageComponent.TypeReference.Element;
-
-                while (i != null)
-                {
-                    Debug.WriteLine(i.Name);
-
-                    i = i.ParentElement;
-
-                    if (i.SpecializationType == "Components")
-                    {
-                        break;
-                    }
-                }
-
-                var o = pageComponent.TypeReference.Element.Name.ToKebabCase();
-            }
+            
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

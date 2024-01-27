@@ -33,7 +33,17 @@ const <#= pageParameter.Name.ToPascalCase().ToCamelCase() #> = route.params.<#= 
 	foreach (var pageComponent in Model.PageComponents)
 	{
 #>
-    <<#= GetPageComponentName(pageComponent) #> />
+    <<#= GetPageComponentName(pageComponent) #> 
+	<#
+      foreach (var mapping in pageComponent.InternalElement.Mappings)
+      {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+    #>    :<#= mappedEnd.TargetElement.Name.ToKebabCase() #>="<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>"<#
+        }
+      }
+	#>
+	/>
 <#
 	}
 } 

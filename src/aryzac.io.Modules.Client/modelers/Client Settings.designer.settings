@@ -1654,36 +1654,6 @@ for (let i = 0; i &lt; reversedRouteParameters.length; i++) {
                 </option>
               </mappingOptions>
               <mappingSettings />
-              <macros>
-                <macro trigger="on-created">
-                  <script>/// &lt;reference path="../../../../../typings/elementmacro.context.api.d.ts" /&gt;
-if (element.typeReference) {
-    let parameters = element.typeReference.getType().getChildren("Component Parameter");
-    parameters.forEach(parameter =&gt; {
-        let componentParameter = createElement("Parameter", parameter.getName(), element.id);
-        componentParameter.typeReference.setType(parameter.typeReference.getType().id);
-        componentParameter.typeReference.setIsNullable(parameter.typeReference.getIsNullable());
-    });
-}
-</script>
-                </macro>
-                <macro trigger="on-type-changed">
-                  <script>/// &lt;reference path="../../../../../typings/elementmacro.context.api.d.ts" /&gt;
-var existingParameters = element.getChildren("Component Parameter");
-existingParameters.forEach(parameter =&gt; {
-    parameter.delete();
-});
-if (element.typeReference) {
-    let parameters = element.typeReference.getType().getChildren("Component Parameter");
-    parameters.forEach(parameter =&gt; {
-        let componentParameter = createElement("Parameter", parameter.getName(), element.id);
-        componentParameter.typeReference.setType(parameter.typeReference.getType().id);
-        componentParameter.typeReference.setIsNullable(parameter.typeReference.getIsNullable());
-    });
-}
-</script>
-                </macro>
-              </macros>
               <childElementSettings />
             </childElementSetting>
           </childElementSettings>

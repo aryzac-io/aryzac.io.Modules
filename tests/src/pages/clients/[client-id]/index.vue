@@ -6,5 +6,6 @@ const clientId = route.params.clientId;
 
 <template>
   <div>
+    <clients-edit-client :client-id="clientId" />
   </div>
 </template>
