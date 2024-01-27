@@ -9,11 +9,12 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Domain.Entities
 {
     public class Client : IHasDomainEvent
     {
-        public Client(string firstName, string lastName, string? otherNames)
+        public Client(string firstName, string lastName, string? otherNames, Guid titleId)
         {
             FirstName = firstName;
             LastName = lastName;
             OtherNames = otherNames;
+            TitleId = titleId;
         }
 
         /// <summary>
@@ -33,6 +34,8 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Domain.Entities
 
         public string? OtherNames { get; private set; }
 
+        public Guid TitleId { get; private set; }
+
         public List<DomainEvent> DomainEvents { get; set; } = new List<DomainEvent>();
 
         public void ChangeName(string firstName, string lastName, string? otherNames)
@@ -40,6 +43,11 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Domain.Entities
             FirstName = firstName;
             LastName = lastName;
             OtherNames = otherNames;
+        }
+
+        public void ChangeTitle(Guid titleId)
+        {
+            TitleId = titleId;
         }
     }
 }

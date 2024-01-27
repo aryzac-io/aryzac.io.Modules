@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="83e09948-4495-4b0a-bdf3-f837d7105aae">
+  <sourceEnd id="982ecb59-9816-425b-b039-272d000a5ef1" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : InvoiceLines.ChangeProductInvoiceLineCommand</display>
+    <order>0</order>
+    <typeReference id="33568643-33a6-456e-a87a-98c863c2a11f">
+      <typeId>8ea3dd14-5d69-46dd-90b7-c88fc646beef</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="83e09948-4495-4b0a-bdf3-f837d7105aae" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>invoiceLine</name>
+    <display>[update] invoiceLine: ChangeProduct</display>
+    <order>3</order>
+    <typeReference id="69419e92-05a2-45e5-b9e8-c8edc7e3136c">
+      <typeId>38aba1b2-af16-408a-bef1-ced0f01175d1</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="8ea3dd14-5d69-46dd-90b7-c88fc646beef" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeProductInvoiceLineCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[InvoiceLine]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="d6d4f06d-292a-4713-af35-a7f3c17bb826" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="8ea3dd14-5d69-46dd-90b7-c88fc646beef" name="ChangeProductInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="729f9583-94f9-4be6-a2ce-78d0dc5a6463" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="8ea3dd14-5d69-46dd-90b7-c88fc646beef" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeProductInvoiceLineCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[InvoiceLine]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{ChangeProductInvoiceLineCommand}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="38aba1b2-af16-408a-bef1-ced0f01175d1" name="ChangeProduct" type="element" specialization="Operation" />
+            </path>
+            <sources>
+              <source identifier="ChangeProductInvoiceLineCommand" mappingType="Invocation Mapping" mappingTypeId="d30bdba1-9c47-4917-b81d-29230fed5d6a">
+                <path>
+                  <target id="8ea3dd14-5d69-46dd-90b7-c88fc646beef" name="ChangeProductInvoiceLineCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ProductId}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="38aba1b2-af16-408a-bef1-ced0f01175d1" name="ChangeProduct" type="element" specialization="Operation" />
+              <target id="cbfbb17b-e90e-4131-aa78-a15dbf8ed2d1" name="productId" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="ProductId" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="8ea3dd14-5d69-46dd-90b7-c88fc646beef" name="ChangeProductInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="01502ca2-fc77-4fff-963d-9ccd92d1c71f" name="ProductId" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{UnitPrice}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="38aba1b2-af16-408a-bef1-ced0f01175d1" name="ChangeProduct" type="element" specialization="Operation" />
+              <target id="2f0f2c74-1d6d-4d44-a566-6d9279d16dd8" name="unitPrice" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="UnitPrice" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="8ea3dd14-5d69-46dd-90b7-c88fc646beef" name="ChangeProductInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="2eba2a7f-1cb0-47d7-9276-357186641f45" name="UnitPrice" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

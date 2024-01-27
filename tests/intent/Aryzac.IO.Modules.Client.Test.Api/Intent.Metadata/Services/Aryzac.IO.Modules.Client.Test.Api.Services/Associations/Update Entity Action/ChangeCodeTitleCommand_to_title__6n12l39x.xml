@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="62862a60-88e5-4a1d-bf23-7b0a74347957">
+  <sourceEnd id="3c0bc951-5512-443b-9932-c47c0f6e0f16" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : Titles.ChangeCodeTitleCommand</display>
+    <order>0</order>
+    <typeReference id="f5fffd47-49d2-4950-867a-33d79b9cd89e">
+      <typeId>c27cb5e5-71d7-4bb0-b268-052b76690385</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="62862a60-88e5-4a1d-bf23-7b0a74347957" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>title</name>
+    <display>[update] title: ChangeCode</display>
+    <order>2</order>
+    <typeReference id="15889e9f-7f99-4bcd-8129-44e09541dbbd">
+      <typeId>17e9157d-c968-42f4-b60a-622401a11729</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c27cb5e5-71d7-4bb0-b268-052b76690385" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeCodeTitleCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="e7608248-d479-45aa-92f7-16812f838412" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Title]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="e7608248-d479-45aa-92f7-16812f838412" name="Title" type="element" specialization="Class" />
+              <target id="4f1bd4b6-6f4c-42ae-9e28-5f0f7690f15e" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="c27cb5e5-71d7-4bb0-b268-052b76690385" name="ChangeCodeTitleCommand" type="element" specialization="Command" />
+                  <target id="3e4c2f65-728e-449d-9aa8-2a2151069f6d" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c27cb5e5-71d7-4bb0-b268-052b76690385" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeCodeTitleCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="e7608248-d479-45aa-92f7-16812f838412" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Title]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{ChangeCodeTitleCommand}</expression>
+            <path>
+              <target id="e7608248-d479-45aa-92f7-16812f838412" name="Title" type="element" specialization="Class" />
+              <target id="17e9157d-c968-42f4-b60a-622401a11729" name="ChangeCode" type="element" specialization="Operation" />
+            </path>
+            <sources>
+              <source identifier="ChangeCodeTitleCommand" mappingType="Invocation Mapping" mappingTypeId="d30bdba1-9c47-4917-b81d-29230fed5d6a">
+                <path>
+                  <target id="c27cb5e5-71d7-4bb0-b268-052b76690385" name="ChangeCodeTitleCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Code}</expression>
+            <path>
+              <target id="e7608248-d479-45aa-92f7-16812f838412" name="Title" type="element" specialization="Class" />
+              <target id="17e9157d-c968-42f4-b60a-622401a11729" name="ChangeCode" type="element" specialization="Operation" />
+              <target id="8a7a3730-c1d4-4aca-b7be-af03a9b66b13" name="code" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="Code" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="c27cb5e5-71d7-4bb0-b268-052b76690385" name="ChangeCodeTitleCommand" type="element" specialization="Command" />
+                  <target id="098ec860-6736-4321-ab07-a2e954755335" name="Code" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

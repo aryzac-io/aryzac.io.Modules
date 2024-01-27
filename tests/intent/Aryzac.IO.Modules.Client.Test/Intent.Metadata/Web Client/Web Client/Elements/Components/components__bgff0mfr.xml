@@ -159,8 +159,6 @@
                         <isNullable>false</isNullable>
                         <isCollection>false</isCollection>
                         <isRequired>true</isRequired>
-                        <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
-                        <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
                         <stereotypes />
                         <genericTypeParameters />
                       </typeReference>
@@ -732,8 +730,6 @@
                                         <isNullable>false</isNullable>
                                         <isCollection>false</isCollection>
                                         <isRequired>true</isRequired>
-                                        <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
-                                        <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
                                         <stereotypes />
                                         <genericTypeParameters />
                                       </typeReference>
@@ -833,8 +829,6 @@
                                 <isNullable>false</isNullable>
                                 <isCollection>true</isCollection>
                                 <isRequired>true</isRequired>
-                                <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
-                                <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
                                 <stereotypes />
                                 <genericTypeParameters />
                               </typeReference>

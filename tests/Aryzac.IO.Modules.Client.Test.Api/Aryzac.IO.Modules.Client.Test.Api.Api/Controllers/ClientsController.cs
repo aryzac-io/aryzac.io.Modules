@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ResponseTypes;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeNameClient;
+using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeTitleClient;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.DeleteClient;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.GetClientById;
@@ -67,6 +68,36 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Api.Controllers
 
         /// <summary>
         /// </summary>
+        /// <response code="204">Successfully updated.</response>
+        /// <response code="400">One or more validation errors have occurred.</response>
+        /// <response code="404">One or more entities could not be found with the provided parameters.</response>
+        [HttpPut("api/v{version:apiVersion}/client/{id}/change-title")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+        [MapToApiVersion("1.0")]
+        public async Task<ActionResult> ChangeTitleClient(
+            [FromRoute] Guid id,
+            [FromBody] ChangeTitleClientCommand command,
+            CancellationToken cancellationToken = default)
+        {
+            if (command.Id == default)
+            {
+                command.Id = id;
+            }
+
+            if (id != command.Id)
+            {
+                return BadRequest();
+            }
+
+            await _mediator.Send(command, cancellationToken);
+            return NoContent();
+        }
+
+        /// <summary>
+        /// </summary>
         /// <response code="201">Successfully created.</response>
         /// <response code="400">One or more validation errors have occurred.</response>
         [HttpPost("api/v{version:apiVersion}/client")]
@@ -76,22 +107,12 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Api.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
         [MapToApiVersion("1.0")]
         public async Task<ActionResult<JsonResponse<Guid>>> CreateClient(
-            [FromHeader(Name = "newDTOField")] string newDTOField,
             [FromBody] CreateClientCommand command,
             CancellationToken cancellationToken = default)
         {
-            if (command.NewDTOField == default)
-            {
-                command.NewDTOField = newDTOField;
-            }
-
-            if (newDTOField != command.NewDTOField)
-            {
-                return BadRequest();
-            }
 
             var result = await _mediator.Send(command, cancellationToken);
-            return Created(string.Empty, new JsonResponse<Guid>(result));
+            return CreatedAtAction(nameof(GetClientById), new { id = result }, new JsonResponse<Guid>(result));
         }
 
         /// <summary>

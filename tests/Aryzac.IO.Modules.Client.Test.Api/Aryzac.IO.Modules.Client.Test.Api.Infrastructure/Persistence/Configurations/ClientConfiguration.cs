@@ -25,6 +25,9 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence.Configura
             builder.Property(x => x.OtherNames)
                 .HasMaxLength(512);
 
+            builder.Property(x => x.TitleId)
+                .IsRequired();
+
             builder.Ignore(e => e.DomainEvents);
         }
     }

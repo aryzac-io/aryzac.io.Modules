@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="18f9100f-ed9d-4feb-8bc0-93739bc90004">
+  <sourceEnd id="9a70ed2a-67eb-45eb-aaee-de6bc60c9beb" type="Delete Entity Action Source End" typeId="8c2d9fed-bd14-44b2-9f98-8a801aaf157e">
+    <display>deleted by : Clients.DeleteClientCommand</display>
+    <order>0</order>
+    <typeReference id="ab928d49-9f3a-4305-8623-cd817692a219">
+      <typeId>0b897df0-2dcd-4c9b-baf8-8e8180894a38</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="18f9100f-ed9d-4feb-8bc0-93739bc90004" type="Delete Entity Action Target End" typeId="4a04cfc2-5841-438c-9c16-fb58b784b365">
+    <name>client</name>
+    <display>[delete] client: Client</display>
+    <order>1</order>
+    <typeReference id="579ba30b-f6c3-4639-b954-fcd7070ed41b">
+      <typeId>bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="0b897df0-2dcd-4c9b-baf8-8e8180894a38" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[DeleteClientCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Client]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" name="Client" type="element" specialization="Class" />
+              <target id="7a01128d-e48b-4377-9d50-cf5ad4f27d1e" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="0b897df0-2dcd-4c9b-baf8-8e8180894a38" name="DeleteClientCommand" type="element" specialization="Command" />
+                  <target id="cea3b1d7-805e-42ad-9d21-ad8df51f5c1c" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Delete Entity Action</associationType>
+  <associationTypeId>bfc823fb-60ab-451d-ba62-12671fe7e28e</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="09242220-cc6e-491f-9597-d0fed366e22b" type="Diagram" typeId="8c90aca5-86f4-47f1-bd58-116fe79f5c55">
+  <name>Invoices</name>
+  <display>Invoices</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>50ee34ba-0c15-4cb3-b394-51c96f55df5b</parentFolderId>
+  <packageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</packageId>
+  <packageName>Aryzac.IO.Modules.Client.Test.Api.Services</packageName>
+  <diagram>
+    <targetPackageId>50ee34ba-0c15-4cb3-b394-51c96f55df5b</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

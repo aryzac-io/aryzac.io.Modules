@@ -1,7 +1,5 @@
 af:
   personalInformation:
-    title: ''
-    description: ''
     firstName:
       label: Voor naam
     lastName:

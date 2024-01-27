@@ -100,10 +100,26 @@
     </FileLog>
     <FileLog>
       <ProjectId>b1fd52a8-9dec-476e-9d09-ec5e01d86961</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Controllers.Controller#68c77b37-2702-4b56-b95b-024d6c409656</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Controllers.Controller#c2ef4ce6-decd-4fd3-9a37-4dca21702963</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Api/Controllers/ClientsController.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ClientsController.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b1fd52a8-9dec-476e-9d09-ec5e01d86961</ProjectId>
+      <CorrelationId>Intent.AspNetCore.Controllers.Controller#026884bc-1c4d-4a87-a907-421f9339442a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Api/Controllers/InvoiceLinesController.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLinesController.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b1fd52a8-9dec-476e-9d09-ec5e01d86961</ProjectId>
+      <CorrelationId>Intent.AspNetCore.Controllers.Controller#50ee34ba-0c15-4cb3-b394-51c96f55df5b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Api/Controllers/InvoicesController.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoicesController.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -112,6 +128,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Api/Controllers/ResponseTypes/JsonResponse.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>JsonResponse.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b1fd52a8-9dec-476e-9d09-ec5e01d86961</ProjectId>
+      <CorrelationId>Intent.AspNetCore.Controllers.Controller#1eb19414-79e0-4bbd-b9c5-dd6306ab059a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Api/Controllers/TitlesController.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>TitlesController.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -180,7 +204,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandModels#27e4934c-cf1b-4a4a-90b6-3145485b6252</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#8adab089-3e0f-466e-8478-0f0d891af0be</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeNameClient/ChangeNameClientCommand.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/ChangeNameClient/ChangeNameClientCommand.cs</ProjectRelativeFilePath>
@@ -188,7 +212,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandHandler#27e4934c-cf1b-4a4a-90b6-3145485b6252</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#8adab089-3e0f-466e-8478-0f0d891af0be</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeNameClient/ChangeNameClientCommandHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/ChangeNameClient/ChangeNameClientCommandHandler.cs</ProjectRelativeFilePath>
@@ -196,7 +220,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#27e4934c-cf1b-4a4a-90b6-3145485b6252</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#8adab089-3e0f-466e-8478-0f0d891af0be</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeNameClient/ChangeNameClientCommandValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/ChangeNameClient/ChangeNameClientCommandValidator.cs</ProjectRelativeFilePath>
@@ -204,7 +228,31 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.DtoModel#b5c8ff37-d21a-4305-a4a7-a4b51a0ca8e3</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeTitleClient/ChangeTitleClientCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeTitleClient/ChangeTitleClientCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeTitleClient/ChangeTitleClientCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeTitleClient/ChangeTitleClientCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeTitleClient/ChangeTitleClientCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeTitleClient/ChangeTitleClientCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#6f4b80e1-8632-4181-901c-46f28e9b3b75</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ClientDto.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/ClientDto.cs</ProjectRelativeFilePath>
@@ -212,7 +260,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#b5c8ff37-d21a-4305-a4a7-a4b51a0ca8e3</CorrelationId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#6f4b80e1-8632-4181-901c-46f28e9b3b75</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ClientDtoMappingExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/ClientDtoMappingExtensions.cs</ProjectRelativeFilePath>
@@ -220,7 +268,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandModels#7e1f31d4-50f2-49c0-8c39-6135673580e8</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#c956cb72-2f94-4294-b4ff-638c9e332ff3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/CreateClient/CreateClientCommand.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/CreateClient/CreateClientCommand.cs</ProjectRelativeFilePath>
@@ -228,7 +276,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandHandler#7e1f31d4-50f2-49c0-8c39-6135673580e8</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#c956cb72-2f94-4294-b4ff-638c9e332ff3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/CreateClient/CreateClientCommandHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/CreateClient/CreateClientCommandHandler.cs</ProjectRelativeFilePath>
@@ -236,7 +284,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#7e1f31d4-50f2-49c0-8c39-6135673580e8</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#c956cb72-2f94-4294-b4ff-638c9e332ff3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/CreateClient/CreateClientCommandValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/CreateClient/CreateClientCommandValidator.cs</ProjectRelativeFilePath>
@@ -244,7 +292,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandModels#61c2a60e-b9cf-461b-b7dc-4d82692fef1c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#0b897df0-2dcd-4c9b-baf8-8e8180894a38</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/DeleteClient/DeleteClientCommand.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/DeleteClient/DeleteClientCommand.cs</ProjectRelativeFilePath>
@@ -252,7 +300,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandHandler#61c2a60e-b9cf-461b-b7dc-4d82692fef1c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#0b897df0-2dcd-4c9b-baf8-8e8180894a38</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/DeleteClient/DeleteClientCommandHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/DeleteClient/DeleteClientCommandHandler.cs</ProjectRelativeFilePath>
@@ -260,7 +308,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#61c2a60e-b9cf-461b-b7dc-4d82692fef1c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#0b897df0-2dcd-4c9b-baf8-8e8180894a38</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/DeleteClient/DeleteClientCommandValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/DeleteClient/DeleteClientCommandValidator.cs</ProjectRelativeFilePath>
@@ -268,7 +316,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryModels#8cf2f3e2-6952-4e12-a503-52984d4b42f6</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#42722bcb-5cee-4dff-975f-499d5bdf7fe4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/GetClientById/GetClientByIdQuery.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/GetClientById/GetClientByIdQuery.cs</ProjectRelativeFilePath>
@@ -276,7 +324,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryHandler#8cf2f3e2-6952-4e12-a503-52984d4b42f6</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#42722bcb-5cee-4dff-975f-499d5bdf7fe4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/GetClientById/GetClientByIdQueryHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/GetClientById/GetClientByIdQueryHandler.cs</ProjectRelativeFilePath>
@@ -284,7 +332,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#8cf2f3e2-6952-4e12-a503-52984d4b42f6</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#42722bcb-5cee-4dff-975f-499d5bdf7fe4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/GetClientById/GetClientByIdQueryValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/GetClientById/GetClientByIdQueryValidator.cs</ProjectRelativeFilePath>
@@ -292,7 +340,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryModels#94b6aa76-2129-4b68-a233-8918b68835c4</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#625e4bb7-389e-43f3-839a-b700d2c92459</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/GetClients/GetClientsQuery.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/GetClients/GetClientsQuery.cs</ProjectRelativeFilePath>
@@ -300,7 +348,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryHandler#94b6aa76-2129-4b68-a233-8918b68835c4</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#625e4bb7-389e-43f3-839a-b700d2c92459</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/GetClients/GetClientsQueryHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/GetClients/GetClientsQueryHandler.cs</ProjectRelativeFilePath>
@@ -308,7 +356,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#94b6aa76-2129-4b68-a233-8918b68835c4</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#625e4bb7-389e-43f3-839a-b700d2c92459</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/GetClients/GetClientsQueryValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Clients/GetClients/GetClientsQueryValidator.cs</ProjectRelativeFilePath>
@@ -515,6 +563,510 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#ed4567f1-51f6-405c-9457-822af14b0767</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeDiscountInvoiceLine/ChangeDiscountInvoiceLineCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeDiscountInvoiceLine/ChangeDiscountInvoiceLineCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#ed4567f1-51f6-405c-9457-822af14b0767</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeDiscountInvoiceLine/ChangeDiscountInvoiceLineCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeDiscountInvoiceLine/ChangeDiscountInvoiceLineCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#ed4567f1-51f6-405c-9457-822af14b0767</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeDiscountInvoiceLine/ChangeDiscountInvoiceLineCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeDiscountInvoiceLine/ChangeDiscountInvoiceLineCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#8ea3dd14-5d69-46dd-90b7-c88fc646beef</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeProductInvoiceLine/ChangeProductInvoiceLineCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeProductInvoiceLine/ChangeProductInvoiceLineCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#8ea3dd14-5d69-46dd-90b7-c88fc646beef</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeProductInvoiceLine/ChangeProductInvoiceLineCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeProductInvoiceLine/ChangeProductInvoiceLineCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#8ea3dd14-5d69-46dd-90b7-c88fc646beef</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeProductInvoiceLine/ChangeProductInvoiceLineCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeProductInvoiceLine/ChangeProductInvoiceLineCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#6fe4b26a-4bb7-4a26-aa10-a2de8a85373d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeQuentityInvoiceLine/ChangeQuentityInvoiceLineCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeQuentityInvoiceLine/ChangeQuentityInvoiceLineCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#6fe4b26a-4bb7-4a26-aa10-a2de8a85373d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeQuentityInvoiceLine/ChangeQuentityInvoiceLineCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeQuentityInvoiceLine/ChangeQuentityInvoiceLineCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#6fe4b26a-4bb7-4a26-aa10-a2de8a85373d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/ChangeQuentityInvoiceLine/ChangeQuentityInvoiceLineCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/ChangeQuentityInvoiceLine/ChangeQuentityInvoiceLineCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#817f21b4-aac8-4907-a9db-326cfc141167</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/CreateInvoiceLine/CreateInvoiceLineCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/CreateInvoiceLine/CreateInvoiceLineCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#817f21b4-aac8-4907-a9db-326cfc141167</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/CreateInvoiceLine/CreateInvoiceLineCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/CreateInvoiceLine/CreateInvoiceLineCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#817f21b4-aac8-4907-a9db-326cfc141167</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/CreateInvoiceLine/CreateInvoiceLineCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/CreateInvoiceLine/CreateInvoiceLineCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#c555b2ae-0b7b-4d83-be39-52ac5b7f3909</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/DeleteInvoiceLine/DeleteInvoiceLineCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/DeleteInvoiceLine/DeleteInvoiceLineCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#c555b2ae-0b7b-4d83-be39-52ac5b7f3909</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/DeleteInvoiceLine/DeleteInvoiceLineCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/DeleteInvoiceLine/DeleteInvoiceLineCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#c555b2ae-0b7b-4d83-be39-52ac5b7f3909</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/DeleteInvoiceLine/DeleteInvoiceLineCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/DeleteInvoiceLine/DeleteInvoiceLineCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#0b44026c-0fdc-47d4-94fa-fb6a78f0c04e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/GetInvoiceLineById/GetInvoiceLineByIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/GetInvoiceLineById/GetInvoiceLineByIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#0b44026c-0fdc-47d4-94fa-fb6a78f0c04e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/GetInvoiceLineById/GetInvoiceLineByIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/GetInvoiceLineById/GetInvoiceLineByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#0b44026c-0fdc-47d4-94fa-fb6a78f0c04e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/GetInvoiceLineById/GetInvoiceLineByIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/GetInvoiceLineById/GetInvoiceLineByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#0717965c-d5f7-4c53-9ba4-4c9c22d97eb5</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/GetInvoiceLines/GetInvoiceLinesQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/GetInvoiceLines/GetInvoiceLinesQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#0717965c-d5f7-4c53-9ba4-4c9c22d97eb5</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/GetInvoiceLines/GetInvoiceLinesQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/GetInvoiceLines/GetInvoiceLinesQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#0717965c-d5f7-4c53-9ba4-4c9c22d97eb5</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/GetInvoiceLines/GetInvoiceLinesQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/GetInvoiceLines/GetInvoiceLinesQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#11115612-d79e-46d9-bd3b-5bf5a13a581d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/InvoiceLineDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/InvoiceLineDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#11115612-d79e-46d9-bd3b-5bf5a13a581d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/InvoiceLines/InvoiceLineDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLines/InvoiceLineDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#e0e59650-b425-400e-8116-db25cf64a794</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/ChangeDueDateInvoice/ChangeDueDateInvoiceCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/ChangeDueDateInvoice/ChangeDueDateInvoiceCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#e0e59650-b425-400e-8116-db25cf64a794</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/ChangeDueDateInvoice/ChangeDueDateInvoiceCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/ChangeDueDateInvoice/ChangeDueDateInvoiceCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#e0e59650-b425-400e-8116-db25cf64a794</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/ChangeDueDateInvoice/ChangeDueDateInvoiceCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/ChangeDueDateInvoice/ChangeDueDateInvoiceCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#a8a60820-5f81-4ee9-bc6f-a1fb16d3e17b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/CreateInvoice/CreateInvoiceCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/CreateInvoice/CreateInvoiceCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#a8a60820-5f81-4ee9-bc6f-a1fb16d3e17b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/CreateInvoice/CreateInvoiceCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/CreateInvoice/CreateInvoiceCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#a8a60820-5f81-4ee9-bc6f-a1fb16d3e17b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/CreateInvoice/CreateInvoiceCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/CreateInvoice/CreateInvoiceCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#2b32f852-1004-4894-8951-9b5e9c067504</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/DeleteInvoice/DeleteInvoiceCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/DeleteInvoice/DeleteInvoiceCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#2b32f852-1004-4894-8951-9b5e9c067504</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/DeleteInvoice/DeleteInvoiceCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/DeleteInvoice/DeleteInvoiceCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#2b32f852-1004-4894-8951-9b5e9c067504</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/DeleteInvoice/DeleteInvoiceCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/DeleteInvoice/DeleteInvoiceCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#ea67bfd1-16f0-426c-b962-02148e9b51e4</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoiceById/GetInvoiceByIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoiceById/GetInvoiceByIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#ea67bfd1-16f0-426c-b962-02148e9b51e4</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoiceById/GetInvoiceByIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoiceById/GetInvoiceByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#ea67bfd1-16f0-426c-b962-02148e9b51e4</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoiceById/GetInvoiceByIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoiceById/GetInvoiceByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#b8b05dcb-3f70-4dd5-aac2-a7308d042906</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoices/GetInvoicesQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoices/GetInvoicesQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#b8b05dcb-3f70-4dd5-aac2-a7308d042906</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoices/GetInvoicesQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoices/GetInvoicesQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#b8b05dcb-3f70-4dd5-aac2-a7308d042906</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoices/GetInvoicesQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoices/GetInvoicesQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#ea2d89fb-35e9-4b4f-9a5a-c8d948aa923d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/InvoiceDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/InvoiceDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#ea2d89fb-35e9-4b4f-9a5a-c8d948aa923d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/InvoiceDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/InvoiceDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#c27cb5e5-71d7-4bb0-b268-052b76690385</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeCodeTitle/ChangeCodeTitleCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeCodeTitle/ChangeCodeTitleCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#c27cb5e5-71d7-4bb0-b268-052b76690385</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeCodeTitle/ChangeCodeTitleCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeCodeTitle/ChangeCodeTitleCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#c27cb5e5-71d7-4bb0-b268-052b76690385</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeCodeTitle/ChangeCodeTitleCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeCodeTitle/ChangeCodeTitleCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#332607cc-d329-4101-89b3-98bdcef6c5e3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeDescriptionTitle/ChangeDescriptionTitleCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeDescriptionTitle/ChangeDescriptionTitleCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#332607cc-d329-4101-89b3-98bdcef6c5e3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeDescriptionTitle/ChangeDescriptionTitleCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeDescriptionTitle/ChangeDescriptionTitleCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#332607cc-d329-4101-89b3-98bdcef6c5e3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeDescriptionTitle/ChangeDescriptionTitleCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeDescriptionTitle/ChangeDescriptionTitleCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#6d3f48a4-d612-4535-b0bd-eb78ebad42ad</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeNameTitle/ChangeNameTitleCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeNameTitle/ChangeNameTitleCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#6d3f48a4-d612-4535-b0bd-eb78ebad42ad</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeNameTitle/ChangeNameTitleCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeNameTitle/ChangeNameTitleCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#6d3f48a4-d612-4535-b0bd-eb78ebad42ad</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/ChangeNameTitle/ChangeNameTitleCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/ChangeNameTitle/ChangeNameTitleCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#d488271f-eba8-4c6f-886d-cb9d0e991e4b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/CreateTitle/CreateTitleCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/CreateTitle/CreateTitleCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#d488271f-eba8-4c6f-886d-cb9d0e991e4b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/CreateTitle/CreateTitleCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/CreateTitle/CreateTitleCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#d488271f-eba8-4c6f-886d-cb9d0e991e4b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/CreateTitle/CreateTitleCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/CreateTitle/CreateTitleCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#08b8b35f-c869-4dc4-b251-f7cc147ce48d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/DeleteTitle/DeleteTitleCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/DeleteTitle/DeleteTitleCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#08b8b35f-c869-4dc4-b251-f7cc147ce48d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/DeleteTitle/DeleteTitleCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/DeleteTitle/DeleteTitleCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#08b8b35f-c869-4dc4-b251-f7cc147ce48d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/DeleteTitle/DeleteTitleCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/DeleteTitle/DeleteTitleCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#c238a4d8-2de5-4d9f-852e-da1b14d1f76a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/GetTitleById/GetTitleByIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/GetTitleById/GetTitleByIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#c238a4d8-2de5-4d9f-852e-da1b14d1f76a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/GetTitleById/GetTitleByIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/GetTitleById/GetTitleByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#c238a4d8-2de5-4d9f-852e-da1b14d1f76a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/GetTitleById/GetTitleByIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/GetTitleById/GetTitleByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#ea635ac2-2999-4d7f-b5c3-1ad790891d77</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/GetTitles/GetTitlesQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/GetTitles/GetTitlesQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#ea635ac2-2999-4d7f-b5c3-1ad790891d77</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/GetTitles/GetTitlesQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/GetTitles/GetTitlesQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#ea635ac2-2999-4d7f-b5c3-1ad790891d77</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/GetTitles/GetTitlesQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/GetTitles/GetTitlesQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#39f19552-e59f-4c04-9111-9ee8bd800f48</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/TitleDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/TitleDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#39f19552-e59f-4c04-9111-9ee8bd800f48</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Titles/TitleDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Titles/TitleDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>40254189-a804-4d72-8d9a-e300a86c1a46</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#40254189-a804-4d72-8d9a-e300a86c1a46</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -579,6 +1131,30 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>d536e7ca-3c10-493e-84cd-27b10e6839c8</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntity#e0fd3b24-f0aa-4ea3-a58e-cd472584ff55</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Entities/Invoice.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoice.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d536e7ca-3c10-493e-84cd-27b10e6839c8</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntity#277d6eaf-0db1-4700-b9ed-e74b9a7a22a6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Entities/InvoiceLine.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLine.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d536e7ca-3c10-493e-84cd-27b10e6839c8</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntity#e7608248-d479-45aa-92f7-16812f838412</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Entities/Title.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Title.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>4e7cc3b7-cd99-4718-932b-e2499a6a72b7</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -596,6 +1172,22 @@
     </FileLog>
     <FileLog>
       <ProjectId>4e7cc3b7-cd99-4718-932b-e2499a6a72b7</ProjectId>
+      <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#277d6eaf-0db1-4700-b9ed-e74b9a7a22a6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Repositories/IInvoiceLineRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IInvoiceLineRepository.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4e7cc3b7-cd99-4718-932b-e2499a6a72b7</ProjectId>
+      <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#e0fd3b24-f0aa-4ea3-a58e-cd472584ff55</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Repositories/IInvoiceRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IInvoiceRepository.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4e7cc3b7-cd99-4718-932b-e2499a6a72b7</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.PagedResultInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Repositories/IPagedResult.cs</ApplicationRelativeFilePath>
@@ -608,6 +1200,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Repositories/IRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IRepository.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4e7cc3b7-cd99-4718-932b-e2499a6a72b7</ProjectId>
+      <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#e7608248-d479-45aa-92f7-16812f838412</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Domain/Repositories/ITitleRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ITitleRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -691,6 +1291,30 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>9c60979a-f679-4a31-aed4-65a79c998e8f</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#e0fd3b24-f0aa-4ea3-a58e-cd472584ff55</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Persistence/Configurations/InvoiceConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9c60979a-f679-4a31-aed4-65a79c998e8f</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#277d6eaf-0db1-4700-b9ed-e74b9a7a22a6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Persistence/Configurations/InvoiceLineConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLineConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9c60979a-f679-4a31-aed4-65a79c998e8f</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#e7608248-d479-45aa-92f7-16812f838412</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Persistence/Configurations/TitleConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>TitleConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>3a2aa936-fa92-4407-aca7-4597ed3b744f</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.DbMigrationsReadMe</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -708,6 +1332,22 @@
     </FileLog>
     <FileLog>
       <ProjectId>6d8cf400-55dd-4b89-a25f-1e47816a914a</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.Repositories.Repository#277d6eaf-0db1-4700-b9ed-e74b9a7a22a6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Repositories/InvoiceLineRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceLineRepository.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6d8cf400-55dd-4b89-a25f-1e47816a914a</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.Repositories.Repository#e0fd3b24-f0aa-4ea3-a58e-cd472584ff55</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Repositories/InvoiceRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InvoiceRepository.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6d8cf400-55dd-4b89-a25f-1e47816a914a</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.Repositories.PagedList</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Repositories/PagedList.cs</ApplicationRelativeFilePath>
@@ -720,6 +1360,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Repositories/RepositoryBase.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>RepositoryBase.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6d8cf400-55dd-4b89-a25f-1e47816a914a</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.Repositories.Repository#e7608248-d479-45aa-92f7-16812f838412</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Infrastructure/Repositories/TitleRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>TitleRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

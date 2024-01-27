@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="eafb0911-37da-48fd-a17c-c2f6a9e166d2">
+  <sourceEnd id="9d69d51d-877f-4080-8472-faa98e92d5af" type="Delete Entity Action Source End" typeId="8c2d9fed-bd14-44b2-9f98-8a801aaf157e">
+    <display>deleted by : InvoiceLines.DeleteInvoiceLineCommand</display>
+    <order>0</order>
+    <typeReference id="f5f59927-8d0d-43f2-bc73-9cef64675606">
+      <typeId>c555b2ae-0b7b-4d83-be39-52ac5b7f3909</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="eafb0911-37da-48fd-a17c-c2f6a9e166d2" type="Delete Entity Action Target End" typeId="4a04cfc2-5841-438c-9c16-fb58b784b365">
+    <name>invoiceLine</name>
+    <display>[delete] invoiceLine: InvoiceLine</display>
+    <order>1</order>
+    <typeReference id="3bffcda8-aec8-41e2-b0ae-35401c294084">
+      <typeId>277d6eaf-0db1-4700-b9ed-e74b9a7a22a6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c555b2ae-0b7b-4d83-be39-52ac5b7f3909" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[DeleteInvoiceLineCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[InvoiceLine]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="d6d4f06d-292a-4713-af35-a7f3c17bb826" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="c555b2ae-0b7b-4d83-be39-52ac5b7f3909" name="DeleteInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="4104c51f-2d21-4ab5-bc79-9d7a03ceff59" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Delete Entity Action</associationType>
+  <associationTypeId>bfc823fb-60ab-451d-ba62-12671fe7e28e</associationTypeId>
+  <stereotypes />
+</association>

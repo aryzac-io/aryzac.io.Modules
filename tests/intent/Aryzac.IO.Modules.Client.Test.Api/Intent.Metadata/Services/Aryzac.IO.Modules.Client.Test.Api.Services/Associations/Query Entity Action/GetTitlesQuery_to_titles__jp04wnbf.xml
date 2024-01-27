@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="a2744ff1-aa07-4f7e-ba9b-7e898e11f180">
+  <sourceEnd id="9e72b688-6b67-4647-9bba-8fd954d1e391" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetTitlesQuery</display>
+    <order>0</order>
+    <typeReference id="3b313c4b-68dc-4eef-9012-060c04649bcd">
+      <typeId>ea635ac2-2999-4d7f-b5c3-1ad790891d77</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="a2744ff1-aa07-4f7e-ba9b-7e898e11f180" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>titles</name>
+    <display>[query] titles: Title[*]</display>
+    <order>0</order>
+    <typeReference id="20580404-e26b-4646-ad13-658cfc28fee0">
+      <typeId>e7608248-d479-45aa-92f7-16812f838412</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ea635ac2-2999-4d7f-b5c3-1ad790891d77" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[GetTitlesQuery]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="e7608248-d479-45aa-92f7-16812f838412" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Title]" />
+        <mappedEnds />
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

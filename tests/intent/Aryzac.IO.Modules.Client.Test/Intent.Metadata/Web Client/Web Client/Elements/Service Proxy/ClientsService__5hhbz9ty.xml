@@ -13,7 +13,7 @@
     <autoSyncTypeReference>true</autoSyncTypeReference>
     <mappedPath>
       <target id="d30348ce-b7c9-4e8d-8a20-7f159d58d7e1" name="Aryzac.IO.Modules.Client.Test.Api.Services" type="association" specialization="Services Package" />
-      <target id="68c77b37-2702-4b56-b95b-024d6c409656" name="Clients" type="element" specialization="Folder" />
+      <target id="68c77b37-2702-4b56-b95b-024d6c409656" name="Clients" type="n/a" />
     </mappedPath>
   </mappedClass>
   <parentFolderId>353a3d57-512c-4752-a726-906c7d5f6acc</parentFolderId>
@@ -40,7 +40,7 @@
         <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="27e4934c-cf1b-4a4a-90b6-3145485b6252" name="ChangeNameClientCommand" type="element" specialization="Command" />
+          <target id="27e4934c-cf1b-4a4a-90b6-3145485b6252" name="ChangeNameClientCommand" type="n/a" />
         </mappedPath>
       </mappedClass>
       <parentFolderId>68fe934f-0c89-4db4-b8f0-321c3684963a</parentFolderId>
@@ -71,7 +71,7 @@
         <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="7e1f31d4-50f2-49c0-8c39-6135673580e8" name="CreateClientCommand" type="element" specialization="Command" />
+          <target id="7e1f31d4-50f2-49c0-8c39-6135673580e8" name="CreateClientCommand" type="n/a" />
         </mappedPath>
       </mappedClass>
       <parentFolderId>68fe934f-0c89-4db4-b8f0-321c3684963a</parentFolderId>
@@ -99,7 +99,7 @@
         <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="61c2a60e-b9cf-461b-b7dc-4d82692fef1c" name="DeleteClientCommand" type="element" specialization="Command" />
+          <target id="61c2a60e-b9cf-461b-b7dc-4d82692fef1c" name="DeleteClientCommand" type="n/a" />
         </mappedPath>
       </mappedClass>
       <parentFolderId>68fe934f-0c89-4db4-b8f0-321c3684963a</parentFolderId>
@@ -120,8 +120,6 @@
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>
         <isRequired>true</isRequired>
-        <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
-        <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
@@ -130,7 +128,7 @@
         <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="8cf2f3e2-6952-4e12-a503-52984d4b42f6" name="GetClientByIdQuery" type="element" specialization="Query" />
+          <target id="8cf2f3e2-6952-4e12-a503-52984d4b42f6" name="GetClientByIdQuery" type="n/a" />
         </mappedPath>
       </mappedClass>
       <parentFolderId>68fe934f-0c89-4db4-b8f0-321c3684963a</parentFolderId>
@@ -151,8 +149,6 @@
         <isNullable>false</isNullable>
         <isCollection>true</isCollection>
         <isRequired>true</isRequired>
-        <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
-        <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
@@ -161,7 +157,7 @@
         <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="94b6aa76-2129-4b68-a233-8918b68835c4" name="GetClientsQuery" type="element" specialization="Query" />
+          <target id="94b6aa76-2129-4b68-a233-8918b68835c4" name="GetClientsQuery" type="n/a" />
         </mappedPath>
       </mappedClass>
       <parentFolderId>68fe934f-0c89-4db4-b8f0-321c3684963a</parentFolderId>

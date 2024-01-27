@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="d944e460-7e61-4a32-a456-b2013dd2f1c2">
+  <sourceEnd id="812f5961-4f9a-4367-b042-8eadcf638749" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetClientByIdQuery</display>
+    <order>0</order>
+    <typeReference id="8fc3b502-8470-4eeb-ae6a-952305d8a0d7">
+      <typeId>42722bcb-5cee-4dff-975f-499d5bdf7fe4</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="d944e460-7e61-4a32-a456-b2013dd2f1c2" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>client</name>
+    <display>[query] client: Client</display>
+    <order>1</order>
+    <typeReference id="f7bbfa67-6bd9-4451-90b0-d2b73dadc73f">
+      <typeId>bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="42722bcb-5cee-4dff-975f-499d5bdf7fe4" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[GetClientByIdQuery]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Client]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" name="Client" type="element" specialization="Class" />
+              <target id="7a01128d-e48b-4377-9d50-cf5ad4f27d1e" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="42722bcb-5cee-4dff-975f-499d5bdf7fe4" name="GetClientByIdQuery" type="element" specialization="Query" />
+                  <target id="2a01b659-a8fa-427c-b967-b9a39d1123ee" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="28454df2-71a1-4bc0-ba12-b178672f213b">
+  <sourceEnd id="1e9830f4-261b-4c0a-a0b3-6528694907a0" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetInvoicesQuery</display>
+    <order>0</order>
+    <typeReference id="fe942f20-9b6e-4d67-8ff4-177b58edc624">
+      <typeId>b8b05dcb-3f70-4dd5-aac2-a7308d042906</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="28454df2-71a1-4bc0-ba12-b178672f213b" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>invoices</name>
+    <display>[query] invoices: Invoice[*]</display>
+    <order>0</order>
+    <typeReference id="b9b22861-d321-4adf-8029-8e8913dd0fdd">
+      <typeId>e0fd3b24-f0aa-4ea3-a58e-cd472584ff55</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="b8b05dcb-3f70-4dd5-aac2-a7308d042906" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[GetInvoicesQuery]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="e0fd3b24-f0aa-4ea3-a58e-cd472584ff55" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Invoice]" />
+        <mappedEnds />
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

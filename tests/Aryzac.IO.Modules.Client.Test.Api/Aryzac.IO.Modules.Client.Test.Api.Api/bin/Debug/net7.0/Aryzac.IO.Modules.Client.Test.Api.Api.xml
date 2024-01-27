@@ -11,7 +11,14 @@
             <response code="400">One or more validation errors have occurred.</response>
             <response code="404">One or more entities could not be found with the provided parameters.</response>
         </member>
-        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.CreateClient(System.String,Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient.CreateClientCommand,System.Threading.CancellationToken)">
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.ChangeTitleClient(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeTitleClient.ChangeTitleClientCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.CreateClient(Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient.CreateClientCommand,System.Threading.CancellationToken)">
             <summary>
             </summary>
             <response code="201">Successfully created.</response>
@@ -36,11 +43,135 @@
             </summary>
             <response code="200">Returns the specified List&lt;ClientDto&gt;.</response>
         </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoiceLinesController.ChangeDiscountInvoiceLine(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.InvoiceLines.ChangeDiscountInvoiceLine.ChangeDiscountInvoiceLineCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoiceLinesController.ChangeProductInvoiceLine(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.InvoiceLines.ChangeProductInvoiceLine.ChangeProductInvoiceLineCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoiceLinesController.ChangeQuentityInvoiceLine(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.InvoiceLines.ChangeQuentityInvoiceLine.ChangeQuentityInvoiceLineCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoiceLinesController.CreateInvoiceLine(Aryzac.IO.Modules.Client.Test.Api.Application.InvoiceLines.CreateInvoiceLine.CreateInvoiceLineCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="201">Successfully created.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoiceLinesController.DeleteInvoiceLine(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Successfully deleted.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoiceLinesController.GetInvoiceLineById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified InvoiceLineDto.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">No InvoiceLineDto could be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoiceLinesController.GetInvoiceLines(System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified List&lt;InvoiceLineDto&gt;.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController.ChangeDueDateInvoice(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.ChangeDueDateInvoice.ChangeDueDateInvoiceCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController.CreateInvoice(Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.CreateInvoice.CreateInvoiceCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="201">Successfully created.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController.DeleteInvoice(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Successfully deleted.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController.GetInvoiceById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified InvoiceDto.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">No InvoiceDto could be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController.GetInvoices(System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified List&lt;InvoiceDto&gt;.</response>
+        </member>
         <member name="T:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ResponseTypes.JsonResponse`1">
             <summary>
             Implicit wrapping of types that serialize to non-complex values.
             </summary>
             <typeparam name="T">Types such as string, Guid, int, long, etc.</typeparam>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController.ChangeCodeTitle(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Titles.ChangeCodeTitle.ChangeCodeTitleCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController.ChangeDescriptionTitle(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Titles.ChangeDescriptionTitle.ChangeDescriptionTitleCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController.ChangeNameTitle(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Titles.ChangeNameTitle.ChangeNameTitleCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController.CreateTitle(Aryzac.IO.Modules.Client.Test.Api.Application.Titles.CreateTitle.CreateTitleCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="201">Successfully created.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController.DeleteTitle(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Successfully deleted.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController.GetTitleById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified TitleDto.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">No TitleDto could be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController.GetTitles(System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified List&lt;TitleDto&gt;.</response>
         </member>
     </members>
 </doc>

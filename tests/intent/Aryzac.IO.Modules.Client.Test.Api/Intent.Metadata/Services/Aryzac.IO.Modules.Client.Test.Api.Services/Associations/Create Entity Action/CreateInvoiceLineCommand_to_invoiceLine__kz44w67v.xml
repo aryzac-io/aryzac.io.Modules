@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="4d6e6308-520b-4852-8c51-c3a005123041">
+  <sourceEnd id="27239fca-eba9-4def-ba9d-4ee2afa77f9b" type="Create Entity Action Source End" typeId="a3e7c59e-b0a1-47e1-ba29-66f2c7047b0a">
+    <display>created by : InvoiceLines.CreateInvoiceLineCommand</display>
+    <order>0</order>
+    <typeReference id="34635442-0e87-4c64-8f47-8aba6cae1d44">
+      <typeId>817f21b4-aac8-4907-a9db-326cfc141167</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="4d6e6308-520b-4852-8c51-c3a005123041" type="Create Entity Action Target End" typeId="328f54e5-7bad-4b5f-90ca-03ce3105d016">
+    <name>invoiceLine</name>
+    <display>[create] invoiceLine: Constructor</display>
+    <order>5</order>
+    <typeReference id="16bd0d7d-f9c8-421c-b4da-a0931fcfd53c">
+      <typeId>17ce44c5-321e-49d0-89aa-7b7aed11db4c</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Create Entity Mapping" typeId="5f172141-fdba-426b-980e-163e782ff53e">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="817f21b4-aac8-4907-a9db-326cfc141167" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[CreateInvoiceLineCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[InvoiceLine]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{CreateInvoiceLineCommand}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="17ce44c5-321e-49d0-89aa-7b7aed11db4c" name="Constructor" type="element" specialization="Class Constructor" />
+            </path>
+            <sources>
+              <source identifier="CreateInvoiceLineCommand" mappingType="Invocation Mapping" mappingTypeId="47dc4a51-30a3-4ee8-8c7d-25a35bb965b9">
+                <path>
+                  <target id="817f21b4-aac8-4907-a9db-326cfc141167" name="CreateInvoiceLineCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{InvoiceId}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="17ce44c5-321e-49d0-89aa-7b7aed11db4c" name="Constructor" type="element" specialization="Class Constructor" />
+              <target id="2b108153-8bfb-41b9-aeaf-69df0b70ed84" name="invoiceId" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="InvoiceId" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="817f21b4-aac8-4907-a9db-326cfc141167" name="CreateInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="7c78ad5d-e843-4da2-8749-7863f5e1db18" name="InvoiceId" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ProductId}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="17ce44c5-321e-49d0-89aa-7b7aed11db4c" name="Constructor" type="element" specialization="Class Constructor" />
+              <target id="36600edd-eec5-40fb-b812-8950eb77f070" name="productId" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="ProductId" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="817f21b4-aac8-4907-a9db-326cfc141167" name="CreateInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="ed44971b-e9cf-442b-be59-eecf8ac1ea4d" name="ProductId" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Quantity}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="17ce44c5-321e-49d0-89aa-7b7aed11db4c" name="Constructor" type="element" specialization="Class Constructor" />
+              <target id="fd9091e0-760b-45be-91d5-5d6df8a1fac1" name="quantity" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="Quantity" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="817f21b4-aac8-4907-a9db-326cfc141167" name="CreateInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="d51b8f2d-91c8-42c6-9ae8-7c7666a9a62e" name="Quantity" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{UnitPrice}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="17ce44c5-321e-49d0-89aa-7b7aed11db4c" name="Constructor" type="element" specialization="Class Constructor" />
+              <target id="0834d1d4-55e5-46f3-a01f-ef92afab1e0e" name="unitPrice" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="UnitPrice" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="817f21b4-aac8-4907-a9db-326cfc141167" name="CreateInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="1f1f8f2a-003e-42a3-bdb2-36b103dc8911" name="UnitPrice" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Discount}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="17ce44c5-321e-49d0-89aa-7b7aed11db4c" name="Constructor" type="element" specialization="Class Constructor" />
+              <target id="eb55bb68-b336-445d-8b49-5992d29fe712" name="discount" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="Discount" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="817f21b4-aac8-4907-a9db-326cfc141167" name="CreateInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="e9b5c493-43ab-4b0c-9548-a9a88984f257" name="Discount" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Create Entity Action</associationType>
+  <associationTypeId>7a3f0474-3cf8-4249-baac-8c07c49465e0</associationTypeId>
+  <stereotypes />
+</association>

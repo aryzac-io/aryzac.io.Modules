@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="407e9fcb-ab44-411a-b2a8-94c220404458">
+  <sourceEnd id="6de435b9-77a6-413c-b40c-f6d216ff3de1" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : InvoiceLines.ChangeDiscountInvoiceLineCommand</display>
+    <order>0</order>
+    <typeReference id="d70845ac-7f26-4112-9698-324e8919e8bb">
+      <typeId>ed4567f1-51f6-405c-9457-822af14b0767</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="407e9fcb-ab44-411a-b2a8-94c220404458" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>invoiceLine</name>
+    <display>[update] invoiceLine: ChangeDiscount</display>
+    <order>2</order>
+    <typeReference id="a003d6c3-5b43-4c48-9864-3d2f80023e2e">
+      <typeId>e4d04724-d9e6-4c45-bdda-a69b9cb56087</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ed4567f1-51f6-405c-9457-822af14b0767" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeDiscountInvoiceLineCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[InvoiceLine]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="d6d4f06d-292a-4713-af35-a7f3c17bb826" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="ed4567f1-51f6-405c-9457-822af14b0767" name="ChangeDiscountInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="77b6df69-480c-49fe-bb58-96cef6d61448" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ed4567f1-51f6-405c-9457-822af14b0767" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeDiscountInvoiceLineCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[InvoiceLine]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{ChangeDiscountInvoiceLineCommand}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="e4d04724-d9e6-4c45-bdda-a69b9cb56087" name="ChangeDiscount" type="element" specialization="Operation" />
+            </path>
+            <sources>
+              <source identifier="ChangeDiscountInvoiceLineCommand" mappingType="Invocation Mapping" mappingTypeId="d30bdba1-9c47-4917-b81d-29230fed5d6a">
+                <path>
+                  <target id="ed4567f1-51f6-405c-9457-822af14b0767" name="ChangeDiscountInvoiceLineCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Discount}</expression>
+            <path>
+              <target id="277d6eaf-0db1-4700-b9ed-e74b9a7a22a6" name="InvoiceLine" type="element" specialization="Class" />
+              <target id="e4d04724-d9e6-4c45-bdda-a69b9cb56087" name="ChangeDiscount" type="element" specialization="Operation" />
+              <target id="e43d4cac-9f58-4c3c-8bce-e83881df2900" name="discount" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="Discount" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="ed4567f1-51f6-405c-9457-822af14b0767" name="ChangeDiscountInvoiceLineCommand" type="element" specialization="Command" />
+                  <target id="b7f2e65f-84a1-4f83-879f-9c638fd44a06" name="Discount" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

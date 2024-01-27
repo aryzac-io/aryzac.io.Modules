@@ -10,17 +10,17 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient
 {
     public class CreateClientCommand : IRequest<Guid>, ICommand
     {
-        public CreateClientCommand(string firstName, string lastName, string? otherNames, string newDTOField)
+        public CreateClientCommand(string firstName, string lastName, string? otherNames, Guid titleId)
         {
             FirstName = firstName;
             LastName = lastName;
             OtherNames = otherNames;
-            NewDTOField = newDTOField;
+            TitleId = titleId;
         }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string? OtherNames { get; set; }
-        public string NewDTOField { get; set; }
+        public Guid TitleId { get; set; }
     }
 }

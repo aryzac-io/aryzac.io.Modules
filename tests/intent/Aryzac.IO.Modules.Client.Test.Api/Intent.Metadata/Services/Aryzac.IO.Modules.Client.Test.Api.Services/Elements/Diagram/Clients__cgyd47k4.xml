@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="213823a6-4850-4c43-9e28-db6b9a052d2f" type="Diagram" typeId="8c90aca5-86f4-47f1-bd58-116fe79f5c55">
+  <name>Clients</name>
+  <display>Clients</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c2ef4ce6-decd-4fd3-9a37-4dca21702963</parentFolderId>
+  <packageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</packageId>
+  <packageName>Aryzac.IO.Modules.Client.Test.Api.Services</packageName>
+  <diagram>
+    <targetPackageId>c2ef4ce6-decd-4fd3-9a37-4dca21702963</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

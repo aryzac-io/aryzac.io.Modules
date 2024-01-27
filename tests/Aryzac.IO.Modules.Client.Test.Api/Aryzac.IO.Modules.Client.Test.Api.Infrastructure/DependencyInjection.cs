@@ -26,6 +26,9 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure
             });
             services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<ApplicationDbContext>());
             services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<IInvoiceRepository, InvoiceRepository>();
+            services.AddTransient<IInvoiceLineRepository, InvoiceLineRepository>();
+            services.AddTransient<ITitleRepository, TitleRepository>();
             services.AddScoped<IDomainEventService, DomainEventService>();
             services.AddMassTransitConfiguration(configuration);
             services.AddHttpClients(configuration);

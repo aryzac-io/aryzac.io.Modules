@@ -28,7 +28,8 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient
             var client = new Api.Domain.Entities.Client(
                 firstName: request.FirstName,
                 lastName: request.LastName,
-                otherNames: request.OtherNames);
+                otherNames: request.OtherNames,
+                titleId: request.TitleId);
 
             _clientRepository.Add(client);
             await _clientRepository.UnitOfWork.SaveChangesAsync(cancellationToken);

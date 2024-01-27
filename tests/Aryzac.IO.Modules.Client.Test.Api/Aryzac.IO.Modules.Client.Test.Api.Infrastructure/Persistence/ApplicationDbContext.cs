@@ -24,6 +24,9 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence
         }
 
         public DbSet<Api.Domain.Entities.Client> Clients { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<InvoiceLine> InvoiceLines { get; set; }
+        public DbSet<Title> Titles { get; set; }
 
         public override async Task<int> SaveChangesAsync(
             bool acceptAllChangesOnSuccess,
@@ -45,6 +48,9 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence
 
             ConfigureModel(modelBuilder);
             modelBuilder.ApplyConfiguration(new ClientConfiguration());
+            modelBuilder.ApplyConfiguration(new InvoiceConfiguration());
+            modelBuilder.ApplyConfiguration(new InvoiceLineConfiguration());
+            modelBuilder.ApplyConfiguration(new TitleConfiguration());
         }
 
         [IntentManaged(Mode.Ignore)]

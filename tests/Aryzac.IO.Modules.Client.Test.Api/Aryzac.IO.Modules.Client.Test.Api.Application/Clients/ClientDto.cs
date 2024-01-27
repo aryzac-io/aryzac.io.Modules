@@ -21,15 +21,17 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Application.Clients
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string? OtherNames { get; set; }
+        public Guid TitleId { get; set; }
 
-        public static ClientDto Create(Guid id, string firstName, string lastName, string? otherNames)
+        public static ClientDto Create(Guid id, string firstName, string lastName, string? otherNames, Guid titleId)
         {
             return new ClientDto
             {
                 Id = id,
                 FirstName = firstName,
                 LastName = lastName,
-                OtherNames = otherNames
+                OtherNames = otherNames,
+                TitleId = titleId
             };
         }
 

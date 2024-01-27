@@ -21,9 +21,6 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient
 
             RuleFor(v => v.LastName)
                 .NotNull();
-
-            RuleFor(v => v.NewDTOField)
-                .NotNull();
         }
     }
 }
