@@ -176,12 +176,14 @@ watchEffect(async () => {
 #>
 
 <#
-	  foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType != "Command"))
-	  {
-#>
-  const <#= parameter.Name.ToPascalCase().ToCamelCase() #>: <#= GetTypeName(parameter.TypeReference) #> = props.id;
-<#
-	  }
+	foreach (var mapping in command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
+    {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+	      #>  const <#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #> = props.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>;
+          <#
+	    }
+	}
 #>
 
 	const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#

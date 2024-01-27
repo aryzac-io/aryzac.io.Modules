@@ -26,7 +26,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
         [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
         public PageTemplate(IOutputTarget outputTarget, PageModel model) : base(TemplateId, outputTarget, model)
         {
-            
+
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

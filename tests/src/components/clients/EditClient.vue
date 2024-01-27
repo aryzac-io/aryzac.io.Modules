@@ -2,6 +2,7 @@
 
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
+import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
 
 const { t } = useI18n();
 
@@ -45,7 +46,19 @@ watchEffect(async () => {
   }
 });
 
+// Commands
+const saveChangeNameClientCommand = async () => {
 
+  const command: ChangeNameClientCommand = {
+    id: model.id,
+    firstName: model.firstName,
+    lastName: model.lastName,
+    otherNames: model.otherNames,
+  };
+
+const id = props.clientId;
+	const changeNameClientCommand = await clientsServiceProxy.changeNameClientCommand(id, command);
+};
 
 // Personal Information Options
 
@@ -65,5 +78,16 @@ watchEffect(async () => {
      <ui-input-textbox 
        v-model="model.otherNames" 
        :label="t('personalInformation.otherNamesTextBox.label')" />
+
+    <template #actions>
+      <button
+        type="button"
+        @click="saveChangeNameClientCommand()"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        {{ t('personalInformation.actions.save') }}
+      </button>
+    </template>
+    
   </ui-editor-section>
 </template>

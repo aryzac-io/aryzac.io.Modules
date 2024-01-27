@@ -2473,7 +2473,7 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
       <sourceMappings>
         <mapping id="e61fa59a-73dc-4ead-a878-2bf6a40c5060" name="Page" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
           <allowMultipleMappings>true</allowMultipleMappings>
-          <isMappableFunction>return true;</isMappableFunction>
+          <isMappableFunction>return false;</isMappableFunction>
           <isTraversable>true</isTraversable>
           <traversableTypes>
             <mappingId>13dfc66f-4342-4d35-a5f3-858025fdbd76</mappingId>

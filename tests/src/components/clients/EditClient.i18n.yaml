@@ -8,3 +8,5 @@ en:
       label: Last name
     otherNamesTextBox:
       label: Other names
+    actions:
+      save: Save
