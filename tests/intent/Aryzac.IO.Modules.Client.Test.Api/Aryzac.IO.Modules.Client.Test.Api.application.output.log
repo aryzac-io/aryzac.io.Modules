@@ -195,6 +195,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>98808790-bc23-4258-a021-65a8f25515fa</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.DbInitializationExtensions</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Api/StartupJobs/DbInitializationExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>DbInitializationExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#5cf2817a-5971-4d3e-b4b0-2465d2ce617b</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>

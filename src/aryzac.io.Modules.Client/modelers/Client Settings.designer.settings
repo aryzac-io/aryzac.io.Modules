@@ -1468,7 +1468,10 @@ execute(element);
       <mappingSettings />
       <macros>
         <macro trigger="on-created">
-          <script>createElement("Locale", "en", element.id)</script>
+          <script>/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
+let defaultLocalte = createElement("Locale", "en", element.id);
+defaultLocalte.addStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d"); // default locale stereotype
+</script>
         </macro>
       </macros>
       <childElementSettings>
@@ -1545,7 +1548,7 @@ execute(element);
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>false</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>true</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1578,6 +1581,32 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../../typings/elementmacro.context.api.d.ts" /&gt;
+const routeParameters = [];
+let currentNode = element;
+while (currentNode) {
+    const currentNodeChildren = currentNode.getChildren();
+    const currentNodeRouteParameter = currentNodeChildren.filter(m =&gt; m.specialization === "Route Parameter");
+    if (currentNodeRouteParameter.length &gt; 0) {
+        routeParameters.push(currentNodeRouteParameter[0]);
+    }
+    currentNode = currentNode.getParent();
+    if (currentNode.specialization === "Pages") {
+        break;
+    }
+}
+const reversedRouteParameters = routeParameters.reverse();
+for (let i = 0; i &lt; reversedRouteParameters.length; i++) {
+    let parameter = createElement("Parameter", reversedRouteParameters[i].getName(), element.id);
+    parameter.setOrder(i);
+    parameter.typeReference.setType(reversedRouteParameters[i].typeReference.getType().id);
+    parameter.typeReference.setIsNullable(reversedRouteParameters[i].typeReference.getIsNullable());
+}
+</script>
+            </macro>
+          </macros>
           <childElementSettings>
             <childElementSetting type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
               <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP1JREFUOE+1k9ERAUEQRJ8MZIAMZEAIRIAIEIETgRMBIlAyIAMZIAMhqFYzW1Nbt/ixP1c129fT0z3b4vMZ2vW5BGsVLrrADujZ/Q2YAfccnxO0gTmwBGqgsh/0XQAbYAs8nSgSTA1wMnACGVjkIh1Zk4PqTuDs69C1NLbUrFylE6gow/rA0S6bFGiEMXAFZGwVCdRREqUmKlJdDeSN5nfMu54TuGlKYQ90bI4HII88hWRuicDnVzcdKYrnZ4IY438JJHFi7se1bVKgtJSG9qDOF0kzxxgjgRbJY1RDmZwWyecTKMYYG8QYG1c5muQxDqx4yWJM2NJrdMDX5/wCqc8/EcFEmKgAAAAASUVORK5CYII=" />
@@ -1610,6 +1639,36 @@ execute(element);
               <scriptOptions />
               <mappingOptions />
               <mappingSettings />
+              <macros>
+                <macro trigger="on-created">
+                  <script>/// &lt;reference path="../../../../../typings/elementmacro.context.api.d.ts" /&gt;
+if (element.typeReference) {
+    let parameters = element.typeReference.getType().getChildren("Component Parameter");
+    parameters.forEach(parameter =&gt; {
+        let componentParameter = createElement("Parameter", parameter.getName(), element.id);
+        componentParameter.typeReference.setType(parameter.typeReference.getType().id);
+        componentParameter.typeReference.setIsNullable(parameter.typeReference.getIsNullable());
+    });
+}
+</script>
+                </macro>
+                <macro trigger="on-type-changed">
+                  <script>/// &lt;reference path="../../../../../typings/elementmacro.context.api.d.ts" /&gt;
+var existingParameters = element.getChildren("Component Parameter");
+existingParameters.forEach(parameter =&gt; {
+    parameter.delete();
+});
+if (element.typeReference) {
+    let parameters = element.typeReference.getType().getChildren("Component Parameter");
+    parameters.forEach(parameter =&gt; {
+        let componentParameter = createElement("Parameter", parameter.getName(), element.id);
+        componentParameter.typeReference.setType(parameter.typeReference.getType().id);
+        componentParameter.typeReference.setIsNullable(parameter.typeReference.getIsNullable());
+    });
+}
+</script>
+                </macro>
+              </macros>
               <childElementSettings />
             </childElementSetting>
           </childElementSettings>
@@ -1624,7 +1683,7 @@ execute(element);
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>false</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1654,7 +1713,120 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
-          <childElementSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+const intentTypes = {
+    binary: { name: "binary", id: "013af2c5-3c32-4752-8f59-db5691050aef" },
+    bool: { name: "bool", id: "e6f92b09-b2c5-4536-8270-a4d9e5bbd930" },
+    byte: { name: "byte", id: "A4E9102F-C1C8-4902-A417-CA418E1874D2" },
+    char: { name: "char", id: "C1B3A361-B1C6-48C3-B34C-7999B3E071F0" },
+    date: { name: "date", id: "1fbaa056-b666-4f25-b8fd-76fe3165acc8" },
+    datetime: { name: "datetime", id: "a4107c29-7851-4121-9416-cf1236908f1e" },
+    datetimeoffset: {
+        name: "datetimeoffset",
+        id: "f1ba4df3-a5bc-427e-a591-4f6029f89bd7",
+    },
+    decimal: { name: "decimal", id: "675c7b84-997a-44e0-82b9-cd724c07c9e6" },
+    double: { name: "double", id: "24A77F70-5B97-40DD-8F9A-4208AD5F9219" },
+    float: { name: "float", id: "341929E9-E3E7-46AA-ACB3-B0438421F4C4" },
+    guid: { name: "guid", id: "6b649125-18ea-48fd-a6ba-0bfff0d8f488" },
+    int: { name: "int", id: "fb0a362d-e9e2-40de-b6ff-5ce8167cbe74" },
+    long: { name: "long", id: "33013006-E404-48C2-AC46-24EF5A5774FD" },
+    object: { name: "object", id: "341DD965-D06C-4A40-9437-9516ADA77FF5" },
+    short: { name: "short", id: "2ABF0FD3-CD56-4349-8838-D120ED268245" },
+    string: { name: "string", id: "d384db9c-a279-45e1-801e-e4e8099625f2" },
+};
+/// &lt;reference path="../../../../typings/elementmacro.context.api.d.ts" /&gt;
+/// &lt;reference path="../../../../common/intent-types.ts" /&gt;
+function getRouteParameterName(name) {
+    return name.substring(1, name.length - 1);
+}
+if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")) {
+    let routeParameter = createElement("Route Parameter", getRouteParameterName(element.getName()), element.id);
+    routeParameter.setOrder(0);
+    routeParameter.typeReference.setType(intentTypes.string.id);
+    routeParameter.typeReference.setIsNullable(false);
+}
+</script>
+            </macro>
+            <macro trigger="on-name-changed">
+              <script>/// &lt;reference path="../typings/elementmacro.context.api.d.ts" /&gt;
+const intentTypes = {
+    binary: { name: "binary", id: "013af2c5-3c32-4752-8f59-db5691050aef" },
+    bool: { name: "bool", id: "e6f92b09-b2c5-4536-8270-a4d9e5bbd930" },
+    byte: { name: "byte", id: "A4E9102F-C1C8-4902-A417-CA418E1874D2" },
+    char: { name: "char", id: "C1B3A361-B1C6-48C3-B34C-7999B3E071F0" },
+    date: { name: "date", id: "1fbaa056-b666-4f25-b8fd-76fe3165acc8" },
+    datetime: { name: "datetime", id: "a4107c29-7851-4121-9416-cf1236908f1e" },
+    datetimeoffset: {
+        name: "datetimeoffset",
+        id: "f1ba4df3-a5bc-427e-a591-4f6029f89bd7",
+    },
+    decimal: { name: "decimal", id: "675c7b84-997a-44e0-82b9-cd724c07c9e6" },
+    double: { name: "double", id: "24A77F70-5B97-40DD-8F9A-4208AD5F9219" },
+    float: { name: "float", id: "341929E9-E3E7-46AA-ACB3-B0438421F4C4" },
+    guid: { name: "guid", id: "6b649125-18ea-48fd-a6ba-0bfff0d8f488" },
+    int: { name: "int", id: "fb0a362d-e9e2-40de-b6ff-5ce8167cbe74" },
+    long: { name: "long", id: "33013006-E404-48C2-AC46-24EF5A5774FD" },
+    object: { name: "object", id: "341DD965-D06C-4A40-9437-9516ADA77FF5" },
+    short: { name: "short", id: "2ABF0FD3-CD56-4349-8838-D120ED268245" },
+    string: { name: "string", id: "d384db9c-a279-45e1-801e-e4e8099625f2" },
+};
+/// &lt;reference path="../../../../typings/elementmacro.context.api.d.ts" /&gt;
+/// &lt;reference path="../../../../common/intent-types.ts" /&gt;
+function getRouteParameterName(name) {
+    return name.substring(1, name.length - 1);
+}
+var existingRouteParameters = element.getChildren("Route Parameter");
+existingRouteParameters.forEach(routeParameter =&gt; {
+    routeParameter.delete();
+});
+if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")) {
+    let routeParameter = createElement("Route Parameter", getRouteParameterName(element.getName()), element.id);
+    routeParameter.setOrder(0);
+    routeParameter.typeReference.setType(intentTypes.string.id);
+    routeParameter.typeReference.setIsNullable(false);
+}
+</script>
+            </macro>
+          </macros>
+          <childElementSettings>
+            <childElementSetting type="Route Parameter" typeId="6b4c56a9-ffbe-4d80-ae61-696f946905ab">
+              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAu9JREFUeF7t3NF12jAUBuB7Sc/pYzNCRqATlJQk5C1hguIJ2m6QDdpOAJmg9A164tYblG7QEfKaB1CPAgQoBiT9prLJ79foV6SPK8uxiVV4QAIKpRkWAoJFQEACggJgnBV4yICNbuPYzi9LsntwnnuLl7YCLd6RvvxpZz42D6dlRSwl4BJefVY6o7Iilg4wB2++/EqJWDrAs+5lw6h5XLr/Hmr09C4ZZHs7oQV0TMAAtOUIAZ8ToIiMRKSwSxoVGd11hh8Rw0pVIDLRLdle2hkmoX0TcCoXjEjARekFIRJwde16IxJw/eTnhUjA/N3DGREC3PJnV+imVoqcMZr8SAY9l8EEAxJvyhsESLxFbXoDEm91YXsBEi/nDpHLidK2IV6+lHMFvu1eZKr6xhV8L+2M/DZiCruZIFLrue62m+bjDHjePa9PtGZvZr7aC45Dp5W/oRobsfKAtkhiIh4EYEzEgwGMhXhQgDEQDw5wen14efJC5MRhE3VqMhFTV5VPGxrzmcguxW3PhXdlA3/ufOsqr3/n68DAwXnHIgDaMQYjEnDxEQchEnB1jXgjEnD9JOOFSMD8s7QzIgFzAP/LMxHv7dUxEGkXfhqdD54NsQKXPlhfPAKCeAScAYZU3tz+2S9hBK96FVjlZyKOmyjcjF8yBwkJSEBQAIyzAgkICoBxViABQQEwzgokICgAxlmBBAQFwDgrkICgABhnBRIQFADjrEACggJgnBVIQFAAiNsvax7VzJUY+ZzbjcqH8US/ZcngD/BrCo2W4qlc87b1Xoy5EdHHl43tPsy9qN6k74Zfdrfdb4uogLN/H/tqvykcOM1sbB7aMV9MFhWw2WtZvOtAvHmsn3aGbbCP4Hg0wGb34lpULSB+GNNOk+99vCP/HiICtvqicuU/5JyE0ds0GXQK6cuzk3iAvdYvEZm/H9Bz2GvNR2ln+BrtJCQfDdBeMIcMeFMm1mvxogEWiRezLwKC+gQkICgAxlmBBAQFwPhfEyoLb4WwtwQAAAAASUVORK5CYII=" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>true</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeReferenceSetting>
+                <isRequired>true</isRequired>
+                <targetTypes>
+                  <type>Type-Definition</type>
+                  <type>Enum</type>
+                </targetTypes>
+                <allowIsNavigable>true</allowIsNavigable>
+                <allowIsNullable>false</allowIsNullable>
+                <allowIsCollection>false</allowIsCollection>
+                <isNavigableDefault>true</isNavigableDefault>
+                <isNullableDefault>false</isNullableDefault>
+                <isCollectionDefault>false</isCollectionDefault>
+              </typeReferenceSetting>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+          </childElementSettings>
         </childElementSetting>
       </childElementSettings>
     </elementSetting>

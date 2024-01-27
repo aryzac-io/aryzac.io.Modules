@@ -21,7 +21,10 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure
         {
             services.AddDbContext<ApplicationDbContext>((sp, options) =>
             {
-                options.UseInMemoryDatabase("DefaultConnection");
+                options.UseCosmos(
+                    configuration["Cosmos:AccountEndpoint"],
+                    configuration["Cosmos:AccountKey"],
+                    configuration["Cosmos:DatabaseName"]);
                 options.UseLazyLoadingProxies();
             });
             services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<ApplicationDbContext>());

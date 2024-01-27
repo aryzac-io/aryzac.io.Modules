@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -65,6 +66,15 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence
             new Car() { CarId = 2, Make = "Ferrari", Model = "F50" },
             new Car() { CarId = 3, Make = "Lamborghini", Model = "Countach" });
             */
+        }
+
+        /// <summary>
+        /// Calling EnsureCreatedAsync is necessary to create the required containers and insert the seed data if present in the model. 
+        /// However EnsureCreatedAsync should only be called during deployment, not normal operation, as it may cause performance issues.
+        /// </summary>
+        public async Task EnsureDbCreatedAsync()
+        {
+            await Database.EnsureCreatedAsync();
         }
 
         private async Task DispatchEventsAsync(CancellationToken cancellationToken = default)

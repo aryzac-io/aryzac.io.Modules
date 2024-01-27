@@ -4,9 +4,9 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      clientsServiceApiBaseUri: "", // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_CLIENTS_SERVICE_API_BASE_URI
-      apiBaseUri: "", // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_API_BASE_URI
-    },
+      clientsServiceApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_CLIENTS_SERVICE_API_BASE_URI
+      apiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_API_BASE_URI
+    }
   },
 
   modules: [
@@ -22,18 +22,15 @@ export default defineNuxtConfig({
     "nuxt-icon",
   ],
 
+
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "en",
     fallbackLocale: "en",
     locales: [
       {
-        code: "af",
-        iso: "af-ZA",
-      },
-      {
         code: "en",
-        iso: "en-US",
+        iso: "", 
       },
     ],
     baseUrl: "http://localhost:3000",
@@ -54,7 +51,8 @@ export default defineNuxtConfig({
     description: "Welcome",
   },
 
-  ogImage: {},
+  ogImage: {
+  },
 
   tailwindcss: {
     config: {

@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "AspNetCore.HealthChecks.CosmosDb": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "AspNetCore.HealthChecks.UI.Client": {
               "target": "Package",
               "version": "[7.1.0, )"
@@ -422,6 +426,10 @@
               "version": "[8.0.16, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Cosmos": {
               "target": "Package",
               "version": "[7.0.14, )"
             },

@@ -18,6 +18,7 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Api.Configuration
             IConfiguration configuration)
         {
             var hcBuilder = services.AddHealthChecks();
+            hcBuilder.AddCosmosDb(configuration.GetConnectionString("DefaultConnection")!, name: "CosmosDb", tags: new[] { "database" });
 
             return services;
         }

@@ -5,10 +5,11 @@ export const useClientsServiceProxy = () => {
   const clientsServices = new ClientsService();
 
   return { 
-    changeNameClient : clientsServices.changeNameClient,
-    createClient : clientsServices.createClient,
-    deleteClient : clientsServices.deleteClient,
-    getClientById : clientsServices.getClientById,
-    getClients : clientsServices.getClients,
+    changeNameClientCommand : clientsServices.changeNameClientCommand,
+    changeTitleClientCommand : clientsServices.changeTitleClientCommand,
+    createClientCommand : clientsServices.createClientCommand,
+    deleteClientCommand : clientsServices.deleteClientCommand,
+    getClientByIdQuery : clientsServices.getClientByIdQuery,
+    getClientsQuery : clientsServices.getClientsQuery,
     };
 }

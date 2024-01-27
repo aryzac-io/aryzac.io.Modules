@@ -31,9 +31,60 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<script setup lang=\"ts\">\r\n</script>\r\n\r\n<template>\r\n  <div>\r\n");
+            this.Write("\r\n<script setup lang=\"ts\">\r\n");
+            
+            #line 11 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+ if (PageParameters.Count() > 0)
+{
+
+            
+            #line default
+            #line hidden
+            this.Write("const route = useRoute();\r\n");
             
             #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+
+}
+
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+
+foreach (var pageParameter in PageParameters)
+{
+
+            
+            #line default
+            #line hidden
+            this.Write("const ");
+            
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(pageParameter.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write(" = route.params.");
+            
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(pageParameter.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write(";\r\n");
+            
+            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+
+}
+
+            
+            #line default
+            #line hidden
+            this.Write("</script>\r\n\r\n<template>\r\n  <div>\r\n");
+            
+            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
  if (Model.PageComponents != null)
 { 
 	foreach (var pageComponent in Model.PageComponents)
@@ -44,14 +95,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
             #line hidden
             this.Write("    <");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetPageComponentName(pageComponent)));
             
             #line default
             #line hidden
             this.Write(" />\r\n");
             
-            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
+            #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
 
 	}
 } 

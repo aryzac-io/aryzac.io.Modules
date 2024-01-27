@@ -12,6 +12,10 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence.Configura
     {
         public void Configure(EntityTypeBuilder<Invoice> builder)
         {
+            builder.ToContainer("Aryzac.IO.Modules.Client.Test.Api");
+
+            builder.HasPartitionKey(x => x.Id);
+
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.ClientId)

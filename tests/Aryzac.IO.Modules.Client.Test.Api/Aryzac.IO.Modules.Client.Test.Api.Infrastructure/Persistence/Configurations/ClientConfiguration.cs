@@ -12,18 +12,19 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence.Configura
     {
         public void Configure(EntityTypeBuilder<Api.Domain.Entities.Client> builder)
         {
+            builder.ToContainer("Aryzac.IO.Modules.Client.Test.Api");
+
+            builder.HasPartitionKey(x => x.Id);
+
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.FirstName)
-                .IsRequired()
-                .HasMaxLength(128);
+                .IsRequired();
 
             builder.Property(x => x.LastName)
-                .IsRequired()
-                .HasMaxLength(128);
+                .IsRequired();
 
-            builder.Property(x => x.OtherNames)
-                .HasMaxLength(512);
+            builder.Property(x => x.OtherNames);
 
             builder.Property(x => x.TitleId)
                 .IsRequired();

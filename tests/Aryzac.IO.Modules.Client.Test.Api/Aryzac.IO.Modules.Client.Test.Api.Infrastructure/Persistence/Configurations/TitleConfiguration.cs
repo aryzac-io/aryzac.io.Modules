@@ -12,15 +12,17 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence.Configura
     {
         public void Configure(EntityTypeBuilder<Title> builder)
         {
+            builder.ToContainer("Aryzac.IO.Modules.Client.Test.Api");
+
+            builder.HasPartitionKey(x => x.Id);
+
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Code)
-                .IsRequired()
-                .HasMaxLength(10);
+                .IsRequired();
 
             builder.Property(x => x.Name)
-                .IsRequired()
-                .HasMaxLength(64);
+                .IsRequired();
 
             builder.Property(x => x.Description)
                 .IsRequired();

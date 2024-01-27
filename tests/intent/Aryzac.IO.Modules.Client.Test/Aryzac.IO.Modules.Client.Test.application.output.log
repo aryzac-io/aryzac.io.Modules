@@ -28,34 +28,18 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#d55c95ef-2fcd-4750-889c-7644a73eed48</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#ed9feb16-f1b5-4c34-8fae-2da23bf25b2e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/Clients/ChangeName.i18n.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/Clients/ChangeName.i18n.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/components/Clients/NewComponent.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/NewComponent.i18n.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#d55c95ef-2fcd-4750-889c-7644a73eed48</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#ed9feb16-f1b5-4c34-8fae-2da23bf25b2e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/Clients/ChangeName.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/Clients/ChangeName.vue</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#3888acd6-74ae-4220-93c5-434da13936a2</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/Clients/List.i18n.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/Clients/List.i18n.yaml</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#3888acd6-74ae-4220-93c5-434da13936a2</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/Clients/List.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/Clients/List.vue</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/components/Clients/NewComponent.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/NewComponent.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -340,7 +324,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#68fe934f-0c89-4db4-b8f0-321c3684963a</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#bfa10f42-42f6-4d8e-a704-00b7e2266489</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/composables/useClientsServiceProxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>useClientsServiceProxy.ts</ProjectRelativeFilePath>
@@ -412,15 +396,31 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#292f0b5f-e872-4d71-a67d-a85a0561a3d2</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#3ef34866-886c-445a-9af4-6ae0853af235</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/pages/clients/[id]/index.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/clients/[id]/index.vue</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/index.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/[client-id]/index.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#a0006ff6-338b-4e43-8c78-e1fb09f08eab</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#06dd01a1-e995-4a29-840c-a07e39c514b3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/invoices/[invoice-id]/index.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/[client-id]/invoices/[invoice-id]/index.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#10fc7a95-92ed-42c5-acae-a68a3bf7f7d8</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/invoices/index.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/[client-id]/invoices/index.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#13c48c79-ef01-499b-b7a2-cc267d02dcde</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/pages/clients/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/clients/index.vue</ProjectRelativeFilePath>
@@ -460,7 +460,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#68fe934f-0c89-4db4-b8f0-321c3684963a</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#bfa10f42-42f6-4d8e-a704-00b7e2266489</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/services/clients-service.proxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients-service.proxy.ts</ProjectRelativeFilePath>
@@ -476,7 +476,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#27e4934c-cf1b-4a4a-90b6-3145485b6252</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#8adab089-3e0f-466e-8478-0f0d891af0be</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/change-name-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/change-name-client-command.dto.ts</ProjectRelativeFilePath>
@@ -484,7 +484,15 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#b5c8ff37-d21a-4305-a4a7-a4b51a0ca8e3</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/clients/change-title-client-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>clients/change-title-client-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#6f4b80e1-8632-4181-901c-46f28e9b3b75</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/client.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/client.dto.ts</ProjectRelativeFilePath>
@@ -492,7 +500,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#7e1f31d4-50f2-49c0-8c39-6135673580e8</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#c956cb72-2f94-4294-b4ff-638c9e332ff3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/create-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/create-client-command.dto.ts</ProjectRelativeFilePath>
@@ -500,7 +508,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#61c2a60e-b9cf-461b-b7dc-4d82692fef1c</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#0b897df0-2dcd-4c9b-baf8-8e8180894a38</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/delete-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/delete-client-command.dto.ts</ProjectRelativeFilePath>
@@ -508,7 +516,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#8cf2f3e2-6952-4e12-a503-52984d4b42f6</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#42722bcb-5cee-4dff-975f-499d5bdf7fe4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/get-client-by-id-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/get-client-by-id-query.dto.ts</ProjectRelativeFilePath>
@@ -516,7 +524,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#94b6aa76-2129-4b68-a233-8918b68835c4</CorrelationId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#625e4bb7-389e-43f3-839a-b700d2c92459</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/get-clients-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/get-clients-query.dto.ts</ProjectRelativeFilePath>

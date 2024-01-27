@@ -324,6 +324,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#6b4c56a9-ffbe-4d80-ae61-696f946905ab</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/RouteParameterModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>RouteParameterModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#359ec87c-144f-4be1-b3d1-fe182093bb3e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/SectionModel.cs</ApplicationRelativeFilePath>

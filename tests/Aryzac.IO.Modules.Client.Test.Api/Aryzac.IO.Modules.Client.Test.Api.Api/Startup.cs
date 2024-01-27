@@ -5,6 +5,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Aryzac.IO.Modules.Client.Test.Api.Api.Configuration;
 using Aryzac.IO.Modules.Client.Test.Api.Api.Filters;
+using Aryzac.IO.Modules.Client.Test.Api.Api.StartupJobs;
 using Aryzac.IO.Modules.Client.Test.Api.Application;
 using Aryzac.IO.Modules.Client.Test.Api.Infrastructure;
 using Intent.RoslynWeaver.Attributes;
@@ -76,6 +77,11 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Api
                 endpoints.MapHubs();
             });
             app.UseSwashbuckle(Configuration);
+
+            if (Configuration.GetValue<bool>("Cosmos:EnsureDbCreated"))
+            {
+                app.EnsureDbCreationAsync().GetAwaiter().GetResult();
+            }
         }
     }
 }

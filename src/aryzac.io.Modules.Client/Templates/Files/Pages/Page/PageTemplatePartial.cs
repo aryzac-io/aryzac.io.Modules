@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Xml.Linq;
 using Aryzac.IO.Modules.Client.Api;
 using Intent.Engine;
 using Intent.Metadata.Models;
+using Intent.Modelers.Types.ServiceProxies.Api;
 using Intent.Modules.Common;
 using Intent.Modules.Common.Templates;
 using Intent.RoslynWeaver.Attributes;
@@ -72,6 +74,11 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
 
             return string.Join("-", elementPath.Reverse<string>());
         }
+
+        public IList<ParameterModel> PageParameters => Model.InternalElement.ChildElements
+            .GetElementsOfType(ParameterModel.SpecializationTypeId)
+            .Select(x => new ParameterModel(x))
+            .ToList();
 
     }
 }

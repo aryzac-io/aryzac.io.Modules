@@ -173,5 +173,11 @@
             </summary>
             <response code="200">Returns the specified List&lt;TitleDto&gt;.</response>
         </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.StartupJobs.DbInitializationExtensions.EnsureDbCreationAsync(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Performs a check to see whether the database exist and if not will create it
+            based on the EntityFrameworkCore DbContext configuration.
+            </summary>
+        </member>
     </members>
 </doc>

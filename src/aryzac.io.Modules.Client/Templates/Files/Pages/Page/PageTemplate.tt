@@ -8,6 +8,22 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <script setup lang="ts">
+<# if (PageParameters.Count() > 0)
+{
+#>
+const route = useRoute();
+<#
+}
+#>
+
+<#
+foreach (var pageParameter in PageParameters)
+{
+#>
+const <#= pageParameter.Name.ToPascalCase().ToCamelCase() #> = route.params.<#= pageParameter.Name.ToPascalCase().ToCamelCase() #>;
+<#
+}
+#>
 </script>
 
 <template>
