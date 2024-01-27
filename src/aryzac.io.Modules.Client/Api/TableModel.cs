@@ -47,6 +47,11 @@ namespace Aryzac.IO.Modules.Client.Api
             .Select(x => new ColumnModel(x))
             .ToList();
 
+        public ActionsModel Actions => _element.ChildElements
+            .GetElementsOfType(ActionsModel.SpecializationTypeId)
+            .Select(x => new ActionsModel(x))
+            .SingleOrDefault();
+
         public override string ToString()
         {
             return _element.ToString();

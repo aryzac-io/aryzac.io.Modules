@@ -28,18 +28,34 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#7feef88b-f500-4dea-ab2c-596cd3d1b06b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/components/Clients/EditClient.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/EditClient.i18n.yaml</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#7feef88b-f500-4dea-ab2c-596cd3d1b06b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/components/Clients/EditClient.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/EditClient.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#ed9feb16-f1b5-4c34-8fae-2da23bf25b2e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/NewComponent.i18n.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/NewComponent.i18n.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/components/Clients/ListClients.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/ListClients.i18n.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#ed9feb16-f1b5-4c34-8fae-2da23bf25b2e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/Clients/NewComponent.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/NewComponent.vue</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/components/Clients/ListClients.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/ListClients.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

@@ -77,17 +77,16 @@ const <#= commandOrQuery.Name.ToCamelCase() #>Proxy = use<#= commandOrQuery.Name
   error: <#= query.InternalElement.ParentElement.Name.ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Error 
 } = await <#= query.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= query.Mapping.Element.Name.ToCamelCase() #>(<#
 
-	var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)query.Mapping.Element.AsOperationModel().Mapping.Element);
-		if (endpoint != null)
-	{
-	  foreach (var parameter in endpoint.Inputs)
-	  {
-	    #>props.<#= parameter.Name.ToPascalCase().ToCamelCase() #><#
-        if (endpoint.Inputs.Last() != parameter)
-		{
-		#>, <#
-		}
-	  }
+	foreach (var mapping in query.InternalElement.Mappings)
+    {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+	      #>props.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #><#
+          if (mapping.MappedEnds.Last() != mappedEnd)
+		  {
+		  #>, <#
+		  }
+	    }
 	}
 	#>);
 <#   

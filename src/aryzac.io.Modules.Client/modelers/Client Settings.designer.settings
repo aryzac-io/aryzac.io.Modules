@@ -322,24 +322,17 @@ function execute(command) {
         existing.setMetadata("endpoint-input-id", param.id);
     });
     command.getChildren("Parameter")
-        .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata("endpoint-input-id")))
-
+        .filter(x =&gt; params.every(p =&gt; p.id != x.getMetadata("endpoint-input-id")));
     if (targetOperation.typeReference) {
-        let responseType = createElement("Parameter", "response-type", command.id)
+        let responseType = createElement("Parameter", "response-type", command.id);
         responseType.setName("response-type");
         responseType.setOrder(params.length);
         responseType.typeReference.setType(targetOperation.typeReference.getTypeId());
-        responseType.typeReference.setIsCollection(targetOperation.typeReference.getIsCollection());
+        // responseType.typeReference.setIsCollection(targetOperation.typeReference.getIsCollection());
         responseType.typeReference.setIsNullable(targetOperation.typeReference.getIsNullable());
         responseType.setMetadata("response-type", responseType.id);
     }
 }
-/**
- * Used by Intent.Modules\Modules\Intent.Modelers.Types.ServiceProxies
- *
- * Source code here:
- * https://github.com/IntentArchitect/Intent.Modules/blob/development/DesignerMacros/src/service-proxies/manage-parameters/service-proxies-manage-parameters.ts
- */
 execute(element);
 </script>
                 </macro>
@@ -745,6 +738,7 @@ execute(element);
           <typeOrder>
             <type order="0">Component Query</type>
             <type order="1">Column</type>
+            <type order="2">Actions</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -762,6 +756,14 @@ execute(element);
               <specializationTypeId>1f1e08b9-1927-4028-98bb-eaa4379c1e22</specializationTypeId>
               <defaultName>NewColumn</defaultName>
               <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Actions</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Actions</specializationType>
+              <specializationTypeId>ccc50dcf-42e3-4b91-8772-bb48739c17e8</specializationTypeId>
+              <defaultName>[actions]</defaultName>
+              <allowMultiple>false</allowMultiple>
             </option>
           </creationOptions>
           <scriptOptions />
@@ -1109,6 +1111,7 @@ execute(element);
           <allowSetValue>false</allowSetValue>
           <typeOrder>
             <type order="0">Component Command</type>
+            <type order="1">Navigation Item</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
@@ -1117,6 +1120,14 @@ execute(element);
               <specializationType>Component Command</specializationType>
               <specializationTypeId>52a388d5-ebcb-44d6-bbb7-8608597a06a8</specializationTypeId>
               <defaultName>[command]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Navigation</text>
+              <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
+              <specializationType>Navigation Item</specializationType>
+              <specializationTypeId>27ebf07c-5f47-49cb-8ccf-b5dc2cffa951</specializationTypeId>
+              <defaultName>[navigation]</defaultName>
               <allowMultiple>false</allowMultiple>
             </option>
           </creationOptions>
@@ -2395,47 +2406,49 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
     <mappingSetting type="Map Query To Table" typeId="5888463e-4c04-4e59-93ed-aea2342d3c40">
       <title>Map Query To Table</title>
       <sourceMappings>
-        <mapping id="65f44998-40dc-42cc-9bd4-615b06239e42" name="Query" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+        <mapping id="4a796a1b-ca09-4cff-8e5c-77a8302e25bc" name="DTO" type="DTO" typeId="fee0edca-4aa0-4f77-a524-6bbd84e78734">
           <allowMultipleMappings>true</allowMultipleMappings>
           <isMappableFunction>return true;</isMappableFunction>
-          <isTraversable>true</isTraversable>
-          <traversableTypes />
-          <canBeModified>false</canBeModified>
-          <represents>data</represents>
-          <childSettings />
-        </mapping>
-        <mapping id="8f1db76d-77fa-4adf-a3c9-694915c0b782" name="DTO-Field" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
-          <allowMultipleMappings>true</allowMultipleMappings>
-          <isMappableFunction>return true;</isMappableFunction>
-          <isTraversable>true</isTraversable>
-          <traversableTypes />
-          <canBeModified>false</canBeModified>
-          <represents>data</represents>
-          <childSettings />
-        </mapping>
-        <mapping id="69898e4f-2965-4c34-8872-1aaedb34ea9f" name="Table" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
-          <allowMultipleMappings>true</allowMultipleMappings>
-          <isMappableFunction>return false;</isMappableFunction>
           <isTraversable>false</isTraversable>
           <traversableTypes />
           <canBeModified>false</canBeModified>
           <represents>data</represents>
           <childSettings>
-            <childSetting id="24da96bb-adac-48bb-9f0c-e9377465df29" name="Component Query" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+            <childSetting id="79fbff4e-c013-489d-80ec-a3a5976dca9f" name="DTO-Field" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
               <allowMultipleMappings>true</allowMultipleMappings>
-              <isMappableFunction>return false;</isMappableFunction>
+              <isMappableFunction>return true;</isMappableFunction>
               <isTraversable>false</isTraversable>
               <traversableTypes />
               <canBeModified>false</canBeModified>
               <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+        <mapping id="09a0a9eb-3aaa-4480-9740-e56aeb361b93" name="Table" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="a271bbc0-7261-43ca-ac18-43c0d301f03c" name="Component Query" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return false;</isMappableFunction>
+              <isTraversable>true</isTraversable>
+              <traversableTypes>
+                <mappingId>21751eac-5336-4530-b9ba-8de0c42b9049</mappingId>
+              </traversableTypes>
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
               <childSettings>
-                <childSetting id="ea16f95a-6c08-4a3a-86ef-6440183aa7a8" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                <childSetting id="21751eac-5336-4530-b9ba-8de0c42b9049" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
                   <allowMultipleMappings>true</allowMultipleMappings>
-                  <isMappableFunction>return true;</isMappableFunction>
+                  <isMappableFunction>return false;</isMappableFunction>
                   <isTraversable>true</isTraversable>
                   <traversableTypes>
-                    <mappingId>65f44998-40dc-42cc-9bd4-615b06239e42</mappingId>
-                    <mappingId>8f1db76d-77fa-4adf-a3c9-694915c0b782</mappingId>
+                    <mappingId>4a796a1b-ca09-4cff-8e5c-77a8302e25bc</mappingId>
                   </traversableTypes>
                   <canBeModified>true</canBeModified>
                   <represents>data</represents>
@@ -2471,20 +2484,10 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
         <mappingType type="Map From DTO-Field" typeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
           <represents>data</represents>
           <sources>
-            <source id="8f1db76d-77fa-4adf-a3c9-694915c0b782" name="DTO-Field" />
+            <source id="79fbff4e-c013-489d-80ec-a3a5976dca9f" name="DTO-Field" />
           </sources>
           <targets>
             <target id="80a7cce9-5b4b-4ead-ae4e-8fa820fe6e63" name="Column" />
-          </targets>
-          <allowAutoMap>true</allowAutoMap>
-        </mappingType>
-        <mappingType type="Map From Component Query" typeId="730de1d7-e514-4cef-8df2-99fe873aa285">
-          <represents>invokable</represents>
-          <sources>
-            <source id="24da96bb-adac-48bb-9f0c-e9377465df29" name="Component Query" />
-          </sources>
-          <targets>
-            <target id="e3d7b568-ec93-4e1c-94ba-3c10158d048f" name="Table" />
           </targets>
           <allowAutoMap>true</allowAutoMap>
         </mappingType>

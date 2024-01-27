@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Xml.Linq;
 using Aryzac.IO.Modules.Client.Api;
@@ -30,6 +32,17 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public ComponentTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
             Types = new TypeScriptTypeResolver();
+
+            foreach (var query in Queries)
+            {
+                foreach (var mapping in query.InternalElement.Mappings)
+                {
+                    foreach (var mappedEnd in mapping.MappedEnds)
+                    {
+                        
+                    }
+                }
+            }
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

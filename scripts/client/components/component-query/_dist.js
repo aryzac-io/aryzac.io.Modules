@@ -31,34 +31,32 @@ function GetParameters(targetService) {
     }
     return result;
 }
-function execute(proxyElement) {
-    proxyElement.getChildren("Operation").forEach(operation => {
-        let targetService = operation.getMapping().getElement();
-        let params = GetParameters(targetService);
-        params.forEach((param, index) => {
-            let existing = operation.getChildren("Parameter").find(x => x.getMetadata("endpoint-input-id") == param.id);
-            if (!existing) {
-                existing = createElement("Parameter", param.name, operation.id);
-            }
-            existing.setName(param.name);
-            existing.setOrder(index);
-            existing.typeReference.setType(param.typeId);
-            existing.typeReference.setIsCollection(param.isCollection);
-            existing.typeReference.setIsNullable(param.isNullable);
-            existing.setMetadata("endpoint-input-id", param.id);
-        });
-        operation.getChildren("Parameter")
-            .filter(x => params.every(p => p.id != x.getMetadata("endpoint-input-id")))
-            .forEach(x => x.delete());
-        if (operation.typeReference) {
-            let responseType = createElement("Parameter", "response-type", proxyElement.id);
-            responseType.setName("response-type");
-            responseType.setOrder(params.length);
-            responseType.typeReference.setType(operation.typeReference.getTypeId());
-            responseType.typeReference.setIsCollection(operation.typeReference.getIsCollection());
-            responseType.typeReference.setIsNullable(operation.typeReference.getIsNullable());
-            responseType.setMetadata("response-type", responseType.id);
+function execute(command) {
+    let targetOperation = command.getMapping().getElement();
+    let targetService = targetOperation.getMapping().getElement();
+    let params = GetParameters(targetService);
+    params.forEach((param, index) => {
+        let existing = command.getChildren("Parameter").find(x => x.getMetadata("endpoint-input-id") == param.id);
+        if (!existing) {
+            existing = createElement("Parameter", param.name, command.id);
         }
+        existing.setName(param.name);
+        existing.setOrder(index);
+        existing.typeReference.setType(param.typeId);
+        existing.typeReference.setIsCollection(param.isCollection);
+        existing.typeReference.setIsNullable(param.isNullable);
+        existing.setMetadata("endpoint-input-id", param.id);
     });
+    command.getChildren("Parameter")
+        .filter(x => params.every(p => p.id != x.getMetadata("endpoint-input-id")));
+    if (targetOperation.typeReference) {
+        let responseType = createElement("Parameter", "response-type", command.id);
+        responseType.setName("response-type");
+        responseType.setOrder(params.length);
+        responseType.typeReference.setType(targetOperation.typeReference.getTypeId());
+        // responseType.typeReference.setIsCollection(targetOperation.typeReference.getIsCollection());
+        responseType.typeReference.setIsNullable(targetOperation.typeReference.getIsNullable());
+        responseType.setMetadata("response-type", responseType.id);
+    }
 }
 execute(element);

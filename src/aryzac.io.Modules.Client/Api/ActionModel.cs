@@ -42,6 +42,11 @@ namespace Aryzac.IO.Modules.Client.Api
             .Select(x => new ComponentCommandModel(x))
             .SingleOrDefault();
 
+        public NavigationItemModel Navigation => _element.ChildElements
+            .GetElementsOfType(NavigationItemModel.SpecializationTypeId)
+            .Select(x => new NavigationItemModel(x))
+            .SingleOrDefault();
+
         public override string ToString()
         {
             return _element.ToString();

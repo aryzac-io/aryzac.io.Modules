@@ -1,0 +1,10 @@
+en:
+  personalInformation:
+    title: ''
+    description: ''
+    firstNameTextBox:
+      label: First name
+    lastNameTextBox:
+      label: Last name
+    otherNamesTextBox:
+      label: Other names

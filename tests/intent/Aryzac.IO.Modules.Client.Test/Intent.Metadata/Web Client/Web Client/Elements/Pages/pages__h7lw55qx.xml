@@ -320,6 +320,7 @@
           <name>index</name>
           <display>index: default</display>
           <isAbstract>false</isAbstract>
+          <sort-children>manually</sort-children>
           <genericTypes />
           <typeReference id="f240b994-5801-48c3-92d5-0cc872b5fc50">
             <typeId>f16095c8-5ac2-47a9-923e-fe7a9cc54083</typeId>
@@ -338,7 +339,32 @@
           <packageName>Web Client</packageName>
           <stereotypes />
           <metadata />
-          <childElements />
+          <childElements>
+            <childElement id="5814dde2-1d19-4c57-8a21-beae8d33ef98" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+              <name>List</name>
+              <display>List: ListClients</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="f023f3ab-7c92-479e-8f3a-5be9957d303e">
+                <typeId>ed9feb16-f1b5-4c34-8fae-2da23bf25b2e</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Web Client</typePackageName>
+                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>13c48c79-ef01-499b-b7a2-cc267d02dcde</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
         </childElement>
       </childElements>
     </childElement>
