@@ -69,7 +69,7 @@ foreach (var pageParameter in PageParameters)
             this.Write(" = route.params.");
             
             #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(pageParameter.Name.ToPascalCase().ToCamelCase()));
+            this.Write(this.ToStringHelper.ToStringWithCulture(pageParameter.Name.ToPascalCase().ToCamelCase().ToLower()));
             
             #line default
             #line hidden

@@ -55,7 +55,7 @@ const { t } = useI18n();
   foreach (var commandOrQuery in CommandsAndQueries)
   {
 #>
-const <#= commandOrQuery.Name.ToCamelCase() #>Proxy = use<#= commandOrQuery.Name.ToPascalCase() #>Proxy();
+const <#= commandOrQuery.Name.ToPascalCase().ToCamelCase() #>Proxy = use<#= commandOrQuery.Name.ToPascalCase() #>Proxy();
 <#   
   }
 #>
@@ -72,10 +72,10 @@ const <#= commandOrQuery.Name.ToCamelCase() #>Proxy = use<#= commandOrQuery.Name
   foreach (var query in Queries)
   {
 #>const { 
-  data: <#= query.InternalElement.ParentElement.Name.ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Data, 
-  pending: <#= query.InternalElement.ParentElement.Name.ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Pending, 
-  error: <#= query.InternalElement.ParentElement.Name.ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Error 
-} = await <#= query.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= query.Mapping.Element.Name.ToCamelCase() #>(<#
+  data: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Data, 
+  pending: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Pending, 
+  error: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Error 
+} = await <#= query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= query.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
 
 	foreach (var mapping in query.InternalElement.Mappings)
     {
@@ -103,7 +103,7 @@ interface ModelInterface {
     foreach (var property in Model.Model.Properties)
     {
 #>
-  <#= property.Name.ToCamelCase() #><#= property.TypeReference.IsNullable ? "?" : "" #>: <#= GetTypeName(property.TypeReference) #>;
+  <#= property.Name.ToPascalCase().ToCamelCase() #><#= property.TypeReference.IsNullable ? "?" : "" #>: <#= GetTypeName(property.TypeReference) #>;
 <#
     }
 #>
@@ -114,7 +114,7 @@ const model: ModelInterface = reactive({
     foreach (var property in Model.Model.Properties)
     {
 #>
-  <#= property.Name.ToCamelCase() #>: "",
+  <#= property.Name.ToPascalCase().ToCamelCase() #>: "",
 <#
     }
 #>
@@ -125,12 +125,12 @@ const model: ModelInterface = reactive({
     {
 #>
 watchEffect(async () => {
-  if (<#= Model.Query.InternalElement.ParentElement.Name.ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value) {
+  if (<#= Model.Query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value) {
 <#  
       foreach (var property in Model.Model.Properties)
       {
 #>
-    model.<#= property.Name.ToCamelCase() #> = <#= Model.Query.InternalElement.ParentElement.Name.ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value.<#= GetMappedPropertyName(property) #>;
+    model.<#= property.Name.ToPascalCase().ToCamelCase() #> = <#= Model.Query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value.<#= GetMappedPropertyName(property) #>;
 <#
       }
     }
@@ -166,7 +166,7 @@ watchEffect(async () => {
     foreach (var property in ((IElement)commandParameter.TypeReference.Element).ChildElements)
     {
 #>
-    <#= property.Name.ToCamelCase() #>: model.<#= GetMappedName(property, command) #>,
+    <#= property.Name.ToPascalCase().ToCamelCase() #>: model.<#= GetMappedName(property, command) #>,
 <#
     }
 #>
@@ -179,12 +179,12 @@ watchEffect(async () => {
 	  foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType != "Command"))
 	  {
 #>
-  const <#= parameter.Name.ToCamelCase() #>: <#= GetTypeName(parameter.TypeReference) #> = props.id;
+  const <#= parameter.Name.ToPascalCase().ToCamelCase() #>: <#= GetTypeName(parameter.TypeReference) #> = props.id;
 <#
 	  }
 #>
 
-	const <#= command.Mapping.Element.Name.ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToCamelCase() #>(<#
+	const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
 
 	if (endpoint != null)
 	{
@@ -215,7 +215,7 @@ if (Model.View != null)
     if (component.IsHeadingModel()) // Heading
     {
 #>
-const <#= Model.View.Heading.Name.ToCamelCase() #>Attributes = computed(() => [
+const <#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Attributes = computed(() => [
 <# 
       foreach (var attribute in Model.View.Heading.Attributes)
       {
@@ -223,14 +223,14 @@ const <#= Model.View.Heading.Name.ToCamelCase() #>Attributes = computed(() => [
 #>
   {
 	icon: '<#= attributeSettings.Icon() #>',
-	label: t("<#= Model.View.Heading.Name.ToCamelCase() #>.attributes.<#= attribute.Name.ToCamelCase() #>Label"),
+	label: t("<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>Label"),
   },
 <#
        }
 #>]
 );
 
-const <#= Model.View.Heading.Name.ToCamelCase() #>Actions = computed(() => [
+const <#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Actions = computed(() => [
   {
     label: "Create Invoice",
     icon: "heroicons:plus",
@@ -254,14 +254,14 @@ const <#= Model.View.Heading.Name.ToCamelCase() #>Actions = computed(() => [
 // <#= control.Name #> Options
 <#
           var table = control.AsTableModel();
-#>const <#= table.Name.ToCamelCase() #>Headers = [
+#>const <#= table.Name.ToPascalCase().ToCamelCase() #>Headers = [
 <# 
 foreach (var column in table.Columns)
 {
 #>
   {
 	key: '<#= GetMappedColumnFieldName(column) #>',
-	label: t("<#= component.Name.ToCamelCase() #>.<#= table.Name.ToCamelCase() #>.<#= column.Name.ToCamelCase() #>"),
+	label: t("<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= table.Name.ToPascalCase().ToCamelCase() #>.<#= column.Name.ToPascalCase().ToCamelCase() #>"),
   },
 <#
 }
@@ -277,14 +277,14 @@ foreach (var column in table.Columns)
 #>
 
 //<#= component.Name #> Options
-const <#= Model.View.Table.Name.ToCamelCase() #>Headers = [
+const <#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Headers = [
 <# 
 foreach (var column in Model.View.Table.Columns)
 {
 #>
   {
-	key: '<#= column.Name.ToCamelCase() #>',
-	label: t("<#= Model.View.Table.Name.ToCamelCase() #>.<#= column.Name.ToCamelCase() #>"),
+	key: '<#= column.Name.ToPascalCase().ToCamelCase() #>',
+	label: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.<#= column.Name.ToPascalCase().ToCamelCase() #>"),
   },
 <#
 }
@@ -307,9 +307,9 @@ if (Model.View != null)
     {
 #>
   <ui-heading-page
-    :title="t('<#= Model.View.Heading.Name.ToCamelCase() #>.title')"
-    :attributes="<#= Model.View.Heading.Name.ToCamelCase() #>Attributes"
-    :actions="<#= Model.View.Heading.Name.ToCamelCase() #>Actions"
+    :title="t('<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.title')"
+    :attributes="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Attributes"
+    :actions="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Actions"
   />
 <#
     }
@@ -318,8 +318,8 @@ if (Model.View != null)
       var section = component.AsSectionModel();
 #>
   <ui-editor-section
-    :title="t('<#= component.Name.ToCamelCase() #>.title')"
-    :description="t('<#= component.Name.ToCamelCase() #>.description')"
+    :title="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.title')"
+    :description="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.description')"
   >
 <#
       foreach (var control in section.InternalElement.ChildElements)
@@ -331,7 +331,7 @@ if (Model.View != null)
 #>
      <ui-input-textbox 
        v-model="model.<#= GetMappedTextboxName(control.AsTextboxModel()) #>" 
-       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -341,7 +341,7 @@ if (Model.View != null)
 #>
      <ui-input-text-area 
        v-model="model.<#= GetMappedTextAreaName(control.AsTextAreaModel()) #>" 
-       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -351,8 +351,8 @@ if (Model.View != null)
 #>
      <ui-input-checkbox 
        v-model="model.<#= GetMappedCheckboxName(control.AsCheckboxModel()) #>" 
-       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" 
-       :description="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.description')" />
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" 
+       :description="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.description')" />
 <#
         }
 #>
@@ -362,7 +362,7 @@ if (Model.View != null)
 #>
      <ui-input-label 
        v-model="model.<#= GetMappedLabelName(control.AsLabelModel()) #>" 
-       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -372,7 +372,7 @@ if (Model.View != null)
 #>
      <ui-input-radio-button 
        v-model="model.<#= GetMappedRadioButtonName(control.AsRadioButtonModel()) #>" 
-       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -382,7 +382,7 @@ if (Model.View != null)
 #>
      <ui-input-select 
        v-model="model.<#= GetMappedSelectName(control.AsSelectModel()) #>" 
-       :label="t('<#= component.Name.ToCamelCase() #>.<#= control.Name.ToCamelCase() #>.label')" />
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
 <#
         }
 #>
@@ -392,8 +392,8 @@ if (Model.View != null)
           var table = control.AsTableModel();
 #>
   <ui-view-table
-    :items="<#= table.Name.ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
-    :headers="<#= control.Name.ToCamelCase() #>Headers"
+    :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
+    :headers="<#= control.Name.ToPascalCase().ToCamelCase() #>Headers"
     key="id"
   />
 <#
@@ -416,7 +416,7 @@ if (Model.View != null)
         @click="save<#= command.Mapping.Element.Name.ToPascalCase() #>()"
         class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
       >
-        {{ t('<#= component.Name.ToCamelCase() #>.actions.<#= action.Name.ToCamelCase() #>') }}
+        {{ t('<#= component.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>') }}
       </button>
     </template>
     
@@ -437,8 +437,8 @@ if (Model.View != null)
           var table = component.AsTableModel();
 #>
   <ui-view-table
-    :items="<#= table.Name.ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
-    :headers="<#= Model.View.Table.Name.ToCamelCase() #>Headers"
+    :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
+    :headers="<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Headers"
     key="id"
   />
 <# 

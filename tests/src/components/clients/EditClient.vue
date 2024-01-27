@@ -53,17 +53,17 @@ watchEffect(async () => {
 
 <template>
   <ui-editor-section
-    :title="t('personal Information.title')"
-    :description="t('personal Information.description')"
+    :title="t('personalInformation.title')"
+    :description="t('personalInformation.description')"
   >
      <ui-input-textbox 
        v-model="model.firstName" 
-       :label="t('personal Information.firstNameTextBox.label')" />
+       :label="t('personalInformation.firstNameTextBox.label')" />
      <ui-input-textbox 
        v-model="model.lastName" 
-       :label="t('personal Information.lastNameTextBox.label')" />
+       :label="t('personalInformation.lastNameTextBox.label')" />
      <ui-input-textbox 
        v-model="model.otherNames" 
-       :label="t('personal Information.otherNamesTextBox.label')" />
+       :label="t('personalInformation.otherNamesTextBox.label')" />
   </ui-editor-section>
 </template>

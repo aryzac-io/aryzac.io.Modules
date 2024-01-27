@@ -20,7 +20,7 @@ const route = useRoute();
 foreach (var pageParameter in PageParameters)
 {
 #>
-const <#= pageParameter.Name.ToPascalCase().ToCamelCase() #> = route.params.<#= pageParameter.Name.ToPascalCase().ToCamelCase() #>;
+const <#= pageParameter.Name.ToPascalCase().ToCamelCase() #> = route.params.<#= pageParameter.Name.ToPascalCase().ToCamelCase().ToLower() #>;
 <#
 }
 #>

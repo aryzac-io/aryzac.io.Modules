@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const clientId = route.params.clientId;
+const clientId = route.params.clientid;
 </script>
 
 <template>
