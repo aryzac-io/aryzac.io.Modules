@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stereotypeDefinition id="09876e82-e2d2-440a-9f22-2cb2d958d89d" version="3.1.0">
+  <name>Default Locale</name>
+  <targetMode>of-type</targetMode>
+  <targetTypes>
+    <type id="84a53da1-7d07-4bbd-ae08-88cd59406f6f">Locale</type>
+  </targetTypes>
+  <targetReferenceTypes />
+  <applyMode>manually</applyMode>
+  <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
+  <displayIcon>false</displayIcon>
+  <displayIconFunction>return false;</displayIconFunction>
+  <displayFunction />
+  <displayAsAnnotation>false</displayAsAnnotation>
+  <displayAsText>true</displayAsText>
+  <autoAdd>false</autoAdd>
+  <allowMultipleApplies>false</allowMultipleApplies>
+  <parentFolderId>d6e53c6e-9d04-4804-b78b-8b282a71dbe4</parentFolderId>
+  <order>0</order>
+  <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+  <packageName>Aryzac.IO.Modules.Client</packageName>
+  <properties />
+</stereotypeDefinition>

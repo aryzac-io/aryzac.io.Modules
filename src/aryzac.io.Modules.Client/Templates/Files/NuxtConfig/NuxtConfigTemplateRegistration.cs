@@ -11,12 +11,12 @@ using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
-[assembly: IntentTemplate("Intent.ModuleBuilder.TemplateRegistration.SingleFileListModel", Version = "1.0")]
+[assembly: IntentTemplate("Intent.ModuleBuilder.TemplateRegistration.SingleFileNoModel", Version = "1.0")]
 
 namespace Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig
 {
     [IntentManaged(Mode.Merge, Body = Mode.Merge, Signature = Mode.Fully)]
-    public class NuxtConfigTemplateRegistration : SingleFileListModelTemplateRegistration<ServiceProxyModel>
+    public class NuxtConfigTemplateRegistration : SingleFileTemplateRegistration
     {
         private readonly IMetadataManager _metadataManager;
 
@@ -27,15 +27,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig
         public override string TemplateId => NuxtConfigTemplate.TemplateId;
 
         [IntentManaged(Mode.Fully)]
-        public override ITemplate CreateTemplateInstance(IOutputTarget outputTarget, IList<ServiceProxyModel> model)
+        public override ITemplate CreateTemplateInstance(IOutputTarget outputTarget)
         {
-            return new NuxtConfigTemplate(outputTarget, model);
-        }
-
-        [IntentManaged(Mode.Merge, Body = Mode.Ignore, Signature = Mode.Fully)]
-        public override IList<ServiceProxyModel> GetModels(IApplication application)
-        {
-            return _metadataManager.WebClient(application).GetServiceProxyModels().ToList();
+            return new NuxtConfigTemplate(outputTarget);
         }
     }
 }

@@ -220,6 +220,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModelExtensions#84a53da1-7d07-4bbd-ae08-88cd59406f6f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/LocaleModelStereotypeExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>LocaleModelStereotypeExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#bc3ed158-45dd-4685-8ac2-99c774a15f2d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/LocalesModel.cs</ApplicationRelativeFilePath>
@@ -636,7 +644,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
-      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.SingleFileListModel#8c5aa670-87d7-4977-b41a-db6a322133a6</CorrelationId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.SingleFileNoModel#8c5aa670-87d7-4977-b41a-db6a322133a6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/NuxtConfig/NuxtConfigTemplateRegistration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/NuxtConfig/NuxtConfigTemplateRegistration.cs</ProjectRelativeFilePath>

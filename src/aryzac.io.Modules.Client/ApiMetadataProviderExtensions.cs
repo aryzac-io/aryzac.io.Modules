@@ -67,6 +67,13 @@ namespace Aryzac.IO.Modules.Client.Api
                 .ToList();
         }
 
+        public static IList<PackageExtensionModel> GetPackageExtensionModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(PackageExtensionModel.SpecializationTypeId)
+                .Select(x => new PackageExtensionModel(x.Package))
+                .ToList();
+        }
+
         public static IList<PageModel> GetPageModels(this IDesigner designer)
         {
             return designer.GetElementsOfType(PageModel.SpecializationTypeId)

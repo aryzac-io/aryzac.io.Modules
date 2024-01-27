@@ -1,9 +1,21 @@
+af:
+  personalInformation:
+    title: ''
+    description: ''
+    firstName:
+      label: Voor naam
+    lastName:
+      label: LastName
+    otherNames:
+      label: OtherNames
+    actions:
+      save: asdfasdf
 en:
   personalInformation:
     title: Personal Information
     description: This information will be displayed publicly so be careful what you share.
     firstName:
-      label: FirstName
+      label: First Name
     lastName:
       label: LastName
     otherNames:
