@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="89cf68f6-6f29-412a-bae2-31faed8280d9" type="Element Settings" typeId="727577aa-3e07-4b41-be7d-7359bb1e48c8">
-  <name>Page</name>
-  <display>Page</display>
+<class id="17381d4f-8bd9-4b00-9235-9243a3232c6a" type="Element Settings" typeId="727577aa-3e07-4b41-be7d-7359bb1e48c8">
+  <name>Page Breadcrumb Navigation</name>
+  <display>Page Breadcrumb Navigation</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
-  <order>1</order>
+  <order>2</order>
   <genericTypes />
   <isMapped>false</isMapped>
-  <parentFolderId>72608324-5d5a-4627-aecf-0b0d0f0f7f68</parentFolderId>
+  <parentFolderId>89cf68f6-6f29-412a-bae2-31faed8280d9</parentFolderId>
   <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
   <packageName>Aryzac.IO.Modules.Client</packageName>
   <stereotypes>
@@ -16,14 +16,14 @@
       <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
       <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
       <properties>
-        <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Required" isActive="true" />
-        <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="true" />
-        <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="true" />
-        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" value="[&quot;256217fb-92b3-4b8f-9f50-7d33db1d4a7e&quot;]" isActive="true" />
-        <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="true" />
-        <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="true" />
-        <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="false" isActive="true" />
-        <property name="d04ec558-6f6a-462b-b16a-9da1d7b4e9db" display="Allow Collection" value="false" isActive="true" />
+        <property name="8da796ff-e5b8-4a53-9c18-9176bfff8fbc" display="Mode" value="Disabled" isActive="true" />
+        <property name="07613cf6-d1bf-411c-96db-65daad7d07f4" display="Display Name" isActive="false" />
+        <property name="3941cc0b-503e-495a-bef3-9923a6554cee" display="Hint" isActive="false" />
+        <property name="b94f760c-0ce7-4176-bbae-97e26914b39c" display="Target Types" value="null" isActive="false" />
+        <property name="eedd06e4-e2b8-42f2-b882-c8ae9cecabb8" display="Represents" value="Reference" isActive="false" />
+        <property name="ff4b18c5-397b-4639-ba79-89939deb9834" display="Default Type Id" isActive="false" />
+        <property name="229dcbe7-f000-4ee9-a06a-febad727f7e1" display="Allow Nullable" value="true" isActive="false" />
+        <property name="d04ec558-6f6a-462b-b16a-9da1d7b4e9db" display="Allow Collection" value="true" isActive="false" />
       </properties>
     </stereotype>
     <stereotype stereotypeDefinitionId="f406222b-31a8-435e-80f6-6a08f9108649" name="Settings">
@@ -32,7 +32,7 @@
       <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
       <properties>
         <property name="5a9277a9-b808-4ade-bb57-840b51b0da3a" display="Save Mode" value="Default" isActive="true" />
-        <property name="736b1337-6f35-4e38-85a8-69ff5d69fb7d" display="Icon" value="{&quot;type&quot;:0,&quot;source&quot;:&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAABTVJREFUeF7tnMFy1DgQhn/ZwJVcqXV2k0Mm3IAnyHCl4mX2CRaeYOEJCE8AbwA8wRq8tVecJ9hwI+ZAQoba44brVtmi5MkEamostdTyjLZWvo7aan1qSd2t9gjEh0VAsKSjMCJAphFEgBEgkwBTPFpgBMgkwBSPFhgBMgkwxaMFrgPgNN99BMhnzL4DE5cPs/LDS1ulnCzwbP/mWIj2rW1nIbeXMrm7+cf7ylbHCPCC2EoB/j25udU07Ufb2Qq5fZom2zeK9ye2OjpZoOpkmo+kbWcht8/K2omFk1AE+M0UOACPANwK2aosdHuXlfVti/aXTRkAdytA7rl0Gp6MOMzK47GLXhFgR20dAPd3nkOI31xmLTQZKfB080194KKXswWe/Tw6EBJPXDoNTSZggG7hkU/A03znASBe6N65HoCEcI6jmC+IlJXiGoV0u6eropR4OALU0J3e27mNVPylXRrA682ynrhOkg+5aU5wtxp5J/vzg/JrrR9nC6RFI+7ugfVIegQoAF3DONYSJgEUOMre1Hd8wXB5zzQf/QNgQye7PoD7o3MIXHdR7uNka+NKc2XwUFAgMeX4TrOy3nKZHA8WaN5f+maXcgi5DspOjrfNMPdAM8C+PFsEOMsJqjuEX7UnsSZVHkhO8VVW1g/srPZba5YFcp3UEAByfdXBAQLicVYeP182w/97gJ/y0SQBfneNMyk+muvSosq1wC8/lnVBbb/YjmeBzHhYBfpSCGcXwjRoIaGiIK2rxImD2W4M7STluQkmSLrfKRa+VoDKGb7aXFOevuYJGyAnCmFbICmcA06yst7mWJKr7DQfqbtr7RbxXwAIrpIMgMa7a65urENkZoHmaISr5HAA+dvLSgCCkW9zhkfIV3Ju4+Z6sQGe5aNCAPddB8qV48Ta0kPClw9wzbdznGwPN4zzcgpT4mGulenkewESJjYIgMRq1VdSJkurP4VoVZzsmljtrWmhTSz/2pW/hNnhnPkU77fA/lN0Sqic4EYhfpYwAaDutKO4QU4ACe5VEABp1ar9lkJbassR6vYwysS4VqV+rw17CZPCOc3t3HAAhw/jvCxhEkCgN5y7qF1RlVE/WZ7Wp4A86Ps0gZKs9REh+bJAY7WqSdlZpUMylpDjPsdcOb4CokLTVqZKAgJA56rUAZaw+SS13W+6XCOarixEIi1svuGglJ34COM8LmEzQB8nHnWJrzLR62cJr8jn8gnQRxTizQIpJ6kvhSkQSU40o6zX+x5IAXjR6TmAAgJVmiSHLl8GLQPY+aJtuyclJgJQ1fbaYqJuXw0KICkaWTJ0gSNIWakCoB/K49cU65q3+Zzv3pdoxxBiDAnrbzx87cle9kDapm3GI5V1KqAtDhfdFHWyygR7CphAd13JeoICSHMbrMerPvybl6apZen3/thTltyLBVKjEWuEAwqYHHtq1xEglVRPO38ACdWqTF19irOqUr27MbMlbI5GfBLgvYt/nTnv358FRoC8OVV1MmlzbZzMXAx1atqmp3gKmKVP1aneAkWT/lttFyfKqWc/3ixwUZNZplpOdOkptvaGF8zTX2kqCl9Rz2KXgwFc7OgyPaUiB/dbOBPzd8oRt01/mV6q+31lAL9XYmadzRjowrCJ6VuT3gFIfIFAAcgqTdNqKCsLDuCiQvNsNLr90/Q3AuKwS0gQstIcy6LKrsUCdcpdHkZSqkTBLOaVsmiFqHxu/lRApnbBATQpHNrvESBzRiLACJBJgCkeLTACZBJgikcLjACZBJji0QIjQCYBpvhXUPHBb6osT/gAAAAASUVORK5CYII=&quot;}" isActive="true" />
+        <property name="736b1337-6f35-4e38-85a8-69ff5d69fb7d" display="Icon" value="{&quot;type&quot;:0,&quot;source&quot;:&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yIDYuNXYxMWg3LjkxNGw1LjUtNS41bC01LjUtNS41em0yIDJoNS4wODZsMy41IDMuNWwtMy41IDMuNUg0em0xMC41ODYtMWw0LjUgNC41bC00LjUgNC41TDE2IDE3LjkxNEwyMS45MTQgMTJMMTYgNi4wODZ6Ii8+PC9zdmc+&quot;}" isActive="true" />
         <property name="32086823-bd72-4be0-a765-2d9530f4ce06" display="Expanded Icon" isActive="true" />
         <property name="b966a8e9-f298-4741-8397-fe49f29c248b" display="Icon Function" isActive="true" />
         <property name="0632053a-6b40-47a0-857f-6840e322344c" display="Display Text Function" value="" isActive="true" />
@@ -50,26 +50,26 @@
   </stereotypes>
   <metadata />
   <childElements>
-    <childElement id="0d7aee79-bb7b-4f9d-be0b-301397ff0b8a" type="Context Menu" typeId="d45e383d-90ba-4b64-aca7-34ca100cea21">
+    <childElement id="c2b210bb-c233-485a-9d7b-00eb10612c90" type="Context Menu" typeId="d45e383d-90ba-4b64-aca7-34ca100cea21">
       <name>[context menu]</name>
       <display>[context menu]</display>
       <isAbstract>false</isAbstract>
       <sort-children>manually</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
-      <parentFolderId>89cf68f6-6f29-412a-bae2-31faed8280d9</parentFolderId>
+      <parentFolderId>17381d4f-8bd9-4b00-9235-9243a3232c6a</parentFolderId>
       <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
       <packageName>Aryzac.IO.Modules.Client</packageName>
       <stereotypes />
       <metadata />
       <childElements>
-        <childElement id="a3117e5e-7a91-48ea-bafb-eacbc9c33c2d" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
-          <name>Add Breadcrumb Navigation</name>
-          <display>Add Breadcrumb Navigation: Page Breadcrumb Navigation</display>
+        <childElement id="dfa7b5c4-3a17-40f9-96c5-955d85f16c0e" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Inherited</name>
+          <display>Add Inherited: Inherited Page Breadcrumb</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="bae6aca8-c498-4fc0-adf2-427d9bcadbfe">
-            <typeId>17381d4f-8bd9-4b00-9235-9243a3232c6a</typeId>
+          <typeReference id="12c493cf-c8c9-4ad1-88a8-66c60f2bcab3">
+            <typeId>116f426e-d474-4400-afa2-faec40f7255d</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>
@@ -80,7 +80,7 @@
             <genericTypeParameters />
           </typeReference>
           <isMapped>false</isMapped>
-          <parentFolderId>0d7aee79-bb7b-4f9d-be0b-301397ff0b8a</parentFolderId>
+          <parentFolderId>c2b210bb-c233-485a-9d7b-00eb10612c90</parentFolderId>
           <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
           <packageName>Aryzac.IO.Modules.Client</packageName>
           <stereotypes>
@@ -92,7 +92,7 @@
               <properties>
                 <property name="9df41a97-0a8b-42c6-9d95-becf3d6d1e0b" display="Shortcut" isActive="true" />
                 <property name="5572d05e-dd37-47f6-944a-73710c07f4f1" display="Shortcut (macOS)" isActive="true" />
-                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="[breadcrumb]" isActive="true" />
+                <property name="ba8a3ecd-0f08-499e-bb5b-929d40f56a45" display="Default Name" value="[inherited]" isActive="true" />
                 <property name="A43F388B-DAFF-422C-BD8D-FB433EFEC51B" display="Type Order" isActive="true" />
                 <property name="8e092aa6-7d1a-4a06-af82-903e7642cef6" display="Allow Multiple" value="false" isActive="true" />
                 <property name="719e9dff-2b8d-407d-912d-fac99a158721" display="Api Model Name" isActive="true" />
@@ -103,13 +103,13 @@
           <metadata />
           <childElements />
         </childElement>
-        <childElement id="06289957-0cb5-439c-aceb-cfcd747bad6f" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
-          <name>Add Page Component</name>
-          <display>Add Page Component: Page Component</display>
+        <childElement id="cc7e11c1-7546-4a0b-8277-6780682952e7" type="Element Creation Option" typeId="5fa12f89-da1e-49c5-b8e9-427b22407f19">
+          <name>Add Item</name>
+          <display>Add Item: Navigation Item</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="da3b0c85-8608-471b-8a27-160269d94145">
-            <typeId>2de8273b-c33f-4d34-8275-14c67467cf0e</typeId>
+          <typeReference id="cfb80311-90fc-425f-829f-6f2c1e0d3783">
+            <typeId>27ebf07c-5f47-49cb-8ccf-b5dc2cffa951</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>
@@ -120,7 +120,7 @@
             <genericTypeParameters />
           </typeReference>
           <isMapped>false</isMapped>
-          <parentFolderId>0d7aee79-bb7b-4f9d-be0b-301397ff0b8a</parentFolderId>
+          <parentFolderId>c2b210bb-c233-485a-9d7b-00eb10612c90</parentFolderId>
           <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
           <packageName>Aryzac.IO.Modules.Client</packageName>
           <stereotypes>
@@ -145,25 +145,25 @@
         </childElement>
       </childElements>
     </childElement>
-    <childElement id="e711bbb0-fbcd-4e71-845e-84b7807de434" type="Element Event Settings" typeId="3c628ab0-2407-4fb0-8507-ddde986cff2e">
+    <childElement id="c2529035-88eb-47f6-b5ad-5502292e2b06" type="Element Event Settings" typeId="3c628ab0-2407-4fb0-8507-ddde986cff2e">
       <name>NewElementEventSettings</name>
       <display>[events]</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-by-name</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
-      <parentFolderId>89cf68f6-6f29-412a-bae2-31faed8280d9</parentFolderId>
+      <parentFolderId>17381d4f-8bd9-4b00-9235-9243a3232c6a</parentFolderId>
       <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
       <packageName>Aryzac.IO.Modules.Client</packageName>
       <stereotypes />
       <metadata />
       <childElements>
-        <childElement id="4a5f699d-32f6-405a-97f2-88b3655125f5" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
+        <childElement id="af602263-7f3d-44a6-b3a1-2f51b01f0bc6" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
           <name>On Created</name>
           <display>On Created: Script</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="ad942a49-8cff-418a-ad4e-1c4827d48e5d">
+          <typeReference id="d70fd902-1c11-499e-a429-f4d6f3aa297c">
             <typeId>043eee26-1591-42ac-9f2c-fc911b070eb1</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
@@ -175,7 +175,7 @@
             <genericTypeParameters />
           </typeReference>
           <isMapped>false</isMapped>
-          <parentFolderId>e711bbb0-fbcd-4e71-845e-84b7807de434</parentFolderId>
+          <parentFolderId>c2529035-88eb-47f6-b5ad-5502292e2b06</parentFolderId>
           <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
           <packageName>Aryzac.IO.Modules.Client</packageName>
           <stereotypes>
@@ -184,7 +184,7 @@
               <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
               <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
               <properties>
-                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;const routeParameters = [];&#xD;&#xA;let currentNode = element;&#xD;&#xA;while (currentNode) {&#xD;&#xA;    const currentNodeChildren = currentNode.getChildren();&#xD;&#xA;    const currentNodeRouteParameter = currentNodeChildren.filter(m =&gt; m.specialization === &quot;Route Parameter&quot;);&#xD;&#xA;    if (currentNodeRouteParameter.length &gt; 0) {&#xD;&#xA;        routeParameters.push(currentNodeRouteParameter[0]);&#xD;&#xA;    }&#xD;&#xA;    currentNode = currentNode.getParent();&#xD;&#xA;    if (currentNode.specialization === &quot;Pages&quot;) {&#xD;&#xA;        break;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;const reversedRouteParameters = routeParameters.reverse();&#xD;&#xA;for (let i = 0; i &lt; reversedRouteParameters.length; i++) {&#xD;&#xA;    let parameter = createElement(&quot;Parameter&quot;, reversedRouteParameters[i].getName(), element.id);&#xD;&#xA;    parameter.setOrder(i);&#xD;&#xA;    parameter.typeReference.setType(reversedRouteParameters[i].typeReference.getType().id);&#xD;&#xA;    parameter.typeReference.setIsNullable(reversedRouteParameters[i].typeReference.getIsNullable());&#xD;&#xA;}&#xD;&#xA;" isActive="true" />
+                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;createElement(&quot;Inherited Page Breadcrumb&quot;, &quot;[inherited]&quot;, element.id);&#xD;&#xA;" isActive="true" />
               </properties>
             </stereotype>
           </stereotypes>

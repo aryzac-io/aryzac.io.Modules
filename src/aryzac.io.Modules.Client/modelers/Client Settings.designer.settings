@@ -1700,6 +1700,9 @@ lookupTypesOf("Locale").forEach(locale =&gt; {
                 <option mappingType="Map Table Navigation" mappingTypeId="90548e07-a8af-41a1-b608-d07b35d98fa3">
                   <text>Map Table Navigation</text>
                 </option>
+                <option mappingType="Map Page Navigation" mappingTypeId="b7dd8371-8a42-48be-9475-00cd73b0a19b">
+                  <text>Map Page Navigation</text>
+                </option>
               </mappingOptions>
               <mappingSettings />
               <childElementSettings />
@@ -1860,9 +1863,18 @@ defaultLocale.addStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d"); // default 
             <isCollectionDefault>false</isCollectionDefault>
           </typeReferenceSetting>
           <typeOrder>
-            <type order="0">Page Component</type>
+            <type order="0">Page Breadcrumb Navigation</type>
+            <type order="1">Page Component</type>
           </typeOrder>
           <creationOptions>
+            <option type="element">
+              <text>Add Breadcrumb Navigation</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yIDYuNXYxMWg3LjkxNGw1LjUtNS41bC01LjUtNS41em0yIDJoNS4wODZsMy41IDMuNWwtMy41IDMuNUg0em0xMC41ODYtMWw0LjUgNC41bC00LjUgNC41TDE2IDE3LjkxNEwyMS45MTQgMTJMMTYgNi4wODZ6Ii8+PC9zdmc+" />
+              <specializationType>Page Breadcrumb Navigation</specializationType>
+              <specializationTypeId>17381d4f-8bd9-4b00-9235-9243a3232c6a</specializationTypeId>
+              <defaultName>[breadcrumb]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
             <option type="element">
               <text>Add Page Component</text>
               <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAP1JREFUOE+1k9ERAUEQRJ8MZIAMZEAIRIAIEIETgRMBIlAyIAMZIAMhqFYzW1Nbt/ixP1c129fT0z3b4vMZ2vW5BGsVLrrADujZ/Q2YAfccnxO0gTmwBGqgsh/0XQAbYAs8nSgSTA1wMnACGVjkIh1Zk4PqTuDs69C1NLbUrFylE6gow/rA0S6bFGiEMXAFZGwVCdRREqUmKlJdDeSN5nfMu54TuGlKYQ90bI4HII88hWRuicDnVzcdKYrnZ4IY438JJHFi7se1bVKgtJSG9qDOF0kzxxgjgRbJY1RDmZwWyecTKMYYG8QYG1c5muQxDqx4yWJM2NJrdMDX5/wCqc8/EcFEmKgAAAAASUVORK5CYII=" />
@@ -1936,6 +1948,75 @@ for (let i = 0; i &lt; reversedRouteParameters.length; i++) {
                   <text>Map Route To Parameter</text>
                 </option>
               </mappingOptions>
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Page Breadcrumb Navigation" typeId="17381d4f-8bd9-4b00-9235-9243a3232c6a">
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yIDYuNXYxMWg3LjkxNGw1LjUtNS41bC01LjUtNS41em0yIDJoNS4wODZsMy41IDMuNWwtMy41IDMuNUg0em0xMC41ODYtMWw0LjUgNC41bC00LjUgNC41TDE2IDE3LjkxNEwyMS45MTQgMTJMMTYgNi4wODZ6Ii8+PC9zdmc+" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>manually</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder>
+                <type order="0">Inherited Page Breadcrumb</type>
+                <type order="1">Navigation Item</type>
+              </typeOrder>
+              <creationOptions>
+                <option type="element">
+                  <text>Add Inherited</text>
+                  <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yIDYuNXYxMWg3LjkxNGw1LjUtNS41bC01LjUtNS41em0yIDJoNS4wODZsMy41IDMuNWwtMy41IDMuNUg0em0xMC41ODYtMWw0LjUgNC41bC00LjUgNC41TDE2IDE3LjkxNEwyMS45MTQgMTJMMTYgNi4wODZ6Ii8+PC9zdmc+" />
+                  <specializationType>Inherited Page Breadcrumb</specializationType>
+                  <specializationTypeId>116f426e-d474-4400-afa2-faec40f7255d</specializationTypeId>
+                  <defaultName>[inherited]</defaultName>
+                  <allowMultiple>false</allowMultiple>
+                </option>
+                <option type="element">
+                  <text>Add Item</text>
+                  <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
+                  <specializationType>Navigation Item</specializationType>
+                  <specializationTypeId>27ebf07c-5f47-49cb-8ccf-b5dc2cffa951</specializationTypeId>
+                  <defaultName>NewNavigationItem</defaultName>
+                  <allowMultiple>true</allowMultiple>
+                </option>
+              </creationOptions>
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <macros>
+                <macro trigger="on-created">
+                  <script>/// &lt;reference path="../../../../typings/elementmacro.context.api.d.ts" /&gt;
+createElement("Inherited Page Breadcrumb", "[inherited]", element.id);
+</script>
+                </macro>
+              </macros>
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Inherited Page Breadcrumb" typeId="116f426e-d474-4400-afa2-faec40f7255d">
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yIDYuNXYxMWg3LjkxNGw1LjUtNS41bC01LjUtNS41em0yIDJoNS4wODZsMy41IDMuNWwtMy41IDMuNUg0em0xMC41ODYtMWw0LjUgNC41bC00LjUgNC41TDE2IDE3LjkxNEwyMS45MTQgMTJMMTYgNi4wODZ6Ii8+PC9zdmc+" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>false</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
               <mappingSettings />
               <childElementSettings />
             </childElementSetting>
@@ -2360,6 +2441,90 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
             <target id="e518c964-e7c6-4e11-a5b8-c535fd0647b8" name="Radio Button" />
             <target id="c68fa9c0-a06d-4697-b2b0-6bb86ee49aab" name="Text Area" />
             <target id="d690d89f-1c8e-4acb-82c4-6d8f48b31a7a" name="Select" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+      </mappingTypes>
+    </mappingSetting>
+    <mappingSetting type="Map Page Navigation" typeId="b7dd8371-8a42-48be-9475-00cd73b0a19b">
+      <title>Map Page Navigation</title>
+      <sourceRootElementFunction>return element.getParent("Pages").id;</sourceRootElementFunction>
+      <sourceMappings>
+        <mapping id="0f44a97b-6ffc-4b25-9fac-3b04e098f726" name="Pages" type="Pages" typeId="72608324-5d5a-4627-aecf-0b0d0f0f7f68">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>true</isTraversable>
+          <traversableTypes>
+            <mappingId>4f1d64ae-d04a-4907-9075-85af9bddac40</mappingId>
+            <mappingId>83280a17-7141-41b8-9f8d-a649d599a07d</mappingId>
+          </traversableTypes>
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+        <mapping id="4f1d64ae-d04a-4907-9075-85af9bddac40" name="Page" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="cb7747bf-f6d4-4532-8a97-c415e033cae4" name="Page Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>true</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+        <mapping id="83280a17-7141-41b8-9f8d-a649d599a07d" name="Page Folder" type="Page Folder" typeId="21b29545-9bd7-4cbd-85bb-3b548765031e">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>true</isTraversable>
+          <traversableTypes>
+            <mappingId>83280a17-7141-41b8-9f8d-a649d599a07d</mappingId>
+            <mappingId>4f1d64ae-d04a-4907-9075-85af9bddac40</mappingId>
+          </traversableTypes>
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings />
+        </mapping>
+      </sourceMappings>
+      <targetMappings>
+        <mapping id="310235b5-2cac-4ad1-90a6-aeb2717b9d83" name="Page" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>true</isTraversable>
+          <traversableTypes>
+            <mappingId>2bf5a2e7-c0de-4d55-9172-0a3f940a7d3c</mappingId>
+          </traversableTypes>
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="2bf5a2e7-c0de-4d55-9172-0a3f940a7d3c" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </targetMappings>
+      <mappingTypes>
+        <mappingType type="NewMappingType" typeId="2b82dc77-7b55-4c78-bb4c-7af7e82c36c3">
+          <represents>data</represents>
+          <sources>
+            <source id="cb7747bf-f6d4-4532-8a97-c415e033cae4" name="Page Parameter" />
+          </sources>
+          <targets>
+            <target id="2bf5a2e7-c0de-4d55-9172-0a3f940a7d3c" name="Parameter" />
           </targets>
           <allowAutoMap>true</allowAutoMap>
         </mappingType>

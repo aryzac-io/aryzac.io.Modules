@@ -44,6 +44,10 @@
       <role>Default</role>
       <location></location>
     </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Pages.Page i18n" externalReference="356d4a75-8978-4a7f-97f7-69b7464f8a0d">
+      <role>Default</role>
+      <location></location>
+    </template>
     <template id="Aryzac.IO.Modules.Client.Files.Services.ServiceProxy" externalReference="243a7da8-d571-4525-a67c-4b3061b380d5">
       <role>Default</role>
       <location></location>

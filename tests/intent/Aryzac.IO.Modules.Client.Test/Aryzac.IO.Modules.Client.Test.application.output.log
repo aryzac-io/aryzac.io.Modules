@@ -428,10 +428,26 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#3ef34866-886c-445a-9af4-6ae0853af235</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/index.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/[client-id]/index.i18n.yaml</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#3ef34866-886c-445a-9af4-6ae0853af235</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/clients/[client-id]/index.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#06dd01a1-e995-4a29-840c-a07e39c514b3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/invoices/[invoice-id]/index.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/[client-id]/invoices/[invoice-id]/index.i18n.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -444,6 +460,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#10fc7a95-92ed-42c5-acae-a68a3bf7f7d8</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/invoices/index.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/[client-id]/invoices/index.i18n.yaml</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#10fc7a95-92ed-42c5-acae-a68a3bf7f7d8</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/pages/clients/[client-id]/invoices/index.vue</ApplicationRelativeFilePath>
@@ -452,10 +476,26 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#13c48c79-ef01-499b-b7a2-cc267d02dcde</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/clients/index.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/index.i18n.yaml</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#13c48c79-ef01-499b-b7a2-cc267d02dcde</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/pages/clients/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/clients/index.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#1343048f-f75a-40af-bd84-8a957ed4651a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/pages/index.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/index.i18n.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

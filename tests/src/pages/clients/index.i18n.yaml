@@ -1,0 +1,10 @@
+af:
+  breadcrumb:
+    navigation:
+      clients:
+        label: Clients
+en:
+  breadcrumb:
+    navigation:
+      clients:
+        label: Clients

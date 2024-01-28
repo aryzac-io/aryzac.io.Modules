@@ -180,6 +180,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#116f426e-d474-4400-afa2-faec40f7255d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/InheritedPageBreadcrumbModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>InheritedPageBreadcrumbModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#9ca4af5b-3e0c-45dd-80d5-13144986df9c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/LabelModel.cs</ApplicationRelativeFilePath>
@@ -272,6 +280,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/PackageExtensionModel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PackageExtensionModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#17381d4f-8bd9-4b00-9235-9243a3232c6a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/PageBreadcrumbNavigationModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PageBreadcrumbNavigationModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -736,6 +752,22 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Pages/Page/PageTemplateRegistration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Pages/Page/PageTemplateRegistration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.ProjectItemTemplate.Partial#356d4a75-8978-4a7f-97f7-69b7464f8a0d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Pages/PageI18n/PageI18nTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Pages/PageI18n/PageI18nTemplatePartial.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#356d4a75-8978-4a7f-97f7-69b7464f8a0d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Pages/PageI18n/PageI18nTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Pages/PageI18n/PageI18nTemplateRegistration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
