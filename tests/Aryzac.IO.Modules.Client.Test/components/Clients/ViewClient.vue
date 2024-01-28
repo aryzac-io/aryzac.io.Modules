@@ -1,4 +1,4 @@
-<i18n lang="yaml" src="./ViewClient.i18n.yaml" />
+<i18n lang="yaml" src="@/locales/components/Clients/ViewClient.i18n.yaml" />
 
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
@@ -67,10 +67,6 @@ const headingTitle = computed(() => {
   return mappedExpression;
 });
 const headingAttributes = computed(() => [
-  {
-	icon: t("heading.attributes.newHeadingAttribute.icon"),
-	label: t("heading.attributes.newHeadingAttribute.label"),
-  },
 ]
 );
 

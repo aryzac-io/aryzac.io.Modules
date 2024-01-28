@@ -9,7 +9,7 @@
 <#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
 <#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
 
-<i18n lang="yaml" src="./<#= Model.Name #>.i18n.yaml" />
+<i18n lang="yaml" src="@/locales/components<#= Model.GetPath() #>/<#= Model.Name #>.i18n.yaml" />
 
 <script setup lang="ts">
 <# 

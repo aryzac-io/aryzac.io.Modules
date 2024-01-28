@@ -1,4 +1,4 @@
-<i18n lang="yaml" src="./ListClients.i18n.yaml" />
+<i18n lang="yaml" src="@/locales/components/Clients/ListClients.i18n.yaml" />
 
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';

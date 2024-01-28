@@ -1098,40 +1098,6 @@
                   </stereotypes>
                   <metadata />
                   <childElements>
-                    <childElement id="54b974ef-acd0-426e-b071-9acefcf534b6" type="Heading Attribute" typeId="e33dad05-f11e-4dde-86e7-984be7aac580">
-                      <name>NewHeadingAttribute</name>
-                      <display>NewHeadingAttribute</display>
-                      <isAbstract>false</isAbstract>
-                      <genericTypes />
-                      <isMapped>false</isMapped>
-                      <parentFolderId>1676a8f9-a6f1-438b-bf08-86313b4a9589</parentFolderId>
-                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
-                      <packageName>Web Client</packageName>
-                      <stereotypes>
-                        <stereotype stereotypeDefinitionId="aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8" name="Attribute Settings">
-                          <addedByDefault>false</addedByDefault>
-                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
-                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
-                          <properties>
-                            <property name="d7aefdb7-d045-4405-aec1-fb825f74dde4" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
-                            <property name="cc7b18ad-6a01-4396-8785-8ac3dfdf2d1e" display="Icon" value="ic:baseline-phone-bluetooth-speaker" isActive="true" />
-                            <property name="ebe75cc6-6953-465b-b44c-658cf776d2dd" display="Label" value="078 894 3740" isActive="true" />
-                          </properties>
-                        </stereotype>
-                        <stereotype stereotypeDefinitionId="aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8" name="Attribute Settings">
-                          <addedByDefault>false</addedByDefault>
-                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
-                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
-                          <properties>
-                            <property name="d7aefdb7-d045-4405-aec1-fb825f74dde4" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
-                            <property name="cc7b18ad-6a01-4396-8785-8ac3dfdf2d1e" display="Icon" value="ic:baseline-phone-bluetooth-speaker" isActive="true" />
-                            <property name="ebe75cc6-6953-465b-b44c-658cf776d2dd" display="Label" isActive="true" />
-                          </properties>
-                        </stereotype>
-                      </stereotypes>
-                      <metadata />
-                      <childElements />
-                    </childElement>
                     <childElement id="8fe17725-24d6-416c-a877-17435371cbb6" type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
                       <name>[actions]</name>
                       <display>[actions]</display>
@@ -2534,7 +2500,7 @@
                               <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                               <properties>
                                 <property name="b0451488-cf54-4083-81c6-a25270f27bd7" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
-                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" isActive="true" />
+                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" value="ic:twotone-remove-red-eye" isActive="true" />
                                 <property name="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4" display="Label" value="Stoor" isActive="true" />
                               </properties>
                             </stereotype>

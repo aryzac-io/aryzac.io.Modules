@@ -2,9 +2,7 @@ af:
   heading:
     title: Klient Informasie
     attributes:
-      newHeadingAttribute:
-        label: NewHeadingAttribute
-        icon: ic:baseline-phone-bluetooth-speaker
+      placeholder: ''
     actions:
       edit:
         label: Edit
@@ -31,9 +29,7 @@ en:
   heading:
     title: Client Information
     attributes:
-      newHeadingAttribute:
-        label: 078 894 3740
-        icon: ic:baseline-phone-bluetooth-speaker
+      placeholder: ''
     actions:
       edit:
         label: Edit

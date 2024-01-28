@@ -31,7 +31,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Layouts.Layout
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<i18n lang=\"yaml\" src=\"./");
+            this.Write("\r\n<i18n lang=\"yaml\" src=\"@/locales/");
             
             #line 10 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));

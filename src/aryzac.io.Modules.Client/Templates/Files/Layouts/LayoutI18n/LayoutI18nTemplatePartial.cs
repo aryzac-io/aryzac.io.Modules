@@ -32,14 +32,164 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Layouts.LayoutI18n
                     foreach (var locale in GetLocales()[0].Locales)
                     {
                         @object
-                            .WithObject(locale.Name, l =>
+                            .WithObject(locale.Name, localeObject =>
                             {
-                                AddModelTopNavigation(l, locale);
-                                AddModelSidebarNavigation(l, locale);
-                                AddModelBreadcrumbNavigation(l, locale);
+                                if (Model.TopNavigation is not null)
+                                {
+                                    AddModelTopNavigation(localeObject, Model.TopNavigation, locale);
+                                }
+                                if (Model.SidebarNavigation is not null)
+                                {
+                                    AddModelSidebarNavigation(localeObject, Model.SidebarNavigation, locale);
+                                }
+                                if (Model.BreadcrumbNavigation is not null)
+                                {
+                                    AddModelBreadcrumbNavigation(localeObject, Model.BreadcrumbNavigation, locale);
+                                }
+
+                                if (Model.TopNavigation is null && Model.SidebarNavigation is null && Model.BreadcrumbNavigation is null)
+                                {
+                                    AddPlaceholder(localeObject);
+                                }
                             });
                     }
                 });
+        }
+
+        private void AddModelTopNavigation(IDataFileObjectValue yamlObject, TopNavigationModel model, LocaleModel locale)
+        {
+            yamlObject.WithObject("appbar", appbarObject =>
+            {
+                appbarObject.WithObject("navigation", navigationObject =>
+                {
+                    foreach (var section in model.Sections)
+                    {
+                        AddModelTopSectionNavigation(navigationObject, section, locale);
+                    }
+
+                    if (model.Sections.Count == 0)
+                    {
+                        AddPlaceholder(navigationObject);
+                    }
+                });
+            });
+        }
+
+        private static void AddModelTopSectionNavigation(IDataFileObjectValue yamlObject, TopNavigationSectionModel section, LocaleModel locale)
+        {
+            foreach (var item in section.Items)
+            {
+                AddModelTopSectionItemNavigation(yamlObject, item, locale);
+            }
+
+            if (section.Items.Count == 0)
+            {
+                AddPlaceholder(yamlObject);
+            }
+        }
+
+        private static void AddModelTopSectionItemNavigation(IDataFileObjectValue yamlObject, NavigationItemModel item, LocaleModel locale)
+        {
+            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObject =>
+            {
+                itemObject.WithValue("label", navigationSettings?.Label() ?? item.Name);
+
+                if (navigationSettings?.Icon() != null)
+                {
+                    itemObject.WithValue("icon", navigationSettings.Icon());
+                }
+            });
+        }
+
+        private void AddModelSidebarNavigation(IDataFileObjectValue yamlObject, SidebarNavigationModel model, LocaleModel locale)
+        {
+            yamlObject.WithObject("sidebar", sidebarObject =>
+            {
+                sidebarObject.WithObject("navigation", navigationObject =>
+                {
+                    foreach (var section in model.Sections)
+                    {
+                        AddModelSidebarSectionNavigation(navigationObject, section, locale);
+                    }
+
+                    if (model.Sections.Count == 0)
+                    {
+                        AddPlaceholder(navigationObject);
+                    }
+                });
+            });
+        }
+
+        private static void AddModelSidebarSectionNavigation(IDataFileObjectValue yamlObject, SidebarNavigationSectionModel section, LocaleModel locale)
+        {
+            yamlObject.WithObject(section.Name.ToPascalCase().ToCamelCase(), sectionObject =>
+            {
+                foreach (var item in section.Items)
+                {
+                    AddModelSidebarSectionItemNavigation(sectionObject, item, locale);
+                }
+
+                if (section.Items.Count == 0)
+                {
+                    AddPlaceholder(yamlObject);
+                }
+            });
+        }
+
+        private static void AddModelSidebarSectionItemNavigation(IDataFileObjectValue yamlObject, NavigationItemModel item, LocaleModel locale)
+        {
+            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObject =>
+            {
+                itemObject.WithValue("label", navigationSettings?.Label() ?? item.Name);
+
+                if (navigationSettings?.Icon() != null)
+                {
+                    itemObject.WithValue("icon", navigationSettings.Icon());
+                }
+            });
+        }
+
+        private void AddModelBreadcrumbNavigation(IDataFileObjectValue yamlObject, BreadcrumbNavigationModel model, LocaleModel locale)
+        {
+            yamlObject.WithObject("breadcrumb", breadcrumbObject =>
+            {
+                breadcrumbObject.WithObject("navigation", navigationObject =>
+                {
+                    foreach (var item in model.Items)
+                    {
+                        AddModelBreadcrumbNavigationItem(navigationObject, item, locale);
+                    }
+
+                    if (model.Items.Count == 0)
+                    {
+                        AddPlaceholder(navigationObject);
+                    }
+                });
+            });
+        }
+
+        private static void AddModelBreadcrumbNavigationItem(IDataFileObjectValue yamlObject, NavigationItemModel item, LocaleModel locale)
+        {
+            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObject =>
+            {
+                itemObject.WithValue("label", navigationSettings?.Label() ?? item.Name);
+
+                if (navigationSettings?.Icon() != null)
+                {
+                    itemObject.WithValue("icon", navigationSettings.Icon());
+                }
+            });
+        }
+
+        private static void AddPlaceholder(IDataFileObjectValue localeObject)
+        {
+            localeObject.WithValue("placeholder", "''");
         }
 
         public IList<LocalesModel> GetLocales()
@@ -65,102 +215,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Layouts.LayoutI18n
         public bool IsDefaultLocale(LocaleModel locale)
         {
             return locale == GetDefaultLocale();
-        }
-
-        private void AddModelTopNavigation(IDataFileObjectValue en, LocaleModel locale)
-        {
-            if (Model.TopNavigation is not null)
-            {
-                en.WithObject("appbar", appbarObj =>
-                {
-                    appbarObj.WithObject("navigation", navigationObj =>
-                    {
-                        foreach (var child in Model.TopNavigation.InternalElement.ChildElements)
-                        {
-                            if (child.IsTopNavigationSectionModel())
-                            {
-                                foreach (var section in Model.TopNavigation.Sections)
-                                {
-                                    foreach (var item in section.Items)
-                                    {
-                                        var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-                                        navigationObj.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObj =>
-                                        {
-                                            itemObj.WithValue("label", navigationSettings?.Label() ?? item.Name);
-
-                                            if (navigationSettings?.Icon() != null)
-                                            {
-                                                itemObj.WithValue("icon", navigationSettings.Icon());
-                                            }
-                                        });
-                                    }
-                                }
-                            }
-                        }
-                    });
-                });
-            }
-        }
-
-        private void AddModelSidebarNavigation(IDataFileObjectValue en, LocaleModel locale)
-        {
-            if (Model.SidebarNavigation is not null)
-            {
-                en.WithObject("sidebar", sidebarObj =>
-                {
-                    sidebarObj.WithObject("navigation", navigationObj =>
-                    {
-                        foreach (var section in Model.SidebarNavigation.Sections)
-                        {
-                            navigationObj.WithObject(section.Name.ToPascalCase().ToCamelCase(), sectionObj =>
-                            {
-                                foreach (var item in section.Items)
-                                {
-                                    var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-                                    sectionObj.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObj =>
-                                    {
-                                        itemObj.WithValue("label", navigationSettings?.Label() ?? item.Name);
-
-                                        if (navigationSettings?.Icon() != null)
-                                        {
-                                            itemObj.WithValue("icon", navigationSettings.Icon());
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                });
-            }
-        }
-
-        private void AddModelBreadcrumbNavigation(IDataFileObjectValue en, LocaleModel locale)
-        {
-            if (Model.BreadcrumbNavigation is not null)
-            {
-                en.WithObject("breadcrumb", breadcrumbObj =>
-                {
-                    breadcrumbObj.WithObject("navigation", navigationObj =>
-                    {
-                        foreach (var item in Model.BreadcrumbNavigation.Items)
-                        {
-                            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-                            navigationObj.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObj =>
-                            {
-                                itemObj.WithValue("label", navigationSettings?.Label() ?? item.Name);
-
-                                if (navigationSettings?.Icon() != null)
-                                {
-                                    itemObj.WithValue("icon", navigationSettings.Icon());
-                                }
-                            });
-                        }
-                    });
-                });
-            }
         }
 
         [IntentManaged(Mode.Fully)]

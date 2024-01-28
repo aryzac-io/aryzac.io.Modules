@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="7d1277b1-a53f-400f-b79d-4751c0f714c5" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
-  <name>pages</name>
-  <display>pages</display>
+<class id="5ca9d1dd-a3b9-4ff5-acf6-3643fa7fa862" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>locales</name>
+  <display>locales</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
@@ -12,14 +12,14 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="7ef4fa51-ceb6-44c9-bff9-89ac8f177e2c" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Pages.Page</name>
-      <display>Aryzac.IO.Modules.Client.Files.Pages.Page</display>
+    <childElement id="ffb76dbf-e7f3-44f4-93f5-abce7fa1f8c5" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Layouts.Layout i18n</name>
+      <display>Aryzac.IO.Modules.Client.Files.Layouts.Layout i18n</display>
       <externalReference>Aryzac.IO.Modules.Client</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
-      <parentFolderId>7d1277b1-a53f-400f-b79d-4751c0f714c5</parentFolderId>
+      <parentFolderId>5ca9d1dd-a3b9-4ff5-acf6-3643fa7fa862</parentFolderId>
       <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
       <packageName>root</packageName>
       <stereotypes />

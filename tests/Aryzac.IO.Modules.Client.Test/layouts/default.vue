@@ -1,4 +1,4 @@
-<i18n lang="yaml" src="./default.i18n.yaml" />
+<i18n lang="yaml" src="@/locales/default.i18n.yaml" />
 
 <script setup lang="ts">
 const { t } = useI18n();

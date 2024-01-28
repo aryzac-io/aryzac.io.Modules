@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using Aryzac.IO.Modules.Client.Api;
 using Intent.Engine;
 using Intent.Metadata.Models;
@@ -32,12 +33,58 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.PageI18n
                     foreach (var locale in GetLocales()[0].Locales)
                     {
                         @object
-                            .WithObject(locale.Name, l =>
+                            .WithObject(locale.Name, localeObject =>
                             {
-                                AddModelBreadcrumbNavigation(l, locale);
+                                if (Model.BreadcrumbNavigation is not null)
+                                {
+                                    AddModelBreadcrumbNavigation(localeObject, Model.BreadcrumbNavigation, locale);
+                                }
+                                else
+                                {
+                                    AddPlaceholder(localeObject);
+                                }
                             });
                     }
                 });
+        }
+
+        private void AddModelBreadcrumbNavigation(IDataFileObjectValue yamlObject, PageBreadcrumbNavigationModel model, LocaleModel locale)
+        {
+            yamlObject.WithObject("breadcrumb", breadcrumbObject =>
+            {
+                breadcrumbObject.WithObject("navigation", navigationObject =>
+                {
+                    foreach (var item in model.Items)
+                    {
+                        AddModelBreadcrumbNavigationItem(navigationObject, item, locale);
+                    }
+
+                    if (model.Items.Count == 0)
+                    {
+                        AddPlaceholder(yamlObject);
+                    }
+                });
+            });
+        }
+
+        private static void AddModelBreadcrumbNavigationItem(IDataFileObjectValue yamlObject, NavigationItemModel model, LocaleModel locale)
+        {
+            var navigationSettings = model.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), itemObject =>
+            {
+                itemObject.WithValue("label", navigationSettings?.Label() ?? model.Name);
+
+                if (navigationSettings?.Icon() != null)
+                {
+                    itemObject.WithValue("icon", navigationSettings?.Icon());
+                }
+            });
+        }
+
+        private static void AddPlaceholder(IDataFileObjectValue localeObject)
+        {
+            localeObject.WithValue("placeholder", "''");
         }
 
         public IList<LocalesModel> GetLocales()
@@ -63,33 +110,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.PageI18n
         public bool IsDefaultLocale(LocaleModel locale)
         {
             return locale == GetDefaultLocale();
-        }
-
-        private void AddModelBreadcrumbNavigation(IDataFileObjectValue en, LocaleModel locale)
-        {
-            if (Model.BreadcrumbNavigation is not null)
-            {
-                en.WithObject("breadcrumb", breadcrumbObj =>
-                {
-                    breadcrumbObj.WithObject("navigation", navigationObj =>
-                    {
-                        foreach (var item in Model.BreadcrumbNavigation.Items)
-                        {
-                            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-                            navigationObj.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObj =>
-                            {
-                                itemObj.WithValue("label", navigationSettings?.Label() ?? item.Name);
-
-                                if (navigationSettings?.Icon() != null)
-                                {
-                                    itemObj.WithValue("icon", navigationSettings?.Icon());
-                                }
-                            });
-                        }
-                    });
-                });
-            }
         }
 
         [IntentManaged(Mode.Fully)]

@@ -31,10 +31,10 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.Page
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<i18n lang=\"yaml\" src=\"./");
+            this.Write("\r\n<i18n lang=\"yaml\" src=\"@/locales/pages");
             
             #line 10 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.GetPath()));
             
             #line default
             #line hidden

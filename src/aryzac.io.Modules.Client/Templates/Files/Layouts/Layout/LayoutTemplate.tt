@@ -7,7 +7,7 @@
 <#@ import namespace="Intent.Metadata.Models" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
-<i18n lang="yaml" src="./<#= Model.Name #>.i18n.yaml" />
+<i18n lang="yaml" src="@/locales/<#= Model.Name #>.i18n.yaml" />
 
 <script setup lang="ts">
 const { t } = useI18n();

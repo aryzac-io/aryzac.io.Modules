@@ -33,7 +33,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<i18n lang=\"yaml\" src=\"./");
+            this.Write("\r\n<i18n lang=\"yaml\" src=\"@/locales/components");
+            
+            #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.GetPath()));
+            
+            #line default
+            #line hidden
+            this.Write("/");
             
             #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));

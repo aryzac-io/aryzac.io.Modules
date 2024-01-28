@@ -36,12 +36,260 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
                     foreach (var locale in GetLocales()[0].Locales)
                     {
                         @object
-                            .WithObject(locale.Name, l =>
+                            .WithObject(locale.Name, localeObject =>
                             {
-                                AddModelView(l, locale);
+                                if (Model.View is not null)
+                                {
+                                    AddModelView(localeObject, Model.View, locale);
+                                }
+                                else
+                                {
+                                    AddPlaceholder(localeObject);
+                                }
                             });
                     }
                 });
+        }
+
+        private void AddModelView(IDataFileObjectValue yamlObject, ComponentViewModel model, LocaleModel locale)
+        {
+            foreach (var component in model.InternalElement.ChildElements)
+            {
+                // Handling Heading Model
+                if (component.IsHeadingModel())
+                {
+                    HandleHeading(yamlObject, component.AsHeadingModel(), locale);
+                }
+                // Handling Section Model
+                else if (component.IsSectionModel())
+                {
+                    HandleSection(yamlObject, component.AsSectionModel(), locale);
+                }
+                // Handling Table Model outside of Section
+                else if (component.IsTableModel())
+                {
+                    HandleTable(yamlObject, component.AsTableModel(), locale);
+                }
+            }
+        }
+
+        private static void HandleTable(IDataFileObjectValue yamlObject, TableModel model, LocaleModel locale)
+        {
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), tableObject =>
+            {
+                foreach (var column in model.Columns)
+                {
+                    tableObject.WithValue(column.Name.ToPascalCase().ToCamelCase(), column.Name);
+                }
+
+                if (model.Actions is not null)
+                {
+                    HandleActions(tableObject, model.Actions, locale);
+                }
+
+                if (model.Columns.Count == 0 && model.Actions is null)
+                {
+                    AddPlaceholder(tableObject);
+                }
+            });
+        }
+
+        private static void HandleSection(IDataFileObjectValue yamlObject, SectionModel model, LocaleModel locale)
+        {
+            var sectionSettings = model.GetSectionSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), sectionObject =>
+            {
+                // Set title and description, use defaults if not available
+                sectionObject.WithValue("title", sectionSettings?.Title() ?? model.Name ?? "''");
+                sectionObject.WithValue("description", sectionSettings?.Description() ?? "''");
+
+                foreach (var component in model.InternalElement.ChildElements)
+                {
+                    // Handling Textbox Model
+                    if (component.IsTextboxModel())
+                    {
+                        HandleTextbox(sectionObject, component.AsTextboxModel(), locale);
+                    }
+                    // Handling TextArea Model
+                    else if (component.IsTextAreaModel())
+                    {
+                        HandleTextArea(sectionObject, component.AsTextAreaModel(), locale);
+                    }
+                    // Handling Checkbox Model
+                    else if (component.IsCheckboxModel())
+                    {
+                        HandleCheckbox(sectionObject, component.AsCheckboxModel(), locale);
+                    }
+                    // Handling Label Model
+                    else if (component.IsLabelModel())
+                    {
+                        HandleLabel(sectionObject, component.AsLabelModel(), locale);
+                    }
+                    // Handling RadioButton Model
+                    else if (component.IsRadioButtonModel())
+                    {
+                        HandleRadioButton(sectionObject, component.AsRadioButtonModel(), locale);
+                    }
+                    // Handling Select Model
+                    else if (component.IsSelectModel())
+                    {
+                        HandleSelect(sectionObject, component.AsSelectModel(), locale);
+                    }
+                    // Handling Table Model
+                    else if (component.IsTableModel())
+                    {
+                        HandleTable(sectionObject, component.AsTableModel(), locale);
+                    }
+                    // Handling Actions Model
+                    else if (component.IsActionsModel())
+                    {
+                        HandleActions(sectionObject, component.AsActionsModel(), locale);
+                    }
+                }
+            });
+        }
+
+        private static void HandleActions(IDataFileObjectValue yamlObject, ActionsModel model, LocaleModel locale)
+        {
+            yamlObject.WithObject("actions", actionsObject =>
+            {
+                foreach (var action in model.Actions)
+                {
+                    HandleAction(actionsObject, action, locale);
+                }
+
+                if (model.Actions.Count == 0)
+                {
+                    AddPlaceholder(actionsObject);
+                }
+            });
+        }
+
+        private static void HandleAction(IDataFileObjectValue yamlObject, ActionModel model, LocaleModel locale)
+        {
+            var actionSettings = model.GetActionSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), actionObject =>
+            {
+                // Set label, use control name as default if no specific setting is found
+                actionObject.WithValue("label", actionSettings?.Label() ?? model.Name);
+                if (actionSettings?.Icon() is not null)
+                    actionObject.WithValue("icon", actionSettings.Icon());
+            });
+        }
+
+        private static void HandleSelect(IDataFileObjectValue yamlObject, SelectModel model, LocaleModel locale)
+        {
+            var selectSettings = model.GetSelectSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), selectObject =>
+            {
+                // Set label, use control name as default if no specific setting is found
+                selectObject.WithValue("label", selectSettings?.Label() ?? model.Name);
+            });
+        }
+
+        private static void HandleRadioButton(IDataFileObjectValue yamlObject, RadioButtonModel model, LocaleModel locale)
+        {
+            var radioButtonSettings = model.GetRadioButtonSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), radioButtonObject =>
+            {
+                // Set label, use control name as default if no specific setting is found
+                radioButtonObject.WithValue("label", radioButtonSettings?.Label() ?? model.Name);
+            });
+        }
+
+        private static void HandleLabel(IDataFileObjectValue yamlObject, LabelModel model, LocaleModel locale)
+        {
+            var labelSettings = model.GetLabelSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), labelObject =>
+            {
+                // Set label, use control name as default if no specific setting is found
+                labelObject.WithValue("label", labelSettings?.Label() ?? model.Name);
+            });
+        }
+
+        private static void HandleCheckbox(IDataFileObjectValue yamlObject, CheckboxModel model, LocaleModel locale)
+        {
+            var checkboxSettings = model.GetCheckboxSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), checkboxObject =>
+            {
+                // Set label and description, use defaults if no specific setting is found
+                checkboxObject.WithValue("label", checkboxSettings?.Label() ?? model.Name);
+                checkboxObject.WithValue("description", checkboxSettings?.Description() ?? "''");
+            });
+        }
+
+        private static void HandleTextArea(IDataFileObjectValue yamlObject, TextAreaModel model, LocaleModel locale)
+        {
+            var textareaSettings = model.GetTextAreaSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), textareaObject =>
+            {
+                // Set label, use control name as default if no specific setting is found
+                textareaObject.WithValue("label", textareaSettings?.Label() ?? model.Name);
+            });
+        }
+
+        private static void HandleTextbox(IDataFileObjectValue yamlObject, TextboxModel model, LocaleModel locale)
+        {
+            var textboxSettings = model.GetTextboxSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), textboxObject =>
+            {
+                textboxObject.WithValue("label", textboxSettings?.Label() ?? model.Name);
+            });
+        }
+
+        private void HandleHeading(IDataFileObjectValue yamlObject, HeadingModel model, LocaleModel locale)
+        {
+            var headingSettings = model.GetHeadingSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), headingObject =>
+            {
+                headingObject.WithValue("title", headingSettings?.Title() ?? model.Name);
+
+                headingObject.WithObject("attributes", attributeObject =>
+                {
+                    foreach (var control in model.InternalElement.ChildElements.Where(m => m.IsHeadingAttributeModel()))
+                    {
+                        HandleHeadingAttribute(attributeObject, control.AsHeadingAttributeModel(), locale);
+                    }
+
+                    if (model.InternalElement.ChildElements.Where(m => m.IsHeadingAttributeModel()).Count() == 0)
+                    {
+                        AddPlaceholder(attributeObject);
+                    }
+                });
+
+                foreach (var control in model.InternalElement.ChildElements.Where(m => m.IsActionsModel()))
+                {
+                    HandleActions(headingObject, control.AsActionsModel(), locale);
+                }
+            });
+        }
+
+        private void HandleHeadingAttribute(IDataFileObjectValue yamlObject, HeadingAttributeModel model, LocaleModel locale)
+        {
+            var headingAttributeSettings = model.GetAttributeSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), textboxObject =>
+            {
+                textboxObject.WithValue("label", headingAttributeSettings?.Label() ?? model.Name);
+                if (headingAttributeSettings?.Icon() is not null)
+                {
+                    textboxObject.WithValue("icon", headingAttributeSettings?.Icon());
+                }
+            });
+        }
+
+        private static void AddPlaceholder(IDataFileObjectValue localeObject)
+        {
+            localeObject.WithValue("placeholder", "''");
         }
 
         public IList<LocalesModel> GetLocales()
@@ -68,253 +316,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             return locale == GetDefaultLocale();
         }
-
-        private void AddModelView(IDataFileObjectValue en, LocaleModel locale)
-        {
-            if (Model.View is not null)
-            {
-                foreach (var component in Model.View.InternalElement.ChildElements)
-                {
-                    // Handling Heading Model
-                    if (component.IsHeadingModel())
-                    {
-                        HandleHeading(en, component, locale);
-                    }
-                    // Handling Section Model
-                    else if (component.IsSectionModel())
-                    {
-                        HandleSection(en, component, locale);
-                    }
-                    // Handling Table Model outside of Section
-                    else if (component.IsTableModel())
-                    {
-                        HandleTable(en, component, locale);
-                    }
-                }
-            }
-        }
-
-        private static void HandleTable(IDataFileObjectValue en, IElement component, LocaleModel locale)
-        {
-            var table = component.AsTableModel();
-            en.WithObject(component.Name.ToPascalCase().ToCamelCase(), tableObj =>
-            {
-                foreach (var column in table.Columns)
-                {
-                    tableObj.WithValue(column.Name.ToPascalCase().ToCamelCase(), column.Name);
-                }
-
-                if (table.Actions is not null)
-                {
-                    tableObj.WithObject("actions", actions =>
-                    {
-                        foreach (var action in table.Actions.Actions)
-                        {
-                            action.TryGetActionSettings(out var actionSettings);
-                            actions.WithObject(action.Name.ToPascalCase().ToCamelCase(), actionObj =>
-                            {
-                                actionObj.WithValue("label", actionSettings.Label() ?? action.Name);
-                                if (actionSettings.Icon() is not null)
-                                    actionObj.WithValue("icon", actionSettings.Icon());
-                            });
-                        }
-                    });
-                }
-            });
-        }
-
-        private static void HandleSection(IDataFileObjectValue en, IElement component, LocaleModel locale)
-        {
-            var section = component.AsSectionModel();
-            var sectionSettings = section.GetSectionSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            en.WithObject(component.Name.ToPascalCase().ToCamelCase(), sectionObj =>
-            {
-                // Set title and description, use defaults if not available
-                sectionObj.WithValue("title", sectionSettings?.Title() ?? component.Name ?? "''");
-                sectionObj.WithValue("description", sectionSettings?.Description() ?? "''");
-
-                foreach (var control in section.InternalElement.ChildElements)
-                {
-                    // Handling Textbox Model
-                    if (control.IsTextboxModel())
-                    {
-                        HandleTextbox(sectionObj, control, locale);
-                    }
-                    // Handling TextArea Model
-                    else if (control.IsTextAreaModel())
-                    {
-                        HandleTextArea(sectionObj, control, locale);
-                    }
-                    // Handling Checkbox Model
-                    else if (control.IsCheckboxModel())
-                    {
-                        HandleCheckbox(sectionObj, control, locale);
-                    }
-                    // Handling Label Model
-                    else if (control.IsLabelModel())
-                    {
-                        HandleLabel(sectionObj, control, locale);
-                    }
-                    // Handling RadioButton Model
-                    else if (control.IsRadioButtonModel())
-                    {
-                        HandleRadioButton(sectionObj, control, locale);
-                    }
-                    // Handling Select Model
-                    else if (control.IsSelectModel())
-                    {
-                        HandleSelect(sectionObj, control, locale);
-                    }
-                    // Handling Table Model
-                    else if (control.IsTableModel())
-                    {
-                        HandleTable(sectionObj, control, locale);
-                    }
-                    // Handling Actions Model
-                    else if (control.IsActionsModel())
-                    {
-                        HandleActions(sectionObj, control, locale);
-                    }
-                }
-            });
-        }
-
-        private static void HandleActions(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var actions = control.AsActionsModel();
-            sectionObj.WithObject("actions", actionsObj =>
-            {
-                foreach (var action in actions.InternalElement.ChildElements)
-                {
-                    HandleAction(actionsObj, action, locale);
-                }
-            });
-        }
-
-        private static void HandleAction(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var action = control.AsActionModel();
-            var actionSettings = action.GetActionSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), selectObj =>
-            {
-                // Set label, use control name as default if no specific setting is found
-                selectObj.WithValue("label", actionSettings?.Label() ?? control.Name);
-            });
-        }
-
-        private static void HandleSelect(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var select = control.AsSelectModel();
-            var selectSettings = select.GetSelectSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), selectObj =>
-            {
-                // Set label, use control name as default if no specific setting is found
-                selectObj.WithValue("label", selectSettings?.Label() ?? control.Name);
-            });
-        }
-
-        private static void HandleRadioButton(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var radioButton = control.AsRadioButtonModel();
-            var radioButtonSettings = radioButton.GetRadioButtonSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), radioButtonObj =>
-            {
-                // Set label, use control name as default if no specific setting is found
-                radioButtonObj.WithValue("label", radioButtonSettings?.Label() ?? control.Name);
-            });
-        }
-
-        private static void HandleLabel(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var label = control.AsLabelModel();
-            var labelSettings = label.GetLabelSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), labelObj =>
-            {
-                // Set label, use control name as default if no specific setting is found
-                labelObj.WithValue("label", labelSettings?.Label() ?? control.Name);
-            });
-        }
-
-        private static void HandleCheckbox(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var checkbox = control.AsCheckboxModel();
-            var checkboxSettings = checkbox.GetCheckboxSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), checkboxObj =>
-            {
-                // Set label and description, use defaults if no specific setting is found
-                checkboxObj.WithValue("label", checkboxSettings?.Label() ?? control.Name);
-                checkboxObj.WithValue("description", checkboxSettings?.Description() ?? "''");
-            });
-        }
-
-        private static void HandleTextArea(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var textarea = control.AsTextAreaModel();
-            var textareaSettings = textarea.GetTextAreaSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), textareaObj =>
-            {
-                // Set label, use control name as default if no specific setting is found
-                textareaObj.WithValue("label", textareaSettings?.Label() ?? control.Name);
-            });
-        }
-
-        private static void HandleTextbox(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
-        {
-            var textbox = control.AsTextboxModel();
-            var textboxSettings = textbox.GetTextboxSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), textboxObj =>
-            {
-                textboxObj.WithValue("label", textboxSettings?.Label() ?? control.Name);
-            });
-        }
-
-        private void HandleHeading(IDataFileObjectValue en, IElement control, LocaleModel locale)
-        {
-            var heading = control.AsHeadingModel();
-            var headingSettings = heading.GetHeadingSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            en.WithObject(control.Name.ToPascalCase().ToCamelCase(), headingObj =>
-            {
-                headingObj.WithValue("title", headingSettings?.Title() ?? control.Name);
-
-                headingObj.WithObject("attributes", attributeObj =>
-                {
-                    foreach (var control in heading.InternalElement.ChildElements.Where(m => m.IsHeadingAttributeModel()))
-                    {
-                        HandleHeadingAttribute(attributeObj, control, locale);
-                    }
-                });
-
-                foreach (var control in heading.InternalElement.ChildElements.Where(m => m.IsActionsModel()))
-                {
-                    HandleActions(headingObj, control, locale);
-                }
-            });
-        }
-
-        private void HandleHeadingAttribute(IDataFileObjectValue en, IElement control, LocaleModel locale)
-        {
-            var headingAttribute = control.AsHeadingAttributeModel();
-            var headingAttributeSettings = headingAttribute.GetAttributeSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
-
-            en.WithObject(control.Name.ToPascalCase().ToCamelCase(), textboxObj =>
-            {
-                textboxObj.WithValue("label", headingAttributeSettings?.Label() ?? control.Name);
-                if (headingAttributeSettings?.Icon() is not null)
-                {
-                    textboxObj.WithValue("icon", headingAttributeSettings?.Icon());
-                }
-            });
-        }
-
 
         [IntentManaged(Mode.Fully)]
         public IDataFile DataFile { get; }

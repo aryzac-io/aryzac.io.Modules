@@ -116,7 +116,7 @@ namespace Aryzac.IO.Modules.Client.Api
             return path;
         }
 
-        public static string GetPath(this PageModel page, bool useIndexInsteadOfName = false)
+        public static string GetPath(this PageModel page)
         {
             var pathSegments = new List<string>();
             var currentNode = page.InternalElement;
@@ -128,19 +128,12 @@ namespace Aryzac.IO.Modules.Client.Api
                     break;
                 }
 
-                if (currentNode.Name.ToLower() != "index")
-                {
-                    pathSegments.Add(currentNode.Name);
-                }
+                pathSegments.Add(currentNode.Name);
 
                 currentNode = currentNode.ParentElement;
             }
 
             pathSegments.Reverse(); // Reverse the order of the path segments
-
-            var isRootPage = pathSegments.Count == 1;
-            var fileName = useIndexInsteadOfName || !isRootPage ? "index" : $"{page.Name}";
-            pathSegments.Add(fileName); // Add the file name to the path
 
             var path = "/" + string.Join("/", pathSegments); // Join the path segments with '/'
 

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="7d1277b1-a53f-400f-b79d-4751c0f714c5" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
-  <name>pages</name>
-  <display>pages</display>
+<class id="e6c626fa-a6f9-4937-a23a-2fcf2eae8321" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>components</name>
+  <display>components</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
   <isMapped>false</isMapped>
-  <parentFolderId>cff18915-ecd7-4e9d-93de-575eef8ba540</parentFolderId>
+  <parentFolderId>5ca9d1dd-a3b9-4ff5-acf6-3643fa7fa862</parentFolderId>
   <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
   <packageName>root</packageName>
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="7ef4fa51-ceb6-44c9-bff9-89ac8f177e2c" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Pages.Page</name>
-      <display>Aryzac.IO.Modules.Client.Files.Pages.Page</display>
+    <childElement id="f10ea2a7-8548-4946-b131-a254190618bc" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Components.Component i18n</name>
+      <display>Aryzac.IO.Modules.Client.Files.Components.Component i18n</display>
       <externalReference>Aryzac.IO.Modules.Client</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
-      <parentFolderId>7d1277b1-a53f-400f-b79d-4751c0f714c5</parentFolderId>
+      <parentFolderId>e6c626fa-a6f9-4937-a23a-2fcf2eae8321</parentFolderId>
       <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
       <packageName>root</packageName>
       <stereotypes />
