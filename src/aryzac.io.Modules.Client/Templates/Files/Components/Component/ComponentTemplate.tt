@@ -16,7 +16,8 @@
   foreach (var query in Queries)
   {
     var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)query.Mapping.Element.AsOperationModel().Mapping.Element);
-	#>import type { <#= endpoint.ReturnType.Element.Name #> } from '~/structs/dto/<#= ((IElement)endpoint.ReturnType.Element).ParentElement.Name.ToPascalCase().ToCamelCase() #>/<#= ((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase() #>.dto';<#
+	#>import type { <#= endpoint.ReturnType.Element.Name #> } from '~/structs/dto/<#= ((IElement)endpoint.ReturnType.Element).ParentElement.Name.ToPascalCase().ToCamelCase() #>/<#= ((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase() #>.dto';
+<#
   }
 #>
 
@@ -74,7 +75,10 @@ const <#= commandOrQuery.Name.ToPascalCase().ToCamelCase() #>Proxy = use<#= comm
 #>const { 
   data: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Data, 
   pending: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Pending, 
-  error: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Error 
+  error: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Error , 
+  execute: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Execute, 
+  refresh: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Refresh, 
+  status: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Status 
 } = await <#= query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= query.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
 
 	foreach (var mapping in query.InternalElement.Mappings)
@@ -542,6 +546,17 @@ foreach (var action in Model.View.Table.Actions.Actions)
   }
 }
 #>
+
+onMounted(() => {
+<#
+  foreach (var query in Queries)
+  {
+#>
+  <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Execute();
+<#
+  }
+#>
+});
 </script>
 
 <template>

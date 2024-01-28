@@ -3,6 +3,7 @@
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
 
+
 const { t } = useI18n();
 
 const props = defineProps<{
@@ -14,7 +15,10 @@ const clientsServiceProxy = useClientsServiceProxy();
 const { 
   data: tableGetClientsQueryData, 
   pending: tableGetClientsQueryPending, 
-  error: tableGetClientsQueryError 
+  error: tableGetClientsQueryError , 
+  execute: tableGetClientsQueryExecute, 
+  refresh: tableGetClientsQueryRefresh, 
+  status: tableGetClientsQueryStatus 
 } = await clientsServiceProxy.getClientsQuery();
 
 
@@ -60,6 +64,10 @@ const tableActions = [
   },
 ];
 
+
+onMounted(() => {
+  tableGetClientsQueryExecute();
+});
 </script>
 
 <template>

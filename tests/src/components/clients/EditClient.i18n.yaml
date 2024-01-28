@@ -19,7 +19,7 @@ en:
     actions:
       save: Save
     titleSelect:
-      label: TitleSelect
+      label: Title
     firstNameTextBox:
       label: First name
     lastNameTextBox:

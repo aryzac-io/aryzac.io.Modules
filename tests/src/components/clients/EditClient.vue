@@ -1,7 +1,9 @@
 <i18n lang="yaml" src="./EditClient.i18n.yaml" />
 
 <script setup lang="ts">
-import type { ClientDto } from '~/structs/dto/clients/client.dto';import type { TitleDto } from '~/structs/dto/titles/title.dto';
+import type { ClientDto } from '~/structs/dto/clients/client.dto';
+import type { TitleDto } from '~/structs/dto/titles/title.dto';
+
 import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
 
 const { t } = useI18n();
@@ -17,12 +19,18 @@ const titlesServiceProxy = useTitlesServiceProxy();
 const { 
   data: editClientGetClientByIdQueryData, 
   pending: editClientGetClientByIdQueryPending, 
-  error: editClientGetClientByIdQueryError 
+  error: editClientGetClientByIdQueryError , 
+  execute: editClientGetClientByIdQueryExecute, 
+  refresh: editClientGetClientByIdQueryRefresh, 
+  status: editClientGetClientByIdQueryStatus 
 } = await clientsServiceProxy.getClientByIdQuery(props.clientId);
 const { 
   data: titleSelectGetTitlesQueryData, 
   pending: titleSelectGetTitlesQueryPending, 
-  error: titleSelectGetTitlesQueryError 
+  error: titleSelectGetTitlesQueryError , 
+  execute: titleSelectGetTitlesQueryExecute, 
+  refresh: titleSelectGetTitlesQueryRefresh, 
+  status: titleSelectGetTitlesQueryStatus 
 } = await titlesServiceProxy.getTitlesQuery();
 
 // Model
@@ -84,6 +92,11 @@ const titleSelectOptions = computed(() => {
     });
   }
   return options;
+});
+
+onMounted(() => {
+  editClientGetClientByIdQueryExecute();
+  titleSelectGetTitlesQueryExecute();
 });
 </script>
 

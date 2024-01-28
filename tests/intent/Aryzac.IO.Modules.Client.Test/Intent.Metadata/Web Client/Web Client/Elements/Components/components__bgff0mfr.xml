@@ -1096,7 +1096,7 @@
                           <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                           <properties>
                             <property name="ff8c3e16-bd61-45b4-8fa5-19f1b19500d6" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
-                            <property name="4b76a1f6-ce65-4630-9a4a-e7798f107020" display="Label" isActive="true" />
+                            <property name="4b76a1f6-ce65-4630-9a4a-e7798f107020" display="Label" value="Title" isActive="true" />
                           </properties>
                         </stereotype>
                       </stereotypes>
