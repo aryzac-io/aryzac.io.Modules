@@ -1,4 +1,12 @@
 af:
+  heading:
+    title: heading
+    attributes:
+      attribute1:
+        label: attribute-1
+    actions:
+      newAction:
+        label: NewAction
   personalInformation:
     title: Personal Information
     description: ''
@@ -39,6 +47,15 @@ af:
       save:
         label: Save
 en:
+  heading:
+    title: asdffas
+    attributes:
+      attribute1:
+        label: attribute-1
+        icon: carbon:data-format
+    actions:
+      newAction:
+        label: NewAction
   personalInformation:
     title: Personal Information
     description: ''

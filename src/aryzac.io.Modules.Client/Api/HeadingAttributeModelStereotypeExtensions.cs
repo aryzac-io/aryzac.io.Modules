@@ -67,6 +67,11 @@ namespace Aryzac.IO.Modules.Client.Api
                 return _stereotype.GetProperty<string>("Icon");
             }
 
+            public string Label()
+            {
+                return _stereotype.GetProperty<string>("Label");
+            }
+
         }
 
     }

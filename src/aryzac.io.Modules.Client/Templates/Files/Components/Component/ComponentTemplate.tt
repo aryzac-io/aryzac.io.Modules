@@ -252,30 +252,123 @@ if (Model.View != null)
     {
 #>
 // <#= component.Name #> Options
+<#
+      var heading = component.AsHeadingModel();
+            
+      var mappedColumn = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
+#>
+const <#= heading.InternalElement.Name.ToPascalCase().ToCamelCase() #>Title = computed(() => {
+<#
+      var mappedExpression = mappedColumn.MappingExpression;
+      foreach (var source in mappedColumn.Sources)
+      {
+        mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+#>
+  const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = model.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
+<#
+      }
+#>
+  const mappedExpression = `<#= mappedExpression #>`;
+  return mappedExpression;
+});
 const <#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Attributes = computed(() => [
 <# 
       foreach (var attribute in Model.View.Heading.Attributes)
       {
-        attribute.TryGetAttributeSettings(out var attributeSettings);
+        var mappedAttributeColumn = attribute.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => 
+          m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && 
+          m.TargetElement.SpecializationType == "Heading Attribute" &&
+          m.TargetElement.Id == attribute.Id);
+
+        if (mappedAttributeColumn is not null)
+        {
+          var mappedAttributeExpression = mappedAttributeColumn.MappingExpression;
+       
+          foreach (var source in mappedAttributeColumn.Sources)
+          {
+            mappedAttributeExpression = mappedAttributeExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{model.{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+          }
 #>
   {
-	icon: '<#= attributeSettings.Icon() #>',
-	label: t("<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>Label"),
+	icon: t("<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.icon"),
+	label: `<#= mappedAttributeExpression #>`,
+  },
+<#
+        }
+        else
+        {
+#>
+  {
+	icon: t("<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.icon"),
+	label: t("<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.label"),
   },
 <#
        }
+      }
 #>]
 );
 
-const <#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Actions = computed(() => [
+const <#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Actions = [
+<# 
+    if (Model.View.Heading.Actions is not null)
+    {
+foreach (var action in Model.View.Heading.Actions.Actions)
+{
+#>
   {
-    label: "Create Invoice",
-    icon: "heroicons:plus",
-    function: async () => {
-      await navigateTo(`/clients/${props.clientId}/invoices/create`);
+    label: t("<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label"),
+<#
+    if (action.Navigation is not null)
+    {
+      var page = action.Navigation.TypeReference.Element.AsPageModel();
+      var pageUrl = page.GetRoutePath();
+
+      foreach (var mapping in action.Navigation.InternalElement.Mappings) // .Where(m => m.TypeId == "90548e07-a8af-41a1-b608-d07b35d98fa3"))
+      {
+        foreach (var mappingEnd in mapping.MappedEnds)
+        {
+          pageUrl = pageUrl.Replace($"[{mappingEnd.TargetElement.Name}]", $"${{props.{mappingEnd.SourceElement.Name.ToPascalCase().ToCamelCase()}}}");
+        }
+      }
+#>
+    action: async () => {
+      await navigateTo(`<#= pageUrl #>`);
     },
+<#
+    }
+    else if (action.Command is not null)
+    {
+#>
+    action: async (item: <#= ((IElement)action.Command.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
+      await <#= action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
+	foreach (var mapping in action.Command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
+    {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+            var source = "props";
+
+            switch (mappedEnd.SourceElement.SpecializationType)
+            {
+                case "DTO-Field":
+#>item.<#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #><#
+                if (mapping.MappedEnds.Last() != mappedEnd)
+		        {
+		          #>, <#
+		        }
+                    break;
+            }
+	    }
+	}
+#>);
+    },
+<#
+    }
+#>
   },
-]);
+<#
+}
+}
+#>];
 
 <#
     }
@@ -601,7 +694,7 @@ if (Model.View != null)
     {
 #>
   <ui-heading-page
-    :title="t('<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>.title')"
+    :title="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Title"
     :attributes="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Attributes"
     :actions="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Actions"
   />

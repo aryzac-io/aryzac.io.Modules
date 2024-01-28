@@ -6,7 +6,7 @@
     <type id="e33dad05-f11e-4dde-86e7-984be7aac580">Heading Attribute</type>
   </targetTypes>
   <targetReferenceTypes />
-  <applyMode>on-create</applyMode>
+  <applyMode>manually</applyMode>
   <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
   <displayIcon>false</displayIcon>
   <displayIconFunction>return false;</displayIconFunction>
@@ -34,6 +34,15 @@
     </property>
     <property id="cc7b18ad-6a01-4396-8785-8ac3dfdf2d1e">
       <name>Icon</name>
+      <type>string</type>
+      <controlType>text</controlType>
+      <optionsSource>n/a</optionsSource>
+      <placeholder />
+      <valueOptions />
+      <lookupTypes />
+    </property>
+    <property id="ebe75cc6-6953-465b-b44c-658cf776d2dd">
+      <name>Label</name>
       <type>string</type>
       <controlType>text</controlType>
       <optionsSource>n/a</optionsSource>

@@ -11,6 +11,7 @@ using Intent.Modules.Common.FileBuilders.DataFileBuilder;
 using Intent.Modules.Common.Templates;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
+using static System.Collections.Specialized.BitVector32;
 using static Aryzac.IO.Modules.Client.Api.CheckboxModelStereotypeExtensions;
 using static Aryzac.IO.Modules.Client.Api.SectionModelStereotypeExtensions;
 
@@ -77,7 +78,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
                     // Handling Heading Model
                     if (component.IsHeadingModel())
                     {
-                        HandleHeading(en, locale);
+                        HandleHeading(en, component, locale);
                     }
                     // Handling Section Model
                     else if (component.IsSectionModel())
@@ -275,28 +276,45 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
             });
         }
 
-        private void HandleHeading(IDataFileObjectValue en, LocaleModel locale)
+        private void HandleHeading(IDataFileObjectValue en, IElement control, LocaleModel locale)
         {
-            var headingSettings = Model.View.Heading.GetHeadingSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+            var heading = control.AsHeadingModel();
+            var headingSettings = heading.GetHeadingSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            en.WithObject(Model.View.Heading.Name.ToPascalCase().ToCamelCase(), heading =>
+            en.WithObject(control.Name.ToPascalCase().ToCamelCase(), headingObj =>
             {
-                // Set title, use heading name as default if no specific setting is found
-                heading.WithValue("title", headingSettings?.Title() ?? Model.View.Heading.Name);
+                headingObj.WithValue("title", headingSettings?.Title() ?? control.Name);
 
-                if (Model.View.Heading.Attributes.Any())
+                headingObj.WithObject("attributes", attributeObj =>
                 {
-                    heading.WithObject("attributes", attributes =>
+                    foreach (var control in heading.InternalElement.ChildElements.Where(m => m.IsHeadingAttributeModel()))
                     {
-                        foreach (var attribute in Model.View.Heading.Attributes)
-                        {
-                            // Using an empty string as default if no attribute name is found
-                            attributes.WithValue(attribute.Name.ToPascalCase().ToCamelCase() + "Label", attribute.Name ?? "''");
-                        }
-                    });
+                        HandleHeadingAttribute(attributeObj, control, locale);
+                    }
+                });
+
+                foreach (var control in heading.InternalElement.ChildElements.Where(m => m.IsActionsModel()))
+                {
+                    HandleActions(headingObj, control, locale);
                 }
             });
         }
+
+        private void HandleHeadingAttribute(IDataFileObjectValue en, IElement control, LocaleModel locale)
+        {
+            var headingAttribute = control.AsHeadingAttributeModel();
+            var headingAttributeSettings = headingAttribute.GetAttributeSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            en.WithObject(control.Name.ToPascalCase().ToCamelCase(), textboxObj =>
+            {
+                textboxObj.WithValue("label", headingAttributeSettings?.Label() ?? control.Name);
+                if (headingAttributeSettings?.Icon() is not null)
+                {
+                    textboxObj.WithValue("icon", headingAttributeSettings?.Icon());
+                }
+            });
+        }
+
 
         [IntentManaged(Mode.Fully)]
         public IDataFile DataFile { get; }

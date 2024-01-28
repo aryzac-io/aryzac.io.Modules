@@ -1,1 +1,18 @@
-af:en:
+af:
+  breadcrumb:
+    navigation:
+      clients:
+        label: Clients
+      client:
+        label: Client
+      invoices:
+        label: Invoices
+en:
+  breadcrumb:
+    navigation:
+      clients:
+        label: Clients
+      client:
+        label: Client
+      invoices:
+        label: Invoices

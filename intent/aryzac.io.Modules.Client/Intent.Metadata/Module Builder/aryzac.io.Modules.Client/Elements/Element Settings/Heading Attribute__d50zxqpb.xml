@@ -32,7 +32,7 @@
       <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
       <properties>
         <property name="5a9277a9-b808-4ade-bb57-840b51b0da3a" display="Save Mode" value="Default" isActive="true" />
-        <property name="736b1337-6f35-4e38-85a8-69ff5d69fb7d" display="Icon" isActive="true" />
+        <property name="736b1337-6f35-4e38-85a8-69ff5d69fb7d" display="Icon" value="{&quot;type&quot;:0,&quot;source&quot;:&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0ibTE2NS44MiA5NmwtMTEuNjQgNjRoLTY0bDExLjY0LTY0WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMjI0IDg4aC00OC42bDguNDctNDYuNTdhOCA4IDAgMCAwLTE1Ljc0LTIuODZsLTkgNDkuNDNIMTExLjRsOC40Ny00Ni41N2E4IDggMCAwIDAtMTUuNzQtMi44Nkw5NS4xNCA4OEg0OGE4IDggMCAwIDAgMCAxNmg0NC4yM2wtOC43MyA0OEgzMmE4IDggMCAwIDAgMCAxNmg0OC42bC04LjQ3IDQ2LjU3YTggOCAwIDAgMCA2LjQ0IDkuM0E3Ljc5IDcuNzkgMCAwIDAgODAgMjI0YTggOCAwIDAgMCA3Ljg2LTYuNTdsOS00OS40M2g0Ny43NGwtOC40NyA0Ni41N2E4IDggMCAwIDAgNi40NCA5LjNhNy43OSA3Ljc5IDAgMCAwIDEuNDMuMTNhOCA4IDAgMCAwIDcuODYtNi41N2w5LTQ5LjQzSDIwOGE4IDggMCAwIDAgMC0xNmgtNDQuMjNsOC43My00OEgyMjRhOCA4IDAgMCAwIDAtMTZtLTc2LjUgNjRIOTkuNzdsOC43My00OGg0Ny43M1oiLz48L2c+PC9zdmc+&quot;}" isActive="true" />
         <property name="32086823-bd72-4be0-a765-2d9530f4ce06" display="Expanded Icon" isActive="true" />
         <property name="b966a8e9-f298-4741-8397-fe49f29c248b" display="Icon Function" isActive="true" />
         <property name="0632053a-6b40-47a0-857f-6840e322344c" display="Display Text Function" value="" isActive="true" />
@@ -62,6 +62,54 @@
       <stereotypes />
       <metadata />
       <childElements />
+    </childElement>
+    <childElement id="ae6c8792-cbd9-4359-abb1-3a43ae4fbb1c" type="Element Event Settings" typeId="3c628ab0-2407-4fb0-8507-ddde986cff2e">
+      <name>NewElementEventSettings</name>
+      <display>[events]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>e33dad05-f11e-4dde-86e7-984be7aac580</parentFolderId>
+      <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+      <packageName>Aryzac.IO.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="3d4791ea-5042-4461-b451-fb9952090ba4" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
+          <name>On Created</name>
+          <display>On Created: Script</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="6366de12-b527-47f1-bbe5-bcf01cf66b87">
+            <typeId>043eee26-1591-42ac-9f2c-fc911b070eb1</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.ModuleBuilder</typePackageName>
+            <typePackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>ae6c8792-cbd9-4359-abb1-3a43ae4fbb1c</parentFolderId>
+          <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+          <packageName>Aryzac.IO.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="56bc0465-c1fe-4bca-9493-2a3ce88a4047" name="Script Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;lookupTypesOf(&quot;Locale&quot;).forEach(locale =&gt; {&#xD;&#xA;    if (locale.hasStereotype(&quot;09876e82-e2d2-440a-9f22-2cb2d958d89d&quot;)) {&#xD;&#xA;        let settingsStereotype = element.addStereotype(&quot;aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8&quot;); // heading attribute settings stereotype&#xD;&#xA;        settingsStereotype&#xD;&#xA;            .getProperty(&quot;Locale&quot;)&#xD;&#xA;            .setValue(locale.id);&#xD;&#xA;    }&#xD;&#xA;});&#xD;&#xA;lookupTypesOf(&quot;Locale&quot;).forEach(locale =&gt; {&#xD;&#xA;    if (!locale.hasStereotype(&quot;09876e82-e2d2-440a-9f22-2cb2d958d89d&quot;)) {&#xD;&#xA;        let settingsStereotype = element.addStereotype(&quot;aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8&quot;); // heading attribute settings stereotype&#xD;&#xA;        settingsStereotype&#xD;&#xA;            .getProperty(&quot;Locale&quot;)&#xD;&#xA;            .setValue(locale.id);&#xD;&#xA;    }&#xD;&#xA;});&#xD;&#xA;" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
     </childElement>
   </childElements>
 </class>

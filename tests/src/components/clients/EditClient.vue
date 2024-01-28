@@ -118,6 +118,31 @@ const changeNoteClientCommand = async () => {
 };
 
 
+// heading Options
+const headingTitle = computed(() => {
+  const firstName = model.firstName || '';
+  const lastName = model.lastName || '';
+  const mappedExpression = `${lastName}, ${firstName}`;
+  return mappedExpression;
+});
+const headingAttributes = computed(() => [
+  {
+	icon: t("heading.attributes.attribute1.icon"),
+	label: `${model.otherNames}`,
+  },
+]
+);
+
+const headingActions = [
+  {
+    label: t("heading.actions.newAction.label"),
+    action: async () => {
+      await navigateTo(`/clients/${props.clientId}/invoices`);
+    },
+  },
+];
+
+
 // NewLabel Options
 const newLabelLabel = computed(() => {
   const lastName = model.lastName || '';
@@ -153,6 +178,11 @@ onMounted(() => {
 </script>
 
 <template>
+  <ui-heading-page
+    :title="headingTitle"
+    :attributes="headingAttributes"
+    :actions="headingActions"
+  />
   <ui-editor-section
     :title="t('personalInformation.title')"
     :description="t('personalInformation.description')"

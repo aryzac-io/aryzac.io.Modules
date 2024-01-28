@@ -930,15 +930,24 @@ lookupTypesOf("Locale").forEach(locale =&gt; {
           <allowSetValue>false</allowSetValue>
           <typeOrder>
             <type order="0">Heading Attribute</type>
+            <type order="1">Actions</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
               <text>Add Attribute</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0ibTE2NS44MiA5NmwtMTEuNjQgNjRoLTY0bDExLjY0LTY0WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMjI0IDg4aC00OC42bDguNDctNDYuNTdhOCA4IDAgMCAwLTE1Ljc0LTIuODZsLTkgNDkuNDNIMTExLjRsOC40Ny00Ni41N2E4IDggMCAwIDAtMTUuNzQtMi44Nkw5NS4xNCA4OEg0OGE4IDggMCAwIDAgMCAxNmg0NC4yM2wtOC43MyA0OEgzMmE4IDggMCAwIDAgMCAxNmg0OC42bC04LjQ3IDQ2LjU3YTggOCAwIDAgMCA2LjQ0IDkuM0E3Ljc5IDcuNzkgMCAwIDAgODAgMjI0YTggOCAwIDAgMCA3Ljg2LTYuNTdsOS00OS40M2g0Ny43NGwtOC40NyA0Ni41N2E4IDggMCAwIDAgNi40NCA5LjNhNy43OSA3Ljc5IDAgMCAwIDEuNDMuMTNhOCA4IDAgMCAwIDcuODYtNi41N2w5LTQ5LjQzSDIwOGE4IDggMCAwIDAgMC0xNmgtNDQuMjNsOC43My00OEgyMjRhOCA4IDAgMCAwIDAtMTZtLTc2LjUgNjRIOTkuNzdsOC43My00OGg0Ny43M1oiLz48L2c+PC9zdmc+" />
               <specializationType>Heading Attribute</specializationType>
               <specializationTypeId>e33dad05-f11e-4dde-86e7-984be7aac580</specializationTypeId>
               <defaultName>NewHeadingAttribute</defaultName>
               <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Actions</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
+              <specializationType>Actions</specializationType>
+              <specializationTypeId>ccc50dcf-42e3-4b91-8772-bb48739c17e8</specializationTypeId>
+              <defaultName>[actions]</defaultName>
+              <allowMultiple>false</allowMultiple>
             </option>
           </creationOptions>
           <scriptOptions />
@@ -968,7 +977,7 @@ lookupTypesOf("Locale").forEach(locale =&gt; {
           </macros>
           <childElementSettings>
             <childElementSetting type="Heading Attribute" typeId="e33dad05-f11e-4dde-86e7-984be7aac580">
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0ibTE2NS44MiA5NmwtMTEuNjQgNjRoLTY0bDExLjY0LTY0WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMjI0IDg4aC00OC42bDguNDctNDYuNTdhOCA4IDAgMCAwLTE1Ljc0LTIuODZsLTkgNDkuNDNIMTExLjRsOC40Ny00Ni41N2E4IDggMCAwIDAtMTUuNzQtMi44Nkw5NS4xNCA4OEg0OGE4IDggMCAwIDAgMCAxNmg0NC4yM2wtOC43MyA0OEgzMmE4IDggMCAwIDAgMCAxNmg0OC42bC04LjQ3IDQ2LjU3YTggOCAwIDAgMCA2LjQ0IDkuM0E3Ljc5IDcuNzkgMCAwIDAgODAgMjI0YTggOCAwIDAgMCA3Ljg2LTYuNTdsOS00OS40M2g0Ny43NGwtOC40NyA0Ni41N2E4IDggMCAwIDAgNi40NCA5LjNhNy43OSA3Ljc5IDAgMCAwIDEuNDMuMTNhOCA4IDAgMCAwIDcuODYtNi41N2w5LTQ5LjQzSDIwOGE4IDggMCAwIDAgMC0xNmgtNDQuMjNsOC43My00OEgyMjRhOCA4IDAgMCAwIDAtMTZtLTc2LjUgNjRIOTkuNzdsOC43My00OGg0Ny43M1oiLz48L2c+PC9zdmc+" />
               <saveAsOwnFile>false</saveAsOwnFile>
               <allowRename>true</allowRename>
               <allowAbstract>false</allowAbstract>
@@ -986,6 +995,28 @@ lookupTypesOf("Locale").forEach(locale =&gt; {
               <scriptOptions />
               <mappingOptions />
               <mappingSettings />
+              <macros>
+                <macro trigger="on-created">
+                  <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8"); // heading attribute settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8"); // heading attribute settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+                </macro>
+              </macros>
               <childElementSettings />
             </childElementSetting>
           </childElementSettings>
@@ -2391,6 +2422,25 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
               <represents>data</represents>
               <childSettings />
             </childSetting>
+            <childSetting id="1573131f-64e9-4ba9-b9fd-29961f3d8ef0" name="Heading" type="Heading" typeId="2bf5bef0-a091-4ff8-a5d6-fe931a86616f">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings>
+                <childSetting id="2b9554bc-1331-4cc3-b958-5a217bf1615d" name="Heading Attribute" type="Heading Attribute" typeId="e33dad05-f11e-4dde-86e7-984be7aac580">
+                  <allowMultipleMappings>true</allowMultipleMappings>
+                  <isMappableFunction>return true;</isMappableFunction>
+                  <isTraversable>false</isTraversable>
+                  <traversableTypes />
+                  <canBeModified>true</canBeModified>
+                  <represents>data</represents>
+                  <childSettings />
+                </childSetting>
+              </childSettings>
+            </childSetting>
           </childSettings>
         </mapping>
         <mapping id="ce6043ba-5bdc-4bab-ae1b-8364a6c22c0b" name="Textbox" type="Textbox" typeId="db535835-3d01-421d-9f29-206732782bfe">
@@ -2463,6 +2513,8 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
             <target id="e518c964-e7c6-4e11-a5b8-c535fd0647b8" name="Radio Button" />
             <target id="c68fa9c0-a06d-4697-b2b0-6bb86ee49aab" name="Text Area" />
             <target id="d690d89f-1c8e-4acb-82c4-6d8f48b31a7a" name="Select" />
+            <target id="1573131f-64e9-4ba9-b9fd-29961f3d8ef0" name="Heading" />
+            <target id="2b9554bc-1331-4cc3-b958-5a217bf1615d" name="Heading Attribute" />
           </targets>
           <allowAutoMap>true</allowAutoMap>
         </mappingType>

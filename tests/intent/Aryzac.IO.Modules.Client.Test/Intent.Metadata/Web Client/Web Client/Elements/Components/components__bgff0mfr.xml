@@ -852,6 +852,46 @@
                       <expression>{[model].LastName}, {[model].FirstName}</expression>
                       <path>
                         <target id="9700295a-544a-4fab-b90e-22d004135aee" name="[view]" type="element" specialization="Component View" />
+                        <target id="f2aec0c8-e03b-4936-832e-d088f7859d10" name="heading" type="element" specialization="Heading" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].FirstName" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="7feef88b-f500-4dea-ab2c-596cd3d1b06b" name="EditClient" type="element" specialization="Component" />
+                            <target id="715a0ee8-f21f-44b0-8ba0-213169565031" name="[model]" type="element" specialization="Component Model" />
+                            <target id="84bd86cb-9b21-4ab2-b86b-7bf00f38c127" name="FirstName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                        <source identifier="[model].LastName" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="7feef88b-f500-4dea-ab2c-596cd3d1b06b" name="EditClient" type="element" specialization="Component" />
+                            <target id="715a0ee8-f21f-44b0-8ba0-213169565031" name="[model]" type="element" specialization="Component Model" />
+                            <target id="a633c7be-66af-4306-9029-b79f5d567aaa" name="LastName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].OtherNames}</expression>
+                      <path>
+                        <target id="9700295a-544a-4fab-b90e-22d004135aee" name="[view]" type="element" specialization="Component View" />
+                        <target id="f2aec0c8-e03b-4936-832e-d088f7859d10" name="heading" type="element" specialization="Heading" />
+                        <target id="231c0731-7583-4726-a0a1-16b012fa0dbd" name="attribute-1" type="element" specialization="Heading Attribute" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].OtherNames" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="7feef88b-f500-4dea-ab2c-596cd3d1b06b" name="EditClient" type="element" specialization="Component" />
+                            <target id="715a0ee8-f21f-44b0-8ba0-213169565031" name="[model]" type="element" specialization="Component Model" />
+                            <target id="1110541c-bb0f-4a1e-add6-037b3d152452" name="OtherNames" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].LastName}, {[model].FirstName}</expression>
+                      <path>
+                        <target id="9700295a-544a-4fab-b90e-22d004135aee" name="[view]" type="element" specialization="Component View" />
                         <target id="38ef9afa-0ed5-4e5c-ae5e-3dcfadce3496" name="Personal Information" type="element" specialization="Section" />
                         <target id="8ce69870-3ee7-42de-bebc-ea876a754d78" name="NewLabel" type="element" specialization="Label" />
                       </path>
@@ -979,6 +1019,183 @@
               </mappings>
               <metadata />
               <childElements>
+                <childElement id="f2aec0c8-e03b-4936-832e-d088f7859d10" type="Heading" typeId="2bf5bef0-a091-4ff8-a5d6-fe931a86616f">
+                  <name>heading</name>
+                  <display>heading</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>by-type-then-by-name</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>9700295a-544a-4fab-b90e-22d004135aee</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="3fc958c7-8c35-42f6-8f40-388ad0494fbb" name="Heading Settings">
+                      <addedByDefault>false</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="68b69b02-81e3-41f0-a259-b9fa94a545c6" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
+                        <property name="43d75151-3135-4330-9ef2-0eeb24beed97" display="Title" value="asdffas" isActive="true" />
+                      </properties>
+                    </stereotype>
+                    <stereotype stereotypeDefinitionId="3fc958c7-8c35-42f6-8f40-388ad0494fbb" name="Heading Settings">
+                      <addedByDefault>false</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="68b69b02-81e3-41f0-a259-b9fa94a545c6" display="Locale" value="724eb10a-d944-43bf-a201-e1b3d48d4968" isActive="true" />
+                        <property name="43d75151-3135-4330-9ef2-0eeb24beed97" display="Title" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements>
+                    <childElement id="231c0731-7583-4726-a0a1-16b012fa0dbd" type="Heading Attribute" typeId="e33dad05-f11e-4dde-86e7-984be7aac580">
+                      <name>attribute-1</name>
+                      <display>attribute-1</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>f2aec0c8-e03b-4936-832e-d088f7859d10</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8" name="Attribute Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="d7aefdb7-d045-4405-aec1-fb825f74dde4" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
+                            <property name="cc7b18ad-6a01-4396-8785-8ac3dfdf2d1e" display="Icon" value="carbon:data-format" isActive="true" />
+                            <property name="ebe75cc6-6953-465b-b44c-658cf776d2dd" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                        <stereotype stereotypeDefinitionId="aff6bbb9-c26b-4a01-b8d3-d7ccc5f61da8" name="Attribute Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="d7aefdb7-d045-4405-aec1-fb825f74dde4" display="Locale" value="724eb10a-d944-43bf-a201-e1b3d48d4968" isActive="true" />
+                            <property name="cc7b18ad-6a01-4396-8785-8ac3dfdf2d1e" display="Icon" isActive="true" />
+                            <property name="ebe75cc6-6953-465b-b44c-658cf776d2dd" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="ee0fa9fc-8620-4ff9-a1d6-9940102dd918" type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
+                      <name>[actions]</name>
+                      <display>[actions]</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>manually</sort-children>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>f2aec0c8-e03b-4936-832e-d088f7859d10</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements>
+                        <childElement id="c04206f7-147b-4247-b248-c8b80b4ec703" type="Action" typeId="420c5366-fd1b-4130-afab-45f4ece2cce2">
+                          <name>NewAction</name>
+                          <display>NewAction</display>
+                          <isAbstract>false</isAbstract>
+                          <sort-children>manually</sort-children>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>ee0fa9fc-8620-4ff9-a1d6-9940102dd918</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes>
+                            <stereotype stereotypeDefinitionId="ea0f9d89-8d52-4d58-b4d2-9095a9bf5606" name="Action Settings">
+                              <addedByDefault>false</addedByDefault>
+                              <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                              <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                              <properties>
+                                <property name="b0451488-cf54-4083-81c6-a25270f27bd7" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
+                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" isActive="true" />
+                                <property name="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4" display="Label" isActive="true" />
+                              </properties>
+                            </stereotype>
+                            <stereotype stereotypeDefinitionId="ea0f9d89-8d52-4d58-b4d2-9095a9bf5606" name="Action Settings">
+                              <addedByDefault>false</addedByDefault>
+                              <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                              <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                              <properties>
+                                <property name="b0451488-cf54-4083-81c6-a25270f27bd7" display="Locale" value="724eb10a-d944-43bf-a201-e1b3d48d4968" isActive="true" />
+                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" isActive="true" />
+                                <property name="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4" display="Label" isActive="true" />
+                              </properties>
+                            </stereotype>
+                          </stereotypes>
+                          <metadata />
+                          <childElements>
+                            <childElement id="c90e716d-35f4-4d69-94c2-cb5f2041fcb3" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
+                              <name>[navigation]</name>
+                              <display>[navigation]: index</display>
+                              <isAbstract>false</isAbstract>
+                              <genericTypes />
+                              <typeReference id="1e503904-ccb1-4828-be0b-c69b12ab623e">
+                                <typeId>10fc7a95-92ed-42c5-acae-a68a3bf7f7d8</typeId>
+                                <isNavigable>true</isNavigable>
+                                <isNullable>false</isNullable>
+                                <isCollection>false</isCollection>
+                                <isRequired>true</isRequired>
+                                <typePackageName>Web Client</typePackageName>
+                                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                                <stereotypes />
+                                <genericTypeParameters />
+                              </typeReference>
+                              <isMapped>false</isMapped>
+                              <parentFolderId>c04206f7-147b-4247-b248-c8b80b4ec703</parentFolderId>
+                              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                              <packageName>Web Client</packageName>
+                              <stereotypes>
+                                <stereotype stereotypeDefinitionId="d4e49575-65a5-472a-8c4b-a4fb12c162bc" name="Navigation Item Settings">
+                                  <addedByDefault>true</addedByDefault>
+                                  <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                                  <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                                  <properties>
+                                    <property name="b288607b-d7cd-4c39-a490-a1d568ba5b55" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
+                                    <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" isActive="true" />
+                                    <property name="b8d0296d-a53d-4a0c-a1b4-3f208066cb04" display="Label" isActive="true" />
+                                  </properties>
+                                </stereotype>
+                              </stereotypes>
+                              <mappings>
+                                <mapping type="Map Table Navigation" typeId="90548e07-a8af-41a1-b608-d07b35d98fa3">
+                                  <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="7feef88b-f500-4dea-ab2c-596cd3d1b06b" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[EditClient]" />
+                                  <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="10fc7a95-92ed-42c5-acae-a68a3bf7f7d8" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[index]" />
+                                  <mappedEnds>
+                                    <mappedEnd>
+                                      <expression>{client-id}</expression>
+                                      <path>
+                                        <target id="10fc7a95-92ed-42c5-acae-a68a3bf7f7d8" name="index" type="element" specialization="Page" />
+                                        <target id="68d570c3-8d34-4748-bcbd-ff9dba66625a" name="client-id" type="element" specialization="Parameter" />
+                                      </path>
+                                      <sources>
+                                        <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="309b5d37-be4e-416d-91ae-74c85b7202d3">
+                                          <path>
+                                            <target id="7feef88b-f500-4dea-ab2c-596cd3d1b06b" name="EditClient" type="element" specialization="Component" />
+                                            <target id="51941abd-4fb7-4d81-94ea-72c4a798ad13" name="client-id" type="element" specialization="Component Parameter" />
+                                          </path>
+                                        </source>
+                                      </sources>
+                                    </mappedEnd>
+                                  </mappedEnds>
+                                </mapping>
+                              </mappings>
+                              <metadata />
+                              <childElements />
+                            </childElement>
+                          </childElements>
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
                 <childElement id="38ef9afa-0ed5-4e5c-ae5e-3dcfadce3496" type="Section" typeId="359ec87c-144f-4be1-b3d1-fe182093bb3e">
                   <name>Personal Information</name>
                   <display>Personal Information</display>
