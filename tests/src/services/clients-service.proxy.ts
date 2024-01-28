@@ -8,7 +8,7 @@ export class ClientsService {
   public async changeNameClientCommand(id: string, command: ChangeNameClientCommand): Promise<AsyncData<any, any>> {
     const config = useRuntimeConfig();
     let url = `${config.public.clientsServiceApiBaseUri}/api/v1/client/${id}/change-name`;
-    return await useFetch(url,
+    return await useLazyFetch(url,
     {
     method: 'PUT',
     headers: {
@@ -22,7 +22,7 @@ export class ClientsService {
   public async changeTitleClientCommand(id: string, command: ChangeTitleClientCommand): Promise<AsyncData<any, any>> {
     const config = useRuntimeConfig();
     let url = `${config.public.clientsServiceApiBaseUri}/api/v1/client/${id}/change-title`;
-    return await useFetch(url,
+    return await useLazyFetch(url,
     {
     method: 'PUT',
     headers: {
@@ -50,7 +50,7 @@ export class ClientsService {
   public async deleteClientCommand(id: string): Promise<AsyncData<any, any>> {
     const config = useRuntimeConfig();
     let url = `${config.public.clientsServiceApiBaseUri}/api/v1/client/${id}`;
-    return await useFetch(url,
+    return await useLazyFetch(url,
     {
     method: 'DELETE',
     headers: {

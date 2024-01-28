@@ -61,7 +61,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Services.ServiceProxy
             if (returnType == "void")
             {
                 returnTypeSignature = $"Promise<AsyncData<any, any>>";
-                useFetchSignature = $"useFetch";
+                useFetchSignature = $"useLazyFetch";
             }
 
             @class.AddMethod(name, returnTypeSignature, method =>

@@ -99,7 +99,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
             {
                 foreach (var column in table.Columns)
                 {
-                    tableObj.WithValue(column.Name.ToCamelCase(), column.Name);
+                    tableObj.WithValue(column.Name.ToPascalCase().ToCamelCase(), column.Name);
                 }
 
                 if (table.Actions is not null)
@@ -280,7 +280,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
                         foreach (var attribute in Model.View.Heading.Attributes)
                         {
                             // Using an empty string as default if no attribute name is found
-                            attributes.WithValue(attribute.Name.ToCamelCase() + "Label", attribute.Name ?? "''");
+                            attributes.WithValue(attribute.Name.ToPascalCase().ToCamelCase() + "Label", attribute.Name ?? "''");
                         }
                     });
                 }

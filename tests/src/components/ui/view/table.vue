@@ -67,7 +67,7 @@ const getKey = (item, index) => {
             <slot :name="header.template" :item="item" />
           </template>
           <template v-else>
-            {{ item[header.key] }}
+            {{ header.data(item) }}
           </template>
         </td>
         <td class="py-4 pl-3 pr-4 sm:pr-6 text-right whitespace-nowrap w-auto">

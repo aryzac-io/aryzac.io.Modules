@@ -31,16 +31,15 @@ const deleteClientCommand = async (id: string) => {
 // table Options
 const tableHeaders = [
   {
-	key: 'firstName',
-	label: t("table.firstName"),
-  },
-  {
-	key: 'lastName',
-	label: t("table.lastName"),
-  },
-  {
-	key: 'otherNames',
-	label: t("table.otherNames"),
+	key: 'clientName',
+	label: t("table.clientName"),
+    data: (item: ClientDto) => {
+      const lastName = item.lastName || '';
+      const firstName = item.firstName || '';
+      const otherNames = item.otherNames || '';
+      const mappedExpression = `${lastName}, ${firstName} ${otherNames}`;
+      return mappedExpression;
+    }
   },
 ];
 

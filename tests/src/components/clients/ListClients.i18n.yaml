@@ -1,8 +1,6 @@
 en:
   table:
-    firstName: FirstName
-    lastName: LastName
-    otherNames: OtherNames
+    clientName: Client Name
     actions:
       delete:
         label: Delete
