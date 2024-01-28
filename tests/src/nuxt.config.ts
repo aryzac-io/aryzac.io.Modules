@@ -29,8 +29,12 @@ export default defineNuxtConfig({
     fallbackLocale: "en",
     locales: [
       {
+        code: "af",
+        iso: "af-ZA", 
+      },
+      {
         code: "en",
-        iso: "", 
+        iso: "en-US", 
       },
     ],
     baseUrl: "http://localhost:3000",

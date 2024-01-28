@@ -380,6 +380,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>96bbeed2-11a8-4f41-bf66-ff2a58b82659</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Layouts.Layout i18n#f16095c8-5ac2-47a9-923e-fe7a9cc54083</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/layouts/default.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>default.i18n.yaml</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>96bbeed2-11a8-4f41-bf66-ff2a58b82659</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Layouts.Layout#f16095c8-5ac2-47a9-923e-fe7a9cc54083</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/layouts/default.vue</ApplicationRelativeFilePath>

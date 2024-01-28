@@ -77,7 +77,9 @@
                       <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                       <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                       <properties>
+                        <property name="b288607b-d7cd-4c39-a490-a1d568ba5b55" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
                         <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" isActive="true" />
+                        <property name="b8d0296d-a53d-4a0c-a1b4-3f208066cb04" display="Label" isActive="true" />
                       </properties>
                     </stereotype>
                   </stereotypes>
@@ -110,7 +112,74 @@
                       <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                       <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                       <properties>
+                        <property name="b288607b-d7cd-4c39-a490-a1d568ba5b55" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
                         <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" isActive="true" />
+                        <property name="b8d0296d-a53d-4a0c-a1b4-3f208066cb04" display="Label" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="84ccdea2-08ff-4d85-8811-562448d16996" type="Sidebar Navigation" typeId="4b1db728-6c2e-4ef2-a647-a50015a0a684">
+          <name>[sidebar navigation]</name>
+          <display>[sidebar navigation]</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>f16095c8-5ac2-47a9-923e-fe7a9cc54083</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="5ba1fb21-5849-46aa-b8f6-6d08ed2db8c6" type="Sidebar Navigation Section" typeId="3b2026bf-7e0e-47d3-aaa7-3fccb5739990">
+              <name>NewSidebarNavigationSection</name>
+              <display>NewSidebarNavigationSection</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>84ccdea2-08ff-4d85-8811-562448d16996</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="56bef101-3ddc-4da8-908e-c7f4c97e80c4" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
+                  <name>NewNavigationItem</name>
+                  <display>NewNavigationItem: index</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="224d5f15-d2c4-4030-af8e-f788d8f16a09">
+                    <typeId>1343048f-f75a-40af-bd84-8a957ed4651a</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Web Client</typePackageName>
+                    <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>5ba1fb21-5849-46aa-b8f6-6d08ed2db8c6</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="d4e49575-65a5-472a-8c4b-a4fb12c162bc" name="Navigation Item Settings">
+                      <addedByDefault>true</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="b288607b-d7cd-4c39-a490-a1d568ba5b55" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
+                        <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" isActive="true" />
+                        <property name="b8d0296d-a53d-4a0c-a1b4-3f208066cb04" display="Label" isActive="true" />
                       </properties>
                     </stereotype>
                   </stereotypes>
@@ -160,7 +229,9 @@
                   <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
                   <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                   <properties>
+                    <property name="b288607b-d7cd-4c39-a490-a1d568ba5b55" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
                     <property name="752239d3-8266-4a71-99f1-73fefedb8b8d" display="Icon" value="heroicons:home-20-solid" isActive="true" />
+                    <property name="b8d0296d-a53d-4a0c-a1b4-3f208066cb04" display="Label" isActive="true" />
                   </properties>
                 </stereotype>
               </stereotypes>

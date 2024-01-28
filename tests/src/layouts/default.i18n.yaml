@@ -1,0 +1,34 @@
+af:
+  appbar:
+    navigation:
+      home:
+        label: Home
+      clients:
+        label: Clients
+  sidebar:
+    navigation:
+      newSidebarNavigationSection:
+        newNavigationItem:
+          label: NewNavigationItem
+  breadcrumb:
+    navigation:
+      home:
+        label: Home
+        icon: heroicons:home-20-solid
+en:
+  appbar:
+    navigation:
+      home:
+        label: Home
+      clients:
+        label: Clients
+  sidebar:
+    navigation:
+      newSidebarNavigationSection:
+        newNavigationItem:
+          label: NewNavigationItem
+  breadcrumb:
+    navigation:
+      home:
+        label: Home
+        icon: heroicons:home-20-solid

@@ -31,239 +31,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Layouts.Layout
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<i18n lang=\"yaml\">\r\nen:\r\n");
+            this.Write("\r\n<i18n lang=\"yaml\" src=\"./");
             
-            #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-  if (Model.TopNavigation != null)
-  {
-  
+            #line 10 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
             
             #line default
             #line hidden
-            this.Write("  appbar:\r\n    navigation:\r\n      ");
-            
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-    foreach (var child in Model.TopNavigation.InternalElement.ChildElements)
-    {
-      if (child.IsTopNavigationSectionModel())
-      {
-        foreach (var section in Model.TopNavigation.Sections)
-        {
-          foreach (var item in section.Items)
-          {
-            item.TryGetNavigationItemSettings(out var navigationSettings);
-            
-            
-            #line default
-            #line hidden
-            
-            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(": ");
-            
-            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- if (navigationSettings.Icon() != null) 
-{ 
-            
-            #line default
-            #line hidden
-            this.Write("      ");
-            
-            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write("Icon: ");
-            
-            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(navigationSettings.Icon()));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            this.Write("      ");
-            
-            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-          }
-        }
-      }
-    }
-  }
-
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 40 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-  if (Model.SidebarNavigation != null)
-  {
-  
-            
-            #line default
-            #line hidden
-            this.Write("  sidebar:\r\n    navigation:\r\n      ");
-            
-            #line 46 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-    foreach (var section in Model.SidebarNavigation.Sections)
-    {
-      foreach (var item in section.Items)
-      {
-            item.TryGetNavigationItemSettings(out var navigationSettings);
-        
-            
-            #line default
-            #line hidden
-            
-            #line 52 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(": ");
-            
-            #line 52 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 53 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- if (navigationSettings.Icon() != null) 
-{ 
-            
-            #line default
-            #line hidden
-            this.Write("      ");
-            
-            #line 54 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write("Icon: ");
-            
-            #line 54 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(navigationSettings.Icon()));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 55 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            this.Write("      ");
-            
-            #line 56 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-      }
-    }
-  }
-
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 62 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-  if (Model.BreadcrumbNavigation != null)
-  {
-  
-            
-            #line default
-            #line hidden
-            this.Write("  breadcrumb:\r\n    navigation:\r\n      ");
-            
-            #line 68 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-    foreach (var item in Model.BreadcrumbNavigation.Items)
-    {
-      item.TryGetNavigationItemSettings(out var navigationSettings);
-      
-            
-            #line default
-            #line hidden
-            
-            #line 72 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(": ");
-            
-            #line 72 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 73 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- if (navigationSettings.Icon() != null) 
-{ 
-            
-            #line default
-            #line hidden
-            this.Write("      ");
-            
-            #line 74 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write("Icon: ");
-            
-            #line 74 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(navigationSettings.Icon()));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 75 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            this.Write("    ");
-            
-            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
-
-    }
-  }
-
-            
-            #line default
-            #line hidden
-            this.Write(@"
-</i18n>
+            this.Write(@".i18n.yaml"" />
 
 <script setup lang=""ts"">
 const { t } = useI18n();
@@ -298,7 +73,7 @@ clearSections(true);
 
 ");
             
-            #line 114 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 43 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
 if (Model.TopNavigation != null)
 {
@@ -308,7 +83,7 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("// Setup Appbar\r\n");
             
-            #line 118 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
   foreach (var child in Model.TopNavigation.InternalElement.ChildElements)
   {
@@ -327,14 +102,14 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("setupSectionItem(\r\n  \"appbar\",\r\n  t(\"appbar.navigation.");
             
-            #line 132 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 61 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
-            this.Write("\"),\r\n  ");
+            this.Write(".label\"),\r\n  ");
             
-            #line 133 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 62 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
  if (navigationSettings.Icon() != null) 
   { 
             
@@ -342,14 +117,14 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("t(\"appbar.navigation.");
             
-            #line 134 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 63 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
-            this.Write("Icon\")");
+            this.Write(".icon\")");
             
-            #line 134 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 63 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
  
   } 
   else 
@@ -359,7 +134,7 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("null");
             
-            #line 137 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 66 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
   } 
             
@@ -367,14 +142,14 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write(",\r\n  \"");
             
-            #line 139 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 68 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(page.GetRoutePath()));
             
             #line default
             #line hidden
             this.Write("\"\r\n);\r\n");
             
-            #line 141 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 70 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
         }
       }
@@ -387,14 +162,14 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("setupSection(\"appbar\", \"");
             
-            #line 147 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(child.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("\");");
             
-            #line 147 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
     }
   }
@@ -405,7 +180,7 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("\r\n");
             
-            #line 153 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 82 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
 if (Model.SidebarNavigation != null)
 {
@@ -415,7 +190,7 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write("// Setup Sidebar\r\n");
             
-            #line 157 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 86 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
   foreach (var section in Model.SidebarNavigation.Sections)
   {
@@ -430,14 +205,21 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write("setupSectionItem(\r\n  \"sidebar\",\r\n  t(\"sidebar.navigation.");
             
-            #line 167 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 96 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(section.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write(".");
+            
+            #line 96 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
-            this.Write("\"),\r\n  ");
+            this.Write(".label\"),\r\n  ");
             
-            #line 168 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 97 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
  if (navigationSettings.Icon() != null) 
   { 
             
@@ -445,14 +227,21 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write("t(\"sidebar.navigation.");
             
-            #line 169 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 98 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(section.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write(".");
+            
+            #line 98 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
-            this.Write("Icon\")");
+            this.Write(".icon\")");
             
-            #line 169 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 98 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
  
   } 
   else 
@@ -462,7 +251,7 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write("null");
             
-            #line 172 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 101 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
   } 
             
@@ -470,14 +259,14 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write(",\r\n  \"");
             
-            #line 174 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 103 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(page.GetRoutePath()));
             
             #line default
             #line hidden
             this.Write("\"\r\n);\r\n");
             
-            #line 176 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 105 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
     }
   }
@@ -488,7 +277,7 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write("\r\n");
             
-            #line 182 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 111 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
 if (Model.BreadcrumbNavigation != null)
 {
@@ -498,7 +287,7 @@ if (Model.BreadcrumbNavigation != null)
             #line hidden
             this.Write("// Setup Breadcrumb\r\n");
             
-            #line 186 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 115 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
   foreach (var item in Model.BreadcrumbNavigation.Items)
   {
@@ -511,14 +300,14 @@ if (Model.BreadcrumbNavigation != null)
             #line hidden
             this.Write("setupSectionItem(\r\n  \"breadcrumb\", \r\n  t(\"breadcrumb.navigation.");
             
-            #line 194 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 123 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
-            this.Write("\"), \r\n  ");
+            this.Write(".label\"), \r\n  ");
             
-            #line 195 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 124 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
  if (navigationSettings.Icon() != null) 
   { 
             
@@ -526,14 +315,14 @@ if (Model.BreadcrumbNavigation != null)
             #line hidden
             this.Write("t(\"breadcrumb.navigation.");
             
-            #line 196 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 125 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
-            this.Write("Icon\")");
+            this.Write(".icon\")");
             
-            #line 196 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 125 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
  
   } 
   else 
@@ -543,7 +332,7 @@ if (Model.BreadcrumbNavigation != null)
             #line hidden
             this.Write("null");
             
-            #line 199 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 128 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
   } 
             
@@ -551,14 +340,14 @@ if (Model.BreadcrumbNavigation != null)
             #line hidden
             this.Write(", \r\n  \"");
             
-            #line 201 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 130 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(page.GetRoutePath()));
             
             #line default
             #line hidden
             this.Write("\"\r\n);\r\n");
             
-            #line 203 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 132 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
   }
 }
@@ -568,7 +357,7 @@ if (Model.BreadcrumbNavigation != null)
             #line hidden
             this.Write("</script>\r\n\r\n<template>\r\n  <div>\r\n  ");
             
-            #line 211 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 140 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
 if (Model.SidebarNavigation != null)
 {
@@ -578,14 +367,14 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write("  <layout-sidebar />\r\n");
             
-            #line 216 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 145 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 }
             
             #line default
             #line hidden
             this.Write("\r\n    <div class=\"");
             
-            #line 218 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 147 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
 if (Model.SidebarNavigation != null)
 {
@@ -595,14 +384,14 @@ if (Model.SidebarNavigation != null)
             #line hidden
             this.Write("lg:pl-72 ");
             
-            #line 221 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 150 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 }
             
             #line default
             #line hidden
             this.Write("min-h-screen\">\r\n\r\n      ");
             
-            #line 223 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 152 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
 if (Model.TopNavigation != null)
 {
@@ -612,14 +401,14 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("<layout-appbar />");
             
-            #line 226 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 155 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 }
             
             #line default
             #line hidden
             this.Write("\r\n      ");
             
-            #line 228 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 157 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 
 if (Model.TopNavigation != null)
 {
@@ -629,7 +418,7 @@ if (Model.TopNavigation != null)
             #line hidden
             this.Write("<layout-breadcrumbs />");
             
-            #line 231 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
+            #line 160 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
 }
             
             #line default

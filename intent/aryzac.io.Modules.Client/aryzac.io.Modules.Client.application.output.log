@@ -628,6 +628,22 @@
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.ProjectItemTemplate.Partial#dad09ffd-5c83-478f-9a1b-6bcc64db7330</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Layouts/LayoutI18n/LayoutI18nTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Layouts/LayoutI18n/LayoutI18nTemplatePartial.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#dad09ffd-5c83-478f-9a1b-6bcc64db7330</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Layouts/LayoutI18n/LayoutI18nTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Layouts/LayoutI18n/LayoutI18nTemplateRegistration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
       <CorrelationId>ModuleBuilder.Typescript.Templates.TypescriptTemplate.PreProcessT4#8c5aa670-87d7-4977-b41a-db6a322133a6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/NuxtConfig/NuxtConfigTemplate.cs</ApplicationRelativeFilePath>

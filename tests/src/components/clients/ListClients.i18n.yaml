@@ -1,3 +1,13 @@
+af:
+  table:
+    clientName: Client Name
+    actions:
+      delete:
+        label: Delete
+        icon: ic:twotone-delete
+      edit:
+        label: Edit
+        icon: ic:twotone-edit
 en:
   table:
     clientName: Client Name

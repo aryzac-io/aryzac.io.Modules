@@ -47,9 +47,19 @@ namespace Aryzac.IO.Modules.Client.Api
 
             public string Name => _stereotype.Name;
 
+            public IElement Locale()
+            {
+                return _stereotype.GetProperty<IElement>("Locale");
+            }
+
             public string Icon()
             {
                 return _stereotype.GetProperty<string>("Icon");
+            }
+
+            public string Label()
+            {
+                return _stereotype.GetProperty<string>("Label");
             }
 
         }

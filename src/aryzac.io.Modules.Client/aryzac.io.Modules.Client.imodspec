@@ -28,6 +28,10 @@
       <role>Default</role>
       <location></location>
     </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Layouts.Layout i18n" externalReference="dad09ffd-5c83-478f-9a1b-6bcc64db7330">
+      <role>Default</role>
+      <location></location>
+    </template>
     <template id="Aryzac.IO.Modules.Client.Files.NuxtConfig" externalReference="8c5aa670-87d7-4977-b41a-db6a322133a6">
       <role>Default</role>
       <location></location>

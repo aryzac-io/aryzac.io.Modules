@@ -7,78 +7,7 @@
 <#@ import namespace="Intent.Metadata.Models" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
-<i18n lang="yaml">
-en:
-<#
-  if (Model.TopNavigation != null)
-  {
-  #>
-  appbar:
-    navigation:
-      <#
-    foreach (var child in Model.TopNavigation.InternalElement.ChildElements)
-    {
-      if (child.IsTopNavigationSectionModel())
-      {
-        foreach (var section in Model.TopNavigation.Sections)
-        {
-          foreach (var item in section.Items)
-          {
-            item.TryGetNavigationItemSettings(out var navigationSettings);
-            #><#= item.Name.ToPascalCase().ToCamelCase() #>: <#= item.Name #>
-<# if (navigationSettings.Icon() != null) 
-{ #>      <#= item.Name.ToPascalCase().ToCamelCase() #>Icon: <#= navigationSettings.Icon() #>
-<# } #>
-      <#
-          }
-        }
-      }
-    }
-  }
-#>
-
-<#
-  if (Model.SidebarNavigation != null)
-  {
-  #>
-  sidebar:
-    navigation:
-      <#
-    foreach (var section in Model.SidebarNavigation.Sections)
-    {
-      foreach (var item in section.Items)
-      {
-            item.TryGetNavigationItemSettings(out var navigationSettings);
-        #><#= item.Name.ToPascalCase().ToCamelCase() #>: <#= item.Name #>
-<# if (navigationSettings.Icon() != null) 
-{ #>      <#= item.Name.ToPascalCase().ToCamelCase() #>Icon: <#= navigationSettings.Icon() #>
-<# } #>
-      <#
-      }
-    }
-  }
-#>
-
-<#
-  if (Model.BreadcrumbNavigation != null)
-  {
-  #>
-  breadcrumb:
-    navigation:
-      <#
-    foreach (var item in Model.BreadcrumbNavigation.Items)
-    {
-      item.TryGetNavigationItemSettings(out var navigationSettings);
-      #><#= item.Name.ToPascalCase().ToCamelCase() #>: <#= item.Name #>
-<# if (navigationSettings.Icon() != null) 
-{ #>      <#= item.Name.ToPascalCase().ToCamelCase() #>Icon: <#= navigationSettings.Icon() #>
-<# } #>
-    <#
-    }
-  }
-#>
-
-</i18n>
+<i18n lang="yaml" src="./<#= Model.Name #>.i18n.yaml" />
 
 <script setup lang="ts">
 const { t } = useI18n();
@@ -129,9 +58,9 @@ if (Model.TopNavigation != null)
 
           #>setupSectionItem(
   "appbar",
-  t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>"),
+  t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"),
   <# if (navigationSettings.Icon() != null) 
-  { #>t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>Icon")<# 
+  { #>t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
   } 
   else 
   { #>null<#
@@ -164,9 +93,9 @@ if (Model.SidebarNavigation != null)
 
       #>setupSectionItem(
   "sidebar",
-  t("sidebar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>"),
+  t("sidebar.navigation.<#= section.Name.ToPascalCase().ToCamelCase() #>.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"),
   <# if (navigationSettings.Icon() != null) 
-  { #>t("sidebar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>Icon")<# 
+  { #>t("sidebar.navigation.<#= section.Name.ToPascalCase().ToCamelCase() #>.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
   } 
   else 
   { #>null<#
@@ -191,9 +120,9 @@ if (Model.BreadcrumbNavigation != null)
 
       #>setupSectionItem(
   "breadcrumb", 
-  t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>"), 
+  t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"), 
   <# if (navigationSettings.Icon() != null) 
-  { #>t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>Icon")<# 
+  { #>t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
   } 
   else 
   { #>null<#

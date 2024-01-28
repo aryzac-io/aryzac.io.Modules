@@ -1,17 +1,4 @@
-<i18n lang="yaml">
-en:
-  appbar:
-    navigation:
-      home: Home
-      clients: Clients
-      
-
-  breadcrumb:
-    navigation:
-      home: Home
-      homeIcon: heroicons:home-20-solid
-    
-</i18n>
+<i18n lang="yaml" src="./default.i18n.yaml" />
 
 <script setup lang="ts">
 const { t } = useI18n();
@@ -47,31 +34,39 @@ clearSections(true);
 // Setup Appbar
 setupSectionItem(
   "appbar",
-  t("appbar.navigation.home"),
+  t("appbar.navigation.home.label"),
   null,
   "/"
 );
 setupSectionItem(
   "appbar",
-  t("appbar.navigation.clients"),
+  t("appbar.navigation.clients.label"),
   null,
   "/clients"
 );
 
+// Setup Sidebar
+setupSectionItem(
+  "sidebar",
+  t("sidebar.navigation.newSidebarNavigationSection.newNavigationItem.label"),
+  null,
+  "/"
+);
 
 // Setup Breadcrumb
 setupSectionItem(
   "breadcrumb", 
-  t("breadcrumb.navigation.home"), 
-  t("breadcrumb.navigation.homeIcon"), 
+  t("breadcrumb.navigation.home.label"), 
+  t("breadcrumb.navigation.home.icon"), 
   "/"
 );
 </script>
 
 <template>
   <div>
-  
-    <div class="min-h-screen">
+    <layout-sidebar />
+
+    <div class="lg:pl-72 min-h-screen">
 
       <layout-appbar />
       <layout-breadcrumbs />

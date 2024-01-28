@@ -1,3 +1,15 @@
+af:
+  personalInformation:
+    title: Personal Information
+    description: ''
+    firstNameTextBox:
+      label: FirstNameTextBox
+    lastNameTextBox:
+      label: LastNameTextBox
+    otherNamesTextBox:
+      label: OtherNamesTextBox
+    actions:
+      save: Save
 en:
   personalInformation:
     title: Personal Information
