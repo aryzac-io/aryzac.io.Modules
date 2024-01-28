@@ -6,7 +6,7 @@
     <type id="417dc03e-580b-450d-9d70-8a2a457d2a48">Checkbox</type>
   </targetTypes>
   <targetReferenceTypes />
-  <applyMode>on-create</applyMode>
+  <applyMode>manually</applyMode>
   <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
   <displayIcon>false</displayIcon>
   <displayIconFunction>return false;</displayIconFunction>

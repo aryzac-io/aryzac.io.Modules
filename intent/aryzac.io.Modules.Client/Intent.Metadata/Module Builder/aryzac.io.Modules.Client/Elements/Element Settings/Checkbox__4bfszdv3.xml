@@ -63,5 +63,53 @@
       <metadata />
       <childElements />
     </childElement>
+    <childElement id="68de6a19-2811-4b62-acbc-ff0b22789743" type="Element Event Settings" typeId="3c628ab0-2407-4fb0-8507-ddde986cff2e">
+      <name>NewElementEventSettings</name>
+      <display>[events]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>417dc03e-580b-450d-9d70-8a2a457d2a48</parentFolderId>
+      <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+      <packageName>Aryzac.IO.Modules.Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="b85ab312-abc5-4d49-b1e2-6da5bc734a5b" type="Element Event Handler" typeId="0ef412e3-d15a-45d3-bcd3-f646165f2eb6">
+          <name>On Created</name>
+          <display>On Created: Script</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="dac7a528-3600-4d4e-9201-e2d41baf921e">
+            <typeId>043eee26-1591-42ac-9f2c-fc911b070eb1</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.ModuleBuilder</typePackageName>
+            <typePackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>68de6a19-2811-4b62-acbc-ff0b22789743</parentFolderId>
+          <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>
+          <packageName>Aryzac.IO.Modules.Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="56bc0465-c1fe-4bca-9493-2a3ce88a4047" name="Script Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ModuleBuilder</definitionPackageName>
+              <definitionPackageId>9972b2a9-b749-4bba-b5c8-824bf694c6ef</definitionPackageId>
+              <properties>
+                <property name="73a4088f-626e-4d31-b0b2-113167f015b2" display="Script" value="/// &lt;reference path=&quot;../../../typings/elementmacro.context.api.d.ts&quot; /&gt;&#xD;&#xA;lookupTypesOf(&quot;Locale&quot;).forEach(locale =&gt; {&#xD;&#xA;    if (locale.hasStereotype(&quot;09876e82-e2d2-440a-9f22-2cb2d958d89d&quot;)) {&#xD;&#xA;        let settingsStereotype = element.addStereotype(&quot;1fafd144-4893-4a55-835a-487ad4b41bfe&quot;); // checkbox settings stereotype&#xD;&#xA;        settingsStereotype&#xD;&#xA;            .getProperty(&quot;Locale&quot;)&#xD;&#xA;            .setValue(locale.id);&#xD;&#xA;    }&#xD;&#xA;});&#xD;&#xA;lookupTypesOf(&quot;Locale&quot;).forEach(locale =&gt; {&#xD;&#xA;    if (!locale.hasStereotype(&quot;09876e82-e2d2-440a-9f22-2cb2d958d89d&quot;)) {&#xD;&#xA;        let settingsStereotype = element.addStereotype(&quot;1fafd144-4893-4a55-835a-487ad4b41bfe&quot;); // checkbox settings stereotype&#xD;&#xA;        settingsStereotype&#xD;&#xA;            .getProperty(&quot;Locale&quot;)&#xD;&#xA;            .setValue(locale.id);&#xD;&#xA;    }&#xD;&#xA;});&#xD;&#xA;" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
   </childElements>
 </class>

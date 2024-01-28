@@ -6,7 +6,7 @@
     <type id="9ca4af5b-3e0c-45dd-80d5-13144986df9c">Label</type>
   </targetTypes>
   <targetReferenceTypes />
-  <applyMode>on-create</applyMode>
+  <applyMode>manually</applyMode>
   <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
   <displayIcon>false</displayIcon>
   <displayIconFunction>return false;</displayIconFunction>

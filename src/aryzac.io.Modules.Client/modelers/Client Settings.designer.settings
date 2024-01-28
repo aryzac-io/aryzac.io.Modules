@@ -890,6 +890,28 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("5b660009-8997-4ec3-9b41-0fcded5e97b5"); // section settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("5b660009-8997-4ec3-9b41-0fcded5e97b5"); // section settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Heading" typeId="2bf5bef0-a091-4ff8-a5d6-fe931a86616f">
@@ -922,6 +944,28 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("3fc958c7-8c35-42f6-8f40-388ad0494fbb"); // heading settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("3fc958c7-8c35-42f6-8f40-388ad0494fbb"); // heading settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings>
             <childElementSetting type="Heading Attribute" typeId="e33dad05-f11e-4dde-86e7-984be7aac580">
               <icon type="FontAwesome" source="file-o" />
@@ -965,6 +1009,28 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("76a05306-e432-445c-a3ef-1bc5b4869a7d"); // textbox settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("76a05306-e432-445c-a3ef-1bc5b4869a7d"); // textbox settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Checkbox" typeId="417dc03e-580b-450d-9d70-8a2a457d2a48">
@@ -986,6 +1052,28 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("1fafd144-4893-4a55-835a-487ad4b41bfe"); // checkbox settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("1fafd144-4893-4a55-835a-487ad4b41bfe"); // checkbox settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Label" typeId="9ca4af5b-3e0c-45dd-80d5-13144986df9c">
@@ -1007,6 +1095,28 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("ea62dc6f-ed7c-46c5-bcd9-c717d616f590"); // label settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("ea62dc6f-ed7c-46c5-bcd9-c717d616f590"); // label settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Radio Button" typeId="ce51a148-b367-488b-8659-3e357e55419b">
@@ -1049,6 +1159,28 @@ execute(element);
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("7c3e71c5-7d9d-47eb-b0fc-8473359257bb"); // text-area settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("7c3e71c5-7d9d-47eb-b0fc-8473359257bb"); // text-area settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Select" typeId="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">
@@ -1103,6 +1235,28 @@ execute(element);
             </option>
           </mappingOptions>
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("d159f0b9-8d24-40b6-900f-6af71a512072"); // select settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("d159f0b9-8d24-40b6-900f-6af71a512072"); // select settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings>
             <childElementSetting type="Value" typeId="cc25d720-1d70-4554-92b4-1aad67143395">
               <icon type="FontAwesome" source="file-o" />
@@ -1609,8 +1763,8 @@ execute(element);
       <macros>
         <macro trigger="on-created">
           <script>/// &lt;reference path="../../typings/elementmacro.context.api.d.ts" /&gt;
-let defaultLocalte = createElement("Locale", "en", element.id);
-defaultLocalte.addStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d"); // default locale stereotype
+let defaultLocale = createElement("Locale", "en", element.id);
+defaultLocale.addStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d"); // default locale stereotype
 </script>
         </macro>
       </macros>

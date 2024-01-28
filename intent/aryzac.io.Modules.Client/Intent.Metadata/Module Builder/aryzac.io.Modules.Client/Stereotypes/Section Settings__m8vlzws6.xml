@@ -6,7 +6,7 @@
     <type id="359ec87c-144f-4be1-b3d1-fe182093bb3e">Section</type>
   </targetTypes>
   <targetReferenceTypes />
-  <applyMode>on-create</applyMode>
+  <applyMode>manually</applyMode>
   <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
   <displayIcon>false</displayIcon>
   <displayIconFunction>return false;</displayIconFunction>

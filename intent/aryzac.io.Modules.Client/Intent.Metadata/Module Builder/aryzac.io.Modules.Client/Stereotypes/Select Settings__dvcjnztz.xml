@@ -6,7 +6,7 @@
     <type id="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">Select</type>
   </targetTypes>
   <targetReferenceTypes />
-  <applyMode>on-create</applyMode>
+  <applyMode>manually</applyMode>
   <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
   <displayIcon>false</displayIcon>
   <displayIconFunction>return false;</displayIconFunction>

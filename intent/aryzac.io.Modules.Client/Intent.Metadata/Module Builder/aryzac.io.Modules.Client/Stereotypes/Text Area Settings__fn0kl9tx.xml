@@ -6,7 +6,7 @@
     <type id="9fb5d59b-af35-4484-b7f2-410a30365bbf">Text Area</type>
   </targetTypes>
   <targetReferenceTypes />
-  <applyMode>on-create</applyMode>
+  <applyMode>manually</applyMode>
   <icon type="UrlImagePath" source="./img/icons/common/StereotypeDef_256x.png" />
   <displayIcon>false</displayIcon>
   <displayIconFunction>return false;</displayIconFunction>
