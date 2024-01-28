@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3830580f-d0f5-4822-bf0a-0ce1ed9e88bb" type="Component Group" typeId="027f8bb9-9b28-4c1d-a516-8c3daa70e46d">
+  <name>Default</name>
+  <display>Default</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>403c5bdc-2e68-4166-83c2-f5b1e88e4a19</parentFolderId>
+  <packageId>403c5bdc-2e68-4166-83c2-f5b1e88e4a19</packageId>
+  <packageName>Nuxt Application</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="08b4c68f-3654-44cc-b3a1-87de79c23936" name="Component Group Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.ApplicationTemplate.Builder</definitionPackageName>
+      <definitionPackageId>002e9a7f-e5b7-4392-a60f-b60ae4e86262</definitionPackageId>
+      <properties>
+        <property name="54b29a03-082b-407a-b42e-cbacbcfa7fd7" display="Selection Mode" value="Allow Multiple" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="30de9e2c-932d-4c05-a81e-11b14f5924de" type="Component" typeId="47064ef1-2295-4287-8301-c446910a1b1e">
+      <name>Nuxt Application</name>
+      <display>Nuxt Application</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>3830580f-d0f5-4822-bf0a-0ce1ed9e88bb</parentFolderId>
+      <packageId>403c5bdc-2e68-4166-83c2-f5b1e88e4a19</packageId>
+      <packageName>Nuxt Application</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="78da9b5b-428f-4b1e-a5e5-120c7b3d87d3" name="Component Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.ApplicationTemplate.Builder</definitionPackageName>
+          <definitionPackageId>002e9a7f-e5b7-4392-a60f-b60ae4e86262</definitionPackageId>
+          <properties>
+            <property name="004dc68b-f2c0-4859-9f03-fb2e29505437" display="Icon" value="{&quot;source&quot;:&quot;data:image/png;base64,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&quot;,&quot;type&quot;:0,&quot;absolutePathRelativeTo&quot;:null}" isActive="true" />
+            <property name="476744d2-a4bc-4750-a9db-7022edf576c5" display="Description" isActive="true" />
+            <property name="b928f640-5dfd-4676-b8c9-4aadac826d18" display="Include by Default" value="true" isActive="true" />
+            <property name="07af017d-20a4-4e73-978f-ca4a59351f70" display="Is Required" value="true" isActive="true" />
+            <property name="ed4d09bb-52e7-43dc-91db-6244d5390e53" display="Dependencies" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="fda7f076-ea8a-4f5d-852b-23a5c79c3549" type="Module" typeId="ef75f8f0-520c-4ab8-814f-5e75f4877dd7">
+          <name>Aryzac.IO.Modules.Client</name>
+          <display>Aryzac.IO.Modules.Client</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>30de9e2c-932d-4c05-a81e-11b14f5924de</parentFolderId>
+          <packageId>403c5bdc-2e68-4166-83c2-f5b1e88e4a19</packageId>
+          <packageName>Nuxt Application</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="7033e6f4-2a22-4357-bd65-f0ec06c516d5" name="Module Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ApplicationTemplate.Builder</definitionPackageName>
+              <definitionPackageId>002e9a7f-e5b7-4392-a60f-b60ae4e86262</definitionPackageId>
+              <properties>
+                <property name="8235e942-6dec-4576-be44-3543b35ca44c" display="Version" value="1.0.1-pre.11" isActive="true" />
+                <property name="860a2a3a-9812-4fff-acc6-b342ddb23f96" display="Include By Default" value="true" isActive="true" />
+                <property name="42e43cfe-4073-4f7f-8a7e-ef79c150c8c7" display="Is Required" value="true" isActive="true" />
+                <property name="3f426089-6e92-49cf-a938-bda52e02b949" display="Install Metadata Only" value="false" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="bee5bd11-49cf-4d99-bcac-ac8286c2297e" type="Module" typeId="ef75f8f0-520c-4ab8-814f-5e75f4877dd7">
+          <name>Intent.OutputTargets.Folders</name>
+          <display>Intent.OutputTargets.Folders</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>30de9e2c-932d-4c05-a81e-11b14f5924de</parentFolderId>
+          <packageId>403c5bdc-2e68-4166-83c2-f5b1e88e4a19</packageId>
+          <packageName>Nuxt Application</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="7033e6f4-2a22-4357-bd65-f0ec06c516d5" name="Module Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ApplicationTemplate.Builder</definitionPackageName>
+              <definitionPackageId>002e9a7f-e5b7-4392-a60f-b60ae4e86262</definitionPackageId>
+              <properties>
+                <property name="8235e942-6dec-4576-be44-3543b35ca44c" display="Version" value="3.4.0" isActive="true" />
+                <property name="860a2a3a-9812-4fff-acc6-b342ddb23f96" display="Include By Default" value="true" isActive="true" />
+                <property name="42e43cfe-4073-4f7f-8a7e-ef79c150c8c7" display="Is Required" value="true" isActive="true" />
+                <property name="3f426089-6e92-49cf-a938-bda52e02b949" display="Install Metadata Only" value="false" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="68e3af97-41bf-4ccf-af4e-4787f8b9151f" type="Module" typeId="ef75f8f0-520c-4ab8-814f-5e75f4877dd7">
+          <name>Intent.Common.Types</name>
+          <display>Intent.Common.Types</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>30de9e2c-932d-4c05-a81e-11b14f5924de</parentFolderId>
+          <packageId>403c5bdc-2e68-4166-83c2-f5b1e88e4a19</packageId>
+          <packageName>Nuxt Application</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="7033e6f4-2a22-4357-bd65-f0ec06c516d5" name="Module Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.ApplicationTemplate.Builder</definitionPackageName>
+              <definitionPackageId>002e9a7f-e5b7-4392-a60f-b60ae4e86262</definitionPackageId>
+              <properties>
+                <property name="8235e942-6dec-4576-be44-3543b35ca44c" display="Version" value="3.3.9" isActive="true" />
+                <property name="860a2a3a-9812-4fff-acc6-b342ddb23f96" display="Include By Default" value="true" isActive="true" />
+                <property name="42e43cfe-4073-4f7f-8a7e-ef79c150c8c7" display="Is Required" value="true" isActive="true" />
+                <property name="3f426089-6e92-49cf-a938-bda52e02b949" display="Install Metadata Only" value="false" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

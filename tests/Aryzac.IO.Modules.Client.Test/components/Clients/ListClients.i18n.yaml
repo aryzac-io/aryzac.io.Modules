@@ -1,0 +1,26 @@
+af:
+  table:
+    clientName: Client Name
+    actions:
+      view:
+        label: View
+        icon: ic:twotone-remove-red-eye
+      edit:
+        label: Edit
+        icon: ic:twotone-edit
+      delete:
+        label: Delete
+        icon: ic:twotone-delete-forever
+en:
+  table:
+    clientName: Client Name
+    actions:
+      view:
+        label: View
+        icon: ic:twotone-remove-red-eye
+      edit:
+        label: Edit
+        icon: ic:twotone-edit
+      delete:
+        label: Delete
+        icon: ic:twotone-delete-forever

@@ -332,7 +332,8 @@ foreach (var action in Model.View.Heading.Actions.Actions)
       }
 #>
     action: async () => {
-      await navigateTo(`<#= pageUrl #>`);
+      const localeRoute = useLocaleRoute();
+      await navigateTo(localeRoute(`<#= pageUrl #>`));
     },
 <#
     }
@@ -443,7 +444,8 @@ foreach (var action in table.Actions.Actions)
       }
 #>
     action: async (item: <#= ((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
-      await navigateTo(`<#= pageUrl #>`);
+      const localeRoute = useLocaleRoute();
+      await navigateTo(localeRoute(`<#= pageUrl #>`));
     },
 <#
     }
@@ -541,7 +543,7 @@ const <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options = c
           var label = control.AsLabelModel();
           var labelField = "";
             
-          var mappedColumn = label.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label");
+          var mappedColumn = label.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label" && m.TargetElement.Id == control.Id);
 #>
 const <#= label.InternalElement.Name.ToPascalCase().ToCamelCase() #>Label = computed(() => {
 <#
@@ -629,7 +631,8 @@ foreach (var action in Model.View.Table.Actions.Actions)
       }
 #>
     action: async (item: <#= ((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
-      await navigateTo(`<#= pageUrl #>`);
+      const localeRoute = useLocaleRoute();
+      await navigateTo(localeRoute(`<#= pageUrl #>`));
     },
 <#
     }

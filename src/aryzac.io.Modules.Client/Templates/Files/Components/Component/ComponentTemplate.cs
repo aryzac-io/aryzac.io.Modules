@@ -1051,16 +1051,17 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             
             #line default
             #line hidden
-            this.Write("    action: async () => {\r\n      await navigateTo(`");
+            this.Write("    action: async () => {\r\n      const localeRoute = useLocaleRoute();\r\n      awa" +
+                    "it navigateTo(localeRoute(`");
             
-            #line 335 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 336 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(pageUrl));
             
             #line default
             #line hidden
-            this.Write("`);\r\n    },\r\n");
+            this.Write("`));\r\n    },\r\n");
             
-            #line 337 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 338 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
     else if (action.Command is not null)
@@ -1071,21 +1072,21 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write("    action: async (item: ");
             
-            #line 342 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 343 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)action.Command.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name));
             
             #line default
             #line hidden
             this.Write(") => {\r\n      await ");
             
-            #line 343 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 344 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("(");
             
-            #line 343 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 344 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 	foreach (var mapping in action.Command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
     {
@@ -1102,13 +1103,13 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write("item.");
             
-            #line 353 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 354 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 353 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 354 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
                 if (mapping.MappedEnds.Last() != mappedEnd)
 		        {
@@ -1118,7 +1119,7 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write(", ");
             
-            #line 356 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 357 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		        }
                     break;
@@ -1131,7 +1132,7 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write(");\r\n    },\r\n");
             
-            #line 364 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 365 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
 
@@ -1140,7 +1141,7 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write("  },\r\n");
             
-            #line 368 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 369 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 }
 }
@@ -1150,7 +1151,7 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write("];\r\n\r\n");
             
-            #line 373 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 374 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
 	else if (component.IsSectionModel()) // Section
@@ -1167,14 +1168,14 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write("// ");
             
-            #line 384 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 385 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name));
             
             #line default
             #line hidden
             this.Write(" Options\r\n");
             
-            #line 385 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 386 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
           var table = control.AsTableModel();
 
@@ -1183,14 +1184,14 @@ foreach (var action in Model.View.Heading.Actions.Actions)
             #line hidden
             this.Write("const ");
             
-            #line 387 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 388 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Headers = [\r\n");
             
-            #line 388 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 389 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
  
 foreach (var column in table.Columns)
 {
@@ -1201,35 +1202,35 @@ foreach (var column in table.Columns)
             #line hidden
             this.Write("  {\r\n\tkey: \'");
             
-            #line 394 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 395 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(column.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("\',\r\n\tlabel: t(\"");
             
-            #line 395 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 396 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 395 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 396 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(column.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("\"),\r\n    data: (item: ");
             
-            #line 396 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 397 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)mappedColumn.Sources.First().Element).ParentElement.Name));
             
             #line default
             #line hidden
             this.Write(") => {\r\n");
             
-            #line 397 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 398 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     var mappedExpression = mappedColumn.MappingExpression;
     foreach (var source in mappedColumn.Sources)
@@ -1241,21 +1242,21 @@ foreach (var column in table.Columns)
             #line hidden
             this.Write("      const ");
             
-            #line 403 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 404 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" = item.");
             
-            #line 403 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 404 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" || \'\';\r\n");
             
-            #line 404 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 405 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
 
@@ -1264,14 +1265,14 @@ foreach (var column in table.Columns)
             #line hidden
             this.Write("      const mappedExpression = `");
             
-            #line 407 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 408 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
             
             #line default
             #line hidden
             this.Write("`;\r\n      return mappedExpression;\r\n    }\r\n  },\r\n");
             
-            #line 411 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 412 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 }
 
@@ -1280,14 +1281,14 @@ foreach (var column in table.Columns)
             #line hidden
             this.Write("];\r\n\r\nconst ");
             
-            #line 415 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 416 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Actions = [\r\n");
             
-            #line 416 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 417 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
  
 foreach (var action in table.Actions.Actions)
 {
@@ -1298,21 +1299,21 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("  {\r\n    label: t(\"");
             
-            #line 422 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 423 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".actions.");
             
-            #line 422 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 423 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\"),\r\n");
             
-            #line 423 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 424 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
       if (actionSettings.Icon() is not null)
       {
@@ -1322,21 +1323,21 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("    icon: t(\"");
             
-            #line 427 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 428 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".actions.");
             
-            #line 427 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 428 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".icon\"),\r\n");
             
-            #line 428 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 429 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
       }
 
@@ -1344,7 +1345,7 @@ foreach (var action in table.Actions.Actions)
             #line default
             #line hidden
             
-            #line 431 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 432 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     if (action.Navigation is not null)
     {
@@ -1364,21 +1365,22 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("    action: async (item: ");
             
-            #line 445 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 446 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name));
             
             #line default
             #line hidden
-            this.Write(") => {\r\n      await navigateTo(`");
+            this.Write(") => {\r\n      const localeRoute = useLocaleRoute();\r\n      await navigateTo(local" +
+                    "eRoute(`");
             
-            #line 446 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 448 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(pageUrl));
             
             #line default
             #line hidden
-            this.Write("`);\r\n    },\r\n");
+            this.Write("`));\r\n    },\r\n");
             
-            #line 448 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 450 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
     else if (action.Command is not null)
@@ -1389,21 +1391,21 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("    action: async (item: ");
             
-            #line 453 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 455 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)action.Command.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name));
             
             #line default
             #line hidden
             this.Write(") => {\r\n      await ");
             
-            #line 454 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 456 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("(");
             
-            #line 454 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 456 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 	foreach (var mapping in action.Command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
     {
@@ -1420,13 +1422,13 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("item.");
             
-            #line 464 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 466 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 464 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 466 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
                 if (mapping.MappedEnds.Last() != mappedEnd)
 		        {
@@ -1436,7 +1438,7 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write(", ");
             
-            #line 467 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 469 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		        }
                     break;
@@ -1449,7 +1451,7 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write(");\r\n    },\r\n");
             
-            #line 475 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 477 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
 
@@ -1458,7 +1460,7 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("  },\r\n");
             
-            #line 479 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 481 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 }
 
@@ -1467,7 +1469,7 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("];\r\n");
             
-            #line 482 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 484 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -1475,7 +1477,7 @@ foreach (var action in table.Actions.Actions)
             #line default
             #line hidden
             
-            #line 485 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 487 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         else if (control.IsSelectModel())
         {
@@ -1485,14 +1487,14 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("// ");
             
-            #line 489 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 491 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name));
             
             #line default
             #line hidden
             this.Write(" Options\r\n");
             
-            #line 490 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 492 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
           var select = control.AsSelectModel();
           var valueField = "";
@@ -1516,7 +1518,7 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("const ");
             
-            #line 508 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 510 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.InternalElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
@@ -1524,40 +1526,40 @@ foreach (var action in table.Actions.Actions)
             this.Write("Options = computed(() => {\r\n  const options: { value: string; label: string }[] =" +
                     " [];\r\n  if (");
             
-            #line 510 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 512 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.InternalElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 510 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 512 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.Query.Mapping.Element.Name));
             
             #line default
             #line hidden
             this.Write("Data.value) {\r\n    ");
             
-            #line 511 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 513 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.InternalElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 511 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 513 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.Query.Mapping.Element.Name));
             
             #line default
             #line hidden
             this.Write("Data.value.forEach((item: ");
             
-            #line 511 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 513 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.Query.Mapping.Element.TypeReference.Element.Name));
             
             #line default
             #line hidden
             this.Write(") => {\r\n");
             
-            #line 512 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 514 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     var mappedExpression = mappedColumn.MappingExpression;
     foreach (var source in mappedColumn.Sources)
@@ -1569,21 +1571,21 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("      const ");
             
-            #line 518 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 520 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" = item.");
             
-            #line 518 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 520 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" || \'\';\r\n");
             
-            #line 519 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 521 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
 
@@ -1592,14 +1594,14 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("      const mappedExpression = `");
             
-            #line 522 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 524 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
             
             #line default
             #line hidden
             this.Write("`;\r\n\r\n      options.push({\r\n        value: item.");
             
-            #line 525 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 527 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(valueField.ToPascalCase().ToCamelCase()));
             
             #line default
@@ -1607,7 +1609,7 @@ foreach (var action in table.Actions.Actions)
             this.Write(",\r\n        label: mappedExpression,\r\n      });\r\n    });\r\n  }\r\n  return options;\r\n" +
                     "});\r\n");
             
-            #line 532 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 534 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -1615,7 +1617,7 @@ foreach (var action in table.Actions.Actions)
             #line default
             #line hidden
             
-            #line 535 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 537 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         else if (control.IsLabelModel())
         {
@@ -1625,33 +1627,33 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("// ");
             
-            #line 539 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 541 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name));
             
             #line default
             #line hidden
             this.Write(" Options\r\n");
             
-            #line 540 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 542 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
           var label = control.AsLabelModel();
           var labelField = "";
             
-          var mappedColumn = label.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label");
+          var mappedColumn = label.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label" && m.TargetElement.Id == control.Id);
 
             
             #line default
             #line hidden
             this.Write("const ");
             
-            #line 546 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 548 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(label.InternalElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Label = computed(() => {\r\n");
             
-            #line 547 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 549 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
           var mappedExpression = mappedColumn.MappingExpression;
           foreach (var source in mappedColumn.Sources)
@@ -1663,21 +1665,21 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("  const ");
             
-            #line 553 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 555 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" = model.");
             
-            #line 553 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 555 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" || \'\';\r\n");
             
-            #line 554 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 556 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
           }
 
@@ -1686,14 +1688,14 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("  const mappedExpression = `");
             
-            #line 557 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 559 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
             
             #line default
             #line hidden
             this.Write("`;\r\n  return mappedExpression;\r\n});\r\n");
             
-            #line 560 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 562 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -1701,7 +1703,7 @@ foreach (var action in table.Actions.Actions)
             #line default
             #line hidden
             
-            #line 563 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 565 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
       }
 
@@ -1709,7 +1711,7 @@ foreach (var action in table.Actions.Actions)
             #line default
             #line hidden
             
-            #line 566 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 568 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 	}
 	else if (component.IsTableModel()) // Table
@@ -1720,21 +1722,21 @@ foreach (var action in table.Actions.Actions)
             #line hidden
             this.Write("\r\n// ");
             
-            #line 572 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 574 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name));
             
             #line default
             #line hidden
             this.Write(" Options\r\nconst ");
             
-            #line 573 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 575 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Headers = [\r\n");
             
-            #line 574 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 576 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
  
 foreach (var column in Model.View.Table.Columns)
 {
@@ -1745,35 +1747,35 @@ foreach (var column in Model.View.Table.Columns)
             #line hidden
             this.Write("  {\r\n\tkey: \'");
             
-            #line 580 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 582 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(column.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("\',\r\n\tlabel: t(\"");
             
-            #line 581 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 583 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 581 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 583 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(column.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("\"),\r\n    data: (item: ");
             
-            #line 582 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 584 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)mappedColumn.Sources.First().Element).ParentElement.Name));
             
             #line default
             #line hidden
             this.Write(") => {\r\n");
             
-            #line 583 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 585 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     var mappedExpression = mappedColumn.MappingExpression;
     foreach (var source in mappedColumn.Sources)
@@ -1785,21 +1787,21 @@ foreach (var column in Model.View.Table.Columns)
             #line hidden
             this.Write("      const ");
             
-            #line 589 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 591 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" = item.");
             
-            #line 589 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 591 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" || \'\';\r\n");
             
-            #line 590 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 592 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
 
@@ -1808,14 +1810,14 @@ foreach (var column in Model.View.Table.Columns)
             #line hidden
             this.Write("      const mappedExpression = `");
             
-            #line 593 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 595 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
             
             #line default
             #line hidden
             this.Write("`;\r\n      return mappedExpression;\r\n    }\r\n  },\r\n");
             
-            #line 597 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 599 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 }
 
@@ -1824,14 +1826,14 @@ foreach (var column in Model.View.Table.Columns)
             #line hidden
             this.Write("];\r\n\r\nconst ");
             
-            #line 601 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 603 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Actions = [\r\n");
             
-            #line 602 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 604 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
  
 foreach (var action in Model.View.Table.Actions.Actions)
 {
@@ -1842,21 +1844,21 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("  {\r\n    label: t(\"");
             
-            #line 608 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 610 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".actions.");
             
-            #line 608 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 610 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\"),\r\n");
             
-            #line 609 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 611 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
       if (actionSettings.Icon() is not null)
       {
@@ -1866,21 +1868,21 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("    icon: t(\"");
             
-            #line 613 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 615 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".actions.");
             
-            #line 613 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 615 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".icon\"),\r\n");
             
-            #line 614 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 616 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
       }
 
@@ -1888,7 +1890,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line default
             #line hidden
             
-            #line 617 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 619 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     if (action.Navigation is not null)
     {
@@ -1908,21 +1910,22 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("    action: async (item: ");
             
-            #line 631 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 633 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name));
             
             #line default
             #line hidden
-            this.Write(") => {\r\n      await navigateTo(`");
+            this.Write(") => {\r\n      const localeRoute = useLocaleRoute();\r\n      await navigateTo(local" +
+                    "eRoute(`");
             
-            #line 632 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 635 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(pageUrl));
             
             #line default
             #line hidden
-            this.Write("`);\r\n    },\r\n");
+            this.Write("`));\r\n    },\r\n");
             
-            #line 634 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 637 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
     else if (action.Command is not null)
@@ -1933,21 +1936,21 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("    action: async (item: ");
             
-            #line 639 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 642 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)action.Command.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name));
             
             #line default
             #line hidden
             this.Write(") => {\r\n      await ");
             
-            #line 640 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 643 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("(");
             
-            #line 640 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 643 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 	foreach (var mapping in action.Command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
     {
@@ -1964,13 +1967,13 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("item.");
             
-            #line 650 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 653 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 650 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 653 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
                 if (mapping.MappedEnds.Last() != mappedEnd)
 		        {
@@ -1980,7 +1983,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write(", ");
             
-            #line 653 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 656 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		        }
                     break;
@@ -1993,7 +1996,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write(");\r\n    },\r\n");
             
-            #line 661 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 664 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
 
@@ -2002,7 +2005,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("  },\r\n");
             
-            #line 665 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 668 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 }
 
@@ -2011,7 +2014,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("];\r\n\r\n");
             
-            #line 669 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 672 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
  
     }
   }
@@ -2022,7 +2025,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("\r\nonMounted(() => {\r\n");
             
-            #line 676 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 679 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
   foreach (var query in Queries)
   {
@@ -2032,20 +2035,20 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("  ");
             
-            #line 680 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 683 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 680 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 683 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(query.Mapping.Element.Name.ToPascalCase()));
             
             #line default
             #line hidden
             this.Write("Execute();\r\n");
             
-            #line 681 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 684 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
   }
 
@@ -2054,7 +2057,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
             #line hidden
             this.Write("});\r\n</script>\r\n\r\n<template>\r\n");
             
-            #line 688 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 691 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
  
 if (Model.View != null)
 {
@@ -2068,28 +2071,28 @@ if (Model.View != null)
             #line hidden
             this.Write("  <ui-heading-page\r\n    :title=\"");
             
-            #line 697 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 700 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Heading.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Title\"\r\n    :attributes=\"");
             
-            #line 698 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 701 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Heading.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Attributes\"\r\n    :actions=\"");
             
-            #line 699 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 702 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Heading.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Actions\"\r\n  />\r\n");
             
-            #line 701 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 704 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
     }
     else if (component.IsSectionModel()) // Section
@@ -2101,21 +2104,21 @@ if (Model.View != null)
             #line hidden
             this.Write("  <ui-editor-section\r\n    :title=\"t(\'");
             
-            #line 708 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 711 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".title\')\"\r\n    :description=\"t(\'");
             
-            #line 709 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 712 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".description\')\"\r\n  >\r\n");
             
-            #line 711 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 714 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
       foreach (var control in section.InternalElement.ChildElements)
 	  {
@@ -2124,7 +2127,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 715 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 718 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsTextboxModel()) 
 		{
@@ -2134,28 +2137,28 @@ if (Model.View != null)
             #line hidden
             this.Write("     <ui-input-textbox \r\n       v-model=\"model.");
             
-            #line 720 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 723 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedTextboxName(control.AsTextboxModel())));
             
             #line default
             #line hidden
             this.Write("\" \r\n       :label=\"t(\'");
             
-            #line 721 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 724 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 721 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 724 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\')\" />\r\n");
             
-            #line 722 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 725 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2163,7 +2166,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 725 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 728 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsTextAreaModel()) 
 		{
@@ -2173,28 +2176,28 @@ if (Model.View != null)
             #line hidden
             this.Write("     <ui-input-text-area \r\n       v-model=\"model.");
             
-            #line 730 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 733 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedTextAreaName(control.AsTextAreaModel())));
             
             #line default
             #line hidden
             this.Write("\" \r\n       :label=\"t(\'");
             
-            #line 731 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 734 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 731 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 734 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\')\" />\r\n");
             
-            #line 732 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 735 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2202,7 +2205,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 735 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 738 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsCheckboxModel()) 
 		{
@@ -2212,42 +2215,42 @@ if (Model.View != null)
             #line hidden
             this.Write("     <ui-input-checkbox \r\n       v-model=\"model.");
             
-            #line 740 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 743 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedCheckboxName(control.AsCheckboxModel())));
             
             #line default
             #line hidden
             this.Write("\" \r\n       :label=\"t(\'");
             
-            #line 741 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 744 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 741 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 744 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\')\" \r\n       :description=\"t(\'");
             
-            #line 742 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 745 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 742 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 745 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".description\')\" />\r\n");
             
-            #line 743 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 746 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2255,7 +2258,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 746 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 749 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsLabelModel()) 
 		{
@@ -2265,28 +2268,28 @@ if (Model.View != null)
             #line hidden
             this.Write("     <ui-input-label \r\n       v-model=\"");
             
-            #line 751 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 754 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Label\" \r\n       :label=\"t(\'");
             
-            #line 752 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 755 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 752 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 755 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\')\" />\r\n");
             
-            #line 753 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 756 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2294,7 +2297,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 756 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 759 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsRadioButtonModel()) 
 		{
@@ -2304,28 +2307,28 @@ if (Model.View != null)
             #line hidden
             this.Write("     <ui-input-radio-button \r\n       v-model=\"model.");
             
-            #line 761 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 764 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedRadioButtonName(control.AsRadioButtonModel())));
             
             #line default
             #line hidden
             this.Write("\" \r\n       :label=\"t(\'");
             
-            #line 762 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 765 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 762 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 765 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\')\" />\r\n");
             
-            #line 763 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 766 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2333,7 +2336,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 766 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 769 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsSelectModel()) 
 		{
@@ -2361,35 +2364,35 @@ if (Model.View != null)
             #line hidden
             this.Write("     <ui-input-select \r\n       v-model=\"model.");
             
-            #line 789 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 792 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedSelectName(control.AsSelectModel())));
             
             #line default
             #line hidden
             this.Write("\" \r\n       :label=\"t(\'");
             
-            #line 790 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 793 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".");
             
-            #line 790 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 793 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\')\"\r\n       :options=\"");
             
-            #line 791 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 794 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.InternalElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Options\"\r\n      />\r\n");
             
-            #line 793 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 796 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2397,7 +2400,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 796 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 799 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsTableModel()) 
 		{
@@ -2408,34 +2411,34 @@ if (Model.View != null)
             #line hidden
             this.Write("  <ui-view-table\r\n    :items=\"");
             
-            #line 802 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 805 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 802 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 805 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Query.Mapping.Element.Name.ToPascalCase()));
             
             #line default
             #line hidden
             this.Write("Data\"\r\n    :headers=\"");
             
-            #line 803 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 806 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Headers\"\r\n    :actions=\"");
             
-            #line 804 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 807 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Actions\"\r\n    key=\"id\"\r\n  />\r\n");
             
-            #line 807 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 810 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2443,7 +2446,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 810 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 813 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		if (control.IsActionsModel()) 
 		{
@@ -2454,7 +2457,7 @@ if (Model.View != null)
             #line hidden
             this.Write("\r\n    <template #actions>\r\n");
             
-            #line 817 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 820 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 		  foreach (var action in actions.InternalElement.ChildElements)
 	      {
@@ -2465,7 +2468,7 @@ if (Model.View != null)
             #line hidden
             this.Write("      <button\r\n        type=\"button\"\r\n        @click=\"");
             
-            #line 824 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 827 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
@@ -2475,21 +2478,21 @@ if (Model.View != null)
                     "-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600\"\r\n      >\r\n  " +
                     "      {{ t(\'");
             
-            #line 827 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 830 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(component.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".actions.");
             
-            #line 827 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 830 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(".label\') }}\r\n      </button>\r\n    </template>\r\n    \r\n");
             
-            #line 831 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 834 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
           }
 
@@ -2497,7 +2500,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 834 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 837 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
         }
 
@@ -2505,7 +2508,7 @@ if (Model.View != null)
             #line default
             #line hidden
             
-            #line 837 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 840 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
       }
 
@@ -2514,7 +2517,7 @@ if (Model.View != null)
             #line hidden
             this.Write("  </ui-editor-section>\r\n");
             
-            #line 841 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 844 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
 
 	}
 	else if (component.IsTableModel()) // Table
@@ -2526,34 +2529,34 @@ if (Model.View != null)
             #line hidden
             this.Write("  <ui-view-table\r\n    :items=\"");
             
-            #line 848 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 851 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 848 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 851 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(table.Query.Mapping.Element.Name.ToPascalCase()));
             
             #line default
             #line hidden
             this.Write("Data\"\r\n    :headers=\"");
             
-            #line 849 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 852 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Headers\"\r\n    :actions=\"");
             
-            #line 850 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 853 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.View.Table.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Actions\"\r\n    key=\"id\"\r\n  />\r\n");
             
-            #line 853 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
+            #line 856 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\ComponentTemplate.tt"
  
     }
   }

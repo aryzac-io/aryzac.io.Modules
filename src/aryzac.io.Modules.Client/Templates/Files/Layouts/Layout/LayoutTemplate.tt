@@ -53,13 +53,13 @@ if (Model.TopNavigation != null)
       {
         foreach (var item in section.Items)
         {
-            item.TryGetNavigationItemSettings(out var navigationSettings);
+            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
             var page = item.TypeReference.Element.AsPageModel();
 
           #>setupSectionItem(
   "appbar",
   t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"),
-  <# if (navigationSettings.Icon() != null) 
+  <# if (navigationSettings?.Icon() != null) 
   { #>t("appbar.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
   } 
   else 
@@ -88,13 +88,13 @@ if (Model.SidebarNavigation != null)
   {
     foreach (var item in section.Items)
     {
-        item.TryGetNavigationItemSettings(out var navigationSettings);
+        var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
         var page = item.TypeReference.Element.AsPageModel();
 
       #>setupSectionItem(
   "sidebar",
   t("sidebar.navigation.<#= section.Name.ToPascalCase().ToCamelCase() #>.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"),
-  <# if (navigationSettings.Icon() != null) 
+  <# if (navigationSettings?.Icon() != null) 
   { #>t("sidebar.navigation.<#= section.Name.ToPascalCase().ToCamelCase() #>.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
   } 
   else 
@@ -115,13 +115,13 @@ if (Model.BreadcrumbNavigation != null)
 <#
   foreach (var item in Model.BreadcrumbNavigation.Items)
   {
-      item.TryGetNavigationItemSettings(out var navigationSettings);
+      var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
       var page = item.TypeReference.Element.AsPageModel();
 
       #>setupSectionItem(
   "breadcrumb", 
   t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"), 
-  <# if (navigationSettings.Icon() != null) 
+  <# if (navigationSettings?.Icon() != null) 
   { #>t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
   } 
   else 

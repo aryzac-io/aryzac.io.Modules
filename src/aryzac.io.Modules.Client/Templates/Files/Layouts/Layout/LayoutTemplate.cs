@@ -93,7 +93,7 @@ if (Model.TopNavigation != null)
       {
         foreach (var item in section.Items)
         {
-            item.TryGetNavigationItemSettings(out var navigationSettings);
+            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
             var page = item.TypeReference.Element.AsPageModel();
 
           
@@ -110,7 +110,7 @@ if (Model.TopNavigation != null)
             this.Write(".label\"),\r\n  ");
             
             #line 62 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- if (navigationSettings.Icon() != null) 
+ if (navigationSettings?.Icon() != null) 
   { 
             
             #line default
@@ -196,7 +196,7 @@ if (Model.SidebarNavigation != null)
   {
     foreach (var item in section.Items)
     {
-        item.TryGetNavigationItemSettings(out var navigationSettings);
+        var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
         var page = item.TypeReference.Element.AsPageModel();
 
       
@@ -220,7 +220,7 @@ if (Model.SidebarNavigation != null)
             this.Write(".label\"),\r\n  ");
             
             #line 97 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- if (navigationSettings.Icon() != null) 
+ if (navigationSettings?.Icon() != null) 
   { 
             
             #line default
@@ -291,7 +291,7 @@ if (Model.BreadcrumbNavigation != null)
 
   foreach (var item in Model.BreadcrumbNavigation.Items)
   {
-      item.TryGetNavigationItemSettings(out var navigationSettings);
+      var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
       var page = item.TypeReference.Element.AsPageModel();
 
       
@@ -308,7 +308,7 @@ if (Model.BreadcrumbNavigation != null)
             this.Write(".label\"), \r\n  ");
             
             #line 124 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Layouts\Layout\LayoutTemplate.tt"
- if (navigationSettings.Icon() != null) 
+ if (navigationSettings?.Icon() != null) 
   { 
             
             #line default

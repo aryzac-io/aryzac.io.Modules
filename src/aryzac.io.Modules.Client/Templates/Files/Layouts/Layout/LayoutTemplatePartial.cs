@@ -23,19 +23,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Layouts.Layout
         [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
         public LayoutTemplate(IOutputTarget outputTarget, LayoutModel model) : base(TemplateId, outputTarget, model)
         {
-            foreach (var child in Model.TopNavigation.InternalElement.ChildElements)
-            {
-                if (child.IsTopNavigationSectionModel())
-                {
-                    foreach (var section in Model.TopNavigation.Sections)
-                    {
-                        foreach (var item in section.Items)
-                        {
-                            item.TryGetNavigationItemSettings(out var navigationSettings);
-                        }
-                    }
-                }
-            }
+            
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

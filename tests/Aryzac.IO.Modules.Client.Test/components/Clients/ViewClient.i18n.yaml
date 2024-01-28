@@ -1,0 +1,58 @@
+af:
+  heading:
+    title: Klient Informasie
+    attributes:
+      newHeadingAttribute:
+        label: NewHeadingAttribute
+        icon: ic:baseline-phone-bluetooth-speaker
+    actions:
+      edit:
+        label: Edit
+  personalInformation:
+    title: Personal Information
+    description: ''
+    firstName:
+      label: Eerste Naam
+    lastName:
+      label: Van
+    otherNames:
+      label: Ander Name
+  subscriptions:
+    title: Subscriptions
+    description: ''
+    receivePromotions:
+      label: Kry Promosie Materiaal
+  internalNotes:
+    title: Internal Notes
+    description: ''
+    notes:
+      label: Notas
+en:
+  heading:
+    title: Client Information
+    attributes:
+      newHeadingAttribute:
+        label: 078 894 3740
+        icon: ic:baseline-phone-bluetooth-speaker
+    actions:
+      edit:
+        label: Edit
+  personalInformation:
+    title: Personal Information
+    description: ''
+    firstName:
+      label: First Name
+    lastName:
+      label: Surname
+    otherNames:
+      label: Other Names
+  subscriptions:
+    title: Subscriptions
+    description: ''
+    receivePromotions:
+      label: Receive Promotional Material
+  internalNotes:
+    title: Internal Notes
+    description: ''
+    notes:
+      label: Notes

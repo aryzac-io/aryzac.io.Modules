@@ -1,0 +1,23 @@
+af:
+  appbar:
+    navigation:
+      home:
+        label: Tuis
+      clients:
+        label: Clients
+  breadcrumb:
+    navigation:
+      home:
+        label: Home
+en:
+  appbar:
+    navigation:
+      home:
+        label: Home
+      clients:
+        label: Clients
+  breadcrumb:
+    navigation:
+      home:
+        label: Home
+        icon: ic:twotone-home
