@@ -379,6 +379,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#e8aace5b-476e-464a-90c1-611053246ac6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/composables/useTitlesServiceProxy.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>useTitlesServiceProxy.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>96bbeed2-11a8-4f41-bf66-ff2a58b82659</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Layouts.Layout i18n#f16095c8-5ac2-47a9-923e-fe7a9cc54083</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -491,6 +499,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#e8aace5b-476e-464a-90c1-611053246ac6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/services/titles-service.proxy.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles-service.proxy.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>81904bef-ea61-4c38-b292-7c19f7fe0b5d</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#stores/navigation.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -552,6 +568,70 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/get-clients-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/get-clients-query.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#c27cb5e5-71d7-4bb0-b268-052b76690385</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/change-code-title-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/change-code-title-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#332607cc-d329-4101-89b3-98bdcef6c5e3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/change-description-title-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/change-description-title-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#6d3f48a4-d612-4535-b0bd-eb78ebad42ad</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/change-name-title-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/change-name-title-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#d488271f-eba8-4c6f-886d-cb9d0e991e4b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/create-title-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/create-title-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#08b8b35f-c869-4dc4-b251-f7cc147ce48d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/delete-title-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/delete-title-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#c238a4d8-2de5-4d9f-852e-da1b14d1f76a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/get-title-by-id-query.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/get-title-by-id-query.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#ea635ac2-2999-4d7f-b5c3-1ad790891d77</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/get-titles-query.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/get-titles-query.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#39f19552-e59f-4c04-9111-9ee8bd800f48</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/titles/title.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>titles/title.dto.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

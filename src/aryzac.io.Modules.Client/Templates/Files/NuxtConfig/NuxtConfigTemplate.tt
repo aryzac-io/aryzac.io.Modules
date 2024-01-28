@@ -17,7 +17,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
 <# foreach (var serviceProxy in GetServiceProxies()) 
-{ #>      <#= serviceProxy.Name.ToCamelCase()#>ApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_<#= serviceProxy.Name.ToSnakeCase().ToUpper() #>_API_BASE_URI<#
+{ #>      <#= serviceProxy.Name.ToCamelCase()#>ApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_<#= serviceProxy.Name.ToSnakeCase().ToUpper() #>_API_BASE_URI
+<#
 }#>
 
       apiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_API_BASE_URI

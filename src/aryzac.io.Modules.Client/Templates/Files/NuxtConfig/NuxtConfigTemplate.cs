@@ -58,9 +58,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig
             
             #line default
             #line hidden
-            this.Write("_API_BASE_URI");
+            this.Write("_API_BASE_URI\r\n");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
 
 }
             
@@ -86,7 +86,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig
 
 ");
             
-            #line 40 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 41 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
 
     var defaultLocale = "";
 
@@ -105,21 +105,21 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig
             #line hidden
             this.Write("\r\n  i18n: {\r\n    strategy: \"prefix_except_default\",\r\n    defaultLocale: \"");
             
-            #line 56 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 57 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(defaultLocale));
             
             #line default
             #line hidden
             this.Write("\",\r\n    fallbackLocale: \"");
             
-            #line 57 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 58 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(defaultLocale));
             
             #line default
             #line hidden
             this.Write("\",\r\n    locales: [\r\n");
             
-            #line 59 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 60 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
  foreach (var locale in GetLocales()[0].Locales)
    {
       locale.TryGetLocaleSettings(out var localeSettings);
@@ -129,21 +129,21 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig
             #line hidden
             this.Write("      {\r\n        code: \"");
             
-            #line 64 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 65 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(locale.Name.ToLower()));
             
             #line default
             #line hidden
             this.Write("\",\r\n        iso: \"");
             
-            #line 65 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 66 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(localeSettings.ISOCode()));
             
             #line default
             #line hidden
             this.Write("\", \r\n      },\r\n");
             
-            #line 67 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 68 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
  } 
             
             #line default
@@ -165,7 +165,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig
     url: ""http://localhost:3000"",
     name: """);
             
-            #line 83 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
+            #line 84 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\NuxtConfig\NuxtConfigTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(ExecutionContext.GetApplicationConfig().Name.Replace(".", " ").ToKebabCase()));
             
             #line default

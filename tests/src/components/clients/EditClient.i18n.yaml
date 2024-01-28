@@ -2,23 +2,27 @@ af:
   personalInformation:
     title: Personal Information
     description: ''
+    actions:
+      save: Save
+    titleSelect:
+      label: TitleSelect
     firstNameTextBox:
       label: FirstNameTextBox
     lastNameTextBox:
       label: LastNameTextBox
     otherNamesTextBox:
       label: OtherNamesTextBox
-    actions:
-      save: Save
 en:
   personalInformation:
     title: Personal Information
     description: ''
+    actions:
+      save: Save
+    titleSelect:
+      label: TitleSelect
     firstNameTextBox:
       label: First name
     lastNameTextBox:
       label: Last name
     otherNamesTextBox:
       label: Other names
-    actions:
-      save: Save

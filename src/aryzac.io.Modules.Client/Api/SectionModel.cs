@@ -57,6 +57,11 @@ namespace Aryzac.IO.Modules.Client.Api
             .Select(x => new RadioButtonModel(x))
             .ToList();
 
+        public IList<SelectModel> Selects => _element.ChildElements
+            .GetElementsOfType(SelectModel.SpecializationTypeId)
+            .Select(x => new SelectModel(x))
+            .ToList();
+
         public IList<TableModel> Tables => _element.ChildElements
             .GetElementsOfType(TableModel.SpecializationTypeId)
             .Select(x => new TableModel(x))

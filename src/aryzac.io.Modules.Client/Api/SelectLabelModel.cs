@@ -11,14 +11,14 @@ using Intent.RoslynWeaver.Attributes;
 namespace Aryzac.IO.Modules.Client.Api
 {
     [IntentManaged(Mode.Fully, Signature = Mode.Fully)]
-    public class SelectModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper
+    public class SelectLabelModel : IMetadataModel, IHasStereotypes, IHasName, IElementWrapper, IHasTypeReference
     {
-        public const string SpecializationType = "Select";
-        public const string SpecializationTypeId = "29bb76a2-ccc9-4ab2-8665-6fdef3834c94";
+        public const string SpecializationType = "Select Label";
+        public const string SpecializationTypeId = "9e0ed8e6-4cba-434a-b51b-6723c2ec83d7";
         protected readonly IElement _element;
 
         [IntentManaged(Mode.Fully)]
-        public SelectModel(IElement element, string requiredType = SpecializationType)
+        public SelectLabelModel(IElement element, string requiredType = SpecializationType)
         {
             if (!requiredType.Equals(element.SpecializationType, StringComparison.InvariantCultureIgnoreCase))
             {
@@ -35,29 +35,17 @@ namespace Aryzac.IO.Modules.Client.Api
 
         public IEnumerable<IStereotype> Stereotypes => _element.Stereotypes;
 
+        public ITypeReference TypeReference => _element.TypeReference;
+
+
         public IElement InternalElement => _element;
-
-        public ComponentQueryModel Query => _element.ChildElements
-            .GetElementsOfType(ComponentQueryModel.SpecializationTypeId)
-            .Select(x => new ComponentQueryModel(x))
-            .SingleOrDefault();
-
-        public ValueModel Value => _element.ChildElements
-            .GetElementsOfType(ValueModel.SpecializationTypeId)
-            .Select(x => new ValueModel(x))
-            .SingleOrDefault();
-
-        public SelectLabelModel Label => _element.ChildElements
-            .GetElementsOfType(SelectLabelModel.SpecializationTypeId)
-            .Select(x => new SelectLabelModel(x))
-            .SingleOrDefault();
 
         public override string ToString()
         {
             return _element.ToString();
         }
 
-        public bool Equals(SelectModel other)
+        public bool Equals(SelectLabelModel other)
         {
             return Equals(_element, other?._element);
         }
@@ -67,7 +55,7 @@ namespace Aryzac.IO.Modules.Client.Api
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((SelectModel)obj);
+            return Equals((SelectLabelModel)obj);
         }
 
         public override int GetHashCode()
@@ -77,17 +65,17 @@ namespace Aryzac.IO.Modules.Client.Api
     }
 
     [IntentManaged(Mode.Fully)]
-    public static class SelectModelExtensions
+    public static class SelectLabelModelExtensions
     {
 
-        public static bool IsSelectModel(this ICanBeReferencedType type)
+        public static bool IsSelectLabelModel(this ICanBeReferencedType type)
         {
-            return type != null && type is IElement element && element.SpecializationTypeId == SelectModel.SpecializationTypeId;
+            return type != null && type is IElement element && element.SpecializationTypeId == SelectLabelModel.SpecializationTypeId;
         }
 
-        public static SelectModel AsSelectModel(this ICanBeReferencedType type)
+        public static SelectLabelModel AsSelectLabelModel(this ICanBeReferencedType type)
         {
-            return type.IsSelectModel() ? new SelectModel((IElement)type) : null;
+            return type.IsSelectLabelModel() ? new SelectLabelModel((IElement)type) : null;
         }
     }
 }

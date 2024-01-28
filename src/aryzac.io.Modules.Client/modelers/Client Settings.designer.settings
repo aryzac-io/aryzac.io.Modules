@@ -812,18 +812,27 @@ execute(element);
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
           <typeOrder>
-            <type order="0">Textbox</type>
-            <type order="1">Text Area</type>
-            <type order="2">Checkbox</type>
-            <type order="3">Radio Button</type>
-            <type order="4">Label</type>
-            <type order="5">Table</type>
-            <type order="6">Actions</type>
+            <type order="0">Actions</type>
+            <type order="1">Textbox</type>
+            <type order="2">Text Area</type>
+            <type order="3">Checkbox</type>
+            <type order="4">Radio Button</type>
+            <type order="5">Select</type>
+            <type order="6">Label</type>
+            <type order="7">Table</type>
           </typeOrder>
           <creationOptions>
             <option type="element">
+              <text>Add Actions</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
+              <specializationType>Actions</specializationType>
+              <specializationTypeId>ccc50dcf-42e3-4b91-8772-bb48739c17e8</specializationTypeId>
+              <defaultName>[actions]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
               <text>Add Textbox</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTI0MCA4MHY5NmE4IDggMCAwIDEtOCA4SDI0YTggOCAwIDAgMS04LThWODBhOCA4IDAgMCAxIDgtOGgyMDhhOCA4IDAgMCAxIDggOCIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMTEyIDQwYTggOCAwIDAgMC04IDh2MTZIMjRBMTYgMTYgMCAwIDAgOCA4MHY5NmExNiAxNiAwIDAgMCAxNiAxNmg4MHYxNmE4IDggMCAwIDAgMTYgMFY0OGE4IDggMCAwIDAtOC04TTI0IDE3NlY4MGg4MHY5NlptMjI0LTk2djk2YTE2IDE2IDAgMCAxLTE2IDE2aC04OGE4IDggMCAwIDEgMC0xNmg4OFY4MGgtODhhOCA4IDAgMCAxIDAtMTZoODhhMTYgMTYgMCAwIDEgMTYgMTZNODggMTEyYTggOCAwIDAgMS04IDhoLTh2MjRhOCA4IDAgMCAxLTE2IDB2LTI0aC04YTggOCAwIDAgMSAwLTE2aDMyYTggOCAwIDAgMSA4IDgiLz48L2c+PC9zdmc+" />
               <specializationType>Textbox</specializationType>
               <specializationTypeId>db535835-3d01-421d-9f29-206732782bfe</specializationTypeId>
               <defaultName>NewTextbox</defaultName>
@@ -831,7 +840,7 @@ execute(element);
             </option>
             <option type="element">
               <text>Add Text Area</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTIxNiA2NHYxMjBINDBWNjRaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIGQ9Ik0zMiA2NGE4IDggMCAwIDEgOC04aDE3NmE4IDggMCAwIDEgMCAxNkg0MGE4IDggMCAwIDEtOC04bTE4NCAzMkg0MGE4IDggMCAwIDAgMCAxNmgxNzZhOCA4IDAgMCAwIDAtMTZtMCA0MEg0MGE4IDggMCAwIDAgMCAxNmgxNzZhOCA4IDAgMCAwIDAtMTZtMCA0MEg0MGE4IDggMCAwIDAgMCAxNmgxNzZhOCA4IDAgMCAwIDAtMTYiLz48L2c+PC9zdmc+" />
               <specializationType>Text Area</specializationType>
               <specializationTypeId>9fb5d59b-af35-4484-b7f2-410a30365bbf</specializationTypeId>
               <defaultName>NewTextArea</defaultName>
@@ -839,7 +848,7 @@ execute(element);
             </option>
             <option type="element">
               <text>Add Checkbox</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTIxNiA0OHYxNjBhOCA4IDAgMCAxLTggOEg0OGE4IDggMCAwIDEtOC04VjQ4YTggOCAwIDAgMSA4LThoMTYwYTggOCAwIDAgMSA4IDgiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTE3My42NiA5OC4zNGE4IDggMCAwIDEgMCAxMS4zMmwtNTYgNTZhOCA4IDAgMCAxLTExLjMyIDBsLTI0LTI0YTggOCAwIDAgMSAxMS4zMi0xMS4zMkwxMTIgMTQ4LjY5bDUwLjM0LTUwLjM1YTggOCAwIDAgMSAxMS4zMiAwTTIyNCA0OHYxNjBhMTYgMTYgMCAwIDEtMTYgMTZINDhhMTYgMTYgMCAwIDEtMTYtMTZWNDhhMTYgMTYgMCAwIDEgMTYtMTZoMTYwYTE2IDE2IDAgMCAxIDE2IDE2bS0xNiAxNjBWNDhINDh2MTYweiIvPjwvZz48L3N2Zz4=" />
               <specializationType>Checkbox</specializationType>
               <specializationTypeId>417dc03e-580b-450d-9d70-8a2a457d2a48</specializationTypeId>
               <defaultName>NewCheckbox</defaultName>
@@ -847,15 +856,23 @@ execute(element);
             </option>
             <option type="element">
               <text>Add Radio Button</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTE4NCAxMjhhNTYgNTYgMCAxIDEtNTYtNTZhNTYgNTYgMCAwIDEgNTYgNTYiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTEyOCAyNGExMDQgMTA0IDAgMSAwIDEwNCAxMDRBMTA0LjExIDEwNC4xMSAwIDAgMCAxMjggMjRtMCAxOTJhODggODggMCAxIDEgODgtODhhODguMSA4OC4xIDAgMCAxLTg4IDg4bTAtMTUyYTY0IDY0IDAgMSAwIDY0IDY0YTY0LjA3IDY0LjA3IDAgMCAwLTY0LTY0bTAgMTEyYTQ4IDQ4IDAgMSAxIDQ4LTQ4YTQ4LjA1IDQ4LjA1IDAgMCAxLTQ4IDQ4Ii8+PC9nPjwvc3ZnPg==" />
               <specializationType>Radio Button</specializationType>
               <specializationTypeId>ce51a148-b367-488b-8659-3e357e55419b</specializationTypeId>
               <defaultName>NewRadioButton</defaultName>
               <allowMultiple>true</allowMultiple>
             </option>
             <option type="element">
+              <text>Add Select</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0ibTIwOCA5NmwtODAgODBsLTgwLTgwWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMjE1LjM5IDkyLjk0QTggOCAwIDAgMCAyMDggODhINDhhOCA4IDAgMCAwLTUuNjYgMTMuNjZsODAgODBhOCA4IDAgMCAwIDExLjMyIDBsODAtODBhOCA4IDAgMCAwIDEuNzMtOC43Mk0xMjggMTY0LjY5TDY3LjMxIDEwNGgxMjEuMzhaIi8+PC9nPjwvc3ZnPg==" />
+              <specializationType>Select</specializationType>
+              <specializationTypeId>29bb76a2-ccc9-4ab2-8665-6fdef3834c94</specializationTypeId>
+              <defaultName>NewSelect</defaultName>
+              <allowMultiple>true</allowMultiple>
+            </option>
+            <option type="element">
               <text>Add Label</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTIzMiAxNjRjMCAxNS40Ni0xNC4zMyAyOC0zMiAyOHMtMzItMTIuNTQtMzItMjhzMTQuMzMtMjggMzItMjhzMzIgMTIuNTQgMzIgMjhNMzQuODIgMTUyaDkwLjM2TDgwIDU2WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNODcuMjQgNTIuNTlhOCA4IDAgMCAwLTE0LjQ4IDBsLTY0IDEzNmE4IDggMCAxIDAgMTQuNDggNi44MUwzOS45IDE2MGg4MC4ybDE2LjY2IDM1LjRhOCA4IDAgMSAwIDE0LjQ4LTYuODFaTTQ3LjQzIDE0NEw4MCA3NC43OUwxMTIuNTcgMTQ0Wk0yMDAgOTZjLTEyLjc2IDAtMjIuNzMgMy40Ny0yOS42MyAxMC4zMmE4IDggMCAwIDAgMTEuMjYgMTEuMzZjMy44LTMuNzcgMTAtNS42OCAxOC4zNy01LjY4YzEzLjIzIDAgMjQgOSAyNCAyMHYzLjIyYTQyLjc2IDQyLjc2IDAgMCAwLTI0LTcuMjJjLTIyLjA2IDAtNDAgMTYuMTUtNDAgMzZzMTcuOTQgMzYgNDAgMzZhNDIuNzMgNDIuNzMgMCAwIDAgMjQtNy4yNWE4IDggMCAwIDAgMTYtLjc1di02MGMwLTE5Ljg1LTE3Ljk0LTM2LTQwLTM2bTAgODhjLTEzLjIzIDAtMjQtOS0yNC0yMHMxMC43Ny0yMCAyNC0yMHMyNCA5IDI0IDIwcy0xMC43NyAyMC0yNCAyMCIvPjwvZz48L3N2Zz4=" />
               <specializationType>Label</specializationType>
               <specializationTypeId>9ca4af5b-3e0c-45dd-80d5-13144986df9c</specializationTypeId>
               <defaultName>NewLabel</defaultName>
@@ -868,14 +885,6 @@ execute(element);
               <specializationTypeId>dd36c8ad-0f9e-4a38-8478-8dce769e0054</specializationTypeId>
               <defaultName>NewTable</defaultName>
               <allowMultiple>true</allowMultiple>
-            </option>
-            <option type="element">
-              <text>Add Actions</text>
-              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
-              <specializationType>Actions</specializationType>
-              <specializationTypeId>ccc50dcf-42e3-4b91-8772-bb48739c17e8</specializationTypeId>
-              <defaultName>[actions]</defaultName>
-              <allowMultiple>false</allowMultiple>
             </option>
           </creationOptions>
           <scriptOptions />
@@ -938,7 +947,7 @@ execute(element);
           </childElementSettings>
         </childElementSetting>
         <childElementSetting type="Textbox" typeId="db535835-3d01-421d-9f29-206732782bfe">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTI0MCA4MHY5NmE4IDggMCAwIDEtOCA4SDI0YTggOCAwIDAgMS04LThWODBhOCA4IDAgMCAxIDgtOGgyMDhhOCA4IDAgMCAxIDggOCIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMTEyIDQwYTggOCAwIDAgMC04IDh2MTZIMjRBMTYgMTYgMCAwIDAgOCA4MHY5NmExNiAxNiAwIDAgMCAxNiAxNmg4MHYxNmE4IDggMCAwIDAgMTYgMFY0OGE4IDggMCAwIDAtOC04TTI0IDE3NlY4MGg4MHY5NlptMjI0LTk2djk2YTE2IDE2IDAgMCAxLTE2IDE2aC04OGE4IDggMCAwIDEgMC0xNmg4OFY4MGgtODhhOCA4IDAgMCAxIDAtMTZoODhhMTYgMTYgMCAwIDEgMTYgMTZNODggMTEyYTggOCAwIDAgMS04IDhoLTh2MjRhOCA4IDAgMCAxLTE2IDB2LTI0aC04YTggOCAwIDAgMSAwLTE2aDMyYTggOCAwIDAgMSA4IDgiLz48L2c+PC9zdmc+" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -959,7 +968,7 @@ execute(element);
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Checkbox" typeId="417dc03e-580b-450d-9d70-8a2a457d2a48">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTIxNiA0OHYxNjBhOCA4IDAgMCAxLTggOEg0OGE4IDggMCAwIDEtOC04VjQ4YTggOCAwIDAgMSA4LThoMTYwYTggOCAwIDAgMSA4IDgiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTE3My42NiA5OC4zNGE4IDggMCAwIDEgMCAxMS4zMmwtNTYgNTZhOCA4IDAgMCAxLTExLjMyIDBsLTI0LTI0YTggOCAwIDAgMSAxMS4zMi0xMS4zMkwxMTIgMTQ4LjY5bDUwLjM0LTUwLjM1YTggOCAwIDAgMSAxMS4zMiAwTTIyNCA0OHYxNjBhMTYgMTYgMCAwIDEtMTYgMTZINDhhMTYgMTYgMCAwIDEtMTYtMTZWNDhhMTYgMTYgMCAwIDEgMTYtMTZoMTYwYTE2IDE2IDAgMCAxIDE2IDE2bS0xNiAxNjBWNDhINDh2MTYweiIvPjwvZz48L3N2Zz4=" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -980,7 +989,7 @@ execute(element);
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Label" typeId="9ca4af5b-3e0c-45dd-80d5-13144986df9c">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTIzMiAxNjRjMCAxNS40Ni0xNC4zMyAyOC0zMiAyOHMtMzItMTIuNTQtMzItMjhzMTQuMzMtMjggMzItMjhzMzIgMTIuNTQgMzIgMjhNMzQuODIgMTUyaDkwLjM2TDgwIDU2WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNODcuMjQgNTIuNTlhOCA4IDAgMCAwLTE0LjQ4IDBsLTY0IDEzNmE4IDggMCAxIDAgMTQuNDggNi44MUwzOS45IDE2MGg4MC4ybDE2LjY2IDM1LjRhOCA4IDAgMSAwIDE0LjQ4LTYuODFaTTQ3LjQzIDE0NEw4MCA3NC43OUwxMTIuNTcgMTQ0Wk0yMDAgOTZjLTEyLjc2IDAtMjIuNzMgMy40Ny0yOS42MyAxMC4zMmE4IDggMCAwIDAgMTEuMjYgMTEuMzZjMy44LTMuNzcgMTAtNS42OCAxOC4zNy01LjY4YzEzLjIzIDAgMjQgOSAyNCAyMHYzLjIyYTQyLjc2IDQyLjc2IDAgMCAwLTI0LTcuMjJjLTIyLjA2IDAtNDAgMTYuMTUtNDAgMzZzMTcuOTQgMzYgNDAgMzZhNDIuNzMgNDIuNzMgMCAwIDAgMjQtNy4yNWE4IDggMCAwIDAgMTYtLjc1di02MGMwLTE5Ljg1LTE3Ljk0LTM2LTQwLTM2bTAgODhjLTEzLjIzIDAtMjQtOS0yNC0yMHMxMC43Ny0yMCAyNC0yMHMyNCA5IDI0IDIwcy0xMC43NyAyMC0yNCAyMCIvPjwvZz48L3N2Zz4=" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -1001,7 +1010,7 @@ execute(element);
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Radio Button" typeId="ce51a148-b367-488b-8659-3e357e55419b">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTE4NCAxMjhhNTYgNTYgMCAxIDEtNTYtNTZhNTYgNTYgMCAwIDEgNTYgNTYiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTEyOCAyNGExMDQgMTA0IDAgMSAwIDEwNCAxMDRBMTA0LjExIDEwNC4xMSAwIDAgMCAxMjggMjRtMCAxOTJhODggODggMCAxIDEgODgtODhhODguMSA4OC4xIDAgMCAxLTg4IDg4bTAtMTUyYTY0IDY0IDAgMSAwIDY0IDY0YTY0LjA3IDY0LjA3IDAgMCAwLTY0LTY0bTAgMTEyYTQ4IDQ4IDAgMSAxIDQ4LTQ4YTQ4LjA1IDQ4LjA1IDAgMCAxLTQ4IDQ4Ii8+PC9nPjwvc3ZnPg==" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -1022,7 +1031,7 @@ execute(element);
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Text Area" typeId="9fb5d59b-af35-4484-b7f2-410a30365bbf">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTIxNiA2NHYxMjBINDBWNjRaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIGQ9Ik0zMiA2NGE4IDggMCAwIDEgOC04aDE3NmE4IDggMCAwIDEgMCAxNkg0MGE4IDggMCAwIDEtOC04bTE4NCAzMkg0MGE4IDggMCAwIDAgMCAxNmgxNzZhOCA4IDAgMCAwIDAtMTZtMCA0MEg0MGE4IDggMCAwIDAgMCAxNmgxNzZhOCA4IDAgMCAwIDAtMTZtMCA0MEg0MGE4IDggMCAwIDAgMCAxNmgxNzZhOCA4IDAgMCAwIDAtMTYiLz48L2c+PC9zdmc+" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -1043,7 +1052,7 @@ execute(element);
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Select" typeId="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0ibTIwOCA5NmwtODAgODBsLTgwLTgwWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMjE1LjM5IDkyLjk0QTggOCAwIDAgMCAyMDggODhINDhhOCA4IDAgMCAwLTUuNjYgMTMuNjZsODAgODBhOCA4IDAgMCAwIDExLjMyIDBsODAtODBhOCA4IDAgMCAwIDEuNzMtOC43Mk0xMjggMTY0LjY5TDY3LjMxIDEwNGgxMjEuMzhaIi8+PC9nPjwvc3ZnPg==" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -1056,12 +1065,116 @@ execute(element);
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
           <allowSetValue>false</allowSetValue>
-          <typeOrder />
-          <creationOptions />
+          <typeOrder>
+            <type order="0">Component Query</type>
+            <type order="1">Value</type>
+            <type order="2">Select Label</type>
+          </typeOrder>
+          <creationOptions>
+            <option type="element">
+              <text>Add Query</text>
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0xNiAzQzEwLjcwMiAzIDUgNC4yNTIgNSA3djE4YzAgMi43NDggNS43MDIgNCAxMSA0czExLTEuMjUyIDExLTRWN2MwLTIuNzQ4LTUuNzAyLTQtMTEtNG0wIDJjNS43OTggMCA4Ljc5NSAxLjQzNCA4Ljk5NyAyYy0uMjAyLjU2Ni0zLjIgMi04Ljk5NyAyYy01Ljg0MSAwLTguODQtMS40NTYtOS0xLjk4MnYtLjAwNUM3LjE2IDYuNDU2IDEwLjE1OSA1IDE2IDVNNyA5LjQyOEM5LjEyOCAxMC40OTUgMTIuNjQzIDExIDE2IDExczYuODcyLS41MDUgOS0xLjU3MnYzLjU2Yy0uMTYuNTU2LTMuMTU5IDIuMDEyLTkgMi4wMTJjLTUuODUgMC04Ljg1LTEuNDYtOS0yem0wIDZDOS4xMjggMTYuNDk1IDEyLjY0MyAxNyAxNiAxN3M2Ljg3Mi0uNTA1IDktMS41NzJ2My41NmMtLjE2LjU1Ni0zLjE1OSAyLjAxMi05IDIuMDEyYy01Ljg1IDAtOC44NS0xLjQ2LTktMnpNMTYgMjdjLTUuODUgMC04Ljg1LTEuNDYtOS0ydi0zLjU3MkM5LjEyOCAyMi40OTUgMTIuNjQzIDIzIDE2IDIzczYuODcyLS41MDUgOS0xLjU3MnYzLjU2Yy0uMTYuNTU2LTMuMTU5IDIuMDEyLTkgMi4wMTIiLz48L3N2Zz4=" />
+              <specializationType>Component Query</specializationType>
+              <specializationTypeId>bfacaee7-4850-4353-bb99-6b52b81fc804</specializationTypeId>
+              <defaultName>[query]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Value</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Value</specializationType>
+              <specializationTypeId>cc25d720-1d70-4554-92b4-1aad67143395</specializationTypeId>
+              <defaultName>[value]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+            <option type="element">
+              <text>Add Label</text>
+              <icon type="FontAwesome" source="file-o" />
+              <specializationType>Select Label</specializationType>
+              <specializationTypeId>9e0ed8e6-4cba-434a-b51b-6723c2ec83d7</specializationTypeId>
+              <defaultName>[label]</defaultName>
+              <allowMultiple>false</allowMultiple>
+            </option>
+          </creationOptions>
           <scriptOptions />
-          <mappingOptions />
+          <mappingOptions>
+            <option mappingType="Map Query To Select" mappingTypeId="c1157ba1-2c6f-4002-8a83-bce2b133cc46">
+              <text>Map Query To Select</text>
+            </option>
+          </mappingOptions>
           <mappingSettings />
-          <childElementSettings />
+          <childElementSettings>
+            <childElementSetting type="Value" typeId="cc25d720-1d70-4554-92b4-1aad67143395">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>true</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeReferenceSetting>
+                <isRequired>true</isRequired>
+                <targetTypes>
+                  <type>Type-Definition</type>
+                  <type>Enum</type>
+                  <type>DTO</type>
+                </targetTypes>
+                <allowIsNavigable>true</allowIsNavigable>
+                <allowIsNullable>true</allowIsNullable>
+                <allowIsCollection>true</allowIsCollection>
+                <isNavigableDefault>true</isNavigableDefault>
+                <isNullableDefault>false</isNullableDefault>
+                <isCollectionDefault>false</isCollectionDefault>
+              </typeReferenceSetting>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+            <childElementSetting type="Select Label" typeId="9e0ed8e6-4cba-434a-b51b-6723c2ec83d7">
+              <icon type="FontAwesome" source="file-o" />
+              <saveAsOwnFile>false</saveAsOwnFile>
+              <allowRename>true</allowRename>
+              <allowAbstract>false</allowAbstract>
+              <allowStatic>false</allowStatic>
+              <allowGenericTypes>false</allowGenericTypes>
+              <allowMapping>false</allowMapping>
+              <allowSorting>true</allowSorting>
+              <sortChildren>by-type-then-by-name</sortChildren>
+              <allowFindInView>false</allowFindInView>
+              <allowTypeReference>true</allowTypeReference>
+              <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
+              <allowSetValue>false</allowSetValue>
+              <typeReferenceSetting>
+                <isRequired>true</isRequired>
+                <targetTypes>
+                  <type>Type-Definition</type>
+                  <type>Enum</type>
+                  <type>DTO</type>
+                </targetTypes>
+                <allowIsNavigable>true</allowIsNavigable>
+                <allowIsNullable>true</allowIsNullable>
+                <allowIsCollection>true</allowIsCollection>
+                <isNavigableDefault>true</isNavigableDefault>
+                <isNullableDefault>false</isNullableDefault>
+                <isCollectionDefault>false</isCollectionDefault>
+              </typeReferenceSetting>
+              <typeOrder />
+              <creationOptions />
+              <scriptOptions />
+              <mappingOptions />
+              <mappingSettings />
+              <childElementSettings />
+            </childElementSetting>
+          </childElementSettings>
         </childElementSetting>
         <childElementSetting type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
           <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
@@ -2500,6 +2613,115 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
           </sources>
           <targets>
             <target id="b304d06e-0c25-4bfd-b868-28d497780c2f" name="Component Model Field" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+      </mappingTypes>
+    </mappingSetting>
+    <mappingSetting type="Map Query To Select" typeId="c1157ba1-2c6f-4002-8a83-bce2b133cc46">
+      <title>Map Query To Select</title>
+      <sourceMappings>
+        <mapping id="d939b150-b1f7-4ff5-9b7f-93c692a2d727" name="DTO" type="DTO" typeId="fee0edca-4aa0-4f77-a524-6bbd84e78734">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="dbc87c41-a64a-4813-8d71-bf69212e331e" name="DTO-Field" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+        <mapping id="b64b499a-efda-4790-a941-9dc6e5adce68" name="Select" type="Select" typeId="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return true;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>false</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="769a0aec-2acb-4547-924d-3e7dcc8591e1" name="Component Query" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return false;</isMappableFunction>
+              <isTraversable>true</isTraversable>
+              <traversableTypes>
+                <mappingId>9e9df2c7-08a8-42e0-afe3-cad2fa5fa341</mappingId>
+              </traversableTypes>
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings>
+                <childSetting id="9e9df2c7-08a8-42e0-afe3-cad2fa5fa341" name="Parameter" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                  <allowMultipleMappings>true</allowMultipleMappings>
+                  <isMappableFunction>return false;</isMappableFunction>
+                  <isTraversable>true</isTraversable>
+                  <traversableTypes>
+                    <mappingId>d939b150-b1f7-4ff5-9b7f-93c692a2d727</mappingId>
+                  </traversableTypes>
+                  <canBeModified>true</canBeModified>
+                  <represents>data</represents>
+                  <childSettings />
+                </childSetting>
+              </childSettings>
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </sourceMappings>
+      <targetMappings>
+        <mapping id="052aaaf1-761b-40bc-861b-7fecfc122e07" name="Select" type="Select" typeId="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">
+          <allowMultipleMappings>true</allowMultipleMappings>
+          <isMappableFunction>return false;</isMappableFunction>
+          <isTraversable>false</isTraversable>
+          <traversableTypes />
+          <canBeModified>true</canBeModified>
+          <represents>data</represents>
+          <childSettings>
+            <childSetting id="cb4f1cc5-a0d2-487a-afdf-6f2bf2b2c357" name="Value" type="Value" typeId="cc25d720-1d70-4554-92b4-1aad67143395">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+            <childSetting id="f63cf1e8-2f48-4a5a-8cb5-4ecac893a34c" name="Label" type="Select Label" typeId="9e0ed8e6-4cba-434a-b51b-6723c2ec83d7">
+              <allowMultipleMappings>true</allowMultipleMappings>
+              <isMappableFunction>return true;</isMappableFunction>
+              <isTraversable>false</isTraversable>
+              <traversableTypes />
+              <canBeModified>false</canBeModified>
+              <represents>data</represents>
+              <childSettings />
+            </childSetting>
+          </childSettings>
+        </mapping>
+      </targetMappings>
+      <mappingTypes>
+        <mappingType type="Map From DTO-Field" typeId="8997a88a-8214-46f7-b400-ebcbd0aa9f80">
+          <represents>data</represents>
+          <sources>
+            <source id="dbc87c41-a64a-4813-8d71-bf69212e331e" name="DTO-Field" />
+          </sources>
+          <targets>
+            <target id="cb4f1cc5-a0d2-487a-afdf-6f2bf2b2c357" name="Value" />
+          </targets>
+          <allowAutoMap>true</allowAutoMap>
+        </mappingType>
+        <mappingType type="Map From DTO-Field" typeId="74330c09-3675-4796-b7c9-8f5132b9c59b">
+          <represents>data</represents>
+          <sources>
+            <source id="dbc87c41-a64a-4813-8d71-bf69212e331e" name="DTO-Field" />
+          </sources>
+          <targets>
+            <target id="f63cf1e8-2f48-4a5a-8cb5-4ecac893a34c" name="Label" />
           </targets>
           <allowAutoMap>true</allowAutoMap>
         </mappingType>
