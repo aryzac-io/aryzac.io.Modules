@@ -759,7 +759,7 @@ execute(element);
             </option>
             <option type="element">
               <text>Add Actions</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
               <specializationType>Actions</specializationType>
               <specializationTypeId>ccc50dcf-42e3-4b91-8772-bb48739c17e8</specializationTypeId>
               <defaultName>[actions]</defaultName>
@@ -871,7 +871,7 @@ execute(element);
             </option>
             <option type="element">
               <text>Add Actions</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
               <specializationType>Actions</specializationType>
               <specializationTypeId>ccc50dcf-42e3-4b91-8772-bb48739c17e8</specializationTypeId>
               <defaultName>[actions]</defaultName>
@@ -1064,7 +1064,7 @@ execute(element);
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMuMDQgMTBoMi41OGwuNjUgMUgyLjU0bC0uNS0uNXYtOWwuNS0uNWgxMmwuNS41djQuNzdsLTEtMS43NVYyaC0xMXptNS41NCAxbC0xLjQxIDMuNDdoMi4yTDE1IDguN0wxNC4yNyA3aC0xLjYzbC44Mi0xLjQ2TDEyLjYzIDRIOS43NmwtLjkyLjU5bC0yLjI4IDVMNy40NyAxMXptMS4xOC02aDIuODdsLTEuODcgM2gzLjUxbC01Ljc2IDUuODRMMTAuMiAxMEg3LjQ3ek02Ljk1IDdINC4wNFY2SDcuNHptLS45IDJINC4wNFY4SDYuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -1072,7 +1072,7 @@ execute(element);
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>false</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1083,7 +1083,7 @@ execute(element);
           <creationOptions>
             <option type="element">
               <text>Add Action</text>
-              <icon type="FontAwesome" source="file-o" />
+              <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDE0IDEuNTZMOC4zMTIgMWgzLjI5NGwuODE4IDEuNTc1TDEwLjIzNiA2aDEuNzgxbC43MiAxLjY5NUw1LjYxOCAxNWwtMS42MDItMS4xNjNMNi4xMTkgMTBINC44OThMNCA4LjU2ek03Ljc4IDlMNC45IDE0LjMwNUwxMi4wMTggN0g4LjMxMmwzLjI5NC01SDguMzEyTDQuODk4IDl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" />
               <specializationType>Action</specializationType>
               <specializationTypeId>420c5366-fd1b-4130-afab-45f4ece2cce2</specializationTypeId>
               <defaultName>NewAction</defaultName>
@@ -1096,7 +1096,7 @@ execute(element);
           <childElementSettings />
         </childElementSetting>
         <childElementSetting type="Action" typeId="420c5366-fd1b-4130-afab-45f4ece2cce2">
-          <icon type="FontAwesome" source="file-o" />
+          <icon type="UrlImagePath" source="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDE0IDEuNTZMOC4zMTIgMWgzLjI5NGwuODE4IDEuNTc1TDEwLjIzNiA2aDEuNzgxbC43MiAxLjY5NUw1LjYxOCAxNWwtMS42MDItMS4xNjNMNi4xMTkgMTBINC44OThMNCA4LjU2ek03Ljc4IDlMNC45IDE0LjMwNUwxMi4wMTggN0g4LjMxMmwzLjI5NC01SDguMzEyTDQuODk4IDl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" />
           <saveAsOwnFile>false</saveAsOwnFile>
           <allowRename>true</allowRename>
           <allowAbstract>false</allowAbstract>
@@ -1104,7 +1104,7 @@ execute(element);
           <allowGenericTypes>false</allowGenericTypes>
           <allowMapping>false</allowMapping>
           <allowSorting>true</allowSorting>
-          <sortChildren>by-type-then-by-name</sortChildren>
+          <sortChildren>manually</sortChildren>
           <allowFindInView>false</allowFindInView>
           <allowTypeReference>false</allowTypeReference>
           <allowConvertToType p6:nil="true" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" />

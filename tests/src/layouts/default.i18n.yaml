@@ -5,11 +5,6 @@ af:
         label: Home
       clients:
         label: Clients
-  sidebar:
-    navigation:
-      newSidebarNavigationSection:
-        newNavigationItem:
-          label: NewNavigationItem
   breadcrumb:
     navigation:
       home:
@@ -22,11 +17,6 @@ en:
         label: Home
       clients:
         label: Clients
-  sidebar:
-    navigation:
-      newSidebarNavigationSection:
-        newNavigationItem:
-          label: NewNavigationItem
   breadcrumb:
     navigation:
       home:

@@ -45,13 +45,6 @@ setupSectionItem(
   "/clients"
 );
 
-// Setup Sidebar
-setupSectionItem(
-  "sidebar",
-  t("sidebar.navigation.newSidebarNavigationSection.newNavigationItem.label"),
-  null,
-  "/"
-);
 
 // Setup Breadcrumb
 setupSectionItem(
@@ -64,9 +57,8 @@ setupSectionItem(
 
 <template>
   <div>
-    <layout-sidebar />
-
-    <div class="lg:pl-72 min-h-screen">
+  
+    <div class="min-h-screen">
 
       <layout-appbar />
       <layout-breadcrumbs />

@@ -174,7 +174,7 @@
                       <name>[actions]</name>
                       <display>[actions]</display>
                       <isAbstract>false</isAbstract>
-                      <sort-children>by-type-then-by-name</sort-children>
+                      <sort-children>manually</sort-children>
                       <genericTypes />
                       <isMapped>false</isMapped>
                       <parentFolderId>d021e57d-34d3-46ab-a75a-50cf7cc6e2cf</parentFolderId>
@@ -187,7 +187,7 @@
                           <name>Delete</name>
                           <display>Delete</display>
                           <isAbstract>false</isAbstract>
-                          <sort-children>by-type-then-by-name</sort-children>
+                          <sort-children>manually</sort-children>
                           <genericTypes />
                           <isMapped>false</isMapped>
                           <parentFolderId>296ea4cb-18e7-4d07-a093-c36db28c04fc</parentFolderId>
@@ -292,7 +292,7 @@
                           <name>Edit</name>
                           <display>Edit</display>
                           <isAbstract>false</isAbstract>
-                          <sort-children>by-type-then-by-name</sort-children>
+                          <sort-children>manually</sort-children>
                           <genericTypes />
                           <isMapped>false</isMapped>
                           <parentFolderId>296ea4cb-18e7-4d07-a093-c36db28c04fc</parentFolderId>
@@ -305,7 +305,7 @@
                               <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                               <properties>
                                 <property name="b0451488-cf54-4083-81c6-a25270f27bd7" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
-                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" value="ic:twotone-edit" isActive="true" />
+                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" value="ic:twotone-remove-red-eye" isActive="true" />
                                 <property name="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4" display="Label" isActive="true" />
                               </properties>
                             </stereotype>
@@ -919,7 +919,7 @@
                       <name>[actions]</name>
                       <display>[actions]</display>
                       <isAbstract>false</isAbstract>
-                      <sort-children>by-type-then-by-name</sort-children>
+                      <sort-children>manually</sort-children>
                       <genericTypes />
                       <isMapped>false</isMapped>
                       <parentFolderId>38ef9afa-0ed5-4e5c-ae5e-3dcfadce3496</parentFolderId>
@@ -932,7 +932,7 @@
                           <name>Save</name>
                           <display>Save</display>
                           <isAbstract>false</isAbstract>
-                          <sort-children>by-type-then-by-name</sort-children>
+                          <sort-children>manually</sort-children>
                           <genericTypes />
                           <isMapped>false</isMapped>
                           <parentFolderId>04a7addb-0f4d-4752-8480-9ee19805eb2b</parentFolderId>

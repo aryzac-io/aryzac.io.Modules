@@ -7,7 +7,7 @@ af:
         icon: ic:twotone-delete
       edit:
         label: Edit
-        icon: ic:twotone-edit
+        icon: ic:twotone-remove-red-eye
 en:
   table:
     clientName: Client Name
@@ -17,4 +17,4 @@ en:
         icon: ic:twotone-delete
       edit:
         label: Edit
-        icon: ic:twotone-edit
+        icon: ic:twotone-remove-red-eye
