@@ -236,6 +236,54 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#1aae7db0-ae39-417d-a3b5-2214e6dae43f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeNoteClient/ChangeNoteClientCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeNoteClient/ChangeNoteClientCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#1aae7db0-ae39-417d-a3b5-2214e6dae43f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeNoteClient/ChangeNoteClientCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeNoteClient/ChangeNoteClientCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#1aae7db0-ae39-417d-a3b5-2214e6dae43f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeNoteClient/ChangeNoteClientCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeNoteClient/ChangeNoteClientCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#e657409b-f841-4060-bf6e-44fc5cd83b12</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeReceivePromotionClient/ChangeReceivePromotionClientCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeReceivePromotionClient/ChangeReceivePromotionClientCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#e657409b-f841-4060-bf6e-44fc5cd83b12</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeReceivePromotionClient/ChangeReceivePromotionClientCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeReceivePromotionClient/ChangeReceivePromotionClientCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#e657409b-f841-4060-bf6e-44fc5cd83b12</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeReceivePromotionClient/ChangeReceivePromotionClientCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Clients/ChangeReceivePromotionClient/ChangeReceivePromotionClientCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
       <CorrelationId>Intent.Application.MediatR.CommandModels#dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Clients/ChangeTitleClient/ChangeTitleClientCommand.cs</ApplicationRelativeFilePath>

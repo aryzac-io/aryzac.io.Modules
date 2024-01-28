@@ -260,14 +260,6 @@
     </FileLog>
     <FileLog>
       <ProjectId>81904bef-ea61-4c38-b292-7c19f7fe0b5d</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/post.vue</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/components/ui/input/post.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>components/ui/input/post.vue</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>81904bef-ea61-4c38-b292-7c19f7fe0b5d</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/radio-button.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/components/ui/input/radio-button.vue</ApplicationRelativeFilePath>
@@ -560,6 +552,22 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/structs/dto/clients/change-name-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/change-name-client-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#1aae7db0-ae39-417d-a3b5-2214e6dae43f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/clients/change-note-client-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>clients/change-note-client-command.dto.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#e657409b-f841-4060-bf6e-44fc5cd83b12</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/structs/dto/clients/change-receive-promotion-client-command.dto.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>clients/change-receive-promotion-client-command.dto.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

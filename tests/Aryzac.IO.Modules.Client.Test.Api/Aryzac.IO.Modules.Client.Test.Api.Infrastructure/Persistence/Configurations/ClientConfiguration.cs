@@ -29,6 +29,12 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Infrastructure.Persistence.Configura
             builder.Property(x => x.TitleId)
                 .IsRequired();
 
+            builder.Property(x => x.ReceivePromotions)
+                .IsRequired();
+
+            builder.Property(x => x.Notes)
+                .IsRequired();
+
             builder.Ignore(e => e.DomainEvents);
         }
     }

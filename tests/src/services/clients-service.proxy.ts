@@ -3,6 +3,8 @@ import { ChangeNameClientCommand } from './../structs/dto/clients/change-name-cl
 import { ChangeTitleClientCommand } from './../structs/dto/clients/change-title-client-command.dto';
 import { CreateClientCommand } from './../structs/dto/clients/create-client-command.dto';
 import { ClientDto } from './../structs/dto/clients/client.dto';
+import { ChangeNoteClientCommand } from './../structs/dto/clients/change-note-client-command.dto';
+import { ChangeReceivePromotionClientCommand } from './../structs/dto/clients/change-receive-promotion-client-command.dto';
 
 export class ClientsService {
   public async changeNameClientCommand(id: string, command: ChangeNameClientCommand): Promise<AsyncData<any, any>> {
@@ -82,6 +84,34 @@ export class ClientsService {
     headers: {
     'Content-Type': 'application/json',
     },
+    }
+    );
+  }
+
+  public async changeNoteClientCommand(id: string, command: ChangeNoteClientCommand): Promise<AsyncData<any, any>> {
+    const config = useRuntimeConfig();
+    let url = `${config.public.clientsServiceApiBaseUri}/api/v1/client/${id}/change-note`;
+    return await useLazyFetch(url,
+    {
+    method: 'PUT',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(command),
+    }
+    );
+  }
+
+  public async changeReceivePromotionClientCommand(id: string, command: ChangeReceivePromotionClientCommand): Promise<AsyncData<any, any>> {
+    const config = useRuntimeConfig();
+    let url = `${config.public.clientsServiceApiBaseUri}/api/v1/client/${id}/change-receive-promotion`;
+    return await useLazyFetch(url,
+    {
+    method: 'PUT',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(command),
     }
     );
   }

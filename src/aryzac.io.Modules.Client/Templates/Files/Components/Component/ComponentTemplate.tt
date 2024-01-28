@@ -388,6 +388,8 @@ foreach (var action in table.Actions.Actions)
 #>];
 <#
         }
+#>
+<#
         else if (control.IsSelectModel())
         {
 #>
@@ -436,6 +438,36 @@ const <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options = c
 });
 <#
         }
+#>
+<#
+        else if (control.IsLabelModel())
+        {
+#>
+// <#= control.Name #> Options
+<#
+          var label = control.AsLabelModel();
+          var labelField = "";
+            
+          var mappedColumn = label.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label");
+#>
+const <#= label.InternalElement.Name.ToPascalCase().ToCamelCase() #>Label = computed(() => {
+<#
+          var mappedExpression = mappedColumn.MappingExpression;
+          foreach (var source in mappedColumn.Sources)
+          {
+            mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+#>
+  const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = model.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
+<#
+          }
+#>
+  const mappedExpression = `<#= mappedExpression #>`;
+  return mappedExpression;
+});
+<#
+        }
+#>
+<#
       }
 #>
 <#
@@ -623,7 +655,7 @@ if (Model.View != null)
 		{
 #>
      <ui-input-label 
-       v-model="model.<#= GetMappedLabelName(control.AsLabelModel()) #>" 
+       v-model="<#= control.Name.ToPascalCase().ToCamelCase() #>Label" 
        :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
 <#
         }
@@ -699,7 +731,7 @@ if (Model.View != null)
         @click="<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>()"
         class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
       >
-        {{ t('<#= component.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>') }}
+        {{ t('<#= component.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label') }}
       </button>
     </template>
     

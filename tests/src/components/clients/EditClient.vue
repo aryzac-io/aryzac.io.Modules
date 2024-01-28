@@ -5,6 +5,9 @@ import type { ClientDto } from '~/structs/dto/clients/client.dto';
 import type { TitleDto } from '~/structs/dto/titles/title.dto';
 
 import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
+import type { ChangeTitleClientCommand } from '~/structs/dto/clients/change-title-client-command.dto';
+import type { ChangeReceivePromotionClientCommand } from '~/structs/dto/clients/change-receive-promotion-client-command.dto';
+import type { ChangeNoteClientCommand } from '~/structs/dto/clients/change-note-client-command.dto';
 
 const { t } = useI18n();
 
@@ -40,6 +43,8 @@ interface ModelInterface {
   lastName: string;
   otherNames?: string;
   titleId: string;
+  receivePromotions: boolean;
+  notes: string;
 }
 
 const model: ModelInterface = reactive({
@@ -48,6 +53,8 @@ const model: ModelInterface = reactive({
   lastName: "",
   otherNames: "",
   titleId: "",
+  receivePromotions: "",
+  notes: "",
 });
 
 watchEffect(async () => {
@@ -57,6 +64,8 @@ watchEffect(async () => {
     model.lastName = editClientGetClientByIdQueryData.value.lastName;
     model.otherNames = editClientGetClientByIdQueryData.value.otherNames;
     model.titleId = editClientGetClientByIdQueryData.value.titleId;
+    model.receivePromotions = editClientGetClientByIdQueryData.value.receivePromotions;
+    model.notes = editClientGetClientByIdQueryData.value.notes;
   }
 });
 
@@ -74,7 +83,48 @@ const changeNameClientCommand = async () => {
           
 	const changeNameClientCommand = await clientsServiceProxy.changeNameClientCommand(id, command);
 };
+const changeTitleClientCommand = async () => {
 
+  const command: ChangeTitleClientCommand = {
+    id: model.id,
+    titleId: model.titleId,
+  };
+
+  const id = props.clientId;
+          
+	const changeTitleClientCommand = await clientsServiceProxy.changeTitleClientCommand(id, command);
+};
+const changeReceivePromotionClientCommand = async () => {
+
+  const command: ChangeReceivePromotionClientCommand = {
+    id: model.id,
+    receivePromotions: model.receivePromotions,
+  };
+
+  const id = props.clientId;
+          
+	const changeReceivePromotionClientCommand = await clientsServiceProxy.changeReceivePromotionClientCommand(id, command);
+};
+const changeNoteClientCommand = async () => {
+
+  const command: ChangeNoteClientCommand = {
+    id: model.id,
+    notes: model.notes,
+  };
+
+  const id = props.clientId;
+          
+	const changeNoteClientCommand = await clientsServiceProxy.changeNoteClientCommand(id, command);
+};
+
+
+// NewLabel Options
+const newLabelLabel = computed(() => {
+  const lastName = model.lastName || '';
+  const firstName = model.firstName || '';
+  const mappedExpression = `${lastName}, ${firstName}`;
+  return mappedExpression;
+});
 
 // TitleSelect Options
 const titleSelectOptions = computed(() => {
@@ -94,6 +144,8 @@ const titleSelectOptions = computed(() => {
   return options;
 });
 
+
+
 onMounted(() => {
   editClientGetClientByIdQueryExecute();
   titleSelectGetTitlesQueryExecute();
@@ -112,15 +164,13 @@ onMounted(() => {
         @click="changeNameClientCommand()"
         class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
       >
-        {{ t('personalInformation.actions.save') }}
+        {{ t('personalInformation.actions.save.label') }}
       </button>
     </template>
     
-     <ui-input-select 
-       v-model="model.titleId" 
-       :label="t('personalInformation.titleSelect.label')"
-       :options="titleSelectOptions"
-      />
+     <ui-input-label 
+       v-model="newLabelLabel" 
+       :label="t('personalInformation.newLabel.label')" />
      <ui-input-textbox 
        v-model="model.firstName" 
        :label="t('personalInformation.firstNameTextBox.label')" />
@@ -130,5 +180,65 @@ onMounted(() => {
      <ui-input-textbox 
        v-model="model.otherNames" 
        :label="t('personalInformation.otherNamesTextBox.label')" />
+  </ui-editor-section>
+  <ui-editor-section
+    :title="t('salutation.title')"
+    :description="t('salutation.description')"
+  >
+
+    <template #actions>
+      <button
+        type="button"
+        @click="changeTitleClientCommand()"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        {{ t('salutation.actions.save.label') }}
+      </button>
+    </template>
+    
+     <ui-input-select 
+       v-model="model.titleId" 
+       :label="t('salutation.titleSelect.label')"
+       :options="titleSelectOptions"
+      />
+  </ui-editor-section>
+  <ui-editor-section
+    :title="t('promotions.title')"
+    :description="t('promotions.description')"
+  >
+     <ui-input-checkbox 
+       v-model="model.receivePromotions" 
+       :label="t('promotions.newCheckbox.label')" 
+       :description="t('promotions.newCheckbox.description')" />
+
+    <template #actions>
+      <button
+        type="button"
+        @click="changeReceivePromotionClientCommand()"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        {{ t('promotions.actions.save.label') }}
+      </button>
+    </template>
+    
+  </ui-editor-section>
+  <ui-editor-section
+    :title="t('notes.title')"
+    :description="t('notes.description')"
+  >
+     <ui-input-text-area 
+       v-model="model.notes" 
+       :label="t('notes.newTextArea.label')" />
+
+    <template #actions>
+      <button
+        type="button"
+        @click="changeNoteClientCommand()"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        {{ t('notes.actions.save.label') }}
+      </button>
+    </template>
+    
   </ui-editor-section>
 </template>

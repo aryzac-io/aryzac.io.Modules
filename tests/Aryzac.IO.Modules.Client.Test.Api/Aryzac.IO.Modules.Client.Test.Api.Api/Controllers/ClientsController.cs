@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ResponseTypes;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeNameClient;
+using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeNoteClient;
+using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeReceivePromotionClient;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeTitleClient;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.CreateClient;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Clients.DeleteClient;
@@ -50,6 +52,66 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Api.Controllers
         public async Task<ActionResult> ChangeNameClient(
             [FromRoute] Guid id,
             [FromBody] ChangeNameClientCommand command,
+            CancellationToken cancellationToken = default)
+        {
+            if (command.Id == default)
+            {
+                command.Id = id;
+            }
+
+            if (id != command.Id)
+            {
+                return BadRequest();
+            }
+
+            await _mediator.Send(command, cancellationToken);
+            return NoContent();
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <response code="204">Successfully updated.</response>
+        /// <response code="400">One or more validation errors have occurred.</response>
+        /// <response code="404">One or more entities could not be found with the provided parameters.</response>
+        [HttpPut("api/v{version:apiVersion}/client/{id}/change-note")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+        [MapToApiVersion("1.0")]
+        public async Task<ActionResult> ChangeNoteClient(
+            [FromRoute] Guid id,
+            [FromBody] ChangeNoteClientCommand command,
+            CancellationToken cancellationToken = default)
+        {
+            if (command.Id == default)
+            {
+                command.Id = id;
+            }
+
+            if (id != command.Id)
+            {
+                return BadRequest();
+            }
+
+            await _mediator.Send(command, cancellationToken);
+            return NoContent();
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <response code="204">Successfully updated.</response>
+        /// <response code="400">One or more validation errors have occurred.</response>
+        /// <response code="404">One or more entities could not be found with the provided parameters.</response>
+        [HttpPut("api/v{version:apiVersion}/client/{id}/change-receive-promotion")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+        [MapToApiVersion("1.0")]
+        public async Task<ActionResult> ChangeReceivePromotionClient(
+            [FromRoute] Guid id,
+            [FromBody] ChangeReceivePromotionClientCommand command,
             CancellationToken cancellationToken = default)
         {
             if (command.Id == default)

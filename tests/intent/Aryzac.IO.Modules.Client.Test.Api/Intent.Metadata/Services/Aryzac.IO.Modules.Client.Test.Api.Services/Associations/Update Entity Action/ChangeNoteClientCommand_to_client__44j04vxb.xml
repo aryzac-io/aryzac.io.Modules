@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="100bfc3b-927c-4ac8-bf25-101b7b2bba8f">
+  <sourceEnd id="89c36fa2-5c41-4c00-babf-2a1c689c898e" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : Clients.ChangeNoteClientCommand</display>
+    <order>0</order>
+    <typeReference id="3c0c597e-701c-486c-9560-bf16ba9d7263">
+      <typeId>1aae7db0-ae39-417d-a3b5-2214e6dae43f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+      <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="100bfc3b-927c-4ac8-bf25-101b7b2bba8f" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>client</name>
+    <display>[update] client: ChangeNote</display>
+    <order>2</order>
+    <typeReference id="9238e4a5-2dc6-4155-ac25-c39b5eda3645">
+      <typeId>6608863e-7d01-4784-9422-44f25b897587</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Domain</typePackageName>
+      <typePackageId>527f6356-633b-45e5-89bf-846df3148cf5</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="1aae7db0-ae39-417d-a3b5-2214e6dae43f" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeNoteClientCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Client]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" name="Client" type="element" specialization="Class" />
+              <target id="7a01128d-e48b-4377-9d50-cf5ad4f27d1e" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="1aae7db0-ae39-417d-a3b5-2214e6dae43f" name="ChangeNoteClientCommand" type="element" specialization="Command" />
+                  <target id="3900f1f8-9f39-413c-a7f2-1418f2cc8058" name="Id" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="1aae7db0-ae39-417d-a3b5-2214e6dae43f" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[ChangeNoteClientCommand]" />
+        <target applicationId="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" location="[Aryzac.IO.Modules.Client.Test.Api].[Services].[Client]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{ChangeNoteClientCommand}</expression>
+            <path>
+              <target id="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" name="Client" type="element" specialization="Class" />
+              <target id="6608863e-7d01-4784-9422-44f25b897587" name="ChangeNote" type="element" specialization="Operation" />
+            </path>
+            <sources>
+              <source identifier="ChangeNoteClientCommand" mappingType="Invocation Mapping" mappingTypeId="d30bdba1-9c47-4917-b81d-29230fed5d6a">
+                <path>
+                  <target id="1aae7db0-ae39-417d-a3b5-2214e6dae43f" name="ChangeNoteClientCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Notes}</expression>
+            <path>
+              <target id="bcd9d59d-fe2a-416c-8e06-f0b1a54f53dc" name="Client" type="element" specialization="Class" />
+              <target id="6608863e-7d01-4784-9422-44f25b897587" name="ChangeNote" type="element" specialization="Operation" />
+              <target id="a450703e-34a4-4654-a222-a04a052509d0" name="notes" type="element" specialization="Parameter" />
+            </path>
+            <sources>
+              <source identifier="Notes" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="1aae7db0-ae39-417d-a3b5-2214e6dae43f" name="ChangeNoteClientCommand" type="element" specialization="Command" />
+                  <target id="5c2d7d78-9d3f-4d48-bf43-cfacb7f8080b" name="Notes" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

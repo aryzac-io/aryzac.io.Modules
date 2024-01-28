@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using Aryzac.IO.Modules.Client.Api;
 using Intent.Engine;
 using Intent.Metadata.Models;
@@ -183,12 +184,22 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
             var actions = control.AsActionsModel();
             sectionObj.WithObject("actions", actionsObj =>
             {
-                foreach (var actionElement in actions.InternalElement.ChildElements)
+                foreach (var action in actions.InternalElement.ChildElements)
                 {
-                    var action = actionElement.AsActionModel();
-                    action.TryGetActionSettings(out var actionSettings);
-                    actionsObj.WithValue(action.Name.ToPascalCase().ToCamelCase(), actionSettings.Label() ?? action.Name);
+                    HandleAction(actionsObj, action, locale);
                 }
+            });
+        }
+
+        private static void HandleAction(IDataFileObjectValue sectionObj, IElement control, LocaleModel locale)
+        {
+            var action = control.AsActionModel();
+            var actionSettings = action.GetActionSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
+
+            sectionObj.WithObject(control.Name.ToPascalCase().ToCamelCase(), selectObj =>
+            {
+                // Set label, use control name as default if no specific setting is found
+                selectObj.WithValue("label", actionSettings?.Label() ?? control.Name);
             });
         }
 

@@ -11,6 +11,20 @@
             <response code="400">One or more validation errors have occurred.</response>
             <response code="404">One or more entities could not be found with the provided parameters.</response>
         </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.ChangeNoteClient(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeNoteClient.ChangeNoteClientCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.ChangeReceivePromotionClient(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeReceivePromotionClient.ChangeReceivePromotionClientCommand,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="204">Successfully updated.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">One or more entities could not be found with the provided parameters.</response>
+        </member>
         <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.ClientsController.ChangeTitleClient(System.Guid,Aryzac.IO.Modules.Client.Test.Api.Application.Clients.ChangeTitleClient.ChangeTitleClientCommand,System.Threading.CancellationToken)">
             <summary>
             </summary>

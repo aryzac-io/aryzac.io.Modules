@@ -513,7 +513,7 @@ execute(element);
               <allowGenericTypes>false</allowGenericTypes>
               <allowMapping>false</allowMapping>
               <allowSorting>true</allowSorting>
-              <sortChildren>by-type-then-by-name</sortChildren>
+              <sortChildren>by-type-then-manually</sortChildren>
               <allowFindInView>false</allowFindInView>
               <allowTypeReference>false</allowTypeReference>
               <allowConvertToType p8:nil="true" xmlns:p8="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1401,6 +1401,28 @@ lookupTypesOf("Locale").forEach(locale =&gt; {
           <scriptOptions />
           <mappingOptions />
           <mappingSettings />
+          <macros>
+            <macro trigger="on-created">
+              <script>/// &lt;reference path="../../../typings/elementmacro.context.api.d.ts" /&gt;
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("ea0f9d89-8d52-4d58-b4d2-9095a9bf5606"); // action settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+lookupTypesOf("Locale").forEach(locale =&gt; {
+    if (!locale.hasStereotype("09876e82-e2d2-440a-9f22-2cb2d958d89d")) {
+        let settingsStereotype = element.addStereotype("ea0f9d89-8d52-4d58-b4d2-9095a9bf5606"); // action settings stereotype
+        settingsStereotype
+            .getProperty("Locale")
+            .setValue(locale.id);
+    }
+});
+</script>
+            </macro>
+          </macros>
           <childElementSettings />
         </childElementSetting>
       </childElementSettings>

@@ -4,4 +4,6 @@ export interface ClientDto {
     lastName: string;
     otherNames?: string;
     titleId: string;
+    receivePromotions: boolean;
+    notes: string;
 }

@@ -24,6 +24,7 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Domain.Entities
         {
             FirstName = null!;
             LastName = null!;
+            Notes = null!;
         }
 
         public Guid Id { get; private set; }
@@ -35,6 +36,10 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Domain.Entities
         public string? OtherNames { get; private set; }
 
         public Guid TitleId { get; private set; }
+
+        public bool ReceivePromotions { get; private set; } = false;
+
+        public string Notes { get; private set; }
 
         public List<DomainEvent> DomainEvents { get; set; } = new List<DomainEvent>();
 
@@ -48,6 +53,16 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Domain.Entities
         public void ChangeTitle(Guid titleId)
         {
             TitleId = titleId;
+        }
+
+        public void ChangeReceivePromotion(bool receivePromotions)
+        {
+            ReceivePromotions = receivePromotions;
+        }
+
+        public void ChangeNote(string notes)
+        {
+            Notes = notes;
         }
     }
 }

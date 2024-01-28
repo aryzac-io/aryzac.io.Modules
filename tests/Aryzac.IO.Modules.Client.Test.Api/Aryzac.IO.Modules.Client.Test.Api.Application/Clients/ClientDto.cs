@@ -15,6 +15,7 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Application.Clients
         {
             FirstName = null!;
             LastName = null!;
+            Notes = null!;
         }
 
         public Guid Id { get; set; }
@@ -22,8 +23,17 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Application.Clients
         public string LastName { get; set; }
         public string? OtherNames { get; set; }
         public Guid TitleId { get; set; }
+        public bool ReceivePromotions { get; set; }
+        public string Notes { get; set; }
 
-        public static ClientDto Create(Guid id, string firstName, string lastName, string? otherNames, Guid titleId)
+        public static ClientDto Create(
+            Guid id,
+            string firstName,
+            string lastName,
+            string? otherNames,
+            Guid titleId,
+            bool receivePromotions,
+            string notes)
         {
             return new ClientDto
             {
@@ -31,7 +41,9 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Application.Clients
                 FirstName = firstName,
                 LastName = lastName,
                 OtherNames = otherNames,
-                TitleId = titleId
+                TitleId = titleId,
+                ReceivePromotions = receivePromotions,
+                Notes = notes
             };
         }
 

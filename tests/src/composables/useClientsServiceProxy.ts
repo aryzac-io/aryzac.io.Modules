@@ -11,5 +11,7 @@ export const useClientsServiceProxy = () => {
     deleteClientCommand : clientsServices.deleteClientCommand,
     getClientByIdQuery : clientsServices.getClientByIdQuery,
     getClientsQuery : clientsServices.getClientsQuery,
+    changeNoteClientCommand : clientsServices.changeNoteClientCommand,
+    changeReceivePromotionClientCommand : clientsServices.changeReceivePromotionClientCommand,
     };
 }

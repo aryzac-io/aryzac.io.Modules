@@ -3,26 +3,78 @@ af:
     title: Personal Information
     description: ''
     actions:
-      save: Save
-    titleSelect:
-      label: TitleSelect
+      save:
+        label: Save
+    newLabel:
+      label: NewLabel
     firstNameTextBox:
       label: FirstNameTextBox
     lastNameTextBox:
       label: LastNameTextBox
     otherNamesTextBox:
       label: OtherNamesTextBox
+  salutation:
+    title: Salutation
+    description: ''
+    actions:
+      save:
+        label: Save
+    titleSelect:
+      label: TitleSelect
+  promotions:
+    title: Promotions
+    description: ''
+    newCheckbox:
+      label: NewCheckbox
+      description: ''
+    actions:
+      save:
+        label: Save
+  notes:
+    title: Notes
+    description: ''
+    newTextArea:
+      label: NewTextArea
+    actions:
+      save:
+        label: Save
 en:
   personalInformation:
     title: Personal Information
     description: ''
     actions:
-      save: Save
-    titleSelect:
-      label: Title
+      save:
+        label: Save
+    newLabel:
+      label: NewLabel
     firstNameTextBox:
       label: First name
     lastNameTextBox:
       label: Last name
     otherNamesTextBox:
       label: Other names
+  salutation:
+    title: Salutation
+    description: ''
+    actions:
+      save:
+        label: Save
+    titleSelect:
+      label: TitleSelect
+  promotions:
+    title: Promotions
+    description: ''
+    newCheckbox:
+      label: Receives Promotions
+      description: This client has opted into receiving promotional emails
+    actions:
+      save:
+        label: Save
+  notes:
+    title: Notes
+    description: ''
+    newTextArea:
+      label: NewTextArea
+    actions:
+      save:
+        label: Save
