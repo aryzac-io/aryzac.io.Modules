@@ -18,6 +18,16 @@ namespace Aryzac.IO.Modules.Client.Api
             return stereotype != null ? new NavigationItemSettings(stereotype) : null;
         }
 
+        public static IReadOnlyCollection<NavigationItemSettings> GetNavigationItemSettingss(this NavigationItemModel model)
+        {
+            var stereotypes = model
+                .GetStereotypes("d4e49575-65a5-472a-8c4b-a4fb12c162bc")
+                .Select(stereotype => new NavigationItemSettings(stereotype))
+                .ToArray();
+
+            return stereotypes;
+        }
+
 
         public static bool HasNavigationItemSettings(this NavigationItemModel model)
         {

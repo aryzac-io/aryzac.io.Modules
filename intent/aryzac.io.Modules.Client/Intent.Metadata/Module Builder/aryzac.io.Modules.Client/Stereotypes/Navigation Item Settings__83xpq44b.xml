@@ -6,7 +6,7 @@
     <type id="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">Navigation Item</type>
   </targetTypes>
   <targetReferenceTypes />
-  <applyMode>on-create</applyMode>
+  <applyMode>manually</applyMode>
   <icon type="UrlImagePath" source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOVJREFUOE+1ku0NwVAUhh8TMAITsAE2YAMmYISOYAQmYANGYAJGYAN5mnukbtGIOEl/9J6+n7ctfpzWj3i+JZgBQ+AAbBRvIugCl+RSsI/gEXAG5u8IBsAWCIIpcMziSly8IhC8y9TWSTXcyFUokBMEeJIUO8AVWCX1ZcVFzUEOVrX86AWBO+ONwkEOtqzSIuAuirMHwZ5Z5FUCX/bAuFJUVT1cePYEjms0n1lVjTHrAuilnT3UwJ8I3HkT7Yr9WxKR7DERwYw6EFRmS3G8DSOa3V1tokRBRukDJ8AIkjZO06/8f4I7VJQ8cfF7dGUAAAAASUVORK5CYII=" />
   <displayIcon>false</displayIcon>
   <displayIconFunction>return false;</displayIconFunction>
@@ -14,7 +14,7 @@
   <displayAsAnnotation>false</displayAsAnnotation>
   <displayAsText>true</displayAsText>
   <autoAdd>false</autoAdd>
-  <allowMultipleApplies>false</allowMultipleApplies>
+  <allowMultipleApplies>true</allowMultipleApplies>
   <parentFolderId>e79eae33-72a3-4b49-bbb2-abf6033e5981</parentFolderId>
   <order>0</order>
   <packageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</packageId>

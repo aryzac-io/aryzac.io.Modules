@@ -125,7 +125,7 @@ if (Model.BreadcrumbNavigation is not null)
 
   foreach (var item in Model.BreadcrumbNavigation.Items)
   {
-    item.TryGetNavigationItemSettings(out var navigationSettings);
+    var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
     var page = item.TypeReference.Element.AsPageModel();
 
     var pageUrl = page.GetRoutePath();
@@ -152,7 +152,7 @@ if (Model.BreadcrumbNavigation is not null)
             this.Write(".label\"), \r\n  ");
             
             #line 65 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Pages\Page\PageTemplate.tt"
- if (navigationSettings.Icon() != null) 
+ if (navigationSettings?.Icon() != null) 
   { 
             
             #line default

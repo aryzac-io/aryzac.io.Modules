@@ -46,7 +46,7 @@ if (Model.BreadcrumbNavigation is not null)
 <#
   foreach (var item in Model.BreadcrumbNavigation.Items)
   {
-    item.TryGetNavigationItemSettings(out var navigationSettings);
+    var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
     var page = item.TypeReference.Element.AsPageModel();
 
     var pageUrl = page.GetRoutePath();
@@ -62,7 +62,7 @@ if (Model.BreadcrumbNavigation is not null)
       #>setupSectionItem(
   "breadcrumb", 
   t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"), 
-  <# if (navigationSettings.Icon() != null) 
+  <# if (navigationSettings?.Icon() != null) 
   { #>t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
   } 
   else 

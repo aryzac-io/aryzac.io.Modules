@@ -75,15 +75,15 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Pages.PageI18n
                     {
                         foreach (var item in Model.BreadcrumbNavigation.Items)
                         {
-                            item.TryGetNavigationItemSettings(out var navigationSettings);
+                            var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
                             navigationObj.WithObject(item.Name.ToPascalCase().ToCamelCase(), itemObj =>
                             {
-                                itemObj.WithValue("label", navigationSettings.Label() ?? item.Name);
+                                itemObj.WithValue("label", navigationSettings?.Label() ?? item.Name);
 
-                                if (navigationSettings.Icon() != null)
+                                if (navigationSettings?.Icon() != null)
                                 {
-                                    itemObj.WithValue("icon", navigationSettings.Icon());
+                                    itemObj.WithValue("icon", navigationSettings?.Icon());
                                 }
                             });
                         }

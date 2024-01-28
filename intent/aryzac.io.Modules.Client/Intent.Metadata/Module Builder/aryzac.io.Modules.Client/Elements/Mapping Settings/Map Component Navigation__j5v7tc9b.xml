@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <class id="90548e07-a8af-41a1-b608-d07b35d98fa3" type="Mapping Settings" typeId="a901c634-6482-4993-ae3c-bd1b637f78d4">
-  <name>Map Table Navigation</name>
-  <display>Map Table Navigation</display>
+  <name>Map Component Navigation</name>
+  <display>Map Component Navigation</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
   <genericTypes />
