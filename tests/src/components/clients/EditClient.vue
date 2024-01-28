@@ -47,7 +47,7 @@ watchEffect(async () => {
 });
 
 // Commands
-const saveChangeNameClientCommand = async () => {
+const changeNameClientCommand = async () => {
 
   const command: ChangeNameClientCommand = {
     id: model.id,

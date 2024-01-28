@@ -155,7 +155,26 @@ watchEffect(async () => {
     var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
     var commandParameter = command.InternalElement.ChildElements.FirstOrDefault(m => m.SpecializationType == "Parameter" && m.Name == "command");
 	
-#>const save<#= command.Mapping.Element.Name.ToPascalCase() #> = async () => {
+#>const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = async (<#
+	foreach (var mapping in command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
+    {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+            var source = "props";
+
+            switch (mappedEnd.SourceElement.SpecializationType)
+            {
+                case "DTO-Field":
+#><#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #>: <#= GetTypeName(mappedEnd.TargetElement.TypeReference) #><#
+                if (mapping.MappedEnds.Last() != mappedEnd)
+		        {
+		          #>, <#
+		        }
+                    break;
+            }
+	    }
+	}
+#>) => {
 
 <#
 	  foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType == "Command"))
@@ -178,9 +197,21 @@ watchEffect(async () => {
 <#
 	foreach (var mapping in command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
     {
-        foreach (var mappedEnd in mapping.MappedEnds)
+        foreach (var mappedEnd in mapping.MappedEnds.Where(m => m.SourceElement.SpecializationType != "DTO-Field"))
         {
-	      #>  const <#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #> = props.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>;
+            var source = "props";
+
+            switch (mappedEnd.SourceElement.SpecializationType)
+            {
+                case "Component Parameter":
+                    source = "props";
+                    break;
+                case "Component Model Field":
+                    source = "model";
+                    break;
+            }
+
+	      #>  const <#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #> = <#= source #>.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>;
           <#
 	    }
 	}
@@ -312,7 +343,19 @@ const <#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Actions = [
 foreach (var action in Model.View.Table.Actions.Actions)
 {
     action.TryGetActionSettings(out var actionSettings);
-    if (action.Navigation != null)
+#>
+  {
+    label: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label"),
+<#
+      if (actionSettings.Icon() is not null)
+      {
+#>
+    icon: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.icon"),
+<#
+      }
+#>
+<#
+    if (action.Navigation is not null)
     {
       var page = action.Navigation.TypeReference.Element.AsPageModel();
       var pageUrl = page.GetRoutePath();
@@ -325,22 +368,41 @@ foreach (var action in Model.View.Table.Actions.Actions)
         }
       }
 #>
-  {
-    label: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label"),
-<#
-      if (actionSettings.Icon() is not null)
-      {
-#>
-    icon: t("<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.icon"),
-<#
-      }
-#>
     action: async (item: <#= ((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
       await navigateTo(`<#= pageUrl #>`);
     },
-  },
 <#
     }
+    else if (action.Command is not null)
+    {
+#>
+    action: async (item: <#= ((IElement)action.Command.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
+      await <#= action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
+	foreach (var mapping in action.Command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
+    {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+            var source = "props";
+
+            switch (mappedEnd.SourceElement.SpecializationType)
+            {
+                case "DTO-Field":
+#>item.<#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #><#
+                if (mapping.MappedEnds.Last() != mappedEnd)
+		        {
+		          #>, <#
+		        }
+                    break;
+            }
+	    }
+	}
+#>);
+    },
+<#
+    }
+#>
+  },
+<#
 }
 #>];
 

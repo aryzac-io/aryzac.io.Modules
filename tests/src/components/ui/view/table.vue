@@ -48,7 +48,10 @@ const getKey = (item, index) => {
         >
           {{ header.label }}
         </th>
-        <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
+        <th
+          scope="col"
+          class="py-3.5 pl-3 pr-4 sm:pr-6 text-right whitespace-nowrap w-auto"
+        >
           <span class="sr-only">Actions</span>
         </th>
       </tr>
@@ -67,17 +70,21 @@ const getKey = (item, index) => {
             {{ item[header.key] }}
           </template>
         </td>
-        <td
-          class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6"
-        >
-          <div v-for="(action, actionId) in actions" :key="actionId">
+        <td class="py-4 pl-3 pr-4 sm:pr-6 text-right whitespace-nowrap w-auto">
+          <div class="flex justify-end gap-x-2">
             <button
+              v-for="(action, actionId) in actions"
+              :key="actionId"
               type="button"
               class="text-indigo-600 hover:text-indigo-900"
               @click="action.action(item)"
             >
               <span class="sr-only">{{ action.label }}</span>
-              <icon v-if="action.icon" :name="action.icon" />
+              <icon
+                v-if="action.icon"
+                :name="action.icon"
+                class="h-6 w-6 shrink-0"
+              />
               <span v-else>{{ action.label }}</span>
             </button>
           </div>

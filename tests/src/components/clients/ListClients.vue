@@ -18,7 +18,13 @@ const {
 } = await clientsServiceProxy.getClientsQuery();
 
 
+// Commands
+const deleteClientCommand = async (id: string) => {
 
+
+
+	const deleteClientCommand = await clientsServiceProxy.deleteClientCommand(id);
+};
 
 
 
@@ -39,6 +45,13 @@ const tableHeaders = [
 ];
 
 const tableActions = [
+  {
+    label: t("table.actions.delete.label"),
+    icon: t("table.actions.delete.icon"),
+    action: async (item: ClientDto) => {
+      await deleteClientCommand(item.id);
+    },
+  },
   {
     label: t("table.actions.edit.label"),
     icon: t("table.actions.edit.icon"),

@@ -4,6 +4,9 @@ en:
     lastName: LastName
     otherNames: OtherNames
     actions:
+      delete:
+        label: Delete
+        icon: ic:twotone-delete
       edit:
         label: Edit
         icon: ic:twotone-edit

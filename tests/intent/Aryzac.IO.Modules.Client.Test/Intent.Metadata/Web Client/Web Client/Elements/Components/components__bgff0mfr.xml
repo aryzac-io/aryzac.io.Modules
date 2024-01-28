@@ -244,7 +244,7 @@
                               <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                               <properties>
                                 <property name="b0451488-cf54-4083-81c6-a25270f27bd7" display="Locale" value="daaa3995-824e-4a1d-a4bb-d637005f8575" isActive="true" />
-                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" isActive="true" />
+                                <property name="9a52b695-a687-420b-a301-a97bfb771858" display="Icon" value="ic:twotone-delete" isActive="true" />
                                 <property name="87c4414c-2d6c-4f19-ae25-7c2ece4c38a4" display="Label" isActive="true" />
                               </properties>
                             </stereotype>
@@ -273,6 +273,33 @@
                               <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                               <packageName>Web Client</packageName>
                               <stereotypes />
+                              <mappings>
+                                <mapping type="Map Parameter To Command" typeId="0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b">
+                                  <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ed9feb16-f1b5-4c34-8fae-2da23bf25b2e" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[ListClients]" />
+                                  <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b9308a0b-fc72-4a31-904b-f26985ad91cb" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[[command]]" />
+                                  <mappedEnds>
+                                    <mappedEnd>
+                                      <expression>{[view].table.[query].response-type.Id}</expression>
+                                      <path>
+                                        <target id="b9308a0b-fc72-4a31-904b-f26985ad91cb" name="[command]" type="element" specialization="Component Command" />
+                                        <target id="49a64cfb-c7c0-4261-8237-8788959ef7c6" name="id" type="element" specialization="Parameter" />
+                                      </path>
+                                      <sources>
+                                        <source identifier="[view].table.[query].response-type.Id" mappingType="NewMappingType" mappingTypeId="7a89bcb5-f601-4136-89c6-ad6653904824">
+                                          <path>
+                                            <target id="ed9feb16-f1b5-4c34-8fae-2da23bf25b2e" name="ListClients" type="element" specialization="Component" />
+                                            <target id="e39c6a8e-2d95-4fbe-80ae-42cb20da8e49" name="[view]" type="element" specialization="Component View" />
+                                            <target id="d021e57d-34d3-46ab-a75a-50cf7cc6e2cf" name="table" type="element" specialization="Table" />
+                                            <target id="021d7cf8-3abe-444f-ad35-42a5aa702b4f" name="[query]" type="element" specialization="Component Query" />
+                                            <target id="c6417e8b-2d74-4f25-9d85-1babff613d01" name="response-type" type="element" specialization="Parameter" />
+                                            <target id="1296c368-3fa0-4ec3-9e4c-63d1a2f20cf6" name="Id" type="element" specialization="DTO-Field" />
+                                          </path>
+                                        </source>
+                                      </sources>
+                                    </mappedEnd>
+                                  </mappedEnds>
+                                </mapping>
+                              </mappings>
                               <metadata />
                               <childElements>
                                 <childElement id="49a64cfb-c7c0-4261-8237-8788959ef7c6" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
@@ -1075,7 +1102,7 @@
                                         <target id="f8c51646-858f-4361-a7b0-fe6f9598d33b" name="id" type="element" specialization="Parameter" />
                                       </path>
                                       <sources>
-                                        <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="01f59a33-4dfb-4f7c-826e-fc0f0766acb5">
+                                        <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="d097c659-da4c-4905-b1a8-52c5275ff605">
                                           <path>
                                             <target id="7feef88b-f500-4dea-ab2c-596cd3d1b06b" name="EditClient" type="element" specialization="Component" />
                                             <target id="51941abd-4fb7-4d81-94ea-72c4a798ad13" name="client-id" type="element" specialization="Component Parameter" />
