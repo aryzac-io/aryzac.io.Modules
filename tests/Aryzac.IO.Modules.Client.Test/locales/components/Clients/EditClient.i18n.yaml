@@ -11,7 +11,7 @@ af:
         label: View
   personalInformation:
     title: Personal Information
-    description: ""
+    description: ''
     firstnameTextBox:
       label: Eerste naame
     surnameTextBox:
@@ -24,7 +24,7 @@ af:
         icon: ic:twotone-remove-red-eye
   salutation:
     title: Salutation
-    description: ""
+    description: ''
     titleSelect:
       label: Tietel
     actions:
@@ -32,7 +32,7 @@ af:
         label: Save
   subscriptions:
     title: Subscriptions
-    description: ""
+    description: ''
     receivePromotionsCheckBox:
       label: Ontvang Promosies
       description: Hierdie klient wil kak email kry
@@ -41,7 +41,7 @@ af:
         label: Update
   notes:
     title: Notes
-    description: ""
+    description: ''
     notes:
       label: Notas
     actions:
@@ -62,7 +62,7 @@ en:
         label: View
   personalInformation:
     title: Personal Information
-    description: ""
+    description: ''
     firstnameTextBox:
       label: Firstname
     surnameTextBox:
@@ -74,7 +74,7 @@ en:
         label: Save
   salutation:
     title: Salutation
-    description: ""
+    description: ''
     titleSelect:
       label: Title
     actions:
@@ -82,7 +82,7 @@ en:
         label: Save
   subscriptions:
     title: Subscriptions
-    description: ""
+    description: ''
     receivePromotionsCheckBox:
       label: Receive Promotions
       description: This client has opted into receiving promotional material
@@ -91,7 +91,7 @@ en:
         label: Update
   notes:
     title: Notes
-    description: ""
+    description: ''
     notes:
       label: Notes
     actions:
