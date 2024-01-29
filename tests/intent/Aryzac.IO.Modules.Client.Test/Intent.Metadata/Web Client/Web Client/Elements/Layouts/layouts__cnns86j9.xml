@@ -131,42 +131,12 @@
                   <metadata />
                   <childElements />
                 </childElement>
-              </childElements>
-            </childElement>
-          </childElements>
-        </childElement>
-        <childElement id="a47bfb0a-8620-498a-8001-a189663f14ae" type="Sidebar Navigation" typeId="4b1db728-6c2e-4ef2-a647-a50015a0a684">
-          <name>[sidebar navigation]</name>
-          <display>[sidebar navigation]</display>
-          <isAbstract>false</isAbstract>
-          <sort-children>by-type-then-by-name</sort-children>
-          <genericTypes />
-          <isMapped>false</isMapped>
-          <parentFolderId>aec04780-3a33-4de1-aceb-7e97d049107a</parentFolderId>
-          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
-          <packageName>Web Client</packageName>
-          <stereotypes />
-          <metadata />
-          <childElements>
-            <childElement id="c3dcd83f-0e51-4507-ae69-66aa2dc9bf5c" type="Sidebar Navigation Section" typeId="3b2026bf-7e0e-47d3-aaa7-3fccb5739990">
-              <name>NewSidebarNavigationSection</name>
-              <display>NewSidebarNavigationSection</display>
-              <isAbstract>false</isAbstract>
-              <sort-children>by-type-then-by-name</sort-children>
-              <genericTypes />
-              <isMapped>false</isMapped>
-              <parentFolderId>a47bfb0a-8620-498a-8001-a189663f14ae</parentFolderId>
-              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
-              <packageName>Web Client</packageName>
-              <stereotypes />
-              <metadata />
-              <childElements>
-                <childElement id="e9695605-f14f-466c-9edf-5144c9549908" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
+                <childElement id="2f79d2e7-4c81-4785-99bf-0f45559610b8" type="Navigation Item" typeId="27ebf07c-5f47-49cb-8ccf-b5dc2cffa951">
                   <name>Dashboard</name>
                   <display>Dashboard: dashboard</display>
                   <isAbstract>false</isAbstract>
                   <genericTypes />
-                  <typeReference id="acdffe3d-f238-4c05-aae8-14f4cfdee43c">
+                  <typeReference id="90d64264-d87d-46eb-a43f-36d22ce4ae24">
                     <typeId>bfd0a730-79f6-4457-9f0a-9a92551b5530</typeId>
                     <isNavigable>true</isNavigable>
                     <isNullable>false</isNullable>
@@ -178,7 +148,7 @@
                     <genericTypeParameters />
                   </typeReference>
                   <isMapped>false</isMapped>
-                  <parentFolderId>c3dcd83f-0e51-4507-ae69-66aa2dc9bf5c</parentFolderId>
+                  <parentFolderId>94cd2454-8a2b-4829-80f5-d273d92256bd</parentFolderId>
                   <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                   <packageName>Web Client</packageName>
                   <stereotypes>

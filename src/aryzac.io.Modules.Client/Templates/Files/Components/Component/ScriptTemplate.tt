@@ -413,6 +413,8 @@ foreach (var column in table.Columns)
 
 const <#= table.Name.ToPascalCase().ToCamelCase() #>Actions = [
 <# 
+if (table.Actions is not null)
+{
 foreach (var action in table.Actions.Actions)
 {
     action.TryGetActionSettings(out var actionSettings);
@@ -477,6 +479,7 @@ foreach (var action in table.Actions.Actions)
 #>
   },
 <#
+}
 }
 #>];
 <#
@@ -600,6 +603,8 @@ foreach (var column in Model.View.Table.Columns)
 
 const <#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Actions = [
 <# 
+if (Model.View.Table.Actions is not null)
+{
 foreach (var action in Model.View.Table.Actions.Actions)
 {
     action.TryGetActionSettings(out var actionSettings);
@@ -670,6 +675,7 @@ foreach (var action in Model.View.Table.Actions.Actions)
 <# 
     }
   }
+}
 }
 #>
 

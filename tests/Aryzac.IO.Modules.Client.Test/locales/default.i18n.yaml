@@ -5,11 +5,8 @@ af:
         label: Tuis
       clients:
         label: Clients
-  sidebar:
-    navigation:
-      newSidebarNavigationSection:
-        dashboard:
-          label: Dashboard
+      dashboard:
+        label: Dashboard
   breadcrumb:
     navigation:
       home:
@@ -21,11 +18,8 @@ en:
         label: Home
       clients:
         label: Clients
-  sidebar:
-    navigation:
-      newSidebarNavigationSection:
-        dashboard:
-          label: Dashboard
+      dashboard:
+        label: Dashboard
   breadcrumb:
     navigation:
       home:

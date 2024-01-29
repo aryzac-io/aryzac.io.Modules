@@ -32,36 +32,40 @@ const { setupSection, setupSectionItem } = useNavigationSetup();
 clearSections(true);
 
 // Setup Appbar
-setupSectionItem("appbar", t("appbar.navigation.home.label"), null, "/");
+setupSectionItem(
+  "appbar",
+  t("appbar.navigation.home.label"),
+  null,
+  "/"
+);
 setupSectionItem(
   "appbar",
   t("appbar.navigation.clients.label"),
   null,
   "/Clients"
 );
-
-// Setup Sidebar
 setupSectionItem(
-  "sidebar",
-  t("sidebar.navigation.newSidebarNavigationSection.dashboard.label"),
+  "appbar",
+  t("appbar.navigation.dashboard.label"),
   null,
   "/dashboard"
 );
 
+
 // Setup Breadcrumb
 setupSectionItem(
-  "breadcrumb",
-  t("breadcrumb.navigation.home.label"),
-  t("breadcrumb.navigation.home.icon"),
+  "breadcrumb", 
+  t("breadcrumb.navigation.home.label"), 
+  t("breadcrumb.navigation.home.icon"), 
   "/"
 );
 </script>
 
 <template>
   <div>
-    <layout-sidebar />
+  
+    <div class="min-h-screen">
 
-    <div class="lg:pl-72 min-h-screen">
       <layout-appbar />
       <layout-breadcrumbs />
       <main class="px-4 sm:px-6 lg:px-8 py-10">
@@ -81,3 +85,4 @@ body {
   @apply h-full;
 }
 </style>
+
