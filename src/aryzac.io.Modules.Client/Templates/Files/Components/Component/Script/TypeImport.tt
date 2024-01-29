@@ -1,0 +1,33 @@
+﻿<#@ template language="C#" inherits="ComponentTemplate" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+
+<# 
+  foreach (var query in Queries)
+  {
+    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)query.Mapping.Element.AsOperationModel().Mapping.Element);
+	#>import type { <#= endpoint.ReturnType.Element.Name #> } from '~/structs/dto/<#= ((IElement)endpoint.ReturnType.Element).ParentElement.Name.ToPascalCase().ToCamelCase() #>/<#= ((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase() #>.dto';
+<#
+  }
+#>
+
+<# 
+  foreach (var command in Commands)
+  {
+    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
+    if (endpoint.Inputs.FirstOrDefault(x => x.Source == HttpInputSource.FromBody) != null) 
+    { 
+        var bodyParam = endpoint.Inputs.First(x => x.Source == HttpInputSource.FromBody);
+#>
+import type { <#= endpoint.InternalElement.Name #> } from '~/structs/dto/<#= ((IElement)bodyParam.TypeReference.Element).ParentElement.Name.ToPascalCase().ToCamelCase() #>/<#= bodyParam.TypeReference.Element.Name.ToKebabCase() #>.dto';
+<# 
+    } 
+  }
+#>

@@ -9,6 +9,6 @@
 <#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
 <#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
 
-<#@ include file="./i18nTemplate.tt" #>
-<#@ include file="./ScriptTemplate.tt" #>
-<#@ include file="./TemplateTemplate.tt" #>
+<#@ include file="./i18n/i18n.tt" #>
+<#@ include file="./Script/Script.tt" #>
+<#@ include file="./Template/Template.tt" #>
