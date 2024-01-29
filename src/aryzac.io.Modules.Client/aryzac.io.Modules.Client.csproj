@@ -23,6 +23,7 @@
 		</PackageReference>
 		<PackageReference Include="Intent.RoslynWeaver.Attributes" Version="2.1.3" />
 		<PackageReference Include="Intent.SoftwareFactory.SDK" Version="3.5.0" />
+		<PackageReference Include="System.CodeDom" Version="8.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -35,6 +36,21 @@
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
 			<DependentUpon>ComponentTemplate.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Files\Components\Component\TemplateTemplate.cs">
+		  <DependentUpon>TemplateTemplate.tt</DependentUpon>
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="Templates\Files\Components\Component\ScriptTemplate.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>ScriptTemplate.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Files\Components\Component\i18nTemplate.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>i18nTemplate.tt</DependentUpon>
 		</Compile>
 		<Compile Update="Templates\Layouts\Layout\LayoutTemplate.cs">
 			<DesignTime>True</DesignTime>
@@ -94,6 +110,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Update="Templates\Files\Components\Component\TemplateTemplate.tt">
+		  <LastGenOutput>TemplateTemplate.cs</LastGenOutput>
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		</None>
+		<None Update="Templates\Files\Components\Component\ScriptTemplate.tt">
+		  <LastGenOutput>ScriptTemplate.cs</LastGenOutput>
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		</None>
+		<None Update="Templates\Files\Components\Component\i18nTemplate.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>i18nTemplate.cs</LastGenOutput>
+		</None>
 		<None Update="Templates\Layouts\Layout\LayoutTemplate.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>LayoutTemplate.cs</LastGenOutput>

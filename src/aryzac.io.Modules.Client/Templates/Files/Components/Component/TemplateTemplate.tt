@@ -1,0 +1,183 @@
+﻿<#@ template language="C#" inherits="IntentTemplateBase<Aryzac.IO.Modules.Client.Api.ComponentModel>" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+
+<template>
+<# 
+if (Model.View != null)
+{
+  foreach (var component in Model.View.InternalElement.ChildElements)
+  {
+    if (component.IsHeadingModel()) // Heading
+    {
+#>
+  <ui-heading-page
+    :title="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Title"
+    :attributes="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Attributes"
+    :actions="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Actions"
+  />
+<#
+    }
+    else if (component.IsSectionModel()) // Section
+    {
+      var section = component.AsSectionModel();
+#>
+  <ui-editor-section
+    :title="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.title')"
+    :description="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.description')"
+  >
+<#
+      foreach (var control in section.InternalElement.ChildElements)
+	  {
+#>
+<#
+		if (control.IsTextboxModel()) 
+		{
+#>
+     <ui-input-textbox 
+       v-model="model.<#= GetMappedTextboxName(control.AsTextboxModel()) #>" 
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
+<#
+        }
+#>
+<#
+		if (control.IsTextAreaModel()) 
+		{
+#>
+     <ui-input-text-area 
+       v-model="model.<#= GetMappedTextAreaName(control.AsTextAreaModel()) #>" 
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
+<#
+        }
+#>
+<#
+		if (control.IsCheckboxModel()) 
+		{
+#>
+     <ui-input-checkbox 
+       v-model="model.<#= GetMappedCheckboxName(control.AsCheckboxModel()) #>" 
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" 
+       :description="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.description')" />
+<#
+        }
+#>
+<#
+		if (control.IsLabelModel()) 
+		{
+#>
+     <ui-input-label 
+       v-model="<#= control.Name.ToPascalCase().ToCamelCase() #>Label" 
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
+<#
+        }
+#>
+<#
+		if (control.IsRadioButtonModel()) 
+		{
+#>
+     <ui-input-radio-button 
+       v-model="model.<#= GetMappedRadioButtonName(control.AsRadioButtonModel()) #>" 
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')" />
+<#
+        }
+#>
+<#
+		if (control.IsSelectModel()) 
+		{
+            var select = control.AsSelectModel();
+            var valueField = "";
+            var labelField = "";
+            
+            foreach (var mapping in select.InternalElement.Mappings)
+            {
+                foreach (var mappingEnd in mapping.MappedEnds)
+                {
+                    if (mappingEnd.TargetElement.SpecializationType == "Value")
+                    {
+                        valueField = mappingEnd.SourceElement.Name;
+                    }
+                    if (mappingEnd.TargetElement.SpecializationType == "Select Label")
+                    {
+                        labelField = mappingEnd.SourceElement.Name;
+                    }
+                }
+            }
+#>
+     <ui-input-select 
+       v-model="model.<#= GetMappedSelectName(control.AsSelectModel()) #>" 
+       :label="t('<#= component.Name.ToPascalCase().ToCamelCase() #>.<#= control.Name.ToPascalCase().ToCamelCase() #>.label')"
+       :options="<#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options"
+      />
+<#
+        }
+#>
+<#
+		if (control.IsTableModel()) 
+		{
+          var table = control.AsTableModel();
+#>
+  <ui-view-table
+    :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
+    :headers="<#= control.Name.ToPascalCase().ToCamelCase() #>Headers"
+    :actions="<#= control.Name.ToPascalCase().ToCamelCase() #>Actions"
+    key="id"
+  />
+<#
+        }
+#>
+<#
+		if (control.IsActionsModel()) 
+		{
+          var actions = control.AsActionsModel();
+#>
+
+    <template #actions>
+<#
+		  foreach (var action in actions.InternalElement.ChildElements)
+	      {
+            var command = action.AsActionModel().Command;
+#>
+      <button
+        type="button"
+        @click="<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>()"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        {{ t('<#= component.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label') }}
+      </button>
+    </template>
+    
+<#
+          }
+#>
+<#
+        }
+#>
+<#
+      }
+#>
+  </ui-editor-section>
+<#
+	}
+	else if (component.IsTableModel()) // Table
+    {
+          var table = component.AsTableModel();
+#>
+  <ui-view-table
+    :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
+    :headers="<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Headers"
+    :actions="<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Actions"
+    key="id"
+  />
+<# 
+    }
+  }
+}
+#>
+</template>

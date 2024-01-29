@@ -119,6 +119,7 @@ onMounted(() => {
 });
 </script>
 
+
 <template>
   <ui-heading-page
     :title="headingTitle"

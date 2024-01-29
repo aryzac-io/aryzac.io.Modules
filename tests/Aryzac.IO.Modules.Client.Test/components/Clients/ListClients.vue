@@ -79,6 +79,7 @@ onMounted(() => {
 });
 </script>
 
+
 <template>
   <ui-view-table
     :items="tableGetClientsQueryData"

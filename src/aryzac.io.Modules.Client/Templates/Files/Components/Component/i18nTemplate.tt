@@ -1,4 +1,4 @@
-<#@ template language="C#" inherits="IntentTemplateBase<Aryzac.IO.Modules.Client.Api.ComponentModel>" #>
+﻿<#@ template language="C#" inherits="IntentTemplateBase<Aryzac.IO.Modules.Client.Api.ComponentModel>" #>
 <#@ assembly name="System.Core" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="System.Linq" #>
@@ -9,6 +9,4 @@
 <#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
 <#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
 
-<#@ include file="./i18nTemplate.tt" #>
-<#@ include file="./ScriptTemplate.tt" #>
-<#@ include file="./TemplateTemplate.tt" #>
+<i18n lang="yaml" src="@/locales/components<#= Model.GetPath() #>/<#= Model.Name #>.i18n.yaml" />
