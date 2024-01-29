@@ -87,6 +87,6 @@
   <moduleSettingsExtensions />
   <metadata>
     <install target="Web Client" src="modelers/Client Settings.designer.settings" externalReference="7ab48245-c552-490e-9cba-4fc88178398a" />
-    <install target="Module Builder;Web Client" src="../../intent/Aryzac.IO.Modules.Client/Intent.Metadata/Module Builder/Aryzac.IO.Modules.Client/Aryzac.IO.Modules.Client.pkg.config" externalReference="7966642f-c3c5-47f3-a03b-0b758cc2a981" />
+    <install target="Module Builder;Web Client" src="../../intent/Aryzac.IO.Client/Intent.Metadata/Module Builder/Aryzac.IO.Modules.Client/Aryzac.IO.Modules.Client.pkg.config" externalReference="7966642f-c3c5-47f3-a03b-0b758cc2a981" />
   </metadata>
 </package>

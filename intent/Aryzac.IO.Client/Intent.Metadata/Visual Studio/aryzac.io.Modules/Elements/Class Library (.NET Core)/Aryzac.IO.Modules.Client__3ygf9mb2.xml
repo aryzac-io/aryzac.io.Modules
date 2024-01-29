@@ -4,10 +4,12 @@
   <display>Aryzac.IO.Modules.Client</display>
   <externalReference>b1437dfb-0730-4215-a6db-ee1e77cf2e72</externalReference>
   <isAbstract>false</isAbstract>
-  <order>1</order>
+  <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>ff6f8593-d094-420e-af88-1d6be2e01c38</parentFolderId>
+  <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+  <packageName>aryzac.io.Modules</packageName>
   <stereotypes>
     <stereotype stereotypeDefinitionId="5d85edfb-490c-42c2-81ef-c57c0300eb5a" name=".NET Core Settings">
       <addedByDefault>true</addedByDefault>
@@ -23,6 +25,8 @@
         <property name="f2956d24-b6da-427b-8728-c4f44714ce69" display="User Secrets Id" isActive="true" />
         <property name="42cdb74e-d5fd-4969-94ca-585d0527b862" display="Generate Runtime Configuration Files" isActive="true" />
         <property name="6111c054-9a40-4f92-9f7c-3a8372af14b8" display="Generate Documentation File" isActive="true" />
+        <property name="f236ad27-a4ab-490a-92d4-b6faf2d1e033" display="Assembly Name" isActive="true" />
+        <property name="96c39bf5-320f-4d4c-9545-76c52cb29e91" display="Implicit Usings" isActive="true" />
       </properties>
     </stereotype>
     <stereotype stereotypeDefinitionId="d9b43864-0370-401b-9e71-b1d286919500" name="C# Project Options">
@@ -32,72 +36,13 @@
       <properties>
         <property name="cb56677d-e132-4397-b2ec-3f47e950a111" display="Language Version" value="default" isActive="true" />
         <property name="5c953a82-78c4-4986-b204-df9fcbea5242" display="Relative Location" isActive="true" />
-        <property name="415a5406-0517-4c0e-ab60-bc809a23c308" display="Nullable Enabled" value="false" isActive="true" />
+        <property name="415a5406-0517-4c0e-ab60-bc809a23c308" display="Nullable Enabled" value="false" isActive="false" />
+        <property name="68a31b13-148b-45da-a6ea-5a6883f86438" display="Nullable" isActive="true" />
       </properties>
     </stereotype>
   </stereotypes>
   <metadata />
   <childElements>
-    <childElement id="e3b82036-44c8-48a2-8798-926a32e122eb" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
-      <name>Api</name>
-      <display>Api</display>
-      <externalReference>5db7fdaf-f264-4513-9e7d-daa3c5a6d0cb</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="253be337-95e6-421f-b95b-d650c65ebc2c" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
-      <name>Decorators</name>
-      <display>Decorators</display>
-      <externalReference>40cc9431-b446-4168-af80-2f3747b6f063</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="22ff5823-0328-4228-bcad-2167bed706e6" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
-      <name>DesignerConfig</name>
-      <display>DesignerConfig</display>
-      <externalReference>8ace95f8-22fe-4922-9ca0-12d7820cb8bb</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="7b155576-9323-4861-9a4f-e33f3329980e" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
-      <name>IModSpec</name>
-      <display>IModSpec</display>
-      <externalReference>cf6e41be-aa79-4d0b-85d5-2908102fb131</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="1aec4afa-1587-4bcd-8bcb-473c296454e5" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
-      <name>Templates</name>
-      <display>Templates</display>
-      <externalReference>21bb58b7-6c18-4926-980f-35ea567706e6</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
     <childElement id="bc0e2cb6-93cc-4f01-81a1-e003c11abc3a" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
       <name>Intent.ModuleBuilder.IModSpecFile</name>
       <display>Intent.ModuleBuilder.IModSpecFile</display>
@@ -106,6 +51,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
@@ -120,6 +67,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
@@ -134,6 +83,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
@@ -148,6 +99,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
@@ -162,6 +115,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
@@ -176,10 +131,82 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
       </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="e3b82036-44c8-48a2-8798-926a32e122eb" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Api</name>
+      <display>Api</display>
+      <externalReference>5db7fdaf-f264-4513-9e7d-daa3c5a6d0cb</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="253be337-95e6-421f-b95b-d650c65ebc2c" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Decorators</name>
+      <display>Decorators</display>
+      <externalReference>40cc9431-b446-4168-af80-2f3747b6f063</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="22ff5823-0328-4228-bcad-2167bed706e6" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>DesignerConfig</name>
+      <display>DesignerConfig</display>
+      <externalReference>8ace95f8-22fe-4922-9ca0-12d7820cb8bb</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="7b155576-9323-4861-9a4f-e33f3329980e" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>IModSpec</name>
+      <display>IModSpec</display>
+      <externalReference>cf6e41be-aa79-4d0b-85d5-2908102fb131</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="1aec4afa-1587-4bcd-8bcb-473c296454e5" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Templates</name>
+      <display>Templates</display>
+      <externalReference>21bb58b7-6c18-4926-980f-35ea567706e6</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
+      <stereotypes />
+      <metadata />
       <childElements />
     </childElement>
   </childElements>

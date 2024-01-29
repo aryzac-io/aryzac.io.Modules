@@ -23,7 +23,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Layouts.Layout
         [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
         public LayoutTemplate(IOutputTarget outputTarget, LayoutModel model) : base(TemplateId, outputTarget, model)
         {
-            
+
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

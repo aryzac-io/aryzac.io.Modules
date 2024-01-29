@@ -3,10 +3,22 @@
   <name>FactoryExtensions</name>
   <display>FactoryExtensions</display>
   <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>090c2939-10be-463e-af60-28262cd3e67c</parentFolderId>
-  <stereotypes />
+  <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+  <packageName>aryzac.io.Modules</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
   <metadata />
   <childElements>
     <childElement id="2469a143-de21-4cc9-8a73-901ee7e95c9d" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
@@ -17,6 +29,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>be6fd0d4-3b99-4d46-85e7-3654df5620b7</parentFolderId>
+      <packageId>ff6f8593-d094-420e-af88-1d6be2e01c38</packageId>
+      <packageName>aryzac.io.Modules</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
