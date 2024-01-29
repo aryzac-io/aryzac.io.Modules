@@ -3,6 +3,7 @@
 <script setup lang="ts">
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
 import type { TitleDto } from '~/structs/dto/titles/title.dto';
+import type { InvoiceDto } from '~/structs/dto/invoices/invoice.dto';
 
 import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
 import type { ChangeTitleClientCommand } from '~/structs/dto/clients/change-title-client-command.dto';
@@ -17,6 +18,7 @@ const props = defineProps<{
 	
 const clientsServiceProxy = useClientsServiceProxy();
 const titlesServiceProxy = useTitlesServiceProxy();
+const invoicesServiceProxy = useInvoicesServiceProxy();
 
 // Queries
 const { 
@@ -35,6 +37,14 @@ const {
   refresh: titleSelectGetTitlesQueryRefresh, 
   status: titleSelectGetTitlesQueryStatus 
 } = await titlesServiceProxy.getTitlesQuery();
+const { 
+  data: invoicesGetInvoicesQueryData, 
+  pending: invoicesGetInvoicesQueryPending, 
+  error: invoicesGetInvoicesQueryError , 
+  execute: invoicesGetInvoicesQueryExecute, 
+  refresh: invoicesGetInvoicesQueryRefresh, 
+  status: invoicesGetInvoicesQueryStatus 
+} = await invoicesServiceProxy.getInvoicesQuery();
 
 // Model
 interface ModelInterface {
@@ -145,6 +155,13 @@ const headingActions = [
       await navigateTo(localeRoute(`/Clients/${props.clientId}`));
     },
   },
+  {
+    label: t("heading.actions.invoices.label"),
+    action: async () => {
+      const localeRoute = useLocaleRoute();
+      await navigateTo(localeRoute(`/Clients/${props.clientId}/invoices`));
+    },
+  },
 ];
 
 
@@ -169,9 +186,44 @@ const titleSelectOptions = computed(() => {
 
 
 
+// Invoices Options
+const invoicesHeaders = [
+  {
+	key: 'number',
+	label: t("invoices.number"),
+    data: (item: InvoiceDto) => {
+      const number = item.number || '';
+      const mappedExpression = `${number}`;
+      return mappedExpression;
+    }
+  },
+  {
+	key: 'dueDate',
+	label: t("invoices.dueDate"),
+    data: (item: InvoiceDto) => {
+      const dueDate = item.dueDate || '';
+      const mappedExpression = `${dueDate}`;
+      return mappedExpression;
+    }
+  },
+  {
+	key: 'createdDate',
+	label: t("invoices.createdDate"),
+    data: (item: InvoiceDto) => {
+      const createdDate = item.createdDate || '';
+      const mappedExpression = `${createdDate}`;
+      return mappedExpression;
+    }
+  },
+];
+
+const invoicesActions = [
+];
+
 onMounted(() => {
   editClientGetClientByIdQueryExecute();
   titleSelectGetTitlesQueryExecute();
+  invoicesGetInvoicesQueryExecute();
 });
 </script>
 
@@ -266,5 +318,16 @@ onMounted(() => {
       </button>
     </template>
     
+  </ui-editor-section>
+  <ui-editor-section
+    :title="t('invoices.title')"
+    :description="t('invoices.description')"
+  >
+  <ui-view-table
+    :items="invoicesGetInvoicesQueryData"
+    :headers="invoicesHeaders"
+    :actions="invoicesActions"
+    key="id"
+  />
   </ui-editor-section>
 </template>

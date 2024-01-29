@@ -12,6 +12,30 @@
   <stereotypes />
   <metadata />
   <childElements>
+    <childElement id="bfd0a730-79f6-4457-9f0a-9a92551b5530" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+      <name>dashboard</name>
+      <display>dashboard: default</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="7146c593-fda6-451d-9293-480f29fc3400">
+        <typeId>aec04780-3a33-4de1-aceb-7e97d049107a</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Web Client</typePackageName>
+        <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2f1a36c4-fa61-4fa5-8e4c-7809ff404fae</parentFolderId>
+      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
     <childElement id="fae816be-2c43-4a33-be7c-fcfce0bcec41" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
       <name>index</name>
       <display>index: default</display>
@@ -636,6 +660,80 @@
                       </mappedEnds>
                     </mapping>
                   </mappings>
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="65533115-8005-463f-99aa-7565c4adbc1f" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+              <name>invoices</name>
+              <display>invoices: default</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>manually</sort-children>
+              <genericTypes />
+              <typeReference id="9f931564-c772-4394-9e96-8b9ad3f975a9">
+                <typeId>aec04780-3a33-4de1-aceb-7e97d049107a</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Web Client</typePackageName>
+                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>b6ef1639-0b36-475f-ba7c-5a312493257a</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="fde7f913-4270-480d-8519-0c27f5293b18" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                  <name>client-id</name>
+                  <display>client-id: string</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="c85782f8-59df-4729-b789-e94919201e90">
+                    <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>65533115-8005-463f-99aa-7565c4adbc1f</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="792b061a-9bf6-469a-b87d-dd2ef5c6af7a" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+                  <name>NewPageComponent</name>
+                  <display>NewPageComponent: ListInvoices</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="02d7177a-1aef-4e6a-8f8e-85b0b07516b9">
+                    <typeId>32caa4e5-6c23-4715-8e0d-01b2f7c35d0e</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Web Client</typePackageName>
+                    <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>65533115-8005-463f-99aa-7565c4adbc1f</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
                   <metadata />
                   <childElements />
                 </childElement>

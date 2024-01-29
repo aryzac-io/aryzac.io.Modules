@@ -9,6 +9,8 @@ af:
     actions:
       view:
         label: View
+      invoices:
+        label: Invoices
   personalInformation:
     title: Personal Information
     description: ''
@@ -47,6 +49,15 @@ af:
     actions:
       save:
         label: Save
+  invoices:
+    title: Invoices
+    description: ''
+    invoices:
+      number: Number
+      dueDate: DueDate
+      createdDate: CreatedDate
+      actions:
+        placeholder: ''
 en:
   heading:
     title: heading
@@ -60,6 +71,8 @@ en:
     actions:
       view:
         label: View
+      invoices:
+        label: Invoices
   personalInformation:
     title: Personal Information
     description: ''
@@ -97,3 +110,12 @@ en:
     actions:
       save:
         label: Save
+  invoices:
+    title: Invoices
+    description: ''
+    invoices:
+      number: Number
+      dueDate: DueDate
+      createdDate: CreatedDate
+      actions:
+        placeholder: ''

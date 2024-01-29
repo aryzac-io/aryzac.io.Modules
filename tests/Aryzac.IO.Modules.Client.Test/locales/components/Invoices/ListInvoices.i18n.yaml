@@ -1,0 +1,18 @@
+af:
+  table:
+    id: Id
+    clientId: ClientId
+    number: Number
+    createdDate: CreatedDate
+    dueDate: DueDate
+    actions:
+      placeholder: ''
+en:
+  table:
+    id: Id
+    clientId: ClientId
+    number: Number
+    createdDate: CreatedDate
+    dueDate: DueDate
+    actions:
+      placeholder: ''
