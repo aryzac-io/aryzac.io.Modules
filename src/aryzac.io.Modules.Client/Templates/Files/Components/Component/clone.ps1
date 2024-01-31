@@ -15,8 +15,8 @@ if (-not (Test-Path $newDir)) {
 }
 
 # New file names
-$newTTFileName = "$newName`Template.tt"
-$newCSFileName = "$newName`TemplatePartial.cs"
+$newTTFileName = "$newName`.tt"
+$newCSFileName = "$newName`Partial.cs"
 
 # Paths for new files
 $newTTFilePath = Join-Path $newDir $newTTFileName
@@ -29,12 +29,14 @@ $ttFileContent | Set-Content $newTTFilePath
 # Read, modify, and copy .cs file
 $csFileContent = Get-Content (Join-Path $sourceDir $csFileName) -Raw
 # Update the class and constructor names
-$modifiedCSFileContent = $csFileContent -replace "partial class Template", "partial class ${newName}Template"
-$modifiedCSFileContent = $modifiedCSFileContent -replace "public Template", "public ${newName}Template"
-# Update the namespace
-$namespacePattern = "namespace\s+[a-zA-Z0-9_.]+"
-$updatedNamespace = "namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.$subFolder"
-$modifiedCSFileContent = $modifiedCSFileContent -replace $namespacePattern, $updatedNamespace
+$modifiedCSFileContent = $csFileContent -replace "partial class T", "partial class ${newName}"
+$modifiedCSFileContent = $modifiedCSFileContent -replace "public T", "public ${newName}"
+
+# Update the namespace to include subfolders (convert slashes to dots)
+$subNamespace = $subFolder -replace '/', '.'
+$updatedNamespace = "namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.$subNamespace"
+$modifiedCSFileContent = $modifiedCSFileContent -replace "namespace\s+[a-zA-Z0-9_.]+", $updatedNamespace
+
 $modifiedCSFileContent | Set-Content $newCSFilePath
 
 Write-Host "Files created in subfolder $subFolder: $newTTFileName, $newCSFileName"

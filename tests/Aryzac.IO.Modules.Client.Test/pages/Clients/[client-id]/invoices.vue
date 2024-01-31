@@ -12,7 +12,7 @@ const clientId = route.params.clientid;
 
 <template>
   <div>
-    <invoices-list-invoices 
-		/>
+    <clients-view-invoices 
+	    :client-id="clientId"	/>
   </div>
 </template>

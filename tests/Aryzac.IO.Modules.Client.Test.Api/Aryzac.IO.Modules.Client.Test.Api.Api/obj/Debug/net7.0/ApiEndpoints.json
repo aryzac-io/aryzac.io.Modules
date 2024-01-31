@@ -939,6 +939,59 @@
     ]
   },
   {
+    "ContainingType": "Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController",
+    "Method": "GetInvoicesByClientId",
+    "RelativePath": "api/v1/invoice/by/client/{clientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.InvoiceDto, Aryzac.IO.Modules.Client.Test.Api.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.TitlesController",
     "Method": "CreateTitle",
     "RelativePath": "api/v1/title",

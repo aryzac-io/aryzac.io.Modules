@@ -17,7 +17,8 @@ const props = defineProps({
     </div>
 
     <div
-         class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
+      class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2"
+    >
       <div class="px-4 py-6 sm:p-8">
         <div class="gap-x-6 gap-y-8">
           <div class="space-y-10">
@@ -25,8 +26,10 @@ const props = defineProps({
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8"
-           v-if="$slots.actions">
+      <div
+        class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8"
+        v-if="$slots.actions"
+      >
         <slot name="actions" />
       </div>
     </div>

@@ -10,5 +10,6 @@ export const useInvoicesServiceProxy = () => {
     deleteInvoiceCommand : invoicesServices.deleteInvoiceCommand,
     getInvoiceByIdQuery : invoicesServices.getInvoiceByIdQuery,
     getInvoicesQuery : invoicesServices.getInvoicesQuery,
+    getInvoicesByClientIdQuery : invoicesServices.getInvoicesByClientIdQuery,
     };
 }

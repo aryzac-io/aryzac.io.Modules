@@ -924,6 +924,30 @@
     </FileLog>
     <FileLog>
       <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#79664bdc-91fa-48f9-9e68-66a634497d1d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoicesByClientId/GetInvoicesByClientIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoicesByClientId/GetInvoicesByClientIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#79664bdc-91fa-48f9-9e68-66a634497d1d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoicesByClientId/GetInvoicesByClientIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoicesByClientId/GetInvoicesByClientIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#79664bdc-91fa-48f9-9e68-66a634497d1d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/GetInvoicesByClientId/GetInvoicesByClientIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Invoices/GetInvoicesByClientId/GetInvoicesByClientIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5cf2817a-5971-4d3e-b4b0-2465d2ce617b</ProjectId>
       <CorrelationId>Intent.Application.Dtos.DtoModel#ea2d89fb-35e9-4b4f-9a5a-c8d948aa923d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.Application/Invoices/InvoiceDto.cs</ApplicationRelativeFilePath>

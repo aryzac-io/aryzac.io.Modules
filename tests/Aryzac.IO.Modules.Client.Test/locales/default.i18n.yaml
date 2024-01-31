@@ -7,6 +7,8 @@ af:
         label: Clients
       dashboard:
         label: Dashboard
+      invoices:
+        label: Invoices
   breadcrumb:
     navigation:
       home:
@@ -20,6 +22,8 @@ en:
         label: Clients
       dashboard:
         label: Dashboard
+      invoices:
+        label: Invoices
   breadcrumb:
     navigation:
       home:

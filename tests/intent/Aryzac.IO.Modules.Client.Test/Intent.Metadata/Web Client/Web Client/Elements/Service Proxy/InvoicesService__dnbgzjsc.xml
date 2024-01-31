@@ -309,5 +309,64 @@
       <metadata />
       <childElements />
     </childElement>
+    <childElement id="ef712236-0bdc-4db4-99d0-22b045c40482" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>GetInvoicesByClientIdQuery</name>
+      <display>GetInvoicesByClientIdQuery(clientId: guid): InvoiceDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="608d9625-7a6f-4392-af60-2a9c4d3d7f27">
+        <typeId>ea2d89fb-35e9-4b4f-9a5a-c8d948aa923d</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+        <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="79664bdc-91fa-48f9-9e68-66a634497d1d" name="GetInvoicesByClientIdQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>fd5c1fb7-9adf-497c-85fb-0418e444a064</parentFolderId>
+      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="0ffc8486-644f-4533-a234-e72181935d13" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>clientId</name>
+          <display>clientId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="57931f82-0492-4510-9559-3a39306c8d9e">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>ef712236-0bdc-4db4-99d0-22b045c40482</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="3e5fad9e-c7e4-4c8e-a99b-dab4d0806e74" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
   </childElements>
 </class>

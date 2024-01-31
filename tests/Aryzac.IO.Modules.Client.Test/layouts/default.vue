@@ -50,6 +50,12 @@ setupSectionItem(
   null,
   "/dashboard"
 );
+setupSectionItem(
+  "appbar",
+  t("appbar.navigation.invoices.label"),
+  null,
+  "/Invoices"
+);
 
 
 // Setup Breadcrumb

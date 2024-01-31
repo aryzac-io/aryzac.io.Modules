@@ -1,14 +1,18 @@
 <i18n lang="yaml" src="@/locales/components/Invoices/ListInvoices.i18n.yaml" />
 
 <script setup lang="ts">
+
+
 import type { InvoiceDto } from '~/structs/dto/invoices/invoice.dto';
 
 
 const { t } = useI18n();
 
+
 const props = defineProps<{
 }>();
 	
+
 const invoicesServiceProxy = useInvoicesServiceProxy();
 
 // Queries

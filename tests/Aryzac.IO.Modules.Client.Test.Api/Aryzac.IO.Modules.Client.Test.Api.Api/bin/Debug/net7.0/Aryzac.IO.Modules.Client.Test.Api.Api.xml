@@ -130,6 +130,13 @@
             <response code="400">One or more validation errors have occurred.</response>
             <response code="404">No InvoiceDto could be found with the provided parameters.</response>
         </member>
+        <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController.GetInvoicesByClientId(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <response code="200">Returns the specified List&lt;InvoiceDto&gt;.</response>
+            <response code="400">One or more validation errors have occurred.</response>
+            <response code="404">No List&lt;InvoiceDto&gt; could be found with the provided parameters.</response>
+        </member>
         <member name="M:Aryzac.IO.Modules.Client.Test.Api.Api.Controllers.InvoicesController.GetInvoices(System.Threading.CancellationToken)">
             <summary>
             </summary>

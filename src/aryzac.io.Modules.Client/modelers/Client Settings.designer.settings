@@ -2970,7 +2970,7 @@ if (element.getName().startsWith("[") &amp;&amp; element.getName().endsWith("]")
     </mappingSetting>
     <mappingSetting type="Map Parameter To Query" typeId="c9b9ae43-67be-4cf0-93db-76f5d3a484b0">
       <title>Map Parameter To Query</title>
-      <sourceRootElementFunction>return element.getParent().id</sourceRootElementFunction>
+      <sourceRootElementFunction>return element.getParent("Component").id</sourceRootElementFunction>
       <sourceMappings>
         <mapping id="edac4f99-2290-4c75-bb0f-f224ec126c07" name="Component" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
           <allowMultipleMappings>true</allowMultipleMappings>

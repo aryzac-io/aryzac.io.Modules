@@ -1,14 +1,18 @@
 <i18n lang="yaml" src="@/locales/components/Clients/ListClients.i18n.yaml" />
 
 <script setup lang="ts">
+
+
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
 
 
 const { t } = useI18n();
 
+
 const props = defineProps<{
 }>();
 	
+
 const clientsServiceProxy = useClientsServiceProxy();
 
 // Queries

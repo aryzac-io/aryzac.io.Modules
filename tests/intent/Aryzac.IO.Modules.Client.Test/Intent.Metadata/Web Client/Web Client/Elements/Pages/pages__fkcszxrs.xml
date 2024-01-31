@@ -713,13 +713,13 @@
                   <metadata />
                   <childElements />
                 </childElement>
-                <childElement id="792b061a-9bf6-469a-b87d-dd2ef5c6af7a" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
-                  <name>NewPageComponent</name>
-                  <display>NewPageComponent: ListInvoices</display>
+                <childElement id="c4c793fa-5460-48fa-8424-3e41bfcca48c" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+                  <name>ViewInvoices</name>
+                  <display>ViewInvoices: ViewInvoices</display>
                   <isAbstract>false</isAbstract>
                   <genericTypes />
-                  <typeReference id="02d7177a-1aef-4e6a-8f8e-85b0b07516b9">
-                    <typeId>32caa4e5-6c23-4715-8e0d-01b2f7c35d0e</typeId>
+                  <typeReference id="b5f7d40e-b963-430d-816c-fd56d2575e82">
+                    <typeId>0f9d0289-3b33-453c-8d4a-6874b6569c83</typeId>
                     <isNavigable>true</isNavigable>
                     <isNullable>false</isNullable>
                     <isCollection>false</isCollection>
@@ -734,10 +734,98 @@
                   <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                   <packageName>Web Client</packageName>
                   <stereotypes />
+                  <mappings>
+                    <mapping type="Map Route Parameter To Component Parameter" typeId="c3f6673c-7f05-4648-bf32-0e6c479ae047">
+                      <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="65533115-8005-463f-99aa-7565c4adbc1f" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[invoices]" />
+                      <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="0f9d0289-3b33-453c-8d4a-6874b6569c83" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[ViewInvoices]" />
+                      <mappedEnds>
+                        <mappedEnd>
+                          <expression>{client-id}</expression>
+                          <path>
+                            <target id="0f9d0289-3b33-453c-8d4a-6874b6569c83" name="ViewInvoices" type="element" specialization="Component" />
+                            <target id="cd0561b5-9915-4532-906f-9324976a1da6" name="client-id" type="element" specialization="Component Parameter" />
+                          </path>
+                          <sources>
+                            <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="f6ad8297-4497-437a-a7ae-bb6ba1bb8487">
+                              <path>
+                                <target id="65533115-8005-463f-99aa-7565c4adbc1f" name="invoices" type="element" specialization="Page" />
+                                <target id="fde7f913-4270-480d-8519-0c27f5293b18" name="client-id" type="element" specialization="Parameter" />
+                              </path>
+                            </source>
+                          </sources>
+                        </mappedEnd>
+                      </mappedEnds>
+                    </mapping>
+                  </mappings>
                   <metadata />
                   <childElements />
                 </childElement>
               </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="7884aa9e-6c12-47d5-b4b8-a86cd3258992" type="Page Folder" typeId="21b29545-9bd7-4cbd-85bb-3b548765031e">
+      <name>Invoices</name>
+      <display>Invoices</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2f1a36c4-fa61-4fa5-8e4c-7809ff404fae</parentFolderId>
+      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="d04181ec-9393-4c06-bbcd-2a4ce5cedf62" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+          <name>index</name>
+          <display>index: default</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>manually</sort-children>
+          <genericTypes />
+          <typeReference id="072936c8-16ed-4e80-8391-0b31796bd15d">
+            <typeId>aec04780-3a33-4de1-aceb-7e97d049107a</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Web Client</typePackageName>
+            <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>7884aa9e-6c12-47d5-b4b8-a86cd3258992</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="792b061a-9bf6-469a-b87d-dd2ef5c6af7a" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+              <name>NewPageComponent</name>
+              <display>NewPageComponent: ListInvoices</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="02d7177a-1aef-4e6a-8f8e-85b0b07516b9">
+                <typeId>32caa4e5-6c23-4715-8e0d-01b2f7c35d0e</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Web Client</typePackageName>
+                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>d04181ec-9393-4c06-bbcd-2a4ce5cedf62</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
             </childElement>
           </childElements>
         </childElement>

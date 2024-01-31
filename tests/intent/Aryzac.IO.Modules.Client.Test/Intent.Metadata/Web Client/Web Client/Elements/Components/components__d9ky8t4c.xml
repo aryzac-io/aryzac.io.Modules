@@ -3760,7 +3760,7 @@
                   </stereotypes>
                   <metadata />
                   <childElements>
-                    <childElement id="e500fc47-e72e-49c6-8485-81802957c984" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
+                    <childElement id="a257b72f-fcdf-434f-8a8a-e345ee84793f" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
                       <name>Invoices</name>
                       <display>Invoices</display>
                       <isAbstract>false</isAbstract>
@@ -3773,39 +3773,22 @@
                       <stereotypes />
                       <mappings>
                         <mapping type="Map Query To Table" typeId="5888463e-4c04-4e59-93ed-aea2342d3c40">
-                          <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="e500fc47-e72e-49c6-8485-81802957c984" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Invoices]" />
-                          <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="e500fc47-e72e-49c6-8485-81802957c984" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Invoices]" />
+                          <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="a257b72f-fcdf-434f-8a8a-e345ee84793f" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Invoices]" />
+                          <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="a257b72f-fcdf-434f-8a8a-e345ee84793f" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Invoices]" />
                           <mappedEnds>
                             <mappedEnd>
                               <expression>{[query].response-type.Number}</expression>
                               <path>
-                                <target id="e500fc47-e72e-49c6-8485-81802957c984" name="Invoices" type="element" specialization="Table" />
-                                <target id="c58c4893-d7bd-4b06-9ab7-ed0b04e45a41" name="Number" type="element" specialization="Column" />
+                                <target id="a257b72f-fcdf-434f-8a8a-e345ee84793f" name="Invoices" type="element" specialization="Table" />
+                                <target id="b6e5310a-02fe-4a23-8db6-dce2578deb36" name="Number" type="element" specialization="Column" />
                               </path>
                               <sources>
                                 <source identifier="[query].response-type.Number" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
                                   <path>
-                                    <target id="e500fc47-e72e-49c6-8485-81802957c984" name="Invoices" type="element" specialization="Table" />
-                                    <target id="782e1236-b100-4cd2-8699-231acf965441" name="[query]" type="element" specialization="Component Query" />
-                                    <target id="c165e006-5daa-445e-b321-8f85c58dc672" name="response-type" type="element" specialization="Parameter" />
+                                    <target id="a257b72f-fcdf-434f-8a8a-e345ee84793f" name="Invoices" type="element" specialization="Table" />
+                                    <target id="bb10d3af-66d2-4e91-91cd-88b0a0dd5545" name="[query]" type="element" specialization="Component Query" />
+                                    <target id="99208e2c-f5cf-4ab9-b3ed-2a26de70e2ef" name="response-type" type="element" specialization="Parameter" />
                                     <target id="49a599f8-12ca-4377-93f9-f2decb641bdc" name="Number" type="element" specialization="DTO-Field" />
-                                  </path>
-                                </source>
-                              </sources>
-                            </mappedEnd>
-                            <mappedEnd>
-                              <expression>{[query].response-type.DueDate}</expression>
-                              <path>
-                                <target id="e500fc47-e72e-49c6-8485-81802957c984" name="Invoices" type="element" specialization="Table" />
-                                <target id="2afb319c-d976-4e6d-99c8-4aa9fd65f82d" name="DueDate" type="element" specialization="Column" />
-                              </path>
-                              <sources>
-                                <source identifier="[query].response-type.DueDate" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
-                                  <path>
-                                    <target id="e500fc47-e72e-49c6-8485-81802957c984" name="Invoices" type="element" specialization="Table" />
-                                    <target id="782e1236-b100-4cd2-8699-231acf965441" name="[query]" type="element" specialization="Component Query" />
-                                    <target id="c165e006-5daa-445e-b321-8f85c58dc672" name="response-type" type="element" specialization="Parameter" />
-                                    <target id="89205d86-e7df-4cb9-bb95-ca618d94533c" name="DueDate" type="element" specialization="DTO-Field" />
                                   </path>
                                 </source>
                               </sources>
@@ -3813,16 +3796,33 @@
                             <mappedEnd>
                               <expression>{[query].response-type.CreatedDate}</expression>
                               <path>
-                                <target id="e500fc47-e72e-49c6-8485-81802957c984" name="Invoices" type="element" specialization="Table" />
-                                <target id="e1041e79-ee53-4cc5-ae06-e20e8845f357" name="CreatedDate" type="element" specialization="Column" />
+                                <target id="a257b72f-fcdf-434f-8a8a-e345ee84793f" name="Invoices" type="element" specialization="Table" />
+                                <target id="d47a0e1c-36eb-4f3a-ae81-4096e366e29d" name="CreatedDate" type="element" specialization="Column" />
                               </path>
                               <sources>
                                 <source identifier="[query].response-type.CreatedDate" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
                                   <path>
-                                    <target id="e500fc47-e72e-49c6-8485-81802957c984" name="Invoices" type="element" specialization="Table" />
-                                    <target id="782e1236-b100-4cd2-8699-231acf965441" name="[query]" type="element" specialization="Component Query" />
-                                    <target id="c165e006-5daa-445e-b321-8f85c58dc672" name="response-type" type="element" specialization="Parameter" />
+                                    <target id="a257b72f-fcdf-434f-8a8a-e345ee84793f" name="Invoices" type="element" specialization="Table" />
+                                    <target id="bb10d3af-66d2-4e91-91cd-88b0a0dd5545" name="[query]" type="element" specialization="Component Query" />
+                                    <target id="99208e2c-f5cf-4ab9-b3ed-2a26de70e2ef" name="response-type" type="element" specialization="Parameter" />
                                     <target id="715e4f3a-43f8-49da-b625-cfd38d7a11cd" name="CreatedDate" type="element" specialization="DTO-Field" />
+                                  </path>
+                                </source>
+                              </sources>
+                            </mappedEnd>
+                            <mappedEnd>
+                              <expression>{[query].response-type.DueDate}</expression>
+                              <path>
+                                <target id="a257b72f-fcdf-434f-8a8a-e345ee84793f" name="Invoices" type="element" specialization="Table" />
+                                <target id="4d6b864f-a0f3-4483-976e-6e6ac0bd6e26" name="DueDate" type="element" specialization="Column" />
+                              </path>
+                              <sources>
+                                <source identifier="[query].response-type.DueDate" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
+                                  <path>
+                                    <target id="a257b72f-fcdf-434f-8a8a-e345ee84793f" name="Invoices" type="element" specialization="Table" />
+                                    <target id="bb10d3af-66d2-4e91-91cd-88b0a0dd5545" name="[query]" type="element" specialization="Component Query" />
+                                    <target id="99208e2c-f5cf-4ab9-b3ed-2a26de70e2ef" name="response-type" type="element" specialization="Parameter" />
+                                    <target id="89205d86-e7df-4cb9-bb95-ca618d94533c" name="DueDate" type="element" specialization="DTO-Field" />
                                   </path>
                                 </source>
                               </sources>
@@ -3832,7 +3832,7 @@
                       </mappings>
                       <metadata />
                       <childElements>
-                        <childElement id="782e1236-b100-4cd2-8699-231acf965441" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+                        <childElement id="bb10d3af-66d2-4e91-91cd-88b0a0dd5545" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
                           <name>[query]</name>
                           <display>[query]</display>
                           <isAbstract>false</isAbstract>
@@ -3847,21 +3847,70 @@
                             <mappedPath>
                               <target id="2c1dc42f-6656-4080-a9e7-1024f2fdbf45" name="services" type="element" specialization="Service Proxies" />
                               <target id="fd5c1fb7-9adf-497c-85fb-0418e444a064" name="InvoicesService" type="element" specialization="Service Proxy" />
-                              <target id="a846daf1-70a7-4c70-9dcd-be5a8cfd34ed" name="GetInvoicesQuery" type="element" specialization="Operation" />
+                              <target id="ef712236-0bdc-4db4-99d0-22b045c40482" name="GetInvoicesByClientIdQuery" type="element" specialization="Operation" />
                             </mappedPath>
                           </mappedClass>
-                          <parentFolderId>e500fc47-e72e-49c6-8485-81802957c984</parentFolderId>
+                          <parentFolderId>a257b72f-fcdf-434f-8a8a-e345ee84793f</parentFolderId>
                           <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                           <packageName>Web Client</packageName>
                           <stereotypes />
+                          <mappings>
+                            <mapping type="Map Parameter To Query" typeId="c9b9ae43-67be-4cf0-93db-76f5d3a484b0">
+                              <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="de4ed824-d444-4669-912a-c2d8690a6c43" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[EditClient]" />
+                              <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="bb10d3af-66d2-4e91-91cd-88b0a0dd5545" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[[query]]" />
+                              <mappedEnds>
+                                <mappedEnd>
+                                  <expression>{client-id}</expression>
+                                  <path>
+                                    <target id="bb10d3af-66d2-4e91-91cd-88b0a0dd5545" name="[query]" type="element" specialization="Component Query" />
+                                    <target id="b1e6a6a8-9503-45bf-94e2-a5c1c674cb7f" name="clientId" type="element" specialization="Parameter" />
+                                  </path>
+                                  <sources>
+                                    <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="ab0cab60-2ddb-4797-a228-e3e2c6bee4a9">
+                                      <path>
+                                        <target id="de4ed824-d444-4669-912a-c2d8690a6c43" name="EditClient" type="element" specialization="Component" />
+                                        <target id="1113ae6c-ed22-429e-a09c-b23a6b60bdec" name="client-id" type="element" specialization="Component Parameter" />
+                                      </path>
+                                    </source>
+                                  </sources>
+                                </mappedEnd>
+                              </mappedEnds>
+                            </mapping>
+                          </mappings>
                           <metadata />
                           <childElements>
-                            <childElement id="c165e006-5daa-445e-b321-8f85c58dc672" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                            <childElement id="b1e6a6a8-9503-45bf-94e2-a5c1c674cb7f" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                              <name>clientId</name>
+                              <display>clientId: guid</display>
+                              <isAbstract>false</isAbstract>
+                              <genericTypes />
+                              <typeReference id="84f87cdb-9e2e-46e1-b605-6a9517b94427">
+                                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                                <isNavigable>true</isNavigable>
+                                <isNullable>false</isNullable>
+                                <isCollection>false</isCollection>
+                                <isRequired>true</isRequired>
+                                <typePackageName>Intent.Common.Types</typePackageName>
+                                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                                <stereotypes />
+                                <genericTypeParameters />
+                              </typeReference>
+                              <isMapped>false</isMapped>
+                              <parentFolderId>bb10d3af-66d2-4e91-91cd-88b0a0dd5545</parentFolderId>
+                              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                              <packageName>Web Client</packageName>
+                              <stereotypes />
+                              <metadata>
+                                <entry key="endpoint-input-id" value="3e5fad9e-c7e4-4c8e-a99b-dab4d0806e74" />
+                              </metadata>
+                              <childElements />
+                            </childElement>
+                            <childElement id="99208e2c-f5cf-4ab9-b3ed-2a26de70e2ef" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
                               <name>response-type</name>
                               <display>response-type: InvoiceDto</display>
                               <isAbstract>false</isAbstract>
                               <genericTypes />
-                              <typeReference id="a60e6010-09d3-4130-87d5-2fee6af54dee">
+                              <typeReference id="3987263a-6ff4-4658-b139-6334c91501e7">
                                 <typeId>ea2d89fb-35e9-4b4f-9a5a-c8d948aa923d</typeId>
                                 <isNavigable>true</isNavigable>
                                 <isNullable>false</isNullable>
@@ -3873,63 +3922,63 @@
                                 <genericTypeParameters />
                               </typeReference>
                               <isMapped>false</isMapped>
-                              <parentFolderId>782e1236-b100-4cd2-8699-231acf965441</parentFolderId>
+                              <parentFolderId>bb10d3af-66d2-4e91-91cd-88b0a0dd5545</parentFolderId>
                               <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                               <packageName>Web Client</packageName>
                               <stereotypes />
                               <metadata>
-                                <entry key="response-type" value="c165e006-5daa-445e-b321-8f85c58dc672" />
+                                <entry key="response-type" value="99208e2c-f5cf-4ab9-b3ed-2a26de70e2ef" />
                               </metadata>
                               <childElements />
                             </childElement>
                           </childElements>
                         </childElement>
-                        <childElement id="c58c4893-d7bd-4b06-9ab7-ed0b04e45a41" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                        <childElement id="b6e5310a-02fe-4a23-8db6-dce2578deb36" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
                           <name>Number</name>
                           <display>Number</display>
                           <isAbstract>false</isAbstract>
                           <genericTypes />
                           <isMapped>false</isMapped>
-                          <parentFolderId>e500fc47-e72e-49c6-8485-81802957c984</parentFolderId>
+                          <parentFolderId>a257b72f-fcdf-434f-8a8a-e345ee84793f</parentFolderId>
                           <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                           <packageName>Web Client</packageName>
                           <stereotypes />
                           <metadata />
                           <childElements />
                         </childElement>
-                        <childElement id="2afb319c-d976-4e6d-99c8-4aa9fd65f82d" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
-                          <name>DueDate</name>
-                          <display>DueDate</display>
-                          <isAbstract>false</isAbstract>
-                          <genericTypes />
-                          <isMapped>false</isMapped>
-                          <parentFolderId>e500fc47-e72e-49c6-8485-81802957c984</parentFolderId>
-                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
-                          <packageName>Web Client</packageName>
-                          <stereotypes />
-                          <metadata />
-                          <childElements />
-                        </childElement>
-                        <childElement id="e1041e79-ee53-4cc5-ae06-e20e8845f357" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                        <childElement id="d47a0e1c-36eb-4f3a-ae81-4096e366e29d" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
                           <name>CreatedDate</name>
                           <display>CreatedDate</display>
                           <isAbstract>false</isAbstract>
                           <genericTypes />
                           <isMapped>false</isMapped>
-                          <parentFolderId>e500fc47-e72e-49c6-8485-81802957c984</parentFolderId>
+                          <parentFolderId>a257b72f-fcdf-434f-8a8a-e345ee84793f</parentFolderId>
                           <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                           <packageName>Web Client</packageName>
                           <stereotypes />
                           <metadata />
                           <childElements />
                         </childElement>
-                        <childElement id="79c6e0e5-c72c-497c-bd61-d96a8abb14cc" type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
+                        <childElement id="4d6b864f-a0f3-4483-976e-6e6ac0bd6e26" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                          <name>DueDate</name>
+                          <display>DueDate</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <isMapped>false</isMapped>
+                          <parentFolderId>a257b72f-fcdf-434f-8a8a-e345ee84793f</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes />
+                          <metadata />
+                          <childElements />
+                        </childElement>
+                        <childElement id="1dfcf2af-e3fb-4c47-97bb-53c6326e1eb8" type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
                           <name>[actions]</name>
                           <display>[actions]</display>
                           <isAbstract>false</isAbstract>
                           <genericTypes />
                           <isMapped>false</isMapped>
-                          <parentFolderId>e500fc47-e72e-49c6-8485-81802957c984</parentFolderId>
+                          <parentFolderId>a257b72f-fcdf-434f-8a8a-e345ee84793f</parentFolderId>
                           <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                           <packageName>Web Client</packageName>
                           <stereotypes />
@@ -3937,6 +3986,287 @@
                           <childElements />
                         </childElement>
                       </childElements>
+                    </childElement>
+                  </childElements>
+                </childElement>
+              </childElements>
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="0f9d0289-3b33-453c-8d4a-6874b6569c83" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <name>ViewInvoices</name>
+          <display>ViewInvoices</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>99bd76b0-a805-45c4-aeb4-e2ea78c9f290</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="cd0561b5-9915-4532-906f-9324976a1da6" type="Component Parameter" typeId="44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab">
+              <name>client-id</name>
+              <display>client-id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="e5785ceb-7b41-4376-82e8-e6fb7c7bb0ec">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>0f9d0289-3b33-453c-8d4a-6874b6569c83</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="e730f518-a6ac-4730-8ae8-b13acbe23d62" type="Component View" typeId="8115da3e-0465-4d16-8a37-f85eec26a127">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>0f9d0289-3b33-453c-8d4a-6874b6569c83</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements>
+                <childElement id="3366ef21-5337-4294-bc97-5e3c811c5bec" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
+                  <name>table</name>
+                  <display>table</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>manually</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>e730f518-a6ac-4730-8ae8-b13acbe23d62</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <mappings>
+                    <mapping type="Map Query To Table" typeId="5888463e-4c04-4e59-93ed-aea2342d3c40">
+                      <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3366ef21-5337-4294-bc97-5e3c811c5bec" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[table]" />
+                      <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3366ef21-5337-4294-bc97-5e3c811c5bec" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[table]" />
+                      <mappedEnds>
+                        <mappedEnd>
+                          <expression>{[query].response-type.Number}</expression>
+                          <path>
+                            <target id="3366ef21-5337-4294-bc97-5e3c811c5bec" name="table" type="element" specialization="Table" />
+                            <target id="88e8bb2d-8d29-47bc-843a-cd59bcf27f45" name="Number" type="element" specialization="Column" />
+                          </path>
+                          <sources>
+                            <source identifier="[query].response-type.Number" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
+                              <path>
+                                <target id="3366ef21-5337-4294-bc97-5e3c811c5bec" name="table" type="element" specialization="Table" />
+                                <target id="3ce548ec-7123-4ee4-8282-a77046998f9d" name="[query]" type="element" specialization="Component Query" />
+                                <target id="e5f44449-cd5e-406f-9116-6f4f5e31edc6" name="response-type" type="element" specialization="Parameter" />
+                                <target id="49a599f8-12ca-4377-93f9-f2decb641bdc" name="Number" type="element" specialization="DTO-Field" />
+                              </path>
+                            </source>
+                          </sources>
+                        </mappedEnd>
+                        <mappedEnd>
+                          <expression>{[query].response-type.CreatedDate}</expression>
+                          <path>
+                            <target id="3366ef21-5337-4294-bc97-5e3c811c5bec" name="table" type="element" specialization="Table" />
+                            <target id="21be4924-48d5-459c-837a-1f09f22d2d52" name="CreatedDate" type="element" specialization="Column" />
+                          </path>
+                          <sources>
+                            <source identifier="[query].response-type.CreatedDate" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
+                              <path>
+                                <target id="3366ef21-5337-4294-bc97-5e3c811c5bec" name="table" type="element" specialization="Table" />
+                                <target id="3ce548ec-7123-4ee4-8282-a77046998f9d" name="[query]" type="element" specialization="Component Query" />
+                                <target id="e5f44449-cd5e-406f-9116-6f4f5e31edc6" name="response-type" type="element" specialization="Parameter" />
+                                <target id="715e4f3a-43f8-49da-b625-cfd38d7a11cd" name="CreatedDate" type="element" specialization="DTO-Field" />
+                              </path>
+                            </source>
+                          </sources>
+                        </mappedEnd>
+                        <mappedEnd>
+                          <expression>{[query].response-type.DueDate}</expression>
+                          <path>
+                            <target id="3366ef21-5337-4294-bc97-5e3c811c5bec" name="table" type="element" specialization="Table" />
+                            <target id="47d0ba7d-5ee5-4d0b-baed-5a2f5da66ab0" name="DueDate" type="element" specialization="Column" />
+                          </path>
+                          <sources>
+                            <source identifier="[query].response-type.DueDate" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
+                              <path>
+                                <target id="3366ef21-5337-4294-bc97-5e3c811c5bec" name="table" type="element" specialization="Table" />
+                                <target id="3ce548ec-7123-4ee4-8282-a77046998f9d" name="[query]" type="element" specialization="Component Query" />
+                                <target id="e5f44449-cd5e-406f-9116-6f4f5e31edc6" name="response-type" type="element" specialization="Parameter" />
+                                <target id="89205d86-e7df-4cb9-bb95-ca618d94533c" name="DueDate" type="element" specialization="DTO-Field" />
+                              </path>
+                            </source>
+                          </sources>
+                        </mappedEnd>
+                      </mappedEnds>
+                    </mapping>
+                  </mappings>
+                  <metadata />
+                  <childElements>
+                    <childElement id="3ce548ec-7123-4ee4-8282-a77046998f9d" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+                      <name>[query]</name>
+                      <display>[query]</display>
+                      <isAbstract>false</isAbstract>
+                      <sort-children>by-type-then-by-name</sort-children>
+                      <genericTypes />
+                      <isMapped>true</isMapped>
+                      <mappedClass isRoot="true">
+                        <applicationId>62c371b4-af5f-42bf-9b88-6751357b25cf</applicationId>
+                        <metadataId>f492faed-0665-4513-9853-5a230721786f</metadataId>
+                        <mappingSettingsId>6d2115a7-eb3d-437c-9b6b-22525284fe44</mappingSettingsId>
+                        <autoSyncTypeReference>true</autoSyncTypeReference>
+                        <mappedPath>
+                          <target id="2c1dc42f-6656-4080-a9e7-1024f2fdbf45" name="services" type="element" specialization="Service Proxies" />
+                          <target id="fd5c1fb7-9adf-497c-85fb-0418e444a064" name="InvoicesService" type="element" specialization="Service Proxy" />
+                          <target id="ef712236-0bdc-4db4-99d0-22b045c40482" name="GetInvoicesByClientIdQuery" type="element" specialization="Operation" />
+                        </mappedPath>
+                      </mappedClass>
+                      <parentFolderId>3366ef21-5337-4294-bc97-5e3c811c5bec</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <mappings>
+                        <mapping type="Map Parameter To Query" typeId="c9b9ae43-67be-4cf0-93db-76f5d3a484b0">
+                          <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="0f9d0289-3b33-453c-8d4a-6874b6569c83" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[ViewInvoices]" />
+                          <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3ce548ec-7123-4ee4-8282-a77046998f9d" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[[query]]" />
+                          <mappedEnds>
+                            <mappedEnd>
+                              <expression>{client-id}</expression>
+                              <path>
+                                <target id="3ce548ec-7123-4ee4-8282-a77046998f9d" name="[query]" type="element" specialization="Component Query" />
+                                <target id="1f5f9c66-803a-4077-b115-857fd92476cf" name="clientId" type="element" specialization="Parameter" />
+                              </path>
+                              <sources>
+                                <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="ab0cab60-2ddb-4797-a228-e3e2c6bee4a9">
+                                  <path>
+                                    <target id="0f9d0289-3b33-453c-8d4a-6874b6569c83" name="ViewInvoices" type="element" specialization="Component" />
+                                    <target id="cd0561b5-9915-4532-906f-9324976a1da6" name="client-id" type="element" specialization="Component Parameter" />
+                                  </path>
+                                </source>
+                              </sources>
+                            </mappedEnd>
+                          </mappedEnds>
+                        </mapping>
+                      </mappings>
+                      <metadata />
+                      <childElements>
+                        <childElement id="1f5f9c66-803a-4077-b115-857fd92476cf" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                          <name>clientId</name>
+                          <display>clientId: guid</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="02fbd1ce-d6c6-4c40-9ddf-4aa62c06ddc0">
+                            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Intent.Common.Types</typePackageName>
+                            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>3ce548ec-7123-4ee4-8282-a77046998f9d</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes />
+                          <metadata>
+                            <entry key="endpoint-input-id" value="3e5fad9e-c7e4-4c8e-a99b-dab4d0806e74" />
+                          </metadata>
+                          <childElements />
+                        </childElement>
+                        <childElement id="e5f44449-cd5e-406f-9116-6f4f5e31edc6" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                          <name>response-type</name>
+                          <display>response-type: InvoiceDto</display>
+                          <isAbstract>false</isAbstract>
+                          <genericTypes />
+                          <typeReference id="2bf16ab3-4fbf-4f83-97fa-6639417b41d4">
+                            <typeId>ea2d89fb-35e9-4b4f-9a5a-c8d948aa923d</typeId>
+                            <isNavigable>true</isNavigable>
+                            <isNullable>false</isNullable>
+                            <isCollection>false</isCollection>
+                            <isRequired>true</isRequired>
+                            <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+                            <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+                            <stereotypes />
+                            <genericTypeParameters />
+                          </typeReference>
+                          <isMapped>false</isMapped>
+                          <parentFolderId>3ce548ec-7123-4ee4-8282-a77046998f9d</parentFolderId>
+                          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                          <packageName>Web Client</packageName>
+                          <stereotypes />
+                          <metadata>
+                            <entry key="response-type" value="e5f44449-cd5e-406f-9116-6f4f5e31edc6" />
+                          </metadata>
+                          <childElements />
+                        </childElement>
+                      </childElements>
+                    </childElement>
+                    <childElement id="88e8bb2d-8d29-47bc-843a-cd59bcf27f45" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                      <name>Number</name>
+                      <display>Number</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>3366ef21-5337-4294-bc97-5e3c811c5bec</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="21be4924-48d5-459c-837a-1f09f22d2d52" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                      <name>CreatedDate</name>
+                      <display>CreatedDate</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>3366ef21-5337-4294-bc97-5e3c811c5bec</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="47d0ba7d-5ee5-4d0b-baed-5a2f5da66ab0" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                      <name>DueDate</name>
+                      <display>DueDate</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>3366ef21-5337-4294-bc97-5e3c811c5bec</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="cb22113f-edab-4fea-a25c-c84ccad4bac2" type="Actions" typeId="ccc50dcf-42e3-4b91-8772-bb48739c17e8">
+                      <name>[actions]</name>
+                      <display>[actions]</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>3366ef21-5337-4294-bc97-5e3c811c5bec</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
                     </childElement>
                   </childElements>
                 </childElement>

@@ -10,6 +10,7 @@ using Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.CreateInvoice;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.DeleteInvoice;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.GetInvoiceById;
 using Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.GetInvoices;
+using Aryzac.IO.Modules.Client.Test.Api.Application.Invoices.GetInvoicesByClientId;
 using Asp.Versioning;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
@@ -116,6 +117,25 @@ namespace Aryzac.IO.Modules.Client.Test.Api.Api.Controllers
             CancellationToken cancellationToken = default)
         {
             var result = await _mediator.Send(new GetInvoiceByIdQuery(id: id), cancellationToken);
+            return result == null ? NotFound() : Ok(result);
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <response code="200">Returns the specified List&lt;InvoiceDto&gt;.</response>
+        /// <response code="400">One or more validation errors have occurred.</response>
+        /// <response code="404">No List&lt;InvoiceDto&gt; could be found with the provided parameters.</response>
+        [HttpGet("api/v{version:apiVersion}/invoice/by/client/{clientId}")]
+        [ProducesResponseType(typeof(List<InvoiceDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+        [MapToApiVersion("1.0")]
+        public async Task<ActionResult<List<InvoiceDto>>> GetInvoicesByClientId(
+            [FromRoute] Guid clientId,
+            CancellationToken cancellationToken = default)
+        {
+            var result = await _mediator.Send(new GetInvoicesByClientIdQuery(clientId: clientId), cancellationToken);
             return result == null ? NotFound() : Ok(result);
         }
 

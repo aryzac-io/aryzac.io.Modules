@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}|Aryzac.IO.Modules.Client.Test.Api.Api\\Aryzac.IO.Modules.Client.Test.Api.Api.csproj|d:\\src\\aryzac-io\\aryzac.io.modules\\tests\\aryzac.io.modules.client.test.api\\aryzac.io.modules.client.test.api.api\\configuration\\opentelemetryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}|Aryzac.IO.Modules.Client.Test.Api.Api\\Aryzac.IO.Modules.Client.Test.Api.Api.csproj|solutionrelative:aryzac.io.modules.client.test.api.api\\configuration\\opentelemetryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF2817A-5971-4D3E-B4B0-2465D2CE617B}|Aryzac.IO.Modules.Client.Test.Api.Application\\Aryzac.IO.Modules.Client.Test.Api.Application.csproj|d:\\src\\aryzac-io\\aryzac.io.modules\\tests\\aryzac.io.modules.client.test.api\\aryzac.io.modules.client.test.api.application\\invoices\\getinvoicesbyclientid\\getinvoicesbyclientidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CF2817A-5971-4D3E-B4B0-2465D2CE617B}|Aryzac.IO.Modules.Client.Test.Api.Application\\Aryzac.IO.Modules.Client.Test.Api.Application.csproj|solutionrelative:aryzac.io.modules.client.test.api.application\\invoices\\getinvoicesbyclientid\\getinvoicesbyclientidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}|Aryzac.IO.Modules.Client.Test.Api.Api\\Aryzac.IO.Modules.Client.Test.Api.Api.csproj|d:\\src\\aryzac-io\\aryzac.io.modules\\tests\\aryzac.io.modules.client.test.api\\aryzac.io.modules.client.test.api.api\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}|Aryzac.IO.Modules.Client.Test.Api.Api\\Aryzac.IO.Modules.Client.Test.Api.Api.csproj|solutionrelative:aryzac.io.modules.client.test.api.api\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}|Aryzac.IO.Modules.Client.Test.Api.Api\\Aryzac.IO.Modules.Client.Test.Api.Api.csproj|d:\\src\\aryzac-io\\aryzac.io.modules\\tests\\aryzac.io.modules.client.test.api\\aryzac.io.modules.client.test.api.api\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9220C0D3-55B1-4F92-BAEC-7DE6F6D0C541}|Aryzac.IO.Modules.Client.Test.Api.Api\\Aryzac.IO.Modules.Client.Test.Api.Api.csproj|solutionrelative:aryzac.io.modules.client.test.api.api\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +31,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OpenTelemetryConfiguration.cs",
+              "DocumentMoniker": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Api\\Configuration\\OpenTelemetryConfiguration.cs",
+              "RelativeDocumentMoniker": "Aryzac.IO.Modules.Client.Test.Api.Api\\Configuration\\OpenTelemetryConfiguration.cs",
+              "ToolTip": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Api\\Configuration\\OpenTelemetryConfiguration.cs",
+              "RelativeToolTip": "Aryzac.IO.Modules.Client.Test.Api.Api\\Configuration\\OpenTelemetryConfiguration.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAqwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-29T14:44:34.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoicesController.cs",
+              "DocumentMoniker": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Api\\Controllers\\InvoicesController.cs",
+              "RelativeDocumentMoniker": "Aryzac.IO.Modules.Client.Test.Api.Api\\Controllers\\InvoicesController.cs",
+              "ToolTip": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Api\\Controllers\\InvoicesController.cs",
+              "RelativeToolTip": "Aryzac.IO.Modules.Client.Test.Api.Api\\Controllers\\InvoicesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-29T14:06:00.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetInvoicesByClientIdQueryHandler.cs",
+              "DocumentMoniker": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Application\\Invoices\\GetInvoicesByClientId\\GetInvoicesByClientIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Aryzac.IO.Modules.Client.Test.Api.Application\\Invoices\\GetInvoicesByClientId\\GetInvoicesByClientIdQueryHandler.cs",
+              "ToolTip": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Application\\Invoices\\GetInvoicesByClientId\\GetInvoicesByClientIdQueryHandler.cs",
+              "RelativeToolTip": "Aryzac.IO.Modules.Client.Test.Api.Application\\Invoices\\GetInvoicesByClientId\\GetInvoicesByClientIdQueryHandler.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-29T14:05:52.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ClientsController.cs",
               "DocumentMoniker": "D:\\src\\aryzac-io\\aryzac.io.Modules\\tests\\Aryzac.IO.Modules.Client.Test.Api\\Aryzac.IO.Modules.Client.Test.Api.Api\\Controllers\\ClientsController.cs",
               "RelativeDocumentMoniker": "Aryzac.IO.Modules.Client.Test.Api.Api\\Controllers\\ClientsController.cs",
@@ -26,8 +75,7 @@
               "RelativeToolTip": "Aryzac.IO.Modules.Client.Test.Api.Api\\Controllers\\ClientsController.cs",
               "ViewState": "AQIAANAAAAAAAAAAAAAiwN0AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-28T22:15:50.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-28T22:15:50.859Z"
             }
           ]
         }
