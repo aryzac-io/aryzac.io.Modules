@@ -17,13 +17,15 @@ using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
 using static Aryzac.IO.Modules.Client.Api.LocaleModelStereotypeExtensions;
 
-namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
+namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions
 {
-    partial class T : ComponentTemplate
+    partial class TableOptions
     {
-        public T(IOutputTarget outputTarget, ComponentModel model) : base(outputTarget, model)
+        public TableOptions(IElement element)
         {
-
+            Element = element;
         }
+
+        public IElement Element { get; set; }
     }
 }

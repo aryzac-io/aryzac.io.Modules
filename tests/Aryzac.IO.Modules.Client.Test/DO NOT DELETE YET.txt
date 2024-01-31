@@ -1,0 +1,71 @@
+const <#= table.Name.ToPascalCase().ToCamelCase() #>Actions = [
+<# 
+if (table.Actions is not null)
+{
+foreach (var action in table.Actions.Actions)
+{
+    action.TryGetActionSettings(out var actionSettings);
+#>
+  {
+    label: t("<#= table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.label"),
+<#
+      if (actionSettings.Icon() is not null)
+      {
+#>
+    icon: t("<#= table.Name.ToPascalCase().ToCamelCase() #>.actions.<#= action.Name.ToPascalCase().ToCamelCase() #>.icon"),
+<#
+      }
+#>
+<#
+    if (action.Navigation is not null)
+    {
+      var page = action.Navigation.TypeReference.Element.AsPageModel();
+      var pageUrl = page.GetRoutePath();
+
+      foreach (var mapping in action.Navigation.InternalElement.Mappings) // .Where(m => m.TypeId == "90548e07-a8af-41a1-b608-d07b35d98fa3"))
+      {
+        foreach (var mappingEnd in mapping.MappedEnds)
+        {
+          pageUrl = pageUrl.Replace($"[{mappingEnd.TargetElement.Name}]", $"${{item.{mappingEnd.SourceElement.Name.ToPascalCase().ToCamelCase()}}}");
+        }
+      }
+#>
+    action: async (item: <#= ((IElement)action.Navigation.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
+      const localeRoute = useLocaleRoute();
+      await navigateTo(localeRoute(`<#= pageUrl #>`));
+    },
+<#
+    }
+    else if (action.Command is not null)
+    {
+#>
+    action: async (item: <#= ((IElement)action.Command.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name #>) => {
+      await <#= action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
+	foreach (var mapping in action.Command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
+    {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+            var source = "props";
+
+            switch (mappedEnd.SourceElement.SpecializationType)
+            {
+                case "DTO-Field":
+#>item.<#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #><#
+                if (mapping.MappedEnds.Last() != mappedEnd)
+		        {
+		          #>, <#
+		        }
+                    break;
+            }
+	    }
+	}
+#>);
+    },
+<#
+    }
+#>
+  },
+<#
+}
+}
+#>];

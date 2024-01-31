@@ -81,5 +81,12 @@ namespace Aryzac.IO.Modules.Client.Api
                 .ToList();
         }
 
+        public static IList<TableModel> GetTableModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(TableModel.SpecializationTypeId)
+                .Select(x => new TableModel(x))
+                .ToList();
+        }
+
     }
 }

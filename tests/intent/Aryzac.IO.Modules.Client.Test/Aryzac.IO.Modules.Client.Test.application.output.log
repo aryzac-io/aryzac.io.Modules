@@ -340,6 +340,38 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#a257b72f-fcdf-434f-8a8a-e345ee84793f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientInvoicesOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientInvoicesOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#3ef6a152-bcea-45f7-86c9-09fb1d81cf85</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/ListClients/useListClientsTableOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/ListClients/useListClientsTableOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#3366ef21-5337-4294-bc97-5e3c811c5bec</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/ViewInvoices/useViewInvoicesTableOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/ViewInvoices/useViewInvoicesTableOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#05344d9e-6155-4683-b69d-366086b8defc</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Invoices/ListInvoices/useListInvoicesTableOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Invoices/ListInvoices/useListInvoicesTableOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useClientsServiceProxy.ts</ApplicationRelativeFilePath>
@@ -616,7 +648,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/clients-service.proxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients-service.proxy.ts</ProjectRelativeFilePath>
-      <IsIgnored>true</IsIgnored>
+      <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
@@ -624,7 +656,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/invoices-service.proxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>invoices-service.proxy.ts</ProjectRelativeFilePath>
-      <IsIgnored>true</IsIgnored>
+      <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>

@@ -596,6 +596,38 @@
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>ModuleBuilder.Typescript.Templates.TypescriptTemplate.PreProcessT4#3da38e3b-9ae4-439d-9107-fb9a955c86ba</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplate.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplate.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplateT4#3da38e3b-9ae4-439d-9107-fb9a955c86ba</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplate.tt</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplate.tt</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial#3da38e3b-9ae4-439d-9107-fb9a955c86ba</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplatePartial.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#3da38e3b-9ae4-439d-9107-fb9a955c86ba</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseTableOptions/UseTableOptionsTemplateRegistration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
       <CorrelationId>ModuleBuilder.Typescript.Templates.TypescriptTemplate.PreProcessT4#f8d15ea6-adc1-4cd5-b7ed-a34be0fc4ce4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/UseServiceProxy/UseServiceProxyTemplate.cs</ApplicationRelativeFilePath>

@@ -53,15 +53,40 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>TypeImport.tt</DependentUpon>
     </Compile>
-    <Compile Update="Templates\Files\Components\Component\T.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>T.tt</DependentUpon>
-    </Compile>
     <Compile Update="Templates\Files\Components\Component\Template\Template.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Template.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\CommandAndQueryServiceProxyComposables.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CommandAndQueryServiceProxyComposables.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\DtoTypeImports.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DtoTypeImports.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableActions.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TableActions.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TableHeaders.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableOptions.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TableOptions.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\T.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>T.tt</DependentUpon>
     </Compile>
     <Compile Update="Templates\Layouts\Layout\LayoutTemplate.cs">
       <DesignTime>True</DesignTime>
@@ -118,6 +143,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>NuxtConfigTemplate.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseTableOptionsTemplate.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="Templates\Files\Components\Component\Script\Properties.tt">
@@ -128,7 +158,15 @@
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>TypeImport.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\Component\T.tt">
+    <None Update="Templates\Files\Composables\Controls\Shared\CommandAndQueryServiceProxyComposables.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>CommandAndQueryServiceProxyComposables.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>DtoTypeImports.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\T.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>T.cs</LastGenOutput>
     </None>
@@ -143,6 +181,18 @@
     <None Update="Templates\Files\Components\Component\i18n\i18n.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>i18n.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TableActions.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TableHeaders.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableOptions.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TableOptions.cs</LastGenOutput>
     </None>
     <None Update="Templates\Layouts\Layout\LayoutTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
@@ -195,6 +245,10 @@
     <None Update="Templates\Files\NuxtConfig\NuxtConfigTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>NuxtConfigTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseTableOptionsTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

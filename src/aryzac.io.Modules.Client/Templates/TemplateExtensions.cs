@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Aryzac.IO.Modules.Client.Api;
+using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.UseServiceProxy;
 using Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig;
 using Aryzac.IO.Modules.Client.Templates.Files.Services.ServiceProxy;
@@ -17,6 +19,15 @@ namespace Aryzac.IO.Modules.Client.Templates
 {
     public static class TemplateExtensions
     {
+        public static string GetUseTableOptionsName<T>(this IIntentTemplate<T> template) where T : TableModel
+        {
+            return template.GetTypeName(UseTableOptionsTemplate.TemplateId, template.Model);
+        }
+
+        public static string GetUseTableOptionsName(this IIntentTemplate template, TableModel model)
+        {
+            return template.GetTypeName(UseTableOptionsTemplate.TemplateId, model);
+        }
         public static string GetUseServiceProxyName<T>(this IIntentTemplate<T> template) where T : ServiceProxyModel
         {
             return template.GetTypeName(UseServiceProxyTemplate.TemplateId, template.Model);

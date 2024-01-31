@@ -20,6 +20,10 @@
       <role>Default</role>
       <location></location>
     </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions" externalReference="3da38e3b-9ae4-439d-9107-fb9a955c86ba">
+      <role>Default</role>
+      <location></location>
+    </template>
     <template id="Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy" externalReference="f8d15ea6-adc1-4cd5-b7ed-a34be0fc4ce4">
       <role>Default</role>
       <location></location>
