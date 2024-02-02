@@ -39,6 +39,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             
             #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
  var table = Element.AsTableModel(); 
+            
+            #line default
+            #line hidden
+            
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+
    if (GetActions().Any())
 {
 
@@ -47,7 +53,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             #line hidden
             this.Write("const actions = [\r\n");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
 
   foreach (var action in GetActions())
   {
@@ -57,14 +63,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             #line hidden
             this.Write("  {\r\n    label: t(\"");
             
-            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Label));
             
             #line default
             #line hidden
             this.Write("\"),\r\n");
             
-            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
 
     if (action.Icon != null)
     {
@@ -74,14 +80,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             #line hidden
             this.Write("    icon: t(\"");
             
-            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.Icon));
             
             #line default
             #line hidden
             this.Write("\"),\r\n");
             
-            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
 
     }
 
@@ -89,14 +95,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             #line default
             #line hidden
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(action.ActionFunction));
             
             #line default
             #line hidden
             this.Write("\r\n  },\r\n");
             
-            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
 
   }
 
@@ -105,7 +111,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             #line hidden
             this.Write("];\r\n");
             
-            #line 38 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
+            #line 39 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt"
 
 }
 

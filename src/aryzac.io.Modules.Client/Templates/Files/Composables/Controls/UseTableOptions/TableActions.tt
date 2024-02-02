@@ -11,7 +11,8 @@
 <#@ import namespace="Intent.Templates" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
-<# var table = Element.AsTableModel(); 
+<# var table = Element.AsTableModel(); #>
+<#
    if (GetActions().Any())
 {
 #>

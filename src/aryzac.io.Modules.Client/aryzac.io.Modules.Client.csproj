@@ -73,6 +73,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DtoTypeImports.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\Queries.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Queries.tt</DependentUpon>
+    </Compile>
     <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableActions.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -169,6 +174,10 @@
     <None Update="Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>DtoTypeImports.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\Queries.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Queries.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\T.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

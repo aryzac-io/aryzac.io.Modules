@@ -25,9 +25,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
+    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Commands : CommandsBase
+    public partial class Queries : QueriesBase
     {
 #line hidden
         /// <summary>
@@ -37,208 +37,85 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
         {
             this.Write("\r\n");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
- if (GetCommandModels().Any()) { 
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+ if (GetQueryModels().Any()) { 
             
             #line default
             #line hidden
-            this.Write("// Commands\r\n");
+            this.Write("// Queries\r\n");
             
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
  } 
             
             #line default
             #line hidden
             
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
 
-  foreach (var command in GetCommandModels())
+  foreach (var query in GetQueryModels())
   {
-    var endpoint = GetEndpointModel(command);
-            
-            #line default
-            #line hidden
-            this.Write("\t\r\nconst ");
-            
-            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(" = async (");
-            
-            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(string.Join(", ", GenerateFunctionParameters(command))));
-            
-            #line default
-            #line hidden
-            this.Write(") => {\r\n\r\n");
-            
-            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-
-	  foreach (var parameter in GetInputParameters(endpoint))
-	  {
 
             
             #line default
             #line hidden
-            this.Write("  const command: ");
+            this.Write("const { \r\n  data,\r\n  pending,\r\n  error,\r\n  execute,\r\n  refresh,\r\n  status\r\n} = aw" +
+                    "ait ");
             
-            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetTypeName(parameter.TypeReference)));
-            
-            #line default
-            #line hidden
-            this.Write(" = {\r\n");
-            
-            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-  
-    foreach (var property in GetProperties(command))
-    {
-
-            
-            #line default
-            #line hidden
-            this.Write("    ");
-            
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(property.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(": model.");
-            
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedName(property, command)));
-            
-            #line default
-            #line hidden
-            this.Write(",\r\n");
-            
-            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-
-    }
-
-            
-            #line default
-            #line hidden
-            this.Write("  };\r\n");
-            
-            #line 38 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-
-	  }
-
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-
-	foreach (var mapping in GetCommandMappings(command))
-    {
-        foreach (var mappedEnd in GetCommandMappingMappedEnds(mapping))
-        {
-            var source = GetSource(mappedEnd);
-
-	      
-            
-            #line default
-            #line hidden
-            this.Write("  const ");
-            
-            #line 49 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(" = ");
-            
-            #line 49 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(source));
-            
-            #line default
-            #line hidden
-            this.Write(".");
-            
-            #line 49 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(";\r\n          ");
-            
-            #line 50 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-
-	    }
-	}
-
-            
-            #line default
-            #line hidden
-            this.Write("\r\n\tconst ");
-            
-            #line 55 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(" = await ");
-            
-            #line 55 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase()));
+            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Proxy.");
             
-            #line 55 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
+            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(query.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("(");
             
-            #line 55 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
+            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
 
 
-	if (endpoint != null)
-	{
-	  foreach (var parameter in endpoint.Inputs)
-	  {
-	    
+	foreach (var mapping in query.InternalElement.Mappings)
+    {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+	      
+            
+            #line default
+            #line hidden
+            this.Write("props.");
+            
+            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 61 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(parameter.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            
-            #line 61 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
+            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
 
-		if (endpoint.Inputs.Last() != parameter)
-		{
-		
+          if (mapping.MappedEnds.Last() != mappedEnd)
+		  {
+		  
             
             #line default
             #line hidden
             this.Write(", ");
             
-            #line 64 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
 
-		}
-	  }
+		  }
+	    }
 	}
 	
             
             #line default
             #line hidden
-            this.Write(");\r\n};\r\n");
+            this.Write(");\r\n");
             
-            #line 70 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Commands.tt"
+            #line 41 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
    
   }
 
@@ -256,7 +133,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class CommandsBase
+    public class QueriesBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

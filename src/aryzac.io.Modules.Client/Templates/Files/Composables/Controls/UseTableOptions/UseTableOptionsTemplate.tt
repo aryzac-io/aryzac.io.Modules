@@ -14,14 +14,36 @@
 import type { ComposerTranslation } from "@nuxtjs/i18n/dist/runtime/composables";
 <#= DtoTypeImports #>
 
-export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()#><#= Model.Name.ToPascalCase() #>Options = (t: ComposerTranslation) => {
+export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()#><#= Model.Name.ToPascalCase() #>Options = async (t: ComposerTranslation) => {
 
 <#= CommandAndQueryServiceProxyComposables #>
+
+<#= Queries #>
 
 <#= Commands #>
 
 <#= TableHeaders #>
 
 <#= TableActions #>
+
+return {
+<# if (HasHeaders()) { #>
+	headers,
+<# } #>
+<# if (HasActions()) { #>
+	actions,
+<# } #>
+<# if (HasQueries()) { #>
+	data,
+	pending,
+	error,
+	execute,
+	refresh,
+	status,
+<# } #>
+<# foreach (var command in TableCommands()) {#>
+	<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>
+<# } #>
+};
 
 }

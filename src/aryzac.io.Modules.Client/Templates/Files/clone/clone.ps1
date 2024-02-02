@@ -101,12 +101,13 @@ Write-Host "Files created in subfolder ${path}: $newTTFileName, $newCSFileName`n
 # New Write-Host commands for easy copy-paste
 $newFileNameCamelCase = $name.Substring(0,1).ToLower() + $name.Substring(1) # Convert to camelCase
 
-Write-Host "Set the Custom Tool for the .tt file to: TextTemplatingFilePreprocessor`n"
+Write-Host "Set the Custom Tool for the .tt file to:"
+Write-Host "`tTextTemplatingFilePreprocessor`n"
 
 Write-Host "In the $newCSFileName file, add the following lines:`n"
 
 Write-Host "Constructor"
-Write-Host "`t$name $newFileNameCamelCase = new $name(model.InternalElement);"
+Write-Host "`t$newFileNameCamelCase = new $name(model.InternalElement);"
 
 Write-Host "Field and Property"
 Write-Host "`tprivate $name $newFileNameCamelCase;"
