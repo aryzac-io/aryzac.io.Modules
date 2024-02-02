@@ -35,7 +35,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\nADD CODE HERE\r\n");
+            this.Write("\r\n// ADD CODE HERE\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

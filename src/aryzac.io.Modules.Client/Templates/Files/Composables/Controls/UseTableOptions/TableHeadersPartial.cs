@@ -57,13 +57,13 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             var expressions = mappedColumn.Sources.Select(source =>
             {
                 var sourceName = source.Element.Name.ToPascalCase().ToCamelCase();
-                return $"const {sourceName} = item.{sourceName} || '';";
+                return $"      const {sourceName} = item.{sourceName} || '';";
             });
 
             var expressionLines = string.Join(Environment.NewLine, expressions);
             var mappedExpression = ReplaceIdentifiersWithExpressions(mappedColumn.MappingExpression, mappedColumn.Sources);
 
-            return $"{expressionLines}\nconst mappedExpression = `{mappedExpression}`;\nreturn mappedExpression;";
+            return $"{expressionLines}\n      const mappedExpression = `{mappedExpression}`;\n      return mappedExpression;";
         }
 
         private string ReplaceIdentifiersWithExpressions(string mappingExpression, IEnumerable<IElementToElementMappedEndSource> sources)

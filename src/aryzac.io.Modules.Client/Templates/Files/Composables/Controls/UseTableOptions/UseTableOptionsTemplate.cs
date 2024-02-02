@@ -66,13 +66,20 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             this.Write("\r\n\r\n");
             
             #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(TableHeaders));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Commands));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
             #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(TableHeaders));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n\r\n");
+            
+            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(TableActions));
             
             #line default

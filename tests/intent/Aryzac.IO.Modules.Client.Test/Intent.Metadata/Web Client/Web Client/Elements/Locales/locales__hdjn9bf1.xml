@@ -49,7 +49,7 @@
           <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
           <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
           <properties>
-            <property name="954de8e8-3aba-4ab6-b9dd-c93dfa2b97a0" display="ISO Code" isActive="true" />
+            <property name="954de8e8-3aba-4ab6-b9dd-c93dfa2b97a0" display="ISO Code" value="" isActive="true" />
           </properties>
         </stereotype>
         <stereotype stereotypeDefinitionId="09876e82-e2d2-440a-9f22-2cb2d958d89d" name="Default Locale">

@@ -29,6 +29,8 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             Types = new TypeScriptTypeResolver();
             
             commandAndQueryServiceProxyComposables = new CommandAndQueryServiceProxyComposables(model.InternalElement);
+            commands = new Commands(model.InternalElement);
+
             dtoTypeImports = new DtoTypeImports(model.InternalElement);
             tableHeaders = new TableHeaders(model.InternalElement);
             tableActions = new TableActions(model.InternalElement);
@@ -43,16 +45,19 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             );
         }
 
-        public TableHeaders tableHeaders;
+        private TableHeaders tableHeaders;
         public string TableHeaders => tableHeaders.TransformText();
 
-        public TableActions tableActions;
+        private TableActions tableActions;
         public string TableActions => tableActions.TransformText();
 
-        public CommandAndQueryServiceProxyComposables commandAndQueryServiceProxyComposables;
+        private CommandAndQueryServiceProxyComposables commandAndQueryServiceProxyComposables;
         public string CommandAndQueryServiceProxyComposables => commandAndQueryServiceProxyComposables.TransformText();
 
-        public DtoTypeImports dtoTypeImports;
+        private Commands commands;
+        public string Commands => commands.TransformText();
+
+        private DtoTypeImports dtoTypeImports;
         public string DtoTypeImports => dtoTypeImports.TransformText();
     }
 }

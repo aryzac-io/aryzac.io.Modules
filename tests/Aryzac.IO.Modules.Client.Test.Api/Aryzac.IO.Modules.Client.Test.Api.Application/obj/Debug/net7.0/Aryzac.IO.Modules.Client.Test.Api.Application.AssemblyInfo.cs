@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aryzac.IO.Modules.Client.Test.Api.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee5d25c21e291166519e425afb5979603e3c43c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad9f31f7193ec29a6c50c2a9948210cad12b4737")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aryzac.IO.Modules.Client.Test.Api.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aryzac.IO.Modules.Client.Test.Api.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,6 +18,8 @@ export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.Sp
 
 <#= CommandAndQueryServiceProxyComposables #>
 
+<#= Commands #>
+
 <#= TableHeaders #>
 
 <#= TableActions #>

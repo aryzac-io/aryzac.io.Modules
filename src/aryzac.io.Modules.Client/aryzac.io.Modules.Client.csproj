@@ -63,6 +63,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CommandAndQueryServiceProxyComposables.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\Commands.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Commands.tt</DependentUpon>
+    </Compile>
     <Compile Update="Templates\Files\Composables\Controls\Shared\DtoTypeImports.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -161,6 +166,10 @@
     <None Update="Templates\Files\Composables\Controls\Shared\CommandAndQueryServiceProxyComposables.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>CommandAndQueryServiceProxyComposables.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\Commands.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Commands.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
