@@ -78,6 +78,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Queries.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SelectOptionsComputed.tt</DependentUpon>
+    </Compile>
     <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableActions.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -153,6 +158,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>UseTableOptionsTemplate.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseSelectOptionsTemplate.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="Templates\Files\Components\Component\Script\Properties.tt">
@@ -178,6 +188,10 @@
     <None Update="Templates\Files\Composables\Controls\Shared\Queries.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Queries.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SelectOptionsComputed.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\T.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
@@ -258,6 +272,10 @@
     <None Update="Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>UseTableOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseSelectOptionsTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

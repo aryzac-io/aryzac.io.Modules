@@ -342,8 +342,16 @@
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#a257b72f-fcdf-434f-8a8a-e345ee84793f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientInvoicesOptions.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientInvoicesOptions.ts</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientInvoicesTableOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientInvoicesTableOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions#570fec92-5bac-4b24-85cc-e21dc63cc3ee</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientTitleSelectOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientTitleSelectOptions.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

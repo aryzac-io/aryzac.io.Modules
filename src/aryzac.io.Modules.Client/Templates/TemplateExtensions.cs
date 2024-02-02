@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Aryzac.IO.Modules.Client.Api;
+using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelectOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.UseServiceProxy;
 using Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig;
@@ -19,6 +20,15 @@ namespace Aryzac.IO.Modules.Client.Templates
 {
     public static class TemplateExtensions
     {
+        public static string GetUseSelectOptionsName<T>(this IIntentTemplate<T> template) where T : SelectModel
+        {
+            return template.GetTypeName(UseSelectOptionsTemplate.TemplateId, template.Model);
+        }
+
+        public static string GetUseSelectOptionsName(this IIntentTemplate template, SelectModel model)
+        {
+            return template.GetTypeName(UseSelectOptionsTemplate.TemplateId, model);
+        }
         public static string GetUseTableOptionsName<T>(this IIntentTemplate<T> template) where T : TableModel
         {
             return template.GetTypeName(UseTableOptionsTemplate.TemplateId, template.Model);

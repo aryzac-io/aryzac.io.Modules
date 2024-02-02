@@ -515,6 +515,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>090c2939-10be-463e-af60-28262cd3e67c</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.ReleaseNotes</CorrelationId>
+      <OverwriteBehaviour>once-off</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/release-notes.md</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>release-notes.md</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.ProjectItemTemplate.T4Template.PreProcessed#0859d70e-fde2-45a0-8dbd-91856245e4fc</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -592,6 +600,38 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Components/Layout/Components/ComponentsTemplateRegistration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Components/Layout/Components/ComponentsTemplateRegistration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>ModuleBuilder.Typescript.Templates.TypescriptTemplate.PreProcessT4#9791958d-ea31-4760-94f4-453e80dfbfbe</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplate.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplate.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplateT4#9791958d-ea31-4760-94f4-453e80dfbfbe</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplate.tt</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplate.tt</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial#9791958d-ea31-4760-94f4-453e80dfbfbe</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplatePartial.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#9791958d-ea31-4760-94f4-453e80dfbfbe</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplateRegistration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

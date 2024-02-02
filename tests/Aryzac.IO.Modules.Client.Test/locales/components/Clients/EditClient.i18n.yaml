@@ -52,7 +52,7 @@ af:
   invoices:
     title: Invoices
     description: ''
-    invoices:
+    invoicesTable:
       number: Number
       createdDate: CreatedDate
       dueDate: DueDate
@@ -113,7 +113,7 @@ en:
   invoices:
     title: Invoices
     description: ''
-    invoices:
+    invoicesTable:
       number: Number
       createdDate: CreatedDate
       dueDate: DueDate

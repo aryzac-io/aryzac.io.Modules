@@ -20,6 +20,10 @@
       <role>Default</role>
       <location></location>
     </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions" externalReference="9791958d-ea31-4760-94f4-453e80dfbfbe">
+      <role>Default</role>
+      <location></location>
+    </template>
     <template id="Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions" externalReference="3da38e3b-9ae4-439d-9107-fb9a955c86ba">
       <role>Default</role>
       <location></location>
@@ -93,4 +97,5 @@
     <install target="Web Client" src="modelers/Client Settings.designer.settings" externalReference="7ab48245-c552-490e-9cba-4fc88178398a" />
     <install target="Module Builder;Web Client" src="../../intent/Aryzac.IO.Client/Intent.Metadata/Module Builder/Aryzac.IO.Modules.Client/Aryzac.IO.Modules.Client.pkg.config" externalReference="7966642f-c3c5-47f3-a03b-0b758cc2a981" />
   </metadata>
+  <releaseNotes>release-notes.md</releaseNotes>
 </package>

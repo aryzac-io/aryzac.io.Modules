@@ -42,12 +42,12 @@ const {
   status: titleSelectGetTitlesQueryStatus 
 } = await titlesServiceProxy.getTitlesQuery();
 const { 
-  data: invoicesGetInvoicesByClientIdQueryData, 
-  pending: invoicesGetInvoicesByClientIdQueryPending, 
-  error: invoicesGetInvoicesByClientIdQueryError , 
-  execute: invoicesGetInvoicesByClientIdQueryExecute, 
-  refresh: invoicesGetInvoicesByClientIdQueryRefresh, 
-  status: invoicesGetInvoicesByClientIdQueryStatus 
+  data: invoicesTableGetInvoicesByClientIdQueryData, 
+  pending: invoicesTableGetInvoicesByClientIdQueryPending, 
+  error: invoicesTableGetInvoicesByClientIdQueryError , 
+  execute: invoicesTableGetInvoicesByClientIdQueryExecute, 
+  refresh: invoicesTableGetInvoicesByClientIdQueryRefresh, 
+  status: invoicesTableGetInvoicesByClientIdQueryStatus 
 } = await invoicesServiceProxy.getInvoicesByClientIdQuery(props.clientId);
 
 // Model
@@ -190,11 +190,11 @@ const titleSelectOptions = computed(() => {
 
 
 
-// Invoices Options
-const invoicesHeaders = [
+// InvoicesTable Options
+const invoicesTableHeaders = [
   {
 	key: 'number',
-	label: t("invoices.number"),
+	label: t("invoicesTable.number"),
     data: (item: InvoiceDto) => {
       const number = item.number || '';
       const mappedExpression = `${number}`;
@@ -203,7 +203,7 @@ const invoicesHeaders = [
   },
   {
 	key: 'createdDate',
-	label: t("invoices.createdDate"),
+	label: t("invoicesTable.createdDate"),
     data: (item: InvoiceDto) => {
       const createdDate = item.createdDate || '';
       const mappedExpression = `${createdDate}`;
@@ -212,7 +212,7 @@ const invoicesHeaders = [
   },
   {
 	key: 'dueDate',
-	label: t("invoices.dueDate"),
+	label: t("invoicesTable.dueDate"),
     data: (item: InvoiceDto) => {
       const dueDate = item.dueDate || '';
       const mappedExpression = `${dueDate}`;
@@ -221,13 +221,13 @@ const invoicesHeaders = [
   },
 ];
 
-const invoicesActions = [
+const invoicesTableActions = [
 ];
 
 onMounted(() => {
   editClientGetClientByIdQueryExecute();
   titleSelectGetTitlesQueryExecute();
-  invoicesGetInvoicesByClientIdQueryExecute();
+  invoicesTableGetInvoicesByClientIdQueryExecute();
 });
 </script>
 
@@ -328,9 +328,9 @@ onMounted(() => {
     :description="t('invoices.description')"
   >
   <ui-view-table
-    :items="invoicesGetInvoicesByClientIdQueryData"
-    :headers="invoicesHeaders"
-    :actions="invoicesActions"
+    :items="invoicesTableGetInvoicesByClientIdQueryData"
+    :headers="invoicesTableHeaders"
+    :actions="invoicesTableActions"
     key="id"
   />
   </ui-editor-section>

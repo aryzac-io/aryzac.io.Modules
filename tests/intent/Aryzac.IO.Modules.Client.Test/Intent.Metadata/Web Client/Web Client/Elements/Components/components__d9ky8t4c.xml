@@ -3761,8 +3761,8 @@
                   <metadata />
                   <childElements>
                     <childElement id="a257b72f-fcdf-434f-8a8a-e345ee84793f" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
-                      <name>Invoices</name>
-                      <display>Invoices</display>
+                      <name>InvoicesTable</name>
+                      <display>InvoicesTable</display>
                       <isAbstract>false</isAbstract>
                       <sort-children>manually</sort-children>
                       <genericTypes />

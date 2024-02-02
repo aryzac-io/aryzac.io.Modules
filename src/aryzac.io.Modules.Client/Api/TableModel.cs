@@ -89,39 +89,5 @@ namespace Aryzac.IO.Modules.Client.Api
         {
             return type.IsTableModel() ? new TableModel((IElement)type) : null;
         }
-
-        public static string GetPath(this TableModel table)
-        {
-            var pathSegments = new List<string>();
-            var currentNode = table.InternalElement;
-
-            var skippedSpecializationTypes = new List<string>()
-            {
-                ComponentViewModel.SpecializationTypeId,
-                SectionModel.SpecializationTypeId,
-                TableModel.SpecializationTypeId,
-            };
-
-            while (currentNode != null)
-            {
-                if (currentNode.SpecializationTypeId == ComponentsModel.SpecializationTypeId)
-                {
-                    break;
-                }
-
-                if (!skippedSpecializationTypes.Contains(currentNode.SpecializationTypeId))
-                {
-                    pathSegments.Add(currentNode.Name);
-                }
-
-                currentNode = currentNode.ParentElement;
-            }
-
-            pathSegments.Reverse(); // Reverse the order of the path segments
-
-            var path = "/" + string.Join("/", pathSegments); // Join the path segments with '/'
-
-            return path;
-        }
     }
 }

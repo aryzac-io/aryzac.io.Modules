@@ -3,7 +3,7 @@ import type { ComposerTranslation } from "@nuxtjs/i18n/dist/runtime/composables"
 import type { InvoiceDto } from '~/structs/dto/invoices/invoice.dto';
 
 
-export const useViewInvoicesTableOptions = async (t: ComposerTranslation) => {
+export const useEditClientInvoicesTableOptions = async (t: ComposerTranslation) => {
 
 
 const invoicesServiceProxy = useInvoicesServiceProxy();
@@ -28,7 +28,7 @@ const {
 const headers = [
   {
     key: 'number',
-    label: t("table.number"),
+    label: t("invoicesTable.number"),
     data: (item: InvoiceDto) => {
       const number = item.number || '';
       const mappedExpression = `${number}`;
@@ -37,7 +37,7 @@ const headers = [
   },
   {
     key: 'createdDate',
-    label: t("table.createdDate"),
+    label: t("invoicesTable.createdDate"),
     data: (item: InvoiceDto) => {
       const createdDate = item.createdDate || '';
       const mappedExpression = `${createdDate}`;
@@ -46,7 +46,7 @@ const headers = [
   },
   {
     key: 'dueDate',
-    label: t("table.dueDate"),
+    label: t("invoicesTable.dueDate"),
     data: (item: InvoiceDto) => {
       const dueDate = item.dueDate || '';
       const mappedExpression = `${dueDate}`;
