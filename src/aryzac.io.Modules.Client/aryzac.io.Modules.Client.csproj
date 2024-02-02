@@ -83,11 +83,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>TableHeaders.tt</DependentUpon>
     </Compile>
-    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableOptions.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>TableOptions.tt</DependentUpon>
-    </Compile>
     <Compile Update="Templates\Files\T.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -198,10 +193,6 @@
     <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>TableHeaders.cs</LastGenOutput>
-    </None>
-    <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableOptions.tt">
-      <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>TableOptions.cs</LastGenOutput>
     </None>
     <None Update="Templates\Layouts\Layout\LayoutTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

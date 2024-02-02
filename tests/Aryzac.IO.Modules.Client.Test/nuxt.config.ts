@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     public: {
       clientsServiceApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_CLIENTS_SERVICE_API_BASE_URI
       invoicesServiceApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_INVOICES_SERVICE_API_BASE_URI
-      newServiceProxyApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_NEW_SERVICE_PROXY_API_BASE_URI
       titlesServiceApiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_TITLES_SERVICE_API_BASE_URI
 
       apiBaseUri: '', // Default to an empty string, automatically set at runtime using process.env.NUXT_PUBLIC_API_BASE_URI

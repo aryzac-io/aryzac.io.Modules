@@ -411,14 +411,6 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
-      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#0f988ab2-7f46-4574-bd24-80ab52b4b46a</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useNewServiceProxyProxy.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>useNewServiceProxyProxy.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useSidebar.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -664,14 +656,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/invoices-service.proxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>invoices-service.proxy.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#0f988ab2-7f46-4574-bd24-80ab52b4b46a</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/new-service-proxy.proxy.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>new-service-proxy.proxy.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

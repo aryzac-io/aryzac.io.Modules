@@ -10,7 +10,16 @@ const clientsServiceProxy = useClientsServiceProxy();
 
 
 
-// ADD CODE HERE
+// Commands
+
+	
+const deleteClientCommand = async (id: string) => {
+
+
+
+	const deleteClientCommand = await clientsServiceProxy.deleteClientCommand(id);
+};
+
 
 
 const headers = [

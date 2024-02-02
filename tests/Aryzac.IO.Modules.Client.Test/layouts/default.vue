@@ -44,18 +44,6 @@ setupSectionItem(
   null,
   "/Clients"
 );
-setupSectionItem(
-  "appbar",
-  t("appbar.navigation.dashboard.label"),
-  null,
-  "/dashboard"
-);
-setupSectionItem(
-  "appbar",
-  t("appbar.navigation.invoices.label"),
-  null,
-  "/Invoices"
-);
 
 
 // Setup Breadcrumb

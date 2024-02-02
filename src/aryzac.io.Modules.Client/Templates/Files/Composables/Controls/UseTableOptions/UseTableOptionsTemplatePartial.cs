@@ -4,6 +4,7 @@ using System.Linq;
 using Aryzac.IO.Modules.Client.Api;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared;
 using Intent.Engine;
+using Intent.Metadata.Models;
 using Intent.Modelers.Types.ServiceProxies.Api;
 using Intent.Modules.Common;
 using Intent.Modules.Common.Templates;
@@ -29,7 +30,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             Types = new TypeScriptTypeResolver();
             
             commandAndQueryServiceProxyComposables = new CommandAndQueryServiceProxyComposables(model.InternalElement);
-            commands = new Commands(model.InternalElement);
+            commands = new Commands(model.InternalElement, GetTypeName);
 
             dtoTypeImports = new DtoTypeImports(model.InternalElement);
             tableHeaders = new TableHeaders(model.InternalElement);

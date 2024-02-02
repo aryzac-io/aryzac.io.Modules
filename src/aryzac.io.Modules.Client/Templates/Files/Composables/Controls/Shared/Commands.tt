@@ -11,4 +11,63 @@
 <#@ import namespace="Intent.Templates" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
-// ADD CODE HERE
+<# if (GetCommandModels().Any()) { #>
+// Commands
+<# } #>
+
+<#
+  foreach (var command in GetCommandModels())
+  {
+    var endpoint = GetEndpointModel(command);#>
+	
+const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = async (<#= string.Join(", ", GenerateFunctionParameters(command)) #>) => {
+
+<#
+	  foreach (var parameter in GetInputParameters(endpoint))
+	  {
+#>
+  const command: <#= GetTypeName(parameter.TypeReference) #> = {
+<#  
+    foreach (var property in GetProperties(command))
+    {
+#>
+    <#= property.Name.ToPascalCase().ToCamelCase() #>: model.<#= GetMappedName(property, command) #>,
+<#
+    }
+#>
+  };
+<#
+	  }
+#>
+
+<#
+	foreach (var mapping in GetCommandMappings(command))
+    {
+        foreach (var mappedEnd in GetCommandMappingMappedEnds(mapping))
+        {
+            var source = GetSource(mappedEnd);
+
+	      #>  const <#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #> = <#= source #>.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>;
+          <#
+	    }
+	}
+#>
+
+	const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
+
+	if (endpoint != null)
+	{
+	  foreach (var parameter in endpoint.Inputs)
+	  {
+	    #><#= parameter.Name.ToPascalCase().ToCamelCase() #><#
+		if (endpoint.Inputs.Last() != parameter)
+		{
+		#>, <#
+		}
+	  }
+	}
+	#>);
+};
+<#   
+  }
+#>

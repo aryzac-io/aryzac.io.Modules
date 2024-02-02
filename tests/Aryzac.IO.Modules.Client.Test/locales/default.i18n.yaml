@@ -5,10 +5,6 @@ af:
         label: Tuis
       clients:
         label: Clients
-      dashboard:
-        label: Dashboard
-      invoices:
-        label: Invoices
   breadcrumb:
     navigation:
       home:
@@ -20,10 +16,6 @@ en:
         label: Home
       clients:
         label: Clients
-      dashboard:
-        label: Dashboard
-      invoices:
-        label: Invoices
   breadcrumb:
     navigation:
       home:
