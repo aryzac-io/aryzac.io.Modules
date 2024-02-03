@@ -17,6 +17,7 @@
 <#
   foreach (var query in GetQueryModels())
   {
+    if (query.Mapping is null) continue;
 #>const { 
   data,
   pending,

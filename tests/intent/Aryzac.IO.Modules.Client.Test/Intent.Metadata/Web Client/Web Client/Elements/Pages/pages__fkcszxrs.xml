@@ -136,6 +136,30 @@
                 </childElement>
               </childElements>
             </childElement>
+            <childElement id="b9ed2eef-0356-4ad3-80af-b081e151415a" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+              <name>ListClients</name>
+              <display>ListClients: ListClients</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="c536f5e6-595c-415e-9238-76f85dabff9e">
+                <typeId>0e1c5b21-192a-48ee-8d95-c22474031496</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Web Client</typePackageName>
+                <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>5ef8c8aa-96ad-41a7-8497-6039ceea3230</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
           </childElements>
         </childElement>
         <childElement id="b6ef1639-0b36-475f-ba7c-5a312493257a" type="Page Folder" typeId="21b29545-9bd7-4cbd-85bb-3b548765031e">

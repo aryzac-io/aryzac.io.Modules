@@ -43,14 +43,16 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
         {
             return Element.ChildElements
                 .GetElementsOfType(ComponentCommandModel.SpecializationTypeId, true)
-                .Select(x => new ComponentCommandModel(x).Mapping.Element.AsOperationModel().ParentService);
+                .Select(x => new ComponentCommandModel(x).Mapping?.Element.AsOperationModel().ParentService)
+                .Where(m => m is not null);
         }
 
         private IEnumerable<ServiceProxyModel> GetQueryModels()
         {
             return Element.ChildElements
                 .GetElementsOfType(ComponentQueryModel.SpecializationTypeId, true)
-                .Select(x => new ComponentQueryModel(x).Mapping.Element.AsOperationModel().ParentService);
+                .Select(x => new ComponentQueryModel(x).Mapping?.Element.AsOperationModel().ParentService)
+                .Where(m => m is not null);
         }
     }
 }

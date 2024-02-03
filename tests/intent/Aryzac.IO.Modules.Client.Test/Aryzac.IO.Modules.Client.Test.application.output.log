@@ -316,6 +316,22 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#9f478672-744c-4986-8ac2-4771be289f1e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/ListClients/useListClientsClientsTableOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/ListClients/useListClientsClientsTableOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions#b492489c-aed4-419e-a61e-e75f8822ba62</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/ListClients/useListClientsViewClientsOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/ListClients/useListClientsViewClientsOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useClientsServiceProxy.ts</ApplicationRelativeFilePath>

@@ -72,7 +72,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
         {
             var functionParameters = new Dictionary<string, string>();
 
-            if (GetComponent().Parameters != null)
+            if (GetComponent().Parameters.Any())
             {
                 functionParameters.Add("props", $"{GetComponent().Name}Props");
             }

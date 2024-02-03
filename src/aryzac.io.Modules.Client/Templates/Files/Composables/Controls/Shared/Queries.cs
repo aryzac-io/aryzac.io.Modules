@@ -54,6 +54,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
 
   foreach (var query in GetQueryModels())
   {
+    if (query.Mapping is null) continue;
 
             
             #line default
@@ -61,21 +62,21 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             this.Write("const { \r\n  data,\r\n  pending,\r\n  error,\r\n  execute,\r\n  refresh,\r\n  status\r\n} = aw" +
                     "ait ");
             
-            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("Proxy.");
             
-            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(query.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("(");
             
-            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
 
 
 	foreach (var mapping in query.InternalElement.Mappings)
@@ -88,13 +89,13 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             #line hidden
             this.Write("props.");
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
 
           if (mapping.MappedEnds.Last() != mappedEnd)
 		  {
@@ -104,7 +105,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             #line hidden
             this.Write(", ");
             
-            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
 
 		  }
 	    }
@@ -115,7 +116,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             #line hidden
             this.Write(");\r\n");
             
-            #line 41 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
+            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\Queries.tt"
    
   }
 

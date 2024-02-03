@@ -46,7 +46,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
             
             #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
 
-   var mappedColumn = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
+   var mappedColumn = heading.InternalElement.ParentElement.Mappings.FirstOrDefault()?.MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
    if (mappedColumn is not null) { 
             
             #line default

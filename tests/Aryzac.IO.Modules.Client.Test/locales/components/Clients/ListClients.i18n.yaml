@@ -1,4 +1,18 @@
 af:
-  placeholder: ''
+  viewClients:
+    title: View Clients
+    attributes:
+      placeholder: ''
+  clientsTable:
+    firstName: FirstName
+    lastName: LastName
+    otherNames: OtherNames
 en:
-  placeholder: ''
+  viewClients:
+    title: View Clients
+    attributes:
+      placeholder: ''
+  clientsTable:
+    firstName: FirstName
+    lastName: LastName
+    otherNames: OtherNames

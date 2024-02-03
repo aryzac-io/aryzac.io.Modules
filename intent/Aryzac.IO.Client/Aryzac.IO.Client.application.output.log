@@ -584,7 +584,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Components/ComponentHtml/ComponentHtmlTemplatePartial.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Components/ComponentHtml/ComponentHtmlTemplatePartial.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
@@ -976,7 +976,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/Components/Models/ModelsTemplatePartial.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Structs/Components/Models/ModelsTemplatePartial.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
@@ -992,7 +992,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/Components/Props/PropsTemplatePartial.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Structs/Components/Props/PropsTemplatePartial.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
@@ -1008,7 +1008,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/DTOs/DTO/DTOTemplatePartial.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Structs/DTOs/DTO/DTOTemplatePartial.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>

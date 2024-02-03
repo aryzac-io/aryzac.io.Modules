@@ -58,6 +58,8 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
         // Helper method to get import statement for queries
         public string GetQueryImportStatement(ComponentQueryModel query)
         {
+            if (query.Mapping is null) return "";
+
             var endpoint = GetEndpoint((IElement)query.Mapping.Element.AsOperationModel().Mapping.Element);
             var importPath = $"~/structs/dto/{((IElement)endpoint.ReturnType.Element).ParentElement.Name.ToPascalCase().ToCamelCase()}/{((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase()}.dto";
             return $"import type {{ {endpoint.ReturnType.Element.Name} }} from '{importPath}';";

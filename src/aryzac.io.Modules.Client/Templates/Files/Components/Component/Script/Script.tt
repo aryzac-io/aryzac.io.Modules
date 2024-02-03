@@ -45,6 +45,7 @@ const query = await <#= Model.Query.Mapping.Element.AsOperationModel().ParentSer
 	}
 	#>);<#
   } #>
+
 <#
   if (Model.Model != null)
   {
