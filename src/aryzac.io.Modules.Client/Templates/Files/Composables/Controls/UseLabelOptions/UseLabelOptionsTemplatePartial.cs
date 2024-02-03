@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using Aryzac.IO.Modules.Client.Api;
+using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared;
 using Intent.Engine;
 using Intent.Modules.Common;
 using Intent.Modules.Common.Templates;
 using Intent.Modules.Common.TypeScript.Templates;
+using Intent.Modules.Common.TypeScript.TypeResolvers;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
 
@@ -22,6 +24,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
         [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
         public UseLabelOptionsTemplate(IOutputTarget outputTarget, Aryzac.IO.Modules.Client.Api.LabelModel model) : base(TemplateId, outputTarget, model)
         {
+            Types = new TypeScriptTypeResolver();
+
+            dtoTypeImports = new DtoTypeImports(model.InternalElement);
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
@@ -29,8 +34,16 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
         {
             return new TypeScriptFileConfig(
                 className: $"{Model.Name}",
-                fileName: $"{Model.Name.ToKebabCase()}"
+                fileName: $"components/{Model.GetPath()}/use{Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{Model.Name.ToPascalCase()}Options"
             );
+        }
+
+        private DtoTypeImports dtoTypeImports;
+        public string DtoTypeImports => dtoTypeImports.TransformText();
+
+        public ComponentModel GetComponent()
+        {
+            return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).AsComponentModel();
         }
     }
 }

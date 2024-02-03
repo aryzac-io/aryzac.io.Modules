@@ -28,9 +28,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
         {
             Types = new TypeScriptTypeResolver();
 
+            dtoTypeImports = new DtoTypeImports(model.InternalElement);
             commandAndQueryServiceProxyComposables = new CommandAndQueryServiceProxyComposables(model.InternalElement);
             queries = new Queries(model.InternalElement);
-            dtoTypeImports = new DtoTypeImports(model.InternalElement);
 
             optionsComputed = new OptionsComputed(model.InternalElement);
         }

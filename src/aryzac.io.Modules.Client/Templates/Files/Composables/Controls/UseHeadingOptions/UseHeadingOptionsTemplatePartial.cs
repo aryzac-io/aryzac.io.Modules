@@ -57,8 +57,23 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
         private TitleComputed titleComputed;
         public string TitleComputed => titleComputed.TransformText();
 
+        public bool HasTitle()
+        {
+            var heading = Model.InternalElement.AsHeadingModel();
+            var mappedEnd = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
+            return mappedEnd is not null;
+        }
+
         private Attributes attributes;
         public string Attributes => attributes.TransformText();
+
+        public bool HasAttributes()
+        {
+            var heading = Model.InternalElement.AsHeadingModel();
+            if (heading.Attributes is null) return false;
+
+            return heading.Attributes.Any();
+        }
 
         private Commands commands;
         public string Commands => commands.TransformText();

@@ -70,8 +70,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             if (HasBodyParameter(endpoint))
             {
                 var bodyParam = GetBodyParameter(endpoint);
-                // var importPath = GetImportPath((IElement)bodyParam.TypeReference.Element);
-                // ((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase()
                 var importPath = $"~/structs/dto/{((IElement)bodyParam.TypeReference.Element).ParentElement.Name.ToPascalCase().ToCamelCase()}/{ endpoint.InternalElement.Name.ToKebabCase() }.dto";
                 return $"import type {{ { endpoint.InternalElement.Name } }} from '{importPath}';";
             }

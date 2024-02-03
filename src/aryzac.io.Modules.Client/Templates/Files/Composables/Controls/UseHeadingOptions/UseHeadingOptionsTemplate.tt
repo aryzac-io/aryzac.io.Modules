@@ -31,8 +31,12 @@ export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.Sp
 <#= Actions #>
 
 return {
+<# if (HasTitle()) { #>
   title,
+<# } #>
+<# if (HasAttributes()) { #>
   attributes,
+<# } #>
 <# if (HasActions()) { #>
 	actions,
 <# } #>

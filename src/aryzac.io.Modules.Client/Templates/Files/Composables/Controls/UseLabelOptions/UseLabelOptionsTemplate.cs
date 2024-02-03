@@ -33,14 +33,121 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\nexport class ");
+            this.Write("\r\n");
             
             #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(ClassName));
+            this.Write(this.ToStringHelper.ToStringWithCulture(DtoTypeImports));
             
             #line default
             #line hidden
-            this.Write(" {\r\n\r\n}");
+            this.Write("\r\n\r\nexport const use");
+            
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            this.Write("Options = async (\r\n");
+            
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+ if (GetComponent().Parameters != null) { 
+            
+            #line default
+            #line hidden
+            this.Write("  props: ");
+            
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
+            
+            #line default
+            #line hidden
+            this.Write("Props, \r\n");
+            
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+ } 
+            
+            #line default
+            #line hidden
+            
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+ if (GetComponent().Model != null) { 
+            
+            #line default
+            #line hidden
+            this.Write("  model: ");
+            
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
+            
+            #line default
+            #line hidden
+            this.Write("Model, \r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+ } 
+            
+            #line default
+            #line hidden
+            this.Write("  t: ComposerTranslation\r\n) => {\r\n\r\n");
+            
+            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+
+  var labelField = "";
+            
+  var mappedColumn = Model.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label" && m.TargetElement.Id == Model.Id);
+
+            
+            #line default
+            #line hidden
+            this.Write("const label = computed(() => {\r\n");
+            
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+
+  var mappedExpression = mappedColumn.MappingExpression;
+  foreach (var source in mappedColumn.Sources)
+  {
+    mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+
+            
+            #line default
+            #line hidden
+            this.Write("  const ");
+            
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write(" = model.");
+            
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write(" || \'\';\r\n");
+            
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+
+  }
+
+            
+            #line default
+            #line hidden
+            this.Write("  const mappedExpression = `");
+            
+            #line 38 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
+            
+            #line default
+            #line hidden
+            this.Write("`;\r\n  return mappedExpression;\r\n});\r\n\r\nreturn {\r\n  label\r\n};\r\n\r\n}");
             return this.GenerationEnvironment.ToString();
         }
     }

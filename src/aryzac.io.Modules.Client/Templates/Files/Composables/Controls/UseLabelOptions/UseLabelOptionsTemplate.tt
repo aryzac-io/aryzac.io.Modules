@@ -9,6 +9,38 @@
 <#@ import namespace="Intent.Metadata.Models" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
-export class <#= ClassName #> {
+<#= DtoTypeImports #>
+
+export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()#><#= Model.Name.ToPascalCase() #>Options = async (
+<# if (GetComponent().Parameters != null) { #>
+  props: <#= GetComponent().Name #>Props, 
+<# } #><# if (GetComponent().Model != null) { #>
+  model: <#= GetComponent().Name #>Model, 
+<# } #>  t: ComposerTranslation
+) => {
+
+<#
+  var labelField = "";
+            
+  var mappedColumn = Model.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label" && m.TargetElement.Id == Model.Id);
+#>
+const label = computed(() => {
+<#
+  var mappedExpression = mappedColumn.MappingExpression;
+  foreach (var source in mappedColumn.Sources)
+  {
+    mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+#>
+  const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = model.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
+<#
+  }
+#>
+  const mappedExpression = `<#= mappedExpression #>`;
+  return mappedExpression;
+});
+
+return {
+  label
+};
 
 }

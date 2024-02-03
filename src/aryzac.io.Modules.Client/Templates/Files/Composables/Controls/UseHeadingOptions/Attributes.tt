@@ -12,6 +12,7 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <# var heading = Element.AsHeadingModel(); #>
+<# if (heading.Attributes is not null && heading.Attributes.Any()) { #>
 const attributes = [
 <# 
       foreach (var attribute in heading.Attributes)
@@ -47,3 +48,4 @@ const attributes = [
        }
       }
 #>];
+<# } #>
