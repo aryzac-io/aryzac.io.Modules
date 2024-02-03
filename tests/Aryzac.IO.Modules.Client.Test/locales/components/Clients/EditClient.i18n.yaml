@@ -3,8 +3,22 @@ af:
     title: heading
     attributes:
       placeholder: ''
+  newSection:
+    title: NewSection
+    description: ''
+    newTable:
+      placeholder: ''
+  table:
+    placeholder: ''
 en:
   heading:
     title: this is a heading
     attributes:
       placeholder: ''
+  newSection:
+    title: NewSection
+    description: ''
+    newTable:
+      placeholder: ''
+  table:
+    placeholder: ''

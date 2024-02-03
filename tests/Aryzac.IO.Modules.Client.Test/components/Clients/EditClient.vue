@@ -7,6 +7,8 @@ import type { EditClientModel } from "~/structs/components/clients/edit-client.m
 import type { ClientDto } from "~/structs/dto/clients/client.dto";
 
 import { useEditClientHeadingOptions } from "~/composables/components//Clients/EditClient/useEditClientHeadingOptions";
+import { useEditClientNewTableOptions } from "~/composables/components//Clients/EditClient/useEditClientNewTableOptions";
+import { useEditClientTableOptions } from "~/composables/components//Clients/EditClient/useEditClientTableOptions";
 
 const { t } = useI18n();
 
@@ -24,6 +26,8 @@ watchEffect(async () => {
 });
 
 const headingOptions = await useEditClientHeadingOptions(props, model);
+const newTableOptions = await useEditClientNewTableOptions(props, model);
+const tableOptions = await useEditClientTableOptions(props, model);
 
 onMounted(() => {
   query.execute();

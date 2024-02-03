@@ -73,14 +73,8 @@
        :options="<#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options"
       />
 <#  }
-    if (control.IsTableModel()) { 
-       var table = control.AsTableModel(); #>
-  <ui-view-table
-    :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
-    :headers="<#= control.Name.ToPascalCase().ToCamelCase() #>Headers"
-    :actions="<#= control.Name.ToPascalCase().ToCamelCase() #>Actions"
-    key="id"
-  />
+    if (control.IsTableModel()) { #>
+  <#= GenerateTable(control) #>
 <#  }
     if (control.IsActionsModel()) {
       var actions = control.AsActionsModel(); #>
@@ -103,14 +97,8 @@
       }
 #>
   </ui-editor-section>
-<# } else if (component.IsTableModel()) {
-      var table = component.AsTableModel(); #>
-  <ui-view-table
-    :items="<#= table.Name.ToPascalCase().ToCamelCase() #><#= table.Query.Mapping.Element.Name.ToPascalCase() #>Data"
-    :headers="<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Headers"
-    :actions="<#= Model.View.Table.Name.ToPascalCase().ToCamelCase() #>Actions"
-    key="id"
-  />
+<# } else if (component.IsTableModel()) { #>
+  <#= GenerateTable(component) #>
 <# 
     }
   }

@@ -16,18 +16,31 @@ using Intent.Modules.Metadata.WebApi.Models;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
 using static Aryzac.IO.Modules.Client.Api.LocaleModelStereotypeExtensions;
+using static Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions.TableHeaders;
 
-namespace Aryzac.IO.Modules.Client.Templates.Files
+namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Controls
 {
-    partial class T2
+    partial class Table
     {
-        public T(IElement element)
+        public Table(IElement element)
         {
             Element = element;
         }
 
         public IElement Element { get; set; }
 
-        public Model Model => Element.AsModel();
+        public TableModel Model => Element.AsTableModel();
+
+        public bool HasActions()
+        {
+            if (Model.Actions is null) return false;
+
+            return Model.Actions.Actions.Any();
+        }
+
+        public string GetHeadingOptionsComposableName()
+        {
+            return $"{Model.Name.ToPascalCase().ToCamelCase()}Options";
+        }
     }
 }

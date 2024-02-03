@@ -29,25 +29,25 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
 
         public IElement Element { get; set; }
 
-        public HeadingModel HeadingModel => Element.AsHeadingModel();
+        public HeadingModel Model => Element.AsHeadingModel();
 
         public bool HasAttributes()
         {
-            if (HeadingModel.Attributes is null) return false;
+            if (Model.Attributes is null) return false;
 
-            return HeadingModel.Attributes.Any();
+            return Model.Attributes.Any();
         }
 
         public bool HasActions()
         {
-            if (HeadingModel.Actions is null) return false;
+            if (Model.Actions is null) return false;
 
-            return HeadingModel.Actions.Actions.Any();
+            return Model.Actions.Actions.Any();
         }
 
         public string GetHeadingOptionsComposableName()
         {
-            return $"{HeadingModel.Name.ToPascalCase().ToCamelCase()}Options";
+            return $"{Model.Name.ToPascalCase().ToCamelCase()}Options";
         }
     }
 }

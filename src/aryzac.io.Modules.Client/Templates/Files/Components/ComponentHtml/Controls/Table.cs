@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions
+namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Controls
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -25,9 +25,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
+    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Table.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class TableHeaders : TableHeadersBase
+    public partial class Table : TableBase
     {
 #line hidden
         /// <summary>
@@ -35,73 +35,28 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\n");
+            this.Write("\r\n  <ui-view-table\r\n    :items=\"");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
- var table = Element.AsTableModel(); 
-            
-            #line default
-            #line hidden
-            
-            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
- if (GetHeaders().Any()) { 
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Table.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
             
             #line default
             #line hidden
-            this.Write("const headers = [\r\n");
+            this.Write(".data\"\r\n    :headers=\"");
             
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
-
-  foreach (var header in GetHeaders())
-  {
-
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Table.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
             
             #line default
             #line hidden
-            this.Write("  {\r\n    key: \'");
+            this.Write(".headers\"\r\n    :actions=\"");
             
-            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(header.Key));
-            
-            #line default
-            #line hidden
-            this.Write("\',\r\n    label: t(\"");
-            
-            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(header.Label));
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Table.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
             
             #line default
             #line hidden
-            this.Write("\"),\r\n    data: (item: ");
-            
-            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(header.ItemDataType));
-            
-            #line default
-            #line hidden
-            this.Write(") => {\r\n");
-            
-            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(header.DataFunction));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n    }\r\n  },\r\n");
-            
-            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
-
-  }
-
-            
-            #line default
-            #line hidden
-            this.Write("];\r\n");
-            
-            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt"
- } 
-            
-            #line default
-            #line hidden
+            this.Write(".actions\"\r\n    key=\"id\"\r\n  />\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -113,7 +68,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class TableHeadersBase
+    public class TableBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

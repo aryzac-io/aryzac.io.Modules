@@ -12,6 +12,7 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <# var table = Element.AsTableModel(); #>
+<# if (GetHeaders().Any()) { #>
 const headers = [
 <#
   foreach (var header in GetHeaders())
@@ -27,3 +28,4 @@ const headers = [
 <#
   }
 #>];
+<# } #>

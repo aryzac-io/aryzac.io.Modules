@@ -35,57 +35,50 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\n");
+            this.Write("\r\n  <ui-heading-page\r\n    :title=\"");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
- var heading = Element.AsHeadingModel(); 
-            
-            #line default
-            #line hidden
-            this.Write("  <ui-heading-page\r\n    :title=\"");
-            
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
             
             #line default
             #line hidden
             this.Write(".title.value\"\r\n");
             
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
  if (HasAttributes()) { 
             
             #line default
             #line hidden
             this.Write("    :attributes=\"");
             
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
             
             #line default
             #line hidden
             this.Write(".attributes\"\r\n");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
  } 
             
             #line default
             #line hidden
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
  if (HasActions()) { 
             
             #line default
             #line hidden
             this.Write("    :actions=\"");
             
-            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
+            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
             
             #line default
             #line hidden
             this.Write(".actions\"\r\n");
             
-            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
+            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Heading.tt"
  } 
             
             #line default

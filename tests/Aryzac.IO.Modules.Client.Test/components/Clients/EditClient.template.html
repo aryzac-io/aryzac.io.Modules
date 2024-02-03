@@ -1,2 +1,20 @@
 <ui-heading-page :title="headingOptions.title.value"></ui-heading-page>
 
+<ui-editor-section
+  :title="t('newSection.title')"
+  :description="t('newSection.description')"
+>
+  <ui-view-table
+    :items="newTableOptions.data"
+    :headers="newTableOptions.headers"
+    :actions="newTableOptions.actions"
+    key="id"
+  ></ui-view-table>
+</ui-editor-section>
+
+<ui-view-table
+  :items="tableOptions.data"
+  :headers="tableOptions.headers"
+  :actions="tableOptions.actions"
+  key="id"
+></ui-view-table>

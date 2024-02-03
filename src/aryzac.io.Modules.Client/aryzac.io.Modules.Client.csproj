@@ -3,7 +3,6 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Templates\Files\clone\T2Partial.cs" />
     <Compile Remove="Templates\Files\clone\TPartial.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -11,7 +10,6 @@
     <Content Include="content\.vscode\launch.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Templates\Files\clone\T2Partial.cs" />
     <None Include="Templates\Files\clone\TPartial.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +39,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Heading.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\Table.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Table.tt</DependentUpon>
     </Compile>
     <Compile Update="Templates\Files\Components\Component\ComponentTemplate.cs">
       <DesignTime>True</DesignTime>
@@ -204,12 +207,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Templates\Files\clone\T2.tt">
-      <Generator></Generator>
-    </None>
     <None Update="Templates\Files\Components\ComponentHtml\Controls\Heading.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Heading.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\ComponentHtml\Controls\Table.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Table.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\Components\Component\Script\Properties.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

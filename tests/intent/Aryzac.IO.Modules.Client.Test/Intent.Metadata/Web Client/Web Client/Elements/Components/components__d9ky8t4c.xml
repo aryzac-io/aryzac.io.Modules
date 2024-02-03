@@ -525,6 +525,68 @@
                   <metadata />
                   <childElements />
                 </childElement>
+                <childElement id="0ab45d34-f0d2-4245-8624-88489aea9301" type="Section" typeId="359ec87c-144f-4be1-b3d1-fe182093bb3e">
+                  <name>NewSection</name>
+                  <display>NewSection</display>
+                  <isAbstract>false</isAbstract>
+                  <sort-children>manually</sort-children>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>ce81a849-3152-4834-8be3-24cef46fd618</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes>
+                    <stereotype stereotypeDefinitionId="5b660009-8997-4ec3-9b41-0fcded5e97b5" name="Section Settings">
+                      <addedByDefault>false</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="200ceb8b-d4cc-4abe-8993-3e232d0cb4da" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
+                        <property name="46a86af5-3286-4987-848b-5295712e67f8" display="Title" isActive="true" />
+                        <property name="b9d53634-bca6-4224-9c9b-dbfe9d4e9f39" display="Description" isActive="true" />
+                      </properties>
+                    </stereotype>
+                    <stereotype stereotypeDefinitionId="5b660009-8997-4ec3-9b41-0fcded5e97b5" name="Section Settings">
+                      <addedByDefault>false</addedByDefault>
+                      <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                      <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                      <properties>
+                        <property name="200ceb8b-d4cc-4abe-8993-3e232d0cb4da" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
+                        <property name="46a86af5-3286-4987-848b-5295712e67f8" display="Title" isActive="true" />
+                        <property name="b9d53634-bca6-4224-9c9b-dbfe9d4e9f39" display="Description" isActive="true" />
+                      </properties>
+                    </stereotype>
+                  </stereotypes>
+                  <metadata />
+                  <childElements>
+                    <childElement id="263064c1-47b3-4f6d-9964-e13789be52b8" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
+                      <name>NewTable</name>
+                      <display>NewTable</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>0ab45d34-f0d2-4245-8624-88489aea9301</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes />
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
+                </childElement>
+                <childElement id="6e8e0608-6726-482b-a6ba-48c36c211450" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
+                  <name>table</name>
+                  <display>table</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <isMapped>false</isMapped>
+                  <parentFolderId>ce81a849-3152-4834-8be3-24cef46fd618</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
               </childElements>
             </childElement>
           </childElements>

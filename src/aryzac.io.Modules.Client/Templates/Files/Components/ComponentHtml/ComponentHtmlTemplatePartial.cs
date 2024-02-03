@@ -39,6 +39,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             return heading.TransformText();
         }
 
+        public string GenerateTable(IElement element)
+        {
+            var table = new Table(element);
+            return table.TransformText();
+        }
+
         public string GetMappedTextboxName(TextboxModel field)
         {
             foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
