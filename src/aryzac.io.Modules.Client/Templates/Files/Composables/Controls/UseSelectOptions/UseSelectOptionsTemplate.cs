@@ -77,7 +77,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
             this.Write("\r\n\r\n");
             
             #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(SelectOptionsComputed));
+            this.Write(this.ToStringHelper.ToStringWithCulture(OptionsComputed));
             
             #line default
             #line hidden

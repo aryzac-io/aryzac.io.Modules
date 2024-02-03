@@ -12,6 +12,24 @@ export const useEditClientHeadingOptions = async (
 ) => {
   const clientsServiceProxy = useClientsServiceProxy();
 
+  const title = computed(() => {
+    const lastName = model.lastName || "";
+    const firstName = model.firstName || "";
+    const mappedExpression = `${lastName}, ${firstName}`;
+    return mappedExpression;
+  });
+
+  const attributes = [
+    {
+      icon: t("heading.attributes.firstnameAttribute.icon"),
+      label: `${model.firstName}`,
+    },
+    {
+      icon: t("heading.attributes.lastnameAttribute.icon"),
+      label: `${model.lastName}`,
+    },
+  ];
+
   // Commands
   const changeNameClientCommand = async (id: string) => {
     const command: ChangeNameClientCommand = {
@@ -21,7 +39,7 @@ export const useEditClientHeadingOptions = async (
       otherNames: model.otherNames,
     };
 
-    const changeNameClientCommand =
+    const changeNameClientCommandResponse =
       await clientsServiceProxy.changeNameClientCommand(id, command);
   };
 
@@ -42,6 +60,8 @@ export const useEditClientHeadingOptions = async (
   ];
 
   return {
+    title,
+    attributes,
     actions,
     changeNameClientCommand,
   };

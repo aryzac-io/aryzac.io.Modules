@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelectOptions
+namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadingOptions
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -25,9 +25,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
+    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class SelectOptionsComputed : SelectOptionsComputedBase
+    public partial class TitleComputed : TitleComputedBase
     {
 #line hidden
         /// <summary>
@@ -37,78 +37,62 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
         {
             this.Write("\r\n");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
- var select = Element.AsSelectModel(); 
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
+ var heading = Element.AsHeadingModel(); 
             
             #line default
             #line hidden
-            this.Write("const ");
             
-            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(select.InternalElement.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write("Options = computed(() => {\r\n  const options: { value: string; label: string }[] =" +
-                    " [];\r\n  if (data.value) {\r\n    data.value.forEach((item: ");
-            
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(select.Query.Mapping.Element.TypeReference.Element.Name));
-            
-            #line default
-            #line hidden
-            this.Write(") => {\r\n");
-            
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
 
-    var mappedColumn = GetMappedColumn(select);
-    var mappedExpression = mappedColumn.MappingExpression;
-    foreach (var source in mappedColumn.Sources)
-    {
+      var mappedColumn = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
+
+            
+            #line default
+            #line hidden
+            this.Write("const title = computed(() => {\r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
+
+      var mappedExpression = mappedColumn.MappingExpression;
+      foreach (var source in mappedColumn.Sources)
+      {
         mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
 
             
             #line default
             #line hidden
-            this.Write("      const ");
+            this.Write("  const ");
             
-            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
+            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
-            this.Write(" = item.");
+            this.Write(" = model.");
             
-            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
+            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" || \'\';\r\n");
             
-            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
+            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
 
-    }
+      }
 
             
             #line default
             #line hidden
-            this.Write("      const mappedExpression = `");
+            this.Write("  const mappedExpression = `");
             
-            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
+            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
             
             #line default
             #line hidden
-            this.Write("`;\r\n\r\n      options.push({\r\n        value: item.");
-            
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(ValueField.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(",\r\n        label: mappedExpression,\r\n      });\r\n    });\r\n  }\r\n  return options;\r\n" +
-                    "});\r\n");
+            this.Write("`;\r\n  return mappedExpression;\r\n});\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -120,7 +104,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class SelectOptionsComputedBase
+    public class TitleComputedBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

@@ -22,11 +22,17 @@ export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.Sp
 
 <#= CommandAndQueryServiceProxyComposables #>
 
+<#= TitleComputed #>
+
+<#= Attributes #>
+
 <#= Commands #>
 
 <#= Actions #>
 
 return {
+  title,
+  attributes,
 <# if (HasActions()) { #>
 	actions,
 <# } #>

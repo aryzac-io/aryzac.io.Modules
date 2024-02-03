@@ -105,47 +105,61 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
             this.Write("\r\n\r\n");
             
             #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Commands));
+            this.Write(this.ToStringHelper.ToStringWithCulture(TitleComputed));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
             #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Attributes));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n\r\n");
+            
+            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Commands));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n\r\n");
+            
+            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Actions));
             
             #line default
             #line hidden
-            this.Write("\r\n\r\nreturn {\r\n");
+            this.Write("\r\n\r\nreturn {\r\n  title,\r\n  attributes,\r\n");
             
-            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
  if (HasActions()) { 
             
             #line default
             #line hidden
             this.Write("\tactions,\r\n");
             
-            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 38 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
  } 
             
             #line default
             #line hidden
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 39 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
  foreach (var command in HeadingCommands()) {
             
             #line default
             #line hidden
             this.Write("\t");
             
-            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 40 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 41 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
  } 
             
             #line default

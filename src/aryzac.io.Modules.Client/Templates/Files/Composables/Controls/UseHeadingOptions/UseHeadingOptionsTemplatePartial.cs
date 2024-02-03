@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 using Aryzac.IO.Modules.Client.Api;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared;
 using Intent.Engine;
@@ -27,9 +28,13 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
         {
             Types = new TypeScriptTypeResolver();
 
-            commandAndQueryServiceProxyComposables = new CommandAndQueryServiceProxyComposables(model.InternalElement);
-            commands = new Commands(model.InternalElement, GetTypeName);
             dtoTypeImports = new DtoTypeImports(model.InternalElement);
+            commandAndQueryServiceProxyComposables = new CommandAndQueryServiceProxyComposables(model.InternalElement);
+
+            titleComputed = new TitleComputed(model.InternalElement);
+            attributes = new Attributes(model.InternalElement);
+
+            commands = new Commands(model.InternalElement, GetTypeName);
 
             actions = new Actions(model.InternalElement);
         }
@@ -43,8 +48,17 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
             );
         }
 
+        private DtoTypeImports dtoTypeImports;
+        public string DtoTypeImports => dtoTypeImports.TransformText();
+
         private CommandAndQueryServiceProxyComposables commandAndQueryServiceProxyComposables;
         public string CommandAndQueryServiceProxyComposables => commandAndQueryServiceProxyComposables.TransformText();
+
+        private TitleComputed titleComputed;
+        public string TitleComputed => titleComputed.TransformText();
+
+        private Attributes attributes;
+        public string Attributes => attributes.TransformText();
 
         private Commands commands;
         public string Commands => commands.TransformText();
@@ -56,9 +70,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
                 .Select(x => new ComponentCommandModel(x))
                 .ToList();
         }
-
-        private DtoTypeImports dtoTypeImports;
-        public string DtoTypeImports => dtoTypeImports.TransformText();
 
         private Actions actions;
         public string Actions => actions.TransformText();

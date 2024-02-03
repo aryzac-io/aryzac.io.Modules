@@ -17,7 +17,7 @@ export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.Sp
 
 <#= Queries #>
 
-<#= SelectOptionsComputed #>
+<#= OptionsComputed #>
 
 return {
 <# if (HasQueries()) { #>

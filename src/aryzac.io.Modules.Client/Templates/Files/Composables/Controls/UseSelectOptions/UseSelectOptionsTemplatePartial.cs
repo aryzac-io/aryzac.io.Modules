@@ -32,7 +32,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
             queries = new Queries(model.InternalElement);
             dtoTypeImports = new DtoTypeImports(model.InternalElement);
 
-            selectOptionsComputed = new SelectOptionsComputed(model.InternalElement);
+            optionsComputed = new OptionsComputed(model.InternalElement);
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
@@ -60,8 +60,8 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
         private DtoTypeImports dtoTypeImports;
         public string DtoTypeImports => dtoTypeImports.TransformText();
 
-        private SelectOptionsComputed selectOptionsComputed;
-        public string SelectOptionsComputed => selectOptionsComputed.TransformText();
+        private OptionsComputed optionsComputed;
+        public string OptionsComputed => optionsComputed.TransformText();
 
         public string GetComponentName()
         {

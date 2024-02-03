@@ -83,10 +83,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Queries.tt</DependentUpon>
     </Compile>
-    <Compile Update="Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.cs">
+    <Compile Update="Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>SelectOptionsComputed.tt</DependentUpon>
+      <DependentUpon>Attributes.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TitleComputed.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OptionsComputed.tt</DependentUpon>
     </Compile>
     <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.cs">
       <DesignTime>True</DesignTime>
@@ -194,9 +204,17 @@
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Queries.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Composables\Controls\UseSelectOptions\SelectOptionsComputed.tt">
+    <None Update="Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>SelectOptionsComputed.cs</LastGenOutput>
+      <LastGenOutput>Attributes.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TitleComputed.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>OptionsComputed.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\T.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

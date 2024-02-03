@@ -19,9 +19,9 @@ using static Aryzac.IO.Modules.Client.Api.LocaleModelStereotypeExtensions;
 
 namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelectOptions
 {
-    partial class SelectOptionsComputed
+    partial class OptionsComputed
     {
-        public SelectOptionsComputed(IElement element)
+        public OptionsComputed(IElement element)
         {
             Element = element;
 

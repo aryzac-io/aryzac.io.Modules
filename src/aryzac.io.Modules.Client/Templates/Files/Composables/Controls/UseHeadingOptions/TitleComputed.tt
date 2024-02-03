@@ -1,0 +1,31 @@
+<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Modules.Common.TypeScript.Templates" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+<#@ import namespace="Intent.Templates" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+
+<# var heading = Element.AsHeadingModel(); #>
+<#
+      var mappedColumn = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
+#>
+const title = computed(() => {
+<#
+      var mappedExpression = mappedColumn.MappingExpression;
+      foreach (var source in mappedColumn.Sources)
+      {
+        mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+#>
+  const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = model.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
+<#
+      }
+#>
+  const mappedExpression = `<#= mappedExpression #>`;
+  return mappedExpression;
+});

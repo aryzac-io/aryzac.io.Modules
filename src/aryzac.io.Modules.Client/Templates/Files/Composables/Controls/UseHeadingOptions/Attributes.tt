@@ -1,0 +1,49 @@
+<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Modules.Common.TypeScript.Templates" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+<#@ import namespace="Intent.Templates" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+
+<# var heading = Element.AsHeadingModel(); #>
+const attributes = [
+<# 
+      foreach (var attribute in heading.Attributes)
+      {
+        var mappedAttributeColumn = attribute.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => 
+          m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && 
+          m.TargetElement.SpecializationType == "Heading Attribute" &&
+          m.TargetElement.Id == attribute.Id);
+
+        if (mappedAttributeColumn is not null)
+        {
+          var mappedAttributeExpression = mappedAttributeColumn.MappingExpression;
+       
+          foreach (var source in mappedAttributeColumn.Sources)
+          {
+            mappedAttributeExpression = mappedAttributeExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{model.{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+          }
+#>
+  {
+	icon: t("<#= heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.icon"),
+	label: `<#= mappedAttributeExpression #>`,
+  },
+<#
+        }
+        else
+        {
+#>
+  {
+	icon: t("<#= heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.icon"),
+	label: t("<#= heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.label"),
+  },
+<#
+       }
+      }
+#>];

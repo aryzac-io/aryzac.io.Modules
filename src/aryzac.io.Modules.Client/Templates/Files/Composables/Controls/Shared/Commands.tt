@@ -38,7 +38,7 @@ const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = async (
 	  }
 #>
 
-	const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
+	const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>Response = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
 
 	if (endpoint != null)
 	{
