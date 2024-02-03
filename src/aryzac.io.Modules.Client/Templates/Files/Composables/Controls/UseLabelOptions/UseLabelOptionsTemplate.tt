@@ -24,17 +24,19 @@ const { t } = useI18n();
 #>
 const label = computed(() => {
 <#
-  var mappedExpression = mappedColumn.MappingExpression;
-  foreach (var source in mappedColumn.Sources)
-  {
-    mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+  if (mappedColumn is not null) { 
+    var mappedExpression = mappedColumn.MappingExpression;
+    foreach (var source in mappedColumn.Sources)
+    {
+      mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
 #>
   const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = model.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
-<#
-  }
-#>
+<#  } #>
   const mappedExpression = `<#= mappedExpression #>`;
   return mappedExpression;
+<# } else { #>
+  return "";
+<# } #>
 });
 
 return {

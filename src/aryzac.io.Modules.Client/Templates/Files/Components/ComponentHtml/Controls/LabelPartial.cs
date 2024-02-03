@@ -19,15 +19,20 @@ using static Aryzac.IO.Modules.Client.Api.LocaleModelStereotypeExtensions;
 
 namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Controls
 {
-    partial class Section
+    partial class Label
     {
-        public Section(IElement element)
+        public Label(IElement element)
         {
             Element = element;
         }
 
         public IElement Element { get; set; }
 
-        public SectionModel Model => Element.AsSectionModel();
+        public LabelModel Model => Element.AsLabelModel();
+
+        public string GetHeadingOptionsComposableName()
+        {
+            return $"{Model.Name.ToPascalCase().ToCamelCase()}Options";
+        }
     }
 }

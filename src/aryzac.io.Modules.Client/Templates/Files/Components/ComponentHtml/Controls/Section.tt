@@ -27,9 +27,7 @@
     <#= GenerateHelpers.Generate(control.AsCheckboxModel()) #>
 <#  }
     if (control.IsLabelModel()) { #>
-     <ui-input-label 
-       v-model="<#= control.Name.ToPascalCase().ToCamelCase() #>Label" 
-       :label="t('<#= Helpers.GetI18nPath(control) #>.label')" />
+    <#= GenerateHelpers.Generate(control.AsLabelModel()) #>
 <#  }
     if (control.IsSelectModel()) {#>
     <#= GenerateHelpers.Generate(control.AsSelectModel()) #>

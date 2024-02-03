@@ -15,6 +15,8 @@ af:
       description: ''
     newSelect:
       label: NewSelect
+    newLabel:
+      label: NewLabel
 en:
   heading:
     title: this is a heading
@@ -32,3 +34,5 @@ en:
       description: ''
     newSelect:
       label: NewSelect
+    newLabel:
+      label: NewLabel

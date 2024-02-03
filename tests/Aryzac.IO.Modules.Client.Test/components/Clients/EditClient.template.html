@@ -1,28 +1,13 @@
 <ui-heading-page :title="headingOptions.title.value"></ui-heading-page>
 
-<ui-editor-section
-  :title="t('newSection.title')"
-  :description="t('newSection.description')"
->
-  <ui-input-textbox
-    v-model="model.newTextbox"
-    :label="t('newSection.newTextbox.label')"
-  ></ui-input-textbox>
+<ui-editor-section :title="t('newSection.title')" :description="t('newSection.description')">
+  <ui-input-textbox v-model="model.newTextbox" :label="t('newSection.newTextbox.label')"></ui-input-textbox>
 
-  <ui-input-text-area
-    v-model="model.newTextArea"
-    :label="t('newSection.newTextArea.label')"
-  ></ui-input-text-area>
+  <ui-input-text-area v-model="model.newTextArea" :label="t('newSection.newTextArea.label')"></ui-input-text-area>
 
-  <ui-input-checkbox
-    v-model="model.newCheckbox"
-    :label="t('newSection.newCheckbox.label')"
-    :description="t('newSection.newCheckbox.description')"
-  ></ui-input-checkbox>
+  <ui-input-checkbox v-model="model.newCheckbox" :label="t('newSection.newCheckbox.label')" :description="t('newSection.newCheckbox.description')"></ui-input-checkbox>
 
-  <ui-input-select
-    v-model="model.newSelect"
-    :label="t('newSection.newSelect.label')"
-    :options="newSelectOptions.options.value"
-  ></ui-input-select>
+  <ui-input-select v-model="model.newSelect" :label="t('newSection.newSelect.label')" :options="newSelectOptions.options.value"></ui-input-select>
+
+  <ui-input-label v-model="newLabelOptions.label.value" :label="t('newSection.newLabel.label')"></ui-input-label>
 </ui-editor-section>

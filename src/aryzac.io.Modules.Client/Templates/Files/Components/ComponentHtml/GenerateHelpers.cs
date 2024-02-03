@@ -55,5 +55,11 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             var template = new InputSelect(model.InternalElement);
             return template.TransformText();
         }
+
+        public static string Generate(LabelModel model)
+        {
+            var template = new Label(model.InternalElement);
+            return template.TransformText();
+        }
     }
 }

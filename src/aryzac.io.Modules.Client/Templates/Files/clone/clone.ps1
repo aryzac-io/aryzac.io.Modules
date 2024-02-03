@@ -114,7 +114,7 @@ Write-Host "`tprivate $name $newFileNameCamelCase;"
 Write-Host "`tpublic string $name => $newFileNameCamelCase.TransformText();`n"
 
 Write-Host "Method"
-Write-Host "`tpublic string Generate(${name}Model model)"
+Write-Host "`tpublic static string Generate(${name}Model model)"
 Write-Host "`t{"
 Write-Host "`t  var template = new $name(model.InternalElement);"
 Write-Host "`t  return template.TransformText();"

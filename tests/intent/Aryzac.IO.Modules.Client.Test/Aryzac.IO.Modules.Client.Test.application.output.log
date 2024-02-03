@@ -324,6 +324,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#dad6c986-75f2-4fdf-8af7-8fde5b7cc156</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientNewLabelOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientNewLabelOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions#87255b25-5cd1-4d1b-b714-3e441bcbe84a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientNewSelectOptions.ts</ApplicationRelativeFilePath>
