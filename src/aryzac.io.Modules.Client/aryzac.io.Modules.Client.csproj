@@ -40,6 +40,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Heading.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputCheckBox.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputCheckbox.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputTextArea.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputTextArea.tt</DependentUpon>
+    </Compile>
     <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputTextbox.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -215,6 +225,14 @@
     <None Update="Templates\Files\Components\ComponentHtml\Controls\Heading.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Heading.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputCheckbox.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputCheckBox.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputTextArea.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputTextArea.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

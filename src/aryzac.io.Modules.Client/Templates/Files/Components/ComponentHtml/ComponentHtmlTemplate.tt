@@ -13,7 +13,7 @@
 <# if (Model.View != null) {
   foreach (var component in Model.View.InternalElement.ChildElements) {
     if (component.IsHeadingModel()) { #>
-    <#= GenerateHeading(component) #>
+    <#= Generate(component.AsHeadingModel()) #>
 <# } else if (component.IsSectionModel()) {
       var section = component.AsSectionModel(); #>
   <ui-editor-section
@@ -22,18 +22,13 @@
   >
 <# foreach (var control in section.InternalElement.ChildElements) {
     if (control.IsTextboxModel()) { #>
-    <#= GenerateInputTextbox(control) #>
+    <#= Generate(control.AsTextboxModel()) #>
 <#  }
     if (control.IsTextAreaModel()) { #>
-     <ui-input-text-area 
-       v-model="model.<#= GetMappedTextAreaName(control.AsTextAreaModel()) #>" 
-       :label="t('<#= Helpers.GetI18nPath(control) #>.label')" />
+    <#= Generate(control.AsTextAreaModel()) #>
 <#  }
     if (control.IsCheckboxModel()) { #>
-     <ui-input-checkbox 
-       v-model="model.<#= GetMappedCheckboxName(control.AsCheckboxModel()) #>" 
-       :label="t('<#= Helpers.GetI18nPath(control) #>.label')" 
-       :description="t('<#= Helpers.GetI18nPath(control) #>.description')" />
+    <#= Generate(control.AsCheckboxModel()) #>
 <#  }
     if (control.IsLabelModel()) { #>
      <ui-input-label 
@@ -72,7 +67,7 @@
       />
 <#  }
     if (control.IsTableModel()) { #>
-  <#= GenerateTable(control) #>
+  <#= Generate(control.AsTableModel()) #>
 <#  }
     if (control.IsActionsModel()) {
       var actions = control.AsActionsModel(); #>
@@ -96,7 +91,7 @@
 #>
   </ui-editor-section>
 <# } else if (component.IsTableModel()) { #>
-  <#= GenerateTable(component) #>
+  <#= Generate(component.AsTableModel()) #>
 <# 
     }
   }

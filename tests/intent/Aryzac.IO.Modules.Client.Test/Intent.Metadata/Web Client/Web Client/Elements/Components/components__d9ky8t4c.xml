@@ -559,19 +559,6 @@
                   </stereotypes>
                   <metadata />
                   <childElements>
-                    <childElement id="263064c1-47b3-4f6d-9964-e13789be52b8" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
-                      <name>NewTable</name>
-                      <display>NewTable</display>
-                      <isAbstract>false</isAbstract>
-                      <genericTypes />
-                      <isMapped>false</isMapped>
-                      <parentFolderId>0ab45d34-f0d2-4245-8624-88489aea9301</parentFolderId>
-                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
-                      <packageName>Web Client</packageName>
-                      <stereotypes />
-                      <metadata />
-                      <childElements />
-                    </childElement>
                     <childElement id="e2684d27-d0c6-46c0-af01-cb56fc1c097e" type="Textbox" typeId="db535835-3d01-421d-9f29-206732782bfe">
                       <name>NewTextbox</name>
                       <display>NewTextbox</display>
@@ -604,20 +591,73 @@
                       <metadata />
                       <childElements />
                     </childElement>
+                    <childElement id="f72a92b2-6f9c-4817-b9d0-cc0e2bb48952" type="Text Area" typeId="9fb5d59b-af35-4484-b7f2-410a30365bbf">
+                      <name>NewTextArea</name>
+                      <display>NewTextArea</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>0ab45d34-f0d2-4245-8624-88489aea9301</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="7c3e71c5-7d9d-47eb-b0fc-8473359257bb" name="Text Area Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="a5dbfd39-e069-464e-8259-4075f50b566e" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
+                            <property name="edd4ec3b-c2e7-401d-ae0b-600c85a42a04" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                        <stereotype stereotypeDefinitionId="7c3e71c5-7d9d-47eb-b0fc-8473359257bb" name="Text Area Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="a5dbfd39-e069-464e-8259-4075f50b566e" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
+                            <property name="edd4ec3b-c2e7-401d-ae0b-600c85a42a04" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                    <childElement id="e68c13bf-f956-4916-84ea-c9d192647b61" type="Checkbox" typeId="417dc03e-580b-450d-9d70-8a2a457d2a48">
+                      <name>NewCheckbox</name>
+                      <display>NewCheckbox</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>0ab45d34-f0d2-4245-8624-88489aea9301</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="1fafd144-4893-4a55-835a-487ad4b41bfe" name="Checkbox Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="4ad285bd-6f3b-4440-8d40-2ecb273d0f78" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
+                            <property name="269a7ba3-237c-4a18-a5fd-e48815793757" display="Label" isActive="true" />
+                            <property name="13e2ff06-cced-4742-841a-395bd846744b" display="Description" isActive="true" />
+                          </properties>
+                        </stereotype>
+                        <stereotype stereotypeDefinitionId="1fafd144-4893-4a55-835a-487ad4b41bfe" name="Checkbox Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="4ad285bd-6f3b-4440-8d40-2ecb273d0f78" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
+                            <property name="269a7ba3-237c-4a18-a5fd-e48815793757" display="Label" isActive="true" />
+                            <property name="13e2ff06-cced-4742-841a-395bd846744b" display="Description" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements />
+                    </childElement>
                   </childElements>
-                </childElement>
-                <childElement id="6e8e0608-6726-482b-a6ba-48c36c211450" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
-                  <name>table</name>
-                  <display>table</display>
-                  <isAbstract>false</isAbstract>
-                  <genericTypes />
-                  <isMapped>false</isMapped>
-                  <parentFolderId>ce81a849-3152-4834-8be3-24cef46fd618</parentFolderId>
-                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
-                  <packageName>Web Client</packageName>
-                  <stereotypes />
-                  <metadata />
-                  <childElements />
                 </childElement>
               </childElements>
             </childElement>

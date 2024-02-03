@@ -6,12 +6,13 @@ af:
   newSection:
     title: NewSection
     description: ''
-    newTable:
-      placeholder: ''
     newTextbox:
       label: NewTextbox
-  table:
-    placeholder: ''
+    newTextArea:
+      label: NewTextArea
+    newCheckbox:
+      label: NewCheckbox
+      description: ''
 en:
   heading:
     title: this is a heading
@@ -20,9 +21,10 @@ en:
   newSection:
     title: NewSection
     description: ''
-    newTable:
-      placeholder: ''
     newTextbox:
       label: NewTextbox
-  table:
-    placeholder: ''
+    newTextArea:
+      label: NewTextArea
+    newCheckbox:
+      label: NewCheckbox
+      description: ''

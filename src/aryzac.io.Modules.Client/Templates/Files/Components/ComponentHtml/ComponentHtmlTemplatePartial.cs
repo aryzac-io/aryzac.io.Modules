@@ -33,54 +33,33 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             );
         }
 
-        public string GenerateHeading(IElement element)
+        public string Generate(HeadingModel model)
         {
-            var template = new Heading(element);
+            var template = new Heading(model.InternalElement);
             return template.TransformText();
         }
 
-        public string GenerateTable(IElement element)
+        public string Generate(TableModel model)
         {
-            var template = new Table(element);
+            var template = new Table(model.InternalElement);
             return template.TransformText();
         }
 
-        public string GenerateInputTextbox(IElement element)
+        public string Generate(TextboxModel model)
         {
-            var template = new InputTextbox(element);
+            var template = new InputTextbox(model.InternalElement);
             return template.TransformText();
         }
 
-        public string GetMappedTextAreaName(TextAreaModel field)
+        public string Generate(TextAreaModel model)
         {
-            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
-            {
-                foreach (var mappedEnd in mapping.MappedEnds)
-                {
-                    if (mappedEnd.TargetElement.Id == field.Id)
-                    {
-                        return mappedEnd.SourceElement.Name.ToCamelCase();
-                    }
-                }
-            }
-
-            return field.Name.ToCamelCase();
+            var template = new InputTextArea(model.InternalElement);
+            return template.TransformText();
         }
-
-        public string GetMappedCheckboxName(CheckboxModel field)
+        public string Generate(CheckboxModel model)
         {
-            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
-            {
-                foreach (var mappedEnd in mapping.MappedEnds)
-                {
-                    if (mappedEnd.TargetElement.Id == field.Id)
-                    {
-                        return mappedEnd.SourceElement.Name.ToCamelCase();
-                    }
-                }
-            }
-
-            return field.Name.ToCamelCase();
+            var template = new InputCheckbox(model.InternalElement);
+            return template.TransformText();
         }
 
         public string GetMappedRadioButtonName(RadioButtonModel field)

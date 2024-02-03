@@ -4,22 +4,19 @@
   :title="t('newSection.title')"
   :description="t('newSection.description')"
 >
-  <ui-view-table
-    :items="newTableOptions.data"
-    :headers="newTableOptions.headers"
-    :actions="newTableOptions.actions"
-    key="id"
-  ></ui-view-table>
-
   <ui-input-textbox
     v-model="model.newTextbox"
     :label="t('newSection.newTextbox.label')"
   ></ui-input-textbox>
-</ui-editor-section>
 
-<ui-view-table
-  :items="tableOptions.data"
-  :headers="tableOptions.headers"
-  :actions="tableOptions.actions"
-  key="id"
-></ui-view-table>
+  <ui-input-text-area
+    v-model="model.newTextArea"
+    :label="t('newSection.newTextArea.label')"
+  ></ui-input-text-area>
+
+  <ui-input-checkbox
+    v-model="model.newCheckbox"
+    :label="t('newSection.newCheckbox.label')"
+    :description="t('newSection.newCheckbox.description')"
+  ></ui-input-checkbox>
+</ui-editor-section>
