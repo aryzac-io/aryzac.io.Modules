@@ -3,6 +3,7 @@
   <name>pages</name>
   <display>pages</display>
   <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>5ca9d1dd-a3b9-4ff5-acf6-3643fa7fa862</parentFolderId>
@@ -19,6 +20,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>f13add90-cd1f-4152-a72d-6946d391b124</parentFolderId>
+      <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
+      <packageName>root</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

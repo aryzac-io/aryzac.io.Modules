@@ -3,6 +3,7 @@
   <name>layout</name>
   <display>layout</display>
   <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</parentFolderId>
@@ -19,6 +20,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>bf7e9723-f31c-4041-9650-02b82fd265d3</parentFolderId>
+      <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
+      <packageName>root</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

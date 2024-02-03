@@ -63,9 +63,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
         private OptionsComputed optionsComputed;
         public string OptionsComputed => optionsComputed.TransformText();
 
-        public string GetComponentName()
+        public ComponentModel GetComponent()
         {
-            return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase();
+            return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).AsComponentModel();
         }
     }
 }

@@ -102,5 +102,12 @@ namespace Aryzac.IO.Modules.Client.Api
                 .ToList();
         }
 
+        public static IList<LabelModel> GetLabelModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(LabelModel.SpecializationTypeId)
+                .Select(x => new LabelModel(x))
+                .ToList();
+        }
+
     }
 }

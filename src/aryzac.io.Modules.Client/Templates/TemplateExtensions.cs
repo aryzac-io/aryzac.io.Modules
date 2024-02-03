@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Aryzac.IO.Modules.Client.Api;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadingOptions;
+using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabelOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelectOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.UseServiceProxy;
@@ -31,6 +32,16 @@ namespace Aryzac.IO.Modules.Client.Templates
         public static string GetUseHeadingOptionsName(this IIntentTemplate template, HeadingModel model)
         {
             return template.GetTypeName(UseHeadingOptionsTemplate.TemplateId, model);
+        }
+
+        public static string GetUseLabelOptionsName<T>(this IIntentTemplate<T> template) where T : LabelModel
+        {
+            return template.GetTypeName(UseLabelOptionsTemplate.TemplateId, template.Model);
+        }
+
+        public static string GetUseLabelOptionsName(this IIntentTemplate template, LabelModel model)
+        {
+            return template.GetTypeName(UseLabelOptionsTemplate.TemplateId, model);
         }
         public static string GetUseSelectOptionsName<T>(this IIntentTemplate<T> template) where T : SelectModel
         {

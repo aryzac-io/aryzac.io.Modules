@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a5ba173d-10dd-445f-9a85-f03039309cfb" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+  <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions</name>
+  <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions</display>
+  <externalReference>Aryzac.IO.Modules.Client</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>32ef0618-add8-4580-b57a-36922790debe</parentFolderId>
+  <stereotypes />
+  <metadata>
+    <entry key="status" value="assigned" />
+  </metadata>
+  <childElements />
+</class>

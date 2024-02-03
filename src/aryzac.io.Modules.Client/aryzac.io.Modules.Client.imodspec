@@ -24,6 +24,10 @@
       <role>Default</role>
       <location></location>
     </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions" externalReference="66289ea7-dfde-42fd-9f18-b380e756dbc3">
+      <role>Default</role>
+      <location></location>
+    </template>
     <template id="Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions" externalReference="9791958d-ea31-4760-94f4-453e80dfbfbe">
       <role>Default</role>
       <location></location>

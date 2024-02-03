@@ -178,6 +178,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>UseHeadingOptionsTemplate.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseLabelOptionsTemplate.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="Templates\Files\Components\Component\Script\Properties.tt">
@@ -303,6 +308,10 @@
     <None Update="Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>UseHeadingOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseLabelOptionsTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
