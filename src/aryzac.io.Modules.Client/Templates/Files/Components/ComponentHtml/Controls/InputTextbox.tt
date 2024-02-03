@@ -13,4 +13,5 @@
 
   <ui-input-textbox 
     v-model="model.<#= GetMappedTextboxName(Model) #>" 
-    :label="t('<#= Helpers.GetI18nPath(Element) #>.label')" />
+    :label="t('<#= Helpers.GetI18nPath(Element) #>.label')" 
+  />

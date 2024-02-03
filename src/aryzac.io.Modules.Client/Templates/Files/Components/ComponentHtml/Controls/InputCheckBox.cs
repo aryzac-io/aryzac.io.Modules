@@ -56,7 +56,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
             
             #line default
             #line hidden
-            this.Write(".description\')\" />\r\n");
+            this.Write(".description\')\" \r\n  />\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

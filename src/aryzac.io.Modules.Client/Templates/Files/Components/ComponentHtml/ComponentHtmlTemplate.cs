@@ -142,75 +142,20 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             
             #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
   }
-    if (control.IsRadioButtonModel()) { 
+    if (control.IsSelectModel()) {
             
             #line default
             #line hidden
-            this.Write("     <ui-input-radio-button \r\n       v-model=\"model.");
+            this.Write("    ");
+            
+            #line 39 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Generate(control.AsSelectModel())));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
             
             #line 40 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedRadioButtonName(control.AsRadioButtonModel())));
-            
-            #line default
-            #line hidden
-            this.Write("\" \r\n       :label=\"t(\'");
-            
-            #line 41 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(control)));
-            
-            #line default
-            #line hidden
-            this.Write(".label\')\" />\r\n");
-            
-            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-  }
-    if (control.IsSelectModel()) {
-      var select = control.AsSelectModel();
-      var valueField = "";
-      var labelField = "";
-              
-      foreach (var mapping in select.InternalElement.Mappings)
-      {
-          foreach (var mappingEnd in mapping.MappedEnds)
-          {
-              if (mappingEnd.TargetElement.SpecializationType == "Value")
-              {
-                  valueField = mappingEnd.SourceElement.Name;
-              }
-              if (mappingEnd.TargetElement.SpecializationType == "Select Label")
-              {
-                  labelField = mappingEnd.SourceElement.Name;
-              }
-          }
-      }
-
-            
-            #line default
-            #line hidden
-            this.Write("     <ui-input-select \r\n       v-model=\"model.");
-            
-            #line 64 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedSelectName(control.AsSelectModel())));
-            
-            #line default
-            #line hidden
-            this.Write("\" \r\n       :label=\"t(\'");
-            
-            #line 65 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(control)));
-            
-            #line default
-            #line hidden
-            this.Write(".label\')\"\r\n       :options=\"");
-            
-            #line 66 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(select.InternalElement.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write("Options\"\r\n      />\r\n");
-            
-            #line 68 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
   }
     if (control.IsTableModel()) { 
             
@@ -218,14 +163,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             #line hidden
             this.Write("  ");
             
-            #line 70 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Generate(control.AsTableModel())));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 71 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 43 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
   }
     if (control.IsActionsModel()) {
       var actions = control.AsActionsModel(); 
@@ -234,7 +179,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             #line hidden
             this.Write("\r\n    <template #actions>\r\n");
             
-            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 48 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
  foreach (var action in actions.InternalElement.ChildElements) {
     var command = action.AsActionModel().Command; 
             
@@ -242,7 +187,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             #line hidden
             this.Write("      <button\r\n        type=\"button\"\r\n        @click=\"");
             
-            #line 80 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 52 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
@@ -252,14 +197,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
                     "-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600\"\r\n      >\r\n  " +
                     "      {{ t(\'");
             
-            #line 83 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 55 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(action)));
             
             #line default
             #line hidden
             this.Write(".label\') }}\r\n      </button>\r\n    </template>\r\n    \r\n");
             
-            #line 87 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 59 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
 
           }
         }
@@ -270,21 +215,21 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             #line hidden
             this.Write("  </ui-editor-section>\r\n");
             
-            #line 93 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 65 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
  } else if (component.IsTableModel()) { 
             
             #line default
             #line hidden
             this.Write("  ");
             
-            #line 94 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 66 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Generate(component.AsTableModel())));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 95 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            #line 67 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
  
     }
   }

@@ -45,6 +45,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>InputCheckbox.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputSelect.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputSelect.tt</DependentUpon>
+    </Compile>
     <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputTextArea.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -229,6 +234,10 @@
     <None Update="Templates\Files\Components\ComponentHtml\Controls\InputCheckbox.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>InputCheckBox.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputSelect.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\Components\ComponentHtml\Controls\InputTextArea.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

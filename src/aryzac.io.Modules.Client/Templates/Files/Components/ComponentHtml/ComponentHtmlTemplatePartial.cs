@@ -62,23 +62,13 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             return template.TransformText();
         }
 
-        public string GetMappedRadioButtonName(RadioButtonModel field)
+        public string Generate(SelectModel model)
         {
-            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
-            {
-                foreach (var mappedEnd in mapping.MappedEnds)
-                {
-                    if (mappedEnd.TargetElement.Id == field.Id)
-                    {
-                        return mappedEnd.SourceElement.Name.ToCamelCase();
-                    }
-                }
-            }
-
-            return field.Name.ToCamelCase();
+            var template = new InputSelect(model.InternalElement);
+            return template.TransformText();
         }
 
-        public string GetMappedSelectName(SelectModel field)
+        public string GetMappedRadioButtonName(RadioButtonModel field)
         {
             foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
             {

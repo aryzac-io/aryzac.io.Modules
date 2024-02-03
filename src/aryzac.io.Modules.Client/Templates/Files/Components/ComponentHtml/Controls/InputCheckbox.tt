@@ -14,4 +14,5 @@
   <ui-input-checkbox 
     v-model="model.<#= GetMappedCheckboxName(Model) #>" 
     :label="t('<#= Helpers.GetI18nPath(Element) #>.label')" 
-    :description="t('<#= Helpers.GetI18nPath(Element) #>.description')" />
+    :description="t('<#= Helpers.GetI18nPath(Element) #>.description')" 
+  />

@@ -25,9 +25,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextArea.tt"
+    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class InputTextArea : InputTextAreaBase
+    public partial class InputSelect : InputSelectBase
     {
 #line hidden
         /// <summary>
@@ -35,21 +35,53 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\n  <ui-input-text-area \r\n    v-model=\"model.");
+            this.Write("\r\n");
             
-            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextArea.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedTextAreaName(Model)));
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
+
+  var valueField = "";
+  var labelField = "";
+                
+  foreach (var mapping in Model.InternalElement.Mappings)
+  {
+      foreach (var mappingEnd in mapping.MappedEnds)
+      {
+          if (mappingEnd.TargetElement.SpecializationType == "Value")
+          {
+              valueField = mappingEnd.SourceElement.Name;
+          }
+          if (mappingEnd.TargetElement.SpecializationType == "Select Label")
+          {
+              labelField = mappingEnd.SourceElement.Name;
+          }
+      }
+  }
+
+            
+            #line default
+            #line hidden
+            this.Write("  <ui-input-select \r\n    v-model=\"model.");
+            
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedSelectName(Model)));
             
             #line default
             #line hidden
             this.Write("\" \r\n    :label=\"t(\'");
             
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextArea.tt"
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(Element)));
             
             #line default
             #line hidden
-            this.Write(".label\')\" \r\n  />\r\n");
+            this.Write(".label\')\"\r\n    :options=\"");
+            
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
+            
+            #line default
+            #line hidden
+            this.Write(".options.value\"\r\n  />\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -61,7 +93,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class InputTextAreaBase
+    public class InputSelectBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

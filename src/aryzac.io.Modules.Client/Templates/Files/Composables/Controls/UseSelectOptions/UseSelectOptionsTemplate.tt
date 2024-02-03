@@ -32,7 +32,7 @@ return {
 	refresh,
 	status,
 <# } #>
-	<#= Model.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options
+	options
 };
 
 }

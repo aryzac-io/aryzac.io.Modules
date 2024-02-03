@@ -19,4 +19,10 @@
     :label="t('newSection.newCheckbox.label')"
     :description="t('newSection.newCheckbox.description')"
   ></ui-input-checkbox>
+
+  <ui-input-select
+    v-model="model.newSelect"
+    :label="t('newSection.newSelect.label')"
+    :options="newSelectOptions.options.value"
+  ></ui-input-select>
 </ui-editor-section>

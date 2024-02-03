@@ -324,6 +324,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions#87255b25-5cd1-4d1b-b714-3e441bcbe84a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientNewSelectOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientNewSelectOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useClientsServiceProxy.ts</ApplicationRelativeFilePath>

@@ -35,36 +35,8 @@
        v-model="<#= control.Name.ToPascalCase().ToCamelCase() #>Label" 
        :label="t('<#= Helpers.GetI18nPath(control) #>.label')" />
 <#  }
-    if (control.IsRadioButtonModel()) { #>
-     <ui-input-radio-button 
-       v-model="model.<#= GetMappedRadioButtonName(control.AsRadioButtonModel()) #>" 
-       :label="t('<#= Helpers.GetI18nPath(control) #>.label')" />
-<#  }
-    if (control.IsSelectModel()) {
-      var select = control.AsSelectModel();
-      var valueField = "";
-      var labelField = "";
-              
-      foreach (var mapping in select.InternalElement.Mappings)
-      {
-          foreach (var mappingEnd in mapping.MappedEnds)
-          {
-              if (mappingEnd.TargetElement.SpecializationType == "Value")
-              {
-                  valueField = mappingEnd.SourceElement.Name;
-              }
-              if (mappingEnd.TargetElement.SpecializationType == "Select Label")
-              {
-                  labelField = mappingEnd.SourceElement.Name;
-              }
-          }
-      }
-#>
-     <ui-input-select 
-       v-model="model.<#= GetMappedSelectName(control.AsSelectModel()) #>" 
-       :label="t('<#= Helpers.GetI18nPath(control) #>.label')"
-       :options="<#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options"
-      />
+    if (control.IsSelectModel()) {#>
+    <#= Generate(control.AsSelectModel()) #>
 <#  }
     if (control.IsTableModel()) { #>
   <#= Generate(control.AsTableModel()) #>

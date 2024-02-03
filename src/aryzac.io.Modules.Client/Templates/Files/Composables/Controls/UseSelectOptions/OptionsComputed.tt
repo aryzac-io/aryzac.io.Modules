@@ -12,8 +12,9 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <# var select = Element.AsSelectModel(); #>
-const <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options = computed(() => {
+const options = computed(() => {
   const options: { value: string; label: string }[] = [];
+<# if (select.Query is not null) { #>
   if (data.value) {
     data.value.forEach((item: <#= select.Query.Mapping.Element.TypeReference.Element.Name #>) => {
 <#
@@ -35,5 +36,6 @@ const <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options = c
       });
     });
   }
+<# } #>
   return options;
 });

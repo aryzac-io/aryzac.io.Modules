@@ -13,6 +13,8 @@ af:
     newCheckbox:
       label: NewCheckbox
       description: ''
+    newSelect:
+      label: NewSelect
 en:
   heading:
     title: this is a heading
@@ -28,3 +30,5 @@ en:
     newCheckbox:
       label: NewCheckbox
       description: ''
+    newSelect:
+      label: NewSelect

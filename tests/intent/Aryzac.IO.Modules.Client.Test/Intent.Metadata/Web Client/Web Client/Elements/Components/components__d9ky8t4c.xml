@@ -657,6 +657,38 @@
                       <metadata />
                       <childElements />
                     </childElement>
+                    <childElement id="87255b25-5cd1-4d1b-b714-3e441bcbe84a" type="Select" typeId="29bb76a2-ccc9-4ab2-8665-6fdef3834c94">
+                      <name>NewSelect</name>
+                      <display>NewSelect</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>0ab45d34-f0d2-4245-8624-88489aea9301</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="d159f0b9-8d24-40b6-900f-6af71a512072" name="Select Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="ff8c3e16-bd61-45b4-8fa5-19f1b19500d6" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
+                            <property name="4b76a1f6-ce65-4630-9a4a-e7798f107020" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                        <stereotype stereotypeDefinitionId="d159f0b9-8d24-40b6-900f-6af71a512072" name="Select Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="ff8c3e16-bd61-45b4-8fa5-19f1b19500d6" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
+                            <property name="4b76a1f6-ce65-4630-9a4a-e7798f107020" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements />
+                    </childElement>
                   </childElements>
                 </childElement>
               </childElements>

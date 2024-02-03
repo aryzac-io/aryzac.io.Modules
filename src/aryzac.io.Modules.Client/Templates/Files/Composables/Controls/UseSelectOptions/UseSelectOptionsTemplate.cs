@@ -95,14 +95,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
             
             #line default
             #line hidden
-            this.Write("\t");
-            
-            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Model.InternalElement.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write("Options\r\n};\r\n\r\n}");
+            this.Write("\toptions\r\n};\r\n\r\n}");
             return this.GenerationEnvironment.ToString();
         }
     }
