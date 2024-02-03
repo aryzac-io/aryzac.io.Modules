@@ -6,9 +6,10 @@
   <iconType>UrlImagePath</iconType>
   <metadataRelativePath>Intent.Metadata</metadataRelativePath>
   <modulesCacheRelativePath>.intent/modules</modulesCacheRelativePath>
-  <lastUsedApplicationTemplate id="Intent.ApplicationTemplate.AspNetCore6.0.CleanArchitecture" version="4.3.30" />
+  <lastUsedApplicationTemplate id="Nuxt Application" version="1.0.0" />
   <applications>
     <application id="62c371b4-af5f-42bf-9b88-6751357b25cf" name="Aryzac.IO.Modules.Client.Test" relativePath="Aryzac.IO.Modules.Client.Test/Aryzac.IO.Modules.Client.Test.application.config" />
     <application id="40b74aa4-b3ed-40e8-82e4-06395dfbc2e5" name="Aryzac.IO.Modules.Client.Test.Api" relativePath="Aryzac.IO.Modules.Client.Test.Api/Aryzac.IO.Modules.Client.Test.Api.application.config" />
+    <application id="56d9dae7-e137-4d42-8f9c-54c161c1b88d" name="Aryzac.IO.Client.Test" relativePath="Aryzac.IO.Client.Test/Aryzac.IO.Client.Test.application.config" />
   </applications>
 </solution>

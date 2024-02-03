@@ -1,5 +1,5 @@
-export interface CreateInvoiceCommand {
-    clientId: string;
-    number: string;
-    dueDate: any;
+export class CreateInvoiceCommand {
+  clientId: string;
+  number: string;
+  dueDate: any;
 }

@@ -19,7 +19,5 @@ setupSectionItem(
 
 <template>
   <div>
-    <clients-list-clients 
-		/>
   </div>
 </template>

@@ -3,7 +3,6 @@
   <name>layout</name>
   <display>layout</display>
   <isAbstract>false</isAbstract>
-  <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</parentFolderId>
@@ -12,16 +11,14 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="25208d27-b4e2-49ca-8ac7-b0f5b7dbadab" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+    <childElement id="4551ee36-484c-4939-afa8-6bb6a711ca21" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
       <name>Aryzac.IO.Modules.Client.Files.Components.Layout.Components</name>
       <display>Aryzac.IO.Modules.Client.Files.Components.Layout.Components</display>
-      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <externalReference>25208d27-b4e2-49ca-8ac7-b0f5b7dbadab</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>bf7e9723-f31c-4041-9650-02b82fd265d3</parentFolderId>
-      <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
-      <packageName>root</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

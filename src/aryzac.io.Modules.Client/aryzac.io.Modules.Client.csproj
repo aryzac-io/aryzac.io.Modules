@@ -58,6 +58,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Template.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\Actions.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Actions.tt</DependentUpon>
+    </Compile>
     <Compile Update="Templates\Files\Composables\Controls\Shared\CommandAndQueryServiceProxyComposables.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -82,11 +87,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>SelectOptionsComputed.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableActions.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>TableActions.tt</DependentUpon>
     </Compile>
     <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.cs">
       <DesignTime>True</DesignTime>
@@ -163,6 +163,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>UseSelectOptionsTemplate.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseHeadingOptionsTemplate.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="Templates\Files\Components\Component\Script\Properties.tt">
@@ -209,9 +214,9 @@
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>i18n.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableActions.tt">
+    <None Update="Templates\Files\Composables\Controls\Shared\Actions.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>TableActions.cs</LastGenOutput>
+      <LastGenOutput>Actions.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
@@ -276,6 +281,10 @@
     <None Update="Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>UseSelectOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseHeadingOptionsTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

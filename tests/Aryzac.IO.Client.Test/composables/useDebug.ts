@@ -1,0 +1,1 @@
+export const useDebug = () => useState<boolean>('debug', () => true);

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="b0dce684-14e8-492b-a546-8f4b6a08d3cf" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>components</name>
+  <display>components</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>b7a5a752-c00e-4e0b-ab1f-7df186bced20</parentFolderId>
+  <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="41db7ab0-396b-4948-a64d-1a58a70adfde" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Structs.Components.Models</name>
+      <display>Aryzac.IO.Modules.Client.Files.Structs.Components.Models</display>
+      <externalReference>4d3f22de-eca4-4d1f-a533-e9bdd0f91e08</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="1632b5dc-f6fc-4c81-9cab-6cfa69298b92" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Structs.Components.Props</name>
+      <display>Aryzac.IO.Modules.Client.Files.Structs.Components.Props</display>
+      <externalReference>11e1f600-38e4-4624-a5b8-2b982bce65ce</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

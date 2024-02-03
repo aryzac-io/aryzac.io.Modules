@@ -1,4 +1,4 @@
-export interface ChangeDescriptionTitleCommand {
-    id: string;
-    description: string;
+export class ChangeDescriptionTitleCommand {
+  id: string;
+  description: string;
 }

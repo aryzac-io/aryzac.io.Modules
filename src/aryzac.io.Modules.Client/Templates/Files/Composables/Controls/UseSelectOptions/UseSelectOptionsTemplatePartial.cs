@@ -62,5 +62,10 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
 
         private SelectOptionsComputed selectOptionsComputed;
         public string SelectOptionsComputed => selectOptionsComputed.TransformText();
+
+        public string GetComponentName()
+        {
+            return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase();
+        }
     }
 }

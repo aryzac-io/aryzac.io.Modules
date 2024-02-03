@@ -1,6 +1,6 @@
-export interface TitleDto {
-    id: string;
-    code: string;
-    name: string;
-    description: string;
+export class TitleDto {
+  id: string;
+  code: string;
+  name: string;
+  description: string;
 }

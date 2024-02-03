@@ -1,3 +1,3 @@
-export interface DeleteTitleCommand {
-    id: string;
+export class DeleteTitleCommand {
+  id: string;
 }

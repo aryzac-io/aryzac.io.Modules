@@ -14,8 +14,6 @@ using Intent.Modules.Common.TypeScript.Templates;
 using Intent.Modules.Common.TypeScript.TypeResolvers;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
-using static Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions.TableActions;
-using static Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions.TableHeaders;
 
 [assembly: DefaultIntentManaged(Mode.Merge)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial", Version = "1.0")]
@@ -39,7 +37,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
 
             dtoTypeImports = new DtoTypeImports(model.InternalElement);
             tableHeaders = new TableHeaders(model.InternalElement);
-            tableActions = new TableActions(model.InternalElement);
+            actions = new Actions(model.InternalElement);
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
@@ -87,8 +85,8 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             return table.Columns.Any();
         }
 
-        private TableActions tableActions;
-        public string TableActions => tableActions.TransformText();
+        private Actions actions;
+        public string Actions => actions.TransformText();
 
         public bool HasActions()
         {
@@ -96,6 +94,11 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             if (table.Actions is null) return false;
 
             return table.Actions.Actions.Any();
+        }
+
+        public string GetComponentName()
+        {
+            return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase();
         }
     }
 }

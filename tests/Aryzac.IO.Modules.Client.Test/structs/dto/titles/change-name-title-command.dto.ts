@@ -1,4 +1,4 @@
-export interface ChangeNameTitleCommand {
-    id: string;
-    name: string;
+export class ChangeNameTitleCommand {
+  id: string;
+  name: string;
 }

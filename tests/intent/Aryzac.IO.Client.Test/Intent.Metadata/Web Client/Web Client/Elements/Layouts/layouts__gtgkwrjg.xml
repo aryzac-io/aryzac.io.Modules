@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d8c774d6-cd7b-40aa-96e0-35d93d9380b2" type="Layouts" typeId="60f6d7d6-ad05-41d4-830e-e2c3ffe452e4">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</parentFolderId>
+  <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="011a91e0-3fe2-4aa2-afd8-954becea058b" type="Layout" typeId="256217fb-92b3-4b8f-9f50-7d33db1d4a7e">
+      <name>default</name>
+      <display>default</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>d8c774d6-cd7b-40aa-96e0-35d93d9380b2</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -9,17 +9,6 @@
 <#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
 <#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
 
-<# 
-  if (Model.Parameters != null)
-  {
-    #>const props = defineProps<{
-<#
-    foreach (var parameter in Model.Parameters)
-	{
-	#>  <#= parameter.Name.ToPascalCase().ToCamelCase() #>: <#= this.GetTypeName(parameter.TypeReference) #>,
-<#
-	}
-	#>}>();
-	<#
-  }
-#>
+<# if (Model.Parameters != null) { #>
+const props = defineProps<<#= Model.Name #>Props>();
+<# } #>

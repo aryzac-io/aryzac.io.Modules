@@ -3,26 +3,19 @@
 <script setup lang="ts">
 
 
+import type { EditClientProps } from '~/structs/components/clients/edit-client.props';
+
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
-import type { TitleDto } from '~/structs/dto/titles/title.dto';
-import type { InvoiceDto } from '~/structs/dto/invoices/invoice.dto';
 
 import type { ChangeNameClientCommand } from '~/structs/dto/clients/change-name-client-command.dto';
-import type { ChangeTitleClientCommand } from '~/structs/dto/clients/change-title-client-command.dto';
-import type { ChangeReceivePromotionClientCommand } from '~/structs/dto/clients/change-receive-promotion-client-command.dto';
-import type { ChangeNoteClientCommand } from '~/structs/dto/clients/change-note-client-command.dto';
 
 const { t } = useI18n();
 
 
-const props = defineProps<{
-  clientId: string,
-}>();
-	
+const props = defineProps<EditClientProps>();
+
 
 const clientsServiceProxy = useClientsServiceProxy();
-const titlesServiceProxy = useTitlesServiceProxy();
-const invoicesServiceProxy = useInvoicesServiceProxy();
 
 // Queries
 const { 
@@ -33,22 +26,6 @@ const {
   refresh: editClientGetClientByIdQueryRefresh, 
   status: editClientGetClientByIdQueryStatus 
 } = await clientsServiceProxy.getClientByIdQuery(props.clientId);
-const { 
-  data: titleSelectGetTitlesQueryData, 
-  pending: titleSelectGetTitlesQueryPending, 
-  error: titleSelectGetTitlesQueryError , 
-  execute: titleSelectGetTitlesQueryExecute, 
-  refresh: titleSelectGetTitlesQueryRefresh, 
-  status: titleSelectGetTitlesQueryStatus 
-} = await titlesServiceProxy.getTitlesQuery();
-const { 
-  data: invoicesTableGetInvoicesByClientIdQueryData, 
-  pending: invoicesTableGetInvoicesByClientIdQueryPending, 
-  error: invoicesTableGetInvoicesByClientIdQueryError , 
-  execute: invoicesTableGetInvoicesByClientIdQueryExecute, 
-  refresh: invoicesTableGetInvoicesByClientIdQueryRefresh, 
-  status: invoicesTableGetInvoicesByClientIdQueryStatus 
-} = await invoicesServiceProxy.getInvoicesByClientIdQuery(props.clientId);
 
 // Model
 interface ModelInterface {
@@ -97,39 +74,6 @@ const changeNameClientCommand = async () => {
           
 	const changeNameClientCommand = await clientsServiceProxy.changeNameClientCommand(id, command);
 };
-const changeTitleClientCommand = async () => {
-
-  const command: ChangeTitleClientCommand = {
-    id: model.id,
-    titleId: model.titleId,
-  };
-
-  const id = props.clientId;
-          
-	const changeTitleClientCommand = await clientsServiceProxy.changeTitleClientCommand(id, command);
-};
-const changeReceivePromotionClientCommand = async () => {
-
-  const command: ChangeReceivePromotionClientCommand = {
-    id: model.id,
-    receivePromotions: model.receivePromotions,
-  };
-
-  const id = props.clientId;
-          
-	const changeReceivePromotionClientCommand = await clientsServiceProxy.changeReceivePromotionClientCommand(id, command);
-};
-const changeNoteClientCommand = async () => {
-
-  const command: ChangeNoteClientCommand = {
-    id: model.id,
-    notes: model.notes,
-  };
-
-  const id = props.clientId;
-          
-	const changeNoteClientCommand = await clientsServiceProxy.changeNoteClientCommand(id, command);
-};
 
 
 // heading Options
@@ -160,74 +104,16 @@ const headingActions = [
     },
   },
   {
-    label: t("heading.actions.invoices.label"),
-    action: async () => {
-      const localeRoute = useLocaleRoute();
-      await navigateTo(localeRoute(`/Clients/${props.clientId}/invoices`));
+    label: t("heading.actions.save.label"),
+    action: async (item: EditClient) => {
+      await changeNameClientCommand();
     },
   },
 ];
 
 
-
-// TitleSelect Options
-const titleSelectOptions = computed(() => {
-  const options: { value: string; label: string }[] = [];
-  if (titleSelectGetTitlesQueryData.value) {
-    titleSelectGetTitlesQueryData.value.forEach((item: TitleDto) => {
-      const name = item.name || '';
-      const code = item.code || '';
-      const mappedExpression = `${name} (${code})`;
-
-      options.push({
-        value: item.id,
-        label: mappedExpression,
-      });
-    });
-  }
-  return options;
-});
-
-
-
-// InvoicesTable Options
-const invoicesTableHeaders = [
-  {
-	key: 'number',
-	label: t("invoicesTable.number"),
-    data: (item: InvoiceDto) => {
-      const number = item.number || '';
-      const mappedExpression = `${number}`;
-      return mappedExpression;
-    }
-  },
-  {
-	key: 'createdDate',
-	label: t("invoicesTable.createdDate"),
-    data: (item: InvoiceDto) => {
-      const createdDate = item.createdDate || '';
-      const mappedExpression = `${createdDate}`;
-      return mappedExpression;
-    }
-  },
-  {
-	key: 'dueDate',
-	label: t("invoicesTable.dueDate"),
-    data: (item: InvoiceDto) => {
-      const dueDate = item.dueDate || '';
-      const mappedExpression = `${dueDate}`;
-      return mappedExpression;
-    }
-  },
-];
-
-const invoicesTableActions = [
-];
-
 onMounted(() => {
   editClientGetClientByIdQueryExecute();
-  titleSelectGetTitlesQueryExecute();
-  invoicesTableGetInvoicesByClientIdQueryExecute();
 });
 </script>
 
@@ -238,100 +124,4 @@ onMounted(() => {
     :attributes="headingAttributes"
     :actions="headingActions"
   />
-  <ui-editor-section
-    :title="t('personalInformation.title')"
-    :description="t('personalInformation.description')"
-  >
-     <ui-input-textbox 
-       v-model="model.firstName" 
-       :label="t('personalInformation.firstnameTextBox.label')" />
-     <ui-input-textbox 
-       v-model="model.lastName" 
-       :label="t('personalInformation.surnameTextBox.label')" />
-     <ui-input-textbox 
-       v-model="model.otherNames" 
-       :label="t('personalInformation.otherNamesTextBox.label')" />
-
-    <template #actions>
-      <button
-        type="button"
-        @click="changeNameClientCommand()"
-        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-      >
-        {{ t('personalInformation.actions.save.label') }}
-      </button>
-    </template>
-    
-  </ui-editor-section>
-  <ui-editor-section
-    :title="t('salutation.title')"
-    :description="t('salutation.description')"
-  >
-     <ui-input-select 
-       v-model="model.titleId" 
-       :label="t('salutation.titleSelect.label')"
-       :options="titleSelectOptions"
-      />
-
-    <template #actions>
-      <button
-        type="button"
-        @click="changeTitleClientCommand()"
-        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-      >
-        {{ t('salutation.actions.save.label') }}
-      </button>
-    </template>
-    
-  </ui-editor-section>
-  <ui-editor-section
-    :title="t('subscriptions.title')"
-    :description="t('subscriptions.description')"
-  >
-     <ui-input-checkbox 
-       v-model="model.receivePromotions" 
-       :label="t('subscriptions.receivePromotionsCheckBox.label')" 
-       :description="t('subscriptions.receivePromotionsCheckBox.description')" />
-
-    <template #actions>
-      <button
-        type="button"
-        @click="changeReceivePromotionClientCommand()"
-        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-      >
-        {{ t('subscriptions.actions.update.label') }}
-      </button>
-    </template>
-    
-  </ui-editor-section>
-  <ui-editor-section
-    :title="t('notes.title')"
-    :description="t('notes.description')"
-  >
-     <ui-input-text-area 
-       v-model="model.notes" 
-       :label="t('notes.notes.label')" />
-
-    <template #actions>
-      <button
-        type="button"
-        @click="changeNoteClientCommand()"
-        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-      >
-        {{ t('notes.actions.save.label') }}
-      </button>
-    </template>
-    
-  </ui-editor-section>
-  <ui-editor-section
-    :title="t('invoices.title')"
-    :description="t('invoices.description')"
-  >
-  <ui-view-table
-    :items="invoicesTableGetInvoicesByClientIdQueryData"
-    :headers="invoicesTableHeaders"
-    :actions="invoicesTableActions"
-    key="id"
-  />
-  </ui-editor-section>
 </template>

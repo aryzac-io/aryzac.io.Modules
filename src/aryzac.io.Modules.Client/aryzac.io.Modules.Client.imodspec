@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <id>Aryzac.IO.Modules.Client</id>
-  <version>1.0.1-pre.11</version>
+  <version>1.0.1-pre.12</version>
   <supportedClientVersions>[4.1.0-beta.21,5.0.0)</supportedClientVersions>
   <summary>A custom module for aryzac.io.Modules.</summary>
   <description>A custom module for aryzac.io.Modules.</description>
@@ -17,6 +17,10 @@
       <location></location>
     </template>
     <template id="Aryzac.IO.Modules.Client.Files.Components.Layout.Components" externalReference="92d3ff7c-d424-49a3-bc47-f0207b674c13">
+      <role>Default</role>
+      <location></location>
+    </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions" externalReference="eabd0cf0-37ab-4c7c-b963-d000419a7446">
       <role>Default</role>
       <location></location>
     </template>
@@ -60,7 +64,15 @@
       <role>Default</role>
       <location></location>
     </template>
-    <template id="Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO" externalReference="805c3b37-c1f9-4a79-9bd1-b8eb32dd29b6">
+    <template id="Aryzac.IO.Modules.Client.Files.Structs.Components.Models" externalReference="ff2162e0-686a-4e5f-a945-a27397e6280e">
+      <role>Default</role>
+      <location></location>
+    </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Structs.Components.Props" externalReference="b95a53f4-5d9f-40af-9064-f2860de4a5ce">
+      <role>Default</role>
+      <location></location>
+    </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO" externalReference="69e8c247-ced9-4cbc-ace8-87ec4154409e">
       <role>Default</role>
       <location></location>
     </template>
@@ -78,9 +90,9 @@
   <moduleSettings></moduleSettings>
   <dependencies>
     <dependency id="Intent.Common" version="3.5.0" />
-    <dependency id="Intent.Common.Html" version="3.3.0" />
     <dependency id="Intent.Common.Types" version="3.3.9" />
     <dependency id="Intent.Common.TypeScript" version="3.4.3" />
+    <dependency id="Intent.Metadata.WebApi" version="4.4.1" />
     <dependency id="Intent.Modelers.Domain" version="3.5.1" />
     <dependency id="Intent.Modelers.Services" version="3.5.1" />
     <dependency id="Intent.Modelers.Services.CQRS" version="4.1.1" />

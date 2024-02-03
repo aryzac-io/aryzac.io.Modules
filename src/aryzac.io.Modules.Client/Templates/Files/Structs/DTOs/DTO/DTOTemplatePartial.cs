@@ -2,10 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Intent.Engine;
+using Intent.Metadata.Models;
 using Intent.Modelers.Services.Api;
 using Intent.Modules.Common;
 using Intent.Modules.Common.Templates;
+using Intent.Modules.Common.TypeScript.Builder;
 using Intent.Modules.Common.TypeScript.Templates;
+using Intent.Modules.Common.TypeScript.TypeResolvers;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
 
@@ -15,7 +18,7 @@ using Intent.Templates;
 namespace Aryzac.IO.Modules.Client.Templates.Files.Structs.DTOs.DTO
 {
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
-    partial class DTOTemplate : TypeScriptTemplateBase<Intent.Modelers.Services.Api.DTOModel>
+    public partial class DTOTemplate : TypeScriptTemplateBase<Intent.Modelers.Services.Api.DTOModel>, ITypescriptFileBuilderTemplate
     {
         [IntentManaged(Mode.Fully)]
         public const string TemplateId = "Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO";
@@ -23,11 +26,26 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Structs.DTOs.DTO
         [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
         public DTOTemplate(IOutputTarget outputTarget, Intent.Modelers.Services.Api.DTOModel model) : base(TemplateId, outputTarget, model)
         {
+            Types = new TypeScriptTypeResolver();
+
+            TypescriptFile = new TypescriptFile(this.GetFolderPath())
+                .AddClass($"{Model.Name}{GenericTypes}", @interface =>
+                {
+                    @interface.Export();
+
+                    foreach (var field in Model.Fields)
+                    {
+                        @interface.AddField(field.Name.ToPascalCase().ToCamelCase(), GetTypeName(field.TypeReference));
+                    }
+                });
         }
 
         public string GenericTypes => Model.GenericTypes.Any() ? $"<{string.Join(", ", Model.GenericTypes)}>" : "";
 
-        [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
+        [IntentManaged(Mode.Fully)]
+        public TypescriptFile TypescriptFile { get; }
+
+        [IntentManaged(Mode.Fully)]
         public override ITemplateFileConfig GetTemplateFileConfig()
         {
             return new TypeScriptFileConfig(
@@ -36,6 +54,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Structs.DTOs.DTO
                 relativeLocation: $"{Model.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase()}",
                 className: $"{Model.Name}"
             );
+        }
+
+        [IntentManaged(Mode.Fully)]
+        public override string TransformText()
+        {
+            return TypescriptFile.ToString();
         }
     }
 }

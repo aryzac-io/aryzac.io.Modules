@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="64fce8ed-b417-4421-a49d-6a7669e0ab71" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>composables</name>
+  <display>composables</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>32ef0618-add8-4580-b57a-36922790debe</parentFolderId>
+  <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="07a9df6a-9ae4-4d28-ae3d-afb39460df06" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions</name>
+      <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>64fce8ed-b417-4421-a49d-6a7669e0ab71</parentFolderId>
+      <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="cc881dca-7417-433b-9dac-2beecefca965" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions</name>
+      <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>64fce8ed-b417-4421-a49d-6a7669e0ab71</parentFolderId>
+      <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="6c2b3f39-6f2a-4bf8-bee5-a41767fc554c" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions</name>
+      <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>64fce8ed-b417-4421-a49d-6a7669e0ab71</parentFolderId>
+      <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="63ac2d32-8e6d-40c3-aeab-0f9cfa66f55b" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy</name>
+      <display>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>64fce8ed-b417-4421-a49d-6a7669e0ab71</parentFolderId>
+      <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

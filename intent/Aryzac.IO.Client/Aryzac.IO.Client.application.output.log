@@ -604,6 +604,38 @@
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>ModuleBuilder.Typescript.Templates.TypescriptTemplate.PreProcessT4#eabd0cf0-37ab-4c7c-b963-d000419a7446</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplate.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplate.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplateT4#eabd0cf0-37ab-4c7c-b963-d000419a7446</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplate.tt</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplate.tt</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial#eabd0cf0-37ab-4c7c-b963-d000419a7446</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplatePartial.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#eabd0cf0-37ab-4c7c-b963-d000419a7446</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Composables/Controls/UseHeadingOptions/UseHeadingOptionsTemplateRegistration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
       <CorrelationId>ModuleBuilder.Typescript.Templates.TypescriptTemplate.PreProcessT4#9791958d-ea31-4760-94f4-453e80dfbfbe</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Composables/Controls/UseSelectOptions/UseSelectOptionsTemplate.cs</ApplicationRelativeFilePath>
@@ -868,23 +900,39 @@
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
-      <CorrelationId>ModuleBuilder.Typescript.Templates.TypescriptTemplate.PreProcessT4#805c3b37-c1f9-4a79-9bd1-b8eb32dd29b6</CorrelationId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial#ff2162e0-686a-4e5f-a945-a27397e6280e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/DTOs/DTO/DTOTemplate.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Files/Structs/DTOs/DTO/DTOTemplate.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/Components/Models/ModelsTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Structs/Components/Models/ModelsTemplatePartial.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
-      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplateT4#805c3b37-c1f9-4a79-9bd1-b8eb32dd29b6</CorrelationId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#ff2162e0-686a-4e5f-a945-a27397e6280e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/DTOs/DTO/DTOTemplate.tt</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Files/Structs/DTOs/DTO/DTOTemplate.tt</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/Components/Models/ModelsTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Structs/Components/Models/ModelsTemplateRegistration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
-      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial#805c3b37-c1f9-4a79-9bd1-b8eb32dd29b6</CorrelationId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial#b95a53f4-5d9f-40af-9064-f2860de4a5ce</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/Components/Props/PropsTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Structs/Components/Props/PropsTemplatePartial.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#b95a53f4-5d9f-40af-9064-f2860de4a5ce</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/Components/Props/PropsTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Structs/Components/Props/PropsTemplateRegistration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TypeScript.Templates.TypescriptTemplatePartial#69e8c247-ced9-4cbc-ace8-87ec4154409e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/DTOs/DTO/DTOTemplatePartial.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Structs/DTOs/DTO/DTOTemplatePartial.cs</ProjectRelativeFilePath>
@@ -892,7 +940,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
-      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#805c3b37-c1f9-4a79-9bd1-b8eb32dd29b6</CorrelationId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#69e8c247-ced9-4cbc-ace8-87ec4154409e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Structs/DTOs/DTO/DTOTemplateRegistration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Files/Structs/DTOs/DTO/DTOTemplateRegistration.cs</ProjectRelativeFilePath>

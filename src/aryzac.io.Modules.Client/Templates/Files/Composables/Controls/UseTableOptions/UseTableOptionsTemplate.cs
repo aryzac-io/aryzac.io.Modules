@@ -56,7 +56,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             
             #line default
             #line hidden
-            this.Write("Options = async (t: ComposerTranslation) => {\r\n\r\n");
+            this.Write("Options = async (props: ");
+            
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponentName()));
+            
+            #line default
+            #line hidden
+            this.Write("Props: ComposerTranslation) => {\r\n\r\n");
             
             #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(CommandAndQueryServiceProxyComposables));
@@ -87,7 +94,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             this.Write("\r\n\r\n");
             
             #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(TableActions));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Actions));
             
             #line default
             #line hidden

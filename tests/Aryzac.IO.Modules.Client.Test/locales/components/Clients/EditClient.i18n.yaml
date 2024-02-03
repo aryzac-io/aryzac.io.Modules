@@ -9,55 +9,8 @@ af:
     actions:
       view:
         label: View
-      invoices:
-        label: Invoices
-  personalInformation:
-    title: Personal Information
-    description: ''
-    firstnameTextBox:
-      label: Eerste naame
-    surnameTextBox:
-      label: Van
-    otherNamesTextBox:
-      label: Ander Name
-    actions:
-      save:
-        label: Stoor
-        icon: ic:twotone-remove-red-eye
-  salutation:
-    title: Salutation
-    description: ''
-    titleSelect:
-      label: Tietel
-    actions:
       save:
         label: Save
-  subscriptions:
-    title: Subscriptions
-    description: ''
-    receivePromotionsCheckBox:
-      label: Ontvang Promosies
-      description: Hierdie klient wil kak email kry
-    actions:
-      update:
-        label: Update
-  notes:
-    title: Notes
-    description: ''
-    notes:
-      label: Notas
-    actions:
-      save:
-        label: Save
-  invoices:
-    title: Invoices
-    description: ''
-    invoicesTable:
-      number: Number
-      createdDate: CreatedDate
-      dueDate: DueDate
-      actions:
-        placeholder: ''
 en:
   heading:
     title: heading
@@ -71,51 +24,5 @@ en:
     actions:
       view:
         label: View
-      invoices:
-        label: Invoices
-  personalInformation:
-    title: Personal Information
-    description: ''
-    firstnameTextBox:
-      label: Firstname
-    surnameTextBox:
-      label: Surname
-    otherNamesTextBox:
-      label: Other Names
-    actions:
       save:
         label: Save
-  salutation:
-    title: Salutation
-    description: ''
-    titleSelect:
-      label: Title
-    actions:
-      save:
-        label: Save
-  subscriptions:
-    title: Subscriptions
-    description: ''
-    receivePromotionsCheckBox:
-      label: Receive Promotions
-      description: This client has opted into receiving promotional material
-    actions:
-      update:
-        label: Update
-  notes:
-    title: Notes
-    description: ''
-    notes:
-      label: Notes
-    actions:
-      save:
-        label: Save
-  invoices:
-    title: Invoices
-    description: ''
-    invoicesTable:
-      number: Number
-      createdDate: CreatedDate
-      dueDate: DueDate
-      actions:
-        placeholder: ''

@@ -3,7 +3,6 @@
   <name>services</name>
   <display>services</display>
   <isAbstract>false</isAbstract>
-  <sort-children>by-type-then-by-name</sort-children>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>cff18915-ecd7-4e9d-93de-575eef8ba540</parentFolderId>
@@ -12,16 +11,14 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="414f2921-7515-4d47-86b3-ecf9a3774b80" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+    <childElement id="915ff5a8-14af-4262-b7eb-e4020dc4588d" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
       <name>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy</name>
       <display>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy</display>
-      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <externalReference>414f2921-7515-4d47-86b3-ecf9a3774b80</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</parentFolderId>
-      <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
-      <packageName>root</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

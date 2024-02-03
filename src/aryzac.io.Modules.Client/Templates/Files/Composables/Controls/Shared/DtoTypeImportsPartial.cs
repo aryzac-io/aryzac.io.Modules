@@ -16,6 +16,7 @@ using Intent.Modules.Common.TypeScript.TypeResolvers;
 using Intent.Modules.Metadata.WebApi.Models;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Templates;
+using static System.Collections.Specialized.BitVector32;
 using static Aryzac.IO.Modules.Client.Api.LocaleModelStereotypeExtensions;
 
 namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
@@ -39,11 +40,26 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             .Select(x => new ComponentCommandModel(x))
             .ToList();
 
+        public List<ActionModel> Actions => Element.ChildElements
+            .GetElementsOfType(ActionModel.SpecializationTypeId, true)
+            .Select(x => new ActionModel(x))
+            .ToList();
+
+        public List<ComponentParameterModel> Parameters => GetComponent().InternalElement.ChildElements
+            .GetElementsOfType(ComponentParameterModel.SpecializationTypeId, true)
+            .Select(x => new ComponentParameterModel(x))
+            .ToList();
+
+        public List<ComponentModelModel> Models => GetComponent().InternalElement.ChildElements
+            .GetElementsOfType(ComponentModelModel.SpecializationTypeId, true)
+            .Select(x => new ComponentModelModel(x))
+            .ToList();
+
         // Helper method to get import statement for queries
         public string GetQueryImportStatement(ComponentQueryModel query)
         {
             var endpoint = GetEndpoint((IElement)query.Mapping.Element.AsOperationModel().Mapping.Element);
-            var importPath = GetImportPath((IElement)endpoint.ReturnType.Element);
+            var importPath = $"~/structs/dto/{((IElement)endpoint.ReturnType.Element).ParentElement.Name.ToPascalCase().ToCamelCase()}/{((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase()}.dto";
             return $"import type {{ {endpoint.ReturnType.Element.Name} }} from '{importPath}';";
         }
 
@@ -54,10 +70,34 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             if (HasBodyParameter(endpoint))
             {
                 var bodyParam = GetBodyParameter(endpoint);
-                var importPath = GetImportPath((IElement)bodyParam.TypeReference.Element);
-                return $"import type {{ {endpoint.InternalElement.Name} }} from '{importPath}';";
+                // var importPath = GetImportPath((IElement)bodyParam.TypeReference.Element);
+                // ((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase()
+                var importPath = $"~/structs/dto/{((IElement)bodyParam.TypeReference.Element).ParentElement.Name.ToPascalCase().ToCamelCase()}/{ endpoint.InternalElement.Name.ToKebabCase() }.dto";
+                return $"import type {{ { endpoint.InternalElement.Name } }} from '{importPath}';";
             }
             return null;
+        }
+
+        public string GetParameterImportStatement()
+        {
+            var component = GetComponent();
+            return $"import type {{ {component.Name.ToPascalCase()}Props }} from '~/structs/components/{component.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase()}/{component.Name.ToKebabCase()}.props';";
+        }
+
+        public string GetModelImportStatement()
+        {
+            var component = GetComponent();
+            return $"import type {{ {component.Name.ToPascalCase()}Model }} from '~/structs/components/{component.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase()}/{component.Name.ToKebabCase()}.model';";
+        }
+
+        public ComponentModel GetComponent()
+        {
+            return Element.GetFirstParentOfType(ComponentModel.SpecializationTypeId).AsComponentModel();
+        }
+
+        public string GetActionImportStatement(ActionModel action)
+        {
+            return default;
         }
 
         private IHttpEndpointModel GetEndpoint(IElement element)
@@ -76,11 +116,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
         private IHttpEndpointInputModel GetBodyParameter(IHttpEndpointModel endpoint)
         {
             return endpoint.Inputs.First(x => x.Source == HttpInputSource.FromBody);
-        }
-
-        private string GetImportPath(IElement element)
-        {
-            return $"~/structs/dto/{element.ParentElement.Name.ToPascalCase().ToCamelCase()}/{element.MappedElement.Element.Name.ToKebabCase()}.dto";
         }
     }
 }

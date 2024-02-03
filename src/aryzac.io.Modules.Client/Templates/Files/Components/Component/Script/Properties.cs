@@ -36,52 +36,21 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             this.Write("\r\n");
             
             #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
- 
-  if (Model.Parameters != null)
-  {
-    
+ if (Model.Parameters != null) { 
             
             #line default
             #line hidden
-            this.Write("const props = defineProps<{\r\n");
+            this.Write("const props = defineProps<");
             
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
-
-    foreach (var parameter in Model.Parameters)
-	{
-	
+            #line 13 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
             
             #line default
             #line hidden
-            this.Write("  ");
+            this.Write("Props>();\r\n");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(parameter.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(": ");
-            
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(this.GetTypeName(parameter.TypeReference)));
-            
-            #line default
-            #line hidden
-            this.Write(",\r\n");
-            
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
-
-	}
-	
-            
-            #line default
-            #line hidden
-            this.Write("}>();\r\n\t");
-            
-            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
-
-  }
-
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Properties.tt"
+ } 
             
             #line default
             #line hidden

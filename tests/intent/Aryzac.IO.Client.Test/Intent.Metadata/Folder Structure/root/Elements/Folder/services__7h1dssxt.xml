@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="ea754e6c-a549-4d77-9c6f-86d457cdd1c7" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>services</name>
+  <display>services</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>32ef0618-add8-4580-b57a-36922790debe</parentFolderId>
+  <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="54561d26-1a1b-41e9-92be-1dcd5e6b2993" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy</name>
+      <display>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>ea754e6c-a549-4d77-9c6f-86d457cdd1c7</parentFolderId>
+      <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

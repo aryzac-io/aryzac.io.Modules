@@ -95,5 +95,12 @@ namespace Aryzac.IO.Modules.Client.Api
                 .ToList();
         }
 
+        public static IList<HeadingModel> GetHeadingModels(this IDesigner designer)
+        {
+            return designer.GetElementsOfType(HeadingModel.SpecializationTypeId)
+                .Select(x => new HeadingModel(x))
+                .ToList();
+        }
+
     }
 }

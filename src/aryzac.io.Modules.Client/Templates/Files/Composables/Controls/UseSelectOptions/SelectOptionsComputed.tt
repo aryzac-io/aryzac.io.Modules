@@ -12,28 +12,12 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <# var select = Element.AsSelectModel(); #>
-<#
-  var valueField = "";
-  var labelField = "";
-              
-  var mappedColumn = select.InternalElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "74330c09-3675-4796-b7c9-8f5132b9c59b");
-  
-  foreach (var mapping in select.InternalElement.Mappings)
-  {
-    foreach (var mappingEnd in mapping.MappedEnds)
-    {
-      if (mappingEnd.TargetElement.SpecializationType == "Value")
-      {
-          valueField = mappingEnd.SourceElement.Name;
-      }
-    }
-  }
-#>
 const <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options = computed(() => {
   const options: { value: string; label: string }[] = [];
   if (data.value) {
     data.value.forEach((item: <#= select.Query.Mapping.Element.TypeReference.Element.Name #>) => {
 <#
+    var mappedColumn = GetMappedColumn(select);
     var mappedExpression = mappedColumn.MappingExpression;
     foreach (var source in mappedColumn.Sources)
     {
@@ -46,7 +30,7 @@ const <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options = c
       const mappedExpression = `<#= mappedExpression #>`;
 
       options.push({
-        value: item.<#= valueField.ToPascalCase().ToCamelCase() #>,
+        value: item.<#= ValueField.ToPascalCase().ToCamelCase() #>,
         label: mappedExpression,
       });
     });

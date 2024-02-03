@@ -1,4 +1,4 @@
-export interface ChangeCodeTitleCommand {
-    id: string;
-    code: string;
+export class ChangeCodeTitleCommand {
+  id: string;
+  code: string;
 }

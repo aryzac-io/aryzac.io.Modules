@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3606f50e-4390-450d-b732-454d039f1af7" type="Locales" typeId="bc3ed158-45dd-4685-8ac2-99c774a15f2d">
+  <name>locales</name>
+  <display>locales</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</parentFolderId>
+  <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="1223db1b-6531-4d2a-9f22-134ae5aff48d" type="Locale" typeId="84a53da1-7d07-4bbd-ae08-88cd59406f6f">
+      <name>en</name>
+      <display>en</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>3606f50e-4390-450d-b732-454d039f1af7</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="73ce4f91-9a92-485f-856f-6fc2331cf475" name="Locale Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+          <properties>
+            <property name="954de8e8-3aba-4ab6-b9dd-c93dfa2b97a0" display="ISO Code" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="09876e82-e2d2-440a-9f22-2cb2d958d89d" name="Default Locale">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,3 +1,3 @@
-export interface GetTitleByIdQuery {
-    id: string;
+export class GetTitleByIdQuery {
+  id: string;
 }

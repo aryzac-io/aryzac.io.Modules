@@ -38,31 +38,68 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             this.Write("\r\n");
             
             #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
-
-  foreach (var query in Queries)
-  {
-
+ if (Parameters.Any()) {
+            
+            #line default
+            #line hidden
+            
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetParameterImportStatement()));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ } 
+            
+            #line default
+            #line hidden
+            
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ if (Models.Any()) {
             
             #line default
             #line hidden
             
             #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetQueryImportStatement(query)));
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetModelImportStatement()));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
             #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
-
-  }
-
-  foreach (var command in Commands)
-  {
-    var importStatement = GetCommandImportStatement(command);
-    if (importStatement != null)
-    {
-
+ } 
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ foreach (var query in Queries) { 
+            
+            #line default
+            #line hidden
+            
+            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetQueryImportStatement(query)));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ } 
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ foreach (var command in Commands) {
+     var importStatement = GetCommandImportStatement(command);
+      if (importStatement != null) { 
             
             #line default
             #line hidden
@@ -75,10 +112,41 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
             this.Write("\r\n");
             
             #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
-
-    }
-  }
-
+    } 
+            
+            #line default
+            #line hidden
+            
+            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ } 
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ foreach (var action in Actions) {
+     var importStatement = GetActionImportStatement(action);
+     if (importStatement != null) { 
+            
+            #line default
+            #line hidden
+            
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(importStatement));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+    } 
+            
+            #line default
+            #line hidden
+            
+            #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt"
+ } 
             
             #line default
             #line hidden

@@ -354,49 +354,6 @@ foreach (var action in Model.View.Heading.Actions.Actions)
         else if (control.IsSelectModel())
         {
 #>
-// <#= control.Name #> Options
-<#
-          var select = control.AsSelectModel();
-          var valueField = "";
-          var labelField = "";
-            
-          var mappedColumn = select.InternalElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "74330c09-3675-4796-b7c9-8f5132b9c59b");
-
-          foreach (var mapping in select.InternalElement.Mappings)
-          {
-            foreach (var mappingEnd in mapping.MappedEnds)
-            {
-                if (mappingEnd.TargetElement.SpecializationType == "Value")
-                {
-                    valueField = mappingEnd.SourceElement.Name;
-                }
-            }
-          }
-#>
-const <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #>Options = computed(() => {
-  const options: { value: string; label: string }[] = [];
-  if (<#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #><#= select.Query.Mapping.Element.Name #>Data.value) {
-    <#= select.InternalElement.Name.ToPascalCase().ToCamelCase() #><#= select.Query.Mapping.Element.Name #>Data.value.forEach((item: <#= select.Query.Mapping.Element.TypeReference.Element.Name #>) => {
-<#
-    var mappedExpression = mappedColumn.MappingExpression;
-    foreach (var source in mappedColumn.Sources)
-    {
-        mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
-#>
-      const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = item.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
-<#
-    }
-#>
-      const mappedExpression = `<#= mappedExpression #>`;
-
-      options.push({
-        value: item.<#= valueField.ToPascalCase().ToCamelCase() #>,
-        label: mappedExpression,
-      });
-    });
-  }
-  return options;
-});
 <#
         }
 #>

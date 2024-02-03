@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="48c7d2c9-177b-4892-8920-95d43a7220ef" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>components</name>
+  <display>components</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>63ef6a91-2359-469b-ace1-a92e637b762f</parentFolderId>
+  <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="47380569-9c9c-4b67-a83e-79322055c95e" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Structs.Components.Models</name>
+      <display>Aryzac.IO.Modules.Client.Files.Structs.Components.Models</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>48c7d2c9-177b-4892-8920-95d43a7220ef</parentFolderId>
+      <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="65bcf5b4-939a-4612-b7ec-dff54a889839" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Modules.Client.Files.Structs.Components.Props</name>
+      <display>Aryzac.IO.Modules.Client.Files.Structs.Components.Props</display>
+      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>48c7d2c9-177b-4892-8920-95d43a7220ef</parentFolderId>
+      <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

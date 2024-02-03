@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c86f55b6-33d8-4256-b193-ea68aa5c07e6" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+  <name>Aryzac.IO.Modules.Client.Files.package</name>
+  <display>Aryzac.IO.Modules.Client.Files.package</display>
+  <externalReference>Aryzac.IO.Modules.Client</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>32ef0618-add8-4580-b57a-36922790debe</parentFolderId>
+  <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata>
+    <entry key="status" value="assigned" />
+  </metadata>
+  <childElements />
+</class>

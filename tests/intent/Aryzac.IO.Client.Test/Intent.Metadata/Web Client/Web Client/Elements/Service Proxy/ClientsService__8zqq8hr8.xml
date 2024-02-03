@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="55fd1882-bc4e-4f04-892b-084c78f66d12" type="Service Proxy" typeId="07d8d1a9-6b9f-4676-b7d3-8db06299e35c">
+  <name>ClientsService</name>
+  <display>ClientsService</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>true</isMapped>
+  <mappedClass isRoot="true">
+    <applicationId>40b74aa4-b3ed-40e8-82e4-06395dfbc2e5</applicationId>
+    <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+    <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+    <autoSyncTypeReference>true</autoSyncTypeReference>
+    <mappedPath>
+      <target id="d30348ce-b7c9-4e8d-8a20-7f159d58d7e1" name="Aryzac.IO.Modules.Client.Test.Api.Services" type="association" specialization="Services Package" />
+      <target id="c2ef4ce6-decd-4fd3-9a37-4dca21702963" name="Clients" type="element" specialization="Folder" />
+    </mappedPath>
+  </mappedClass>
+  <parentFolderId>f24a6e6a-5fdd-4696-bf6a-743c14598472</parentFolderId>
+  <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="36c33aa9-f4a9-44e5-aaf6-128066f80543" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>ChangeNameClientCommand</name>
+      <display>ChangeNameClientCommand(id: guid, command: ChangeNameClientCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="e0d9adad-b69f-4717-a53f-b3233e4060d7">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="8adab089-3e0f-466e-8478-0f0d891af0be" name="ChangeNameClientCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="4f043651-b39c-443d-abc2-4460a91a187e" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>id</name>
+          <display>id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="596d1371-985f-4af5-bbdd-d0f6f2a31d10">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>36c33aa9-f4a9-44e5-aaf6-128066f80543</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="2efca480-38f1-4f8e-8c95-24fbfffbafe5" />
+          </metadata>
+          <childElements />
+        </childElement>
+        <childElement id="18f32f5b-4124-4c47-8e14-e09b6b848a63" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>command</name>
+          <display>command: ChangeNameClientCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="7f53d405-d51f-4edd-b31f-550908ee727a">
+            <typeId>8adab089-3e0f-466e-8478-0f0d891af0be</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+            <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>36c33aa9-f4a9-44e5-aaf6-128066f80543</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="8adab089-3e0f-466e-8478-0f0d891af0be" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="98c334a2-f1de-4dcc-963d-e1519fb1aa94" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>ChangeNoteClientCommand</name>
+      <display>ChangeNoteClientCommand(id: guid, command: ChangeNoteClientCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="9dab2bfb-553c-4fdf-a728-9f2286458c6e">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="1aae7db0-ae39-417d-a3b5-2214e6dae43f" name="ChangeNoteClientCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="17322cb9-9575-4b85-a6aa-bc3f1e0bd05a" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>id</name>
+          <display>id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="fb369036-f84d-4dc1-9c7d-1727036e56b9">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>98c334a2-f1de-4dcc-963d-e1519fb1aa94</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="3900f1f8-9f39-413c-a7f2-1418f2cc8058" />
+          </metadata>
+          <childElements />
+        </childElement>
+        <childElement id="cd3a5a4b-6af3-455a-a47c-b9a5943bb460" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>command</name>
+          <display>command: ChangeNoteClientCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="2bb8c487-0180-4884-9ed9-c0e3b311420b">
+            <typeId>1aae7db0-ae39-417d-a3b5-2214e6dae43f</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+            <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>98c334a2-f1de-4dcc-963d-e1519fb1aa94</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="1aae7db0-ae39-417d-a3b5-2214e6dae43f" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="44e79012-358a-47d5-aa7a-1975978180e1" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>ChangeReceivePromotionClientCommand</name>
+      <display>ChangeReceivePromotionClientCommand(id: guid, command: ChangeReceivePromotionClientCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="d67eaf79-d6ed-4434-ab85-7149f1016da3">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="e657409b-f841-4060-bf6e-44fc5cd83b12" name="ChangeReceivePromotionClientCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="89c2c521-45f6-4564-b809-c7a5d835ab43" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>id</name>
+          <display>id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="7264e4ea-c01b-4662-84a6-40b3ad85f1f7">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>44e79012-358a-47d5-aa7a-1975978180e1</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="78cc5521-d0c3-408c-9d03-01446eec11dc" />
+          </metadata>
+          <childElements />
+        </childElement>
+        <childElement id="ea16100d-9018-49ab-959c-5ad7ce8a1f8a" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>command</name>
+          <display>command: ChangeReceivePromotionClientCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="9c75d9c7-8331-4141-848a-660fdac5d3aa">
+            <typeId>e657409b-f841-4060-bf6e-44fc5cd83b12</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+            <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>44e79012-358a-47d5-aa7a-1975978180e1</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="e657409b-f841-4060-bf6e-44fc5cd83b12" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="c14dce2d-4b71-48ed-b250-e24cd784e7e6" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>ChangeTitleClientCommand</name>
+      <display>ChangeTitleClientCommand(id: guid, command: ChangeTitleClientCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="93478a5a-c7fb-4600-8ce9-1bd965f962b8">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2" name="ChangeTitleClientCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="ed7092f7-7a67-4ef7-8419-d4596c6fc55f" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>id</name>
+          <display>id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="95e1a265-c854-4eea-8c71-463e9fff629b">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c14dce2d-4b71-48ed-b250-e24cd784e7e6</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="66eb51d3-2f9b-44af-8ce5-f9ebaab259a9" />
+          </metadata>
+          <childElements />
+        </childElement>
+        <childElement id="cdcc4a25-4a84-417e-a1a6-4e6e5f5faa5d" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>command</name>
+          <display>command: ChangeTitleClientCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="80467cd4-b3b6-412c-97af-544146e1502b">
+            <typeId>dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+            <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c14dce2d-4b71-48ed-b250-e24cd784e7e6</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="4bcd8455-a40a-4323-8161-2b64ce81360a" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>CreateClientCommand</name>
+      <display>CreateClientCommand(command: CreateClientCommand): guid</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="834102c6-2c47-47dc-b9fe-421350b6950d">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="c956cb72-2f94-4294-b4ff-638c9e332ff3" name="CreateClientCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="ff394ed6-1e6d-42c4-bdac-6fa1b425004d" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>command</name>
+          <display>command: CreateClientCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="ad636b7d-bcff-4e5b-af7e-09b3971dd6d2">
+            <typeId>c956cb72-2f94-4294-b4ff-638c9e332ff3</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+            <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>4bcd8455-a40a-4323-8161-2b64ce81360a</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="c956cb72-2f94-4294-b4ff-638c9e332ff3" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="626ae683-54f6-4199-b620-025c2b6a0d0d" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>DeleteClientCommand</name>
+      <display>DeleteClientCommand(id: guid): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="0d5281df-46b0-474e-b1ba-a51f9da13954">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="0b897df0-2dcd-4c9b-baf8-8e8180894a38" name="DeleteClientCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="52b02b4f-5a3b-417b-99c4-a51a96ab2040" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>id</name>
+          <display>id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="0d95edc0-902c-4a2f-9c78-071e71e954f0">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>626ae683-54f6-4199-b620-025c2b6a0d0d</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="cea3b1d7-805e-42ad-9d21-ad8df51f5c1c" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="e0a88abe-ede8-4c51-85b1-72acfe7b38d2" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>GetClientByIdQuery</name>
+      <display>GetClientByIdQuery(id: guid): ClientDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="7ead8fc9-20bb-4e22-a00d-c12d688a2cae">
+        <typeId>6f4b80e1-8632-4181-901c-46f28e9b3b75</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+        <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="42722bcb-5cee-4dff-975f-499d5bdf7fe4" name="GetClientByIdQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="62b8f73e-fdda-4f88-baaa-b8d0915b6884" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+          <name>id</name>
+          <display>id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="9659c405-a88a-4c7b-b289-c8c035b24e25">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>e0a88abe-ede8-4c51-85b1-72acfe7b38d2</parentFolderId>
+          <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes />
+          <metadata>
+            <entry key="endpoint-input-id" value="2a01b659-a8fa-427c-b967-b9a39d1123ee" />
+          </metadata>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="a002a98a-7b9b-4ea2-9206-005130a18401" type="Operation" typeId="aee6811e-b2f6-4562-a8eb-502029f63bc8">
+      <name>GetClientsQuery</name>
+      <display>GetClientsQuery(): ClientDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="2fe6c282-3750-42af-8b14-d1484efc8654">
+        <typeId>6f4b80e1-8632-4181-901c-46f28e9b3b75</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+        <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="625e4bb7-389e-43f3-839a-b700d2c92459" name="GetClientsQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>55fd1882-bc4e-4f04-892b-084c78f66d12</parentFolderId>
+      <packageId>c2c485c7-1999-4e98-82b4-4f99fcbc23d8</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

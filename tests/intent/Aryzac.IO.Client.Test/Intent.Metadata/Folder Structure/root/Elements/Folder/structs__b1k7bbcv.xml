@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="63ef6a91-2359-469b-ace1-a92e637b762f" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>structs</name>
+  <display>structs</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>32ef0618-add8-4580-b57a-36922790debe</parentFolderId>
+  <packageId>32ef0618-add8-4580-b57a-36922790debe</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

@@ -12,16 +12,14 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="1ee243f0-da20-45b6-aa23-3098c138bd5a" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+    <childElement id="82592949-e051-41bc-b3f6-38c7153a57b9" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
       <name>Aryzac.IO.Modules.Client.Files.Components.Component</name>
       <display>Aryzac.IO.Modules.Client.Files.Components.Component</display>
-      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+      <externalReference>1ee243f0-da20-45b6-aa23-3098c138bd5a</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</parentFolderId>
-      <packageId>cff18915-ecd7-4e9d-93de-575eef8ba540</packageId>
-      <packageName>root</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

@@ -24,8 +24,31 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
         public SelectOptionsComputed(IElement element)
         {
             Element = element;
+
+            Initialize(element);
         }
 
         public IElement Element { get; set; }
+
+        public string ValueField { get; set; }
+
+        public void Initialize(IElement select)
+        {
+            foreach (var mapping in select.Mappings)
+            {
+                foreach (var mappingEnd in mapping.MappedEnds)
+                {
+                    if (mappingEnd.TargetElement.SpecializationType == "Value")
+                    {
+                        ValueField = mappingEnd.SourceElement.Name;
+                    }
+                }
+            }
+        }
+
+        public IElementToElementMappedEnd GetMappedColumn(SelectModel select)
+        {
+            return select.InternalElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "74330c09-3675-4796-b7c9-8f5132b9c59b");
+        }
     }
 }

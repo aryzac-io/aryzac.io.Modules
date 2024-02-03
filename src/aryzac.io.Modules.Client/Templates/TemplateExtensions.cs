@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using Aryzac.IO.Modules.Client.Api;
+using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadingOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelectOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTableOptions;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.UseServiceProxy;
 using Aryzac.IO.Modules.Client.Templates.Files.NuxtConfig;
 using Aryzac.IO.Modules.Client.Templates.Files.Services.ServiceProxy;
+using Aryzac.IO.Modules.Client.Templates.Files.Structs.Components.Models;
+using Aryzac.IO.Modules.Client.Templates.Files.Structs.Components.Props;
 using Aryzac.IO.Modules.Client.Templates.Files.Structs.DTOs.DTO;
 using Aryzac.IO.Modules.Client.Templates.Files.Structs.DTOs.JsonResponse;
 using Intent.Modelers.Services.Api;
@@ -20,6 +23,15 @@ namespace Aryzac.IO.Modules.Client.Templates
 {
     public static class TemplateExtensions
     {
+        public static string GetUseHeadingOptionsName<T>(this IIntentTemplate<T> template) where T : HeadingModel
+        {
+            return template.GetTypeName(UseHeadingOptionsTemplate.TemplateId, template.Model);
+        }
+
+        public static string GetUseHeadingOptionsName(this IIntentTemplate template, HeadingModel model)
+        {
+            return template.GetTypeName(UseHeadingOptionsTemplate.TemplateId, model);
+        }
         public static string GetUseSelectOptionsName<T>(this IIntentTemplate<T> template) where T : SelectModel
         {
             return template.GetTypeName(UseSelectOptionsTemplate.TemplateId, template.Model);
@@ -61,6 +73,27 @@ namespace Aryzac.IO.Modules.Client.Templates
         {
             return template.GetTypeName(ServiceProxyTemplate.TemplateId, model);
         }
+
+        public static string GetModelsName<T>(this IIntentTemplate<T> template) where T : ComponentModel
+        {
+            return template.GetTypeName(ModelsTemplate.TemplateId, template.Model);
+        }
+
+        public static string GetModelsName(this IIntentTemplate template, ComponentModel model)
+        {
+            return template.GetTypeName(ModelsTemplate.TemplateId, model);
+        }
+
+        public static string GetPropsName<T>(this IIntentTemplate<T> template) where T : ComponentModel
+        {
+            return template.GetTypeName(PropsTemplate.TemplateId, template.Model);
+        }
+
+        public static string GetPropsName(this IIntentTemplate template, ComponentModel model)
+        {
+            return template.GetTypeName(PropsTemplate.TemplateId, model);
+        }
+
         public static string GetDTOName<T>(this IIntentTemplate<T> template) where T : DTOModel
         {
             return template.GetTypeName(DTOTemplate.TemplateId, template.Model);
