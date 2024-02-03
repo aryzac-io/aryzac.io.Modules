@@ -40,6 +40,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Heading.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputTextbox.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputTextbox.tt</DependentUpon>
+    </Compile>
     <Compile Update="Templates\Files\Components\ComponentHtml\Controls\Table.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -210,6 +215,10 @@
     <None Update="Templates\Files\Components\ComponentHtml\Controls\Heading.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Heading.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputTextbox.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\Components\ComponentHtml\Controls\Table.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

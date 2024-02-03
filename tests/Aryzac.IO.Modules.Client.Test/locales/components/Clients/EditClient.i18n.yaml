@@ -8,6 +8,8 @@ af:
     description: ''
     newTable:
       placeholder: ''
+    newTextbox:
+      label: NewTextbox
   table:
     placeholder: ''
 en:
@@ -20,5 +22,7 @@ en:
     description: ''
     newTable:
       placeholder: ''
+    newTextbox:
+      label: NewTextbox
   table:
     placeholder: ''

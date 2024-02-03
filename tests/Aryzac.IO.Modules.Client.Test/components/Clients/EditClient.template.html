@@ -10,6 +10,11 @@
     :actions="newTableOptions.actions"
     key="id"
   ></ui-view-table>
+
+  <ui-input-textbox
+    v-model="model.newTextbox"
+    :label="t('newSection.newTextbox.label')"
+  ></ui-input-textbox>
 </ui-editor-section>
 
 <ui-view-table

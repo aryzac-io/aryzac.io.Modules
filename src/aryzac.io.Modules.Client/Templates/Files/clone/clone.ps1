@@ -114,10 +114,10 @@ Write-Host "`tprivate $name $newFileNameCamelCase;"
 Write-Host "`tpublic string $name => $newFileNameCamelCase.TransformText();`n"
 
 Write-Host "Method"
-Write-Host "`tpublic string GenerateHeading(IElement element)"
+Write-Host "`tpublic string Generate$name(IElement element)"
 Write-Host "`t{"
-Write-Host "`t  var heading = new Heading(element);"
-Write-Host "`t  return heading.TransformText();"
+Write-Host "`t  var template = new $name(element);"
+Write-Host "`t  return template.TransformText();"
 Write-Host "`t}`n"
 
 Write-Host "Remember to replace `$name` with the actual class name in your code snippets."

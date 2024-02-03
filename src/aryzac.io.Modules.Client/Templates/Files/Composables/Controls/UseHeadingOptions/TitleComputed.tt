@@ -29,6 +29,6 @@ const title = computed(() => {
   const mappedExpression = `<#= mappedExpression #>`;
   return mappedExpression;
 <#  } else { #>
-  return t('heading.title');
+  return t('<#= Helpers.GetI18nPath(Element) #>.title');
 <#  } #>
 });

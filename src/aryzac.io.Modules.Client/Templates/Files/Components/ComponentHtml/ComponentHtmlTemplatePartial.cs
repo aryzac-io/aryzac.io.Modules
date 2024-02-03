@@ -35,30 +35,20 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
 
         public string GenerateHeading(IElement element)
         {
-            var heading = new Heading(element);
-            return heading.TransformText();
+            var template = new Heading(element);
+            return template.TransformText();
         }
 
         public string GenerateTable(IElement element)
         {
-            var table = new Table(element);
-            return table.TransformText();
+            var template = new Table(element);
+            return template.TransformText();
         }
 
-        public string GetMappedTextboxName(TextboxModel field)
+        public string GenerateInputTextbox(IElement element)
         {
-            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
-            {
-                foreach (var mappedEnd in mapping.MappedEnds)
-                {
-                    if (mappedEnd.TargetElement.Id == field.Id)
-                    {
-                        return mappedEnd.SourceElement.Name.ToCamelCase();
-                    }
-                }
-            }
-
-            return field.Name.ToCamelCase();
+            var template = new InputTextbox(element);
+            return template.TransformText();
         }
 
         public string GetMappedTextAreaName(TextAreaModel field)

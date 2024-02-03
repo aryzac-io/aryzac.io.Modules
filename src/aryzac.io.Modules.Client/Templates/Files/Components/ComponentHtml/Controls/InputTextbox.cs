@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadingOptions
+namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Controls
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -25,9 +25,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
+    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class TitleComputed : TitleComputedBase
+    public partial class InputTextbox : InputTextboxBase
     {
 #line hidden
         /// <summary>
@@ -35,85 +35,21 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\n");
+            this.Write("\r\n  <ui-input-textbox \r\n    v-model=\"model.");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
- var heading = Element.AsHeadingModel(); 
-            
-            #line default
-            #line hidden
-            this.Write("const title = computed(() => {\r\n");
-            
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-
-   var mappedColumn = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
-   if (mappedColumn is not null) { 
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedTextboxName(Model)));
             
             #line default
             #line hidden
+            this.Write("\" \r\n    :label=\"t(\'");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-
-      var mappedExpression = mappedColumn.MappingExpression;
-      foreach (var source in mappedColumn.Sources)
-      {
-        mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
-
-            
-            #line default
-            #line hidden
-            this.Write("  const ");
-            
-            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(" = model.");
-            
-            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(" || \'\';\r\n");
-            
-            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-
-      }
-
-            
-            #line default
-            #line hidden
-            this.Write("  const mappedExpression = `");
-            
-            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
-            
-            #line default
-            #line hidden
-            this.Write("`;\r\n  return mappedExpression;\r\n");
-            
-            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-  } else { 
-            
-            #line default
-            #line hidden
-            this.Write("  return t(\'");
-            
-            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(Element)));
             
             #line default
             #line hidden
-            this.Write(".title\');\r\n");
-            
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt"
-  } 
-            
-            #line default
-            #line hidden
-            this.Write("});\r\n");
+            this.Write(".label\')\" />\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -125,7 +61,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class TitleComputedBase
+    public class InputTextboxBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;
