@@ -12,8 +12,7 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <# if (GetCommandModels().Any()) { #>
-// Commands
-<# } #>
+// Commands<# } #>
 <#
   foreach (var command in GetCommandModels())
   {
@@ -37,19 +36,6 @@ const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = async (
   };
 <#
 	  }
-#>
-
-<#
-	foreach (var mapping in GetCommandMappings(command))
-    {
-        foreach (var mappedEnd in GetCommandMappingMappedEnds(mapping))
-        {
-            var source = GetSource(mappedEnd);
-
-	      #>  const <#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #> = <#= source #>.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>;
-          <#
-	    }
-	}
 #>
 
 	const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#

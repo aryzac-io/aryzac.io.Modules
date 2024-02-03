@@ -117,14 +117,35 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
         {
             var parameterMappings = action.Command.InternalElement.Mappings
                 .Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b")
-                .SelectMany(m => m.MappedEnds)
-                .Select(mappedEnd => $"item.{mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase()}")
-                .ToList();
+                .SelectMany(m => m.MappedEnds);
 
-            var parameters = string.Join(", ", parameterMappings);
+            var functionParameters = new Dictionary<string, string>();
 
-            return $@"action: async (item: {((IElement)action.Command.InternalElement.Mappings.First().MappedEnds.First().SourceElement).ParentElement.Name}) => {{
-      await {action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase()}({parameters});
+            foreach (var mappedEnd in parameterMappings)
+            {
+                var source = "";
+
+                switch (mappedEnd.SourceElement.SpecializationType)
+                {
+                    case "Component Parameter":
+                        source = "props";
+                        break;
+                    case "Component Model Field":
+                        source = "model";
+                        break;
+                    case "DTO-Field":
+                        source = "item";
+                        break;
+                }
+
+                if (!functionParameters.ContainsKey(source))
+                    functionParameters.Add(source, mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase());
+
+                source += ".";
+            }
+
+            return $@"action: async () => {{
+      await {action.Command.Mapping.Element.Name.ToPascalCase().ToCamelCase()}({ string.Join(", ", functionParameters.Select(kv => $"{kv.Key}.{kv.Value}")) });
     }},";
         }
 

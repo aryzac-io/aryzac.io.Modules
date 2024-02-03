@@ -49,11 +49,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
         private Commands commands;
         public string Commands => commands.TransformText();
 
-        private bool HasQueries()
+        private IEnumerable<ComponentCommandModel> HeadingCommands()
         {
             return Model.InternalElement.ChildElements
-                .GetElementsOfType(ComponentQueryModel.SpecializationTypeId, true)
-                .Any();
+                .GetElementsOfType(ComponentCommandModel.SpecializationTypeId, true)
+                .Select(x => new ComponentCommandModel(x))
+                .ToList();
         }
 
         private DtoTypeImports dtoTypeImports;
@@ -70,9 +71,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
             return heading.Actions.Actions.Any();
         }
 
-        public string GetComponentName()
+        public ComponentModel GetComponent()
         {
-            return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase();
+            return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).AsComponentModel();
         }
     }
 }

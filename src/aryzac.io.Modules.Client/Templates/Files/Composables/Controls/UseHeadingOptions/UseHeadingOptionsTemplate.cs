@@ -54,44 +54,98 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
             
             #line default
             #line hidden
-            this.Write("Options = async (props: ");
+            this.Write("Options = async (\r\n");
             
-            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponentName()));
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+ if (GetComponent().Parameters != null) { 
             
             #line default
             #line hidden
-            this.Write("Props, t: ComposerTranslation) => {\r\n\r\n");
+            this.Write("  props: ");
             
             #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
+            
+            #line default
+            #line hidden
+            this.Write("Props, \r\n");
+            
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+ } 
+            
+            #line default
+            #line hidden
+            
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+ if (GetComponent().Model != null) { 
+            
+            #line default
+            #line hidden
+            this.Write("  model: ");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
+            
+            #line default
+            #line hidden
+            this.Write("Model, \r\n");
+            
+            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+ } 
+            
+            #line default
+            #line hidden
+            this.Write("  t: ComposerTranslation\r\n) => {\r\n\r\n");
+            
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(CommandAndQueryServiceProxyComposables));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Commands));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Actions));
             
             #line default
             #line hidden
             this.Write("\r\n\r\nreturn {\r\n");
             
-            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
  if (HasActions()) { 
             
             #line default
             #line hidden
             this.Write("\tactions,\r\n");
             
-            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+ } 
+            
+            #line default
+            #line hidden
+            
+            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+ foreach (var command in HeadingCommands()) {
+            
+            #line default
+            #line hidden
+            this.Write("\t");
+            
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt"
  } 
             
             #line default
