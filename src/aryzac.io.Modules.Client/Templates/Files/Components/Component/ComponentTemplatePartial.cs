@@ -5,6 +5,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Xml.Linq;
 using Aryzac.IO.Modules.Client.Api;
+using Aryzac.IO.Modules.Client.Templates.Files.Components.Shared;
 using Intent.Engine;
 using Intent.Metadata.Models;
 using Intent.Modelers.Types.ServiceProxies.Api;
@@ -33,6 +34,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         {
             Types = new TypeScriptTypeResolver();
 
+            htmlTemplate = new HtmlTemplate(model.InternalElement);
             GetAllComposables();
         }
 
@@ -45,14 +47,19 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             );
         }
 
+        private HtmlTemplate htmlTemplate;
+        public string HtmlTemplate => htmlTemplate.TransformText();
+
         public List<ComponentQueryModel> Queries => Model.InternalElement.ChildElements
             .GetElementsOfType(ComponentQueryModel.SpecializationTypeId, true)
             .Select(x => new ComponentQueryModel(x))
+            .Where(m => m.Mapping is not null)
             .ToList();
 
         public List<ComponentCommandModel> Commands => Model.InternalElement.ChildElements
             .GetElementsOfType(ComponentCommandModel.SpecializationTypeId, true)
             .Select(x => new ComponentCommandModel(x))
+            .Where(m => m.Mapping is not null)
             .ToList();
 
         public List<ServiceProxyModel> CommandsAndQueries
@@ -69,11 +76,11 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
 
                 var response = new List<ServiceProxyModel>();
                 if (commands is not null)
-                    response.AddRange(commands.Select(m => m.Mapping.Element.AsOperationModel().ParentService));
+                    response.AddRange(commands.Select(m => m.Mapping?.Element.AsOperationModel().ParentService));
                 if (queries is not null)
-                    response.AddRange(queries.Select(m => m.Mapping.Element.AsOperationModel().ParentService));
+                    response.AddRange(queries.Select(m => m.Mapping?.Element.AsOperationModel().ParentService));
 
-                return response.Distinct().ToList();
+                return response.Where(m => m is not null).Distinct().ToList();
             }
         }
         public IEnumerable<IElement> GetAllComposables()

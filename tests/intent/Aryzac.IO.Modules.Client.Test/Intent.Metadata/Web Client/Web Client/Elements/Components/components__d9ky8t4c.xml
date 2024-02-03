@@ -16,6 +16,7 @@
       <name>Clients</name>
       <display>Clients</display>
       <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>7ec319b2-7453-4c43-8a2d-1358eb1f91e2</parentFolderId>
@@ -23,7 +24,30 @@
       <packageName>Web Client</packageName>
       <stereotypes />
       <metadata />
-      <childElements />
+      <childElements>
+        <childElement id="0e1c5b21-192a-48ee-8d95-c22474031496" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <name>ListClients</name>
+          <display>ListClients</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>99bd76b0-a805-45c4-aeb4-e2ea78c9f290</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="9d350135-b53e-4ae7-86fd-eb7004522d79" name="Component Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+              <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+              <properties>
+                <property name="59f5fc1d-727b-43c7-a332-655d160ebc23" display="Separate Template" value="false" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
     </childElement>
   </childElements>
 </class>

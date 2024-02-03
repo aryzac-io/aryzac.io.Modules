@@ -40,8 +40,6 @@ import type { <#= endpoint.InternalElement.Name #> } from '~/structs/dto/<#= ((I
 #>
 
 <# foreach (var composable in GetAllComposables()) { 
-   // components/{Model.GetPath()}/use{Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{Model.Name.ToPascalCase()}Options
-   // ~/composables/components/Clients/EditClient/useEditClientHeadingOptions
     var importPath = $"~/composables/components/{composable.GetComposablePath()}/use{composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{composable.Name.ToPascalCase()}Options";
 #>
 import { use<#= composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()#><#= composable.Name.ToPascalCase() #>Options } from '<#= importPath #>'

@@ -35,9 +35,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Shared
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\n");
+            this.Write("\r\n<div>\r\n");
             
-            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
  if (Model.View != null) {
   foreach (var component in Model.View.InternalElement.ChildElements) {
     if (component.IsHeadingModel()) { 
@@ -46,42 +46,42 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Shared
             #line hidden
             this.Write("    ");
             
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(component.AsHeadingModel())));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
  } else if (component.IsSectionModel()) { 
             
             #line default
             #line hidden
             this.Write("    ");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
+            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(component.AsSectionModel())));
             
             #line default
             #line hidden
             this.Write("  \r\n");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
+            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
  } else if (component.IsTableModel()) { 
             
             #line default
             #line hidden
             this.Write("  ");
             
-            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
+            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(component.AsTableModel())));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\HtmlTemplate.tt"
   }
   }
 }
@@ -89,6 +89,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Shared
             
             #line default
             #line hidden
+            this.Write("</div>");
             return this.GenerationEnvironment.ToString();
         }
     }

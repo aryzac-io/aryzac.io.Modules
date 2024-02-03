@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Aryzac.IO.Modules.Client.Api;
 using Intent.Engine;
 using Intent.Modules.Common;
@@ -31,10 +32,11 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Structs.Components.Models
                 {
                     @interface.Export();
 
-                    foreach (var property in Model.Model.Properties)
-                    {
-                        @interface.AddField(property.Name.ToPascalCase().ToCamelCase(), GetTypeName(property.TypeReference));
-                    }
+                    if (Model.Model?.Properties is not null)
+                        foreach (var property in Model.Model.Properties)
+                        {
+                            @interface.AddField(property.Name.ToPascalCase().ToCamelCase(), GetTypeName(property.TypeReference));
+                        }
                 });
         }
 

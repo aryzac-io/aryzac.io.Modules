@@ -33,14 +33,47 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Template
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n<template src=\"./");
+            this.Write("\r\n");
             
             #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Template\Template.tt"
+ Model.TryGetComponentSettings(out var componentSettings); 
+            
+            #line default
+            #line hidden
+            
+            #line 13 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Template\Template.tt"
+ if (componentSettings is not null && componentSettings.SeparateTemplate()) { 
+            
+            #line default
+            #line hidden
+            this.Write("<template src=\"./");
+            
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Template\Template.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
             
             #line default
             #line hidden
-            this.Write(".template.html\" />");
+            this.Write(".template.html\" />\r\n");
+            
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Template\Template.tt"
+ } else { 
+            
+            #line default
+            #line hidden
+            this.Write("<template>\r\n");
+            
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Template\Template.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(HtmlTemplate));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n</template>\r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Template\Template.tt"
+ } 
+            
+            #line default
+            #line hidden
             return this.GenerationEnvironment.ToString();
         }
     }

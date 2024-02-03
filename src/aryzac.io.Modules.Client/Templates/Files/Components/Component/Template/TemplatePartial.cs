@@ -5,6 +5,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Xml.Linq;
 using Aryzac.IO.Modules.Client.Api;
+using Aryzac.IO.Modules.Client.Templates.Files.Components.Shared;
 using Intent.Engine;
 using Intent.Metadata.Models;
 using Intent.Modelers.Types.ServiceProxies.Api;
@@ -23,7 +24,10 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Template
     {
         public Template(IOutputTarget outputTarget, ComponentModel model) : base(outputTarget, model)
         {
-
+            htmlTemplate = new HtmlTemplate(model.InternalElement);
         }
+
+        private HtmlTemplate htmlTemplate;
+        public string HtmlTemplate => htmlTemplate.TransformText();
     }
 }

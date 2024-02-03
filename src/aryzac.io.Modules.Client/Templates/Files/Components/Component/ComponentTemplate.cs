@@ -210,8 +210,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             
             #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
  foreach (var composable in GetAllComposables()) { 
-   // components/{Model.GetPath()}/use{Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{Model.Name.ToPascalCase()}Options
-   // ~/composables/components/Clients/EditClient/useEditClientHeadingOptions
     var importPath = $"~/composables/components/{composable.GetComposablePath()}/use{composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{composable.Name.ToPascalCase()}Options";
 
             
@@ -219,27 +217,27 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             #line hidden
             this.Write("import { use");
             
-            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
+            #line 45 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()));
             
             #line default
             #line hidden
             
-            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
+            #line 45 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(composable.Name.ToPascalCase()));
             
             #line default
             #line hidden
             this.Write("Options } from \'");
             
-            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
+            #line 45 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(importPath));
             
             #line default
             #line hidden
             this.Write("\'\r\n");
             
-            #line 48 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
+            #line 46 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\.\Script\./TypeImport.tt"
  } 
             
             #line default
@@ -303,7 +301,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             
             #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Script/Script.tt"
    
-  if (Model.Query != null)
+  if (Model.Query is not null && Model.Query.Mapping is not null)
   {
 
             
@@ -468,7 +466,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             
             #line 75 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Script/Script.tt"
 
-  if (Model.Query != null)
+  if (Model.Query is not null && Model.Query.Mapping is not null)
   {
 
             
@@ -485,14 +483,47 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
             #line hidden
             this.Write("});\r\n</script>\r\n");
             this.Write("\r\n");
-            this.Write("\r\n<template src=\"./");
+            this.Write("\r\n");
             
             #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Template/Template.tt"
+ Model.TryGetComponentSettings(out var componentSettings); 
+            
+            #line default
+            #line hidden
+            
+            #line 13 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Template/Template.tt"
+ if (componentSettings is not null && componentSettings.SeparateTemplate()) { 
+            
+            #line default
+            #line hidden
+            this.Write("<template src=\"./");
+            
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Template/Template.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
             
             #line default
             #line hidden
-            this.Write(".template.html\" />");
+            this.Write(".template.html\" />\r\n");
+            
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Template/Template.tt"
+ } else { 
+            
+            #line default
+            #line hidden
+            this.Write("<template>\r\n");
+            
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Template/Template.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(HtmlTemplate));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n</template>\r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\./Template/Template.tt"
+ } 
+            
+            #line default
+            #line hidden
             return this.GenerationEnvironment.ToString();
         }
     }

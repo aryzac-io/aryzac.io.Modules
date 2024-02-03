@@ -11,6 +11,7 @@
 <#@ import namespace="Intent.Templates" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
+<div>
 <# if (Model.View != null) {
   foreach (var component in Model.View.InternalElement.ChildElements) {
     if (component.IsHeadingModel()) { #>
@@ -23,3 +24,4 @@
   }
 }
 #>
+</div>

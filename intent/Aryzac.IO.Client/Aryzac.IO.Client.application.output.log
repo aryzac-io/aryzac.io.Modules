@@ -108,6 +108,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModelExtensions#854137dd-0e21-4076-adb9-404c4b1a782e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/ComponentModelStereotypeExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ComponentModelStereotypeExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>ff125392-4758-4f89-8351-5af71083ed0c</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.Templates.Api.ApiElementModel#44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Api/ComponentParameterModel.cs</ApplicationRelativeFilePath>

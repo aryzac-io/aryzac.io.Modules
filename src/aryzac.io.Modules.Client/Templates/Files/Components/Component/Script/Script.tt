@@ -27,7 +27,7 @@ const <#= commandOrQuery.Name.ToPascalCase().ToCamelCase() #>Proxy = use<#= comm
 #>
 
 <#   
-  if (Model.Query != null)
+  if (Model.Query is not null && Model.Query.Mapping is not null)
   {
 #>
 const query = await <#= Model.Query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= Model.Query.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
@@ -73,7 +73,7 @@ const <#= composable.Name.ToPascalCase().ToCamelCase() #>Options = await use<#= 
 
 onMounted(() => {
 <#
-  if (Model.Query != null)
+  if (Model.Query is not null && Model.Query.Mapping is not null)
   {
 #>
   query.execute();

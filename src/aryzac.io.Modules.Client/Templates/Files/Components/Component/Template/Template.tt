@@ -9,4 +9,11 @@
 <#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
 <#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
 
+<# Model.TryGetComponentSettings(out var componentSettings); #>
+<# if (componentSettings is not null && componentSettings.SeparateTemplate()) { #>
 <template src="./<#= Model.Name #>.template.html" />
+<# } else { #>
+<template>
+<#= HtmlTemplate #>
+</template>
+<# } #>
