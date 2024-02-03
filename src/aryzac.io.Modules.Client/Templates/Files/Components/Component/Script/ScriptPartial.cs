@@ -23,7 +23,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
     {
         public Script(IOutputTarget outputTarget, ComponentModel model) : base(outputTarget, model)
         {
-
         }
     }
 }

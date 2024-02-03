@@ -1,4 +1,5 @@
 ﻿using Aryzac.IO.Modules.Client.Api;
+using Intent.Metadata.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -77,10 +78,10 @@ namespace Aryzac.IO.Modules.Client
             return path;
         }
 
-        public static string GetPath(this HeadingModel select)
+        public static string GetPath(this HeadingModel heading)
         {
             var pathSegments = new List<string>();
-            var currentNode = select.InternalElement;
+            var currentNode = heading.InternalElement;
 
             var skippedSpecializationTypes = new List<string>()
             {
@@ -111,16 +112,56 @@ namespace Aryzac.IO.Modules.Client
             return path;
         }
 
-        public static string GetPath(this LabelModel select)
+        public static string GetPath(this LabelModel label)
         {
             var pathSegments = new List<string>();
-            var currentNode = select.InternalElement;
+            var currentNode = label.InternalElement;
 
             var skippedSpecializationTypes = new List<string>()
             {
                 ComponentViewModel.SpecializationTypeId,
                 SectionModel.SpecializationTypeId,
                 LabelModel.SpecializationTypeId,
+            };
+
+            while (currentNode != null)
+            {
+                if (currentNode.SpecializationTypeId == ComponentsModel.SpecializationTypeId)
+                {
+                    break;
+                }
+
+                if (!skippedSpecializationTypes.Contains(currentNode.SpecializationTypeId))
+                {
+                    pathSegments.Add(currentNode.Name);
+                }
+
+                currentNode = currentNode.ParentElement;
+            }
+
+            pathSegments.Reverse(); // Reverse the order of the path segments
+
+            var path = "/" + string.Join("/", pathSegments); // Join the path segments with '/'
+
+            return path;
+        }
+
+
+
+        public static string GetComposablePath(this IElement element)
+        {
+            var pathSegments = new List<string>();
+            var currentNode = element;
+
+            var skippedSpecializationTypes = new List<string>()
+            {
+                ComponentViewModel.SpecializationTypeId,
+                SectionModel.SpecializationTypeId,
+                HeadingModel.SpecializationTypeId,
+                LabelModel.SpecializationTypeId,
+                HeadingModel.SpecializationTypeId,
+                SelectModel.SpecializationTypeId,
+                TableModel.SpecializationTypeId,
             };
 
             while (currentNode != null)

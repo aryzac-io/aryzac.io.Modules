@@ -72,6 +72,9 @@ watchEffect(async () => {
   }
 #>
 
+<# foreach (var composable in GetAllComposables()) { #>
+const <#= composable.Name.ToPascalCase().ToCamelCase() #>Options = await use<#= composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()#><#= composable.Name.ToPascalCase() #>Options(<#= GetComposableMethodParameters(composable) #>);
+<# } #>
 
 onMounted(() => {
 <#

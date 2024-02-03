@@ -188,6 +188,44 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             
             #line default
             #line hidden
+            this.Write("\r\n");
+            
+            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+ foreach (var composable in GetAllComposables()) { 
+   // components/{Model.GetPath()}/use{Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{Model.Name.ToPascalCase()}Options
+   // ~/composables/components/Clients/EditClient/useEditClientHeadingOptions
+    var importPath = $"~/composables/components/{composable.GetComposablePath()}/use{composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{composable.Name.ToPascalCase()}Options";
+
+            
+            #line default
+            #line hidden
+            this.Write("import { use");
+            
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(composable.Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            this.Write("Options } from \'");
+            
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(importPath));
+            
+            #line default
+            #line hidden
+            this.Write("\'\r\n");
+            
+            #line 48 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+ } 
+            
+            #line default
+            #line hidden
             return this.GenerationEnvironment.ToString();
         }
     }

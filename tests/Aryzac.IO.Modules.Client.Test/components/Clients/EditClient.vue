@@ -1,21 +1,25 @@
 <i18n lang="yaml" src="@/locales/components/Clients/EditClient.i18n.yaml" />
 
 <script setup lang="ts">
-import type { EditClientProps } from "~/structs/components/clients/edit-client.props";
-import type { EditClientModel } from "~/structs/components/clients/edit-client.model";
 
-import type { ClientDto } from "~/structs/dto/clients/client.dto";
-import { useEditClientHeadingOptions } from "~/composables/components/Clients/EditClient/useEditClientHeadingOptions";
+
+import type { EditClientProps } from '~/structs/components/clients/edit-client.props';
+import type { EditClientModel } from '~/structs/components/clients/edit-client.model';
+
+import type { ClientDto } from '~/structs/dto/clients/client.dto';
+
+
+import { useEditClientHeadingOptions } from '~/composables/components//Clients/EditClient/useEditClientHeadingOptions'
 
 const { t } = useI18n();
 
+
 const props = defineProps<EditClientProps>();
+
 
 const clientsServiceProxy = useClientsServiceProxy();
 
-const query = await clientsServiceProxy.getClientByIdQuery(props.clientId);
-
-const model = reactive({} as EditClientModel);
+const query = await clientsServiceProxy.getClientByIdQuery(props.clientId);const model = reactive({} as EditClientModel);
 
 watchEffect(async () => {
   if (query.data.value) {
@@ -29,15 +33,18 @@ watchEffect(async () => {
   }
 });
 
-const heading = await useEditClientHeadingOptions(props, model);
+const headingOptions = await useEditClientHeadingOptions(props, model);
 
 onMounted(() => {
   query.execute();
 });
 </script>
 
-<template>
-  <ui-heading-page :title="heading.title.value" />
 
-  {{ model }}
+<template>
+  <ui-heading-page
+    :title="headingTitle"
+    :attributes="headingAttributes"
+    :actions="headingActions"
+  />
 </template>

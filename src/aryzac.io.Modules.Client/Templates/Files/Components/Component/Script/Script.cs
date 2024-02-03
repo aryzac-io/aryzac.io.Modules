@@ -189,6 +189,44 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             
             #line default
             #line hidden
+            this.Write("\r\n");
+            
+            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\./TypeImport.tt"
+ foreach (var composable in GetAllComposables()) { 
+   // components/{Model.GetPath()}/use{Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{Model.Name.ToPascalCase()}Options
+   // ~/composables/components/Clients/EditClient/useEditClientHeadingOptions
+    var importPath = $"~/composables/components/{composable.GetComposablePath()}/use{composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()}{composable.Name.ToPascalCase()}Options";
+
+            
+            #line default
+            #line hidden
+            this.Write("import { use");
+            
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\./TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\./TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(composable.Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            this.Write("Options } from \'");
+            
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\./TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(importPath));
+            
+            #line default
+            #line hidden
+            this.Write("\'\r\n");
+            
+            #line 48 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\./TypeImport.tt"
+ } 
+            
+            #line default
+            #line hidden
             this.Write("\r\nconst { t } = useI18n();\r\n\r\n");
             this.Write("\r\n");
             
@@ -385,9 +423,50 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             
             #line default
             #line hidden
-            this.Write("\r\n\r\nonMounted(() => {\r\n");
+            this.Write("\r\n");
+            
+            #line 75 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
+ foreach (var composable in GetAllComposables()) { 
+            
+            #line default
+            #line hidden
+            this.Write("const ");
+            
+            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(composable.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write("Options = await use");
+            
+            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            
+            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(composable.Name.ToPascalCase()));
+            
+            #line default
+            #line hidden
+            this.Write("Options(");
+            
+            #line 76 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetComposableMethodParameters(composable)));
+            
+            #line default
+            #line hidden
+            this.Write(");\r\n");
             
             #line 77 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
+ } 
+            
+            #line default
+            #line hidden
+            this.Write("\r\nonMounted(() => {\r\n");
+            
+            #line 80 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
 
   if (Model.Query != null)
   {
@@ -397,7 +476,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             #line hidden
             this.Write("  query.execute();\r\n");
             
-            #line 82 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
+            #line 85 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\Script.tt"
 
   }
 

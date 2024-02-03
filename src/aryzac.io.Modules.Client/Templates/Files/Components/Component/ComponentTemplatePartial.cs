@@ -32,6 +32,8 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public ComponentTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
             Types = new TypeScriptTypeResolver();
+
+            GetAllComposables();
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
@@ -73,6 +75,45 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
 
                 return response.Distinct().ToList();
             }
+        }
+        public IEnumerable<IElement> GetAllComposables()
+        {
+            var specializationTypes = new List<string>()
+            {
+                HeadingModel.SpecializationTypeId,
+                LabelModel.SpecializationTypeId,
+                SelectModel.SpecializationTypeId,
+                TableModel.SpecializationTypeId,
+                
+                // No option composables exist for these types (yet)
+                //SectionModel.SpecializationTypeId,
+                //TextboxModel.SpecializationTypeId,
+                //CheckboxModel.SpecializationTypeId,
+                //RadioButtonModel.SpecializationTypeId,
+                //TextAreaModel.SpecializationTypeId,
+            };
+
+            var controls = Model.InternalElement.ChildElements
+                .GetMatchedElements(m => specializationTypes.Contains(m.SpecializationTypeId), true);
+
+            return controls;
+        }
+
+        public string GetComposableMethodParameters(IElement element)
+        {
+            var functionParameters = new List<string>();
+
+            if (Model.InternalElement.ChildElements.GetElementsOfType(ComponentParameterModel.SpecializationTypeId, true).Any())
+            {
+                functionParameters.Add($"props");
+            }
+
+            if (Model.InternalElement.ChildElements.GetElementsOfType(ComponentModelModel.SpecializationTypeId, true).Any())
+            {
+                functionParameters.Add($"model");
+            }
+
+            return string.Join(", ", functionParameters);
         }
 
         public string GetMappedColumnFieldName(ColumnModel column)
