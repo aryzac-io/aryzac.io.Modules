@@ -68,9 +68,43 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             
             #line default
             #line hidden
-            this.Write("\r\n");
+            
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+ if (Model.Model != null) { 
+            
+            #line default
+            #line hidden
+            this.Write("import type { ");
             
             #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
+            
+            #line default
+            #line hidden
+            this.Write("Model } from \'~/structs/components/");
+            
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write("/");
+            
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name.ToKebabCase()));
+            
+            #line default
+            #line hidden
+            this.Write(".model\';\r\n");
+            
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+ } 
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
  
   foreach (var query in Queries)
   {
@@ -81,28 +115,28 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             #line hidden
             this.Write("import type { ");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(endpoint.ReturnType.Element.Name));
             
             #line default
             #line hidden
             this.Write(" } from \'~/structs/dto/");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)endpoint.ReturnType.Element).ParentElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("/");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)endpoint.ReturnType.Element).MappedElement.Element.Name.ToKebabCase()));
             
             #line default
             #line hidden
             this.Write(".dto\';\r\n");
             
-            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
 
   }
 
@@ -111,7 +145,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             #line hidden
             this.Write("\r\n");
             
-            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
  
   foreach (var command in Commands)
   {
@@ -125,28 +159,28 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             #line hidden
             this.Write("import type { ");
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(endpoint.InternalElement.Name));
             
             #line default
             #line hidden
             this.Write(" } from \'~/structs/dto/");
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(((IElement)bodyParam.TypeReference.Element).ParentElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("/");
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(bodyParam.TypeReference.Element.Name.ToKebabCase()));
             
             #line default
             #line hidden
             this.Write(".dto\';\r\n");
             
-            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
+            #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
  
     } 
   }

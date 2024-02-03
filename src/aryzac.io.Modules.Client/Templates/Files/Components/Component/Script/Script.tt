@@ -26,80 +26,42 @@ const <#= commandOrQuery.Name.ToPascalCase().ToCamelCase() #>Proxy = use<#= comm
   }
 #>
 
-<#
-  if (Queries.Any())
-  {
-#>
-// Queries<#   
-  }
-#>
-
-<#
-  foreach (var query in Queries)
-  {
-#>const { 
-  data: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Data, 
-  pending: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Pending, 
-  error: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Error , 
-  execute: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Execute, 
-  refresh: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Refresh, 
-  status: <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Status 
-} = await <#= query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= query.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
-
-	foreach (var mapping in query.InternalElement.Mappings)
-    {
-        foreach (var mappedEnd in mapping.MappedEnds)
-        {
-	      #>props.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #><#
-          if (mapping.MappedEnds.Last() != mappedEnd)
-		  {
-		  #>, <#
-		  }
-	    }
-	}
-	#>);
 <#   
-  }
+  if (Model.Query != null)
+  {
 #>
+const query = await <#= Model.Query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= Model.Query.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
 
+    foreach (var mapping in Model.Query.InternalElement.Mappings)
+    {
+      foreach (var mappedEnd in mapping.MappedEnds)
+      {
+	    #>props.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #><#
+        if (mapping.MappedEnds.Last() != mappedEnd)
+		{
+		#>, <#
+		}
+	  }
+	}
+	#>);<#
+  } #>
 <#
   if (Model.Model != null)
   {
 #>
-// Model
-interface ModelInterface {
-<#  
-    foreach (var property in Model.Model.Properties)
-    {
-#>
-  <#= property.Name.ToPascalCase().ToCamelCase() #><#= property.TypeReference.IsNullable ? "?" : "" #>: <#= GetTypeName(property.TypeReference) #>;
-<#
-    }
-#>
-}
-
-const model: ModelInterface = reactive({
-<#  
-    foreach (var property in Model.Model.Properties)
-    {
-#>
-  <#= property.Name.ToPascalCase().ToCamelCase() #>: "",
-<#
-    }
-#>
-});
+const model = reactive({} as <#= Model.Name #>Model);
 
 <#   
     if (Model.Query != null)
     {
 #>
 watchEffect(async () => {
-  if (<#= Model.Query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value) {
+  if (query.data.value) {
 <#  
       foreach (var property in Model.Model.Properties)
       {
 #>
-    model.<#= property.Name.ToPascalCase().ToCamelCase() #> = <#= Model.Query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= Model.Query.Mapping.Element.Name.ToPascalCase() #>Data.value.<#= GetMappedPropertyName(property) #>;
+    model.<#= property.Name.ToPascalCase().ToCamelCase() #> = query.data.value.<#= GetMappedPropertyName(property) #>;
 <#
       }
     }
@@ -110,107 +72,13 @@ watchEffect(async () => {
   }
 #>
 
-<#
-  if (Commands.Any())
-  {
-#>
-// Commands<#   
-  }
-#>
-
-<#
-  foreach (var command in Commands)
-  {
-    var endpoint = HttpEndpointModelFactory.GetEndpoint((IElement)command.Mapping.Element.AsOperationModel().Mapping.Element);
-    var commandParameter = command.InternalElement.ChildElements.FirstOrDefault(m => m.SpecializationType == "Parameter" && m.Name == "command");
-	
-#>const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = async (<#
-	foreach (var mapping in command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
-    {
-        foreach (var mappedEnd in mapping.MappedEnds)
-        {
-            var source = "props";
-
-            switch (mappedEnd.SourceElement.SpecializationType)
-            {
-                case "DTO-Field":
-#><#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #>: <#= GetTypeName(mappedEnd.TargetElement.TypeReference) #><#
-                if (mapping.MappedEnds.Last() != mappedEnd)
-		        {
-		          #>, <#
-		        }
-                    break;
-            }
-	    }
-	}
-#>) => {
-
-<#
-	  foreach (var parameter in endpoint.Inputs.Where(m => m.TypeReference.Element.SpecializationType == "Command"))
-	  {
-#>
-  const command: <#= GetTypeName(parameter.TypeReference) #> = {
-<#  
-    foreach (var property in ((IElement)commandParameter.TypeReference.Element).ChildElements)
-    {
-#>
-    <#= property.Name.ToPascalCase().ToCamelCase() #>: model.<#= GetMappedName(property, command) #>,
-<#
-    }
-#>
-  };
-<#
-	  }
-#>
-
-<#
-	foreach (var mapping in command.InternalElement.Mappings.Where(m => m.TypeId == "0ca6626b-5dc2-42f4-a0dd-2ff7aabd684b"))
-    {
-        foreach (var mappedEnd in mapping.MappedEnds.Where(m => m.SourceElement.SpecializationType != "DTO-Field"))
-        {
-            var source = "props";
-
-            switch (mappedEnd.SourceElement.SpecializationType)
-            {
-                case "Component Parameter":
-                    source = "props";
-                    break;
-                case "Component Model Field":
-                    source = "model";
-                    break;
-            }
-
-	      #>  const <#= mappedEnd.TargetElement.Name.ToPascalCase().ToCamelCase() #> = <#= source #>.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>;
-          <#
-	    }
-	}
-#>
-
-	const <#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #> = await <#= command.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
-
-	if (endpoint != null)
-	{
-	  foreach (var parameter in endpoint.Inputs)
-	  {
-	    #><#= parameter.Name.ToPascalCase().ToCamelCase() #><#
-		if (endpoint.Inputs.Last() != parameter)
-		{
-		#>, <#
-		}
-	  }
-	}
-	#>);
-};
-<#   
-  }
-#>
 
 onMounted(() => {
 <#
-  foreach (var query in Queries)
+  if (Model.Query != null)
   {
 #>
-  <#= query.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #><#= query.Mapping.Element.Name.ToPascalCase() #>Execute();
+  query.execute();
 <#
   }
 #>

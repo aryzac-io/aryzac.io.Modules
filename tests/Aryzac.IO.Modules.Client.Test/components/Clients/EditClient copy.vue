@@ -1,11 +1,11 @@
 <i18n lang="yaml" src="@/locales/components/Clients/EditClient.i18n.yaml" />
 
 <script setup lang="ts">
-import type { EditClientProps } from "~/structs/components/clients/edit-client.props";
+import { useEditClientHeadingOptions } from "~/composables/components/Clients/EditClient/useEditClientHeadingOptions";
 import type { EditClientModel } from "~/structs/components/clients/edit-client.model";
+import type { EditClientProps } from "~/structs/components/clients/edit-client.props";
 
 import type { ClientDto } from "~/structs/dto/clients/client.dto";
-import { useEditClientHeadingOptions } from "~/composables/components/Clients/EditClient/useEditClientHeadingOptions";
 
 const { t } = useI18n();
 
@@ -15,7 +15,15 @@ const clientsServiceProxy = useClientsServiceProxy();
 
 const query = await clientsServiceProxy.getClientByIdQuery(props.clientId);
 
-const model = reactive({} as EditClientModel);
+const model: EditClientModel = reactive({
+  id: "",
+  firstName: "",
+  lastName: "",
+  otherNames: "",
+  titleId: "",
+  receivePromotions: false,
+  notes: "",
+});
 
 watchEffect(async () => {
   if (query.data.value) {
@@ -38,6 +46,4 @@ onMounted(() => {
 
 <template>
   <ui-heading-page :title="heading.title.value" />
-
-  {{ model }}
 </template>

@@ -12,6 +12,9 @@
 <# if (Model.Parameters != null) { #>
 import type { <#= Model.Name #>Props } from '~/structs/components/<#= Model.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #>/<#= Model.Name.ToKebabCase() #>.props';
 <# } #>
+<# if (Model.Model != null) { #>
+import type { <#= Model.Name #>Model } from '~/structs/components/<#= Model.InternalElement.ParentElement.Name.ToPascalCase().ToCamelCase() #>/<#= Model.Name.ToKebabCase() #>.model';
+<# } #>
 
 <# 
   foreach (var query in Queries)
