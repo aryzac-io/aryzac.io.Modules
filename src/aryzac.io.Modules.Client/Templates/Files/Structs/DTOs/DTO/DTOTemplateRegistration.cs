@@ -37,7 +37,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Structs.DTOs.DTO
         [IntentManaged(Mode.Merge, Body = Mode.Ignore, Signature = Mode.Fully)]
         public override IEnumerable<DTOModel> GetModels(IApplication application)
         {
-            return _metadataManager.WebClient(application).GetMappedServiceProxyDTOModels();
+            return _metadataManager.WebClient(application).GetDTOModels();
         }
     }
 }
