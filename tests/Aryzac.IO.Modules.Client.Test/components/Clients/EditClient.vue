@@ -30,10 +30,4 @@ onMounted(() => {
 });
 </script>
 
-<template>
-  <ui-heading-page
-    :title="headingTitle"
-    :attributes="headingAttributes"
-    :actions="headingActions"
-  />
-</template>
+<template src="./EditClient.template.html" />

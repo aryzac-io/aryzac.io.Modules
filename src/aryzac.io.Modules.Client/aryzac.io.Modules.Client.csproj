@@ -8,6 +8,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Intent.Modules.Common" Version="3.5.0" />
+    <PackageReference Include="Intent.Modules.Common.Html" Version="3.3.0" />
     <PackageReference Include="Intent.Modules.Common.Types" Version="3.3.9" />
     <PackageReference Include="Intent.Modules.Common.TypeScript" Version="3.4.3" />
     <PackageReference Include="Intent.Modules.Metadata.WebApi" Version="4.1.1" />
@@ -183,6 +184,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>UseLabelOptionsTemplate.tt</DependentUpon>
     </Compile>
+    <Compile Update="Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentHtmlTemplate.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="Templates\Files\Components\Component\Script\Properties.tt">
@@ -312,6 +318,10 @@
     <None Update="Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>UseLabelOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentHtmlTemplate.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

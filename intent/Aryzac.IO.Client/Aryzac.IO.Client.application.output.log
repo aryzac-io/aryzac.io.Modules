@@ -556,6 +556,38 @@
     </FileLog>
     <FileLog>
       <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>ModuleBuilder.Html.Templates.HtmlFileTemplate.T4Template.PreProcessed#9cf084b7-9d23-46b1-b087-23abb7fc827e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Components/ComponentHtml/ComponentHtmlTemplate.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Components/ComponentHtml/ComponentHtmlTemplate.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Html.Templates.HtmlFileTemplate#9cf084b7-9d23-46b1-b087-23abb7fc827e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Components/ComponentHtml/ComponentHtmlTemplate.tt</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Components/ComponentHtml/ComponentHtmlTemplate.tt</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.Html.Templates.HtmlFileTemplatePartial#9cf084b7-9d23-46b1-b087-23abb7fc827e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Components/ComponentHtml/ComponentHtmlTemplatePartial.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Components/ComponentHtml/ComponentHtmlTemplatePartial.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
+      <CorrelationId>Intent.ModuleBuilder.TemplateRegistration.FilePerModel#9cf084b7-9d23-46b1-b087-23abb7fc827e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Components/ComponentHtml/ComponentHtmlTemplateRegistration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Files/Components/ComponentHtml/ComponentHtmlTemplateRegistration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2f58b796-4fac-480b-83fe-20ff5541f822</ProjectId>
       <CorrelationId>Intent.ModuleBuilder.ProjectItemTemplate.Partial#1d2d62d6-9683-4ef7-8645-e71f05733cb1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/Aryzac.IO.Modules.Client/Templates/Files/Components/ComponentI18n/ComponentI18nTemplatePartial.cs</ApplicationRelativeFilePath>

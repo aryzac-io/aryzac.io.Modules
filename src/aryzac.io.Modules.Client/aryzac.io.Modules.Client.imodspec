@@ -16,6 +16,10 @@
       <role>Default</role>
       <location></location>
     </template>
+    <template id="Aryzac.IO.Modules.Client.Files.Components.ComponentHtml" externalReference="9cf084b7-9d23-46b1-b087-23abb7fc827e">
+      <role>Default</role>
+      <location></location>
+    </template>
     <template id="Aryzac.IO.Modules.Client.Files.Components.Layout.Components" externalReference="92d3ff7c-d424-49a3-bc47-f0207b674c13">
       <role>Default</role>
       <location></location>
@@ -94,6 +98,7 @@
   <moduleSettings></moduleSettings>
   <dependencies>
     <dependency id="Intent.Common" version="3.5.0" />
+    <dependency id="Intent.Common.Html" version="3.3.0" />
     <dependency id="Intent.Common.Types" version="3.3.9" />
     <dependency id="Intent.Common.TypeScript" version="3.4.3" />
     <dependency id="Intent.Metadata.WebApi" version="4.4.1" />

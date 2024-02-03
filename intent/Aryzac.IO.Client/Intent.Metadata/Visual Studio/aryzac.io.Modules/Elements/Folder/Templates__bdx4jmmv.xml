@@ -261,5 +261,47 @@
       </metadata>
       <childElements />
     </childElement>
+    <childElement id="f0d9dc54-605f-4934-9c2d-8305c76e8c4f" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.ModuleBuilder.Html.Templates.HtmlFileTemplate</name>
+      <display>Intent.ModuleBuilder.Html.Templates.HtmlFileTemplate</display>
+      <externalReference>Intent.ModuleBuilder.Html</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2f58b796-4fac-480b-83fe-20ff5541f822</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="874e4714-dcba-474b-8643-d52a11ef652f" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.ModuleBuilder.Html.Templates.HtmlFileTemplatePartial</name>
+      <display>Intent.ModuleBuilder.Html.Templates.HtmlFileTemplatePartial</display>
+      <externalReference>Intent.ModuleBuilder.Html</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2f58b796-4fac-480b-83fe-20ff5541f822</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="e564d467-73b3-4293-b818-9dca0f212e52" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>ModuleBuilder.Html.Templates.HtmlFileTemplate.T4Template.PreProcessed</name>
+      <display>ModuleBuilder.Html.Templates.HtmlFileTemplate.T4Template.PreProcessed</display>
+      <externalReference>Intent.ModuleBuilder.Html</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2f58b796-4fac-480b-83fe-20ff5541f822</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
   </childElements>
 </class>
