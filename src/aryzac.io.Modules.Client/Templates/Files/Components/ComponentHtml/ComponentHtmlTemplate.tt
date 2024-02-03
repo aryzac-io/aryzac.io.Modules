@@ -9,14 +9,11 @@
 <#@ import namespace="Intent.Metadata.Models" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
+
 <# if (Model.View != null) {
   foreach (var component in Model.View.InternalElement.ChildElements) {
     if (component.IsHeadingModel()) { #>
-  <ui-heading-page
-    :title="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Title"
-    :attributes="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Attributes"
-    :actions="<#= Model.View.Heading.Name.ToPascalCase().ToCamelCase() #>Actions"
-  />
+    <#= GenerateHeading(component) #>
 <# } else if (component.IsSectionModel()) {
       var section = component.AsSectionModel(); #>
   <ui-editor-section

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Aryzac.IO.Modules.Client.Api;
+using Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Controls;
 using Intent.Engine;
 using Intent.Metadata.Models;
 using Intent.Modules.Common.Html.Templates;
@@ -30,6 +31,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
                 fileName: $"{Model.GetPath()}/{Model.Name}.template",
                 relativeLocation: ""
             );
+        }
+
+        public string GenerateHeading(IElement element)
+        {
+            var heading = new Heading(element);
+            return heading.TransformText();
         }
 
         public string GetMappedTextboxName(TextboxModel field)

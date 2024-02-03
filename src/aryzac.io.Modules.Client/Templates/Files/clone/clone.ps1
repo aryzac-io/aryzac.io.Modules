@@ -2,35 +2,75 @@ param (
     [string]$name,
     [string]$path,
     [string]$sourceDir = (Split-Path (Get-Location).Path -Parent),
-    [string]$ttFileName = (Join-Path (Get-Location).Path "T.tt"),
-    [string]$csFileName = (Join-Path (Get-Location).Path "TPartial.cs"),
+    [string]$template = "T", # Default template name
     [switch]$overwrite
 )
 
 # Resolve $sourceDir to an absolute path if a relative path is provided
 $sourceDir = Resolve-Path $sourceDir
 
-# Check if required parameters are provided
-if (-not $name -or -not $path) {
-    Write-Host "This script requires two parameters: -name and -path."
-    Write-Host "Optional parameters: -sourceDir [default: current directory], -ttFileName [default: 'T.tt'], -csFileName [default: 'TPartial.cs'], -overwrite"
-    Write-Host "Example: .\YourScriptName.ps1 -name 'YourNewName' -path 'Your/Path/Here' -sourceDir './Controls' -overwrite"
-    exit
-}
-
-# Determine the new directory based on the subfolder parameter
+# Default paths for the template files relative to the script's location
+$templateBaseName = $template
+$templatePartialName = $templateBaseName + "Partial.cs"
+$ttFileName = Join-Path (Get-Location).Path "$templateBaseName.tt"
+$csFileName = Join-Path (Get-Location).Path "$templatePartialName"
 $newDir = Join-Path $sourceDir $path
+
+# Correcting the path to remove any extraneous characters
+# Just an example; adjust according to your actual logic
+$csFileName = $csFileName -replace '\+\\', ''
+
+# Create new directory if it doesn't exist
 if (-not (Test-Path $newDir)) {
     New-Item -ItemType Directory -Path $newDir
 }
 
-# New file names
-$newTTFileName = "$name`.tt"
-$newCSFileName = "$name`Partial.cs"
-
-# Paths for new files
+# Construct new file names
+$newTTFileName = "$name.tt"
+$newCSFileName = "$name" + "Partial.cs"
 $newTTFilePath = Join-Path $newDir $newTTFileName
 $newCSFilePath = Join-Path $newDir $newCSFileName
+
+# Function to extract placeholders from content
+function Get-Placeholders {
+    param (
+        [string]$content
+    )
+    
+    $pattern = '\$\{(\w+)\}'
+    $matches = [regex]::Matches($content, $pattern)
+    $placeholders = @{}
+    foreach ($match in $matches) {
+        $key = $match.Groups[1].Value
+        $placeholders[$key] = $null
+    }
+    return $placeholders.Keys
+}
+
+# Function to replace placeholders in content
+function Replace-Placeholders {
+    param (
+        [string]$content,
+        [hashtable]$replacements
+    )
+
+    foreach ($key in $replacements.Keys) {
+        # Escape special regex characters in key
+        $escapedKey = [regex]::Escape("`${$key}")
+        # Replace the placeholder with the value from the replacements hashtable
+        $content = $content -replace $escapedKey, $replacements[$key]
+    }
+
+    return $content
+}
+
+# Check if required parameters are provided
+if (-not $name -or -not $path) {
+    Write-Host "This script requires two parameters: -name and -path."
+    Write-Host "Optional parameters: -sourceDir [default: current directory], -template [default: 'T'], -overwrite"
+    Write-Host "Example: .\YourScriptName.ps1 -name 'YourNewName' -path 'Your/Path/Here' -sourceDir './Controls' -template 'CustomTemplate' -overwrite"
+    exit
+}
 
 # Check if files exist and handle overwrite logic
 $ttFileExists = Test-Path $newTTFilePath
@@ -39,7 +79,6 @@ $csFileExists = Test-Path $newCSFilePath
 if ($ttFileExists -or $csFileExists) {
     if (-not $overwrite) {
         $userChoice = Read-Host "Files already exist. Overwrite? (Y/n)"
-        # Check if userChoice is 'Y' or empty (default to 'Y' if Enter is pressed)
         if (-not $userChoice -or $userChoice -eq 'Y') {
             Write-Host "Overwriting files."
         } else {
@@ -49,56 +88,44 @@ if ($ttFileExists -or $csFileExists) {
     }
 }
 
-# Directly read and copy .tt file without using $sourceDir
-$ttFileContent = Get-Content $ttFileName
-$ttFileContent | Set-Content $newTTFilePath
+# Process template files
+$templateFiles = @($ttFileName, $csFileName)
+foreach ($file in $templateFiles) {
 
-# Directly read and modify .cs file without using $sourceDir
-$csFileContent = Get-Content $csFileName -Raw
-# Update the class and constructor names
-$modifiedCSFileContent = $csFileContent -replace "partial class T", "partial class ${name}"
-$modifiedCSFileContent = $modifiedCSFileContent -replace "public T", "public ${name}"
-$modifiedCSFileContent | Set-Content $newCSFilePath
+    $content = Get-Content $file -Raw
 
-# Assuming $path might start with "./" or ".\" for relative paths
-# Clean up relative path indicators and replace slashes with dots
-$path = $path -replace '^\./|^\.\\', '' -replace '[/\\]', '.'
+    # Extract placeholders
+    $placeholders = Get-Placeholders -content $content
 
-# Split the path by dots to process each segment
-$subNamespaceParts = $path -split '\.' | Where-Object { $_ }
+    # Initialize replacements hashtable
+    $replacements = @{}
 
-# Initialize an empty array to hold the PascalCase segments
-$pascalCaseNamespaceParts = @()
+    # Adjust the logic to match placeholders with PSBoundParameters
+    foreach ($placeholder in $placeholders) {
+        # Check if a corresponding parameter was passed
+        $paramName = "-" + $placeholder  # Add '-' prefix to match PSBoundParameters' keys
+        $matchedParam = $PSBoundParameters.GetEnumerator() | Where-Object { $_.Key -eq $paramName.TrimStart('-') }
 
-# Loop through each part of the namespace, capitalizing the first letter
-foreach ($part in $subNamespaceParts) {
-    if (-not [string]::IsNullOrWhiteSpace($part)) {
-        $capitalizedPart = $part.Substring(0,1).ToUpper() + $part.Substring(1).ToLower()
-        $pascalCaseNamespaceParts += $capitalizedPart
+        if ($matchedParam) {
+            # If a matching parameter is found, use its value for replacement
+            $replacements[$placeholder] = $matchedParam.Value
+        }
     }
+
+    $content = Replace-Placeholders -content $content -replacements $replacements
+    
+    # Correctly construct $newFilePath
+    $fileName = [System.IO.Path]::GetFileName($file) # Isolate the file name
+    $newFileName = $fileName.Replace($templateBaseName, $name) # Replace template base name with the specified name
+    $newFilePath = Join-Path $newDir $newFileName # Join the new directory path with the new file name
+    
+    $content | Set-Content $newFilePath
 }
 
-# Join the parts back into a namespace
-$subNamespace = [string]::Join(".", $pascalCaseNamespaceParts)
-
-if (-not $subNamespace) {
-    Write-Host "No valid namespace parts were generated from the path."
-    exit
-}
-
-Write-Host "Generated namespace: $subNamespace"
-
-# Now $subNamespace should be correctly formatted without leading or trailing dots
-$updatedNamespace = "namespace Aryzac.IO.Modules.Client.Templates.Files.$subNamespace"
-
-$modifiedCSFileContent = $modifiedCSFileContent -replace "namespace\s+[a-zA-Z0-9_.]+", $updatedNamespace
-
-$modifiedCSFileContent | Set-Content $newCSFilePath
 
 Write-Host "Files created in subfolder ${path}: $newTTFileName, $newCSFileName`n"
 
-
-# New Write-Host commands for easy copy-paste
+# Additional Write-Host commands for easy copy-paste, adapted from the first script
 $newFileNameCamelCase = $name.Substring(0,1).ToLower() + $name.Substring(1) # Convert to camelCase
 
 Write-Host "Set the Custom Tool for the .tt file to:"
@@ -113,5 +140,12 @@ Write-Host "Field and Property"
 Write-Host "`tprivate $name $newFileNameCamelCase;"
 Write-Host "`tpublic string $name => $newFileNameCamelCase.TransformText();`n"
 
-Write-Host "Remember to replace `$name` with the actual class name in your code snippets."
+Write-Host "Method"
+Write-Host "`tpublic string GenerateHeading(IElement element)"
+Write-Host "`t{"
+Write-Host "`t  var heading = new Heading(element);"
+Write-Host "`t  return heading.TransformText();"
+Write-Host "`t}`n"
 
+Write-Host "Remember to replace `$name` with the actual class name in your code snippets."
+Write-Host "Template processing complete. Files generated at $newDir"
