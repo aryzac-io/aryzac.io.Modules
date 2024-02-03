@@ -9,16 +9,4 @@
 <#@ import namespace="Intent.Metadata.Models" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
-
-<# if (Model.View != null) {
-  foreach (var component in Model.View.InternalElement.ChildElements) {
-    if (component.IsHeadingModel()) { #>
-    <#= GenerateHelpers.Generate(component.AsHeadingModel()) #>
-<# } else if (component.IsSectionModel()) { #>
-    <#= GenerateHelpers.Generate(component.AsSectionModel()) #>  
-<# } else if (component.IsTableModel()) { #>
-  <#= GenerateHelpers.Generate(component.AsTableModel()) #>
-<#  }
-  }
-}
-#>
+<#= HtmlTemplate #>

@@ -28,7 +28,5 @@ setupSectionItem(
 
 <template>
   <div>
-    <clients-edit-client 
-	    :client-id="clientId"	/>
   </div>
 </template>

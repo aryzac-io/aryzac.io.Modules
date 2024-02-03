@@ -35,45 +35,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ComponentsTemplate.tt</DependentUpon>
     </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\Heading.cs">
+    <Compile Update="Templates\Files\Components\Shared\Controls\Heading.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Heading.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputCheckBox.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>InputCheckbox.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputSelect.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>InputSelect.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputTextArea.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>InputTextArea.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\InputTextbox.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>InputTextbox.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\Label.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Label.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\Section.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Section.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Templates\Files\Components\ComponentHtml\Controls\Table.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Table.tt</DependentUpon>
     </Compile>
     <Compile Update="Templates\Files\Components\Component\ComponentTemplate.cs">
       <DesignTime>True</DesignTime>
@@ -104,6 +69,46 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Template.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputCheckbox.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputCheckbox.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputSelect.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputSelect.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputTextArea.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputTextArea.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputTextbox.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputTextbox.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\Label.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Label.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\Section.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Section.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\Table.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Table.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\HtmlTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HtmlTemplate.tt</DependentUpon>
     </Compile>
     <Compile Update="Templates\Files\Composables\Controls\Shared\Actions.cs">
       <DesignTime>True</DesignTime>
@@ -237,35 +242,35 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\Heading.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\Heading.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Heading.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputCheckbox.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\InputCheckbox.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
-      <LastGenOutput>InputCheckBox.cs</LastGenOutput>
+      <LastGenOutput>InputCheckbox.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\InputSelect.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>InputSelect.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputTextArea.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\InputTextArea.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>InputTextArea.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\InputTextbox.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>InputTextbox.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\Label.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\Label.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Label.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\Section.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\Section.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Section.cs</LastGenOutput>
     </None>
-    <None Update="Templates\Files\Components\ComponentHtml\Controls\Table.tt">
+    <None Update="Templates\Files\Components\Shared\Controls\Table.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>Table.cs</LastGenOutput>
     </None>
@@ -276,6 +281,10 @@
     <None Update="Templates\Files\Components\Component\Script\TypeImport.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>TypeImport.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\HtmlTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>HtmlTemplate.cs</LastGenOutput>
     </None>
     <None Update="Templates\Files\Composables\Controls\Shared\CommandAndQueryServiceProxyComposables.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

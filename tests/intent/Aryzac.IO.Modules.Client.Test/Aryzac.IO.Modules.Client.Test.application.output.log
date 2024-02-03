@@ -27,22 +27,6 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
-      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.ComponentHtml#de4ed824-d444-4669-912a-c2d8690a6c43</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/EditClient.template.html</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/EditClient.template.html</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#de4ed824-d444-4669-912a-c2d8690a6c43</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/EditClient.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/EditClient.vue</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -316,30 +300,6 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions#e7fdc37e-a9f8-4675-ba5a-fbea7750ac75</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientHeadingOptions.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientHeadingOptions.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#dad6c986-75f2-4fdf-8af7-8fde5b7cc156</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientNewLabelOptions.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientNewLabelOptions.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions#87255b25-5cd1-4d1b-b714-3e441bcbe84a</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/EditClient/useEditClientNewSelectOptions.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>components/Clients/EditClient/useEditClientNewSelectOptions.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useClientsServiceProxy.ts</ApplicationRelativeFilePath>
@@ -352,14 +312,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useDebug.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>composables/useDebug.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#fd5c1fb7-9adf-497c-85fb-0418e444a064</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useInvoicesServiceProxy.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>useInvoicesServiceProxy.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -408,14 +360,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/layouts/default.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>default.vue</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>e6c626fa-a6f9-4937-a23a-2fcf2eae8321</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#de4ed824-d444-4669-912a-c2d8690a6c43</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/components/Clients/EditClient.i18n.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/EditClient.i18n.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -532,14 +476,6 @@
     </FileLog>
     <FileLog>
       <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#fd5c1fb7-9adf-497c-85fb-0418e444a064</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/invoices-service.proxy.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices-service.proxy.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#2f2c32bc-099c-4599-9824-2f6e9813c570</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/titles-service.proxy.ts</ApplicationRelativeFilePath>
@@ -552,22 +488,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/stores/navigation.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>stores/navigation.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Models#de4ed824-d444-4669-912a-c2d8690a6c43</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/edit-client.model.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>clients/edit-client.model.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Props#de4ed824-d444-4669-912a-c2d8690a6c43</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/edit-client.props.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>clients/edit-client.props.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -640,62 +560,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/get-clients-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/get-clients-query.dto.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#e0e59650-b425-400e-8116-db25cf64a794</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/invoices/change-due-date-invoice-command.dto.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices/change-due-date-invoice-command.dto.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#a8a60820-5f81-4ee9-bc6f-a1fb16d3e17b</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/invoices/create-invoice-command.dto.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices/create-invoice-command.dto.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#2b32f852-1004-4894-8951-9b5e9c067504</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/invoices/delete-invoice-command.dto.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices/delete-invoice-command.dto.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#ea67bfd1-16f0-426c-b962-02148e9b51e4</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/invoices/get-invoice-by-id-query.dto.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices/get-invoice-by-id-query.dto.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#79664bdc-91fa-48f9-9e68-66a634497d1d</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/invoices/get-invoices-by-client-id-query.dto.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices/get-invoices-by-client-id-query.dto.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#b8b05dcb-3f70-4dd5-aac2-a7308d042906</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/invoices/get-invoices-query.dto.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices/get-invoices-query.dto.ts</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#ea2d89fb-35e9-4b4f-9a5a-c8d948aa923d</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/invoices/invoice.dto.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>invoices/invoice.dto.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

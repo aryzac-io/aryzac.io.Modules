@@ -33,57 +33,10 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\n\r\n");
-            
-            #line 13 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
- if (Model.View != null) {
-  foreach (var component in Model.View.InternalElement.ChildElements) {
-    if (component.IsHeadingModel()) { 
-            
-            #line default
-            #line hidden
-            this.Write("    ");
-            
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(component.AsHeadingModel())));
-            
-            #line default
-            #line hidden
             this.Write("\r\n");
             
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
- } else if (component.IsSectionModel()) { 
-            
-            #line default
-            #line hidden
-            this.Write("    ");
-            
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(component.AsSectionModel())));
-            
-            #line default
-            #line hidden
-            this.Write("  \r\n");
-            
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
- } else if (component.IsTableModel()) { 
-            
-            #line default
-            #line hidden
-            this.Write("  ");
-            
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(component.AsTableModel())));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
-  }
-  }
-}
-
+            #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(HtmlTemplate));
             
             #line default
             #line hidden
