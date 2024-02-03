@@ -1,2 +1,2 @@
-export class GetClientsQuery {
+export interface GetClientsQuery {
 }

@@ -1,4 +1,5 @@
-export class TitleDto {
+export interface TitleDto {
+
   id: string;
   code: string;
   name: string;

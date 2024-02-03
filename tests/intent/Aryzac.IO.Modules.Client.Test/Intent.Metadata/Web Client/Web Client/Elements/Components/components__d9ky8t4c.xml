@@ -509,7 +509,7 @@
                       <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
                       <properties>
                         <property name="68b69b02-81e3-41f0-a259-b9fa94a545c6" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
-                        <property name="43d75151-3135-4330-9ef2-0eeb24beed97" display="Title" isActive="true" />
+                        <property name="43d75151-3135-4330-9ef2-0eeb24beed97" display="Title" value="this is a heading" isActive="true" />
                       </properties>
                     </stereotype>
                     <stereotype stereotypeDefinitionId="3fc958c7-8c35-42f6-8f40-388ad0494fbb" name="Heading Settings">

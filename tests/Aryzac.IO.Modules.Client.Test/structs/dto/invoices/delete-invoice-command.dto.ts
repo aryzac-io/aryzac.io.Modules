@@ -1,3 +1,4 @@
-export class DeleteInvoiceCommand {
+export interface DeleteInvoiceCommand {
+
   id: string;
 }

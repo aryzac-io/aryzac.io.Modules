@@ -1,3 +1,4 @@
-export class EditClientProps {
+export interface EditClientProps {
+
   clientId: string;
 }

@@ -1,4 +1,5 @@
-export class EditClientModel {
+export interface EditClientModel {
+
   id: string;
   firstName: string;
   lastName: string;

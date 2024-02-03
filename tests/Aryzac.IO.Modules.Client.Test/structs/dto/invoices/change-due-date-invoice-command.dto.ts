@@ -1,4 +1,5 @@
-export class ChangeDueDateInvoiceCommand {
+export interface ChangeDueDateInvoiceCommand {
+
   id: string;
   dueDate: any;
 }

@@ -1,3 +1,4 @@
-export class DeleteClientCommand {
+export interface DeleteClientCommand {
+
   id: string;
 }

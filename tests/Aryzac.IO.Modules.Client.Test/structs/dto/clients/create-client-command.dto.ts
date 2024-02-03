@@ -1,4 +1,5 @@
-export class CreateClientCommand {
+export interface CreateClientCommand {
+
   firstName: string;
   lastName: string;
   otherNames: string;

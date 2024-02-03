@@ -29,7 +29,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Structs.DTOs.DTO
             Types = new TypeScriptTypeResolver();
 
             TypescriptFile = new TypescriptFile(this.GetFolderPath())
-                .AddClass($"{Model.Name}{GenericTypes}", @interface =>
+                .AddInterface($"{Model.Name}{GenericTypes}", @interface =>
                 {
                     @interface.Export();
 

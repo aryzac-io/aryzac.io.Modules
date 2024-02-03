@@ -1,2 +1,2 @@
-export class GetTitlesQuery {
+export interface GetTitlesQuery {
 }

@@ -1,4 +1,5 @@
-export class ChangeNoteClientCommand {
+export interface ChangeNoteClientCommand {
+
   id: string;
   notes: string;
 }

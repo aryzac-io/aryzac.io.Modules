@@ -56,82 +56,48 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
             this.Write("Options = async (\r\n");
             
             #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
- if (GetComponent().Parameters != null) { 
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetMethodSignature()));
             
             #line default
             #line hidden
-            this.Write("  props: ");
+            this.Write(" \r\n) => {\r\n\r\nconst { t } = useI18n();\r\n\r\n");
             
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
-            
-            #line default
-            #line hidden
-            this.Write("Props, \r\n");
-            
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
- if (GetComponent().Model != null) { 
-            
-            #line default
-            #line hidden
-            this.Write("  model: ");
-            
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
-            
-            #line default
-            #line hidden
-            this.Write("Model, \r\n");
-            
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            this.Write("  t: ComposerTranslation\r\n) => {\r\n\r\n");
-            
-            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
+            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(CommandAndQueryServiceProxyComposables));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
+            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Queries));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
+            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(OptionsComputed));
             
             #line default
             #line hidden
             this.Write("\r\n\r\nreturn {\r\n");
             
-            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
+            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
  if (HasQueries()) { 
             
             #line default
             #line hidden
             this.Write("\tdata,\r\n\tpending,\r\n\terror,\r\n\texecute,\r\n\trefresh,\r\n\tstatus,\r\n");
             
-            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
+            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
  } 
             
             #line default
             #line hidden
             this.Write("\t");
             
-            #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.InternalElement.Name.ToPascalCase().ToCamelCase()));
             
             #line default

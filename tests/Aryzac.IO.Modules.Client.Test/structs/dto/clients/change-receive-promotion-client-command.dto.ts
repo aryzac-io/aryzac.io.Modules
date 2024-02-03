@@ -1,4 +1,5 @@
-export class ChangeReceivePromotionClientCommand {
+export interface ChangeReceivePromotionClientCommand {
+
   id: string;
   receivePromotions: boolean;
 }

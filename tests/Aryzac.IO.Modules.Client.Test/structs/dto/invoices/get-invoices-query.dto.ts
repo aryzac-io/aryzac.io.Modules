@@ -1,2 +1,2 @@
-export class GetInvoicesQuery {
+export interface GetInvoicesQuery {
 }

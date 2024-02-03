@@ -67,5 +67,22 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
         {
             return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).AsComponentModel();
         }
+
+        public string GetMethodSignature()
+        {
+            var functionParameters = new Dictionary<string, string>();
+
+            if (GetComponent().Parameters != null)
+            {
+                functionParameters.Add("props", $"{GetComponent().Name}Props");
+            }
+
+            if (GetComponent().Model != null)
+            {
+                functionParameters.Add("model", $"{GetComponent().Name}Model");
+            }
+
+            return string.Join(", ", functionParameters.Select(kv => $"{kv.Key}: {kv.Value}"));
+        }
     }
 }

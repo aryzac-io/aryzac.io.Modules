@@ -57,13 +57,6 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
         private TitleComputed titleComputed;
         public string TitleComputed => titleComputed.TransformText();
 
-        public bool HasTitle()
-        {
-            var heading = Model.InternalElement.AsHeadingModel();
-            var mappedEnd = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
-            return mappedEnd is not null;
-        }
-
         private Attributes attributes;
         public string Attributes => attributes.TransformText();
 
@@ -100,6 +93,23 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
         public ComponentModel GetComponent()
         {
             return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).AsComponentModel();
+        }
+
+        public string GetMethodSignature()
+        {
+            var functionParameters = new Dictionary<string, string>();
+
+            if (GetComponent().Parameters != null)
+            {
+                functionParameters.Add("props", $"{GetComponent().Name}Props");
+            }
+
+            if (GetComponent().Model != null)
+            {
+                functionParameters.Add("model", $"{GetComponent().Name}Model");
+            }
+
+            return string.Join(", ", functionParameters.Select(kv => $"{kv.Key}: {kv.Value}"));
         }
     }
 }

@@ -1,4 +1,5 @@
-export class ChangeTitleClientCommand {
+export interface ChangeTitleClientCommand {
+
   id: string;
   titleId: string;
 }

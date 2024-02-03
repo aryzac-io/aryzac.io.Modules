@@ -56,47 +56,13 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
             this.Write("Options = async (\r\n");
             
             #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
- if (GetComponent().Parameters != null) { 
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetMethodSignature()));
             
             #line default
             #line hidden
-            this.Write("  props: ");
+            this.Write(" \r\n) => {\r\n\r\nconst { t } = useI18n();\r\n\r\n");
             
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
-            
-            #line default
-            #line hidden
-            this.Write("Props, \r\n");
-            
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
- if (GetComponent().Model != null) { 
-            
-            #line default
-            #line hidden
-            this.Write("  model: ");
-            
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
-            
-            #line default
-            #line hidden
-            this.Write("Model, \r\n");
-            
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            this.Write("  t: ComposerTranslation\r\n) => {\r\n\r\n");
-            
-            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
 
   var labelField = "";
             
@@ -107,7 +73,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
             #line hidden
             this.Write("const label = computed(() => {\r\n");
             
-            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
 
   var mappedExpression = mappedColumn.MappingExpression;
   foreach (var source in mappedColumn.Sources)
@@ -119,21 +85,21 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
             #line hidden
             this.Write("  const ");
             
-            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" = model.");
             
-            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" || \'\';\r\n");
             
-            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
 
   }
 
@@ -142,7 +108,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
             #line hidden
             this.Write("  const mappedExpression = `");
             
-            #line 38 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
             
             #line default

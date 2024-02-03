@@ -1,3 +1,4 @@
-export class GetClientByIdQuery {
+export interface GetClientByIdQuery {
+
   id: string;
 }

@@ -35,111 +35,89 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
         /// </summary>
         public override string TransformText()
         {
-            this.Write("\r\nimport type { ComposerTranslation } from \"@nuxtjs/i18n/dist/runtime/composables" +
-                    "\";\r\n");
+            this.Write("\r\n");
             
-            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 14 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(DtoTypeImports));
             
             #line default
             #line hidden
             this.Write("\r\n\r\nexport const use");
             
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()));
             
             #line default
             #line hidden
             
-            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name.ToPascalCase()));
             
             #line default
             #line hidden
             this.Write("Options = async (\r\n");
             
-            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
- if (GetComponent().Parameters != null) { 
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GetMethodSignature()));
             
             #line default
             #line hidden
-            this.Write("  props: ");
-            
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
-            
-            #line default
-            #line hidden
-            this.Write("Props, \r\n");
-            
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
- if (GetComponent().Model != null) { 
-            
-            #line default
-            #line hidden
-            this.Write("  model: ");
-            
-            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetComponent().Name));
-            
-            #line default
-            #line hidden
-            this.Write("Model, \r\n");
+            this.Write(" \r\n) => {\r\n\r\nconst { t } = useI18n();\r\n\r\n");
             
             #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            this.Write("  t: ComposerTranslation\r\n) => {\r\n\r\n");
-            
-            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(CommandAndQueryServiceProxyComposables));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Queries));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 26 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Commands));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(TableHeaders));
             
             #line default
             #line hidden
             this.Write("\r\n\r\n");
             
-            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 30 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Actions));
             
             #line default
             #line hidden
             this.Write("\r\n\r\nreturn {\r\n");
             
-            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
  if (HasHeaders()) { 
             
             #line default
             #line hidden
             this.Write("\theaders,\r\n");
+            
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+ } 
+            
+            #line default
+            #line hidden
+            
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+ if (HasActions()) { 
+            
+            #line default
+            #line hidden
+            this.Write("\tactions,\r\n");
             
             #line 38 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
  } 
@@ -148,46 +126,33 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             #line hidden
             
             #line 39 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
- if (HasActions()) { 
-            
-            #line default
-            #line hidden
-            this.Write("\tactions,\r\n");
-            
-            #line 41 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
- } 
-            
-            #line default
-            #line hidden
-            
-            #line 42 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
  if (HasQueries()) { 
             
             #line default
             #line hidden
             this.Write("\tdata,\r\n\tpending,\r\n\terror,\r\n\texecute,\r\n\trefresh,\r\n\tstatus,\r\n");
             
-            #line 49 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 46 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
  } 
             
             #line default
             #line hidden
             
-            #line 50 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 47 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
  foreach (var command in TableCommands()) {
             
             #line default
             #line hidden
             this.Write("\t");
             
-            #line 51 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 48 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 52 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
+            #line 49 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt"
  } 
             
             #line default

@@ -1,4 +1,5 @@
-export class ChangeNameClientCommand {
+export interface ChangeNameClientCommand {
+
   id: string;
   firstName: string;
   lastName: string;

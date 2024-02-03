@@ -9,16 +9,13 @@
 <#@ import namespace="Intent.Metadata.Models" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
-import type { ComposerTranslation } from "@nuxtjs/i18n/dist/runtime/composables";
 <#= DtoTypeImports #>
 
 export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()#><#= Model.Name.ToPascalCase() #>Options = async (
-<# if (GetComponent().Parameters != null) { #>
-  props: <#= GetComponent().Name #>Props, 
-<# } #><# if (GetComponent().Model != null) { #>
-  model: <#= GetComponent().Name #>Model, 
-<# } #>  t: ComposerTranslation
+<#= GetMethodSignature() #> 
 ) => {
+
+const { t } = useI18n();
 
 <#= CommandAndQueryServiceProxyComposables #>
 
@@ -31,9 +28,7 @@ export const use<#= Model.InternalElement.GetFirstParentOfType(ComponentModel.Sp
 <#= Actions #>
 
 return {
-<# if (HasTitle()) { #>
   title,
-<# } #>
 <# if (HasAttributes()) { #>
   attributes,
 <# } #>

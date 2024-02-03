@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Aryzac.IO.Modules.Client.Api;
 using Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared;
 using Intent.Engine;
@@ -44,6 +45,23 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
         public ComponentModel GetComponent()
         {
             return Model.InternalElement.GetFirstParentOfType(ComponentModel.SpecializationTypeId).AsComponentModel();
+        }
+
+        public string GetMethodSignature()
+        {
+            var functionParameters = new Dictionary<string, string>();
+
+            if (GetComponent().Parameters != null)
+            {
+                functionParameters.Add("props", $"{GetComponent().Name}Props");
+            }
+
+            if (GetComponent().Model != null)
+            {
+                functionParameters.Add("model", $"{GetComponent().Name}Model");
+            }
+
+            return string.Join(", ", functionParameters.Select(kv => $"{kv.Key}: {kv.Value}"));
         }
     }
 }

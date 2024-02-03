@@ -1,4 +1,5 @@
-export class InvoiceDto {
+export interface InvoiceDto {
+
   id: string;
   clientId: string;
   number: string;

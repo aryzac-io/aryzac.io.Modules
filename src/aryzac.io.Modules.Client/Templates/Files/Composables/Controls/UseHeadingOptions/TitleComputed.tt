@@ -12,10 +12,10 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
 <# var heading = Element.AsHeadingModel(); #>
+const title = computed(() => {
 <#
    var mappedColumn = heading.InternalElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Heading");
    if (mappedColumn is not null) { #>
-const title = computed(() => {
 <#
       var mappedExpression = mappedColumn.MappingExpression;
       foreach (var source in mappedColumn.Sources)
@@ -28,5 +28,7 @@ const title = computed(() => {
 #>
   const mappedExpression = `<#= mappedExpression #>`;
   return mappedExpression;
-});
+<#  } else { #>
+  return t('heading.title');
 <#  } #>
+});

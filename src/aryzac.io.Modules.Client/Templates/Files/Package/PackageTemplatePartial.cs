@@ -52,7 +52,8 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Package
                                 .WithValue("nuxt", "3.9.0")
                                 .WithValue("nuxt-icon", "0.6.8")
                                 .WithValue("vue", "3.4.3")
-                                .WithValue("vue-router", "4.2.5");
+                                .WithValue("vue-router", "4.2.5")
+                                .WithValue("typescript", "5.3.3");
                         })
                         .WithObject("dependencies", dependencies =>
                         {

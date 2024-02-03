@@ -1,3 +1,4 @@
-export class GetInvoicesByClientIdQuery {
+export interface GetInvoicesByClientIdQuery {
+
   clientId: string;
 }
