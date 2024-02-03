@@ -10,6 +10,7 @@
 <#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
 <#@ import namespace="Intent.Templates" #>
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml" #>
 
   <ui-input-textbox 
     v-model="model.<#= GetMappedTextboxName(Model) #>" 

@@ -13,59 +13,12 @@
 <# if (Model.View != null) {
   foreach (var component in Model.View.InternalElement.ChildElements) {
     if (component.IsHeadingModel()) { #>
-    <#= Generate(component.AsHeadingModel()) #>
-<# } else if (component.IsSectionModel()) {
-      var section = component.AsSectionModel(); #>
-  <ui-editor-section
-    :title="t('<#= Helpers.GetI18nPath(component) #>.title')"
-    :description="t('<#= Helpers.GetI18nPath(component) #>.description')"
-  >
-<# foreach (var control in section.InternalElement.ChildElements) {
-    if (control.IsTextboxModel()) { #>
-    <#= Generate(control.AsTextboxModel()) #>
-<#  }
-    if (control.IsTextAreaModel()) { #>
-    <#= Generate(control.AsTextAreaModel()) #>
-<#  }
-    if (control.IsCheckboxModel()) { #>
-    <#= Generate(control.AsCheckboxModel()) #>
-<#  }
-    if (control.IsLabelModel()) { #>
-     <ui-input-label 
-       v-model="<#= control.Name.ToPascalCase().ToCamelCase() #>Label" 
-       :label="t('<#= Helpers.GetI18nPath(control) #>.label')" />
-<#  }
-    if (control.IsSelectModel()) {#>
-    <#= Generate(control.AsSelectModel()) #>
-<#  }
-    if (control.IsTableModel()) { #>
-  <#= Generate(control.AsTableModel()) #>
-<#  }
-    if (control.IsActionsModel()) {
-      var actions = control.AsActionsModel(); #>
-
-    <template #actions>
-<# foreach (var action in actions.InternalElement.ChildElements) {
-    var command = action.AsActionModel().Command; #>
-      <button
-        type="button"
-        @click="<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>()"
-        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-      >
-        {{ t('<#= Helpers.GetI18nPath(action) #>.label') }}
-      </button>
-    </template>
-    
-<#
-          }
-        }
-      }
-#>
-  </ui-editor-section>
+    <#= GenerateHelpers.Generate(component.AsHeadingModel()) #>
+<# } else if (component.IsSectionModel()) { #>
+    <#= GenerateHelpers.Generate(component.AsSectionModel()) #>  
 <# } else if (component.IsTableModel()) { #>
-  <#= Generate(component.AsTableModel()) #>
-<# 
-    }
+  <#= GenerateHelpers.Generate(component.AsTableModel()) #>
+<#  }
   }
 }
 #>

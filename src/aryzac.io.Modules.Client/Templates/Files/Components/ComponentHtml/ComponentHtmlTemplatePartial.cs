@@ -32,56 +32,5 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
                 relativeLocation: ""
             );
         }
-
-        public string Generate(HeadingModel model)
-        {
-            var template = new Heading(model.InternalElement);
-            return template.TransformText();
-        }
-
-        public string Generate(TableModel model)
-        {
-            var template = new Table(model.InternalElement);
-            return template.TransformText();
-        }
-
-        public string Generate(TextboxModel model)
-        {
-            var template = new InputTextbox(model.InternalElement);
-            return template.TransformText();
-        }
-
-        public string Generate(TextAreaModel model)
-        {
-            var template = new InputTextArea(model.InternalElement);
-            return template.TransformText();
-        }
-        public string Generate(CheckboxModel model)
-        {
-            var template = new InputCheckbox(model.InternalElement);
-            return template.TransformText();
-        }
-
-        public string Generate(SelectModel model)
-        {
-            var template = new InputSelect(model.InternalElement);
-            return template.TransformText();
-        }
-
-        public string GetMappedRadioButtonName(RadioButtonModel field)
-        {
-            foreach (var mapping in field.InternalElement.ParentElement.ParentElement.Mappings)
-            {
-                foreach (var mappedEnd in mapping.MappedEnds)
-                {
-                    if (mappedEnd.TargetElement.Id == field.Id)
-                    {
-                        return mappedEnd.SourceElement.Name.ToCamelCase();
-                    }
-                }
-            }
-
-            return field.Name.ToCamelCase();
-        }
     }
 }

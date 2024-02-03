@@ -19,6 +19,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
     using Intent.Modules.Metadata.WebApi.Models;
     using Intent.Templates;
     using Aryzac.IO.Modules.Client.Api;
+    using Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml;
     using System;
     
     /// <summary>
@@ -37,14 +38,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
         {
             this.Write("\r\n  <ui-input-textbox \r\n    v-model=\"model.");
             
-            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt"
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedTextboxName(Model)));
             
             #line default
             #line hidden
             this.Write("\" \r\n    :label=\"t(\'");
             
-            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt"
+            #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputTextbox.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(Element)));
             
             #line default

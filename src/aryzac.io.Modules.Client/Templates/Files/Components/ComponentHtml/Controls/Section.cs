@@ -19,16 +19,15 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
     using Intent.Modules.Metadata.WebApi.Models;
     using Intent.Templates;
     using Aryzac.IO.Modules.Client.Api;
-    using Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml;
     using System;
     
     /// <summary>
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
+    #line 1 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class InputSelect : InputSelectBase
+    public partial class Section : SectionBase
     {
 #line hidden
         /// <summary>
@@ -36,53 +35,163 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\n");
+            this.Write("\r\n  <ui-editor-section\r\n    :title=\"t(\'");
             
-            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
-
-  var valueField = "";
-  var labelField = "";
-                
-  foreach (var mapping in Model.InternalElement.Mappings)
-  {
-      foreach (var mappingEnd in mapping.MappedEnds)
-      {
-          if (mappingEnd.TargetElement.SpecializationType == "Value")
-          {
-              valueField = mappingEnd.SourceElement.Name;
-          }
-          if (mappingEnd.TargetElement.SpecializationType == "Select Label")
-          {
-              labelField = mappingEnd.SourceElement.Name;
-          }
-      }
-  }
-
-            
-            #line default
-            #line hidden
-            this.Write("  <ui-input-select \r\n    v-model=\"model.");
-            
-            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetMappedSelectName(Model)));
-            
-            #line default
-            #line hidden
-            this.Write("\" \r\n    :label=\"t(\'");
-            
-            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
+            #line 15 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(Element)));
             
             #line default
             #line hidden
-            this.Write(".label\')\"\r\n    :options=\"");
+            this.Write(".title\')\"\r\n    :description=\"t(\'");
             
-            #line 37 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\InputSelect.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));
+            #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(Element)));
             
             #line default
             #line hidden
-            this.Write(".options.value\"\r\n  />\r\n");
+            this.Write(".description\')\"\r\n  >\r\n\r\n");
+            
+            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+ foreach (var control in Element.ChildElements) {
+    if (control.IsTextboxModel()) { 
+            
+            #line default
+            #line hidden
+            this.Write("    ");
+            
+            #line 21 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(control.AsTextboxModel())));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+  }
+    if (control.IsTextAreaModel()) { 
+            
+            #line default
+            #line hidden
+            this.Write("    ");
+            
+            #line 24 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(control.AsTextAreaModel())));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 25 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+  }
+    if (control.IsCheckboxModel()) { 
+            
+            #line default
+            #line hidden
+            this.Write("    ");
+            
+            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(control.AsCheckboxModel())));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+  }
+    if (control.IsLabelModel()) { 
+            
+            #line default
+            #line hidden
+            this.Write("     <ui-input-label \r\n       v-model=\"");
+            
+            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(control.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write("Label\" \r\n       :label=\"t(\'");
+            
+            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(control)));
+            
+            #line default
+            #line hidden
+            this.Write(".label\')\" />\r\n");
+            
+            #line 33 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+  }
+    if (control.IsSelectModel()) {
+            
+            #line default
+            #line hidden
+            this.Write("    ");
+            
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(control.AsSelectModel())));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 36 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+  }
+    if (control.IsTableModel()) { 
+            
+            #line default
+            #line hidden
+            this.Write("  ");
+            
+            #line 38 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(GenerateHelpers.Generate(control.AsTableModel())));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n");
+            
+            #line 39 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+  }
+    if (control.IsActionsModel()) {
+      var actions = control.AsActionsModel(); 
+            
+            #line default
+            #line hidden
+            this.Write("\r\n    <template #actions>\r\n");
+            
+            #line 44 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+ foreach (var action in actions.InternalElement.ChildElements) {
+    var command = action.AsActionModel().Command; 
+            
+            #line default
+            #line hidden
+            this.Write("      <button\r\n        type=\"button\"\r\n        @click=\"");
+            
+            #line 48 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(command.Mapping.Element.Name.ToPascalCase().ToCamelCase()));
+            
+            #line default
+            #line hidden
+            this.Write("()\"\r\n        class=\"rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text" +
+                    "-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline" +
+                    "-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600\"\r\n      >\r\n  " +
+                    "      {{ t(\'");
+            
+            #line 51 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(action)));
+            
+            #line default
+            #line hidden
+            this.Write(".label\') }}\r\n      </button>\r\n    </template>\r\n    \r\n");
+            
+            #line 55 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\ComponentHtml\Controls\Section.tt"
+
+          }
+        }
+      }
+
+            
+            #line default
+            #line hidden
+            this.Write("\r\n  </ui-editor-section>");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -94,7 +203,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml.Cont
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class InputSelectBase
+    public class SectionBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;
