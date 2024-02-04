@@ -67,6 +67,15 @@ body:
     validations:
       required: false
 
+  - type: textarea
+    id: potential-solutions
+    attributes:
+      label: Ideas for Fix
+      description: If you have any suggestions or potential solutions in mind, please share them here. This could include insights that might help with resolving the issue or ideas for how to approach it.
+      placeholder: "Share any thoughts on possible solutions, workaround ideas, or other insights that might be helpful in addressing this issue."
+    validations:
+      required: false
+
   - type: input
     id: link-to-reproduction
     attributes:
