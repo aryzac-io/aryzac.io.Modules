@@ -852,6 +852,122 @@
               <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
               <packageName>Web Client</packageName>
               <stereotypes />
+              <mappings>
+                <mapping type="Map Model To View" typeId="19b067db-84b8-4609-b772-243a0ced7f01">
+                  <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6b5264e1-b410-409e-b4c7-d4baf36f768d" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[View Client]" />
+                  <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="cb713410-e506-485c-a4f9-191ecd54993d" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[[view]]" />
+                  <mappedEnds>
+                    <mappedEnd>
+                      <expression>{[model].LastName}, {[model].FirstName}</expression>
+                      <path>
+                        <target id="cb713410-e506-485c-a4f9-191ecd54993d" name="[view]" type="element" specialization="Component View" />
+                        <target id="a46f8870-abd9-4c5d-8c2a-b8963ad827b8" name="View Client" type="element" specialization="Heading" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].LastName" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                            <target id="4a84960b-d8ad-480d-a014-177a07ab4437" name="LastName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                        <source identifier="[model].FirstName" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                            <target id="ba5f8b4b-b346-431c-a1d6-f122a73f6a87" name="FirstName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].FirstName}</expression>
+                      <path>
+                        <target id="cb713410-e506-485c-a4f9-191ecd54993d" name="[view]" type="element" specialization="Component View" />
+                        <target id="ca423381-7c53-4331-9482-a6927d0765f8" name="Personal Information" type="element" specialization="Section" />
+                        <target id="1e4c750e-74dc-4eba-b0f8-0a832f889aff" name="First Name" type="element" specialization="Label" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].FirstName" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                            <target id="ba5f8b4b-b346-431c-a1d6-f122a73f6a87" name="FirstName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].LastName}</expression>
+                      <path>
+                        <target id="cb713410-e506-485c-a4f9-191ecd54993d" name="[view]" type="element" specialization="Component View" />
+                        <target id="ca423381-7c53-4331-9482-a6927d0765f8" name="Personal Information" type="element" specialization="Section" />
+                        <target id="1cf09117-0450-4e15-a623-0eec7dc33885" name="Last Name" type="element" specialization="Label" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].LastName" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                            <target id="4a84960b-d8ad-480d-a014-177a07ab4437" name="LastName" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].OtherNames}</expression>
+                      <path>
+                        <target id="cb713410-e506-485c-a4f9-191ecd54993d" name="[view]" type="element" specialization="Component View" />
+                        <target id="ca423381-7c53-4331-9482-a6927d0765f8" name="Personal Information" type="element" specialization="Section" />
+                        <target id="ffb506d4-9321-47d6-a406-f9abad214328" name="Other Names" type="element" specialization="Label" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].OtherNames" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                            <target id="287997ac-fb3d-4382-a24f-71a4576d8689" name="OtherNames" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].ReceivePromotions}</expression>
+                      <path>
+                        <target id="cb713410-e506-485c-a4f9-191ecd54993d" name="[view]" type="element" specialization="Component View" />
+                        <target id="134bd7e0-fc3a-44e0-bd24-ba0dcc3ddcf1" name="Promotions" type="element" specialization="Section" />
+                        <target id="4c58a4b8-00c9-436f-ae75-430ba1d340ec" name="Receive Promotions" type="element" specialization="Label" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].ReceivePromotions" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                            <target id="2c3dd76a-765e-4cb6-b922-a3c3c528ef10" name="ReceivePromotions" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[model].Notes}</expression>
+                      <path>
+                        <target id="cb713410-e506-485c-a4f9-191ecd54993d" name="[view]" type="element" specialization="Component View" />
+                        <target id="a3cc7563-4fae-470a-a594-6e7d475b66f7" name="Notes" type="element" specialization="Section" />
+                        <target id="8ea21dc2-9382-474f-9be7-37fcfab32303" name="Notes" type="element" specialization="Label" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].Notes" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                            <target id="40d718e0-dde8-4a67-ba33-d317a8d25de2" name="Notes" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                  </mappedEnds>
+                </mapping>
+              </mappings>
               <metadata />
               <childElements>
                 <childElement id="a46f8870-abd9-4c5d-8c2a-b8963ad827b8" type="Heading" typeId="2bf5bef0-a091-4ff8-a5d6-fe931a86616f">

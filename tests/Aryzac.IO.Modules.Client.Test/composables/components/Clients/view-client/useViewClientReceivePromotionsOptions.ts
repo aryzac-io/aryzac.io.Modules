@@ -12,7 +12,9 @@ props: ViewClientProps, model: ViewClientModel
 const { t } = useI18n();
 
 const label = computed(() => {
-  return "";
+  const receivePromotions = model.receivePromotions || '';
+  const mappedExpression = `${receivePromotions}`;
+  return mappedExpression;
 });
 
 return {

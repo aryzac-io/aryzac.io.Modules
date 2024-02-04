@@ -12,7 +12,9 @@ props: ViewClientProps, model: ViewClientModel
 const { t } = useI18n();
 
 const label = computed(() => {
-  return "";
+  const otherNames = model.otherNames || '';
+  const mappedExpression = `${otherNames}`;
+  return mappedExpression;
 });
 
 return {

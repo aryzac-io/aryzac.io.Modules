@@ -1,4 +1,4 @@
-import type { ViewClientProps } from "~/structs/components/clients/view-client.props";
+import type { ViewClientProps } from '~/structs/components/clients/view-client.props';
 import type { ViewClientModel } from '~/structs/components/clients/view-client.model';
 
 
@@ -16,7 +16,10 @@ const { t } = useI18n();
 
 
 const title = computed(() => {
-  return t('viewClient.title');
+  const lastName = model.lastName || '';
+  const firstName = model.firstName || '';
+  const mappedExpression = `${lastName}, ${firstName}`;
+  return mappedExpression;
 });
 
 
