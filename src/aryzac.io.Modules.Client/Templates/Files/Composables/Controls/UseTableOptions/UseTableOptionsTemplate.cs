@@ -157,7 +157,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             
             #line default
             #line hidden
-            this.Write("};\r\n}");
+            this.Write("};\r\n}\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

@@ -92,12 +92,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
                         case "Component Model Field":
                             source = "model";
                             if (!functionParameters.ContainsKey(source))
-                                functionParameters.Add(source, ((IElement)mappedEnd.SourceElement).ParentElement.Name.ToPascalCase().ToCamelCase());
+                                functionParameters.Add(source, ((IElement)mappedEnd.SourceElement).ParentElement.Name.ToPascalCase());
                             break;
                         case "DTO-Field":
                             source = "item";
                             if (!functionParameters.ContainsKey(source))
-                                functionParameters.Add(source, ((IElement)mappedEnd.SourceElement).ParentElement.Name.ToPascalCase().ToCamelCase());
+                                functionParameters.Add(source, ((IElement)mappedEnd.SourceElement).ParentElement.Name.ToPascalCase());
                             break;
                     }
 

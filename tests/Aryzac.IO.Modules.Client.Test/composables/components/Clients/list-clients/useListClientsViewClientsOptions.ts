@@ -1,11 +1,29 @@
-export const useListClientsViewClientsOptions = async () => {
-  const { t } = useI18n();
+export const useListClientsViewClientsOptions = async (
+ 
+) => {
 
-  const title = computed(() => {
-    return t("viewClients.title");
-  });
+const { t } = useI18n();
 
-  return {
-    title,
-  };
+
+
+
+
+const title = computed(() => {
+  return t('viewClients.title');
+});
+
+
+
+
+
+
+
+
+
+
+
+return {
+  title,
 };
+
+}

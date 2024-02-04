@@ -4,15 +4,22 @@ af:
     attributes:
       placeholder: ''
   clientsTable:
-    firstName: FirstName
+    firstName: First Name
     lastName: LastName
     otherNames: OtherNames
+    actions:
+      view:
+        label: View
 en:
   viewClients:
     title: View Clients
     attributes:
       placeholder: ''
   clientsTable:
-    firstName: FirstName
+    firstName: First Name
     lastName: LastName
     otherNames: OtherNames
+    actions:
+      view:
+        label: View
+        icon: ic:twotone-remove-red-eye

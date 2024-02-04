@@ -51,8 +51,20 @@ export const useListClientsClientsTableOptions = async () => {
     },
   ];
 
+  const actions = [
+    {
+      label: t("clientsTable.actions.view.label"),
+      icon: t("clientsTable.actions.view.icon"),
+      action: async (item: ClientDto) => {
+        const localeRoute = useLocaleRoute();
+        await navigateTo(localeRoute(`/Clients/${item.id}`));
+      },
+    },
+  ];
+
   return {
     headers,
+    actions,
     data,
     pending,
     error,
