@@ -30,8 +30,8 @@
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/ListClients.vue</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/ListClients.vue</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/list-clients.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/list-clients.vue</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -310,16 +310,16 @@
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#43e7f9fd-6f94-44be-b3eb-0213be82bffd</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/ListClients/useListClientsClientsTableOptions.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>components/Clients/ListClients/useListClientsClientsTableOptions.ts</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/list-clients/useListClientsClientsTableOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/list-clients/useListClientsClientsTableOptions.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions#b492489c-aed4-419e-a61e-e75f8822ba62</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/Clients/ListClients/useListClientsViewClientsOptions.ts</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>components/Clients/ListClients/useListClientsViewClientsOptions.ts</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/list-clients/useListClientsViewClientsOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/list-clients/useListClientsViewClientsOptions.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -382,8 +382,8 @@
       <ProjectId>e6c626fa-a6f9-4937-a23a-2fcf2eae8321</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/components/Clients/ListClients.i18n.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/ListClients.i18n.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/components/clients/list-clients.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/list-clients.i18n.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

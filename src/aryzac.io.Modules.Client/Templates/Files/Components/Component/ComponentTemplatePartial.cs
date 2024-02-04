@@ -42,7 +42,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component
         public override ITemplateFileConfig GetTemplateFileConfig()
         {
             return new TemplateFileConfig(
-                fileName: $"{Model.GetPath()}/{Model.Name}",
+                fileName: $"{Model.GetPath()}/{Model.Name.ToKebabCase()}",
                 fileExtension: "vue"
             );
         }

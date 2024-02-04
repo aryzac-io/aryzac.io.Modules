@@ -26,8 +26,8 @@
       <metadata />
       <childElements>
         <childElement id="0e1c5b21-192a-48ee-8d95-c22474031496" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
-          <name>ListClients</name>
-          <display>ListClients</display>
+          <name>List Clients</name>
+          <display>List Clients</display>
           <isAbstract>false</isAbstract>
           <sort-children>by-type-then-by-name</sort-children>
           <genericTypes />

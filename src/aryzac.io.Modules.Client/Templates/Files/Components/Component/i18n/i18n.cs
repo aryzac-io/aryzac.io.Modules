@@ -36,14 +36,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.i18n
             this.Write("\r\n<i18n lang=\"yaml\" src=\"@/locales/components");
             
             #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\i18n\i18n.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Model.GetPath()));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.GetPath().ToKebabCase()));
             
             #line default
             #line hidden
             this.Write("/");
             
             #line 12 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\i18n\i18n.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name.ToKebabCase()));
             
             #line default
             #line hidden

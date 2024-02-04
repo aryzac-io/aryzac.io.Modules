@@ -43,7 +43,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             this.Write("import type { ");
             
             #line 13 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name.ToPascalCase()));
             
             #line default
             #line hidden
@@ -77,7 +77,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Component.Script
             this.Write("import type { ");
             
             #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Component\Script\TypeImport.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Model.Name.ToPascalCase()));
             
             #line default
             #line hidden

@@ -1,12 +1,12 @@
-<i18n lang="yaml" src="@/locales/components/Clients/ListClients.i18n.yaml" />
+<i18n lang="yaml" src="@/locales/components/clients/list-clients.i18n.yaml" />
 
 <script setup lang="ts">
 import type { ListClientsProps } from "~/structs/components/clients/list-clients.props";
 
 import type { ClientDto } from "~/structs/dto/clients/client.dto";
 
-import { useListClientsViewClientsOptions } from "~/composables/components/Clients/ListClients/useListClientsViewClientsOptions";
-import { useListClientsClientsTableOptions } from "~/composables/components/Clients/ListClients/useListClientsClientsTableOptions";
+import { useListClientsViewClientsOptions } from "~/composables/components/clients/list-clients/useListClientsViewClientsOptions";
+import { useListClientsClientsTableOptions } from "~/composables/components/clients/list-clients/useListClientsClientsTableOptions";
 
 const { t } = useI18n();
 

@@ -138,7 +138,7 @@
             </childElement>
             <childElement id="b9ed2eef-0356-4ad3-80af-b081e151415a" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
               <name>ListClients</name>
-              <display>ListClients: ListClients</display>
+              <display>ListClients: List Clients</display>
               <isAbstract>false</isAbstract>
               <genericTypes />
               <typeReference id="c536f5e6-595c-415e-9238-76f85dabff9e">

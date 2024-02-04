@@ -27,7 +27,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Structs.Components.Props
             Types = new TypeScriptTypeResolver();
 
             TypescriptFile = new TypescriptFile(this.GetFolderPath())
-                .AddInterface($"{Model.Name}Props", @interface =>
+                .AddInterface($"{Model.Name.ToPascalCase()}Props", @interface =>
                 {
                     @interface.Export();
 

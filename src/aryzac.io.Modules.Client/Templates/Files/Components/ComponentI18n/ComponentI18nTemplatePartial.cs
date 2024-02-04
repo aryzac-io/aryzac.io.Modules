@@ -29,7 +29,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
         public ComponentI18nTemplate(IOutputTarget outputTarget, ComponentModel model) : base(TemplateId, outputTarget, model)
         {
-            DataFile = new DataFile($"{Model.GetPath()}/{Model.Name}.i18n")
+            DataFile = new DataFile($"{Model.GetPath().ToKebabCase()}/{Model.Name.ToKebabCase()}.i18n")
                 .WithYamlWriter()
                 .WithRootObject(this, @object =>
                 {

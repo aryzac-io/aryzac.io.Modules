@@ -10,5 +10,5 @@
 <#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
 
 <# if (Model.Parameters != null) { #>
-const props = defineProps<<#= Model.Name #>Props>();
+const props = defineProps<<#= Model.Name.ToPascalCase() #>Props>();
 <# } #>

@@ -1,5 +1,6 @@
 ﻿using Aryzac.IO.Modules.Client.Api;
 using Intent.Metadata.Models;
+using Intent.Modules.Common.Templates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace Aryzac.IO.Modules.Client
 
                 if (!skippedSpecializationTypes.Contains(currentNode.SpecializationTypeId))
                 {
-                    pathSegments.Add(currentNode.Name);
+                    pathSegments.Add(currentNode.Name.ToKebabCase());
                 }
 
                 currentNode = currentNode.ParentElement;
@@ -65,7 +66,7 @@ namespace Aryzac.IO.Modules.Client
 
                 if (!skippedSpecializationTypes.Contains(currentNode.SpecializationTypeId))
                 {
-                    pathSegments.Add(currentNode.Name);
+                    pathSegments.Add(currentNode.Name.ToKebabCase());
                 }
 
                 currentNode = currentNode.ParentElement;
@@ -99,7 +100,7 @@ namespace Aryzac.IO.Modules.Client
 
                 if (!skippedSpecializationTypes.Contains(currentNode.SpecializationTypeId))
                 {
-                    pathSegments.Add(currentNode.Name);
+                    pathSegments.Add(currentNode.Name.ToKebabCase());
                 }
 
                 currentNode = currentNode.ParentElement;
@@ -133,7 +134,7 @@ namespace Aryzac.IO.Modules.Client
 
                 if (!skippedSpecializationTypes.Contains(currentNode.SpecializationTypeId))
                 {
-                    pathSegments.Add(currentNode.Name);
+                    pathSegments.Add(currentNode.Name.ToKebabCase());
                 }
 
                 currentNode = currentNode.ParentElement;
@@ -173,7 +174,7 @@ namespace Aryzac.IO.Modules.Client
 
                 if (!skippedSpecializationTypes.Contains(currentNode.SpecializationTypeId))
                 {
-                    pathSegments.Add(currentNode.Name);
+                    pathSegments.Add(currentNode.Name.ToKebabCase());
                 }
 
                 currentNode = currentNode.ParentElement;
