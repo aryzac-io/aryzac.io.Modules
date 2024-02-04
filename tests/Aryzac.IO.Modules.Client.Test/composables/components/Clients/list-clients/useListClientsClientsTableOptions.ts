@@ -32,7 +32,7 @@ const {
 const headers = [
   {
     key: 'firstName',
-    label: t("clientsTable.firstName"),
+    label: t("table-clientsTable.firstName"),
     data: (item: ClientDto) => {
 
         if (!pending.value) {
@@ -46,7 +46,7 @@ const headers = [
   },
   {
     key: 'lastName',
-    label: t("clientsTable.lastName"),
+    label: t("table-clientsTable.lastName"),
     data: (item: ClientDto) => {
 
         if (!pending.value) {
@@ -60,7 +60,7 @@ const headers = [
   },
   {
     key: 'otherNames',
-    label: t("clientsTable.otherNames"),
+    label: t("table-clientsTable.otherNames"),
     data: (item: ClientDto) => {
 
         if (!pending.value) {
@@ -78,8 +78,8 @@ const headers = [
 
 const actions = [
   {
-    label: t("clientsTable.actions.view.label"),
-    icon: t("clientsTable.actions.view.icon"),
+    label: t("table-clientsTable.actions.action-view.label"),
+    icon: t("table-clientsTable.actions.action-view.icon"),
 action: async (item: ClientDto) => {
       const localeRoute = useLocaleRoute();
       await navigateTo(localeRoute(`/Clients/${item.id}`));

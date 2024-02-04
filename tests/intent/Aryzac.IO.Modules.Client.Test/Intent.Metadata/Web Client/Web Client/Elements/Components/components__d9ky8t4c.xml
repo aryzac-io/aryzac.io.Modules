@@ -2101,6 +2101,7 @@
                   <name>Promotions</name>
                   <display>Promotions</display>
                   <isAbstract>false</isAbstract>
+                  <sort-children>manually</sort-children>
                   <genericTypes />
                   <isMapped>false</isMapped>
                   <parentFolderId>e7bfa0a1-b638-4437-8921-58a16442fede</parentFolderId>
@@ -2129,7 +2130,42 @@
                     </stereotype>
                   </stereotypes>
                   <metadata />
-                  <childElements />
+                  <childElements>
+                    <childElement id="20fef5dc-69aa-4444-8fef-e4391153eadd" type="Checkbox" typeId="417dc03e-580b-450d-9d70-8a2a457d2a48">
+                      <name>Can Receive Promotions</name>
+                      <display>Can Receive Promotions</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>2720c421-372d-4f9b-8116-be9d3dfca441</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="1fafd144-4893-4a55-835a-487ad4b41bfe" name="Checkbox Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="4ad285bd-6f3b-4440-8d40-2ecb273d0f78" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
+                            <property name="269a7ba3-237c-4a18-a5fd-e48815793757" display="Label" isActive="true" />
+                            <property name="13e2ff06-cced-4742-841a-395bd846744b" display="Description" isActive="true" />
+                          </properties>
+                        </stereotype>
+                        <stereotype stereotypeDefinitionId="1fafd144-4893-4a55-835a-487ad4b41bfe" name="Checkbox Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="4ad285bd-6f3b-4440-8d40-2ecb273d0f78" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
+                            <property name="269a7ba3-237c-4a18-a5fd-e48815793757" display="Label" isActive="true" />
+                            <property name="13e2ff06-cced-4742-841a-395bd846744b" display="Description" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
                 </childElement>
                 <childElement id="a18c2fbf-b9e4-4132-a06a-60dd99ec70cb" type="Section" typeId="359ec87c-144f-4be1-b3d1-fe182093bb3e">
                   <name>Notes</name>

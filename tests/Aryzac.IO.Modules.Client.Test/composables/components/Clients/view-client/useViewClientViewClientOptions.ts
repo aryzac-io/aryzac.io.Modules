@@ -32,8 +32,8 @@ const title = computed(() => {
 
 const actions = [
   {
-    label: t("viewClient.actions.edit.label"),
-    icon: t("viewClient.actions.edit.icon"),
+    label: t("heading-viewClient.actions.action-edit.label"),
+    icon: t("heading-viewClient.actions.action-edit.icon"),
 action: async () => {
       const localeRoute = useLocaleRoute();
       await navigateTo(localeRoute(`/Clients/${props.clientId}/edit`));

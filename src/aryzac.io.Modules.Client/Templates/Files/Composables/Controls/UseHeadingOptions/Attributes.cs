@@ -74,14 +74,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
             this.Write("  {\r\n\ticon: t(\"");
             
             #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(heading.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(".attributes.");
-            
-            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(attribute.Name.ToPascalCase().ToCamelCase()));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(attribute.InternalElement)));
             
             #line default
             #line hidden
@@ -106,28 +99,14 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseHeadi
             this.Write("  {\r\n\ticon: t(\"");
             
             #line 44 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(heading.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(".attributes.");
-            
-            #line 44 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(attribute.Name.ToPascalCase().ToCamelCase()));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(attribute.InternalElement)));
             
             #line default
             #line hidden
             this.Write(".icon\"),\r\n\tlabel: t(\"");
             
             #line 45 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(heading.Name.ToPascalCase().ToCamelCase()));
-            
-            #line default
-            #line hidden
-            this.Write(".attributes.");
-            
-            #line 45 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(attribute.Name.ToPascalCase().ToCamelCase()));
+            this.Write(this.ToStringHelper.ToStringWithCulture(Helpers.GetI18nPath(attribute.InternalElement)));
             
             #line default
             #line hidden

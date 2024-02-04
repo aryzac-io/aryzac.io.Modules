@@ -20,6 +20,9 @@ af:
   section-promotions:
     title: Promotions
     description: ''
+    checkbox-canReceivePromotions:
+      label: Can Receive Promotions
+      description: ''
   section-notes:
     title: Notes
     description: ''
@@ -45,6 +48,9 @@ en:
   section-promotions:
     title: Promotions
     description: ''
+    checkbox-canReceivePromotions:
+      label: Can Receive Promotions
+      description: ''
   section-notes:
     title: Notes
     description: ''

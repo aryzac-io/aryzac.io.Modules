@@ -93,6 +93,13 @@ onMounted(() => {
     :description="t('section-promotions.description')"
   >
 
+    
+  <ui-input-checkbox 
+    v-model="model.canReceivePromotions" 
+    :label="t('section-promotions.checkbox-canReceivePromotions.label')" 
+    :description="t('section-promotions.checkbox-canReceivePromotions.description')" 
+  />
+
 
   </ui-editor-section>  
     

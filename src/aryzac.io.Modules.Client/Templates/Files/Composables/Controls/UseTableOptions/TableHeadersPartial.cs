@@ -43,7 +43,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
                 var header = new HeaderDefinitionModel
                 {
                     Key = column.Name.ToPascalCase().ToCamelCase(),
-                    Label = $"{table.Name.ToPascalCase().ToCamelCase()}.{column.Name.ToPascalCase().ToCamelCase()}",
+                    Label = $"{Helpers.GetI18nPath(column.InternalElement)}", // $"{table.Name.ToPascalCase().ToCamelCase()}.{column.Name.ToPascalCase().ToCamelCase()}",
                     DataFunction = GenerateDataFunction(mappedColumn),
                     ItemDataType = ((IElement)mappedColumn.Sources.First().Element).ParentElement.Name
                 };

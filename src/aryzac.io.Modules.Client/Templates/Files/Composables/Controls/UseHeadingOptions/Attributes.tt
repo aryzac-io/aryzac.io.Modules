@@ -32,7 +32,7 @@ const attributes = [
           }
 #>
   {
-	icon: t("<#= heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.icon"),
+	icon: t("<#= Helpers.GetI18nPath(attribute.InternalElement) #>.icon"),
 	label: `<#= mappedAttributeExpression #>`,
   },
 <#
@@ -41,8 +41,8 @@ const attributes = [
         {
 #>
   {
-	icon: t("<#= heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.icon"),
-	label: t("<#= heading.Name.ToPascalCase().ToCamelCase() #>.attributes.<#= attribute.Name.ToPascalCase().ToCamelCase() #>.label"),
+	icon: t("<#= Helpers.GetI18nPath(attribute.InternalElement) #>.icon"),
+	label: t("<#= Helpers.GetI18nPath(attribute.InternalElement) #>.label"),
   },
 <#
        }

@@ -43,13 +43,13 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.Shared
                 var actionSettings = action.GetActionSettingss().FirstOrDefault();
                 var actionModel = new ActionDefinitionModel
                 {
-                    Label = $"{Element.Name.ToPascalCase().ToCamelCase()}.actions.{action.Name.ToPascalCase().ToCamelCase()}.label",
+                    Label = $"{Helpers.GetI18nPath(action.InternalElement)}.label", // $"{Element.Name.ToPascalCase().ToCamelCase()}.actions.{action.Name.ToPascalCase().ToCamelCase()}.label",
                     ActionFunction = GenerateActionFunction(action)
                 };
 
                 if (actionSettings?.Icon() is not null)
                 {
-                    actionModel.Icon = $"{Element.Name.ToPascalCase().ToCamelCase()}.actions.{action.Name.ToPascalCase().ToCamelCase()}.icon";
+                    actionModel.Icon = $"{Helpers.GetI18nPath(action.InternalElement)}.icon"; // $"{Element.Name.ToPascalCase().ToCamelCase()}.actions.{action.Name.ToPascalCase().ToCamelCase()}.icon";
                 }
 
                 yield return actionModel;

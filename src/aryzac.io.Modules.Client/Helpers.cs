@@ -50,6 +50,11 @@ namespace Aryzac.IO.Modules.Client
                 {
                     var path = currentElement.Name.ToPascalCase().ToCamelCase();
 
+                    if (path.StartsWith("[") && path.EndsWith("]"))
+                    {
+                        path = path.Substring(1, path.Length - 2);
+                    }
+
                     switch (currentElement.SpecializationTypeId)
                     {
                         case TableModel.SpecializationTypeId:
