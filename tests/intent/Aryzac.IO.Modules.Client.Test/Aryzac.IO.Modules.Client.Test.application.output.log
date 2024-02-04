@@ -28,14 +28,6 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.ComponentHtml#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/ListClients.template.html</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>/Clients/ListClients.template.html</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/ListClients.vue</ApplicationRelativeFilePath>

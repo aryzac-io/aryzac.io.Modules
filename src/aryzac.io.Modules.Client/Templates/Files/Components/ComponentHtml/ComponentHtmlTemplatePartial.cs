@@ -36,6 +36,19 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentHtml
             );
         }
 
+        public override bool CanRunTemplate()
+        {
+            if (Model.TryGetComponentSettings(out var componentSettings))
+            {
+                if (!componentSettings.SeparateTemplate())
+                {
+                    return false;
+                }
+            }
+
+            return base.CanRunTemplate();
+        }
+
         private HtmlTemplate htmlTemplate;
         public string HtmlTemplate => htmlTemplate.TransformText();
     }
