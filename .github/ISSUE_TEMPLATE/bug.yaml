@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a report to help us improve
 title: "[BUG]: "
-labels: ["bug"]
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
@@ -31,7 +31,6 @@ body:
       description: Please select the module(s) related to the bug.
       multiple: true
       options:
-        - None
         - Aryzac.IO.Client
         - Aryzac.IO.Domain
         - Azyrac.IO.Client Application Template
@@ -89,8 +88,16 @@ body:
     id: link-to-reproduction
     attributes:
       label: Link to Reproduction
-      description: Please provide a link to a repository or a minimal code example that reproduces the bug.
+      description: |
+        Providing a link to a reproduction of the bug can greatly accelerate the troubleshooting process. A good reproduction includes:
+        
+        - **Minimal Code Snippet**: If possible, share a simplified version of the code that still demonstrates the bug. This can be in the form of a gist on GitHub.
+        
+        - **Repository Link**: If the issue is complex or requires specific setup, a link to a GitHub repository that replicates the issue is ideal.
+        
+        - **Live Example**: For frontend or interactive issues, a link to a CodePen, JSFiddle, or similar online sandbox can be incredibly helpful.
+        
+        Please ensure your reproduction is accessible and does not require special permissions to view. If your reproduction is in a private repository, consider creating a minimal public example.
       placeholder: "https://"
     validations:
       required: false
-
