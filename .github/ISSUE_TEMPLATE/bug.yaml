@@ -1,0 +1,66 @@
+name: Bug Report
+description: File a report to help us improve
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for taking the time to report a bug. Please fill in as much of the template below as you're able."
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: "Explain the bug..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      description: "Please confirm the following:"
+      options:
+        - label: Software Factory runs fine
+          required: true
+        - label: Generated code compiles
+          required: true
+        - label: Generated code runs without issues
+          required: true
+
+  - type: textarea
+    id: more-details
+    attributes:
+      label: More Details
+      description: Provide any more details that may be relevant to the issue.
+      placeholder: "More details..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: "Paste image links here..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: relevant-code
+    attributes:
+      label: Relevant Code
+      description: If applicable, add a snippet of the relevant code.
+      placeholder: "// Code snippet here"
+    validations:
+      required: false
+
+  - type: input
+    id: link-to-reproduction
+    attributes:
+      label: Link to Reproduction
+      description: Please provide a link to a repository or a minimal code example that reproduces the bug.
+      placeholder: "https://"
+    validations:
+      required: false
