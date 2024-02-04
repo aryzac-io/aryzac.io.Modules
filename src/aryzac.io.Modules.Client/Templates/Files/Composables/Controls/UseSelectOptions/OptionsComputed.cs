@@ -46,25 +46,31 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
                     " }[] = [];\r\n");
             
             #line 17 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
- if (select.Query is not null) { 
+ if (select.Query is not null && select.Query.Mapping is not null) { 
+            
+            #line default
+            #line hidden
+            
+            #line 18 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+
+    var mappedColumn = GetMappedColumn(select);
+    if (mappedColumn is not null) { 
             
             #line default
             #line hidden
             this.Write("  if (data.value) {\r\n    data.value.forEach((item: ");
             
-            #line 19 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+            #line 22 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(select.Query.Mapping.Element.TypeReference.Element.Name));
             
             #line default
             #line hidden
             this.Write(") => {\r\n");
             
-            #line 20 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
-
-    var mappedColumn = GetMappedColumn(select);
+            #line 23 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
     var mappedExpression = mappedColumn.MappingExpression;
-    foreach (var source in mappedColumn.Sources)
-    {
+      foreach (var source in mappedColumn.Sources)
+      {
         mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
 
             
@@ -72,45 +78,47 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
             #line hidden
             this.Write("      const ");
             
-            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" = item.");
             
-            #line 27 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(source.Element.Name.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(" || \'\';\r\n");
             
-            #line 28 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+            #line 29 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
 
-    }
+      }
 
             
             #line default
             #line hidden
             this.Write("      const mappedExpression = `");
             
-            #line 31 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+            #line 32 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(mappedExpression));
             
             #line default
             #line hidden
             this.Write("`;\r\n\r\n      options.push({\r\n        value: item.");
             
-            #line 34 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+            #line 35 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(ValueField.ToPascalCase().ToCamelCase()));
             
             #line default
             #line hidden
             this.Write(",\r\n        label: mappedExpression,\r\n      });\r\n    });\r\n  }\r\n");
             
-            #line 39 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
- } 
+            #line 40 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt"
+   }
+   }
+
             
             #line default
             #line hidden

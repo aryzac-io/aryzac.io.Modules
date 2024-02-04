@@ -14,19 +14,20 @@
 <# var select = Element.AsSelectModel(); #>
 const options = computed(() => {
   const options: { value: string; label: string }[] = [];
-<# if (select.Query is not null) { #>
-  if (data.value) {
-    data.value.forEach((item: <#= select.Query.Mapping.Element.TypeReference.Element.Name #>) => {
+<# if (select.Query is not null && select.Query.Mapping is not null) { #>
 <#
     var mappedColumn = GetMappedColumn(select);
-    var mappedExpression = mappedColumn.MappingExpression;
-    foreach (var source in mappedColumn.Sources)
-    {
+    if (mappedColumn is not null) { #>
+  if (data.value) {
+    data.value.forEach((item: <#= select.Query.Mapping.Element.TypeReference.Element.Name #>) => {
+<#    var mappedExpression = mappedColumn.MappingExpression;
+      foreach (var source in mappedColumn.Sources)
+      {
         mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
 #>
       const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = item.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
 <#
-    }
+      }
 #>
       const mappedExpression = `<#= mappedExpression #>`;
 
@@ -36,6 +37,8 @@ const options = computed(() => {
       });
     });
   }
-<# } #>
+<#   }
+   }
+#>
   return options;
 });

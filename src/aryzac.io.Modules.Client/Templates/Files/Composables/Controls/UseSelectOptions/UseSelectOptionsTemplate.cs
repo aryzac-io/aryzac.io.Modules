@@ -95,7 +95,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseSelec
             
             #line default
             #line hidden
-            this.Write("\toptions\r\n};\r\n\r\n}");
+            this.Write("\toptions\r\n};\r\n\r\n}\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

@@ -7,6 +7,7 @@ import type { EditClientProps } from '~/structs/components/clients/edit-client.p
 import type { EditClientModel } from '~/structs/components/clients/edit-client.model';
 
 import type { ClientDto } from '~/structs/dto/clients/client.dto';
+import type { TitleDto } from '~/structs/dto/titles/title.dto';
 
 
 import { useEditClientEditClientOptions } from '~/composables/components/clients/edit-client/useEditClientEditClientOptions'
@@ -19,6 +20,7 @@ const props = defineProps<EditClientProps>();
 
 
 const clientsServiceProxy = useClientsServiceProxy();
+const titlesServiceProxy = useTitlesServiceProxy();
 
 const query = await clientsServiceProxy.getClientByIdQuery(props.clientId);
 const model = reactive<EditClientModel>({} as EditClientModel);
