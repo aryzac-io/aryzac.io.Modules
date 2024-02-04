@@ -12,10 +12,10 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="67f67de4-f6db-4873-89c3-6c4c59540715" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions</name>
-      <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions</display>
-      <externalReference>c3f15a3b-719b-4613-b2d6-fe68ca5eefda</externalReference>
+    <childElement id="b96f4698-3dcb-4973-b8ec-27a2e8a8973b" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseHeadingOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseHeadingOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
@@ -28,10 +28,10 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="41de4a80-8c01-404c-a0f9-71508e4be22d" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions</name>
-      <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions</display>
-      <externalReference>Aryzac.IO.Modules.Client</externalReference>
+    <childElement id="f2de3c97-248d-4c3f-98d4-5f914a37f237" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
@@ -44,10 +44,10 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="8c709579-e41a-4e42-b069-b84eb4fb3023" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions</name>
-      <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions</display>
-      <externalReference>130d857d-da1f-463c-93cc-77592c32100b</externalReference>
+    <childElement id="b28419af-d913-4585-bb34-81993883a5df" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseSelectOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseSelectOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
@@ -60,10 +60,10 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="cc79da58-9e8c-42e3-89ac-f6af5c2299b4" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions</name>
-      <display>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions</display>
-      <externalReference>a4c624b8-d264-4cbc-988e-849797037827</externalReference>
+    <childElement id="7e256bc3-e067-45fd-9300-d5b067a3c91a" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseTableOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseTableOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
@@ -76,10 +76,10 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="e67ca877-d5c1-4b9c-bc2a-55bf420be546" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy</name>
-      <display>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy</display>
-      <externalReference>56af200e-feed-4307-bf5a-4ddb671d4937</externalReference>
+    <childElement id="918b36ed-2827-4b58-895e-50daf1639d29" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.UseServiceProxy</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.UseServiceProxy</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>

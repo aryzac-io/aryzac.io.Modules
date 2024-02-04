@@ -1,0 +1,103 @@
+<#@ template language="C#" inherits="IntentTemplateBase<Aryzac.IO.Modules.Client.Api.PageModel>" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+
+<i18n lang="yaml" src="@/locales/pages<#= Model.GetPath() #>.i18n.yaml" />
+
+<script setup lang="ts">
+const { t } = useI18n();
+
+<# if (PageParameters.Count() > 0)
+{
+#>
+const route = useRoute();
+<#
+}
+#>
+
+<#
+foreach (var pageParameter in PageParameters)
+{
+#>
+const <#= pageParameter.Name.ToPascalCase().ToCamelCase() #> = route.params.<#= pageParameter.Name.ToPascalCase().ToCamelCase().ToLower() #>;
+<#
+}
+#>
+
+<#
+// add top and sidebar navigation checks here to ensure only a single use navigation setup instance
+if (Model.BreadcrumbNavigation is not null)
+{
+#>
+const { setupSectionItem } = useNavigationSetup();
+<#
+}
+#>
+
+<#
+if (Model.BreadcrumbNavigation is not null)
+{
+#>// Setup Breadcrumb
+<#
+  foreach (var item in Model.BreadcrumbNavigation.Items)
+  {
+    var navigationSettings = item.GetNavigationItemSettingss().FirstOrDefault();
+    var page = item.TypeReference.Element.AsPageModel();
+
+    var pageUrl = page.GetRoutePath();
+
+    foreach (var mapping in item.InternalElement.Mappings) 
+    {
+      foreach (var mappingEnd in mapping.MappedEnds)
+      {
+        pageUrl = pageUrl.Replace($"[{mappingEnd.TargetElement.Name}]", $"${{{mappingEnd.SourceElement.Name.ToPascalCase().ToCamelCase()}}}");
+      }
+    }
+      
+      #>setupSectionItem(
+  "breadcrumb", 
+  t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.label"), 
+  <# if (navigationSettings?.Icon() != null) 
+  { #>t("breadcrumb.navigation.<#= item.Name.ToPascalCase().ToCamelCase() #>.icon")<# 
+  } 
+  else 
+  { #>null<#
+  } #>, 
+  `<#= pageUrl #>`,
+  false
+);
+<#
+  }
+}
+#>
+</script>
+
+<template>
+  <div>
+<# if (Model.PageComponents != null)
+{ 
+	foreach (var pageComponent in Model.PageComponents)
+	{
+#>
+    <<#= GetPageComponentName(pageComponent) #> 
+	<#
+      foreach (var mapping in pageComponent.InternalElement.Mappings)
+      {
+        foreach (var mappedEnd in mapping.MappedEnds)
+        {
+    #>    :<#= mappedEnd.TargetElement.Name.ToKebabCase() #>="<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #>"<#
+        }
+      }
+	#>
+	/>
+<#
+	}
+} 
+#>
+  </div>
+</template>

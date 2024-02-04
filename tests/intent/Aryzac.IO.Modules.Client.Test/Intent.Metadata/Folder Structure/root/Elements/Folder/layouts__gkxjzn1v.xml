@@ -12,10 +12,10 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="f7c5066d-8db6-4a87-8abb-cd08b74e1721" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Layouts.Layout</name>
-      <display>Aryzac.IO.Modules.Client.Files.Layouts.Layout</display>
-      <externalReference>52e723df-803e-411c-8c94-3f2641f8eab6</externalReference>
+    <childElement id="019a3043-3c1d-453f-a403-93b4eca68634" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Layouts.Layout</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Layouts.Layout</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>

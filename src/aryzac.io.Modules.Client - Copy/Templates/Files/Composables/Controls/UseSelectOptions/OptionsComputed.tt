@@ -1,0 +1,44 @@
+<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Modules.Common.TypeScript.Templates" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+<#@ import namespace="Intent.Templates" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+
+<# var select = Element.AsSelectModel(); #>
+const options = computed(() => {
+  const options: { value: string; label: string }[] = [];
+<# if (select.Query is not null && select.Query.Mapping is not null) { #>
+<#
+    var mappedColumn = GetMappedColumn(select);
+    if (mappedColumn is not null) { #>
+  if (data.value) {
+    data.value.forEach((item: <#= select.Query.Mapping.Element.TypeReference.Element.Name #>) => {
+<#    var mappedExpression = mappedColumn.MappingExpression;
+      foreach (var source in mappedColumn.Sources)
+      {
+        mappedExpression = mappedExpression.Replace($"{{{source.ExpressionIdentifier}}}", $"${{{source.Element.Name.ToPascalCase().ToCamelCase()}}}");
+#>
+      const <#= source.Element.Name.ToPascalCase().ToCamelCase() #> = item.<#= source.Element.Name.ToPascalCase().ToCamelCase() #> || '';
+<#
+      }
+#>
+      const mappedExpression = `<#= mappedExpression #>`;
+
+      options.push({
+        value: item.<#= ValueField.ToPascalCase().ToCamelCase() #>,
+        label: mappedExpression,
+      });
+    });
+  }
+<#   }
+   }
+#>
+  return options;
+});

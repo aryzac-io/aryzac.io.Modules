@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="8de9da7a-02e3-4ac8-a912-4f665c24fcc7" type="Role" typeId="8663c9f9-2852-45e7-aaa1-0883a2e6f1da">
+  <name>Default</name>
+  <display>Default</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>846530bc-2e76-4d05-aa9b-7873db7fc471</parentFolderId>
+  <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

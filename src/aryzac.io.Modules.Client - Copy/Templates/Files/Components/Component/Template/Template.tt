@@ -1,0 +1,19 @@
+﻿<#@ template language="C#" inherits="ComponentTemplate" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+
+<# Model.TryGetComponentSettings(out var componentSettings); #>
+<# if (componentSettings is not null && componentSettings.SeparateTemplate()) { #>
+<template src="./<#= Model.Name #>.template.html" />
+<# } else { #>
+<template>
+<#= HtmlTemplate #>
+</template>
+<# } #>

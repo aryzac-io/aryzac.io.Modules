@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="58180617-92d0-484d-8642-c7dcaf1fe73b" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>846530bc-2e76-4d05-aa9b-7873db7fc471</parentFolderId>
+  <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="ed33b794-1f49-43ac-a844-c46022b29a62" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Layouts.Layout</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Layouts.Layout</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>58180617-92d0-484d-8642-c7dcaf1fe73b</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

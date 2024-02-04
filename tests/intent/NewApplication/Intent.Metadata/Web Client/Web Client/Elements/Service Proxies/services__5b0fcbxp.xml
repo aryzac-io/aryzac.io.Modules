@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="e809054d-0ff7-4981-b2d4-a5708f6742e2" type="Service Proxies" typeId="762f076f-4d28-4d64-8aa0-92d41d1c0ac3">
+  <name>services</name>
+  <display>services</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>bfe429cf-1180-419f-818c-a999ab12797e</parentFolderId>
+  <packageId>bfe429cf-1180-419f-818c-a999ab12797e</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

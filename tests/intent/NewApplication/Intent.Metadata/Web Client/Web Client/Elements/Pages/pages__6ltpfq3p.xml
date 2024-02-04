@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d0669a5f-284a-436a-a1fa-e0d9b2cf8a43" type="Pages" typeId="72608324-5d5a-4627-aecf-0b0d0f0f7f68">
+  <name>pages</name>
+  <display>pages</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>bfe429cf-1180-419f-818c-a999ab12797e</parentFolderId>
+  <packageId>bfe429cf-1180-419f-818c-a999ab12797e</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="1e46d856-08ef-4404-bd8a-24d13e04e78d" type="Page" typeId="89cf68f6-6f29-412a-bae2-31faed8280d9">
+      <name>index</name>
+      <display>index: default</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="c51b1063-2a44-452e-a7e7-376056ae0f17">
+        <typeId>5f462f4b-8f1d-4ad3-b30f-969421f6a7f4</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Web Client</typePackageName>
+        <typePackageId>bfe429cf-1180-419f-818c-a999ab12797e</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0669a5f-284a-436a-a1fa-e0d9b2cf8a43</parentFolderId>
+      <packageId>bfe429cf-1180-419f-818c-a999ab12797e</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

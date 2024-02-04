@@ -12,10 +12,10 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="915ff5a8-14af-4262-b7eb-e4020dc4588d" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy</name>
-      <display>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy</display>
-      <externalReference>414f2921-7515-4d47-86b3-ecf9a3774b80</externalReference>
+    <childElement id="e74d5e4f-1095-470f-ae5b-40f573f6eb2c" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Services.ServiceProxy</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Services.ServiceProxy</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>

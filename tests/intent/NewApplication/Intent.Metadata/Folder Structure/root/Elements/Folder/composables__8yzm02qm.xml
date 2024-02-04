@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="59eebf81-c1eb-42d7-bed5-c401961d8515" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>composables</name>
+  <display>composables</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>846530bc-2e76-4d05-aa9b-7873db7fc471</parentFolderId>
+  <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="247ff59b-228d-417d-b253-627f1b09a4b2" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseHeadingOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseHeadingOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>59eebf81-c1eb-42d7-bed5-c401961d8515</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="e2dfb24a-05ae-4af2-bf8b-cea775be245e" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>59eebf81-c1eb-42d7-bed5-c401961d8515</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="68eaa82b-a74a-49c8-8384-68c13f00f3bf" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseSelectOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseSelectOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>59eebf81-c1eb-42d7-bed5-c401961d8515</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="7f4396bb-a3ef-41fc-a178-5d032f571d58" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseTableOptions</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseTableOptions</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>59eebf81-c1eb-42d7-bed5-c401961d8515</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="01790e30-f6be-4089-93fe-049df60b12b9" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Composables.UseServiceProxy</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Composables.UseServiceProxy</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>59eebf81-c1eb-42d7-bed5-c401961d8515</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

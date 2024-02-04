@@ -1,0 +1,85 @@
+﻿<#@ template language="C#" inherits="ComponentTemplate" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+
+<script setup lang="ts">
+
+<#@ include file="./TypeImport.tt" #>
+
+const { t } = useI18n();
+
+<#@ include file="./Properties.tt" #>
+
+<#
+  foreach (var commandOrQuery in CommandsAndQueries)
+  {
+#>
+const <#= commandOrQuery.Name.ToPascalCase().ToCamelCase() #>Proxy = use<#= commandOrQuery.Name.ToPascalCase() #>Proxy();
+<#   
+  }
+#>
+
+<#   
+  if (Model.Query is not null && Model.Query.Mapping is not null)
+  {
+#>
+const query = await <#= Model.Query.Mapping.Element.AsOperationModel().ParentService.Name.ToPascalCase().ToCamelCase() #>Proxy.<#= Model.Query.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>(<#
+
+    foreach (var mapping in Model.Query.InternalElement.Mappings)
+    {
+      foreach (var mappedEnd in mapping.MappedEnds)
+      {
+	    #>props.<#= mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase() #><#
+        if (mapping.MappedEnds.Last() != mappedEnd)
+		{
+		#>, <#
+		}
+	  }
+	}
+	#>);<#
+  } #>
+
+<#
+  if (Model.Model != null)
+  {
+#>
+const model = reactive<<#= Model.Name.ToPascalCase() #>Model>({} as <#= Model.Name.ToPascalCase() #>Model);
+
+<#   
+    if (Model.Query != null)
+    {
+#>
+watchEffect(async () => {
+  if (query.data.value) {
+    Object.assign(model, query.data.value);
+<#
+    }
+#>
+  }
+});
+<#
+  }
+#>
+
+<# foreach (var composable in GetAllComposables()) { #>
+const <#= composable.Name.ToPascalCase().ToCamelCase() #>Options = await use<#= composable.GetFirstParentOfType(ComponentModel.SpecializationTypeId).Name.ToPascalCase()#><#= composable.Name.ToPascalCase() #>Options(<#= GetComposableMethodParameters(composable) #>);
+<# } #>
+
+onMounted(() => {
+<#
+  if (Model.Query is not null && Model.Query.Mapping is not null)
+  {
+#>
+  query.execute();
+<#
+  }
+#>
+});
+</script>

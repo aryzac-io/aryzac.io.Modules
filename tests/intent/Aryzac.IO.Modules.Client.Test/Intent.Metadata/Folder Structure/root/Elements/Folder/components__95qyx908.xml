@@ -12,10 +12,10 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="41db7ab0-396b-4948-a64d-1a58a70adfde" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Structs.Components.Models</name>
-      <display>Aryzac.IO.Modules.Client.Files.Structs.Components.Models</display>
-      <externalReference>4d3f22de-eca4-4d1f-a533-e9bdd0f91e08</externalReference>
+    <childElement id="985fefac-a27f-446a-80d7-edb2886a1872" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Models</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Models</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
@@ -28,10 +28,10 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="1632b5dc-f6fc-4c81-9cab-6cfa69298b92" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
-      <name>Aryzac.IO.Modules.Client.Files.Structs.Components.Props</name>
-      <display>Aryzac.IO.Modules.Client.Files.Structs.Components.Props</display>
-      <externalReference>11e1f600-38e4-4624-a5b8-2b982bce65ce</externalReference>
+    <childElement id="c4f4d535-ef99-45d4-823f-f0a1ceef6e41" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Props</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Props</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>

@@ -34,6 +34,10 @@
               <includedByDefault>true</includedByDefault>
               <required>true</required>
             </module>
+            <module id="Aryzac.IO.Client.Nuxt" version="1.0.0-pre.0" metadataOnly="false">
+              <includedByDefault>true</includedByDefault>
+              <required>true</required>
+            </module>
           </modules>
           <dependencies />
         </component>

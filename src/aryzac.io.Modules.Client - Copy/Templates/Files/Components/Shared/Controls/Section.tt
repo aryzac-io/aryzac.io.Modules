@@ -1,0 +1,59 @@
+<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+<#@ import namespace="Intent.Modelers.Types.ServiceProxies.Api" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Modules.Common.TypeScript.Templates" #>
+<#@ import namespace="Intent.Modules.Metadata.WebApi.Models" #>
+<#@ import namespace="Intent.Templates" #>
+<#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
+
+  <ui-editor-section
+    :title="t('<#= Helpers.GetI18nPath(Element) #>.title')"
+    :description="t('<#= Helpers.GetI18nPath(Element) #>.description')"
+  >
+
+<# foreach (var control in Element.ChildElements) {
+    if (control.IsTextboxModel()) { #>
+    <#= GenerateHelpers.Generate(control.AsTextboxModel()) #>
+<#  }
+    if (control.IsTextAreaModel()) { #>
+    <#= GenerateHelpers.Generate(control.AsTextAreaModel()) #>
+<#  }
+    if (control.IsCheckboxModel()) { #>
+    <#= GenerateHelpers.Generate(control.AsCheckboxModel()) #>
+<#  }
+    if (control.IsLabelModel()) { #>
+    <#= GenerateHelpers.Generate(control.AsLabelModel()) #>
+<#  }
+    if (control.IsSelectModel()) {#>
+    <#= GenerateHelpers.Generate(control.AsSelectModel()) #>
+<#  }
+    if (control.IsTableModel()) { #>
+  <#= GenerateHelpers.Generate(control.AsTableModel()) #>
+<#  }
+    if (control.IsActionsModel()) {
+      var actions = control.AsActionsModel(); #>
+
+    <template #actions>
+<# foreach (var action in actions.InternalElement.ChildElements) {
+    var command = action.AsActionModel().Command; #>
+      <button
+        type="button"
+        @click="<#= command.Mapping.Element.Name.ToPascalCase().ToCamelCase() #>()"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        {{ t('<#= Helpers.GetI18nPath(action) #>.label') }}
+      </button>
+    </template>
+    
+<#
+          }
+        }
+      }
+#>
+
+  </ui-editor-section>

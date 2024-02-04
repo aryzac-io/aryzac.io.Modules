@@ -1,0 +1,417 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Templates\Files\clone\TPartial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\.vscode\extensions.json" />
+    <Content Include="content\.vscode\launch.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\Files\clone\TPartial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Intent.Modules.Common" Version="3.5.0" />
+    <PackageReference Include="Intent.Modules.Common.Html" Version="3.3.0" />
+    <PackageReference Include="Intent.Modules.Common.Types" Version="3.3.9" />
+    <PackageReference Include="Intent.Modules.Common.TypeScript" Version="3.4.3" />
+    <PackageReference Include="Intent.Modules.Metadata.WebApi" Version="4.1.1" />
+    <PackageReference Include="Intent.Modules.Modelers.Services" Version="3.5.1" />
+    <PackageReference Include="Intent.Modules.Modelers.Types.ServiceProxies" Version="5.2.1" />
+    <PackageReference Include="Intent.Modules.Modelers.WebClient" Version="4.0.0" />
+    <PackageReference Include="Intent.Packager" Version="3.4.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Intent.RoslynWeaver.Attributes" Version="2.1.3" />
+    <PackageReference Include="Intent.SoftwareFactory.SDK" Version="3.5.0" />
+    <PackageReference Include="System.CodeDom" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Templates\Components\Layout\Components\ComponentsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\Heading.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Heading.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Component\ComponentTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Component\i18n\i18n.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>i18n.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Component\Script\Properties.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Properties.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Component\Script\Script.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Script.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Component\Script\TypeImport.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TypeImport.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Component\Template\Template.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Template.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputCheckbox.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputCheckbox.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputSelect.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputSelect.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputTextArea.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputTextArea.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\InputTextbox.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputTextbox.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\Label.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Label.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\Section.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Section.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\Controls\Table.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Table.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Shared\HtmlTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HtmlTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\Actions.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Actions.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\CommandAndQueryServiceProxyComposables.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CommandAndQueryServiceProxyComposables.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\Commands.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Commands.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\DtoTypeImports.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DtoTypeImports.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\Shared\Queries.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Queries.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Attributes.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TitleComputed.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OptionsComputed.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TableHeaders.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\T.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>T.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Layouts\Layout\LayoutTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LayoutTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Pages\Page\PageTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PageTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Components\Component\ComponentTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\Layout\Components\ComponentsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Layouts\Layout\LayoutTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LayoutTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Pages\Page\PageTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PageTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Structs\DTOs\DTO\DTOTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DTOTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Structs\DTOs\JsonResponse\JsonResponseTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JsonResponseTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\UseService\UseServiceTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseServiceTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\UseServiceProxy\UseServiceProxyTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseServiceProxyTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\NuxtConfig\NuxtConfigTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NuxtConfigTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseTableOptionsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseSelectOptionsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseHeadingOptionsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UseLabelOptionsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentHtmlTemplate.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Templates\Files\Components\Shared\Controls\Heading.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Heading.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\Controls\InputCheckbox.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputCheckbox.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\Controls\InputSelect.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputSelect.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\Controls\InputTextArea.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputTextArea.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\Controls\InputTextbox.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>InputTextbox.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\Controls\Label.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Label.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\Controls\Section.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Section.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\Controls\Table.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Table.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Component\Script\Properties.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Properties.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Component\Script\TypeImport.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TypeImport.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Shared\HtmlTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>HtmlTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\CommandAndQueryServiceProxyComposables.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>CommandAndQueryServiceProxyComposables.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\Commands.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Commands.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\DtoTypeImports.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>DtoTypeImports.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\Queries.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Queries.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseHeadingOptions\Attributes.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Attributes.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseHeadingOptions\TitleComputed.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TitleComputed.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseSelectOptions\OptionsComputed.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>OptionsComputed.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\T.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>T.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Component\Template\Template.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Template.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Component\Script\Script.tt">
+      <LastGenOutput>Script.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Templates\Files\Components\Component\i18n\i18n.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>i18n.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\Shared\Actions.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Actions.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseTableOptions\TableHeaders.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TableHeaders.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Layouts\Layout\LayoutTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>LayoutTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Components\Layout\Components\ComponentsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Pages\Page\PageTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>PageTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Components\Component\ComponentTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Component\ComponentTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\Layout\Components\ComponentsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Layouts\Layout\LayoutTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>LayoutTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Pages\Page\PageTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>PageTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Structs\DTOs\DTO\DTOTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>DTOTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Structs\DTOs\JsonResponse\JsonResponseTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>JsonResponseTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\UseService\UseServiceTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseServiceTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\UseServiceProxy\UseServiceProxyTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseServiceProxyTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\NuxtConfig\NuxtConfigTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>NuxtConfigTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseTableOptions\UseTableOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseTableOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseSelectOptions\UseSelectOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseSelectOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseHeadingOptions\UseHeadingOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseHeadingOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Composables\Controls\UseLabelOptions\UseLabelOptionsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>UseLabelOptionsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Files\Components\ComponentHtml\ComponentHtmlTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ComponentHtmlTemplate.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+</Project>

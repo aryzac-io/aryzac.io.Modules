@@ -4,7 +4,7 @@
   <FileLogs>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#.gitignore</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#.gitignore</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/.gitignore</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>.gitignore</ProjectRelativeFilePath>
@@ -12,7 +12,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#.vscode/extensions.json</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#.vscode/extensions.json</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/.vscode/extensions.json</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>.vscode/extensions.json</ProjectRelativeFilePath>
@@ -20,7 +20,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#.vscode/launch.json</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#.vscode/launch.json</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/.vscode/launch.json</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>.vscode/launch.json</ProjectRelativeFilePath>
@@ -28,7 +28,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Components.Component#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/edit-client.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/edit-client.vue</ProjectRelativeFilePath>
@@ -36,7 +36,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Components.Component#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/list-clients.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/list-clients.vue</ProjectRelativeFilePath>
@@ -44,7 +44,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Components.Component#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/view-client.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/view-client.vue</ProjectRelativeFilePath>
@@ -52,7 +52,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/appbar/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/appbar/index.vue</ProjectRelativeFilePath>
@@ -60,7 +60,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/logo.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/logo.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/appbar/logo.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/appbar/logo.vue</ProjectRelativeFilePath>
@@ -68,7 +68,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/navigation.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/navigation.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/appbar/navigation.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/appbar/navigation.vue</ProjectRelativeFilePath>
@@ -76,7 +76,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/notification-menu.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/notification-menu.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/appbar/notification-menu.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/appbar/notification-menu.vue</ProjectRelativeFilePath>
@@ -84,7 +84,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/profile-menu.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/profile-menu.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/appbar/profile-menu.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/appbar/profile-menu.vue</ProjectRelativeFilePath>
@@ -92,7 +92,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/search.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/search.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/appbar/search.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/appbar/search.vue</ProjectRelativeFilePath>
@@ -100,7 +100,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/section.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/section.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/appbar/section.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/appbar/section.vue</ProjectRelativeFilePath>
@@ -108,7 +108,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/breadcrumbs/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/breadcrumbs/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/breadcrumbs/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/breadcrumbs/index.vue</ProjectRelativeFilePath>
@@ -116,7 +116,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>bf7e9723-f31c-4041-9650-02b82fd265d3</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Layout.Components</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Components.Layout.Components</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/components.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components.ts</ProjectRelativeFilePath>
@@ -124,7 +124,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/sidebar/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/sidebar/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/sidebar/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/sidebar/index.vue</ProjectRelativeFilePath>
@@ -132,7 +132,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/sidebar/navigation.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/sidebar/navigation.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/sidebar/navigation.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/sidebar/navigation.vue</ProjectRelativeFilePath>
@@ -140,7 +140,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/sidebar/section.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/sidebar/section.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/layout/sidebar/section.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/layout/sidebar/section.vue</ProjectRelativeFilePath>
@@ -148,7 +148,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/card/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/card/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/card/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/card/index.vue</ProjectRelativeFilePath>
@@ -156,7 +156,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/columns/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/columns/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/columns/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/columns/index.vue</ProjectRelativeFilePath>
@@ -164,7 +164,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/breakpoint-padded.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/breakpoint-padded.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/container/breakpoint-padded.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/container/breakpoint-padded.vue</ProjectRelativeFilePath>
@@ -172,7 +172,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/constrained-padded.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/constrained-padded.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/container/constrained-padded.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/container/constrained-padded.vue</ProjectRelativeFilePath>
@@ -180,7 +180,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/container/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/container/index.vue</ProjectRelativeFilePath>
@@ -188,7 +188,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/mobile-full-breakpoint-padded.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/mobile-full-breakpoint-padded.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/container/mobile-full-breakpoint-padded.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/container/mobile-full-breakpoint-padded.vue</ProjectRelativeFilePath>
@@ -196,7 +196,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/mobile-full-constrained-padded.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/mobile-full-constrained-padded.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/container/mobile-full-constrained-padded.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/container/mobile-full-constrained-padded.vue</ProjectRelativeFilePath>
@@ -204,7 +204,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/narrow-constrained-padded.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/container/narrow-constrained-padded.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/container/narrow-constrained-padded.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/container/narrow-constrained-padded.vue</ProjectRelativeFilePath>
@@ -212,7 +212,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/editor/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/editor/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/editor/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/editor/index.vue</ProjectRelativeFilePath>
@@ -220,7 +220,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/editor/section.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/editor/section.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/editor/section.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/editor/section.vue</ProjectRelativeFilePath>
@@ -228,7 +228,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/heading/page/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/heading/page/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/heading/page/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/heading/page/index.vue</ProjectRelativeFilePath>
@@ -236,7 +236,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/checkbox.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/checkbox.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/input/checkbox.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/input/checkbox.vue</ProjectRelativeFilePath>
@@ -244,7 +244,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/label.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/label.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/input/label.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/input/label.vue</ProjectRelativeFilePath>
@@ -252,7 +252,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/radio-button.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/radio-button.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/input/radio-button.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/input/radio-button.vue</ProjectRelativeFilePath>
@@ -260,7 +260,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/select.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/select.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/input/select.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/input/select.vue</ProjectRelativeFilePath>
@@ -268,7 +268,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/text-area.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/text-area.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/input/text-area.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/input/text-area.vue</ProjectRelativeFilePath>
@@ -276,7 +276,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/textbox.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/input/textbox.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/input/textbox.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/input/textbox.vue</ProjectRelativeFilePath>
@@ -284,7 +284,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/grid.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/grid.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/view/grid.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/view/grid.vue</ProjectRelativeFilePath>
@@ -292,7 +292,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/index.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/view/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/view/index.vue</ProjectRelativeFilePath>
@@ -300,7 +300,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/list.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/list.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/view/list.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/view/list.vue</ProjectRelativeFilePath>
@@ -308,7 +308,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/pagination.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/pagination.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/view/pagination.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/view/pagination.vue</ProjectRelativeFilePath>
@@ -316,7 +316,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/table.vue</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/ui/view/table.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/ui/view/table.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/ui/view/table.vue</ProjectRelativeFilePath>
@@ -324,7 +324,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions#8bcf864a-fa9a-4482-b7d6-74a5d06f83e1</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseHeadingOptions#8bcf864a-fa9a-4482-b7d6-74a5d06f83e1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/edit-client/useEditClientEditClientOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/edit-client/useEditClientEditClientOptions.ts</ProjectRelativeFilePath>
@@ -332,7 +332,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions#9afe5316-4dcc-432d-a208-94458ba6830c</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseSelectOptions#9afe5316-4dcc-432d-a208-94458ba6830c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/edit-client/useEditClientTitleOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/edit-client/useEditClientTitleOptions.ts</ProjectRelativeFilePath>
@@ -340,7 +340,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#43e7f9fd-6f94-44be-b3eb-0213be82bffd</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseTableOptions#43e7f9fd-6f94-44be-b3eb-0213be82bffd</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/list-clients/useListClientsClientsTableOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/list-clients/useListClientsClientsTableOptions.ts</ProjectRelativeFilePath>
@@ -348,7 +348,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions#b492489c-aed4-419e-a61e-e75f8822ba62</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseHeadingOptions#b492489c-aed4-419e-a61e-e75f8822ba62</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/list-clients/useListClientsViewClientsOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/list-clients/useListClientsViewClientsOptions.ts</ProjectRelativeFilePath>
@@ -356,7 +356,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#1e4c750e-74dc-4eba-b0f8-0a832f889aff</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions#1e4c750e-74dc-4eba-b0f8-0a832f889aff</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientFirstNameOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/view-client/useViewClientFirstNameOptions.ts</ProjectRelativeFilePath>
@@ -364,7 +364,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#1cf09117-0450-4e15-a623-0eec7dc33885</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions#1cf09117-0450-4e15-a623-0eec7dc33885</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientLastNameOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/view-client/useViewClientLastNameOptions.ts</ProjectRelativeFilePath>
@@ -372,7 +372,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#8ea21dc2-9382-474f-9be7-37fcfab32303</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions#8ea21dc2-9382-474f-9be7-37fcfab32303</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientNotesOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/view-client/useViewClientNotesOptions.ts</ProjectRelativeFilePath>
@@ -380,7 +380,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#ffb506d4-9321-47d6-a406-f9abad214328</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions#ffb506d4-9321-47d6-a406-f9abad214328</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientOtherNamesOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/view-client/useViewClientOtherNamesOptions.ts</ProjectRelativeFilePath>
@@ -388,7 +388,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#4c58a4b8-00c9-436f-ae75-430ba1d340ec</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseLabelOptions#4c58a4b8-00c9-436f-ae75-430ba1d340ec</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientReceivePromotionsOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/view-client/useViewClientReceivePromotionsOptions.ts</ProjectRelativeFilePath>
@@ -396,7 +396,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions#a46f8870-abd9-4c5d-8c2a-b8963ad827b8</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.Controls.UseHeadingOptions#a46f8870-abd9-4c5d-8c2a-b8963ad827b8</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientViewClientOptions.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>components/clients/view-client/useViewClientViewClientOptions.ts</ProjectRelativeFilePath>
@@ -404,7 +404,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.UseServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useClientsServiceProxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>useClientsServiceProxy.ts</ProjectRelativeFilePath>
@@ -412,7 +412,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useDebug.ts</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useDebug.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useDebug.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>composables/useDebug.ts</ProjectRelativeFilePath>
@@ -420,7 +420,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useNavigation.ts</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useNavigation.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useNavigation.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>composables/useNavigation.ts</ProjectRelativeFilePath>
@@ -428,7 +428,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useNavigationSetup.ts</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useNavigationSetup.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useNavigationSetup.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>composables/useNavigationSetup.ts</ProjectRelativeFilePath>
@@ -436,7 +436,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useSidebar.ts</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#composables/useSidebar.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useSidebar.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>composables/useSidebar.ts</ProjectRelativeFilePath>
@@ -444,7 +444,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#2f2c32bc-099c-4599-9824-2f6e9813c570</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Composables.UseServiceProxy#2f2c32bc-099c-4599-9824-2f6e9813c570</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useTitlesServiceProxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>useTitlesServiceProxy.ts</ProjectRelativeFilePath>
@@ -452,7 +452,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>96bbeed2-11a8-4f41-bf66-ff2a58b82659</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Layouts.Layout#aec04780-3a33-4de1-aceb-7e97d049107a</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Layouts.Layout#aec04780-3a33-4de1-aceb-7e97d049107a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/layouts/default.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>default.vue</ProjectRelativeFilePath>
@@ -460,7 +460,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>e6c626fa-a6f9-4937-a23a-2fcf2eae8321</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Components.Component i18n#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/components/clients/edit-client.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/clients/edit-client.i18n.yaml</ProjectRelativeFilePath>
@@ -468,7 +468,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>e6c626fa-a6f9-4937-a23a-2fcf2eae8321</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Components.Component i18n#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/components/clients/list-clients.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/clients/list-clients.i18n.yaml</ProjectRelativeFilePath>
@@ -476,7 +476,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>e6c626fa-a6f9-4937-a23a-2fcf2eae8321</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Components.Component i18n#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/components/clients/view-client.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/clients/view-client.i18n.yaml</ProjectRelativeFilePath>
@@ -484,7 +484,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5ca9d1dd-a3b9-4ff5-acf6-3643fa7fa862</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Layouts.Layout i18n#aec04780-3a33-4de1-aceb-7e97d049107a</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Layouts.Layout i18n#aec04780-3a33-4de1-aceb-7e97d049107a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/default.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>default.i18n.yaml</ProjectRelativeFilePath>
@@ -492,7 +492,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>f13add90-cd1f-4152-a72d-6946d391b124</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#bd52824a-6677-4444-b057-52b98cae4da7</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page i18n#bd52824a-6677-4444-b057-52b98cae4da7</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/pages/Clients/[client-id]/edit.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/[client-id]/edit.i18n.yaml</ProjectRelativeFilePath>
@@ -500,7 +500,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>f13add90-cd1f-4152-a72d-6946d391b124</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#bd38adf2-8e6d-4be9-bf49-282a1b001805</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page i18n#bd38adf2-8e6d-4be9-bf49-282a1b001805</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/pages/Clients/[client-id]/index.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/[client-id]/index.i18n.yaml</ProjectRelativeFilePath>
@@ -508,7 +508,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>f13add90-cd1f-4152-a72d-6946d391b124</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#5ef8c8aa-96ad-41a7-8497-6039ceea3230</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page i18n#5ef8c8aa-96ad-41a7-8497-6039ceea3230</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/pages/Clients/index.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/index.i18n.yaml</ProjectRelativeFilePath>
@@ -516,7 +516,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>f13add90-cd1f-4152-a72d-6946d391b124</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page i18n#fae816be-2c43-4a33-be7c-fcfce0bcec41</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page i18n#fae816be-2c43-4a33-be7c-fcfce0bcec41</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/pages/index.i18n.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/index.i18n.yaml</ProjectRelativeFilePath>
@@ -524,7 +524,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#middleware/clearSections.global.ts</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#middleware/clearSections.global.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/middleware/clearSections.global.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>middleware/clearSections.global.ts</ProjectRelativeFilePath>
@@ -532,7 +532,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.NuxtConfig</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.NuxtConfig</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/nuxt.config.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>nuxt.config.ts</ProjectRelativeFilePath>
@@ -540,7 +540,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.package</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.package</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/package.json</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>package.json</ProjectRelativeFilePath>
@@ -548,7 +548,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#bd52824a-6677-4444-b057-52b98cae4da7</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page#bd52824a-6677-4444-b057-52b98cae4da7</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/pages/Clients/[client-id]/edit.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/[client-id]/edit.vue</ProjectRelativeFilePath>
@@ -556,7 +556,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#bd38adf2-8e6d-4be9-bf49-282a1b001805</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page#bd38adf2-8e6d-4be9-bf49-282a1b001805</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/pages/Clients/[client-id]/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/[client-id]/index.vue</ProjectRelativeFilePath>
@@ -564,7 +564,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#5ef8c8aa-96ad-41a7-8497-6039ceea3230</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page#5ef8c8aa-96ad-41a7-8497-6039ceea3230</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/pages/Clients/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/Clients/index.vue</ProjectRelativeFilePath>
@@ -572,7 +572,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>7d1277b1-a53f-400f-b79d-4751c0f714c5</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Pages.Page#fae816be-2c43-4a33-be7c-fcfce0bcec41</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Pages.Page#fae816be-2c43-4a33-be7c-fcfce0bcec41</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/pages/index.vue</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>/index.vue</ProjectRelativeFilePath>
@@ -580,7 +580,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#public/favicon.ico</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#public/favicon.ico</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/public/favicon.ico</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>public/favicon.ico</ProjectRelativeFilePath>
@@ -588,7 +588,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#README.md</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#README.md</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/README.md</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>README.md</ProjectRelativeFilePath>
@@ -596,7 +596,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#server/tsconfig.json</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#server/tsconfig.json</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/server/tsconfig.json</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>server/tsconfig.json</ProjectRelativeFilePath>
@@ -604,7 +604,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Services.ServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/clients-service.proxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients-service.proxy.ts</ProjectRelativeFilePath>
@@ -612,7 +612,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d3627b1e-a112-4f9a-b0d1-1e29d0c05de9</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Services.ServiceProxy#2f2c32bc-099c-4599-9824-2f6e9813c570</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Services.ServiceProxy#2f2c32bc-099c-4599-9824-2f6e9813c570</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/services/titles-service.proxy.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles-service.proxy.ts</ProjectRelativeFilePath>
@@ -620,7 +620,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#stores/navigation.ts</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#stores/navigation.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/stores/navigation.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>stores/navigation.ts</ProjectRelativeFilePath>
@@ -628,7 +628,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Models#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Models#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/edit-client.model.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/edit-client.model.ts</ProjectRelativeFilePath>
@@ -636,7 +636,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Props#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Props#89c66405-712e-46ef-a85c-2123c88b4e8f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/edit-client.props.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/edit-client.props.ts</ProjectRelativeFilePath>
@@ -644,7 +644,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Models#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Models#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/list-clients.model.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/list-clients.model.ts</ProjectRelativeFilePath>
@@ -652,7 +652,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Props#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Props#0e1c5b21-192a-48ee-8d95-c22474031496</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/list-clients.props.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/list-clients.props.ts</ProjectRelativeFilePath>
@@ -660,7 +660,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Models#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Models#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/view-client.model.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/view-client.model.ts</ProjectRelativeFilePath>
@@ -668,7 +668,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Props#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.Components.Props#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/view-client.props.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/view-client.props.ts</ProjectRelativeFilePath>
@@ -676,7 +676,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#8adab089-3e0f-466e-8478-0f0d891af0be</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#8adab089-3e0f-466e-8478-0f0d891af0be</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/change-name-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/change-name-client-command.dto.ts</ProjectRelativeFilePath>
@@ -684,7 +684,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#1aae7db0-ae39-417d-a3b5-2214e6dae43f</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#1aae7db0-ae39-417d-a3b5-2214e6dae43f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/change-note-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/change-note-client-command.dto.ts</ProjectRelativeFilePath>
@@ -692,7 +692,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#e657409b-f841-4060-bf6e-44fc5cd83b12</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#e657409b-f841-4060-bf6e-44fc5cd83b12</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/change-receive-promotion-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/change-receive-promotion-client-command.dto.ts</ProjectRelativeFilePath>
@@ -700,7 +700,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#dc6a9d6c-9ca6-4b25-a8f6-4eb7d3fa06a2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/change-title-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/change-title-client-command.dto.ts</ProjectRelativeFilePath>
@@ -708,7 +708,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#6f4b80e1-8632-4181-901c-46f28e9b3b75</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#6f4b80e1-8632-4181-901c-46f28e9b3b75</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/client.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/client.dto.ts</ProjectRelativeFilePath>
@@ -716,7 +716,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#c956cb72-2f94-4294-b4ff-638c9e332ff3</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#c956cb72-2f94-4294-b4ff-638c9e332ff3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/create-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/create-client-command.dto.ts</ProjectRelativeFilePath>
@@ -724,7 +724,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#0b897df0-2dcd-4c9b-baf8-8e8180894a38</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#0b897df0-2dcd-4c9b-baf8-8e8180894a38</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/delete-client-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/delete-client-command.dto.ts</ProjectRelativeFilePath>
@@ -732,7 +732,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#42722bcb-5cee-4dff-975f-499d5bdf7fe4</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#42722bcb-5cee-4dff-975f-499d5bdf7fe4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/get-client-by-id-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/get-client-by-id-query.dto.ts</ProjectRelativeFilePath>
@@ -740,7 +740,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#625e4bb7-389e-43f3-839a-b700d2c92459</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#625e4bb7-389e-43f3-839a-b700d2c92459</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/clients/get-clients-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/get-clients-query.dto.ts</ProjectRelativeFilePath>
@@ -748,7 +748,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#c27cb5e5-71d7-4bb0-b268-052b76690385</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#c27cb5e5-71d7-4bb0-b268-052b76690385</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/change-code-title-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/change-code-title-command.dto.ts</ProjectRelativeFilePath>
@@ -756,7 +756,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#332607cc-d329-4101-89b3-98bdcef6c5e3</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#332607cc-d329-4101-89b3-98bdcef6c5e3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/change-description-title-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/change-description-title-command.dto.ts</ProjectRelativeFilePath>
@@ -764,7 +764,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#6d3f48a4-d612-4535-b0bd-eb78ebad42ad</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#6d3f48a4-d612-4535-b0bd-eb78ebad42ad</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/change-name-title-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/change-name-title-command.dto.ts</ProjectRelativeFilePath>
@@ -772,7 +772,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#d488271f-eba8-4c6f-886d-cb9d0e991e4b</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#d488271f-eba8-4c6f-886d-cb9d0e991e4b</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/create-title-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/create-title-command.dto.ts</ProjectRelativeFilePath>
@@ -780,7 +780,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#08b8b35f-c869-4dc4-b251-f7cc147ce48d</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#08b8b35f-c869-4dc4-b251-f7cc147ce48d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/delete-title-command.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/delete-title-command.dto.ts</ProjectRelativeFilePath>
@@ -788,7 +788,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#c238a4d8-2de5-4d9f-852e-da1b14d1f76a</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#c238a4d8-2de5-4d9f-852e-da1b14d1f76a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/get-title-by-id-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/get-title-by-id-query.dto.ts</ProjectRelativeFilePath>
@@ -796,7 +796,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#ea635ac2-2999-4d7f-b5c3-1ad790891d77</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#ea635ac2-2999-4d7f-b5c3-1ad790891d77</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/get-titles-query.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/get-titles-query.dto.ts</ProjectRelativeFilePath>
@@ -804,7 +804,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>388cfc47-3cdf-47c6-a5ff-629cde7071cc</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.DTO#39f19552-e59f-4c04-9111-9ee8bd800f48</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO#39f19552-e59f-4c04-9111-9ee8bd800f48</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/dto/titles/title.dto.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>titles/title.dto.ts</ProjectRelativeFilePath>
@@ -812,7 +812,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b7a5a752-c00e-4e0b-ab1f-7df186bced20</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.DTOs.JsonResponse</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.JsonResponse</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/json-response.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>json-response.ts</ProjectRelativeFilePath>
@@ -820,7 +820,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#structs/navigation.ts</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#structs/navigation.ts</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/navigation.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>structs/navigation.ts</ProjectRelativeFilePath>
@@ -828,7 +828,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
-      <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#tsconfig.json</CorrelationId>
+      <CorrelationId>Aryzac.IO.Client.Nuxt.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#tsconfig.json</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/tsconfig.json</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>tsconfig.json</ProjectRelativeFilePath>

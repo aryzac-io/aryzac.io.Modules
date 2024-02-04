@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="638aad4e-8bbf-4d64-b287-40a453d2c0b1" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>dto</name>
+  <display>dto</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>392a7321-08de-4c51-9010-fefe3c7812cd</parentFolderId>
+  <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+  <packageName>root</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="dde5868f-8161-4c34-b9ec-cdf82b665d94" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.DTO</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>638aad4e-8bbf-4d64-b287-40a453d2c0b1</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="a80e18ab-2a9e-4ee0-8aca-65c6a1bb2ded" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.JsonResponse</name>
+      <display>Aryzac.IO.Client.Nuxt.Files.Structs.DTOs.JsonResponse</display>
+      <externalReference>Aryzac.IO.Client.Nuxt</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>638aad4e-8bbf-4d64-b287-40a453d2c0b1</parentFolderId>
+      <packageId>846530bc-2e76-4d05-aa9b-7873db7fc471</packageId>
+      <packageName>root</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -3,7 +3,7 @@
   <ApplicationId>e98b57f7-7dfe-4acb-845d-d68807554b6b</ApplicationId>
   <FileLogs>
     <FileLog>
-      <CorrelationId>Intent.VisualStudio.Projects.VisualStudio2015Solution#e9ee3d56-3346-425f-9426-6e20730c0ae4</CorrelationId>
+      <CorrelationId>Intent.VisualStudio.Projects.VisualStudioSolution#e9ee3d56-3346-425f-9426-6e20730c0ae4</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/aryzac.io.Modules.sln</ApplicationRelativeFilePath>
       <IsIgnored>false</IsIgnored>

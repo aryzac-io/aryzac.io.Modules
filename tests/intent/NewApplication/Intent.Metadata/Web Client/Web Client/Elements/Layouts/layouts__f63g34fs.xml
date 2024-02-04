@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="bb8df3be-3664-4067-9347-ccb67dd08683" type="Layouts" typeId="60f6d7d6-ad05-41d4-830e-e2c3ffe452e4">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>bfe429cf-1180-419f-818c-a999ab12797e</parentFolderId>
+  <packageId>bfe429cf-1180-419f-818c-a999ab12797e</packageId>
+  <packageName>Web Client</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="5f462f4b-8f1d-4ad3-b30f-969421f6a7f4" type="Layout" typeId="256217fb-92b3-4b8f-9f50-7d33db1d4a7e">
+      <name>default</name>
+      <display>default</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>bb8df3be-3664-4067-9347-ccb67dd08683</parentFolderId>
+      <packageId>bfe429cf-1180-419f-818c-a999ab12797e</packageId>
+      <packageName>Web Client</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

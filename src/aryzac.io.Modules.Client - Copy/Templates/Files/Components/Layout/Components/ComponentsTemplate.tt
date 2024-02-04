@@ -1,0 +1,16 @@
+<#@ template language="C#" inherits="IntentTemplateBase<object>" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Intent.Modules.Common" #>
+<#@ import namespace="Intent.Modules.Common.Templates" #>
+<#@ import namespace="Intent.Metadata.Models" #>
+
+// update
+import AppbarNavigation from "~/components/layout/appbar/navigation.vue";
+import SidebarNavigation from "~/components/layout/sidebar/navigation.vue";
+
+export const components = {
+  appbar: AppbarNavigation,
+  sidebar: SidebarNavigation,
+};
