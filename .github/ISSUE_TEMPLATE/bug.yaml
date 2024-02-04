@@ -27,19 +27,17 @@ body:
         - Azyrac.IO.Client Application Template
     validations:
       required: true
-
-  - type: checkboxes
-    id: checks
+      
+  - type: dropdown
+    id: issue-conditions
     attributes:
-      label: Checks
-      description: "Please confirm the following:"
+      label: Issue Conditions
+      description: Please confirm the status of the following important aspects.
+      multiple: true
       options:
-        - label: Software Factory runs fine
-          required: true
-        - label: Generated code compiles
-          required: true
-        - label: Generated code runs without issues
-          required: true
+        - Software Factory runs fine
+        - Generated code compiles
+        - Generated code runs without issues
 
   - type: textarea
     id: more-details
