@@ -2171,6 +2171,7 @@
                   <name>Notes</name>
                   <display>Notes</display>
                   <isAbstract>false</isAbstract>
+                  <sort-children>manually</sort-children>
                   <genericTypes />
                   <isMapped>false</isMapped>
                   <parentFolderId>e7bfa0a1-b638-4437-8921-58a16442fede</parentFolderId>
@@ -2199,7 +2200,40 @@
                     </stereotype>
                   </stereotypes>
                   <metadata />
-                  <childElements />
+                  <childElements>
+                    <childElement id="43548aee-401a-4909-befd-9fb01dc8788a" type="Text Area" typeId="9fb5d59b-af35-4484-b7f2-410a30365bbf">
+                      <name>Notes</name>
+                      <display>Notes</display>
+                      <isAbstract>false</isAbstract>
+                      <genericTypes />
+                      <isMapped>false</isMapped>
+                      <parentFolderId>a18c2fbf-b9e4-4132-a06a-60dd99ec70cb</parentFolderId>
+                      <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                      <packageName>Web Client</packageName>
+                      <stereotypes>
+                        <stereotype stereotypeDefinitionId="7c3e71c5-7d9d-47eb-b0fc-8473359257bb" name="Text Area Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="a5dbfd39-e069-464e-8259-4075f50b566e" display="Locale" value="e3543bd0-f80e-4774-a5da-44285e2eeca0" isActive="true" />
+                            <property name="edd4ec3b-c2e7-401d-ae0b-600c85a42a04" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                        <stereotype stereotypeDefinitionId="7c3e71c5-7d9d-47eb-b0fc-8473359257bb" name="Text Area Settings">
+                          <addedByDefault>false</addedByDefault>
+                          <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+                          <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+                          <properties>
+                            <property name="a5dbfd39-e069-464e-8259-4075f50b566e" display="Locale" value="a63a9238-510e-40ed-9a02-170374f3e6d5" isActive="true" />
+                            <property name="edd4ec3b-c2e7-401d-ae0b-600c85a42a04" display="Label" isActive="true" />
+                          </properties>
+                        </stereotype>
+                      </stereotypes>
+                      <metadata />
+                      <childElements />
+                    </childElement>
+                  </childElements>
                 </childElement>
               </childElements>
             </childElement>

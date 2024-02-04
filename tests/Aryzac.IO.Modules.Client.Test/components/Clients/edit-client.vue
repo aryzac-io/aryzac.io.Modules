@@ -108,6 +108,12 @@ onMounted(() => {
     :description="t('section-notes.description')"
   >
 
+    
+  <ui-input-text-area 
+    v-model="model.notes" 
+    :label="t('section-notes.text-area-notes.label')" 
+  />
+
 
   </ui-editor-section>  
 </div>

@@ -26,6 +26,8 @@ af:
   section-notes:
     title: Notes
     description: ''
+    text-area-notes:
+      label: Notes
 en:
   heading-editClient:
     title: Edit Client
@@ -54,3 +56,5 @@ en:
   section-notes:
     title: Notes
     description: ''
+    text-area-notes:
+      label: Notes
