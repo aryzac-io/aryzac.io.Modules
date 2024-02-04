@@ -71,6 +71,11 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
                     HandleTable(yamlObject, component.AsTableModel(), locale);
                 }
             }
+
+            if (!model.InternalElement.ChildElements.Any())
+            {
+                AddPlaceholder(yamlObject);
+            }
         }
 
         private static void HandleTable(IDataFileObjectValue yamlObject, TableModel model, LocaleModel locale)

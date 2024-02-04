@@ -50,7 +50,7 @@ const query = await <#= Model.Query.Mapping.Element.AsOperationModel().ParentSer
   if (Model.Model != null)
   {
 #>
-const model = reactive<<#= Model.Name #>Model>({} as <#= Model.Name #>Model);
+const model = reactive<<#= Model.Name.ToPascalCase() #>Model>({} as <#= Model.Name.ToPascalCase() #>Model);
 
 <#   
     if (Model.Query != null)

@@ -35,6 +35,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>9c11f2e3-6f9b-4b8d-83ca-9b14e6bca12e</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/components/Clients/view-client.vue</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/Clients/view-client.vue</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>cff18915-ecd7-4e9d-93de-575eef8ba540</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Templates.Files.StaticContentTemplateRegistrations.StaticContentTemplateRegistration#components/layout/appbar/index.vue</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -387,6 +395,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>e6c626fa-a6f9-4937-a23a-2fcf2eae8321</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Components.Component i18n#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/locales/components/clients/view-client.i18n.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>/clients/view-client.i18n.yaml</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>5ca9d1dd-a3b9-4ff5-acf6-3643fa7fa862</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Layouts.Layout i18n#aec04780-3a33-4de1-aceb-7e97d049107a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -528,6 +544,22 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/list-clients.props.ts</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>clients/list-clients.props.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Models#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/view-client.model.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>clients/view-client.model.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b0dce684-14e8-492b-a546-8f4b6a08d3cf</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Structs.Components.Props#6b5264e1-b410-409e-b4c7-d4baf36f768d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/structs/components/clients/view-client.props.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>clients/view-client.props.ts</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

@@ -384,6 +384,478 @@
             </childElement>
           </childElements>
         </childElement>
+        <childElement id="6b5264e1-b410-409e-b4c7-d4baf36f768d" type="Component" typeId="854137dd-0e21-4076-adb9-404c4b1a782e">
+          <name>View Client</name>
+          <display>View Client</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-by-name</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>99bd76b0-a805-45c4-aeb4-e2ea78c9f290</parentFolderId>
+          <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+          <packageName>Web Client</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="9d350135-b53e-4ae7-86fd-eb7004522d79" name="Component Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Aryzac.IO.Modules.Client</definitionPackageName>
+              <definitionPackageId>7966642f-c3c5-47f3-a03b-0b758cc2a981</definitionPackageId>
+              <properties>
+                <property name="59f5fc1d-727b-43c7-a332-655d160ebc23" display="Separate Template" value="false" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements>
+            <childElement id="3b962729-fbb2-4199-993a-803a102b1e97" type="Component Parameter" typeId="44efb0cd-7b3c-4dcf-a52d-7c947c8a8bab">
+              <name>client-id</name>
+              <display>client-id: guid</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="8fa06c0d-c4cd-4d80-849f-1af053bc8355">
+                <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>6b5264e1-b410-409e-b4c7-d4baf36f768d</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+              <name>[query]</name>
+              <display>[query]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>by-type-then-by-name</sort-children>
+              <genericTypes />
+              <isMapped>true</isMapped>
+              <mappedClass isRoot="true">
+                <applicationId>62c371b4-af5f-42bf-9b88-6751357b25cf</applicationId>
+                <metadataId>f492faed-0665-4513-9853-5a230721786f</metadataId>
+                <mappingSettingsId>6d2115a7-eb3d-437c-9b6b-22525284fe44</mappingSettingsId>
+                <autoSyncTypeReference>true</autoSyncTypeReference>
+                <mappedPath>
+                  <target id="2c1dc42f-6656-4080-a9e7-1024f2fdbf45" name="services" type="element" specialization="Service Proxies" />
+                  <target id="6c08bd28-8e1b-494e-84ae-27b359b99eb6" name="ClientsService" type="element" specialization="Service Proxy" />
+                  <target id="209f5d2a-8cd1-41c8-b588-3173f3f5aaf7" name="GetClientByIdQuery" type="element" specialization="Operation" />
+                </mappedPath>
+              </mappedClass>
+              <parentFolderId>6b5264e1-b410-409e-b4c7-d4baf36f768d</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <mappings>
+                <mapping type="Map Parameter To Query" typeId="c9b9ae43-67be-4cf0-93db-76f5d3a484b0">
+                  <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6b5264e1-b410-409e-b4c7-d4baf36f768d" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[View Client]" />
+                  <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="5dcc9daa-8895-4c88-9157-40df40fe1ca5" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[[query]]" />
+                  <mappedEnds>
+                    <mappedEnd>
+                      <expression>{client-id}</expression>
+                      <path>
+                        <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                        <target id="348ac52f-d141-4ee6-91c0-38b655728684" name="id" type="element" specialization="Parameter" />
+                      </path>
+                      <sources>
+                        <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="ab0cab60-2ddb-4797-a228-e3e2c6bee4a9">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="3b962729-fbb2-4199-993a-803a102b1e97" name="client-id" type="element" specialization="Component Parameter" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                  </mappedEnds>
+                </mapping>
+              </mappings>
+              <metadata />
+              <childElements>
+                <childElement id="348ac52f-d141-4ee6-91c0-38b655728684" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                  <name>id</name>
+                  <display>id: guid</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="17739f74-21bd-4e9d-961c-3938d4091f43">
+                    <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>5dcc9daa-8895-4c88-9157-40df40fe1ca5</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata>
+                    <entry key="endpoint-input-id" value="2a01b659-a8fa-427c-b967-b9a39d1123ee" />
+                  </metadata>
+                  <childElements />
+                </childElement>
+                <childElement id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                  <name>response-type</name>
+                  <display>response-type: ClientDto</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="24b8aea4-189f-4d8c-bfa5-05863317312f">
+                    <typeId>6f4b80e1-8632-4181-901c-46f28e9b3b75</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Aryzac.IO.Modules.Client.Test.Api.Services</typePackageName>
+                    <typePackageId>d30348ce-b7c9-4e8d-8a20-7f159d58d7e1</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>5dcc9daa-8895-4c88-9157-40df40fe1ca5</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata>
+                    <entry key="response-type" value="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" />
+                  </metadata>
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" type="Component Model" typeId="5dd49ba4-69de-4298-b4b6-8bc717f03316">
+              <name>[model]</name>
+              <display>[model]</display>
+              <isAbstract>false</isAbstract>
+              <sort-children>manually</sort-children>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>6b5264e1-b410-409e-b4c7-d4baf36f768d</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <mappings>
+                <mapping type="Map Query To Model" typeId="cde87cf5-60ea-4c1d-85bd-3669ddd602a8">
+                  <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6b5264e1-b410-409e-b4c7-d4baf36f768d" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[View Client]" />
+                  <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[[model]]" />
+                  <mappedEnds>
+                    <mappedEnd>
+                      <expression>{[query].response-type.Id}</expression>
+                      <path>
+                        <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                        <target id="d2970e04-d881-463a-ba56-c2635622d624" name="Id" type="element" specialization="Component Model Field" />
+                      </path>
+                      <sources>
+                        <source identifier="[query].response-type.Id" mappingType="Map From DTO-Field" mappingTypeId="667a63d0-4fc4-4759-bc2c-3965bfb66a95">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                            <target id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" name="response-type" type="element" specialization="Parameter" />
+                            <target id="1296c368-3fa0-4ec3-9e4c-63d1a2f20cf6" name="Id" type="element" specialization="DTO-Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[query].response-type.FirstName}</expression>
+                      <path>
+                        <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                        <target id="ba5f8b4b-b346-431c-a1d6-f122a73f6a87" name="FirstName" type="element" specialization="Component Model Field" />
+                      </path>
+                      <sources>
+                        <source identifier="[query].response-type.FirstName" mappingType="Map From DTO-Field" mappingTypeId="667a63d0-4fc4-4759-bc2c-3965bfb66a95">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                            <target id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" name="response-type" type="element" specialization="Parameter" />
+                            <target id="cbc86af4-d53d-4e4f-a8d5-9b96b1512bd7" name="FirstName" type="element" specialization="DTO-Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[query].response-type.LastName}</expression>
+                      <path>
+                        <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                        <target id="4a84960b-d8ad-480d-a014-177a07ab4437" name="LastName" type="element" specialization="Component Model Field" />
+                      </path>
+                      <sources>
+                        <source identifier="[query].response-type.LastName" mappingType="Map From DTO-Field" mappingTypeId="667a63d0-4fc4-4759-bc2c-3965bfb66a95">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                            <target id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" name="response-type" type="element" specialization="Parameter" />
+                            <target id="64ae13af-e5cd-47c1-b0b7-d088aa403d16" name="LastName" type="element" specialization="DTO-Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[query].response-type.OtherNames}</expression>
+                      <path>
+                        <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                        <target id="287997ac-fb3d-4382-a24f-71a4576d8689" name="OtherNames" type="element" specialization="Component Model Field" />
+                      </path>
+                      <sources>
+                        <source identifier="[query].response-type.OtherNames" mappingType="Map From DTO-Field" mappingTypeId="667a63d0-4fc4-4759-bc2c-3965bfb66a95">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                            <target id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" name="response-type" type="element" specialization="Parameter" />
+                            <target id="eddd9ba2-0808-44f1-8fec-cdde0cd51a6f" name="OtherNames" type="element" specialization="DTO-Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[query].response-type.TitleId}</expression>
+                      <path>
+                        <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                        <target id="64351bc6-2113-450a-a2dc-ac8c768c70c0" name="TitleId" type="element" specialization="Component Model Field" />
+                      </path>
+                      <sources>
+                        <source identifier="[query].response-type.TitleId" mappingType="Map From DTO-Field" mappingTypeId="667a63d0-4fc4-4759-bc2c-3965bfb66a95">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                            <target id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" name="response-type" type="element" specialization="Parameter" />
+                            <target id="6e51be79-2118-4c3a-b5ff-9732f96f4321" name="TitleId" type="element" specialization="DTO-Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[query].response-type.ReceivePromotions}</expression>
+                      <path>
+                        <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                        <target id="2c3dd76a-765e-4cb6-b922-a3c3c528ef10" name="ReceivePromotions" type="element" specialization="Component Model Field" />
+                      </path>
+                      <sources>
+                        <source identifier="[query].response-type.ReceivePromotions" mappingType="Map From DTO-Field" mappingTypeId="667a63d0-4fc4-4759-bc2c-3965bfb66a95">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                            <target id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" name="response-type" type="element" specialization="Parameter" />
+                            <target id="612fda36-291e-449b-b68e-67a6e1235492" name="ReceivePromotions" type="element" specialization="DTO-Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
+                      <expression>{[query].response-type.Notes}</expression>
+                      <path>
+                        <target id="8a7a1cfc-eacb-41ef-8b20-e447c5b89eef" name="[model]" type="element" specialization="Component Model" />
+                        <target id="40d718e0-dde8-4a67-ba33-d317a8d25de2" name="Notes" type="element" specialization="Component Model Field" />
+                      </path>
+                      <sources>
+                        <source identifier="[query].response-type.Notes" mappingType="Map From DTO-Field" mappingTypeId="667a63d0-4fc4-4759-bc2c-3965bfb66a95">
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="5dcc9daa-8895-4c88-9157-40df40fe1ca5" name="[query]" type="element" specialization="Component Query" />
+                            <target id="3b1ef6ca-07b6-4ab2-8dcf-e6c995c7849f" name="response-type" type="element" specialization="Parameter" />
+                            <target id="0ef2d9d7-d01a-4b6b-9ec0-7a39736e7d4b" name="Notes" type="element" specialization="DTO-Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                  </mappedEnds>
+                </mapping>
+              </mappings>
+              <metadata />
+              <childElements>
+                <childElement id="d2970e04-d881-463a-ba56-c2635622d624" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+                  <name>Id</name>
+                  <display>Id: guid</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="56e9bb1c-f050-4e7b-b284-75cc4a274bb3">
+                    <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8a7a1cfc-eacb-41ef-8b20-e447c5b89eef</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="ba5f8b4b-b346-431c-a1d6-f122a73f6a87" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+                  <name>FirstName</name>
+                  <display>FirstName: string</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="ed586cc4-85c7-44ad-8a74-b89590735e5d">
+                    <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8a7a1cfc-eacb-41ef-8b20-e447c5b89eef</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="4a84960b-d8ad-480d-a014-177a07ab4437" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+                  <name>LastName</name>
+                  <display>LastName: string</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="4b87f77e-6afd-474d-b564-57fdecebc244">
+                    <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8a7a1cfc-eacb-41ef-8b20-e447c5b89eef</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="287997ac-fb3d-4382-a24f-71a4576d8689" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+                  <name>OtherNames</name>
+                  <display>OtherNames: string?</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="e712047e-319c-4494-8fa1-e8a5276e1b01">
+                    <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>true</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8a7a1cfc-eacb-41ef-8b20-e447c5b89eef</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="64351bc6-2113-450a-a2dc-ac8c768c70c0" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+                  <name>TitleId</name>
+                  <display>TitleId: guid</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="8486f822-ad5c-4398-adf4-10c04df04e85">
+                    <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8a7a1cfc-eacb-41ef-8b20-e447c5b89eef</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="2c3dd76a-765e-4cb6-b922-a3c3c528ef10" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+                  <name>ReceivePromotions</name>
+                  <display>ReceivePromotions: bool</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="42993f14-787a-4e48-8283-f65716ad75a9">
+                    <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8a7a1cfc-eacb-41ef-8b20-e447c5b89eef</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+                <childElement id="40d718e0-dde8-4a67-ba33-d317a8d25de2" type="Component Model Field" typeId="5ea98f58-c9ae-4cce-be36-e3a6dc54c92b">
+                  <name>Notes</name>
+                  <display>Notes: string</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="1f6e7d68-7959-457f-afa0-bb6705170bfe">
+                    <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Intent.Common.Types</typePackageName>
+                    <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>8a7a1cfc-eacb-41ef-8b20-e447c5b89eef</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <metadata />
+                  <childElements />
+                </childElement>
+              </childElements>
+            </childElement>
+            <childElement id="cb713410-e506-485c-a4f9-191ecd54993d" type="Component View" typeId="8115da3e-0465-4d16-8a37-f85eec26a127">
+              <name>[view]</name>
+              <display>[view]</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>6b5264e1-b410-409e-b4c7-d4baf36f768d</parentFolderId>
+              <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+              <packageName>Web Client</packageName>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
       </childElements>
     </childElement>
   </childElements>

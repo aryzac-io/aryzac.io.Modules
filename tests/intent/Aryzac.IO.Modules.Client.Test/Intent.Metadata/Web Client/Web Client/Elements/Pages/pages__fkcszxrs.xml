@@ -137,8 +137,8 @@
               </childElements>
             </childElement>
             <childElement id="b9ed2eef-0356-4ad3-80af-b081e151415a" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
-              <name>ListClients</name>
-              <display>ListClients: List Clients</display>
+              <name>List Clients</name>
+              <display>List Clients: List Clients</display>
               <isAbstract>false</isAbstract>
               <genericTypes />
               <typeReference id="c536f5e6-595c-415e-9238-76f85dabff9e">
@@ -370,6 +370,53 @@
                       <childElements />
                     </childElement>
                   </childElements>
+                </childElement>
+                <childElement id="3f598d2e-9d0b-432d-8d6b-4f9ee866c7f5" type="Page Component" typeId="2de8273b-c33f-4d34-8275-14c67467cf0e">
+                  <name>View Client</name>
+                  <display>View Client: View Client</display>
+                  <isAbstract>false</isAbstract>
+                  <genericTypes />
+                  <typeReference id="75073280-85b7-4f4d-aee4-7e0f0a4be8e0">
+                    <typeId>6b5264e1-b410-409e-b4c7-d4baf36f768d</typeId>
+                    <isNavigable>true</isNavigable>
+                    <isNullable>false</isNullable>
+                    <isCollection>false</isCollection>
+                    <isRequired>true</isRequired>
+                    <typePackageName>Web Client</typePackageName>
+                    <typePackageId>657e26c5-b761-451b-b0ee-755bc4b419e5</typePackageId>
+                    <stereotypes />
+                    <genericTypeParameters />
+                  </typeReference>
+                  <isMapped>false</isMapped>
+                  <parentFolderId>bd38adf2-8e6d-4be9-bf49-282a1b001805</parentFolderId>
+                  <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
+                  <packageName>Web Client</packageName>
+                  <stereotypes />
+                  <mappings>
+                    <mapping type="Map Route Parameter To Component Parameter" typeId="c3f6673c-7f05-4648-bf32-0e6c479ae047">
+                      <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="bd38adf2-8e6d-4be9-bf49-282a1b001805" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[index]" />
+                      <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6b5264e1-b410-409e-b4c7-d4baf36f768d" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[View Client]" />
+                      <mappedEnds>
+                        <mappedEnd>
+                          <expression>{client-id}</expression>
+                          <path>
+                            <target id="6b5264e1-b410-409e-b4c7-d4baf36f768d" name="View Client" type="element" specialization="Component" />
+                            <target id="3b962729-fbb2-4199-993a-803a102b1e97" name="client-id" type="element" specialization="Component Parameter" />
+                          </path>
+                          <sources>
+                            <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="f6ad8297-4497-437a-a7ae-bb6ba1bb8487">
+                              <path>
+                                <target id="bd38adf2-8e6d-4be9-bf49-282a1b001805" name="index" type="element" specialization="Page" />
+                                <target id="c612f5a2-fdf9-4160-b063-a2e4ab5e2fc5" name="client-id" type="element" specialization="Parameter" />
+                              </path>
+                            </source>
+                          </sources>
+                        </mappedEnd>
+                      </mappedEnds>
+                    </mapping>
+                  </mappings>
+                  <metadata />
+                  <childElements />
                 </childElement>
               </childElements>
             </childElement>
