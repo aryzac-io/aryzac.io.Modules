@@ -3,12 +3,12 @@ af:
     navigation:
       clients:
         label: Clients
-      viewClient:
-        label: View Client
+      editClient:
+        label: Edit Client
 en:
   breadcrumb:
     navigation:
       clients:
         label: Clients
-      viewClient:
-        label: View Client
+      editClient:
+        label: Edit Client

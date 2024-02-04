@@ -38,12 +38,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Shared.Controls
                 {
                     if (mappedEnd.TargetElement.Id == field.Id)
                     {
-                        return mappedEnd.SourceElement.Name.ToCamelCase();
+                        return mappedEnd.SourceElement.Name.ToPascalCase().ToCamelCase();
                     }
                 }
             }
 
-            return field.Name.ToCamelCase();
+            return field.Name.ToPascalCase().ToCamelCase();
         }
 
         public string GetHeadingOptionsComposableName()

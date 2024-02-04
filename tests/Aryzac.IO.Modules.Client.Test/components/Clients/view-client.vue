@@ -52,6 +52,7 @@ onMounted(() => {
     
   <ui-heading-page
     :title="viewClientOptions.title.value"
+    :actions="viewClientOptions.actions"
   />
 
     

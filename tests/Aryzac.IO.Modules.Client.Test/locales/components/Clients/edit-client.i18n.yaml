@@ -1,11 +1,8 @@
 af:
-  viewClient:
-    title: View Client
+  editClient:
+    title: Edit Client
     attributes:
       placeholder: ''
-    actions:
-      edit:
-        label: Edit
   personalInformation:
     title: Personal Information
     description: ''
@@ -15,25 +12,20 @@ af:
       label: Last Name
     otherNames:
       label: Other Names
+  salutation:
+    title: Salutation
+    description: ''
   promotions:
     title: Promotions
     description: ''
-    receivePromotions:
-      label: Receive Promotions
   notes:
     title: Notes
     description: ''
-    notes:
-      label: Notes
 en:
-  viewClient:
-    title: View Client
+  editClient:
+    title: Edit Client
     attributes:
       placeholder: ''
-    actions:
-      edit:
-        label: Edit
-        icon: ic:twotone-edit
   personalInformation:
     title: Personal Information
     description: ''
@@ -43,13 +35,12 @@ en:
       label: Last Name
     otherNames:
       label: Other Names
+  salutation:
+    title: Salutation
+    description: ''
   promotions:
     title: Promotions
     description: ''
-    receivePromotions:
-      label: Receive Promotions
   notes:
     title: Notes
     description: ''
-    notes:
-      label: Notes

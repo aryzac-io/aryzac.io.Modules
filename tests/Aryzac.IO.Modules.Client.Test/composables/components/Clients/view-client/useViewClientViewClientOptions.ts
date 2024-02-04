@@ -30,10 +30,21 @@ const title = computed(() => {
 
 
 
+const actions = [
+  {
+    label: t("viewClient.actions.edit.label"),
+    icon: t("viewClient.actions.edit.icon"),
+action: async () => {
+      const localeRoute = useLocaleRoute();
+      await navigateTo(localeRoute(`/Clients/${props.clientId}/edit`));
+    },
+  },
+];
 
 
 return {
   title,
+	actions,
 };
 
 }

@@ -1,4 +1,4 @@
-<i18n lang="yaml" src="@/locales/pages/Clients/[client-id]/index.i18n.yaml" />
+<i18n lang="yaml" src="@/locales/pages/Clients/[client-id]/edit.i18n.yaml" />
 
 <script setup lang="ts">
 const { t } = useI18n();
@@ -19,16 +19,16 @@ setupSectionItem(
 );
 setupSectionItem(
   "breadcrumb", 
-  t("breadcrumb.navigation.viewClient.label"), 
+  t("breadcrumb.navigation.editClient.label"), 
   null, 
-  `/Clients/${clientId}`,
+  `/Clients/${clientId}/edit`,
   false
 );
 </script>
 
 <template>
   <div>
-    <clients-view-client 
-	    :client-id="clientId"	/>
+    <clients-edit-client 
+		/>
   </div>
 </template>
