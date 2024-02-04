@@ -42,7 +42,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.Shared.Controls
             
             #line default
             #line hidden
-            this.Write(".data\"\r\n    :headers=\"");
+            this.Write(".data.value\"\r\n    :headers=\"");
             
             #line 16 "D:\src\aryzac-io\aryzac.io.Modules\src\Aryzac.IO.Modules.Client\Templates\Files\Components\Shared\Controls\Table.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(GetHeadingOptionsComposableName()));

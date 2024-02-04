@@ -12,7 +12,7 @@
 <#@ import namespace="Aryzac.IO.Modules.Client.Api" #>
 
   <ui-view-table
-    :items="<#= GetHeadingOptionsComposableName() #>.data"
+    :items="<#= GetHeadingOptionsComposableName() #>.data.value"
     :headers="<#= GetHeadingOptionsComposableName() #>.headers"
     :actions="<#= GetHeadingOptionsComposableName() #>.actions"
     key="id"

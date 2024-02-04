@@ -63,7 +63,9 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
             var expressionLines = string.Join(Environment.NewLine, expressions);
             var mappedExpression = ReplaceIdentifiersWithExpressions(mappedColumn.MappingExpression, mappedColumn.Sources);
 
-            return $"{expressionLines}\n      const mappedExpression = `{mappedExpression}`;\n      return mappedExpression;";
+            var functionBody = $"{expressionLines}\n      const mappedExpression = `{mappedExpression}`;\n      return mappedExpression;";
+
+            return $"\r\n        if (!pending.value) {{\r\n          {functionBody}\r\n        }} else {{\r\n          return '';\r\n        }}";
         }
 
         private string ReplaceIdentifiersWithExpressions(string mappingExpression, IEnumerable<IElementToElementMappedEndSource> sources)

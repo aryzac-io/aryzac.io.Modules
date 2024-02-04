@@ -181,7 +181,7 @@ namespace Aryzac.IO.Modules.Client
 
             pathSegments.Reverse(); // Reverse the order of the path segments
 
-            var path = "/" + string.Join("/", pathSegments); // Join the path segments with '/'
+            var path = string.Join("/", pathSegments); // Join the path segments with '/'
 
             return path;
         }

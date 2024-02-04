@@ -92,7 +92,7 @@
                   <metadata />
                   <childElements />
                 </childElement>
-                <childElement id="9f478672-744c-4986-8ac2-4771be289f1e" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
+                <childElement id="43e7f9fd-6f94-44be-b3eb-0213be82bffd" type="Table" typeId="dd36c8ad-0f9e-4a38-8478-8dce769e0054">
                   <name>Clients Table</name>
                   <display>Clients Table</display>
                   <isAbstract>false</isAbstract>
@@ -105,21 +105,21 @@
                   <stereotypes />
                   <mappings>
                     <mapping type="Map Query To Table" typeId="5888463e-4c04-4e59-93ed-aea2342d3c40">
-                      <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="9f478672-744c-4986-8ac2-4771be289f1e" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Clients Table]" />
-                      <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="9f478672-744c-4986-8ac2-4771be289f1e" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Clients Table]" />
+                      <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="43e7f9fd-6f94-44be-b3eb-0213be82bffd" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Clients Table]" />
+                      <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="43e7f9fd-6f94-44be-b3eb-0213be82bffd" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Clients Table]" />
                       <mappedEnds>
                         <mappedEnd>
                           <expression>{[query].response-type.FirstName}</expression>
                           <path>
-                            <target id="9f478672-744c-4986-8ac2-4771be289f1e" name="Clients Table" type="element" specialization="Table" />
-                            <target id="aaa225b8-86fe-41e1-a316-8c6d73b2e2fb" name="FirstName" type="element" specialization="Column" />
+                            <target id="43e7f9fd-6f94-44be-b3eb-0213be82bffd" name="Clients Table" type="element" specialization="Table" />
+                            <target id="d312d7b0-d4a9-419f-ac39-5af5ea676883" name="FirstName" type="element" specialization="Column" />
                           </path>
                           <sources>
                             <source identifier="[query].response-type.FirstName" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
                               <path>
-                                <target id="9f478672-744c-4986-8ac2-4771be289f1e" name="Clients Table" type="element" specialization="Table" />
-                                <target id="9726b87e-bcbb-4a8e-a42a-a6ad394b0811" name="[query]" type="element" specialization="Component Query" />
-                                <target id="62e3fc1d-a642-4176-9fbb-79aa10f2c2a6" name="response-type" type="element" specialization="Parameter" />
+                                <target id="43e7f9fd-6f94-44be-b3eb-0213be82bffd" name="Clients Table" type="element" specialization="Table" />
+                                <target id="fe1ca4a6-2795-4e52-bf79-5c10515522d4" name="[query]" type="element" specialization="Component Query" />
+                                <target id="8bdf1098-165b-4af1-9784-2512091fb462" name="response-type" type="element" specialization="Parameter" />
                                 <target id="cbc86af4-d53d-4e4f-a8d5-9b96b1512bd7" name="FirstName" type="element" specialization="DTO-Field" />
                               </path>
                             </source>
@@ -128,15 +128,15 @@
                         <mappedEnd>
                           <expression>{[query].response-type.LastName}</expression>
                           <path>
-                            <target id="9f478672-744c-4986-8ac2-4771be289f1e" name="Clients Table" type="element" specialization="Table" />
-                            <target id="bca84242-2257-4814-b274-bd54057fbe69" name="LastName" type="element" specialization="Column" />
+                            <target id="43e7f9fd-6f94-44be-b3eb-0213be82bffd" name="Clients Table" type="element" specialization="Table" />
+                            <target id="7f95f1dc-d614-404a-bf57-f08aeb31ccc1" name="LastName" type="element" specialization="Column" />
                           </path>
                           <sources>
                             <source identifier="[query].response-type.LastName" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
                               <path>
-                                <target id="9f478672-744c-4986-8ac2-4771be289f1e" name="Clients Table" type="element" specialization="Table" />
-                                <target id="9726b87e-bcbb-4a8e-a42a-a6ad394b0811" name="[query]" type="element" specialization="Component Query" />
-                                <target id="62e3fc1d-a642-4176-9fbb-79aa10f2c2a6" name="response-type" type="element" specialization="Parameter" />
+                                <target id="43e7f9fd-6f94-44be-b3eb-0213be82bffd" name="Clients Table" type="element" specialization="Table" />
+                                <target id="fe1ca4a6-2795-4e52-bf79-5c10515522d4" name="[query]" type="element" specialization="Component Query" />
+                                <target id="8bdf1098-165b-4af1-9784-2512091fb462" name="response-type" type="element" specialization="Parameter" />
                                 <target id="64ae13af-e5cd-47c1-b0b7-d088aa403d16" name="LastName" type="element" specialization="DTO-Field" />
                               </path>
                             </source>
@@ -145,15 +145,15 @@
                         <mappedEnd>
                           <expression>{[query].response-type.OtherNames}</expression>
                           <path>
-                            <target id="9f478672-744c-4986-8ac2-4771be289f1e" name="Clients Table" type="element" specialization="Table" />
-                            <target id="e8228313-361a-4e9b-8205-9ac385cef7a5" name="OtherNames" type="element" specialization="Column" />
+                            <target id="43e7f9fd-6f94-44be-b3eb-0213be82bffd" name="Clients Table" type="element" specialization="Table" />
+                            <target id="be51bbd1-f7ac-4749-9370-678849a128b4" name="OtherNames" type="element" specialization="Column" />
                           </path>
                           <sources>
                             <source identifier="[query].response-type.OtherNames" mappingType="Map From DTO-Field" mappingTypeId="4840e6e0-9a4a-40a1-8f7a-873ce3cc2c28">
                               <path>
-                                <target id="9f478672-744c-4986-8ac2-4771be289f1e" name="Clients Table" type="element" specialization="Table" />
-                                <target id="9726b87e-bcbb-4a8e-a42a-a6ad394b0811" name="[query]" type="element" specialization="Component Query" />
-                                <target id="62e3fc1d-a642-4176-9fbb-79aa10f2c2a6" name="response-type" type="element" specialization="Parameter" />
+                                <target id="43e7f9fd-6f94-44be-b3eb-0213be82bffd" name="Clients Table" type="element" specialization="Table" />
+                                <target id="fe1ca4a6-2795-4e52-bf79-5c10515522d4" name="[query]" type="element" specialization="Component Query" />
+                                <target id="8bdf1098-165b-4af1-9784-2512091fb462" name="response-type" type="element" specialization="Parameter" />
                                 <target id="eddd9ba2-0808-44f1-8fec-cdde0cd51a6f" name="OtherNames" type="element" specialization="DTO-Field" />
                               </path>
                             </source>
@@ -164,7 +164,7 @@
                   </mappings>
                   <metadata />
                   <childElements>
-                    <childElement id="9726b87e-bcbb-4a8e-a42a-a6ad394b0811" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
+                    <childElement id="fe1ca4a6-2795-4e52-bf79-5c10515522d4" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
                       <name>[query]</name>
                       <display>[query]</display>
                       <isAbstract>false</isAbstract>
@@ -182,18 +182,18 @@
                           <target id="5c6a15fe-6e5a-40d4-b9fd-4f6879f8af05" name="GetClientsQuery" type="element" specialization="Operation" />
                         </mappedPath>
                       </mappedClass>
-                      <parentFolderId>9f478672-744c-4986-8ac2-4771be289f1e</parentFolderId>
+                      <parentFolderId>43e7f9fd-6f94-44be-b3eb-0213be82bffd</parentFolderId>
                       <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                       <packageName>Web Client</packageName>
                       <stereotypes />
                       <metadata />
                       <childElements>
-                        <childElement id="62e3fc1d-a642-4176-9fbb-79aa10f2c2a6" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
+                        <childElement id="8bdf1098-165b-4af1-9784-2512091fb462" type="Parameter" typeId="f11273c1-217f-4f42-b690-3d8b488f95a8">
                           <name>response-type</name>
                           <display>response-type: ClientDto</display>
                           <isAbstract>false</isAbstract>
                           <genericTypes />
-                          <typeReference id="a89e30da-54a2-4e30-9ce3-10e76801d4fc">
+                          <typeReference id="43695879-10c8-4b06-853c-94140834f9cf">
                             <typeId>6f4b80e1-8632-4181-901c-46f28e9b3b75</typeId>
                             <isNavigable>true</isNavigable>
                             <isNullable>false</isNullable>
@@ -205,50 +205,50 @@
                             <genericTypeParameters />
                           </typeReference>
                           <isMapped>false</isMapped>
-                          <parentFolderId>9726b87e-bcbb-4a8e-a42a-a6ad394b0811</parentFolderId>
+                          <parentFolderId>fe1ca4a6-2795-4e52-bf79-5c10515522d4</parentFolderId>
                           <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                           <packageName>Web Client</packageName>
                           <stereotypes />
                           <metadata>
-                            <entry key="response-type" value="62e3fc1d-a642-4176-9fbb-79aa10f2c2a6" />
+                            <entry key="response-type" value="8bdf1098-165b-4af1-9784-2512091fb462" />
                           </metadata>
                           <childElements />
                         </childElement>
                       </childElements>
                     </childElement>
-                    <childElement id="aaa225b8-86fe-41e1-a316-8c6d73b2e2fb" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                    <childElement id="d312d7b0-d4a9-419f-ac39-5af5ea676883" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
                       <name>FirstName</name>
                       <display>FirstName</display>
                       <isAbstract>false</isAbstract>
                       <genericTypes />
                       <isMapped>false</isMapped>
-                      <parentFolderId>9f478672-744c-4986-8ac2-4771be289f1e</parentFolderId>
+                      <parentFolderId>43e7f9fd-6f94-44be-b3eb-0213be82bffd</parentFolderId>
                       <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                       <packageName>Web Client</packageName>
                       <stereotypes />
                       <metadata />
                       <childElements />
                     </childElement>
-                    <childElement id="bca84242-2257-4814-b274-bd54057fbe69" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                    <childElement id="7f95f1dc-d614-404a-bf57-f08aeb31ccc1" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
                       <name>LastName</name>
                       <display>LastName</display>
                       <isAbstract>false</isAbstract>
                       <genericTypes />
                       <isMapped>false</isMapped>
-                      <parentFolderId>9f478672-744c-4986-8ac2-4771be289f1e</parentFolderId>
+                      <parentFolderId>43e7f9fd-6f94-44be-b3eb-0213be82bffd</parentFolderId>
                       <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                       <packageName>Web Client</packageName>
                       <stereotypes />
                       <metadata />
                       <childElements />
                     </childElement>
-                    <childElement id="e8228313-361a-4e9b-8205-9ac385cef7a5" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
+                    <childElement id="be51bbd1-f7ac-4749-9370-678849a128b4" type="Column" typeId="1f1e08b9-1927-4028-98bb-eaa4379c1e22">
                       <name>OtherNames</name>
                       <display>OtherNames</display>
                       <isAbstract>false</isAbstract>
                       <genericTypes />
                       <isMapped>false</isMapped>
-                      <parentFolderId>9f478672-744c-4986-8ac2-4771be289f1e</parentFolderId>
+                      <parentFolderId>43e7f9fd-6f94-44be-b3eb-0213be82bffd</parentFolderId>
                       <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                       <packageName>Web Client</packageName>
                       <stereotypes />
