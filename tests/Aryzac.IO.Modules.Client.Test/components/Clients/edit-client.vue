@@ -10,6 +10,7 @@ import type { ClientDto } from '~/structs/dto/clients/client.dto';
 
 
 import { useEditClientEditClientOptions } from '~/composables/components/clients/edit-client/useEditClientEditClientOptions'
+import { useEditClientTitleOptions } from '~/composables/components/clients/edit-client/useEditClientTitleOptions'
 
 const { t } = useI18n();
 
@@ -29,6 +30,7 @@ watchEffect(async () => {
 });
 
 const editClientOptions = await useEditClientEditClientOptions(props, model);
+const titleOptions = await useEditClientTitleOptions(props, model);
 
 onMounted(() => {
   query.execute();
@@ -46,50 +48,57 @@ onMounted(() => {
 
     
   <ui-editor-section
-    :title="t('personalInformation.title')"
-    :description="t('personalInformation.description')"
+    :title="t('section-personalInformation.title')"
+    :description="t('section-personalInformation.description')"
   >
 
     
   <ui-input-textbox 
     v-model="model.firstName" 
-    :label="t('personalInformation.firstName.label')" 
+    :label="t('section-personalInformation.textbox-firstName.label')" 
   />
 
     
   <ui-input-textbox 
     v-model="model.lastName" 
-    :label="t('personalInformation.lastName.label')" 
+    :label="t('section-personalInformation.textbox-lastName.label')" 
   />
 
     
   <ui-input-textbox 
     v-model="model.otherNames" 
-    :label="t('personalInformation.otherNames.label')" 
+    :label="t('section-personalInformation.textbox-otherNames.label')" 
   />
 
 
   </ui-editor-section>  
     
   <ui-editor-section
-    :title="t('salutation.title')"
-    :description="t('salutation.description')"
+    :title="t('section-salutation.title')"
+    :description="t('section-salutation.description')"
+  >
+
+    
+  <ui-input-select 
+    v-model="model.title" 
+    :label="t('section-salutation.select-title.label')"
+    :options="titleOptions.options.value"
+  />
+
+
+  </ui-editor-section>  
+    
+  <ui-editor-section
+    :title="t('section-promotions.title')"
+    :description="t('section-promotions.description')"
   >
 
 
   </ui-editor-section>  
     
   <ui-editor-section
-    :title="t('promotions.title')"
-    :description="t('promotions.description')"
-  >
-
-
-  </ui-editor-section>  
-    
-  <ui-editor-section
-    :title="t('notes.title')"
-    :description="t('notes.description')"
+    :title="t('section-notes.title')"
+    :description="t('section-notes.description')"
   >
 
 

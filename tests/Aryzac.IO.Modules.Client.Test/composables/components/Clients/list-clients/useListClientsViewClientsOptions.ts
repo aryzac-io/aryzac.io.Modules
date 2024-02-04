@@ -9,7 +9,7 @@ const { t } = useI18n();
 
 
 const title = computed(() => {
-  return t('viewClients.title');
+  return t('heading-viewClients.title');
 });
 
 

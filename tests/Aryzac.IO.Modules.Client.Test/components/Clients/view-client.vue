@@ -57,54 +57,54 @@ onMounted(() => {
 
     
   <ui-editor-section
-    :title="t('personalInformation.title')"
-    :description="t('personalInformation.description')"
+    :title="t('section-personalInformation.title')"
+    :description="t('section-personalInformation.description')"
   >
 
     
   <ui-input-label 
     v-model="firstNameOptions.label.value" 
-    :label="t('personalInformation.firstName.label')" 
+    :label="t('section-personalInformation.label-firstName.label')" 
   />
 
     
   <ui-input-label 
     v-model="lastNameOptions.label.value" 
-    :label="t('personalInformation.lastName.label')" 
+    :label="t('section-personalInformation.label-lastName.label')" 
   />
 
     
   <ui-input-label 
     v-model="otherNamesOptions.label.value" 
-    :label="t('personalInformation.otherNames.label')" 
+    :label="t('section-personalInformation.label-otherNames.label')" 
   />
 
 
   </ui-editor-section>  
     
   <ui-editor-section
-    :title="t('promotions.title')"
-    :description="t('promotions.description')"
+    :title="t('section-promotions.title')"
+    :description="t('section-promotions.description')"
   >
 
     
   <ui-input-label 
     v-model="receivePromotionsOptions.label.value" 
-    :label="t('promotions.receivePromotions.label')" 
+    :label="t('section-promotions.label-receivePromotions.label')" 
   />
 
 
   </ui-editor-section>  
     
   <ui-editor-section
-    :title="t('notes.title')"
-    :description="t('notes.description')"
+    :title="t('section-notes.title')"
+    :description="t('section-notes.description')"
   >
 
     
   <ui-input-label 
     v-model="notesOptions.label.value" 
-    :label="t('notes.notes.label')" 
+    :label="t('section-notes.label-notes.label')" 
   />
 
 

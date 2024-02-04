@@ -1,46 +1,50 @@
 af:
-  editClient:
+  heading-editClient:
     title: Edit Client
     attributes:
       placeholder: ''
-  personalInformation:
+  section-personalInformation:
     title: Personal Information
     description: ''
-    firstName:
+    textbox-firstName:
       label: First Name
-    lastName:
+    textbox-lastName:
       label: Last Name
-    otherNames:
+    textbox-otherNames:
       label: Other Names
-  salutation:
+  section-salutation:
     title: Salutation
     description: ''
-  promotions:
+    select-title:
+      label: Title
+  section-promotions:
     title: Promotions
     description: ''
-  notes:
+  section-notes:
     title: Notes
     description: ''
 en:
-  editClient:
+  heading-editClient:
     title: Edit Client
     attributes:
       placeholder: ''
-  personalInformation:
+  section-personalInformation:
     title: Personal Information
     description: ''
-    firstName:
+    textbox-firstName:
       label: First Name
-    lastName:
+    textbox-lastName:
       label: Last Name
-    otherNames:
+    textbox-otherNames:
       label: Other Names
-  salutation:
+  section-salutation:
     title: Salutation
     description: ''
-  promotions:
+    select-title:
+      label: Title
+  section-promotions:
     title: Promotions
     description: ''
-  notes:
+  section-notes:
     title: Notes
     description: ''

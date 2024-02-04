@@ -332,6 +332,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseSelectOptions#9afe5316-4dcc-432d-a208-94458ba6830c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/edit-client/useEditClientTitleOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/edit-client/useEditClientTitleOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseTableOptions#43e7f9fd-6f94-44be-b3eb-0213be82bffd</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/list-clients/useListClientsClientsTableOptions.ts</ApplicationRelativeFilePath>

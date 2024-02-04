@@ -1,25 +1,25 @@
 af:
-  viewClients:
+  heading-viewClients:
     title: View Clients
     attributes:
       placeholder: ''
-  clientsTable:
+  table-clientsTable:
     firstName: First Name
     lastName: LastName
     otherNames: OtherNames
     actions:
-      view:
+      action-view:
         label: View
 en:
-  viewClients:
+  heading-viewClients:
     title: View Clients
     attributes:
       placeholder: ''
-  clientsTable:
+  table-clientsTable:
     firstName: First Name
     lastName: LastName
     otherNames: OtherNames
     actions:
-      view:
+      action-view:
         label: View
         icon: ic:twotone-remove-red-eye

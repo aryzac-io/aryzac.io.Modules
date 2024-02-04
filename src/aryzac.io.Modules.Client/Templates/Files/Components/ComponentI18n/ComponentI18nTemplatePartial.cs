@@ -80,7 +80,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
 
         private static void HandleTable(IDataFileObjectValue yamlObject, TableModel model, LocaleModel locale)
         {
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), tableObject =>
+            yamlObject.WithObject($"table-{model.Name.ToPascalCase().ToCamelCase()}", tableObject =>
             {
                 foreach (var column in model.Columns)
                 {
@@ -103,7 +103,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var sectionSettings = model.GetSectionSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), sectionObject =>
+            yamlObject.WithObject($"section-{model.Name.ToPascalCase().ToCamelCase()}", sectionObject =>
             {
                 // Set title and description, use defaults if not available
                 sectionObject.WithValue("title", sectionSettings?.Title() ?? model.Name ?? "''");
@@ -175,7 +175,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var actionSettings = model.GetActionSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), actionObject =>
+            yamlObject.WithObject($"action-{model.Name.ToPascalCase().ToCamelCase()}", actionObject =>
             {
                 // Set label, use control name as default if no specific setting is found
                 actionObject.WithValue("label", actionSettings?.Label() ?? model.Name);
@@ -188,7 +188,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var selectSettings = model.GetSelectSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), selectObject =>
+            yamlObject.WithObject($"select-{model.Name.ToPascalCase().ToCamelCase()}", selectObject =>
             {
                 // Set label, use control name as default if no specific setting is found
                 selectObject.WithValue("label", selectSettings?.Label() ?? model.Name);
@@ -199,7 +199,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var radioButtonSettings = model.GetRadioButtonSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), radioButtonObject =>
+            yamlObject.WithObject($"radio-{model.Name.ToPascalCase().ToCamelCase()}", radioButtonObject =>
             {
                 // Set label, use control name as default if no specific setting is found
                 radioButtonObject.WithValue("label", radioButtonSettings?.Label() ?? model.Name);
@@ -210,7 +210,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var labelSettings = model.GetLabelSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), labelObject =>
+            yamlObject.WithObject($"label-{model.Name.ToPascalCase().ToCamelCase()}", labelObject =>
             {
                 // Set label, use control name as default if no specific setting is found
                 labelObject.WithValue("label", labelSettings?.Label() ?? model.Name);
@@ -221,7 +221,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var checkboxSettings = model.GetCheckboxSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), checkboxObject =>
+            yamlObject.WithObject($"checkbox-{model.Name.ToPascalCase().ToCamelCase()}", checkboxObject =>
             {
                 // Set label and description, use defaults if no specific setting is found
                 checkboxObject.WithValue("label", checkboxSettings?.Label() ?? model.Name);
@@ -233,10 +233,10 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var textareaSettings = model.GetTextAreaSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), textareaObject =>
+            yamlObject.WithObject($"text-area-{model.Name.ToPascalCase().ToCamelCase()}", textAreaObject =>
             {
                 // Set label, use control name as default if no specific setting is found
-                textareaObject.WithValue("label", textareaSettings?.Label() ?? model.Name);
+                textAreaObject.WithValue("label", textareaSettings?.Label() ?? model.Name);
             });
         }
 
@@ -244,7 +244,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var textboxSettings = model.GetTextboxSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), textboxObject =>
+            yamlObject.WithObject($"textbox-{model.Name.ToPascalCase().ToCamelCase()}", textboxObject =>
             {
                 textboxObject.WithValue("label", textboxSettings?.Label() ?? model.Name);
             });
@@ -254,20 +254,20 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var headingSettings = model.GetHeadingSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), headingObject =>
+            yamlObject.WithObject($"heading-{model.Name.ToPascalCase().ToCamelCase()}", headingObject =>
             {
                 headingObject.WithValue("title", headingSettings?.Title() ?? model.Name);
 
-                headingObject.WithObject("attributes", attributeObject =>
+                headingObject.WithObject("attributes", attributesObject =>
                 {
                     foreach (var control in model.InternalElement.ChildElements.Where(m => m.IsHeadingAttributeModel()))
                     {
-                        HandleHeadingAttribute(attributeObject, control.AsHeadingAttributeModel(), locale);
+                        HandleHeadingAttribute(attributesObject, control.AsHeadingAttributeModel(), locale);
                     }
 
-                    if (model.InternalElement.ChildElements.Where(m => m.IsHeadingAttributeModel()).Count() == 0)
+                    if (!model.InternalElement.ChildElements.Any(m => m.IsHeadingAttributeModel()))
                     {
-                        AddPlaceholder(attributeObject);
+                        AddPlaceholder(attributesObject);
                     }
                 });
 
@@ -282,12 +282,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Components.ComponentI18n
         {
             var headingAttributeSettings = model.GetAttributeSettingss().FirstOrDefault(s => s.Locale().Name == locale.Name);
 
-            yamlObject.WithObject(model.Name.ToPascalCase().ToCamelCase(), textboxObject =>
+            yamlObject.WithObject($"attribute-{model.Name.ToPascalCase().ToCamelCase()}", attributeObject =>
             {
-                textboxObject.WithValue("label", headingAttributeSettings?.Label() ?? model.Name);
+                attributeObject.WithValue("label", headingAttributeSettings?.Label() ?? model.Name);
                 if (headingAttributeSettings?.Icon() is not null)
                 {
-                    textboxObject.WithValue("icon", headingAttributeSettings?.Icon());
+                    attributeObject.WithValue("icon", headingAttributeSettings?.Icon());
                 }
             });
         }

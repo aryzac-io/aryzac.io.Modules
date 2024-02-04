@@ -1,55 +1,55 @@
 af:
-  viewClient:
+  heading-viewClient:
     title: View Client
     attributes:
       placeholder: ''
     actions:
-      edit:
+      action-edit:
         label: Edit
-  personalInformation:
+  section-personalInformation:
     title: Personal Information
     description: ''
-    firstName:
+    label-firstName:
       label: First Name
-    lastName:
+    label-lastName:
       label: Last Name
-    otherNames:
+    label-otherNames:
       label: Other Names
-  promotions:
+  section-promotions:
     title: Promotions
     description: ''
-    receivePromotions:
+    label-receivePromotions:
       label: Receive Promotions
-  notes:
+  section-notes:
     title: Notes
     description: ''
-    notes:
+    label-notes:
       label: Notes
 en:
-  viewClient:
+  heading-viewClient:
     title: View Client
     attributes:
       placeholder: ''
     actions:
-      edit:
+      action-edit:
         label: Edit
         icon: ic:twotone-edit
-  personalInformation:
+  section-personalInformation:
     title: Personal Information
     description: ''
-    firstName:
+    label-firstName:
       label: First Name
-    lastName:
+    label-lastName:
       label: Last Name
-    otherNames:
+    label-otherNames:
       label: Other Names
-  promotions:
+  section-promotions:
     title: Promotions
     description: ''
-    receivePromotions:
+    label-receivePromotions:
       label: Receive Promotions
-  notes:
+  section-notes:
     title: Notes
     description: ''
-    notes:
+    label-notes:
       label: Notes

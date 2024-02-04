@@ -5,7 +5,7 @@ import type { EditClientModel } from '~/structs/components/clients/edit-client.m
 
 
 
-export const useEditClientEditClientOptions = async (
+export const useEditClientTitleOptions = async (
 props: EditClientProps, model: EditClientModel 
 ) => {
 
@@ -15,22 +15,17 @@ const { t } = useI18n();
 
 
 
-const title = computed(() => {
-  return t('heading-editClient.title');
+
+
+
+const options = computed(() => {
+  const options: { value: string; label: string }[] = [];
+  return options;
 });
 
 
-
-
-
-
-
-
-
-
-
 return {
-  title,
+	options
 };
 
 }
