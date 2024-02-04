@@ -95,7 +95,7 @@ onMounted(() => {
 
     
   <ui-input-checkbox 
-    v-model="model.canReceivePromotions" 
+    v-model="model.receivePromotions" 
     :label="t('section-promotions.checkbox-canReceivePromotions.label')" 
     :description="t('section-promotions.checkbox-canReceivePromotions.description')" 
   />

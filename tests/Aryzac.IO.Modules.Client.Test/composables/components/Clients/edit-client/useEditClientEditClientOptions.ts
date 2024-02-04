@@ -16,7 +16,10 @@ const { t } = useI18n();
 
 
 const title = computed(() => {
-  return t('heading-editClient.title');
+  const lastName = model.lastName || '';
+  const firstName = model.firstName || '';
+  const mappedExpression = `${lastName}, ${firstName}`;
+  return mappedExpression;
 });
 
 

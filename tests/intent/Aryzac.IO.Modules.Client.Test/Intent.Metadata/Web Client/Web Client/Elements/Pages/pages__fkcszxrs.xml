@@ -633,6 +633,29 @@
                   <packageId>657e26c5-b761-451b-b0ee-755bc4b419e5</packageId>
                   <packageName>Web Client</packageName>
                   <stereotypes />
+                  <mappings>
+                    <mapping type="Map Route Parameter To Component Parameter" typeId="c3f6673c-7f05-4648-bf32-0e6c479ae047">
+                      <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="bd52824a-6677-4444-b057-52b98cae4da7" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[edit]" />
+                      <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="89c66405-712e-46ef-a85c-2123c88b4e8f" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Edit Client]" />
+                      <mappedEnds>
+                        <mappedEnd>
+                          <expression>{client-id}</expression>
+                          <path>
+                            <target id="89c66405-712e-46ef-a85c-2123c88b4e8f" name="Edit Client" type="element" specialization="Component" />
+                            <target id="722d577d-3048-4cf5-a567-5581937e1c32" name="client-id" type="element" specialization="Component Parameter" />
+                          </path>
+                          <sources>
+                            <source identifier="client-id" mappingType="NewMappingType" mappingTypeId="f6ad8297-4497-437a-a7ae-bb6ba1bb8487">
+                              <path>
+                                <target id="bd52824a-6677-4444-b057-52b98cae4da7" name="edit" type="element" specialization="Page" />
+                                <target id="e6411158-fb28-49dc-ab58-d66c1c0f2758" name="client-id" type="element" specialization="Parameter" />
+                              </path>
+                            </source>
+                          </sources>
+                        </mappedEnd>
+                      </mappedEnds>
+                    </mapping>
+                  </mappings>
                   <metadata />
                   <childElements />
                 </childElement>
