@@ -332,6 +332,54 @@
     </FileLog>
     <FileLog>
       <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#1e4c750e-74dc-4eba-b0f8-0a832f889aff</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientFirstNameOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/view-client/useViewClientFirstNameOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#1cf09117-0450-4e15-a623-0eec7dc33885</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientLastNameOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/view-client/useViewClientLastNameOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#8ea21dc2-9382-474f-9be7-37fcfab32303</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientNotesOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/view-client/useViewClientNotesOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#ffb506d4-9321-47d6-a406-f9abad214328</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientOtherNamesOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/view-client/useViewClientOtherNamesOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseLabelOptions#4c58a4b8-00c9-436f-ae75-430ba1d340ec</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientReceivePromotionsOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/view-client/useViewClientReceivePromotionsOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
+      <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.Controls.UseHeadingOptions#a46f8870-abd9-4c5d-8c2a-b8963ad827b8</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/components/clients/view-client/useViewClientViewClientOptions.ts</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>components/clients/view-client/useViewClientViewClientOptions.ts</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4ddda785-f440-4af4-a5b9-78292340558a</ProjectId>
       <CorrelationId>Aryzac.IO.Modules.Client.Files.Composables.UseServiceProxy#6c08bd28-8e1b-494e-84ae-27b359b99eb6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Aryzac.IO.Modules.Client.Test/composables/useClientsServiceProxy.ts</ApplicationRelativeFilePath>

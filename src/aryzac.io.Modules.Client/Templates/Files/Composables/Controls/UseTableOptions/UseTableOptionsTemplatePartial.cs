@@ -107,12 +107,12 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseTable
 
             if (GetComponent().Parameters.Any())
             {
-                functionParameters.Add("props", $"{GetComponent().Name}Props");
+                functionParameters.Add("props", $"{GetComponent().Name.ToPascalCase()}Props");
             }
 
             if (GetComponent().Model != null)
             {
-                functionParameters.Add("model", $"{GetComponent().Name}Model");
+                functionParameters.Add("model", $"{GetComponent().Name.ToPascalCase()}Model");
             }
 
             return string.Join(", ", functionParameters.Select(kv => $"{kv.Key}: {kv.Value}"));

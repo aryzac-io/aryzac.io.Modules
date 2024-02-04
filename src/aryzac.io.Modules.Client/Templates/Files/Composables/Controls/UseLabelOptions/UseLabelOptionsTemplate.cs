@@ -66,7 +66,7 @@ namespace Aryzac.IO.Modules.Client.Templates.Files.Composables.Controls.UseLabel
 
   var labelField = "";
             
-  var mappedColumn = Model.InternalElement.ParentElement.ParentElement.Mappings.First().MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label" && m.TargetElement.Id == Model.Id);
+  var mappedColumn = Model.InternalElement.ParentElement.ParentElement.Mappings.FirstOrDefault()?.MappedEnds.FirstOrDefault(m => m.MappingTypeId == "d9cb10dc-82ed-4378-8385-e9cc8be76c40" && m.TargetElement.SpecializationType == "Label" && m.TargetElement.Id == Model.Id);
 
             
             #line default

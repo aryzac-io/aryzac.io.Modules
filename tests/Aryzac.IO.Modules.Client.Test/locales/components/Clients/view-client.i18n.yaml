@@ -1,4 +1,48 @@
 af:
-  placeholder: ''
+  viewClient:
+    title: View Client
+    attributes:
+      placeholder: ''
+  personalInformation:
+    title: Personal Information
+    description: ''
+    firstName:
+      label: First Name
+    lastName:
+      label: Last Name
+    otherNames:
+      label: Other Names
+  promotions:
+    title: Promotions
+    description: ''
+    receivePromotions:
+      label: Receive Promotions
+  notes:
+    title: Notes
+    description: ''
+    notes:
+      label: Notes
 en:
-  placeholder: ''
+  viewClient:
+    title: View Client
+    attributes:
+      placeholder: ''
+  personalInformation:
+    title: Personal Information
+    description: ''
+    firstName:
+      label: First Name
+    lastName:
+      label: Last Name
+    otherNames:
+      label: Other Names
+  promotions:
+    title: Promotions
+    description: ''
+    receivePromotions:
+      label: Receive Promotions
+  notes:
+    title: Notes
+    description: ''
+    notes:
+      label: Notes
