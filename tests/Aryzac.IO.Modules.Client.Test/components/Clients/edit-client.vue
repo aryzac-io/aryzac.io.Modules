@@ -82,7 +82,7 @@ onMounted(() => {
 
     
   <ui-input-select 
-    v-model="model.title" 
+    v-model="model.titleId" 
     :label="t('section-salutation.select-title.label')"
     :options="titleOptions.options.value"
   />

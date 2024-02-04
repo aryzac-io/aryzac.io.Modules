@@ -1,32 +1,60 @@
-import type { EditClientProps } from "~/structs/components/clients/edit-client.props";
-import type { EditClientModel } from "~/structs/components/clients/edit-client.model";
+import type { EditClientProps } from '~/structs/components/clients/edit-client.props';
+import type { EditClientModel } from '~/structs/components/clients/edit-client.model';
 
-import type { TitleDto } from "~/structs/dto/titles/title.dto";
+import type { TitleDto } from '~/structs/dto/titles/title.dto';
+
+
+
 
 export const useEditClientTitleOptions = async (
-  props: EditClientProps,
-  model: EditClientModel
+props: EditClientProps, model: EditClientModel 
 ) => {
-  const { t } = useI18n();
 
-  const titlesServiceProxy = useTitlesServiceProxy();
+const { t } = useI18n();
 
-  // Queries
-  const { data, pending, error, execute, refresh, status } =
-    await titlesServiceProxy.getTitlesQuery();
 
-  const options = computed(() => {
-    const options: { value: string; label: string }[] = [];
-    return options;
-  });
+const titlesServiceProxy = useTitlesServiceProxy();
 
-  return {
-    data,
-    pending,
-    error,
-    execute,
-    refresh,
-    status,
-    options,
-  };
+
+
+// Queries
+const { 
+  data,
+  pending,
+  error,
+  execute,
+  refresh,
+  status
+} = await titlesServiceProxy.getTitlesQuery();
+
+
+
+const options = computed(() => {
+  const options: { value: string; label: string }[] = [];
+  if (data.value) {
+    data.value.forEach((item: TitleDto) => {
+      const name = item.name || '';
+      const code = item.code || '';
+      const mappedExpression = `${name} (${code})`;
+
+      options.push({
+        value: item.id,
+        label: mappedExpression,
+      });
+    });
+  }
+  return options;
+});
+
+
+return {
+	data,
+	pending,
+	error,
+	execute,
+	refresh,
+	status,
+	options
 };
+
+}

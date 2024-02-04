@@ -1943,6 +1943,23 @@
                       </sources>
                     </mappedEnd>
                     <mappedEnd>
+                      <expression>{[model].TitleId}</expression>
+                      <path>
+                        <target id="e7bfa0a1-b638-4437-8921-58a16442fede" name="[view]" type="element" specialization="Component View" />
+                        <target id="2d995051-64c0-4c22-ac82-5696c93d4db3" name="Salutation" type="element" specialization="Section" />
+                        <target id="9afe5316-4dcc-432d-a208-94458ba6830c" name="Title" type="element" specialization="Select" />
+                      </path>
+                      <sources>
+                        <source identifier="[model].TitleId" mappingType="Map from Model Field" mappingTypeId="d9cb10dc-82ed-4378-8385-e9cc8be76c40">
+                          <path>
+                            <target id="89c66405-712e-46ef-a85c-2123c88b4e8f" name="Edit Client" type="element" specialization="Component" />
+                            <target id="e2dc8c68-d530-4e67-8527-64e520e13d73" name="[model]" type="element" specialization="Component Model" />
+                            <target id="81db0573-34b5-4a4a-9432-ba9bb504efdc" name="TitleId" type="element" specialization="Component Model Field" />
+                          </path>
+                        </source>
+                      </sources>
+                    </mappedEnd>
+                    <mappedEnd>
                       <expression>{[model].ReceivePromotions}</expression>
                       <path>
                         <target id="e7bfa0a1-b638-4437-8921-58a16442fede" name="[view]" type="element" specialization="Component View" />
@@ -2209,6 +2226,56 @@
                           </properties>
                         </stereotype>
                       </stereotypes>
+                      <mappings>
+                        <mapping type="Map Query To Select" typeId="c1157ba1-2c6f-4002-8a83-bce2b133cc46">
+                          <source applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="9afe5316-4dcc-432d-a208-94458ba6830c" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Title]" />
+                          <target applicationId="62c371b4-af5f-42bf-9b88-6751357b25cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="9afe5316-4dcc-432d-a208-94458ba6830c" location="[Aryzac.IO.Modules.Client.Test].[Web Client].[Title]" />
+                          <mappedEnds>
+                            <mappedEnd>
+                              <expression>{[query].response-type.Id}</expression>
+                              <path>
+                                <target id="9afe5316-4dcc-432d-a208-94458ba6830c" name="Title" type="element" specialization="Select" />
+                                <target id="cdb3baf1-4b24-40cc-9c99-eeb8cb70cc6f" name="[value]" type="element" specialization="Value" />
+                              </path>
+                              <sources>
+                                <source identifier="[query].response-type.Id" mappingType="Map From DTO-Field" mappingTypeId="8997a88a-8214-46f7-b400-ebcbd0aa9f80">
+                                  <path>
+                                    <target id="9afe5316-4dcc-432d-a208-94458ba6830c" name="Title" type="element" specialization="Select" />
+                                    <target id="3c9dcfbc-634c-4f40-94b3-0af1295a6231" name="[query]" type="element" specialization="Component Query" />
+                                    <target id="908af9db-9f39-476d-81ea-cefa910cb6d7" name="response-type" type="element" specialization="Parameter" />
+                                    <target id="beef2a96-8228-4644-8e6d-108fa42a95f4" name="Id" type="element" specialization="DTO-Field" />
+                                  </path>
+                                </source>
+                              </sources>
+                            </mappedEnd>
+                            <mappedEnd>
+                              <expression>{[query].response-type.Name} ({[query].response-type.Code})</expression>
+                              <path>
+                                <target id="9afe5316-4dcc-432d-a208-94458ba6830c" name="Title" type="element" specialization="Select" />
+                                <target id="6ecc760e-ccdb-4bc1-aed3-2ba05a2e8a79" name="[label]" type="element" specialization="Select Label" />
+                              </path>
+                              <sources>
+                                <source identifier="[query].response-type.Name" mappingType="Map From DTO-Field" mappingTypeId="74330c09-3675-4796-b7c9-8f5132b9c59b">
+                                  <path>
+                                    <target id="9afe5316-4dcc-432d-a208-94458ba6830c" name="Title" type="element" specialization="Select" />
+                                    <target id="3c9dcfbc-634c-4f40-94b3-0af1295a6231" name="[query]" type="element" specialization="Component Query" />
+                                    <target id="908af9db-9f39-476d-81ea-cefa910cb6d7" name="response-type" type="element" specialization="Parameter" />
+                                    <target id="e5565c36-1583-4390-b69c-af5a090432b1" name="Name" type="element" specialization="DTO-Field" />
+                                  </path>
+                                </source>
+                                <source identifier="[query].response-type.Code" mappingType="Map From DTO-Field" mappingTypeId="74330c09-3675-4796-b7c9-8f5132b9c59b">
+                                  <path>
+                                    <target id="9afe5316-4dcc-432d-a208-94458ba6830c" name="Title" type="element" specialization="Select" />
+                                    <target id="3c9dcfbc-634c-4f40-94b3-0af1295a6231" name="[query]" type="element" specialization="Component Query" />
+                                    <target id="908af9db-9f39-476d-81ea-cefa910cb6d7" name="response-type" type="element" specialization="Parameter" />
+                                    <target id="93aef1f9-f0fe-4791-b526-75717088cbe1" name="Code" type="element" specialization="DTO-Field" />
+                                  </path>
+                                </source>
+                              </sources>
+                            </mappedEnd>
+                          </mappedEnds>
+                        </mapping>
+                      </mappings>
                       <metadata />
                       <childElements>
                         <childElement id="3c9dcfbc-634c-4f40-94b3-0af1295a6231" type="Component Query" typeId="bfacaee7-4850-4353-bb99-6b52b81fc804">
