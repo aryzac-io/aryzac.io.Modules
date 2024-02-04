@@ -1,11 +1,19 @@
 name: Bug Report
 description: File a report to help us improve
 title: "[BUG]: "
-labels: ["bug"]
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
-      value: "Thank you for taking the time to report a bug. Please fill in as much of the template below as you're able."
+      value: |
+        Thank you for taking the time to report a bug. Please fill in as much of the template below as you're able. Your detailed report is crucial in helping us identify and address issues quickly.
+
+        **Expected Turnaround Time**: We aim to review all bug reports within 3 business days. Depending on the complexity of the issue, resolution times may vary, but we'll keep you updated on our progress.
+
+        **While You Wait**:
+        - **Search for Similar Issues**: It's possible that someone else has already reported the issue or a similar one. You can search our issue tracker to find related discussions.
+        
+        We appreciate your patience and contribution to improving Aryzac IO Intent Modules. If you have any additional information to add after submitting this report, please feel free to comment on the issue directly.
 
   - type: textarea
     id: bug-description
@@ -23,6 +31,7 @@ body:
       description: Please select the module(s) related to the bug.
       multiple: true
       options:
+        - None
         - Aryzac.IO.Client
         - Aryzac.IO.Domain
         - Azyrac.IO.Client Application Template
@@ -53,8 +62,8 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: If applicable, add screenshots to help explain your problem.
-      placeholder: "Paste image links here..."
+      description: If applicable, add screenshots to help explain your problem. You can upload images directly here or provide links to images hosted elsewhere. Drag and drop or paste images into the comment box.
+      placeholder: "Paste image links here or drag and drop images directly."
     validations:
       required: false
 
@@ -62,8 +71,8 @@ body:
     id: relevant-code
     attributes:
       label: Relevant Code
-      description: If applicable, add a snippet of the relevant code.
-      placeholder: "// Code snippet here"
+      description: If applicable, add a snippet of the relevant code. Please format your code using Markdown (wrap it in triple backticks \`\`\` for better readability).
+      placeholder: "```\n// Code snippet here\n```"
     validations:
       required: false
 
@@ -80,7 +89,16 @@ body:
     id: link-to-reproduction
     attributes:
       label: Link to Reproduction
-      description: Please provide a link to a repository or a minimal code example that reproduces the bug.
+      description: |
+        Providing a link to a reproduction of the bug can greatly accelerate the troubleshooting process. A good reproduction includes:
+        
+        - **Minimal Code Snippet**: If possible, share a simplified version of the code that still demonstrates the bug. This can be in the form of a gist on GitHub.
+        
+        - **Repository Link**: If the issue is complex or requires specific setup, a link to a GitHub repository that replicates the issue is ideal.
+        
+        - **Live Example**: For frontend or interactive issues, a link to a CodePen, JSFiddle, or similar online sandbox can be incredibly helpful.
+        
+        Please ensure your reproduction is accessible and does not require special permissions to view. If your reproduction is in a private repository, consider creating a minimal public example.
       placeholder: "https://"
     validations:
       required: false
