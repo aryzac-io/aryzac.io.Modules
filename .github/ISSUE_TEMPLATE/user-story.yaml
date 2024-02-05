@@ -1,0 +1,59 @@
+name: User Story
+description: Suggest a new user story for feature development
+title: "[USER STORY]: "
+labels: ["user story", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thanks for contributing a user story!** User stories help us understand your needs and prioritize features effectively. Please fill in as much detail as possible to help us capture the essence of your request.
+
+  - type: textarea
+    id: user-role
+    attributes:
+      label: User Role
+      description: Describe the role of the user in one sentence. (e.g., Project Manager, Developer, End User)
+      placeholder: "As a [role], ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: desire-action
+    attributes:
+      label: Desired Action
+      description: Describe what action you want to be able to perform. (e.g., create a project, assign tasks)
+      placeholder: "I want to [action], ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired Outcome
+      description: Explain the benefit or result you want to achieve with this action. (e.g., so that I can easily manage tasks and deadlines)
+      placeholder: "so that [outcome], ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the specific criteria to meet for the user story to be considered complete. This can include conditions that must be met or specific actions that must be possible as a result of implementing the user story.
+      placeholder: "1. Criterion 1\n2. Criterion 2\n3. Criterion 3\n..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Provide any additional information, context, or screenshots that can help clarify the user story. This could include links to similar features, UI mockups, or any other relevant details.
+      placeholder: "Additional details..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **We appreciate your input!** Your contribution helps us make [Your Project Name] better for everyone. We'll review your user story and follow up with any questions or feedback.
