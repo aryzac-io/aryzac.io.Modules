@@ -1,7 +1,7 @@
 name: User Story
 description: Suggest a new user story for feature development
-title: "[USER STORY]: "
-labels: ["user story", "triage"]
+title: "[STORY]: "
+labels: ["story", "enhancement", "triage"]
 body:
   - type: markdown
     attributes:

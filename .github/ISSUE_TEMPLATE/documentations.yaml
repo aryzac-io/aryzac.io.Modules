@@ -1,0 +1,59 @@
+name: Documentation Request
+description: Suggest improvements or request additional documentation
+title: "[DOCS]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Help us improve our documentation!** Good documentation is crucial for user success and project accessibility. Whether you've spotted a typo, encountered outdated information, or feel a topic needs more clarity or depth, we want to hear from you. Please fill out the form below as completely as possible.
+
+  - type: textarea
+    id: documentation-area
+    attributes:
+      label: Documentation Area
+      description: Describe which part of the documentation you are referring to. Please provide a link if possible.
+      placeholder: "e.g., Installation guide, API reference for XYZ, Tutorial on ABC..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-issue
+    attributes:
+      label: Current Issue
+      description: Clearly describe the current issue or what is missing from the documentation.
+      placeholder: "e.g., The information on 'setting up environment variables' is missing."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-improvement
+    attributes:
+      label: Suggested Improvement
+      description: If you have specific ideas for how to improve or what to add, please describe them here.
+      placeholder: "e.g., Adding a section on 'environment variables' under the installation guide would be helpful..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: why-important
+    attributes:
+      label: Why is this important?
+      description: Explain why this change or addition is important for the documentation.
+      placeholder: "This section is important because..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Provide any additional context that could help us understand your request better. This can include examples, references, or screenshots.
+      placeholder: "Additional details, examples, or screenshots..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for contributing to our documentation!** We appreciate your effort to make [Your Project Name] more accessible and understandable. We'll review your request and get back to you as soon as possible.
