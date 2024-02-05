@@ -8,12 +8,12 @@ body:
       value: |
         Thank you for taking the time to report a bug. Please fill in as much of the template below as you're able. Your detailed report is crucial in helping us identify and address issues quickly.
 
-        **Expected Turnaround Time**: We aim to review all bug reports within 3 business days. Depending on the complexity of the issue, resolution times may vary, but we'll keep you updated on our progress.
+        **Expected Turnaround Time**: We aim to review all bug reports within a couple of days. Depending on the complexity of the issue, resolution times may vary, but we'll keep you updated on our progress.
 
         **While You Wait**:
         - **Search for Similar Issues**: It's possible that someone else has already reported the issue or a similar one. You can search our issue tracker to find related discussions.
         
-        We appreciate your patience and contribution to improving Aryzac IO Intent Modules. If you have any additional information to add after submitting this report, please feel free to comment on the issue directly.
+        We appreciate your patience and contribution to improving Aryzac IO Modules. If you have any additional information to add after submitting this report, please feel free to comment on the issue directly.
 
   - type: textarea
     id: bug-description

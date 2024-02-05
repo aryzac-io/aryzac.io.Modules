@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Thank you for suggesting a new feature!** We appreciate your input to help improve [Your Project Name]. Please fill out the details below to help us understand your vision for this feature.
+        **Thank you for suggesting a new feature!** We appreciate your input to help improve our Intent Architect Modules. Please fill out the details below to help us understand your vision for this feature.
 
   - type: textarea
     id: feature-summary
@@ -49,7 +49,7 @@ body:
     attributes:
       label: Link to Related User Story
       description: If this feature request is related to an existing user story, please provide the link here.
-      placeholder: "https://github.com/yourproject/yourrepo/issues/"
+      placeholder: "https://github.com/aryzac-io/aryzac.io.Modules/issues/"
     validations:
       required: false
 
@@ -65,4 +65,4 @@ body:
   - type: markdown
     attributes:
       value: |
-        **We look forward to your suggestions!** Your contributions are invaluable to making [Your Project Name] better for everyone. We'll review your feature request and get back to you with our feedback.
+        **We look forward to your suggestions!** Your contributions are invaluable to making Aryzac IO Modules better for everyone. We'll review your feature request and get back to you with our feedback.
